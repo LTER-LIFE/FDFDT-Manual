@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A hands-on guide to FAIR and structured ecological data</title>
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A hands-on guide to FAIR and structured ecological data" />
+  
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  
+
+<meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
+
+
+<meta name="date" content="2024-06-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="introduction.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who this guide is for</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management"><i class="fa fa-check"></i>Why you should use this guide and improve your data management</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#what-is-fair"><i class="fa fa-check"></i><b>1.1</b> What is FAIR?</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#extending-fair"><i class="fa fa-check"></i><b>1.2</b> Extending FAIR</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#why-should-your-data-be-fair"><i class="fa fa-check"></i><b>1.4</b> Why should your data be FAIR?</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#fair-assessment-of-your-data"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="example-datasets.html"><a href="example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example data sets</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="example-datasets.html"><a href="example-datasets.html#budburst"><i class="fa fa-check"></i><b>2.1</b> Bud burst data</a></li>
+<li class="chapter" data-level="2.2" data-path="example-datasets.html"><a href="example-datasets.html#beechcrop"><i class="fa fa-check"></i><b>2.2</b> Beech crop data</a></li>
+<li class="chapter" data-level="2.3" data-path="example-datasets.html"><a href="example-datasets.html#cricket"><i class="fa fa-check"></i><b>2.3</b> Cricket data</a></li>
+<li class="chapter" data-level="2.4" data-path="example-datasets.html"><a href="example-datasets.html#CLUE"><i class="fa fa-check"></i><b>2.4</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
+</ul></li>
+<li class="part"><span><b>How-to chapters</b></span></li>
+<li class="chapter" data-level="3" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A hands-on guide to FAIR and structured ecological data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">A hands-on guide to FAIR and structured ecological data</h1>
+<p class="author"><em>Cherine C. Jantzen &amp; Stefan J.G. Vriend</em></p>
+<p class="date"><em>2024-06-10</em></p>
+</div>
+<div id="preface" class="section level1 unnumbered hasAnchor">
+<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more FAIR and tackle the problems that can occur along this process.</p>
+<div id="who-this-guide-is-for" class="section level2 unnumbered hasAnchor">
+<h2>Who this guide is for<a href="index.html#who-this-guide-is-for" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This guide is for anybody who has ecological data and wants to improve their data management by making their data more FAIR, especially:</p>
+<ul>
+<li>ecologists who want to improve their research data management and by that make their data available for reuse by others</li>
+<li>students who collect data for their thesis and want to make their data reusable for others after their project is finished</li>
+<li>institutions and organisations that want to provide their employees with some guidance on how to increase their data maturity</li>
+<li>data stewards who …</li>
+<li>data managers who …</li>
+<li>anyone else …</li>
+</ul>
+</div>
+<div id="why-you-should-use-this-guide-and-improve-your-data-management" class="section level2 unnumbered hasAnchor">
+<h2>Why you should use this guide and improve your data management<a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.</p>
+</div>
+<div id="how-to-read-this-guide" class="section level2 unnumbered hasAnchor">
+<h2>How to read this guide<a href="index.html#how-to-read-this-guide" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This guide is designed in a way that you can only read the chapters that are relevant for improving the maturity of your data. To find these chapters, we provide you with a self-assessment tool that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR assessment you will be provided with a tailored list of the chapters in this guide you could go through to further mature your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.</p>
+</div>
+<div id="disclaimer" class="section level2 unnumbered hasAnchor">
+<h2>Disclaimer<a href="index.html#disclaimer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

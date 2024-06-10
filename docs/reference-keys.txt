@@ -1,0 +1,12 @@
+introduction
+what-is-fair
+extending-fair
+fair-is-not-open
+why-should-your-data-be-fair
+fair-assessment-of-your-data
+example-datasets
+budburst
+beechcrop
+cricket
+CLUE
+workflow

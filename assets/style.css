@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+ /*------------- Whole Document---------------- */
+body {
+  text-align: justify;
+  font-family: 'Urbanist';
+  font-size: 12px;
+}
+h1, h2, h3 {
+  font-family: 'Asap';
+  font-size: 18px;
+}
+
+/*----------------- links ---------------------*/
+
+a { 
+  color: #119B01;
+}
+a:hover {
+    color: #107803; /* darker color when hovering */
+  }
+  
+  
+/*------------Table of Contents (TOC)----------- */
+
+.tocify {
+  font-size: 14px;
+}
+.tocify ul, .tocify li { /* Increases spacing between TOC headers*/
+    line-height: 25px !important;
+}

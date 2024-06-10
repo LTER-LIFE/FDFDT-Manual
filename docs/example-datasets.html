@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 2 Example data sets | A hands-on guide to FAIR and structured ecological data</title>
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 2 Example data sets | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 2 Example data sets | A hands-on guide to FAIR and structured ecological data" />
+  
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  
+
+<meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
+
+
+<meta name="date" content="2024-06-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="workflow.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who this guide is for</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management"><i class="fa fa-check"></i>Why you should use this guide and improve your data management</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#what-is-fair"><i class="fa fa-check"></i><b>1.1</b> What is FAIR?</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#extending-fair"><i class="fa fa-check"></i><b>1.2</b> Extending FAIR</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#why-should-your-data-be-fair"><i class="fa fa-check"></i><b>1.4</b> Why should your data be FAIR?</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#fair-assessment-of-your-data"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="example-datasets.html"><a href="example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example data sets</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="example-datasets.html"><a href="example-datasets.html#budburst"><i class="fa fa-check"></i><b>2.1</b> Bud burst data</a></li>
+<li class="chapter" data-level="2.2" data-path="example-datasets.html"><a href="example-datasets.html#beechcrop"><i class="fa fa-check"></i><b>2.2</b> Beech crop data</a></li>
+<li class="chapter" data-level="2.3" data-path="example-datasets.html"><a href="example-datasets.html#cricket"><i class="fa fa-check"></i><b>2.3</b> Cricket data</a></li>
+<li class="chapter" data-level="2.4" data-path="example-datasets.html"><a href="example-datasets.html#CLUE"><i class="fa fa-check"></i><b>2.4</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
+</ul></li>
+<li class="part"><span><b>How-to chapters</b></span></li>
+<li class="chapter" data-level="3" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A hands-on guide to FAIR and structured ecological data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="example-datasets" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number"> 2</span> Example data sets<a href="example-datasets.html#example-datasets" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>To illustrate the process of FAIRifying ecological data we will rely on several example data sets we used to develop this guide. These data sets were selected because they cover a broad variety of different structures and different levels of FAIR, ranging from observational to experimental data and from highly unstructured and undocumented data to data that already fulfils some of the FAIR principles.</p>
+<div id="budburst" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Bud burst data<a href="example-datasets.html#budburst" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The first dataset contains long-term data on the phenology of different tree species. Every year in spring, deciduous trees develop new leaves from their buds at a certain point in time. The timing of this can be crucial for herbivores, such as caterpillars, relying on newly emerging leaves as an important food source. To monitor shifts in tree phenology, the Department of Animal Ecology at NIOO has assessed leaf development every year since 1988 by scoring the stage of bud opening on a fixed scale (cf. <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2000.1363">Visser &amp; Holleman, 2001</a>).</p>
+</div>
+<div id="beechcrop" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Beech crop data<a href="example-datasets.html#beechcrop" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A second data set collected by Animal Ecology/NIOO contains data on the amount of beech mast per year since 1976. Low, intermediate and high seed production in beech (Fagus sylvatica) trees alternate periodically over years. Since beech nuts are an important winter food resource for several species, such as passerine birds, seed availability is monitored yearly by collecting beech nuts in determined grids under a set of trees. These nuts are counted and weighted and based on this a so-called beech crop index can be calculated (cf. <a href="https://pure.knaw.nl/portal/en/publications/great-tit-parus-major-survival-and-the-beech-crop-cycle">Perdeck et al., 2000</a>).</p>
+</div>
+<div id="cricket" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Cricket data<a href="example-datasets.html#cricket" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The third data set contains experimental data on invertebrates belonging to the publication of <a href="https://doi.org/10.3389/fevo.2021.659363">Vogels et al., 2021</a>. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (Gryllus campestris). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured.</p>
+</div>
+<div id="CLUE" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> CLUE field vegetation cover data (i.e., CLUE data)<a href="example-datasets.html#CLUE" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The last example dataset consists of data on vegetation cover collected in a long-term grassland biodiversity field experiment site in the Veluwe, Netherlands, also abbreviated as <a href="https://nioo.knaw.nl/en/facilities/clue-field-veluwe-database">CLUE fields</a> (= changing land usage, enhancement of biodiversity and ecosystem development). Data collection started in 1996 and was conducted by the Department of Terrestrial Ecology of NIOO-KNAW. On a former agricultural field, experimental plots have been established in a random block design and different sowing treatments (high diversity, low diversity, continued agricultural rotation, and natural succession), as well as soil inoculation treatments have been applied in two different experiments in 1996. In both experiments, percent cover of each occurring plant species is measured annually. The data of both experiments result in two independent datasets, they are however very similar and their FAIRification process was nearly the same so that they will be treated as one dataset, called CLUE data, in the following.</p>
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-example-datasets.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
