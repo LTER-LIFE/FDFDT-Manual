@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A hands-on guide to FAIR and structured ecological data</title>
+  <title> 4 Describe your data - Metadata (content) | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 4 Describe your data - Metadata (content) | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 4 Describe your data - Metadata (content) | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="workflow.html"/>
+<link rel="next" href="storing-your-data.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -155,36 +155,85 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A hands-on guide to FAIR and structured ecological data</h1>
-<p class="author"><em>Cherine C. Jantzen &amp; Stefan J.G. Vriend</em></p>
-<p class="date"><em>2024-06-11</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more FAIR and tackle the problems that can occur along this process.</p>
-<div id="who-this-guide-is-for" class="section level2 unnumbered hasAnchor">
-<h2>Who this guide is for<a href="index.html#who-this-guide-is-for" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This guide is for anybody who has ecological data and wants to improve their data management by making their data more FAIR, especially:</p>
+<div id="describe-your-data---metadata-content" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number"> 4</span> Describe your data - Metadata (content)<a href="describe-your-data---metadata-content.html#describe-your-data---metadata-content" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The first step before you store your data properly should always be to describe and annotate it. This type of description is called metadata and basically provides information about your dataset that helps to understand it. We can differentiate into administrative metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data and structural metadata, which is giving information on how the data set is organised and how single data files connect to each other.</p>
+<p>Many repositories require a minimal set of metadata for uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are however no regulations on what information a README should contain and in reality, the extent of it varies a lot. In general, the richer the data is described the better.</p>
+<p>Based on best practices of writing readme files and in terms of standardising the metadata in a later step, we recommend to gather the following information about your data:</p>
+<p>About the dataset:</p>
 <ul>
-<li>ecologists who want to improve their research data management and by that make their data available for reuse by others</li>
-<li>students who collect data for their thesis and want to make their data reusable for others after their project is finished</li>
-<li>institutions and organisations that want to provide their employees with some guidance on how to increase their data maturity</li>
-<li>data stewards who …</li>
-<li>data managers who …</li>
-<li>anyone else …</li>
+<li><p>Title of the dataset</p></li>
+<li><p>Short description what contents each data file contains</p></li>
+<li><p>Short description of the methods used for data collection</p></li>
+<li><p>Responsible parties, including who created the data and who can be contacted about the data</p></li>
+<li><p>When was the data collected? Which time span is covered?</p></li>
+<li><p>Where has the data been collected?</p></li>
+<li><p>Licencing information: How can others use your data? To find out more about different licences, see section Licencing.</p></li>
+<li><p>Changes in the data or updates should ideally also be recorded in the README</p></li>
 </ul>
-</div>
-<div id="why-you-should-use-this-guide-and-improve-your-data-management" class="section level2 unnumbered hasAnchor">
-<h2>Why you should use this guide and improve your data management<a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.</p>
-</div>
-<div id="how-to-read-this-guide" class="section level2 unnumbered hasAnchor">
-<h2>How to read this guide<a href="index.html#how-to-read-this-guide" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This guide is designed in a way that you can only read the chapters that are relevant for improving the maturity of your data. To find these chapters, we provide you with a self-assessment tool that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR assessment you will be provided with a tailored list of the chapters in this guide you could go through to further mature your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.</p>
-<div class="disclaimer">
-<p><strong>Disclaimer</strong>
-We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.</p>
+<p>About individual data files:</p>
+<ul>
+<li><p>What do columns mean?</p></li>
+<li><p>Which units belong to each column?</p></li>
+</ul>
+<p>If you include personal information, like email addresses, of other people in the metadata that is made available online later on, it should always be asked for permission beforehand.</p>
+<div id="licencing" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Licencing<a href="describe-your-data---metadata-content.html#licencing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you deposit your data online it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of [Creative Commons (CC)](<a href="https://creativecommons.org/share-your-work/cclicenses/" class="uri">https://creativecommons.org/share-your-work/cclicenses/</a>. Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool (<a href="https://chooser-beta.creativecommons.org/">License chooser</a>) that can help you to choose the best suited licence for your data.</p>
+<p><strong>Table 4.1. Creative commons licences and their meanings.</strong></p>
+<table>
+<colgroup>
+<col width="28%" />
+<col width="26%" />
+<col width="45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Licence</th>
+<th align="center"></th>
+<th align="left">What can users do with your data?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a></td>
+<td align="center"><a href="images/CCBY_logo.png"><img src="images/CCBY_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data but have to give credits to the creator</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></td>
+<td align="center"><a href="images/CCBY-NC_logo.png"><img src="images/CCBY-NC_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data but have to give credits to the creator and data <strong>cannot</strong> be used commercially</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a></td>
+<td align="center"><a href="images/CCBY-SA_logo.png"><img src="images/CCBY-SA_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data, they have to give credits to the creator and adaptations need to be shared under the same terms</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></td>
+<td align="center"><a href="images/CCBY-NC-SA_logo.png"><img src="images/CCBY-NC-SA_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data, they have to give credits to the creator, adaptations need to be shared under the same terms and data <strong>cannot</strong> be used commercially</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND</a></td>
+<td align="center"><a href="images/CCBY-ND_logo.png"><img src="images/CCBY-ND_logo.png" width="100"/></a></td>
+<td align="left">users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a></td>
+<td align="center"><a href="images/CCBY-NC-ND_logo.png"><img src="images/CCBY-NC-ND_logo.png" width="100"/></a></td>
+<td align="left">users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator and data cannot be used commercially</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 (“CC Zero”)</a></td>
+<td align="center"><a href="images/CC-Zero_logo.png"><img src="images/CC-Zero_logo.png" width="100"/></a></td>
+<td align="left">copyrights are given up and work is put into the public domain</td>
+</tr>
+</tbody>
+</table>
+<div id="Note-licence" class="infobox infoimage">
+<p><strong>Note:</strong> Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence’s conditions of use, even if the data is no longer distributed.</p>
 </div>
 
 </div>
@@ -194,8 +243,8 @@ We want to emphasise here that there is no one-size-fits-all solution and every 
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="workflow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="storing-your-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -226,7 +275,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-Describe-data.Rmd",
 "text": "Edit"
 },
 "history": {

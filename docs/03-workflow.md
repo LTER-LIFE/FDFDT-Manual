@@ -50,3 +50,8 @@ If you have not chosen a repository before (or if you want to store the standard
 
 Even though this guide is tailored to ecological data, the workflow presented here should be generally applicable to any type of data, only the implementations of each step will differ.
 In the following chapters, we will go through each of the steps and provide some general background, introduce some options for implementation for ecological data and considerations that can help to choose the best suited option for your data, as well as a short insight into our own choices for the [example datasets](#example-datasets).
+
+<div class="figure">
+<img src="images/Workflow_diagramm.png" alt="Diagram of the workflow presented in this guide to FAIRify data." width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Diagram of the workflow presented in this guide to FAIRify data.</p>
+</div>

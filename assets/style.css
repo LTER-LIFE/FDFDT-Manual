@@ -22,6 +22,7 @@ body {
   font-size: 12px;
 }
 h1, h2, h3 {
+  text-align: left;
   font-family: 'Asap';
   font-size: 18px;
 }
@@ -39,8 +40,57 @@ a:hover {
 /*------------Table of Contents (TOC)----------- */
 
 .tocify {
-  font-size: 14px;
+  font-size: 16px;
 }
 .tocify ul, .tocify li { /* Increases spacing between TOC headers*/
     line-height: 25px !important;
+}
+
+/*------------Info boxes----------- */
+.disclaimer {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border: 2px solid #04AA6D;
+  border-radius: 10px;
+  background: #e6e6e662 5px center/3em no-repeat;
+}
+.infobox {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border: 2px solid #04AA6D;
+  border-radius: 10px;
+  background: #e6e6e662 5px center/3em no-repeat;
+}
+
+.examplebox{
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border: 2px solid #ff660062;
+  border-radius: 10px;
+  background: #e6e6e662 5px center/3em no-repeat;
+  overflow: auto;
+}
+/*.infoimage {
+   background-image: url("images/caution.png");
+}*/
+
+/*------------Tables----------- */
+th {
+  background-color: #04AA6D;
+  color: white;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:nth-child(even) {background-color: #04aa6d62;}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+.tableDwCterms{
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
 }

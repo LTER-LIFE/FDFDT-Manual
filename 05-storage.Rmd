@@ -1,0 +1,81 @@
+# Storing your data
+Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by mobilising your data to an online repository. 
+
+**Mobilising raw or standardised data?**
+
+<Mobilising raw data and benefits. Mobilising standard data and benefits. Metadata can “always” be mobilised.>
+
+## Choosing a repository 
+The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:
+
+**Which data formats are accepted?**
+
+Depending on the format your data is stored in, not every repository will accept your data. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see [here](https://dans.knaw.nl/en/file-formats/) for an example).
+
+**What repository is commonly used in your organisation, community or discipline? **
+
+Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline. 
+
+**Is a persistent identifier assigned? **
+
+To ensure that your dataset can always be found, it is important that your data is associated with a persistent identifier (PID). Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.   
+
+**How can the dataset be accessed?**
+
+Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an API (Application Programming Interfaces)? Can the data be easily accessed?
+
+**Is metadata stored persistently even when the data is no longer available?**
+
+The metadata of your dataset should be stored persistently so that users can still find out about the existence of your data, even if it is no longer available on the repository itself. 
+
+**Do you want version control?**
+
+Not all repositories provide version control, meaning that changes in the data and reuploads are not tracked but only the most recent version is available. If this is an important component for you, you should make sure the chosen repository provides this option. At [re3data.org](http://re3data.org), for example, you can directly filter for repositories with versioning. 
+
+**Do you retain custody of your data or is it transferred to the repository?**
+
+There are repositories that obtain the custody of your data once it is uploaded there, meaning that the data management is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited. 
+
+## Repositories to store biodiversity data
+Here we want to provide you with some examples of commonly used repositories for biodiversity data but this is of course a non-exclusive list and other options might be more suitable for your data.
+
+### Global repositories
+**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as Darwin Core, and is openly accessible to everyone. 
+
+**OBIS**, the [Ocean Biodiversity Information System](https://obis.org/), is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
+
+Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a Darwin Core Archive (for more information see later chapters). There is extensive documentation on how to use the IPT by GBIF [here](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide). Once the dataset is published it is assigned a DOI.
+
+**Dataverse** is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found [here](https://dataverse.org/installations).
+
+[Zenodo](https://zenodo.org/) is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data. 
+
+### Dutch repositories
+Since the project partners behind this guide are situated in the Netherlands, we also want to highlight some Dutch repositories. 
+
+**[DataverseNL](https://dataverse.nl/)** is a Dutch installation of Dataverse and is hosted by DANS-KNAW. Researchers from all collaborating institutes within the Netherlands can store their data there and make it available to everybody. Reasons for uploading data to DataverseNL:
+
+- It automatically gets a persistent identifier
+
+- The metadata is finable through web services like Google dataset search
+
+- The data is easily retrievable through an API 
+
+- There is versioning to track changes and re-uploads of the data
+
+- The custody of the data stays with the data owners
+
+**DANS Data Station Life Sciences**
+
+The [DANS Data Station for Life Sciences](https://dans.knaw.nl/en/life-sciences/) is a repository hosted by DANS-KNAW which is based on the Dataverse software. It is open for every individual researcher independent of institution both to store and retrieve data. It is always free of charge to access data and up until a data size of 50 GB also to store data. The Data Station for life sciences is domain specific, accepting data of medical, health and green life sciences, while there are other Data Stations hosted by DANS for other domains, such as [social sciences](https://dans.knaw.nl/en/social-sciences-and-humanities/), [archeology](https://dans.knaw.nl/en/archaeology/) and [physical and technical sciences](https://dans.knaw.nl/en/physical-and-technical-sciences/). It also allows access restrictions, which is helpful if you want to store your data persistently but not necessarily make it open for everyone. 
+
+## Tools to help you 
+
+- [re3data.org](http://re3data.org) is a registry of repositories for research data where you can filter a broad range of repositories for a different criteria, such as subject, country, persistent identifier system, versioning or licences
+
+- [fairsharing.org](http://fairsharing.org) is a registry that lists a variety of standards, databases and policies. To find repositories you can either directly search for a specific one and get detailed information on it or search all repositories/databases and filter for a range of options, such as country, subject or specific tags. 
+
+- [DataCite Commons](https://commons.datacite.org/) provides a repository finder that integrates information on repositories from re3data within the [FAIRisFAIR](https://www.fairsfair.eu/) project. It allows users to search for repositories by keywords and filter the repositories for certificates, such as the CoreTrustSeal, or the software they are based on. 
+
+## Our choice
+For the data sets we owned ourselves within our department (bud burst and beech crop ??), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners. 
