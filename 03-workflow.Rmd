@@ -53,6 +53,6 @@ In the following chapters, we will go through each of the steps and provide some
 
 ```{r echo = FALSE, out.width = '100%', fig.cap = 'Diagram of the workflow presented in this guide to FAIRify data.'}
 
-knitr::include_graphics("images/Workflow_diagramm.png")
+knitr::include_graphics("images/workflow_diagramm.png")
 
 ```

@@ -21,7 +21,7 @@ body {
   font-family: 'Urbanist';
   font-size: 12px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   text-align: left;
   font-family: 'Asap';
   font-size: 18px;
@@ -50,24 +50,33 @@ a:hover {
 .disclaimer {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #04AA6D;
+  border: 2px solid #4cdc8e8a;
   border-radius: 10px;
-  background: #e6e6e662 5px center/3em no-repeat;
+  background: #b8f5cc19 5px center/3em no-repeat;
 }
 .infobox {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #04AA6D;
+  border: 2px solid #4cdc8e8a;
   border-radius: 10px;
-  background: #e6e6e662 5px center/3em no-repeat;
+  background: #b8f5cc19 5px center/3em no-repeat;
 }
 
 .examplebox{
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #ff660062;
+  border: 2px solid #4cdc8e8a;
   border-radius: 10px;
-  background: #e6e6e662 5px center/3em no-repeat;
+  background: #b8f5cc19 5px center/3em no-repeat;
+  overflow: auto;
+}
+
+.sortTermsBox{
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border: 2px solid #4cdc8e8a;
+  border-radius: 10px;
+  background: #b8f5cc19 5px center/3em no-repeat;
   overflow: auto;
 }
 /*.infoimage {
