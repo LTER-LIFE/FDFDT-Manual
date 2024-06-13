@@ -2,9 +2,9 @@
 
 ## What is FAIR?
 
-Research data often is stored on local hard drives, not well described or not formatted in a consistent and standard way. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, [Wilkinson et al. (2015)](https://doi.org/10.1038/sdata.2016.18) introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for **F**indable, **A**ccessible, **I**nteroperable and **R**eusable, which more concrete means the following:
+Research data often is stored on local hard drives, not well described or not formatted in a consistent and standard way. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, @Wilkinson_2016 introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for **F**indable, **A**ccessible, **I**nteroperable and **R**eusable, which more concrete means the following:
 
-**Findable.** This means that the metadata (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.
+**Findable.** This means that the [metadata](#metadata) (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.
 
 **Accessible.** It is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required.
 
@@ -48,4 +48,4 @@ knitr::include_graphics("images/Fig2_MSSS-FAIR.png")
 
 ```
 
-It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (Pagano et al., 2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as RDF (Resource Description Framework). However, as this is more the expertise of data or information scientists instead of ecologists, we will not look into these topics in this guide.
+It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data or information scientists instead of ecologists, we will not look into these topics in this guide.

@@ -1,24 +1,18 @@
----
-editor_options: 
-  markdown: 
-    wrap: sentence
----
-
 # (PART\*) How-to chapters {.unnumbered}
 
 # Workflow
 
-The general workflow that we present in this guide to make your data more FAIR is shown in Figure \@ref(fig:workflow) and shortly described in the following section.
+The general workflow that we present in this guide to make your data more [FAIR](#FAIR) is shown in Figure \@ref(fig:workflow) and shortly described in the following section.
 
 To make your data more FAIR, you should:
 
--   First, describe your data and thereby gather metadata.
+-   First, describe your data and thereby gather [metadata](#metadata).
 
--   Afterwards, you should decide whether your raw data should be mobilised to an online repository.
+-   Afterwards, you should decide whether your raw data should be [mobilised](#mobilisation) to an online repository.
 
     -   If yes, you have to choose a suitable repository and upload your metadata and data there.
 
--   Next, you can start to standardise both the data and the metadata.
+-   Next, you can start to [standardise](#standardise) both the data and the metadata.
     With which of the two you start does not matter, as they can both be structured and standardised separately.
 
 For the metadata:
@@ -53,5 +47,5 @@ In the following chapters, we will go through each of the steps and provide some
 
 <div class="figure">
 <img src="images/workflow_diagramm.png" alt="Diagram of the workflow presented in this guide to FAIRify data." width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Diagram of the workflow presented in this guide to FAIRify data.</p>
+<p class="caption">(\#fig:workflow)Diagram of the workflow presented in this guide to FAIRify data.</p>
 </div>

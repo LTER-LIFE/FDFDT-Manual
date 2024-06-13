@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-12" />
+<meta name="date" content="2024-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,6 +58,28 @@
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
@@ -99,9 +121,9 @@
 </ul></li>
 <li class="part"><span><b>How-to chapters</b></span></li>
 <li class="chapter" data-level="3" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
-<li class="chapter" data-level="4" data-path="describe-your-data---metadata-content.html"><a href="describe-your-data---metadata-content.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
+<li class="chapter" data-level="4" data-path="describe-data.html"><a href="describe-data.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="describe-your-data---metadata-content.html"><a href="describe-your-data---metadata-content.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
+<li class="chapter" data-level="4.1" data-path="describe-data.html"><a href="describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="storing-your-data.html"><a href="storing-your-data.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
 <ul>
@@ -146,13 +168,37 @@
 <li class="chapter" data-level="6.7.5" data-path="standardise-your-data.html"><a href="standardise-your-data.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>6.7.5</b> World Registry of Marine Species (WoRMS)</a></li>
 <li class="chapter" data-level="6.7.6" data-path="standardise-your-data.html"><a href="standardise-your-data.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
-<li class="chapter" data-level="6.8" data-path="standardise-your-data.html"><a href="standardise-your-data.html#assigningcreating-guid"><i class="fa fa-check"></i><b>6.8</b> Assigning/Creating GUID</a></li>
+<li class="chapter" data-level="6.8" data-path="standardise-your-data.html"><a href="standardise-your-data.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
 <li class="chapter" data-level="7.2" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.3" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
+<li class="chapter" data-level="7.3.2" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>7.3.2</b> Occurrence core vs. event core</a></li>
 </ul></li>
+<li class="chapter" data-level="7.4" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#which-extensions"><i class="fa fa-check"></i><b>7.4</b> Which extension(s)?</a></li>
+<li class="chapter" data-level="7.5" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#arrange-darwin-core-terms-in-core-and-extension-files"><i class="fa fa-check"></i><b>7.5</b> Arrange Darwin Core terms in core and extension files</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>7.5.1</b> General terms (Terms of class Record-level)</a></li>
+<li class="chapter" data-level="7.5.2" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#event-file"><i class="fa fa-check"></i><b>7.5.2</b> Event file</a></li>
+<li class="chapter" data-level="7.5.3" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#occurrence-file"><i class="fa fa-check"></i><b>7.5.3</b> Occurrence file</a></li>
+<li class="chapter" data-level="7.5.4" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#taxon-file"><i class="fa fa-check"></i><b>7.5.4</b> Taxon file</a></li>
+<li class="chapter" data-level="7.5.5" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#measurementorfact-file"><i class="fa fa-check"></i><b>7.5.5</b> MeasurementOrFact file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html"><i class="fa fa-check"></i><b>8</b> Standardise and structure your metadata</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
+<li class="chapter" data-level="8.2" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
+<li class="chapter" data-level="8.3" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
+<li class="chapter" data-level="8.4" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
+<li class="chapter" data-level="8.5" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#structural-metadata---the-meta.xml-file"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
+<li class="chapter" data-level="8.6" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -177,11 +223,11 @@
 <div id="header">
 <h1 class="title">A hands-on guide to FAIR and structured ecological data</h1>
 <p class="author"><em>Cherine C. Jantzen &amp; Stefan J.G. Vriend</em></p>
-<p class="date"><em>2024-06-12</em></p>
+<p class="date"><em>2024-06-13</em></p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
 <h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more FAIR and tackle the problems that can occur along this process.</p>
+<p>This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more <a href="glossary.html#FAIR">FAIR</a> and tackle the problems that can occur along this process.</p>
 <div id="who-this-guide-is-for" class="section level2 unnumbered hasAnchor">
 <h2>Who this guide is for<a href="index.html#who-this-guide-is-for" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This guide is for anybody who has ecological data and wants to improve their data management by making their data more FAIR, especially:</p>
@@ -196,7 +242,7 @@
 </div>
 <div id="why-you-should-use-this-guide-and-improve-your-data-management" class="section level2 unnumbered hasAnchor">
 <h2>Why you should use this guide and improve your data management<a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.</p>
+<p>Data management is the practice of taking care of data throughout its entire <a href="glossary.html#datalifecycle">lifecycle</a>, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.</p>
 </div>
 <div id="how-to-read-this-guide" class="section level2 unnumbered hasAnchor">
 <h2>How to read this guide<a href="index.html#how-to-read-this-guide" class="anchor-section" aria-label="Anchor link to header"></a></h2>

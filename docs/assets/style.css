@@ -74,9 +74,9 @@ a:hover {
 .sortTermsBox{
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #4cdc8e8a;
+  border: 2px solid #51A3A3;
   border-radius: 10px;
-  background: #b8f5cc19 5px center/3em no-repeat;
+  background: #cbe5e519 5px center/3em no-repeat;
   overflow: auto;
 }
 /*.infoimage {
@@ -85,7 +85,7 @@ a:hover {
 
 /*------------Tables----------- */
 th {
-  background-color: #04AA6D;
+  background-color: #42da887d;
   color: white;
   border-bottom: 1px solid #ddd;
   text-align: center;

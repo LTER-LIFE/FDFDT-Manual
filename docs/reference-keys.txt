@@ -1,4 +1,9 @@
 fig:unnamed-chunk-1
+fig:budburst
+fig:beechcrop
+fig:crickets
+fig:CLUE
+fig:workflow
 fig:relational-database
 fig:star-schema
 introduction
@@ -13,7 +18,7 @@ beechcrop
 cricket
 CLUE
 workflow
-describe-your-data---metadata-content
+describe-data
 licencing
 storing-your-data
 choosing-a-repository
@@ -32,7 +37,7 @@ mapping-your-data-to-darwin-core
 darwin-core-namespaces
 darwin-core-terms
 terms-of-class-event
-eventid-parenteventid
+eventID
 date-information-eventdate-year-month-day
 time-information-eventtime
 terms-of-class-location
@@ -57,11 +62,10 @@ encyclopedia-of-life-eol
 integrated-taxonomic-information-system-itis
 world-registry-of-marine-species-worms
 tools-to-help-you-3
-assigningcreating-guid
+GUIDcreation
 structuring-your-standardised-data
 relational-database
 darwin-core-archive
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
 the-core-its-extensions
 find-the-core
 occurrence-core-vs.-event-core
@@ -77,3 +81,6 @@ metadata-standards-for-biodiversity-data
 tools-to-help-you-4
 our-choice-2
 eml-terms
+structural-metadata---the-meta.xml-file
+create-xml-files-in-r
+glossary

@@ -1,7 +1,7 @@
 --- 
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "Cherine C. Jantzen & Stefan J.G. Vriend"
-date: "2024-06-12"
+date: "2024-06-13"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -15,7 +15,7 @@ github-repo: CherineJ/FDFDT-Manual
 
 # Preface {-}
 
-This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more FAIR and tackle the problems that can occur along this process. 
+This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more [FAIR](#FAIR) and tackle the problems that can occur along this process. 
 
 
 ## Who this guide is for {-}
@@ -31,7 +31,7 @@ This guide is for anybody who has ecological data and wants to improve their dat
 
 ## Why you should use this guide and improve your data management {-}
 
-Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss  and have higher traceability of changes and errors. Additionally, by describing, annotating,  and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
+Data management is the practice of taking care of data throughout its entire [lifecycle](#datalifecycle), from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss  and have higher traceability of changes and errors. Additionally, by describing, annotating,  and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
 
 ## How to read this guide {-}
 

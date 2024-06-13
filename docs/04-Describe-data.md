@@ -1,10 +1,10 @@
-# Describe your data - Metadata (content)
+# Describe your data - Metadata (content) {#describe-data}
 
-The first step before you store your data properly should always be to describe and annotate it. This type of description is called metadata and basically provides information about your dataset that helps to understand it. We can differentiate into administrative metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data and structural metadata, which is giving information on how the data set is organised and how single data files connect to each other.
+The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and basically provides information about your dataset that helps to understand it. We can differentiate into administrative metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data and structural metadata, which is giving information on how the data set is organised and how single data files connect to each other.
 
 Many repositories require a minimal set of metadata for uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are however no regulations on what information a README should contain and in reality, the extent of it varies a lot. In general, the richer the data is described the better.
 
-Based on best practices of writing readme files and in terms of standardising the metadata in a later step, we recommend to gather the following information about your data:
+Based on best practices of writing readme files and in terms of [standardising](#standardise) the metadata in a later step, we recommend to gather the following information about your data:
 
 About the dataset:
 

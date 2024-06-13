@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-12" />
+<meta name="date" content="2024-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="structuring-your-standardised-data.html"/>
-<link rel="next" href="references.html"/>
+<link rel="next" href="glossary.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -59,6 +59,28 @@
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -76,31 +98,32 @@
 <li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who this guide is for</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management"><i class="fa fa-check"></i>Why you should use this guide and improve your data management</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#what-is-fair"><i class="fa fa-check"></i><b>2.1</b> What is FAIR?</a></li>
-<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#extending-fair"><i class="fa fa-check"></i><b>2.2</b> Extending FAIR</a></li>
-<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>2.3</b> FAIR is not open</a></li>
-<li class="chapter" data-level="2.4" data-path="introduction.html"><a href="introduction.html#why-should-your-data-be-fair"><i class="fa fa-check"></i><b>2.4</b> Why should your data be FAIR?</a></li>
-<li class="chapter" data-level="2.5" data-path="introduction.html"><a href="introduction.html#fair-assessment-of-your-data"><i class="fa fa-check"></i><b>2.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#what-is-fair"><i class="fa fa-check"></i><b>1.1</b> What is FAIR?</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#extending-fair"><i class="fa fa-check"></i><b>1.2</b> Extending FAIR</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#why-should-your-data-be-fair"><i class="fa fa-check"></i><b>1.4</b> Why should your data be FAIR?</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#fair-assessment-of-your-data"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="example-datasets.html"><a href="example-datasets.html"><i class="fa fa-check"></i><b>3</b> Example data sets</a>
+<li class="chapter" data-level="2" data-path="example-datasets.html"><a href="example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example data sets</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="example-datasets.html"><a href="example-datasets.html#budburst"><i class="fa fa-check"></i><b>3.1</b> Bud burst data</a></li>
-<li class="chapter" data-level="3.2" data-path="example-datasets.html"><a href="example-datasets.html#beechcrop"><i class="fa fa-check"></i><b>3.2</b> Beech crop data</a></li>
-<li class="chapter" data-level="3.3" data-path="example-datasets.html"><a href="example-datasets.html#cricket"><i class="fa fa-check"></i><b>3.3</b> Cricket data</a></li>
-<li class="chapter" data-level="3.4" data-path="example-datasets.html"><a href="example-datasets.html#CLUE"><i class="fa fa-check"></i><b>3.4</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
+<li class="chapter" data-level="2.1" data-path="example-datasets.html"><a href="example-datasets.html#budburst"><i class="fa fa-check"></i><b>2.1</b> Bud burst data</a></li>
+<li class="chapter" data-level="2.2" data-path="example-datasets.html"><a href="example-datasets.html#beechcrop"><i class="fa fa-check"></i><b>2.2</b> Beech crop data</a></li>
+<li class="chapter" data-level="2.3" data-path="example-datasets.html"><a href="example-datasets.html#cricket"><i class="fa fa-check"></i><b>2.3</b> Cricket data</a></li>
+<li class="chapter" data-level="2.4" data-path="example-datasets.html"><a href="example-datasets.html#CLUE"><i class="fa fa-check"></i><b>2.4</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
 </ul></li>
 <li class="part"><span><b>How-to chapters</b></span></li>
-<li class="chapter" data-level="4" data-path="describe-your-data---metadata-content.html"><a href="describe-your-data---metadata-content.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
+<li class="chapter" data-level="3" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
+<li class="chapter" data-level="4" data-path="describe-data.html"><a href="describe-data.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="describe-your-data---metadata-content.html"><a href="describe-your-data---metadata-content.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
+<li class="chapter" data-level="4.1" data-path="describe-data.html"><a href="describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="storing-your-data.html"><a href="storing-your-data.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
 <ul>
@@ -145,7 +168,7 @@
 <li class="chapter" data-level="6.7.5" data-path="standardise-your-data.html"><a href="standardise-your-data.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>6.7.5</b> World Registry of Marine Species (WoRMS)</a></li>
 <li class="chapter" data-level="6.7.6" data-path="standardise-your-data.html"><a href="standardise-your-data.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
-<li class="chapter" data-level="6.8" data-path="standardise-your-data.html"><a href="standardise-your-data.html#assigningcreating-guid"><i class="fa fa-check"></i><b>6.8</b> Assigning/Creating GUID</a></li>
+<li class="chapter" data-level="6.8" data-path="standardise-your-data.html"><a href="standardise-your-data.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
 <ul>
@@ -172,7 +195,10 @@
 <li class="chapter" data-level="8.2" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
 <li class="chapter" data-level="8.3" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
 <li class="chapter" data-level="8.4" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
+<li class="chapter" data-level="8.5" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#structural-metadata---the-meta.xml-file"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
+<li class="chapter" data-level="8.6" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
 </ul></li>
+<li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -196,11 +222,11 @@
             <section class="normal" id="section-">
 <div id="standardise-and-structure-your-metadata" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number"> 8</span> Standardise and structure your metadata<a href="standardise-and-structure-your-metadata.html#standardise-and-structure-your-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Once you have described your data and assigned metadata to it, you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and Darwin Core sometimes is also referred to as a metadata standard.</p>
+<p>Once you have described your data and assigned <a href="glossary.html#metadata">metadata</a> to it (see <a href="describe-data.html#describe-data">chapter 4</a>), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and <a href="glossary.html#DwC">Darwin Core</a> sometimes is also referred to as a metadata standard.</p>
 <div id="metadata-standards-for-biodiversity-data" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Metadata standards (for biodiversity data)<a href="standardise-and-structure-your-metadata.html#metadata-standards-for-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>As with the data standards, a wide range of metadata standards exists, partly tailored to specific research domains.</p>
-<p>For ecological data, a widely used metadata standard, for example by OBIS and GBIF, is the <strong>Ecological metadata language (EML)</strong>, which is also the required format for metadata in the Darwin Core Archives. It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable XML markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their <a href="https://eml.ecoinformatics.org/schema/">interactive schema documentation</a>.</p>
+<p>For ecological data, a widely used metadata standard, for example by <a href="glossary.html#OBIS">OBIS</a> and <a href="glossary.html#GBIF">GBIF</a>, is the <a href="glossary.html#eml"><strong>Ecological metadata language (EML)</strong></a>, which is also the required format for metadata in the <a href="glossary.html#DwC-A">Darwin Core Archives</a>. It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable <a href="glossary.html#XML">XML</a> markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their <a href="https://eml.ecoinformatics.org/schema/">interactive schema documentation</a>.</p>
 <p><strong>Dublin Core</strong> is a metadata standard consisting of a set of 15 terms used to describe metadata. The terms themselves consist of several dozen properties, classes, data types, and vocabulary encoding schemes and are maintained by the <a href="https://dublincore.org/">Dublin Core Metadata Initiative (DCMI)</a>.</p>
 </div>
 <div id="tools-to-help-you-4" class="section level2 hasAnchor" number="8.2">
@@ -215,8 +241,135 @@
 </div>
 <div id="eml-terms" class="section level2 hasAnchor" number="8.4">
 <h2><span class="header-section-number">8.4</span> EML terms<a href="standardise-and-structure-your-metadata.html#eml-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found <a href="https://eml.ecoinformatics.org/schema/">here</a> and some best practices <a href="https://ediorg.github.io/data-package-best-practices/eml-best-practices.html">here</a>).
-For all terms containing text the “xml:lang” attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.</p>
+<p>EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found <a href="https://eml.ecoinformatics.org/schema/">here</a> and some best practices <a href="https://ediorg.github.io/data-package-best-practices/eml-best-practices.html">here</a>). For all terms containing text the “xml:lang” attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.</p>
+<p><span style="color: #d111d4ff;"><strong>Required terms</strong></span></p>
+<p>EML comes with only three terms that are required to make the EML document schema valid.</p>
+<ul>
+<li><p><span style="color: #d111d4ff;"><code>&lt;title&gt;</code></span>: a brief title that provides enough information to distinguish this dataset or resource from others and makes clear what the data is about. The “xml:lang” attribute can be used to specify in which language the title is given, which is especially useful if you want to give alternative titles in different languages.</p></li>
+<li><p><span style="color: #d111d4ff;"><code>&lt;creator&gt;</code></span>: information on the person or organisation that created the dataset</p></li>
+<li><p><span style="color: #d111d4ff;"><code>&lt;contact&gt;</code></span>: information on the person or organisation that contacted about the data, e.g., if questions arise</p></li>
+</ul>
+<p><span style="color: #dd7f08ff;"><strong>Highly recommended terms</strong></span></p>
+<p>The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.</p>
+<ul>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;metadataProvider&gt;</code></span>: information about the person that has provides the metadata in the EML file</p>
+<p><strong>Creator, contact and metadataProvider</strong>
+The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
+<ul>
+<li><p><code>&lt;individualName&gt;</code>: the name of an individual person can be given with three subterms:</p>
+<ul>
+<li><code>&lt;salutation&gt;</code>: can be a title (e.g., “Dr.”) or another salutation (“Mr.”/”Ms.”)</li>
+<li><code>&lt;givenName&gt;</code></li>
+<li><code>&lt;surName&gt;</code></li>
+</ul></li>
+<li><p><code>&lt;organisationName&gt;</code></p></li>
+<li><p><code>&lt;positionName&gt;</code></p></li>
+<li><p><code>&lt;address&gt;</code></p></li>
+<li><p><code>&lt;city&gt;</code></p></li>
+<li><p><code>&lt;postalCode&gt;</code></p></li>
+<li><p><code>&lt;country&gt;</code></p></li>
+<li><p><code>&lt;electronicMalAddress&gt;</code></p></li>
+<li><p><code>&lt;userID&gt;</code>: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute <code>&lt;directory&gt;</code> to state which directory the ID refers to and will generally be an URL (e.g., <a href="https://orcid.org" class="uri">https://orcid.org</a>)</p></li>
+</ul></li>
+</ul>
+<p>The contact, creator and metadataProvider can be different people/organisations/positions but can also all be the same. In the latter case, do this.</p>
+<ul>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;language&gt;</code></span>: provides the language the resource is written in and can either be a well-known language name or ideally, a <a href="https://www.w3schools.com/tags/ref_language_codes.asp">ISO language code</a></p></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;abstract&gt;</code></span>: a short summary of the data that includes basic information to give an idea what the data is about.</p>
+<ul>
+<li><code>&lt;para&gt;</code>: Text is stored in this subterm, which can either directly have a text string or a set of subterms consisting of markup tags allowing for formatting of the text.</li>
+</ul></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;keywordSet&gt;</code></span>: can either be one or many keywords describing the resource</p>
+<ul>
+<li><code>&lt;keyword&gt;</code>: each keyword is stored separately in this subterm as text.</li>
+<li><code>&lt;keywordThesaurus&gt;</code>: If the keywords are part of a thesaurus, it can be specified which thesaurus they are derived from.</li>
+</ul></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;coverage&gt;</code></span>: Describes the spatial, temporal and taxonomic coverage of the resource.</p>
+<ul>
+<li><span style="color: #dd7f08ff;"><code>&lt;temporalCoverage&gt;</code></span>: information on what time span is covered in the data. Use <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> (i.e., YYYY-MM-DD) for date and time information. Needs either one of the subterms:
+<ul>
+<li><code>&lt;singleDateTime&gt;</code>: describes a single date and time either by describing a calendar date or a geologic date, using the subterms:</li>
+<li><code>&lt;calendarDate&gt;</code></li>
+<li><code>&lt;time&gt;</code></li>
+<li><code>&lt;alternativeTimeScale&gt;</code>: can describe alternative time scale, e.g., geological date, with a range of subterms</li>
+<li><code>&lt;rangeOfDates&gt;</code>: allows to describe a time range by specifying start and end date (with the same subterms as for singleDateTime). Can be repeated if there are several time ranges that need to be described.</li>
+<li><code>&lt;beginDate&gt;</code></li>
+<li><code>&lt;endDate&gt;</code></li>
+</ul></li>
+<li><span style="color: #dd7f08ff;"><code>&lt;geographicCoverage&gt;</code></span>: information about the spatial extent of the data that should be given as text and coordinates with the subterms:
+<ul>
+<li><code>&lt;geographicDescription&gt;</code>: short text explanation of the spatial extent</li>
+<li><code>&lt;boundingCoordinates&gt;</code>: stating the four edges of a bounding box, by giving:</li>
+<li><code>&lt;westBoundingCoordinate&gt;</code></li>
+<li><code>&lt;eastBoundingCoordinate&gt;</code></li>
+<li><code>&lt;northBoundingCoordinate&gt;</code></li>
+<li><code>&lt;southBoundingCoordinate&gt;</code></li>
+</ul></li>
+<li><span style="color: #dd7f08ff;"><code>&lt;taxonomicCoverage&gt;</code></span>: information about the taxa covered in the data
+<ul>
+<li><code>&lt;generalTaxonomicCoverage&gt;</code>: text description of the taxa included in the data</li>
+<li><code>&lt;taxonomicClassification&gt;</code>: taxonomic classification of the range of taxa included in the data, specified through a set of subterms:
+<ul>
+<li><code>&lt;taxonRankName&gt;</code>: taxonomic level of information</li>
+<li><code>&lt;taxonRankValue&gt;</code>: taxonomic nam</li>
+<li><code>&lt;commonName&gt;</code></li>
+<li><code>&lt;taxonID&gt;</code>: identifier of the taxon from a certain provider that has to be specified with the attribute “provider” containing a <a href="glossary.html#URI">URI</a> (e.g., provider = “<a href="https://eol.org" class="uri">https://eol.org</a>” if the taxon ID is retrieved from EOL)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;maintenance&gt;</code></span>: information on with which frequency the data is updated and whether data collection is still ongoing</p>
+<ul>
+<li><code>&lt;maintenanceUpdateFrequency&gt;</code>: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown</li>
+<li><code>&lt;description&gt;</code>: text description of maintenance stated with subterm</li>
+<li><code>&lt;para&gt;</code></li>
+</ul></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;methods&gt;</code></span>: stepwise information on methods for data collection</p>
+<ul>
+<li><code>&lt;methodStep&gt;</code>: can be repeated for each method step and includes a range of subterms to specify instruments, software, protocols, descriptions and citations of the methods</li>
+</ul></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;pubDate&gt;</code></span>: publication date of the resource in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> (i.e., YYYY-MM-DD)</p></li>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;licensed&gt;</code></span>: information on the licence of the data and how it can be used by others, for information in which licence to assign see chapter licencing</p>
+<ul>
+<li><code>&lt;licenseName&gt;</code>: official name of the licence</li>
+<li><code>&lt;url&gt;</code>: <a href="glossary.html#URI">URL</a> referring to the licence (e.g., <a href="https://creativecommons.org/licenses/by/4.0/" class="uri">https://creativecommons.org/licenses/by/4.0/</a>)</li>
+</ul></li>
+</ul>
+<p><span style="color: #14d16eff;"><strong>Other terms</strong></span></p>
+<p>There are plenty of other terms that can be suitable to use for your data. The following are just some examples, for a full overview check the EML schema documentation.</p>
+<ul>
+<li><p><span style="color: #14d16eff;"><code>&lt;project&gt;</code></span>: broader background information on the project in which the data was collected, needs to have the subterms</p>
+<ul>
+<li><code>&lt;title&gt;</code></li>
+<li><code>&lt;personnel&gt;</code></li>
+<li>Optional subterms:
+<ul>
+<li><code>&lt;abstract&gt;</code></li>
+<li><code>&lt;funding&gt;</code></li>
+<li><code>&lt;studyAreaDescription&gt;</code></li>
+</ul></li>
+</ul></li>
+<li><p><span style="color: #14d16eff;"><code>&lt;intellectualRights&gt;</code></span>: information on the intellectual property rights as text using subterm</p>
+<ul>
+<li><code>&lt;para&gt;</code></li>
+</ul></li>
+<li><p><span style="color: #14d16eff;"><code>&lt;alternateIdentifier&gt;</code></span></p></li>
+<li><p><span style="color: #14d16eff;"><code>&lt;additionalInfo&gt;</code></span>: Can capture any information that cannot be captured by the remaining terms and is filled with text using subterm</p>
+<ul>
+<li><code>&lt;para&gt;</code></li>
+</ul></li>
+<li><p><span style="color: #14d16eff;"><code>&lt;introduction&gt;</code></span>: overview of background and context of the dataset, similar to an introduction of a journal article</p></li>
+<li><p><span style="color: #14d16eff;"><code>&lt;usageCitation&gt;</code></span>: citation to articles or other products where the data is used, consists of a range of subterms</p></li>
+</ul>
+</div>
+<div id="structural-metadata---the-meta.xml-file" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Structural metadata - The meta.xml file<a href="standardise-and-structure-your-metadata.html#structural-metadata---the-meta.xml-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised, i.e., which file is the <a href="glossary.html#core">core</a>, which are the <a href="glossary.html#extension">extensions</a>, and it links every column of each file to its corresponding Darwin Core term by providing its <a href="glossary.html#URI">IRI</a> (Internationalized Resource Identifier). The file format of the meta-file is <a href="#xml">XML</a>.</p>
+</div>
+<div id="create-xml-files-in-r" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Create XML files in R<a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Both the EML and the meta file are XML files. Creating XML files in R is facilitated by a range of useful packages, such as <code>emld</code>, <code>EML</code> and <code>xml2</code>.</p>
+<p>The key for creating the EML file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms they have to be stored in nested lists within the list of the parent term. <add code example></p>
+<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. Instead of creating the meta file by hand, this process can be more easily automated. We created a R function that can be found here, which takes every column name and directly retrieves its IRI from the corresponding namespace.</p>
 
 </div>
 </div>
@@ -226,7 +379,7 @@ For all terms containing text the “xml:lang” attribute should be added if th
         </div>
       </div>
 <a href="structuring-your-standardised-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="glossary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

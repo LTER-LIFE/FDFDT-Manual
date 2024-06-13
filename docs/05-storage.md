@@ -1,9 +1,9 @@
 # Storing your data
-Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by mobilising your data to an online repository. 
+Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by [mobilising](#mobilisation) your data to an online repository. 
 
 **Mobilising raw or standardised data?**
 
-<Mobilising raw data and benefits. Mobilising standard data and benefits. Metadata can “always” be mobilised.>
+<Mobilising raw data and benefits. Mobilising [standard](#standardise) data and benefits. [Metadata](#metadata) can “always” be mobilised.>
 
 ## Choosing a repository 
 The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:
@@ -18,11 +18,11 @@ Check which repositories your direct colleagues in your organisation, or other d
 
 **Is a persistent identifier assigned? **
 
-To ensure that your dataset can always be found, it is important that your data is associated with a persistent identifier (PID). Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.   
+To ensure that your dataset can always be found, it is important that your data is associated with a [persistent identifier (PID)](#PID). Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.   
 
 **How can the dataset be accessed?**
 
-Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an API (Application Programming Interfaces)? Can the data be easily accessed?
+Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an [API (Application Programming Interfaces)](#API)? Can the data be easily accessed?
 
 **Is metadata stored persistently even when the data is no longer available?**
 
@@ -40,11 +40,11 @@ There are repositories that obtain the custody of your data once it is uploaded 
 Here we want to provide you with some examples of commonly used repositories for biodiversity data but this is of course a non-exclusive list and other options might be more suitable for your data.
 
 ### Global repositories
-**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as Darwin Core, and is openly accessible to everyone. 
+**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
 
 **OBIS**, the [Ocean Biodiversity Information System](https://obis.org/), is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
 
-Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a Darwin Core Archive (for more information see later chapters). There is extensive documentation on how to use the IPT by GBIF [here](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide). Once the dataset is published it is assigned a DOI.
+Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a [Darwin Core Archive](#DwC-A) (for more information see later chapters). There is extensive documentation on how to use the IPT by GBIF [here](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide). Once the dataset is published it is assigned a DOI.
 
 **Dataverse** is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found [here](https://dataverse.org/installations).
 
@@ -59,7 +59,7 @@ Since the project partners behind this guide are situated in the Netherlands, we
 
 - The metadata is finable through web services like Google dataset search
 
-- The data is easily retrievable through an API 
+- The data is easily retrievable through an [API](#API) 
 
 - There is versioning to track changes and re-uploads of the data
 

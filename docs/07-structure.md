@@ -1,6 +1,6 @@
 # Structuring your standardised data
 
-Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby standardising your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more FAIR is to also standardise the structure of your data.
+Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby [standardising](#standardise) your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more [FAIR](#FAIR) is to also standardise the structure of your data.
 
 Specifically tailored to Darwin Core, we present two options to structure your data in the following: a relational database and the Darwin Core Archive.
 
@@ -15,19 +15,19 @@ In contrast to Darwin Core Archives (see Chapter Darwin Core Archive), relationa
 <p class="caption">(\#fig:relational-database)**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked.</p>
 </div>
 
-## Darwin Core Archive
+## Darwin Core Archive 
 
-For biodiversity data that uses Darwin Core terms, Darwin Core Archives (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories GBIF and OBIS.
+For biodiversity data that uses [Darwin Core](#DwC) terms, [Darwin Core Archives](#DwC-A) (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories [GBIF](#GBIF) and [OBIS](#OBIS).
 
 There are four main components that together, bundled in one zip-folder, build the Darwin Core Archive:
 
--   the core file
+-   the [core](#core) file
 
--   several extension files (optional)
+-   several [extension](#extension) files (optional)
 
--   an EML file (see later chapter)
+-   an [EML](#eml) file (see later chapter)
 
--   a meta XML file (see later chapter).
+-   a [meta XML](#metaxml) file (see later chapter).
 
 ## The Core & its extensions
 
@@ -42,7 +42,7 @@ The core file is the central element of the archive to which each of the extensi
 
 The first step to build your archive therefore is to choose your core file. Which core to choose depends on the type of your data, which for biodiversity data is likely on of the following:
 
-1.  Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: **Event**
+1.  Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: [**Event**](#event)
 
 2.  Checklist data: data contains information on annotated species checklists, taxonomic catalogues or other information about taxa. → core file: **Taxon**
 
@@ -62,9 +62,9 @@ Once you have determined your core and it is clear which information goes into i
 
 -   **Occurrence** (if occurrence is not the core)
 
-- **Taxon** (if taxon is not the core)
+-   **Taxon** (if taxon is not the core)
 
--   (extended) measurement or fact: The **measurementOrFact** file contains information on all the actual measurement values or facts that have been recorded for the records in the core file. The measurementOrFact file is always an extension file. There is also the **extendedMeasurementOrFact** extension, which is developed to be used with an event core and creates an additional link between the occurrence extension file and the measurements by including the occurrenceID next to the coreID (i.e. eventID).
+-   (extended) measurement or fact: The [**measurementOrFact**](#measurementorfact) file contains information on all the actual measurement values or facts that have been recorded for the records in the core file. The measurementOrFact file is always an extension file. There is also the **extendedMeasurementOrFact** extension, which is developed to be used with an event core and creates an additional link between the occurrence extension file and the measurements by including the occurrenceID next to the coreID (i.e. eventID).
 
 -   **ResourceRelationship**: describes the relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset
 
@@ -88,7 +88,7 @@ In the Darwin Core Archive the Darwin Core terms are sorted into the different f
 
 ### General terms (Terms of class Record-level)
 
-There are terms that can always be included in the core-file, independent of what the core is. Those are record-level terms, which are generic and can apply to any type of records in the data. The content of these terms can be considered metadata, which is why it is likely that you do not have corresponding columns in your data yet but need to create new columns. Many of these terms are from the Dublin Core namespace and few come with a fixed vocabulary to use to fill them.
+There are terms that can always be included in the core-file, independent of what the core is. Those are record-level terms, which are generic and can apply to any type of records in the data. The content of these terms can be considered [metadata](#metadata), which is why it is likely that you do not have corresponding columns in your data yet but need to create new columns. Many of these terms are from the [Dublin Core](#dublincore) namespace and few come with a fixed vocabulary to use to fill them.
 
 The following terms can be useful to add, while none of them are required:
 
@@ -123,28 +123,28 @@ The event file can include the following terms:
 -   all terms of the class GeologicalContext
 
 :::{.sortTermsBox}
-Required: 
+<span style="color: #d111d4ff;">**Required**:</span>
 
-- eventID
+- <span style="color: #d111d4ff;">eventID</span>
 
-- eventDate
+- <span style="color: #d111d4ff;">eventDate</span>
 
-- samplingProtocol
+- <span style="color: #d111d4ff;">samplingProtocol</span>
 
-- sampleSizeValue & sampleSizeUnit
+- <span style="color: #d111d4ff;">sampleSizeValue & sampleSizeUnit</span> 
 
 
-Recommended:
+<span style="color: #dd7f08ff;">**Recommended**:</span>
 
-- parentEventID (if applicable)
+- <span style="color: #dd7f08ff;">parentEventID (if applicable)</span>
 
-- samplingEffort
+- <span style="color: #dd7f08ff;">samplingEffort</span>
 
-- decimalLatitude & decimalLongitude & geodeticDatum
+- <span style="color: #dd7f08ff;">decimalLatitude & decimalLongitude & geodeticDatum</span>
 
-- coordinateUncertaintyInMeters
+- <span style="color: #dd7f08ff;">coordinateUncertaintyInMeters</span>
 
-- countryCode
+- <span style="color: #dd7f08ff;">countryCode</span>
 
 :::
 
@@ -158,30 +158,30 @@ All of the terms that can be included in the event file can also be included in 
 - all terms of the class Identification
 
 :::{.sortTermsBox}
-Required:
+<span style="color: #d111d4ff;">**Required**:</span>
 
-- scientificName
+- <span style="color: #d111d4ff;">scientificName</span>
 
-- occurrenceStatus
+- <span style="color: #d111d4ff;">occurrenceStatus</span>
 
-- basisOfRecord
+- <span style="color: #d111d4ff;">basisOfRecord</span>
 
-- occurrenceID
+- <span style="color: #d111d4ff;">occurrenceID</span>
 
 
-Recommended:
+<span style="color: #dd7f08ff;">**Recommended**:</span>
 
-- taxonRank
+- <span style="color: #dd7f08ff;">taxonRank</span>
 
-- kingdom (or other higher taxonomy)
+- <span style="color: #dd7f08ff;">kingdom (or other higher taxonomy)</span>
 
-- decimalLongitue & decimalLatitude & geodeticDatum
+- <span style="color: #dd7f08ff;">decimalLongitue & decimalLatitude & geodeticDatum</span>
 
-- coordinateUncertaintyInMeters
+- <span style="color: #dd7f08ff;">coordinateUncertaintyInMeters</span>
 
-- countryCode
+- <span style="color: #dd7f08ff;">countryCode</span>
 
-- individualCount or organismQuantity & organismQuantityType
+- <span style="color: #dd7f08ff;">individualCount or organismQuantity & organismQuantityType</span>
 
 :::
 
@@ -190,25 +190,25 @@ Recommended:
 The taxon file only contains the record-level terms and all terms of the class taxon. 
 
 :::{.sortTermsBox}
-Required: 
+<span style="color: #d111d4ff;">**Required**:</span> 
 
-- taxonID
+- <span style="color: #d111d4ff;">taxonID</span>
 
-- scientificName
+- <span style="color: #d111d4ff;">scientificName</span>
 
-- taxonRank
+- <span style="color: #d111d4ff;">taxonRank</span>
 
 
-Recommended:
+<span style="color: #dd7f08ff;">**Recommended**:</span>
 
-- kingdom (or other higher taxonomy)
+- <span style="color: #dd7f08ff;">kingdom (or other higher taxonomy)</span>
 
-- parentNameUsageID
+- <span style="color: #dd7f08ff;">parentNameUsageID</span>
 
-- acceptedNameUsageID
+- <span style="color: #dd7f08ff;">acceptedNameUsageID</span>
 
 :::
 
 ### MeasurementOrFact file
 
-The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included. The extendedMeasurementOrFact extension additionally contains the occurrenceID and three ID fields (measurementTypeID, measurementValueID, measurementUnitID) which are however not from the Darwin Core namespace but refer to OBIS. As their IRIs are not resolvable, we would not recommend using them. 
+The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included. The extendedMeasurementOrFact extension additionally contains the occurrenceID and three ID fields (measurementTypeID, measurementValueID, measurementUnitID) which are however not from the Darwin Core namespace but refer to OBIS. As their [IRIs](#URI) are not resolvable, we would not recommend using them. 

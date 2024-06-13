@@ -23,14 +23,14 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-12" />
+<meta name="date" content="2024-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="structuring-your-standardised-data.html"/>
+<link rel="prev" href="glossary.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -58,6 +58,28 @@
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
@@ -99,9 +121,9 @@
 </ul></li>
 <li class="part"><span><b>How-to chapters</b></span></li>
 <li class="chapter" data-level="3" data-path="workflow.html"><a href="workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
-<li class="chapter" data-level="4" data-path="describe-your-data---metadata-content.html"><a href="describe-your-data---metadata-content.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
+<li class="chapter" data-level="4" data-path="describe-data.html"><a href="describe-data.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="describe-your-data---metadata-content.html"><a href="describe-your-data---metadata-content.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
+<li class="chapter" data-level="4.1" data-path="describe-data.html"><a href="describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="storing-your-data.html"><a href="storing-your-data.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
 <ul>
@@ -146,13 +168,37 @@
 <li class="chapter" data-level="6.7.5" data-path="standardise-your-data.html"><a href="standardise-your-data.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>6.7.5</b> World Registry of Marine Species (WoRMS)</a></li>
 <li class="chapter" data-level="6.7.6" data-path="standardise-your-data.html"><a href="standardise-your-data.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
-<li class="chapter" data-level="6.8" data-path="standardise-your-data.html"><a href="standardise-your-data.html#assigningcreating-guid"><i class="fa fa-check"></i><b>6.8</b> Assigning/Creating GUID</a></li>
+<li class="chapter" data-level="6.8" data-path="standardise-your-data.html"><a href="standardise-your-data.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
 <li class="chapter" data-level="7.2" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.3" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
+<li class="chapter" data-level="7.3.2" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>7.3.2</b> Occurrence core vs. event core</a></li>
 </ul></li>
+<li class="chapter" data-level="7.4" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#which-extensions"><i class="fa fa-check"></i><b>7.4</b> Which extension(s)?</a></li>
+<li class="chapter" data-level="7.5" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#arrange-darwin-core-terms-in-core-and-extension-files"><i class="fa fa-check"></i><b>7.5</b> Arrange Darwin Core terms in core and extension files</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>7.5.1</b> General terms (Terms of class Record-level)</a></li>
+<li class="chapter" data-level="7.5.2" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#event-file"><i class="fa fa-check"></i><b>7.5.2</b> Event file</a></li>
+<li class="chapter" data-level="7.5.3" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#occurrence-file"><i class="fa fa-check"></i><b>7.5.3</b> Occurrence file</a></li>
+<li class="chapter" data-level="7.5.4" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#taxon-file"><i class="fa fa-check"></i><b>7.5.4</b> Taxon file</a></li>
+<li class="chapter" data-level="7.5.5" data-path="structuring-your-standardised-data.html"><a href="structuring-your-standardised-data.html#measurementorfact-file"><i class="fa fa-check"></i><b>7.5.5</b> MeasurementOrFact file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html"><i class="fa fa-check"></i><b>8</b> Standardise and structure your metadata</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
+<li class="chapter" data-level="8.2" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
+<li class="chapter" data-level="8.3" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
+<li class="chapter" data-level="8.4" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
+<li class="chapter" data-level="8.5" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#structural-metadata---the-meta.xml-file"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
+<li class="chapter" data-level="8.6" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -177,13 +223,36 @@
 <div id="references" class="section level1 unnumbered hasAnchor">
 <h1>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div class="csl-entry">
+Pagano, Pasquale, Leonardo Candela, and Donatella Castelli. 2013. <span>“Data Interoperability.”</span> <em>Data Science Journal</em> 12 (0): GRDI19–25. <a href="https://doi.org/10.2481/dsj.grdi-004">https://doi.org/10.2481/dsj.grdi-004</a>.
+</div>
+<div class="csl-entry">
+Perdeck, A. C., M. E. Visser, and J. H. Van Balen. 2000. <span>“Great Tit Parus Major Survival, and the Beech-Crop Cycle.”</span> <em>Ardea</em> 88 (1): 99–108.
+</div>
+<div class="csl-entry">
+Reyserhove, Lien, Peter Desmet, Damiano Oldoni, Tim Adriaens, Diederik Strubbe, Amy J S Davis, Sonia Vanderhoeven, Filip Verloove, and Quentin Groom. 2020. <span>“<span class="nocase">A checklist recipe: making species data open and FAIR</span>.”</span> <em>Database</em> 2020 (November): baaa084. <a href="https://doi.org/10.1093/database/baaa084">https://doi.org/10.1093/database/baaa084</a>.
+</div>
+<div class="csl-entry">
+Richards, Kevin, Richard White, Nicky Nicolson, and Richard Pyle. 2011. <span>“A Beginner’s Guide to Persistent Identifiers.”</span> <a href="https://doi.org/10.35035/MJGQ-D052">https://doi.org/10.35035/MJGQ-D052</a>.
+</div>
+<div class="csl-entry">
+Visser, Marcel E., and Leonard J. M. Holleman. 2001. <span>“Warmer Springs Disrupt the Synchrony of Oak and Winter Moth Phenology.”</span> <em>Proceedings of the Royal Society of London. Series B: Biological Sciences</em> 268 (1464): 289–94. <a href="https://doi.org/10.1098/rspb.2000.1363">https://doi.org/10.1098/rspb.2000.1363</a>.
+</div>
+<div class="csl-entry">
+Vogels, Joost J., W. C. E. P. Verberk, J. T. Kuper, M. J. Weijters, R. Bobbink, and H. Siepel. 2021. <span>“How to Restore Invertebrate Diversity of Degraded Heathlands? A Case Study on the Reproductive Performance of the Field Cricket Gryllus Campestris (l.).”</span> <em>Frontiers in Ecology and Evolution</em> 9 (May). <a href="https://doi.org/10.3389/fevo.2021.659363">https://doi.org/10.3389/fevo.2021.659363</a>.
+</div>
+<div class="csl-entry">
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1). <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="structuring-your-standardised-data.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="glossary.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -215,7 +284,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/0x-references.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/10-references.Rmd",
 "text": "Edit"
 },
 "history": {

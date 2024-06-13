@@ -2,7 +2,7 @@
 
 ## Choose a data standard
 
-Once you have deposited your data to an online repository, you can start to standardise the data. The first step here is to choose a data standard, i.e., a standard format to name and organise the data. There is a wide range of standards available and many of them are directly tailored to a certain domain. Standards within the field of biodiversity are mostly maintained by the non-profit organisation [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/). Which standard is best suited for your data depends on its content and format. In order to choose a standard, you should consider:
+Once you have deposited your data to an online repository, you can start to [standardise](#standardise) the data. The first step here is to choose a data standard, i.e., a standard format to name and organise the data. There is a wide range of standards available and many of them are directly tailored to a certain domain. Standards within the field of biodiversity are mostly maintained by the non-profit organisation [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/). Which standard is best suited for your data depends on its content and format. In order to choose a standard, you should consider:
 
 **Is the standard accepted and used by your community?**
 
@@ -14,9 +14,9 @@ Data standards should be maintained, further developed and adapted by following 
 
 ## Data standards for biodiversity data
 
-[**Darwin Core (DwC)**](https://dwc.tdwg.org/) is a stable data standard tailored to describe biodiversity data by using a defined library of terms. It is an extension of the Dublin Core Metadata Initiative and maintained by TDWG (Biodiversity Information Standards). Darwin Core facilitates sharing of biodiversity data from various sources as every term has a clear definition and a URL, which can be used irrespective of technology, e.g., XML or RDF.
+[**Darwin Core (DwC)**](https://dwc.tdwg.org/) is a stable data standard tailored to describe biodiversity data by using a defined library of terms. It is an extension of the [Dublin Core](#dublincore) Metadata Initiative and maintained by TDWG (Biodiversity Information Standards). Darwin Core facilitates sharing of biodiversity data from various sources as every term has a clear definition and a [URL](#URI), which can be used irrespective of technology, e.g., [XML](#XML) or [RDF](#RDF).
 
-[**ABCD (Access to Biological Collection Data)**](https://abcd.tdwg.org/) is a standard to facilitate the access to and exchange of data about specimens and observations. It is a highly structured, comprehensive and still evolving standard that is, for example, used within GBIF. It is maintained by TDWG and consists of an ontology of terms to describe the data.
+[**ABCD (Access to Biological Collection Data)**](https://abcd.tdwg.org/) is a standard to facilitate the access to and exchange of data about specimens and observations. It is a highly structured, comprehensive and still evolving standard that is, for example, used within [GBIF](#GBIF). It is maintained by TDWG and consists of an [ontology](#ontology) of terms to describe the data.
 
 ## Tools to help you
 
@@ -30,13 +30,13 @@ For biodiversity data, a widely used data standard is Darwin Core. It is well su
 
 ### Why Darwin Core?
 
-Darwin Core is widely used in the ecological community and required for publishing data on big ecological data infrastructures, such as GBIF and OBIS. With its primary focus on taxa and their occurrences in nature, it is well suited to describe most ecological datasets, with the necessary flexibility to describe different types of data, such as observational or experimental data. Additionally, mapping variables of ecological data to Darwin Core terms is relatively straightforward and there is detailed description available on each Darwin Core term.
+Darwin Core is widely used in the ecological community and required for publishing data on big ecological data infrastructures, such as GBIF and [OBIS](#OBIS). With its primary focus on taxa and their occurrences in nature, it is well suited to describe most ecological datasets, with the necessary flexibility to describe different types of data, such as observational or experimental data. Additionally, mapping variables of ecological data to Darwin Core terms is relatively straightforward and there is detailed description available on each Darwin Core term.
 
 ## Mapping your data to Darwin Core
 
 ### Darwin Core namespaces
 
-The Darwin Core list of terms uses four different namespaces. The [dwc:](http://rs.tdwg.org/dwc/terms/) namespace marks Darwin Core terms and generally has string values, just as the [dc:](http://purl.org/dc/elements/1.1/) namespace that marks terms belonging to elements/1.1 namespace of Dublin Core. Terms of the [dwciri:](http://rs.tdwg.org/dwc/iri/) namespace are also Darwin Core terms but must be used with IRI values and are generally used in RDFs, while [dcterms:](http://purl.org/dc/terms/) refers to terms coming from the terms namespace of Dublin Core and their values depend on the details of the respective term.
+The Darwin Core list of terms uses four different namespaces. The [dwc:](http://rs.tdwg.org/dwc/terms/) namespace marks Darwin Core terms and generally has string values, just as the [dc:](http://purl.org/dc/elements/1.1/) namespace that marks terms belonging to elements/1.1 namespace of Dublin Core. Terms of the [dwciri:](http://rs.tdwg.org/dwc/iri/) namespace are also Darwin Core terms but must be used with [IRI](#URI) values and are generally used in RDFs, while [dcterms:](http://purl.org/dc/terms/) refers to terms coming from the terms namespace of Dublin Core and their values depend on the details of the respective term.
 
 ### Darwin Core terms
 
@@ -66,9 +66,13 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 ### Terms of class Event 
 Before assigning the terms of the event class to your data you should define what exactly one event is in your data. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data. 
 
-#### eventID & parentEventID
-The eventID should be a globally unique identifier or an identifier specific to the data set. For more information on how to create globally unique and persistent identifiers, see this chapter. 
+#### eventID & parentEventID {#eventID}
+The eventID can be a globally unique identifier or an identifier specific to the data set. For more information on how to create globally unique identifiers, see [this chapter](#GUIDcreation). 
 If you choose to create identifiers specific to the data set, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.  
+
+:::{.infobox}
+Note: Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
+:::
 
 :::{.examplebox}
 Example 1: 
@@ -107,8 +111,8 @@ Individual organisms can be assigned a unique organismID. This is helpful, if yo
 Occurrence is generally defined as the existence of an organism at a certain time and place. 
 
 #### occurrenceID
-The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can belong to one eventID, for example when different species occurred at the same event. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the eventID, which means extending the eventID of the corresponding event by a new block that numbers the occurrences of that event. If there are occurrence records for different event levels, extending the eventID will lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this and create unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1.
-OccurrenceID does however not have to be linked to a specific event and can also exist on its own, if there are no sampling events in the data. In that case, we recommend creating a dataset specific ID the same way we created the eventID. 
+The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can belong to one eventID, for example when different species occurred at the same event. You can either assign GUIDs (see [here](#GUIDcreation)) or identifiers specific to the data set. If you choose to create identifiers specific to the dataset, we recommend creating informative IDs that give information about the occurrences they describe (see [eventID](#eventID) for more details). If you also have an eventID in your data, we recommend proceeding with the block-structure of IDs we have already used there, which means extending the eventID of the corresponding event by a new block that numbers the occurrences of that event. If there are occurrence records for different event levels, extending the eventID will lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this and create unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1.
+
 
 :::{.examplebox}
 Example:
@@ -135,7 +139,7 @@ Taxonomic information should always be specified to the lowest level possible. W
 
 - scientificName
 
-The specificEpithet only contains the name of the first or species epithet, while the scientificName contains the full scientific name together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological taxonomy for the complete classification of the taxa in your data, to avoid misspellings or the use of outdated classification. 
+The specificEpithet only contains the name of the first or species epithet, while the scientificName contains the full scientific name together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological [taxonomy](#taxonomy) for the complete classification of the taxa in your data, to avoid misspellings or the use of outdated classification. 
 
 Generally, taxa sometimes come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section biological taxonomies.
 
@@ -169,7 +173,7 @@ In the occurrence file, it is important to quantify how many organisms have occu
 There is ongoing discussion on which of the two terms to use. Some suggest deprecating the term individualCount, as the same information can easily be stored in organismQuantity with higher flexibility. However, individualCount seems to be a standard term that is widely used in specific disciplines, where the terms are not necessarily viewed as redundant. Moreover, it was demanded that there should first be standardised vocabulary in place for organismQuantity and organismQuantityType. Based on the greater flexibility and the potential of deprecating individualCount, we recommend using organismQuantity when possible.
 
 ### Terms of class Measurement or fact {#mof}
-The measurement or fact terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column. 
+The [measurement or fact](#measurementorfact) terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column. 
 
 #### measurementValue & measurementUnit
 After transforming your data into the long format, the column containing the measured values or facts can be mapped to the Darwin Core term measurementValue. Measurements come with units, which are often either stored within the column heading or not specified at all in the raw data. Darwin Core accounts for that by the term measurementUnit, which has to be added if you use measurementValue. It is best practice to use SI (International System of Units) units if possible. For unitless measurements the measurementUnit should still be present in the data but can be left empty/filled with NA.
@@ -202,7 +206,7 @@ If there are measurements at different event levels, extending the occurrenceID 
 ## Ontologies and controlled vocabulary
 
 Ontologies provide definitions of terms by defining their relation to other terms in a human interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain. In simpler words, ontologies define terms and set them in relation to one another. With these references you can ensure that terms in your data are always interpreted the same way and it is clear for other users what each term means. This is especially useful for filling in Darwin Core terms like **measurementType** or **measurementMethod** (see chapter [Terms of class Measurement or fact](#mof)).
-Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri is a bit more cumbersome, as there are no look-up servers where you can directly query several thesauri at once. For filling in the keywords of your metadata a thesaurus can however be quite helpful and is recommended to use, so we want to list a few thesauri tailored to biodiversity or ecological data:
+Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri is a bit more cumbersome, as there are no look-up servers where you can directly query several thesauri at once. For filling in the keywords of your [metadata](#metadata) a thesaurus can however be quite helpful and is recommended to use, so we want to list a few thesauri tailored to biodiversity or ecological data:
 
 - [GEMET](https://www.eionet.europa.eu/gemet/en/themes/) - GEneral Multilingual Environmental Thesaurus
 
@@ -212,19 +216,19 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 
 ### Tools to help you
 
-- The [Ontology Lookup Service](http://ebi.ac.uk/ols4/) (OLS) is a repository for biomedical ontologies but it also holds plenty of terms and ontologies relevant for ecology. You can search across ontologies for specific terms or filter for certain ontologies. There is also an API available to facilitate the use of OLS in workflows/programs.
+- The [Ontology Lookup Service](http://ebi.ac.uk/ols4/) (OLS) is a repository for biomedical ontologies but it also holds plenty of terms and ontologies relevant for ecology. You can search across ontologies for specific terms or filter for certain ontologies. There is also an [API](#API) available to facilitate the use of OLS in workflows/programs.
 
 - [Ontobee](http://ontobee.org) is a linked data server and another option to browse through around 260 different ontologies and directly search for specific terms. 
 
 - If you are more interested in finding an ontology dedicated to a specific domain, looking directly at the [OBO foundry](http://obofoundry.org/) can be helpful. The OBO Foundry (Open Biological and Biomedical Ontology Foundry) is tailored to biological sciences and develops and maintains ontologies. It is not searchable for individual terms but provides information on each ontology. 
 
-- If you chose a specific ontology and before using it you want to assess how FAIR this ontology is, you can use [FOOPS!](https://foops.linkeddata.es/FAIR_validator.html#). It is considered a ontology pitfall scanner for FAIR and by providing the URI of an ontology it assesses how well the ontology matches the FAIR principles. 
+- If you chose a specific ontology and before using it you want to assess how [FAIR](#FAIR) this ontology is, you can use [FOOPS!](https://foops.linkeddata.es/FAIR_validator.html#). It is considered a ontology pitfall scanner for FAIR and by providing the [URI](#URI) of an ontology it assesses how well the ontology matches the FAIR principles. 
 
 ## Biological taxonomies
 There is a diversity of biological taxonomies that you can use to query taxonomic information for the taxa occurring in your dataset. In this guide we cannot cover all of them but we want to provide some more information on a selected set of taxonomies. 
 
 ### GBIF Backbone taxonomy
-The [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), as the name indicates, builds the basis of the indexing of the species occurrence records stored at GBIF and aims to cover all the species that GBIF deals with. It further aims to bring all different taxa names together and organise them. Taxa are assembled from a hierarchical list of 105 sources, using the Catalogue of Life (COL) as a starting point and thereby tightly linking these two taxonomies. Species not found in the COL are then assembled from the remaining sources that are checked afterwards, making the GBIF backbone taxonomy relatively wide-ranging. 
+The [GBIF backbone taxonomy](https://doi.org/10.15468/39omei), as the name indicates, builds the basis of the indexing of the species occurrence records stored at [GBIF](#GBIF) and aims to cover all the species that GBIF deals with. It further aims to bring all different taxa names together and organise them. Taxa are assembled from a hierarchical list of 105 sources, using the Catalogue of Life (COL) as a starting point and thereby tightly linking these two taxonomies. Species not found in the COL are then assembled from the remaining sources that are checked afterwards, making the GBIF backbone taxonomy relatively wide-ranging. 
 
 ### Catalogue of Life (COL)
 The [Catalogue of Life](https://www.catalogueoflife.org/) is an international community for listing species and aims to create a consistent and up-to-date list of currently accepted species across all known taxonomic groups, which is freely accessible. Besides listing taxa, it aims to show all scientific names a taxon is referenced by. 
@@ -239,12 +243,12 @@ The [Encyclopedia of Life](https://www.eol.org/) aims to gather knowledge about 
 [WoRMS](https://www.marinespecies.org/) is authoritative classification and catalogue for marine taxa managed by taxonomists and thematic experts that includes accepted and synonym taxonomic information which allows interpretation of the taxonomic literature. It is the recommended biological taxonomy to retrieve information from when publishing data to OBIS.
 
 ### Tools to help you 
-If you want to retrieve taxonomic information directly from one of the abovementioned taxonomies, there is a helpful R package available that effectively uses the APIs of each of these taxonomies, which is called [`taxize`](https://cran.r-project.org/web/packages/taxize/index.html). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., `get_gbifid_()` retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (`gnr_resolve()`). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found. 
+If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the [APIs](#API) of each of these taxonomies, which is called [`taxize`](https://cran.r-project.org/web/packages/taxize/index.html). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., `get_gbifid_()` retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (`gnr_resolve()`). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found. 
 
 If you query your taxonomic information from a taxonomy you should however always check manually, whether the taxa are identified correctly. Not all taxa are present in all taxonomies or names between taxa are so similar that they are confused for the same taxon in the name matching process.
 
-## Assigning/Creating GUID
-A globally unique identifier (GUID) is a text string of 36 characters that can be used, amongst others, to assign unique identifiers to each data record. It was established as a variation of the Universally Unique Identifier (UUID) but now both are used synonymously. In contrast to other persistent identifiers (PID) that are assigned to the data level, such as DOI, GUIDs do not have to be issued by a central authority but can be created individually by using a generation algorithm/generator. There are different types of GUID, for more information see [here](https://www.techtarget.com/searchwindowsserver/definition/GUID-global-unique-identifier). 
+## Creating GUIDs {#GUIDcreation}
+A globally unique identifier (GUID) is a text string of 36 characters that can be used, amongst others, to assign unique identifiers to each data record. It was established as a variation of the Universally Unique Identifier (UUID) but now both are used synonymously. In contrast to other [persistent identifiers (PID)](#PID) that are assigned to the data level, such as DOI, GUIDs do not have to be issued by a central authority but can be created individually by using a generation algorithm/generator. There are different types of GUID, for more information see [here](https://www.techtarget.com/searchwindowsserver/definition/GUID-global-unique-identifier). 
 
 A GUID is build as follows:
 
