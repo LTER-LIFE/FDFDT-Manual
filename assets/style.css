@@ -40,43 +40,51 @@ a:hover {
 /*------------Table of Contents (TOC)----------- */
 
 .tocify {
-  font-size: 16px;
+  font-size: 18px;
 }
 .tocify ul, .tocify li { /* Increases spacing between TOC headers*/
     line-height: 25px !important;
 }
 
 /*------------Info boxes----------- */
-.disclaimer {
+.disclaimerimg{
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #4cdc8e8a;
-  border-radius: 10px;
-  background: #b8f5cc19 5px center/3em no-repeat;
+  background: #f5f5f5 5px center/3em no-repeat;
+}
+.disclaimerimg{
+  background-image: url("../images/icon_disclaimer.png");
+}
+.disclaimer{
+  padding: 1em 1em 1em 5em;
+  margin-bottom: 10px;
+  border: 2px dashed #c02902ff;
+  border-radius: 13px;
+  background: #c0290217 5px center/3em no-repeat;
 }
 .infobox {
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  border: 2px solid #4cdc8e8a;
-  border-radius: 10px;
-  background: #b8f5cc19 5px center/3em no-repeat;
+  padding: 1em 1em 1em 5em;
+  margin-bottom: 30px;
+  border: 3px dashed #ef9e05f9;
+  border-radius: 13px;
+  background: #ef9e0510 2px center / 3em no-repeat;
 }
 
 .examplebox{
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  border: 2px solid #4cdc8e8a;
-  border-radius: 10px;
-  background: #b8f5cc19 5px center/3em no-repeat;
+  padding: 1em 1em 1em 5em;
+  margin-bottom: 30px;
+  border: 3px solid #4cdc8eff;
+  border-radius: 13px;
+  background: #4cdc8e17 5px center/3em no-repeat;
   overflow: auto;
 }
 
 .sortTermsBox{
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #51A3A3;
+  border: 3px solid #4cdc8eff;
   border-radius: 10px;
-  background: #cbe5e519 5px center/3em no-repeat;
+  background: #4cdc8e17 5px center/3em no-repeat;
   overflow: auto;
 }
 /*.infoimage {
@@ -85,16 +93,15 @@ a:hover {
 
 /*------------Tables----------- */
 th {
-  background-color: #42da887d;
-  color: white;
-  border-bottom: 1px solid #ddd;
+  background-color: #4cdc8e8a;
+  color: black;
   text-align: center;
 }
 
-tr:nth-child(even) {background-color: #04aa6d62;}
+tr:nth-child(even) {background-color: #f8f8f8;}
 
 td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
 
 .tableDwCterms{

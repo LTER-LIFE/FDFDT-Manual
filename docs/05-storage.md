@@ -34,7 +34,7 @@ Not all repositories provide version control, meaning that changes in the data a
 
 **Do you retain custody of your data or is it transferred to the repository?**
 
-There are repositories that obtain the custody of your data once it is uploaded there, meaning that the data management is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited. 
+There are repositories that obtain the custody of your data once it is uploaded there, meaning that the [data management](#datamanagement) is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited. 
 
 ## Repositories to store biodiversity data
 Here we want to provide you with some examples of commonly used repositories for biodiversity data but this is of course a non-exclusive list and other options might be more suitable for your data.

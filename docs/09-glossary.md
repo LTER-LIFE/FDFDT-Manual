@@ -23,7 +23,12 @@ Darwin Core Archives are a way of structuring a dataset that uses the Darwin Cor
 #### Data lifecycle {- #datalifecycle}
 The data lifecycle describes the stages that the data goes through, starting with planning of data collection, followed by the data collection or acquisition. Afterwards the data is processed to then be used and analysed. After that, the data should be properly stored and curated to be preserved in the long run, which finally leads to publishing and sharing the data, allowing others to reuse it, with which the cycle can start again. There are however different versions of the data lifecycle, differing slightly in the respective steps. 
 
-- More information: ??
+- More information: https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf
+
+#### Data management {- #datamanagement}
+Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others.
+
+More information: https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf
 
 #### Dublin Core {- #dublincore}
 Dublin Core is a metadata standard consisting of a set of 15 terms used to describe metadata. The terms themselves consist of several dozen properties, classes, data types, and vocabulary encoding schemes and are maintained by the Dublin Core Metadata Initiative (DCMI).
@@ -70,13 +75,17 @@ Measurement or fact is a Darwin Core class describing measurement values and or 
 #### Metadata {- #metadata}
 Metadata contains information about other data and provides descriptions that make the data easier to understand and reuse. Structural metadata contains information about how the data is organised, what variables mean and how files relate to one another, while administrative metadata provides information about ownership, preservation and rights and licences of the data. Thirdly, descriptive metadata describes the background of the data, such as how, where and when it was collected, who is responsible and what contents the data cover.  
 
+More information: https://www.w3.org/TR/dwbp/#metadata
+
 #### Meta.xml {- #metaxml}
 The meta.xml file is a component of the Darwin Core Archive and contains its structural metadata in an XML file. The file describes how the data files in the archive are linked to each other and provides for each column the identifier of the corresponding Darwin Core term.  
 
 - More information: https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide
 
 #### Mobilisation {- #mobilisation}
-Transferring data that is stored locally to an online repository.
+Transferring data that is stored locally to an online repository and thereby enabling its reuse by others. 
+
+More information: https://www.gbif.org.nz/mobilising/
 
 #### OBIS {- #OBIS}
 OBIS, the Ocean Biodiversity Information System, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
@@ -96,13 +105,20 @@ Ontologies provide definitions of terms by defining their relation to other term
 #### Persistent identifier (PID) {- #PID}
 A persistent identifier is a unique identification code belonging to a digital resource that ensures persistent identification of the resource, even if the web address of the creator of the resource changes. For detailed information on different PID systems see [here](https://www.pidwijzer.nl/en). 
 
+#### Provenance {- #provenance}
+Provenance is a form of metadata that provides information about the history of the dataset, which includes people and parties that were involved in its creation, as well as how, where and when the data was created. Additionally, the provenance details should inform about previous versions of the data and the change history.
+
+More information: https://www.pldn.nl/wiki/Provenance
+
 #### RDF {- #RDF}
 RDF, the resource description framework, is a framework to represent interconnected data on the web. In RDF, objects are linked using semantic triples consisting of two objects and the link between them, often referred to as subject (= object 1), predicate ( = link) and object (= object 2). RDFs are machine readable and allow high interoperability between different data sources. 
 
 - Source: https://www.w3.org/RDF/
 
 #### Standardisation {- #standardise}
-Converting data and/or metadata to a standard format.
+Converting data and/or metadata to a standard format to increase compatibility with other data. 
+
+More information: https://www.sisense.com/glossary/data-standardization/
 
 #### Star schema {- #starschema}
 The star schema is the way the core file and the extension files are organised in the Darwin Core Archive. Each of the extension files directly links to the core file, while they cannot link to one another, creating what is considered to be a star-shape. 

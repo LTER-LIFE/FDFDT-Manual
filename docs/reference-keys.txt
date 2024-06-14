@@ -84,3 +84,4 @@ eml-terms
 structural-metadata---the-meta.xml-file
 create-xml-files-in-r
 glossary
+references

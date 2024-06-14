@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-13" />
+<meta name="date" content="2024-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -98,8 +98,10 @@ div.csl-indent {
 <li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
 
 <li class="divider"></li>
+<li class="part"><span><b>Background</b></span></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who this guide is for</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management"><i class="fa fa-check"></i>Why you should use this guide and improve your data management</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
@@ -199,7 +201,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.6" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -225,7 +227,7 @@ div.csl-indent {
 <p>To illustrate the process of FAIRifying ecological data we will rely on several example data sets we used to develop this guide. These data sets were selected because they cover a broad variety of different structures and different levels of <a href="glossary.html#FAIR">FAIR</a>, ranging from observational to experimental data and from highly unstructured and undocumented data to data that already fulfils some of the FAIR principles.</p>
 <div id="budburst" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Bud burst data<a href="example-datasets.html#budburst" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The first dataset contains long-term data on the phenology of different tree species. Every year in spring, deciduous trees develop new leaves from their buds at a certain point in time. The timing of this can be crucial for herbivores, such as caterpillars, relying on newly emerging leaves as an important food source. To monitor shifts in tree phenology, the Department of Animal Ecology at NIOO has assessed leaf development every year since 1988 by scoring the stage of bud opening on a fixed scale (cf. <span class="citation">Visser and Holleman (<a href="#ref-Visser_2001">2001</a>)</span>).</p>
+<p>The first dataset contains long-term data on the phenology of different tree species. Every year in spring, deciduous trees develop new leaves from their buds at a certain point in time. The timing of this can be crucial for herbivores, such as caterpillars, relying on newly emerging leaves as an important food source. To monitor shifts in tree phenology, the Department of Animal Ecology at NIOO has assessed leaf development every year since 1988 by scoring the stage of bud opening on a fixed scale (cf. <span class="citation">Visser &amp; Holleman (<a href="#ref-Visser_2001">2001</a>)</span>).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:budburst"></span>
 <img src="images/ID-card_budburst.png" alt="FAIR assessment of bud burst data." width="50%" />
 <p class="caption">
@@ -235,7 +237,7 @@ Figure 2.1: FAIR assessment of bud burst data.
 </div>
 <div id="beechcrop" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Beech crop data<a href="example-datasets.html#beechcrop" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A second data set collected by Animal Ecology/NIOO contains data on the amount of beech mast per year since 1976. Low, intermediate and high seed production in beech (Fagus sylvatica) trees alternate periodically over years. Since beech nuts are an important winter food resource for several species, such as passerine birds, seed availability is monitored yearly by collecting beech nuts in determined grids under a set of trees. These nuts are counted and weighted and based on this a so-called beech crop index can be calculated (cf. <span class="citation">Perdeck, Visser, and Van Balen (<a href="#ref-Perdeck_2000">2000</a>)</span>).</p>
+<p>A second data set collected by Animal Ecology/NIOO contains data on the amount of beech mast per year since 1976. Low, intermediate and high seed production in beech (Fagus sylvatica) trees alternate periodically over years. Since beech nuts are an important winter food resource for several species, such as passerine birds, seed availability is monitored yearly by collecting beech nuts in determined grids under a set of trees. These nuts are counted and weighted and based on this a so-called beech crop index can be calculated (cf. <span class="citation">Perdeck et al. (<a href="#ref-Perdeck_2000">2000</a>)</span>).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:beechcrop"></span>
 <img src="images/ID-card_beechcrop.png" alt="FAIR assessment of beech crop data." width="50%" />
 <p class="caption">
@@ -268,16 +270,16 @@ Figure 2.4: FAIR assessment of CLUE data.
 
 
 
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<h3> References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-Perdeck_2000" class="csl-entry">
-Perdeck, A. C., M. E. Visser, and J. H. Van Balen. 2000. <span>“Great Tit Parus Major Survival, and the Beech-Crop Cycle.”</span> <em>Ardea</em> 88 (1): 99–108.
+Perdeck, A. C., Visser, M. E., &amp; Van Balen, J. H. (2000). Great tit parus major survival, and the beech-crop cycle. <em>Ardea</em>, <em>88</em>(1), 99–108.
 </div>
 <div id="ref-Visser_2001" class="csl-entry">
-Visser, Marcel E., and Leonard J. M. Holleman. 2001. <span>“Warmer Springs Disrupt the Synchrony of Oak and Winter Moth Phenology.”</span> <em>Proceedings of the Royal Society of London. Series B: Biological Sciences</em> 268 (1464): 289–94. <a href="https://doi.org/10.1098/rspb.2000.1363">https://doi.org/10.1098/rspb.2000.1363</a>.
+Visser, M. E., &amp; Holleman, L. J. M. (2001). Warmer springs disrupt the synchrony of oak and winter moth phenology. <em>Proceedings of the Royal Society of London. Series B: Biological Sciences</em>, <em>268</em>(1464), 289–294. <a href="https://doi.org/10.1098/rspb.2000.1363">https://doi.org/10.1098/rspb.2000.1363</a>
 </div>
 <div id="ref-Vogels_2021" class="csl-entry">
-Vogels, Joost J., W. C. E. P. Verberk, J. T. Kuper, M. J. Weijters, R. Bobbink, and H. Siepel. 2021. <span>“How to Restore Invertebrate Diversity of Degraded Heathlands? A Case Study on the Reproductive Performance of the Field Cricket Gryllus Campestris (l.).”</span> <em>Frontiers in Ecology and Evolution</em> 9 (May). <a href="https://doi.org/10.3389/fevo.2021.659363">https://doi.org/10.3389/fevo.2021.659363</a>.
+Vogels, J. J., Verberk, W. C. E. P., Kuper, J. T., Weijters, M. J., Bobbink, R., &amp; Siepel, H. (2021). How to restore invertebrate diversity of degraded heathlands? A case study on the reproductive performance of the field cricket gryllus campestris (l.). <em>Frontiers in Ecology and Evolution</em>, <em>9</em>. <a href="https://doi.org/10.3389/fevo.2021.659363">https://doi.org/10.3389/fevo.2021.659363</a>
 </div>
 </div>
             </section>

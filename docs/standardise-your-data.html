@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-13" />
+<meta name="date" content="2024-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -98,8 +98,10 @@ div.csl-indent {
 <li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
 
 <li class="divider"></li>
+<li class="part"><span><b>Background</b></span></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who this guide is for</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-you-should-use-this-guide-and-improve-your-data-management"><i class="fa fa-check"></i>Why you should use this guide and improve your data management</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
@@ -199,7 +201,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.6" data-path="standardise-and-structure-your-metadata.html"><a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -437,15 +439,16 @@ div.csl-indent {
 <p>The eventID can be a globally unique identifier or an identifier specific to the data set. For more information on how to create globally unique identifiers, see <a href="standardise-your-data.html#GUIDcreation">this chapter</a>.
 If you choose to create identifiers specific to the data set, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.</p>
 <div class="infobox">
-<p>Note: Some guides about persistent identifiers (e.g., <span class="citation">Richards et al. (<a href="#ref-Richards">2011</a>)</span>) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.</p>
+<p><strong>Note:</strong></p>
+<p>Some guides about persistent identifiers (e.g., <span class="citation">Richards et al. (<a href="#ref-Richards">2011</a>)</span>) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.</p>
 </div>
 <div class="examplebox">
-<p>Example 1:
-This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event.</p>
+<p><strong>Example 1: </strong></p>
+<p>This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event.</p>
 </div>
 <div class="examplebox">
-<p>Example 2:
-In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-15 (= individual cricket number 1 and event group 15).</p>
+<p><strong>Example 2:</strong></p>
+<p>In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-15 (= individual cricket number 1 and event group 15).</p>
 </div>
 </div>
 <div id="date-information-eventdate-year-month-day" class="section level4 hasAnchor" number="6.5.3.2">
@@ -735,10 +738,10 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 
 </div>
 </div>
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<h3> References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-Richards" class="csl-entry">
-Richards, Kevin, Richard White, Nicky Nicolson, and Richard Pyle. 2011. <span>“A Beginner’s Guide to Persistent Identifiers.”</span> <a href="https://doi.org/10.35035/MJGQ-D052">https://doi.org/10.35035/MJGQ-D052</a>.
+Richards, K., White, R., Nicolson, N., &amp; Pyle, R. (2011). <em>A beginner’s guide to persistent identifiers</em>. <a href="https://doi.org/10.35035/MJGQ-D052">https://doi.org/10.35035/MJGQ-D052</a>
 </div>
 </div>
             </section>

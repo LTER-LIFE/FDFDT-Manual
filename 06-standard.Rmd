@@ -71,16 +71,20 @@ The eventID can be a globally unique identifier or an identifier specific to the
 If you choose to create identifiers specific to the data set, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.  
 
 :::{.infobox}
-Note: Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
+**Note:**
+
+Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
 :::
 
 :::{.examplebox}
-Example 1: 
+**Example 1: **
+
 This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event. 
 :::
 
 :::{.examplebox}
-Example 2: 
+**Example 2:** 
+
 In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-15 (= individual cricket number 1 and event group 15). 
 :::
 
