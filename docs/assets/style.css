@@ -19,81 +19,85 @@ pre code {
 body {
   text-align: justify;
   font-family: 'Urbanist';
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 h1, h2, h3, h4, h5 {
   text-align: left;
   font-family: 'Asap';
   font-size: 18px;
 }
-
-/*----------------- links ---------------------*/
-
-a { 
-  color: #119B01;
+.book .book-body .page-wrapper .page-inner section.normal a {
+    color: #15ce6aff; /*-colour of links*/
 }
-a:hover {
-    color: #107803; /* darker color when hovering */
-  }
-  
-  
+.book .book-body .page-wrapper .page-inner section.normal a:hover{
+    color: #0f924bff; 
+}
+.book .book-summary {
+  background:;
+  border-right: 2px solid rgba(0, 0, 0, .07);
+}
+.book .book-header h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+}
 /*------------Table of Contents (TOC)----------- */
 
-.tocify {
-  font-size: 18px;
-}
-.tocify ul, .tocify li { /* Increases spacing between TOC headers*/
-    line-height: 25px !important;
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
+    color: #15ce6aff; /*-colour of active header in TOC and hover colour-*/
 }
 
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+    display: block;
+    padding: 7px 11px;
+}
 /*------------Info boxes----------- */
 .disclaimerimg{
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  background: #f5f5f5 5px center/3em no-repeat;
+  background: #c0290217 10px center/4em no-repeat;
 }
 .disclaimerimg{
   background-image: url("../images/icon_disclaimer.png");
 }
 .disclaimer{
-  padding: 1em 1em 1em 5em;
+  padding: 0.5em 1em 0.5em 6em;
+  margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c02902ff;
+  border: 3.5px dashed #c02902ff;
   border-radius: 13px;
-  background: #c0290217 5px center/3em no-repeat;
 }
 .infobox {
-  padding: 1em 1em 1em 5em;
-  margin-bottom: 30px;
+  padding: 0.5em 1em 0.5em 6em;
+  margin-bottom: 36px;
   border: 3px dashed #ef9e05f9;
   border-radius: 13px;
-  background: #ef9e0510 2px center / 3em no-repeat;
 }
-
+.infoimg{
+   background: #ef9e0510 10px center/4em no-repeat;
+   background-image: url("../images/icon_note.png");
+}
 .examplebox{
   padding: 1em 1em 1em 5em;
   margin-bottom: 30px;
-  border: 3px solid #4cdc8eff;
+  border: 3px solid #15ce6aff;
   border-radius: 13px;
-  background: #4cdc8e17 5px center/3em no-repeat;
+  background: #15ce6a17 5px center/3em no-repeat;
   overflow: auto;
 }
-
 .sortTermsBox{
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 3px solid #4cdc8eff;
+  border: 3px solid #15ce6aff;
   border-radius: 10px;
-  background: #4cdc8e17 5px center/3em no-repeat;
+  background: #15ce6a17 5px center/3em no-repeat;
   overflow: auto;
 }
-/*.infoimage {
-   background-image: url("images/caution.png");
-}*/
 
 /*------------Tables----------- */
 th {
-  background-color: #4cdc8e8a;
+  background-color: #0f924bff;
   color: black;
   text-align: center;
 }

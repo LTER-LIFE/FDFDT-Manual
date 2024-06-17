@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-14" />
+<meta name="date" content="2024-06-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -438,8 +438,7 @@ div.csl-indent {
 <h4><span class="header-section-number">6.5.3.1</span> eventID &amp; parentEventID<a href="standardise-your-data.html#eventID" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The eventID can be a globally unique identifier or an identifier specific to the data set. For more information on how to create globally unique identifiers, see <a href="standardise-your-data.html#GUIDcreation">this chapter</a>.
 If you choose to create identifiers specific to the data set, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.</p>
-<div class="infobox">
-<p><strong>Note:</strong></p>
+<div class="infobox infoimg">
 <p>Some guides about persistent identifiers (e.g., <span class="citation">Richards et al. (<a href="#ref-Richards">2011</a>)</span>) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.</p>
 </div>
 <div class="examplebox">

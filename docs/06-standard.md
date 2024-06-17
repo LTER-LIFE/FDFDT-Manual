@@ -70,9 +70,7 @@ Before assigning the terms of the event class to your data you should define wha
 The eventID can be a globally unique identifier or an identifier specific to the data set. For more information on how to create globally unique identifiers, see [this chapter](#GUIDcreation). 
 If you choose to create identifiers specific to the data set, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.  
 
-:::{.infobox}
-**Note:**
-
+:::{.infobox .infoimg}
 Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
 :::
 

@@ -48,6 +48,6 @@ If you deposit your data online it is important to communicate to potential user
 |   [CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)   | [<img src="images/CCBY-NC-ND_logo.png" width="100"/>](images/CCBY-NC-ND_logo.png) | users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator and data cannot be used commercially                                |
 | [CC0 ("CC Zero")](https://creativecommons.org/publicdomain/zero/1.0/) |    [<img src="images/CC-Zero_logo.png" width="100"/>](images/CC-Zero_logo.png)    | copyrights are given up and work is put into the public domain                                                                                                                           |
 
-::: {#Note-licence .infobox .infoimage}
-**Note:** Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
+::: {#Note-licence .infobox .infoimg} 
+Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
 :::
