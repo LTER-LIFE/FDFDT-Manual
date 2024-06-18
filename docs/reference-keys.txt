@@ -46,7 +46,7 @@ geographic-descriptions-verbatimlocality-continent-islandgroup-island-country-mu
 terms-of-class-organism
 organismid
 terms-of-class-occurrence
-occurrenceid
+occurrenceID
 taxonomic-information
 individualcount-and-organismquantity
 mof

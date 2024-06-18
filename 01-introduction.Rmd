@@ -5,7 +5,7 @@
 Research data often is stored on local hard drives, not well described or not formatted in a consistent and standard way. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, @Wilkinson_2016 introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for **F**indable, **A**ccessible, **I**nteroperable and **R**eusable, which more concrete means the following:
 
 **Findable.** This means that the [metadata](#metadata) (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.
-
+  
 **Accessible.** It is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required.
 
 **Interoperable.** In order to integrate the data with other data and to incorporate it into workflows or applications, the data needs to be fully compatible with other data. In easier words this means that data resources should 'speak the same language' to be used together.
@@ -42,7 +42,7 @@ We therefore developed our own tool that provides you with a set of simple quest
 
 Besides the questions about structure, they are all directly based on the FAIR principles. Figure 2 visualises how the data properties in the assessment link to the letters of FAIR. Your answers will provide you with a circle-diagram showing how mature your dataset is in each of the properties and connected to that a list of chapters of this manual you can work through to further improve the maturity of your data.
 
-```{r echo = FALSE, out.width = '50%', fig.cap = 'Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR.'}
+```{r echo = FALSE, out.width = '30%', fig.cap = 'Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR.', fig.align = 'center'}
 
 knitr::include_graphics("images/Fig2_MSSS-FAIR.png")
 

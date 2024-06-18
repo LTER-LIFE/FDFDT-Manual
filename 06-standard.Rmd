@@ -74,13 +74,13 @@ If you choose to create identifiers specific to the data set, we recommend estab
 Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
 :::
 
-:::{.examplebox}
+:::{.examplebox .exampleimg}
 **Example 1: **
 
 This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event. 
 :::
 
-:::{.examplebox}
+:::{.examplebox .exampleimg}
 **Example 2:** 
 
 In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-15 (= individual cricket number 1 and event group 15). 
@@ -112,13 +112,13 @@ Individual organisms can be assigned a unique organismID. This is helpful, if yo
 ### Terms of class Occurrence 
 Occurrence is generally defined as the existence of an organism at a certain time and place. 
 
-#### occurrenceID
+#### occurrenceID {#occurrenceID}
 The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can belong to one eventID, for example when different species occurred at the same event. You can either assign GUIDs (see [here](#GUIDcreation)) or identifiers specific to the data set. If you choose to create identifiers specific to the dataset, we recommend creating informative IDs that give information about the occurrences they describe (see [eventID](#eventID) for more details). If you also have an eventID in your data, we recommend proceeding with the block-structure of IDs we have already used there, which means extending the eventID of the corresponding event by a new block that numbers the occurrences of that event. If there are occurrence records for different event levels, extending the eventID will lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this and create unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1.
 
 
-:::{.examplebox}
-Example:
-- **crickets**: occurrenceID = Cr1-18_1 (corresponding to eventID Cr1-18, indicating the first occurrence of that event)
+:::{.examplebox .exampleimg}
+
+**crickets**: occurrenceID = Cr1-05_1 (corresponding to eventID Cr1-05, indicating the first occurrence of that event)
 
 :::
 
@@ -147,8 +147,8 @@ Generally, taxa sometimes come with several authorship information or with synon
 
 However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can quickly occur through to, for example, similar taxa names or for rare species. 
 
-:::{.examplebox}
-Example 1: 
+:::{.examplebox .exampleimg}
+
 For the cricket dataset, we queried the taxonomic information of the European field cricket (*Gryllus campestris*) directly from GBIF, which resulted in the following taxonomic terms (table XX).
 
 **Table 6.1. Taxonomic information for *Gryllus campestris* as retrieved from GBIF stored in respective Darwin Core terms.**
@@ -158,8 +158,8 @@ scientificName |kingdom|phylum|class|order|family|genus|specificEpithet|taxonRan
 Gryllus campestris Linnaeus, 1758|Animalia|Arthropoda|Insecta|Orthoptera|Gryllidae|Gryllus|campestris|species|
 :::
 
-:::{.examplebox}
-Example 2:
+:::{.examplebox .exampleimg}
+
 The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table XX where the species name in the data was Deschampsia flexuos which is a synonym of the species name Avenella flexuosa. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
 
 **Table 6.2. Taxonomic information for *Deschampsia flexuosa*, which is a synonym of *Avenella flexuosa*, as retrieved from GBIF and stored in respective Darwin Core terms.**
@@ -183,7 +183,7 @@ After transforming your data into the long format, the column containing the mea
 #### measurementType & measurementMethod
 With the long format and all measurements being stored in measurementValue, you additionally need to store the information **what** has been measured, i.e., what each measurement or fact means. This is done by the term measurementType. Additionally, you should use the term measurementMethod that states how each measurement was measured. For both terms, it is recommended to use controlled vocabulary where possible. For more information on the use of ontologies, see section ontologies. 
 
-:::{.examplebox}
+:::{.examplebox .exampleimg}
 Example: 
 To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).
 
@@ -202,8 +202,16 @@ To exemplify how the four terms measurementValue, measurementUnit, measurementTy
 :::
 
 #### measurementID
-The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the eventID and occurrenceID. 
-If there are measurements at different event levels, extending the occurrenceID by a separator and a number for the measurement, will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements (e.g., HV2004_99_5_1_m2 for the second measurement). 
+The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the [eventID](#eventID) and [occurrenceID](#occurrenceID). 
+If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement, will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements.
+
+:::{.examplebox .exampleimg}
+**budburst**: measurementID = HV2004_99_5_1_m2 for the second measurement of the eventID HV2004_99_5 and the occurrenceID HV2004_99_5_1
+
+
+**crickets**: measurementID = Cr1-05_1_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05_1
+
+::: 
 
 ## Ontologies and controlled vocabulary
 
@@ -245,7 +253,7 @@ The [Encyclopedia of Life](https://www.eol.org/) aims to gather knowledge about 
 [WoRMS](https://www.marinespecies.org/) is authoritative classification and catalogue for marine taxa managed by taxonomists and thematic experts that includes accepted and synonym taxonomic information which allows interpretation of the taxonomic literature. It is the recommended biological taxonomy to retrieve information from when publishing data to OBIS.
 
 ### Tools to help you 
-If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the [APIs](#API) of each of these taxonomies, which is called [`taxize`](https://cran.r-project.org/web/packages/taxize/index.html). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., `get_gbifid_()` retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (`gnr_resolve()`). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found. 
+If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the [APIs](#API) of each of these taxonomies, which is called `taxize` (@R-taxize). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., `get_gbifid_()` retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (`gnr_resolve()`). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found. 
 
 If you query your taxonomic information from a taxonomy you should however always check manually, whether the taxa are identified correctly. Not all taxa are present in all taxonomies or names between taxa are so similar that they are confused for the same taxon in the name matching process.
 
@@ -262,5 +270,5 @@ To assign GUIDs to your data you can:
 
 - use an online GUID generator, for example https://www.uuidgenerator.net
 
-- use the R package [`uuid`](https://cran.r-project.org/web/packages/uuid/index.html) and its function `UUIDgenerate()`
+- use the R package `uuid`(@R-uuid) and its function `UUIDgenerate()`
 

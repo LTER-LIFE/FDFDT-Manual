@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
   font-size: 18px;
 }
 .book .book-body .page-wrapper .page-inner section.normal a {
-    color: #15ce6aff; /*-colour of links*/
+    color: #00c0a8ff; /*-colour of links*/
 }
 .book .book-body .page-wrapper .page-inner section.normal a:hover{
     color: #0f924bff; 
@@ -37,17 +37,33 @@ h1, h2, h3, h4, h5 {
   background:;
   border-right: 2px solid rgba(0, 0, 0, .07);
 }
-.book .book-header h1 {
+.book .book-header h1 { /*sytles the book header shown on every page */
     margin: 0;
     font-size: 23px;
     font-weight: 500;
     text-align: center;
     line-height: 50px;
 }
+
+p.caption {
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+    padding: 2em 2em 2em 2em;
+}
+
+/*-------------sytle of R & XML code blocks-------*/
+code span.kw {
+    color: #00c0a8ff;
+    font-weight: bold;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre { 
+  line-height: 1.5;
+}
 /*------------Table of Contents (TOC)----------- */
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
-    color: #15ce6aff; /*-colour of active header in TOC and hover colour-*/
+    color: #00c0a8ff; /*-colour of active header in TOC and hover colour-*/
 }
 
 .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
@@ -81,10 +97,14 @@ h1, h2, h3, h4, h5 {
 .examplebox{
   padding: 1em 1em 1em 5em;
   margin-bottom: 30px;
-  border: 3px solid #15ce6aff;
+  border: 3px solid #03631fbc;
   border-radius: 13px;
-  background: #15ce6a17 5px center/3em no-repeat;
+  background: #03631f18 5px center/3em no-repeat;
   overflow: auto;
+}
+.exampleimg{
+  background: #03631f18 10px center/4em no-repeat;
+  background-image: url("../images/icon_example.png");
 }
 .sortTermsBox{
   padding: 1em 1em 1em 4em;
@@ -97,15 +117,17 @@ h1, h2, h3, h4, h5 {
 
 /*------------Tables----------- */
 th {
-  background-color: #0f924bff;
+  background-color: #00c0a8ff;
   color: black;
   text-align: center;
+  font-size: 14px;
 }
 
 tr:nth-child(even) {background-color: #f8f8f8;}
 
 td {
   border-bottom: 2px solid #ddd;
+  font-size: 14px;
 }
 
 .tableDwCterms{

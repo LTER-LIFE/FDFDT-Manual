@@ -46,7 +46,7 @@ The first step to build your archive therefore is to choose your core file. Whic
 
 2.  Checklist data: data contains information on annotated species checklists, taxonomic catalogues or other information about taxa. → core file: **Taxon**
 
-3.  Occurrence data: data contains information on the evidence of an occurrence of a specific taxon either in nature, a collection or a datasets. This is the case if you have a list of species that occur at a particular place and a specific time but this was not measured by following a certain sampling protocol. → core file: **Occurrence**
+3.  Occurrence data: data contains information on the evidence of an occurrence of a specific taxon either in nature, a collection or a datasets. This is the case if you have a list of species that occur at a particular place and a specific time but this was not measured by following a certain sampling protocol. → core file: [**Occurrence**](#occurrence)
 
 ### Occurrence core vs. event core
 

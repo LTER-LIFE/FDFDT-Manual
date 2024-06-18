@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-17" />
+<meta name="date" content="2024-06-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -255,12 +319,11 @@ div.csl-indent {
 <p>The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.</p>
 <ul>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;metadataProvider&gt;</code></span>: information about the person that has provides the metadata in the EML file</p>
-<p><strong>Creator, contact and metadataProvider</strong>
-The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
+<p><strong>Creator, contact and metadataProvider</strong> The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
 <ul>
 <li><p><code>&lt;individualName&gt;</code>: the name of an individual person can be given with three subterms:</p>
 <ul>
-<li><code>&lt;salutation&gt;</code>: can be a title (e.g., “Dr.”) or another salutation (“Mr.”/”Ms.”)</li>
+<li><code>&lt;salutation&gt;</code>: can be a title (e.g., “Dr.”) or another salutation (“Mr.”/“Ms.”)</li>
 <li><code>&lt;givenName&gt;</code></li>
 <li><code>&lt;surName&gt;</code></li>
 </ul></li>
@@ -369,10 +432,62 @@ The creator and the contact can either be a named person, a certain position tha
 </div>
 <div id="create-xml-files-in-r" class="section level2 hasAnchor" number="8.6">
 <h2><span class="header-section-number">8.6</span> Create XML files in R<a href="standardise-and-structure-your-metadata.html#create-xml-files-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Both the EML and the meta file are XML files. Creating XML files in R is facilitated by a range of useful packages, such as <code>emld</code>, <code>EML</code> and <code>xml2</code>.</p>
-<p>The key for creating the EML file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms they have to be stored in nested lists within the list of the parent term. <add code example></p>
-<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. Instead of creating the meta file by hand, this process can be more easily automated. We created a R function that can be found here, which takes every column name and directly retrieves its IRI from the corresponding namespace.</p>
+<p>Both the EML and the meta file are XML files. Creating XML files in R is facilitated by a range of useful packages, such as <code>emld</code> (<span class="citation">Boettiger et al. (<a href="#ref-R-emld">2020</a>)</span>), <code>EML</code> (<span class="citation">Boettiger &amp; Jones (<a href="#ref-R-EML">2022</a>)</span>) and <code>xml2</code> (<span class="citation">Wickham et al. (<a href="#ref-R-xml2">2023</a>)</span>).</p>
+<p>The key for creating the EML file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term.</p>
+<div class="examplebox">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="standardise-and-structure-your-metadata.html#cb1-1" tabindex="-1"></a><span class="co"># Provide keywords and their thesaurus fo the EML term &quot;keywordSet&quot;</span></span>
+<span id="cb1-2"><a href="standardise-and-structure-your-metadata.html#cb1-2" tabindex="-1"></a>keywordSet <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">keyword =</span> <span class="fu">list</span>(<span class="st">&quot;bud burst&quot;</span>, <span class="st">&quot;trees&quot;</span>, <span class="st">&quot;ecology&quot;</span>, <span class="st">&quot;plant phenology&quot;</span>),</span>
+<span id="cb1-3"><a href="standardise-and-structure-your-metadata.html#cb1-3" tabindex="-1"></a>                      <span class="at">keywordThesaurus =</span> <span class="st">&quot;envThes&quot;</span>),</span>
+<span id="cb1-4"><a href="standardise-and-structure-your-metadata.html#cb1-4" tabindex="-1"></a>                 <span class="fu">list</span>(<span class="at">keyword =</span> <span class="st">&quot;oak&quot;</span>,</span>
+<span id="cb1-5"><a href="standardise-and-structure-your-metadata.html#cb1-5" tabindex="-1"></a>                      <span class="at">keywordThesaurus =</span> <span class="st">&quot;GEMET&quot;</span>))</span></code></pre></div>
+<p><em>keyword</em> and <em>keywordThesaurus</em> are the EML subterms of <em>keywordSet</em>, which looks like this in XML:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="standardise-and-structure-your-metadata.html#cb2-1" tabindex="-1"></a>&lt;<span class="kw">keywordSet</span>&gt;</span>
+<span id="cb2-2"><a href="standardise-and-structure-your-metadata.html#cb2-2" tabindex="-1"></a>      &lt;<span class="kw">keyword</span>&gt;bud burst&lt;/<span class="kw">keyword</span>&gt;</span>
+<span id="cb2-3"><a href="standardise-and-structure-your-metadata.html#cb2-3" tabindex="-1"></a>      &lt;<span class="kw">keyword</span>&gt;trees&lt;/<span class="kw">keyword</span>&gt;</span>
+<span id="cb2-4"><a href="standardise-and-structure-your-metadata.html#cb2-4" tabindex="-1"></a>      &lt;<span class="kw">keyword</span>&gt;ecology&lt;/<span class="kw">keyword</span>&gt;</span>
+<span id="cb2-5"><a href="standardise-and-structure-your-metadata.html#cb2-5" tabindex="-1"></a>      &lt;<span class="kw">keyword</span>&gt;plant phenology&lt;/<span class="kw">keyword</span>&gt;</span>
+<span id="cb2-6"><a href="standardise-and-structure-your-metadata.html#cb2-6" tabindex="-1"></a>      &lt;<span class="kw">keywordThesaurus</span>&gt;envThes&lt;/<span class="kw">keywordThesaurus</span>&gt;</span>
+<span id="cb2-7"><a href="standardise-and-structure-your-metadata.html#cb2-7" tabindex="-1"></a>    &lt;/<span class="kw">keywordSet</span>&gt;</span>
+<span id="cb2-8"><a href="standardise-and-structure-your-metadata.html#cb2-8" tabindex="-1"></a>    &lt;<span class="kw">keywordSet</span>&gt;</span>
+<span id="cb2-9"><a href="standardise-and-structure-your-metadata.html#cb2-9" tabindex="-1"></a>      &lt;<span class="kw">keyword</span>&gt;oak&lt;/<span class="kw">keyword</span>&gt;</span>
+<span id="cb2-10"><a href="standardise-and-structure-your-metadata.html#cb2-10" tabindex="-1"></a>      &lt;<span class="kw">keywordThesaurus</span>&gt;GEMET&lt;/<span class="kw">keywordThesaurus</span>&gt;</span>
+<span id="cb2-11"><a href="standardise-and-structure-your-metadata.html#cb2-11" tabindex="-1"></a>    &lt;/<span class="kw">keywordSet</span>&gt;</span></code></pre></div>
+</div>
+<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. Instead of creating the meta file by hand, this process can be more easily automated.</p>
+<div class="examplebox">
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="standardise-and-structure-your-metadata.html#cb3-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">&quot;1.0&quot;</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="fu">?&gt;</span></span>
+<span id="cb3-2"><a href="standardise-and-structure-your-metadata.html#cb3-2" tabindex="-1"></a>&lt;<span class="kw">archive</span><span class="ot"> xmlns=</span><span class="st">&quot;http://rs.tdwg.org/dwc/text/&quot;</span><span class="ot"> xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="ot"> xmlns:xs=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema&quot;</span><span class="ot"> xsi:schemaLocation=</span><span class="st">&quot;http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd&quot;</span>&gt;</span>
+<span id="cb3-3"><a href="standardise-and-structure-your-metadata.html#cb3-3" tabindex="-1"></a>  &lt;<span class="kw">core</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="ot"> fieldsTerminatedBy=</span><span class="st">&quot;,&quot;</span><span class="ot"> linesTerminatedBy=</span><span class="st">&quot;\n&quot;</span><span class="ot"> fieldsEnclosedBy=</span><span class="st">&quot;&quot;</span><span class="ot"> ignoreHeaderLines=</span><span class="st">&quot;1&quot;</span><span class="ot"> rowType=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/Event&quot;</span>&gt;</span>
+<span id="cb3-4"><a href="standardise-and-structure-your-metadata.html#cb3-4" tabindex="-1"></a>    &lt;<span class="kw">files</span>&gt;</span>
+<span id="cb3-5"><a href="standardise-and-structure-your-metadata.html#cb3-5" tabindex="-1"></a>      &lt;<span class="kw">location</span>&gt;budburst_event.csv&lt;/<span class="kw">location</span>&gt;</span>
+<span id="cb3-6"><a href="standardise-and-structure-your-metadata.html#cb3-6" tabindex="-1"></a>    &lt;/<span class="kw">files</span>&gt;</span>
+<span id="cb3-7"><a href="standardise-and-structure-your-metadata.html#cb3-7" tabindex="-1"></a>    &lt;<span class="kw">id</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span>/&gt;</span>
+<span id="cb3-8"><a href="standardise-and-structure-your-metadata.html#cb3-8" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/eventID&quot;</span>/&gt;</span>
+<span id="cb3-9"><a href="standardise-and-structure-your-metadata.html#cb3-9" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;1&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/parentEventID&quot;</span>/&gt;</span>
+<span id="cb3-10"><a href="standardise-and-structure-your-metadata.html#cb3-10" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;2&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/samplingProtocol&quot;</span>/&gt;</span>
+<span id="cb3-11"><a href="standardise-and-structure-your-metadata.html#cb3-11" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;3&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/sampleSizeValue&quot;</span>/&gt;</span>
+<span id="cb3-12"><a href="standardise-and-structure-your-metadata.html#cb3-12" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;4&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/sampleSizeUnit&quot;</span>/&gt;</span>
+<span id="cb3-13"><a href="standardise-and-structure-your-metadata.html#cb3-13" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;5&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/eventDate&quot;</span>/&gt;</span>
+<span id="cb3-14"><a href="standardise-and-structure-your-metadata.html#cb3-14" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;6&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/year&quot;</span>/&gt;</span>
+<span id="cb3-15"><a href="standardise-and-structure-your-metadata.html#cb3-15" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;7&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/month&quot;</span>/&gt;</span>
+<span id="cb3-16"><a href="standardise-and-structure-your-metadata.html#cb3-16" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;8&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/day&quot;</span>/&gt;</span>
+<span id="cb3-17"><a href="standardise-and-structure-your-metadata.html#cb3-17" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;9&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/country&quot;</span>/&gt;</span>
+<span id="cb3-18"><a href="standardise-and-structure-your-metadata.html#cb3-18" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;10&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/countryCode&quot;</span>/&gt;</span></code></pre></div>
+</div>
+<p>We created a R function that can be found here, which takes every column name and directly retrieves its IRI from the corresponding namespace.</p>
 
+</div>
+</div>
+<h3> References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-R-EML" class="csl-entry">
+Boettiger, C., &amp; Jones, M. B. (2022). <em>EML: Read and write ecological metadata language files</em>. <a href="https://docs.ropensci.org/EML/">https://docs.ropensci.org/EML/</a>
+</div>
+<div id="ref-R-emld" class="csl-entry">
+Boettiger, C., Jones, M. B., &amp; Mecum, B. (2020). <em>Emld: Ecological metadata as linked data</em>. <a href="https://docs.ropensci.org/emld/">https://docs.ropensci.org/emld/</a>
+</div>
+<div id="ref-R-xml2" class="csl-entry">
+Wickham, H., Hester, J., &amp; Ooms, J. (2023). <em>xml2: Parse XML</em>. <a href="https://xml2.r-lib.org/">https://xml2.r-lib.org/</a>
 </div>
 </div>
             </section>
