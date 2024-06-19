@@ -1,9 +1,11 @@
 bookdown::gitbook:
+  toc_depth: 3
   css: assets/style.css
   pandoc_args: [ "--csl", "apa.csl" ]
   citation_package: none
   config:
     toc:
+      collapse: none
       before: |
         <li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
       after: |

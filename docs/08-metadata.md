@@ -154,7 +154,7 @@ Both the EML and the meta file are XML files. Creating XML files in R is facilit
 
 The key for creating the EML file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term.
 
-:::{.examplebox}
+:::{.XMLbox}
 
 
 ```r
@@ -184,7 +184,7 @@ keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology", "plant p
 
 In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. Instead of creating the meta file by hand, this process can be more easily automated. 
 
-:::{.examplebox}
+:::{.XMLbox} 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

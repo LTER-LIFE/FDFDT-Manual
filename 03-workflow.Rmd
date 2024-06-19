@@ -33,7 +33,7 @@ For the data:
 
 -   Restructure your data according to the chosen structure.
 
--   Once standard and structure are applied, structural metadata can be created that describes how the data is organised in its new form.
+-   Once standards and structure are applied, structural metadata can be created that describes how the data is organised in its new form.
 
 As a last step your standardised data and metadata should be persistently stored in an online storage.
 If you have not chosen a repository before (or if you want to store the standardised data elsewhere), you should:

@@ -1,6 +1,5 @@
 fig:unnamed-chunk-1
 fig:budburst
-fig:beechcrop
 fig:crickets
 fig:CLUE
 fig:workflow
@@ -14,7 +13,6 @@ why-should-your-data-be-fair
 fair-assessment-of-your-data
 example-datasets
 budburst
-beechcrop
 cricket
 CLUE
 workflow

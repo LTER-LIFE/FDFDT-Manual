@@ -9,14 +9,6 @@ The first dataset contains long-term data on the phenology of different tree spe
 <p class="caption">(\#fig:budburst)FAIR assessment of bud burst data.</p>
 </div>
 
-## Beech crop data {#beechcrop} 
-A second data set collected by Animal Ecology/NIOO contains data on the amount of beech mast per year since 1976. Low, intermediate and high seed production in beech (Fagus sylvatica) trees alternate periodically over years. Since beech nuts are an important winter food resource for several species, such as passerine birds, seed availability is monitored yearly by collecting beech nuts in determined grids under a set of trees. These nuts are counted and weighted and based on this a so-called beech crop index can be calculated (cf. @Perdeck_2000). 
-
-<div class="figure" style="text-align: center">
-<img src="images/ID-card_beechcrop.png" alt="FAIR assessment of beech crop data." width="50%" />
-<p class="caption">(\#fig:beechcrop)FAIR assessment of beech crop data.</p>
-</div>
-
 ## Cricket data {#cricket}
 The third data set contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (Gryllus campestris). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. 
 

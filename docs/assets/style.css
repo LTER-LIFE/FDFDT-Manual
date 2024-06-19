@@ -57,6 +57,9 @@ code span.kw {
     color: #00c0a8ff;
     font-weight: bold;
 }
+code span.ot {
+    color: #b18505;
+}
 .book .book-body .page-wrapper .page-inner section.normal pre { 
   line-height: 1.5;
 }
@@ -95,15 +98,14 @@ code span.kw {
    background-image: url("../images/icon_note.png");
 }
 .examplebox{
-  padding: 1em 1em 1em 5em;
-  margin-bottom: 30px;
-  border: 3px solid #03631fbc;
+  padding: 0.5em 1em 0.5em 6em;
+  margin-bottom: 36px;
+  border: 2px dotted #00c0a8ff;
   border-radius: 13px;
-  background: #03631f18 5px center/3em no-repeat;
   overflow: auto;
 }
 .exampleimg{
-  background: #03631f18 10px center/4em no-repeat;
+  background: #00c0a805 10px center/4em no-repeat;
   background-image: url("../images/icon_example.png");
 }
 .sortTermsBox{
@@ -113,6 +115,14 @@ code span.kw {
   border-radius: 10px;
   background: #15ce6a17 5px center/3em no-repeat;
   overflow: auto;
+}
+.XMLbox{
+  padding: 0.5em 1em 0.5em 1em;
+  margin-bottom: 36px;
+  border: 2px dotted #00c0a8ff;
+  border-radius: 13px;
+  overflow: auto;
+  background: #00c0a805 10px center/4em no-repeat;
 }
 
 /*------------Tables----------- */

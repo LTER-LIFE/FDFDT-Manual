@@ -43,7 +43,7 @@ The Darwin Core list of terms uses four different namespaces. The [dwc:](http://
 Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the [Darwin Core List of terms](https://dwc.tdwg.org/list/).
 
 :::{.tableDwCterms}
-**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections.
+[**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections.]{style="font-size: 11px;"}
 
 | Event            | Occurrence            | Taxon                | MeasurementOrFact         | Location                      | Organism                | MaterialEntity        | GeologicalContext           |
 |:---------|:--------------|:-------|:-------|:-------|:-------|:-------|:-------|
@@ -75,15 +75,13 @@ Some guides about persistent identifiers (e.g., @Richards) state that IDs should
 :::
 
 :::{.examplebox .exampleimg}
-**Example 1: **
 
 This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event. 
 :::
 
 :::{.examplebox .exampleimg}
-**Example 2:** 
 
-In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-15 (= individual cricket number 1 and event group 15). 
+In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-05 (= individual cricket number 1 and event group 5). 
 :::
 
 #### Date information (eventDate, year, month, day)
@@ -151,7 +149,7 @@ However, even if you retrieve taxonomic information automatically from a taxonom
 
 For the cricket dataset, we queried the taxonomic information of the European field cricket (*Gryllus campestris*) directly from GBIF, which resulted in the following taxonomic terms (table XX).
 
-**Table 6.1. Taxonomic information for *Gryllus campestris* as retrieved from GBIF stored in respective Darwin Core terms.**
+[**Table 6.1. Taxonomic information for *Gryllus campestris* as retrieved from GBIF stored in respective Darwin Core terms.**]{style="font-size: 11px;"}
 
 scientificName |kingdom|phylum|class|order|family|genus|specificEpithet|taxonRank|
 |:---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| 
@@ -162,7 +160,7 @@ Gryllus campestris Linnaeus, 1758|Animalia|Arthropoda|Insecta|Orthoptera|Gryllid
 
 The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table XX where the species name in the data was Deschampsia flexuos which is a synonym of the species name Avenella flexuosa. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
 
-**Table 6.2. Taxonomic information for *Deschampsia flexuosa*, which is a synonym of *Avenella flexuosa*, as retrieved from GBIF and stored in respective Darwin Core terms.**
+[**Table 6.2. Taxonomic information for *Deschampsia flexuosa*, which is a synonym of *Avenella flexuosa*, as retrieved from GBIF and stored in respective Darwin Core terms.**]{style="font-size: 11px;"}
 
 |scientificName |kingdom|phylum|class|order|family|genus|specificEpithet|taxonRank|
 |:---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| 
@@ -187,7 +185,7 @@ With the long format and all measurements being stored in measurementValue, you 
 Example: 
 To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).
 
-**Table 6.3. Bud burst data before (top) and after (bottom) mapping to Darwin Core terms.**
+[**Table 6.3. Bud burst data before (top) and after (bottom) mapping to Darwin Core terms.**]{style="font-size: 11px;"}
 
 |Year |TreeID|TreeTopScore|TreeAllScore|
 |:--:|:--:|:--:|:--:|

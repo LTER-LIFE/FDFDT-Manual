@@ -14,7 +14,7 @@ github-repo: CherineJ/FDFDT-Manual
 ---
 # (PART\*) Background {.unnumbered}
 
-# Preface {-}
+# Preface {-} 
 
 This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more [FAIR](#FAIR) and tackle the problems that can occur along this process. 
 
