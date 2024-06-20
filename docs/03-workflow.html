@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 3 Workflow | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 3 Workflow | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 3 Workflow | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="02-example-datasets.html"/>
+<link rel="next" href="04-Describe-data.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -290,19 +290,59 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="workflow" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number"> 3</span> Workflow<a href="03-workflow.html#workflow" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The general workflow that we present in this guide to make your data more <a href="09-glossary.html#FAIR">FAIR</a> is shown in Figure <a href="03-workflow.html#fig:workflow">3.1</a> and shortly described in the following section.</p>
+<p>To make your data more FAIR, you should:</p>
+<ul>
+<li><p>First, describe your data and thereby gather <a href="09-glossary.html#metadata">metadata</a>.</p></li>
+<li><p>Afterwards, you should decide whether your raw data should be <a href="09-glossary.html#mobilisation">mobilised</a> to an online repository.</p>
+<ul>
+<li>If yes, you have to choose a suitable repository and upload your metadata and data there.</li>
+</ul></li>
+<li><p>Next, you can start to <a href="09-glossary.html#standardise">standardise</a> both the data and the metadata.
+With which of the two you start does not matter, as they can both be structured and standardised separately.</p></li>
+</ul>
+<p>For the metadata:</p>
+<ul>
+<li><p>First, choose a metadata standard.</p></li>
+<li><p>Next, map the metadata to the selected standard.</p></li>
+</ul>
+<p>For the data:</p>
+<ul>
+<li><p>First, choose a suitable data standard.</p></li>
+<li><p>Then, map the data to that standard.</p></li>
+<li><p>For further standardisation of your data, use ontologies and biological taxonomies where possible to describe the contents of the data.</p></li>
+<li><p>After standardising the data, you should choose a standardised structure for the data.</p></li>
+<li><p>Restructure your data according to the chosen structure.</p></li>
+<li><p>Once standards and structure are applied, structural metadata can be created that describes how the data is organised in its new form.</p></li>
+</ul>
+<p>As a last step your standardised data and metadata should be persistently stored in an online storage.
+If you have not chosen a repository before (or if you want to store the standardised data elsewhere), you should:</p>
+<ul>
+<li><p>choose a suitable repository that accepts your new data structure/format.</p></li>
+<li><p>mobilise the data and the metadata to the chosen repository.</p></li>
+</ul>
+<p>Even though this guide is tailored to ecological data, the workflow presented here should be generally applicable to any type of data, only the implementations of each step will differ.
+In the following chapters, we will go through each of the steps and provide some general background, introduce some options for implementation for ecological data and considerations that can help to choose the best suited option for your data, as well as a short insight into our own choices for the <a href="02-example-datasets.html#example-datasets">example datasets</a>.</p>
+<div class="figure"><span style="display:block;" id="fig:workflow"></span>
+<img src="images/workflow_diagramm.png" alt="Diagram of the workflow presented in this guide to FAIRify data." width="100%" />
+<p class="caption">
+Figure 3.1: Diagram of the workflow presented in this guide to FAIRify data.
+</p>
 </div>
+
+</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="02-example-datasets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="04-Describe-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -333,7 +373,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-workflow.Rmd",
 "text": "Edit"
 },
 "history": {

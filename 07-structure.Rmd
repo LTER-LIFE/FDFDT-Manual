@@ -1,3 +1,5 @@
+# (PART\*) d. Structure {.unnumbered}
+
 # Structuring your standardised data
 
 Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby [standardising](#standardise) your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more [FAIR](#FAIR) is to also standardise the structure of your data.

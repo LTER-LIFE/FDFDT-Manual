@@ -1,3 +1,5 @@
+# (PART\*) b. Storage {.unnumbered}
+
 # Storing your data
 Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by [mobilising](#mobilisation) your data to an online repository. 
 

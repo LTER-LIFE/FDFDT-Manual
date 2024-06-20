@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 5 Storing your data | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 5 Storing your data | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 5 Storing your data | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="04-Describe-data.html"/>
+<link rel="next" href="06-standard.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -290,19 +290,79 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="storing-your-data" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number"> 5</span> Storing your data<a href="05-storage.html#storing-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by <a href="09-glossary.html#mobilisation">mobilising</a> your data to an online repository.</p>
+<p><strong>Mobilising raw or standardised data?</strong></p>
+<p>&lt;Mobilising raw data and benefits. Mobilising <a href="09-glossary.html#standardise">standard</a> data and benefits. <a href="09-glossary.html#metadata">Metadata</a> can “always” be mobilised.&gt;</p>
+<div id="choosing-a-repository" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Choosing a repository<a href="05-storage.html#choosing-a-repository" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:</p>
+<p><strong>Which data formats are accepted?</strong></p>
+<p>Depending on the format your data is stored in, not every repository will accept your data. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see <a href="https://dans.knaw.nl/en/file-formats/">here</a> for an example).</p>
+<p><strong>What repository is commonly used in your organisation, community or discipline? </strong></p>
+<p>Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline.</p>
+<p><strong>Is a persistent identifier assigned? </strong></p>
+<p>To ensure that your dataset can always be found, it is important that your data is associated with a <a href="09-glossary.html#PID">persistent identifier (PID)</a>. Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.</p>
+<p><strong>How can the dataset be accessed?</strong></p>
+<p>Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an <a href="09-glossary.html#API">API (Application Programming Interfaces)</a>? Can the data be easily accessed?</p>
+<p><strong>Is metadata stored persistently even when the data is no longer available?</strong></p>
+<p>The metadata of your dataset should be stored persistently so that users can still find out about the existence of your data, even if it is no longer available on the repository itself.</p>
+<p><strong>Do you want version control?</strong></p>
+<p>Not all repositories provide version control, meaning that changes in the data and reuploads are not tracked but only the most recent version is available. If this is an important component for you, you should make sure the chosen repository provides this option. At <a href="http://re3data.org">re3data.org</a>, for example, you can directly filter for repositories with versioning.</p>
+<p><strong>Do you retain custody of your data or is it transferred to the repository?</strong></p>
+<p>There are repositories that obtain the custody of your data once it is uploaded there, meaning that the <a href="09-glossary.html#datamanagement">data management</a> is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited.</p>
 </div>
+<div id="repositories-to-store-biodiversity-data" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Repositories to store biodiversity data<a href="05-storage.html#repositories-to-store-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here we want to provide you with some examples of commonly used repositories for biodiversity data but this is of course a non-exclusive list and other options might be more suitable for your data.</p>
+<div id="global-repositories" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Global repositories<a href="05-storage.html#global-repositories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>GBIF</strong>, the <a href="http://gbif.org">Global Biodiversity Information Facility</a>, is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as <a href="09-glossary.html#DwC">Darwin Core</a>, and is openly accessible to everyone.</p>
+<p><strong>OBIS</strong>, the <a href="https://obis.org/">Ocean Biodiversity Information System</a>, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.</p>
+<p>Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a <a href="09-glossary.html#DwC-A">Darwin Core Archive</a> (for more information see later chapters). There is extensive documentation on how to use the IPT by GBIF <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide">here</a>. Once the dataset is published it is assigned a DOI.</p>
+<p><strong>Dataverse</strong> is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found <a href="https://dataverse.org/installations">here</a>.</p>
+<p><a href="https://zenodo.org/">Zenodo</a> is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data.</p>
+</div>
+<div id="dutch-repositories" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Dutch repositories<a href="05-storage.html#dutch-repositories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since the project partners behind this guide are situated in the Netherlands, we also want to highlight some Dutch repositories.</p>
+<p><strong><a href="https://dataverse.nl/">DataverseNL</a></strong> is a Dutch installation of Dataverse and is hosted by DANS-KNAW. Researchers from all collaborating institutes within the Netherlands can store their data there and make it available to everybody. Reasons for uploading data to DataverseNL:</p>
+<ul>
+<li><p>It automatically gets a persistent identifier</p></li>
+<li><p>The metadata is finable through web services like Google dataset search</p></li>
+<li><p>The data is easily retrievable through an <a href="09-glossary.html#API">API</a></p></li>
+<li><p>There is versioning to track changes and re-uploads of the data</p></li>
+<li><p>The custody of the data stays with the data owners</p></li>
+</ul>
+<p><strong>DANS Data Station Life Sciences</strong></p>
+<p>The <a href="https://dans.knaw.nl/en/life-sciences/">DANS Data Station for Life Sciences</a> is a repository hosted by DANS-KNAW which is based on the Dataverse software. It is open for every individual researcher independent of institution both to store and retrieve data. It is always free of charge to access data and up until a data size of 50 GB also to store data. The Data Station for life sciences is domain specific, accepting data of medical, health and green life sciences, while there are other Data Stations hosted by DANS for other domains, such as <a href="https://dans.knaw.nl/en/social-sciences-and-humanities/">social sciences</a>, <a href="https://dans.knaw.nl/en/archaeology/">archeology</a> and <a href="https://dans.knaw.nl/en/physical-and-technical-sciences/">physical and technical sciences</a>. It also allows access restrictions, which is helpful if you want to store your data persistently but not necessarily make it open for everyone.</p>
+</div>
+</div>
+<div id="tools-to-help-you" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Tools to help you<a href="05-storage.html#tools-to-help-you" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><a href="http://re3data.org">re3data.org</a> is a registry of repositories for research data where you can filter a broad range of repositories for a different criteria, such as subject, country, persistent identifier system, versioning or licences</p></li>
+<li><p><a href="http://fairsharing.org">fairsharing.org</a> is a registry that lists a variety of standards, databases and policies. To find repositories you can either directly search for a specific one and get detailed information on it or search all repositories/databases and filter for a range of options, such as country, subject or specific tags.</p></li>
+<li><p><a href="https://commons.datacite.org/">DataCite Commons</a> provides a repository finder that integrates information on repositories from re3data within the <a href="https://www.fairsfair.eu/">FAIRisFAIR</a> project. It allows users to search for repositories by keywords and filter the repositories for certificates, such as the CoreTrustSeal, or the software they are based on.</p></li>
+</ul>
+</div>
+<div id="our-choice" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Our choice<a href="05-storage.html#our-choice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For the data sets we owned ourselves within our department (<a href="02-example-datasets.html#budburst">bud burst</a>), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners.</p>
+
+</div>
+</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="04-Describe-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="06-standard.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -333,7 +393,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-storage.Rmd",
 "text": "Edit"
 },
 "history": {

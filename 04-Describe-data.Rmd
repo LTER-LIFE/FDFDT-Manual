@@ -1,3 +1,5 @@
+# (PART\*) a. Metadata I {.unnumbered}
+
 # Describe your data - Metadata (content) {#describe-data}
 
 The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and basically provides information about your dataset that helps to understand it. We can differentiate into administrative metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data and structural metadata, which is giving information on how the data set is organised and how single data files connect to each other.

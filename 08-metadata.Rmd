@@ -1,3 +1,5 @@
+# (PART\*) e. Metadata II {.unnumbered}
+
 # Standardise and structure your metadata
 
 Once you have described your data and assigned [metadata](#metadata) to it (see [chapter 4](#describe-data)), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and [Darwin Core](#DwC) sometimes is also referred to as a metadata standard.

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 4 Describe your data - Metadata (content) | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 4 Describe your data - Metadata (content) | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 4 Describe your data - Metadata (content) | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="03-workflow.html"/>
+<link rel="next" href="05-storage.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -290,19 +290,99 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="describe-data" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number"> 4</span> Describe your data - Metadata (content)<a href="04-Describe-data.html#describe-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The first step before you store your data properly should always be to describe and annotate it. This type of description is called <a href="09-glossary.html#metadata">metadata</a> and basically provides information about your dataset that helps to understand it. We can differentiate into administrative metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data and structural metadata, which is giving information on how the data set is organised and how single data files connect to each other.</p>
+<p>Many repositories require a minimal set of metadata for uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are however no regulations on what information a README should contain and in reality, the extent of it varies a lot. In general, the richer the data is described the better.</p>
+<p>Based on best practices of writing readme files and in terms of <a href="09-glossary.html#standardise">standardising</a> the metadata in a later step, we recommend to gather the following information about your data:</p>
+<p>About the dataset:</p>
+<ul>
+<li><p>Title of the dataset</p></li>
+<li><p>Short description what contents each data file contains</p></li>
+<li><p>Short description of the methods used for data collection</p></li>
+<li><p>Responsible parties, including who created the data and who can be contacted about the data</p></li>
+<li><p>When was the data collected? Which time span is covered?</p></li>
+<li><p>Where has the data been collected?</p></li>
+<li><p>Licencing information: How can others use your data? To find out more about different licences, see section Licencing.</p></li>
+<li><p>Changes in the data or updates should ideally also be recorded in the README</p></li>
+</ul>
+<p>About individual data files:</p>
+<ul>
+<li><p>What do columns mean?</p></li>
+<li><p>Which units belong to each column?</p></li>
+</ul>
+<p>If you include personal information, like email addresses, of other people in the metadata that is made available online later on, it should always be asked for permission beforehand.</p>
+<div id="licencing" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Licencing<a href="04-Describe-data.html#licencing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you deposit your data online it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of [Creative Commons (CC)](<a href="https://creativecommons.org/share-your-work/cclicenses/" class="uri">https://creativecommons.org/share-your-work/cclicenses/</a>. Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool (<a href="https://chooser-beta.creativecommons.org/">License chooser</a>) that can help you to choose the best suited licence for your data.</p>
+<p><span style="font-size: 11px;"><strong>Table 4.1. Creative commons licences and their meanings.</strong></span></p>
+<table>
+<colgroup>
+<col width="28%" />
+<col width="26%" />
+<col width="45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Licence</th>
+<th align="center"></th>
+<th align="left">What can users do with your data?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a></td>
+<td align="center"><a href="images/CCBY_logo.png"><img src="images/CCBY_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data but have to give credits to the creator</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></td>
+<td align="center"><a href="images/CCBY-NC_logo.png"><img src="images/CCBY-NC_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data but have to give credits to the creator and data <strong>cannot</strong> be used commercially</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a></td>
+<td align="center"><a href="images/CCBY-SA_logo.png"><img src="images/CCBY-SA_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data, they have to give credits to the creator and adaptations need to be shared under the same terms</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></td>
+<td align="center"><a href="images/CCBY-NC-SA_logo.png"><img src="images/CCBY-NC-SA_logo.png" width="100"/></a></td>
+<td align="left">users can use, distribute and build upon the data, they have to give credits to the creator, adaptations need to be shared under the same terms and data <strong>cannot</strong> be used commercially</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND</a></td>
+<td align="center"><a href="images/CCBY-ND_logo.png"><img src="images/CCBY-ND_logo.png" width="100"/></a></td>
+<td align="left">users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a></td>
+<td align="center"><a href="images/CCBY-NC-ND_logo.png"><img src="images/CCBY-NC-ND_logo.png" width="100"/></a></td>
+<td align="left">users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator and data cannot be used commercially</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 (“CC Zero”)</a></td>
+<td align="center"><a href="images/CC-Zero_logo.png"><img src="images/CC-Zero_logo.png" width="100"/></a></td>
+<td align="left">copyrights are given up and work is put into the public domain</td>
+</tr>
+</tbody>
+</table>
+<div id="Note-licence" class="infobox infoimg">
+<p>Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence’s conditions of use, even if the data is no longer distributed.</p>
 </div>
+
+</div>
+</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="03-workflow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="05-storage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -333,7 +413,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-Describe-data.Rmd",
 "text": "Edit"
 },
 "history": {

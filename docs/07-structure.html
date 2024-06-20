@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 7 Structuring your standardised data | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 7 Structuring your standardised data | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 7 Structuring your standardised data | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="06-standard.html"/>
+<link rel="next" href="08-metadata.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -290,19 +290,192 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="structuring-your-standardised-data" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number"> 7</span> Structuring your standardised data<a href="07-structure.html#structuring-your-standardised-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby <a href="09-glossary.html#standardise">standardising</a> your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more <a href="09-glossary.html#FAIR">FAIR</a> is to also standardise the structure of your data.</p>
+<p>Specifically tailored to Darwin Core, we present two options to structure your data in the following: a relational database and the Darwin Core Archive.</p>
+<div id="relational-database" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Relational database<a href="07-structure.html#relational-database" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Relational databases are a common format in structuring your data files, where individual files are linked to each other by specific identifiers. This allows for a high flexibility in structuring your data and does as such not require your data to be in a standardised format. In Darwin Core several ID fields exist with which tables/files can be connected to each other, allowing the possibility to structure your standardised data as a relational database (Figure <a href="07-structure.html#fig:relational-database">7.1</a>).</p>
+<p>In contrast to Darwin Core Archives (see Chapter Darwin Core Archive), relational databases can reduce redundancy in the data and are more flexible in linking information.</p>
+<div class="figure"><span style="display:block;" id="fig:relational-database"></span>
+<img src="images/DwC_relationalDatabase.png" alt="**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked." width="100%" />
+<p class="caption">
+Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong> Arrows refer to the identifier through which two files are linked.
+</p>
+</div>
+</div>
+<div id="darwin-core-archive" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Darwin Core Archive<a href="07-structure.html#darwin-core-archive" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For biodiversity data that uses <a href="09-glossary.html#DwC">Darwin Core</a> terms, <a href="09-glossary.html#DwC-A">Darwin Core Archives</a> (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories <a href="09-glossary.html#GBIF">GBIF</a> and <a href="09-glossary.html#OBIS">OBIS</a>.</p>
+<p>There are four main components that together, bundled in one zip-folder, build the Darwin Core Archive:</p>
+<ul>
+<li><p>the <a href="09-glossary.html#core">core</a> file</p></li>
+<li><p>several <a href="09-glossary.html#extension">extension</a> files (optional)</p></li>
+<li><p>an <a href="09-glossary.html#eml">EML</a> file (see later chapter)</p></li>
+<li><p>a <a href="09-glossary.html#metaxml">meta XML</a> file (see later chapter).</p></li>
+</ul>
+</div>
+<div id="the-core-its-extensions" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> The Core &amp; its extensions<a href="07-structure.html#the-core-its-extensions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure <a href="07-structure.html#fig:star-schema">7.2</a>). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:star-schema"></span>
+<img src="images/star-schema.png" alt="Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
+<p class="caption">
+Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files.
+</p>
+</div>
+<div id="find-the-core" class="section level3 hasAnchor" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> Find the core<a href="07-structure.html#find-the-core" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The first step to build your archive therefore is to choose your core file. Which core to choose depends on the type of your data, which for biodiversity data is likely on of the following:</p>
+<ol style="list-style-type: decimal">
+<li><p>Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: <a href="09-glossary.html#event"><strong>Event</strong></a></p></li>
+<li><p>Checklist data: data contains information on annotated species checklists, taxonomic catalogues or other information about taxa. → core file: <strong>Taxon</strong></p></li>
+<li><p>Occurrence data: data contains information on the evidence of an occurrence of a specific taxon either in nature, a collection or a datasets. This is the case if you have a list of species that occur at a particular place and a specific time but this was not measured by following a certain sampling protocol. → core file: <a href="09-glossary.html#occurrence"><strong>Occurrence</strong></a></p></li>
+</ol>
+</div>
+<div id="occurrence-core-vs.-event-core" class="section level3 hasAnchor" number="7.3.2">
+<h3><span class="header-section-number">7.3.2</span> Occurrence core vs. event core<a href="07-structure.html#occurrence-core-vs.-event-core" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is not always directly clear what the difference between the occurrence and the event core is and when you should use which of them. The most crucial difference between the two is whether the data was collected following a certain protocol with documented sampling effort. If that is the case, you have sampling event data and therefore an event core. If data collection did not follow a sampling protocol, your core will be the occurrence file. For measurement on individual specimens and museum collections in general, occurrence is however mostly the preferred core.</p>
+<p>Most of the ecological data falls into sampling event data, as was the case for all of the data sets we used in the development of this guide. We will therefore focus on Event as the core file. If you have checklist data, there is already a detailed description on how to transform that into a Darwin Core Archive in the publication of <span class="citation">Reyserhove et al. (<a href="#ref-Reyershove">2020</a>)</span>.</p>
+</div>
+</div>
+<div id="which-extensions" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Which extension(s)?<a href="07-structure.html#which-extensions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you have determined your core and it is clear which information goes into it, you have to find one or more extensions if you need to store remaining information. The following extension files are possible:</p>
+<ul>
+<li><p><strong>Event</strong> (if event is not the core)</p></li>
+<li><p><strong>Occurrence</strong> (if occurrence is not the core)</p></li>
+<li><p><strong>Taxon</strong> (if taxon is not the core)</p></li>
+<li><p>(extended) measurement or fact: The <a href="09-glossary.html#measurementorfact"><strong>measurementOrFact</strong></a> file contains information on all the actual measurement values or facts that have been recorded for the records in the core file. The measurementOrFact file is always an extension file. There is also the <strong>extendedMeasurementOrFact</strong> extension, which is developed to be used with an event core and creates an additional link between the occurrence extension file and the measurements by including the occurrenceID next to the coreID (i.e. eventID).</p></li>
+<li><p><strong>ResourceRelationship</strong>: describes the relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset</p></li>
+<li><p><strong>Identification</strong>: additional information on multiple identifications for species listed in Occurrence core</p></li>
+<li><p><strong>dnaDerivedData</strong>: DNA related data, used either with occurrence or event core</p></li>
+<li><p><strong>Releve</strong>: GBIF specific relevé file containing information on vegetation plot survey measurements; to be used together with event core and occurrence extension</p></li>
+<li><p><strong>MaterialSample</strong></p></li>
+<li><p><strong>Amplification</strong>: information on DNA amplifications based on a schema from the Global Genome Biodiversity Network (GGBN)</p></li>
+<li><p><strong>HumboldtEcologicalInventory</strong>: information on ecological inventories related to event core</p></li>
+</ul>
+<p>Based on our use cases with an event core, we recommend occurrence and extended measurement or fact as extension files for sampling event data, because this allows storing taxonomic information for every event, as well as all measured values.</p>
+</div>
+<div id="arrange-darwin-core-terms-in-core-and-extension-files" class="section level2 hasAnchor" number="7.5">
+<h2><span class="header-section-number">7.5</span> Arrange Darwin Core terms in core and extension files<a href="07-structure.html#arrange-darwin-core-terms-in-core-and-extension-files" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the Darwin Core Archive the Darwin Core terms are sorted into the different files, each having terms that are required and some that we highly recommend to use, while others are optional additions. Generally, every extension file needs to contain the core identifier of the core file. For example, if you have an event core, the core ID is the field “eventID” and every extension file therefore needs to have the column eventID, linking records to the records in the core. In the following we provide an overview which terms can be included in which file. This is based on the documentation in the <a href="https://rs.gbif.org/extensions.html">GBIF schema repository</a>. Additionally we indicate which terms we view as required to have in each file and which we strongly recommend, adapted from the data quality requirements of GBIF for each data type (<a href="https://www.gbif.org/data-quality-requirements-sampling-events">Sampling event</a>, <a href="https://www.gbif.org/data-quality-requirements-occurrences">occurrence</a>, <a href="https://www.gbif.org/data-quality-requirements-checklists">checklist</a> data).</p>
+<div id="general-terms-terms-of-class-record-level" class="section level3 hasAnchor" number="7.5.1">
+<h3><span class="header-section-number">7.5.1</span> General terms (Terms of class Record-level)<a href="07-structure.html#general-terms-terms-of-class-record-level" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are terms that can always be included in the core-file, independent of what the core is. Those are record-level terms, which are generic and can apply to any type of records in the data. The content of these terms can be considered <a href="09-glossary.html#metadata">metadata</a>, which is why it is likely that you do not have corresponding columns in your data yet but need to create new columns. Many of these terms are from the <a href="09-glossary.html#dublincore">Dublin Core</a> namespace and few come with a fixed vocabulary to use to fill them.</p>
+<p>The following terms can be useful to add, while none of them are required:</p>
+<ul>
+<li><p>type: to be filled with one of the terms in the DCMI type vocabulary</p></li>
+<li><p>language: use controlled vocabulary, such as the ISO language code</p></li>
+<li><p>licence: see section “licencing”</p></li>
+<li><p>rightsHolder</p></li>
+<li><p>accessRights</p></li>
+<li><p>bibliographicCitation: should provide clear information on how to cite the resource itself</p></li>
+<li><p>references</p></li>
+<li><p>institutionCode, institutionID</p></li>
+<li><p>datasetID</p></li>
+<li><p>basisOfRecord: best practise is to use controlled vocabulary, such as the names of the Darwin Core classes:</p>
+<ul>
+<li>MaterialEntity, PreservedSpecimen, FossilSpecimen, LivingSpecimen, MaterialSample, Event, HumanObservation, MachineObservation, Taxon, Occurrence, MaterialCitation</li>
+</ul></li>
+</ul>
+</div>
+<div id="event-file" class="section level3 hasAnchor" number="7.5.2">
+<h3><span class="header-section-number">7.5.2</span> Event file<a href="07-structure.html#event-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The event file can include the following terms:</p>
+<ul>
+<li>all terms of the class Event</li>
+<li>all terms of the class Location</li>
+<li>all terms of the class GeologicalContext</li>
+</ul>
+<div class="sortTermsBox">
+<p><span style="color: #d111d4ff;"><strong>Required</strong>:</span></p>
+<ul>
+<li><p><span style="color: #d111d4ff;">eventID</span></p></li>
+<li><p><span style="color: #d111d4ff;">eventDate</span></p></li>
+<li><p><span style="color: #d111d4ff;">samplingProtocol</span></p></li>
+<li><p><span style="color: #d111d4ff;">sampleSizeValue &amp; sampleSizeUnit</span></p></li>
+</ul>
+<p><span style="color: #dd7f08ff;"><strong>Recommended</strong>:</span></p>
+<ul>
+<li><p><span style="color: #dd7f08ff;">parentEventID (if applicable)</span></p></li>
+<li><p><span style="color: #dd7f08ff;">samplingEffort</span></p></li>
+<li><p><span style="color: #dd7f08ff;">decimalLatitude &amp; decimalLongitude &amp; geodeticDatum</span></p></li>
+<li><p><span style="color: #dd7f08ff;">coordinateUncertaintyInMeters</span></p></li>
+<li><p><span style="color: #dd7f08ff;">countryCode</span></p></li>
+</ul>
+</div>
+</div>
+<div id="occurrence-file" class="section level3 hasAnchor" number="7.5.3">
+<h3><span class="header-section-number">7.5.3</span> Occurrence file<a href="07-structure.html#occurrence-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>All of the terms that can be included in the event file can also be included in the occurrence file. The occurrence file is however more flexible and additionally allows for more terms. You can additionally include:</p>
+<ul>
+<li>all terms of the class Occurrence</li>
+<li>all terms of the class Organism</li>
+<li>all terms of the class Taxon</li>
+<li>all terms of the class Identification</li>
+</ul>
+<div class="sortTermsBox">
+<p><span style="color: #d111d4ff;"><strong>Required</strong>:</span></p>
+<ul>
+<li><p><span style="color: #d111d4ff;">scientificName</span></p></li>
+<li><p><span style="color: #d111d4ff;">occurrenceStatus</span></p></li>
+<li><p><span style="color: #d111d4ff;">basisOfRecord</span></p></li>
+<li><p><span style="color: #d111d4ff;">occurrenceID</span></p></li>
+</ul>
+<p><span style="color: #dd7f08ff;"><strong>Recommended</strong>:</span></p>
+<ul>
+<li><p><span style="color: #dd7f08ff;">taxonRank</span></p></li>
+<li><p><span style="color: #dd7f08ff;">kingdom (or other higher taxonomy)</span></p></li>
+<li><p><span style="color: #dd7f08ff;">decimalLongitue &amp; decimalLatitude &amp; geodeticDatum</span></p></li>
+<li><p><span style="color: #dd7f08ff;">coordinateUncertaintyInMeters</span></p></li>
+<li><p><span style="color: #dd7f08ff;">countryCode</span></p></li>
+<li><p><span style="color: #dd7f08ff;">individualCount or organismQuantity &amp; organismQuantityType</span></p></li>
+</ul>
+</div>
+</div>
+<div id="taxon-file" class="section level3 hasAnchor" number="7.5.4">
+<h3><span class="header-section-number">7.5.4</span> Taxon file<a href="07-structure.html#taxon-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The taxon file only contains the record-level terms and all terms of the class taxon.</p>
+<div class="sortTermsBox">
+<p><span style="color: #d111d4ff;"><strong>Required</strong>:</span></p>
+<ul>
+<li><p><span style="color: #d111d4ff;">taxonID</span></p></li>
+<li><p><span style="color: #d111d4ff;">scientificName</span></p></li>
+<li><p><span style="color: #d111d4ff;">taxonRank</span></p></li>
+</ul>
+<p><span style="color: #dd7f08ff;"><strong>Recommended</strong>:</span></p>
+<ul>
+<li><p><span style="color: #dd7f08ff;">kingdom (or other higher taxonomy)</span></p></li>
+<li><p><span style="color: #dd7f08ff;">parentNameUsageID</span></p></li>
+<li><p><span style="color: #dd7f08ff;">acceptedNameUsageID</span></p></li>
+</ul>
+</div>
+</div>
+<div id="measurementorfact-file" class="section level3 hasAnchor" number="7.5.5">
+<h3><span class="header-section-number">7.5.5</span> MeasurementOrFact file<a href="07-structure.html#measurementorfact-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included. The extendedMeasurementOrFact extension additionally contains the occurrenceID and three ID fields (measurementTypeID, measurementValueID, measurementUnitID) which are however not from the Darwin Core namespace but refer to OBIS. As their <a href="09-glossary.html#URI">IRIs</a> are not resolvable, we would not recommend using them.</p>
+
+</div>
+</div>
+</div>
+
+
+
+<h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Reyershove" class="csl-entry">
+Reyserhove, L., Desmet, P., Oldoni, D., Adriaens, T., Strubbe, D., Davis, A. J. S., Vanderhoeven, S., Verloove, F., &amp; Groom, Q. (2020). <span class="nocase">A checklist recipe: making species data open and FAIR</span>. <em>Database</em>, <em>2020</em>, baaa084. <a href="https://doi.org/10.1093/database/baaa084">https://doi.org/10.1093/database/baaa084</a>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="06-standard.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="08-metadata.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -333,7 +506,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/07-structure.Rmd",
 "text": "Edit"
 },
 "history": {

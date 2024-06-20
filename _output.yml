@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  split_by: rmd
   toc_depth: 3
   css: assets/style.css
   pandoc_args: [ "--csl", "apa.csl" ]

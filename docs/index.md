@@ -1,7 +1,7 @@
 --- 
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "Cherine C. Jantzen & Stefan J.G. Vriend"
-date: "2024-06-19"
+date: "2024-06-20"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -12,7 +12,7 @@ description: |
 link-citations: yes
 github-repo: CherineJ/FDFDT-Manual
 ---
-# (PART\*) Background {.unnumbered}
+# (PART\*) - I. Background - {.unnumbered}
 
 # Preface {-} 
 

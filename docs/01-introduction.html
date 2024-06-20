@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 1 Introduction | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 1 Introduction | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 1 Introduction | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="index.html"/>
+<link rel="next" href="02-example-datasets.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -290,19 +290,64 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number"> 1</span> Introduction<a href="01-introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="what-is-fair" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> What is FAIR?<a href="01-introduction.html#what-is-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Research data often is stored on local hard drives, not well described or not formatted in a consistent and standard way. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, <span class="citation">Wilkinson et al. (<a href="#ref-Wilkinson_2016">2016</a>)</span> introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable and <strong>R</strong>eusable, which more concrete means the following:</p>
+<p><strong>Findable.</strong> This means that the <a href="09-glossary.html#metadata">metadata</a> (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.</p>
+<p><strong>Accessible.</strong> It is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required.</p>
+<p><strong>Interoperable.</strong> In order to integrate the data with other data and to incorporate it into workflows or applications, the data needs to be fully compatible with other data. In easier words this means that data resources should ‘speak the same language’ to be used together.</p>
+<p><strong>Reusable.</strong> The ultimate goal of the FAIR concept is to make the data reusable, which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.</p>
+</div>
+<div id="extending-fair" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Extending FAIR<a href="01-introduction.html#extending-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In our guide we will extend FAIR as it would be strictly defined by the FAIR principles in order to make it workable in practice. This means that we also include the component of structuring your data into the process of FAIRifying it.</p>
+<p><strong>Structured.</strong> Structuring your data, so organising it in a tidy way, can clearly make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data.</p>
+</div>
+<div id="fair-is-not-open" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> FAIR is not open<a href="01-introduction.html#fair-is-not-open" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>It is important to stress here that FAIR is <strong>not equal</strong> to open. While the metadata of your data should be openly available, informing others about the existence of your data, the data itself does not have to be open. If you have reasons for not making the data openly available to everyone (e.g., because it contains sensitive information), this can and should be made clear in the metadata where according licensing information and access rights can be provided. As long as this is guaranteed, restricted or closed data can also be completely FAIR.</p>
+</div>
+<div id="why-should-your-data-be-fair" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Why should your data be FAIR?<a href="01-introduction.html#why-should-your-data-be-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Depending on the current maturity of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of the data additionally increases the possibilities for collaborations and will in total benefit the scientific community.</p>
+</div>
+<div id="fair-assessment-of-your-data" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> FAIR assessment of your data<a href="01-introduction.html#fair-assessment-of-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As stated before, every dataset is different and datasets can vary widely in their level of FAIR. FAIR is a gradient (see also <a href="https://zenodo.org/records/3909563">FAIR Data Maturity Model. Specification and Guidelines of RDA</a>) and different datasets can fulfil different criteria of FAIR but reach the same overall level of FAIRness. It is therefore important to first assess which state your data is in and what steps your data need to be improved. There are already a range of FAIR assessment tools (see <a href="https://fairassist.org/">here</a> for an overview), which score your data but there is much less guidance on how to actually improve the FAIRness of your data. Next to questionnaire-based assessment tools, there are also tools available that automatically assess the FAIRness of your data. Most of them however require the data to be already stored on an online repository, which is not the state at which we want to start with our FAIR assessment.</p>
+<p>We therefore developed our own tool that provides you with a set of simple questions about four properties of your data: <strong>metadata</strong>, <strong>storage</strong>, <strong>standards</strong> and <strong>structure</strong>.</p>
+<p><strong>Metadata</strong> is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.</p>
+<p><strong>Storage</strong> is about whether your data is stored persistently and in a way that makes it findable and accessible to others.</p>
+<p><strong>Standards</strong> describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets.</p>
+<p><strong>Structure</strong> is about whether your data is organised in a consistent and logical way.</p>
+<p>Besides the questions about structure, they are all directly based on the FAIR principles. Figure 2 visualises how the data properties in the assessment link to the letters of FAIR. Your answers will provide you with a circle-diagram showing how mature your dataset is in each of the properties and connected to that a list of chapters of this manual you can work through to further improve the maturity of your data.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="images/Fig2_MSSS-FAIR.png" alt="Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR." width="30%" />
+<p class="caption">
+Figure 1.1: Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR.
+</p>
+</div>
+<p>It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (<span class="citation">Pagano et al. (<a href="#ref-Pagano_2013">2013</a>)</span>). One step to reach interoperability is to use a language for knowledge representation and linked data, such as <a href="09-glossary.html#RDF">RDF (Resource Description Framework)</a>. However, as this is more the expertise of data or information scientists instead of ecologists, we will not look into these topics in this guide.</p>
+
+</div>
+</div>
+<h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Pagano_2013" class="csl-entry">
+Pagano, P., Candela, L., &amp; Castelli, D. (2013). Data interoperability. <em>Data Science Journal</em>, <em>12</em>(0), GRDI19–GRDI25. <a href="https://doi.org/10.2481/dsj.grdi-004">https://doi.org/10.2481/dsj.grdi-004</a>
+</div>
+<div id="ref-Wilkinson_2016" class="csl-entry">
+Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Silva Santos, L. B. da, Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1). <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="02-example-datasets.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -333,7 +378,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-introduction.Rmd",
 "text": "Edit"
 },
 "history": {
