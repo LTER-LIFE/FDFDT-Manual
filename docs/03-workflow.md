@@ -1,4 +1,4 @@
-# (PART\*) - II. How-to chapters - {.unnumbered}
+# (PART\*) - II. How-to chapters - {.unnumbered} 
 
 # Workflow
  
@@ -12,8 +12,7 @@ To make your data more FAIR, you should:
 
     -   If yes, you have to choose a suitable repository and upload your metadata and data there.
 
--   Next, you can start to [standardise](#standardise) both the data and the metadata.
-    With which of the two you start does not matter, as they can both be structured and standardised separately.
+-   Next, you can start to [standardise](#standardise) both the data and the metadata. With which of the two you start does not matter, as they can both be structured and standardised separately.
 
 For the metadata:
 

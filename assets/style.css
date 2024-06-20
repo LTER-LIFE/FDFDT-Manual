@@ -31,11 +31,7 @@ h1, h2, h3, h4, h5 {
     color: #00c0a8ff; /*-colour of links*/
 }
 .book .book-body .page-wrapper .page-inner section.normal a:hover{
-    color: #0f924bff; 
-}
-.book .book-summary {
-  background:;
-  border-right: 2px solid rgba(0, 0, 0, .07);
+    color: #008171ff; /*-colour of links when hovered over*/
 }
 .book .book-header h1 { /*sytles the book header shown on every page */
     margin: 0;
@@ -45,13 +41,23 @@ h1, h2, h3, h4, h5 {
     line-height: 50px;
 }
 
-p.caption {
+p.caption {/*image captions*/
     color: #777;
     font-size: 12px;
     text-align: center;
     padding: 2em 2em 2em 2em;
 }
-
+div.csl-entry {/*styles references at end of page */
+    clear: both;
+    font-size: 12px;
+}
+.book .book-body .navigation {/*sytles arrows to switch pages*/
+  font-size: 50px;
+  color: #00c0a8ff;
+}
+.book .book-body .navigation:hover{/*arrows to switch pages when hovered*/
+  color: #008171ff;
+}
 /*-------------sytle of R & XML code blocks-------*/
 code span.kw {
     color: #00c0a8ff;
@@ -63,7 +69,7 @@ code span.ot {
 .book .book-body .page-wrapper .page-inner section.normal pre { 
   line-height: 1.5;
 }
-/*------------Table of Contents (TOC)----------- */
+/*------------Mavigation pane----------- */
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
     color: #00c0a8ff; /*-colour of active header in TOC and hover colour-*/
@@ -71,7 +77,7 @@ code span.ot {
 
 .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
     display: block;
-    padding: 7px 11px;
+    padding: 8px 7px; /* distance of headeres in navigation pane */
 }
 /*------------Info boxes----------- */
 .disclaimerimg{
@@ -105,7 +111,7 @@ code span.ot {
   overflow: auto;
 }
 .exampleimg{
-  background: #00c0a805 10px center/4em no-repeat;
+  background: #00c0a805 7px center/5em no-repeat;
   background-image: url("../images/icon_example.png");
 }
 .sortTermsBox{

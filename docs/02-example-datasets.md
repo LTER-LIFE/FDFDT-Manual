@@ -1,4 +1,4 @@
-# Example data sets {#example-datasets}
+# Example data sets {#example-datasets} 
 To illustrate the process of FAIRifying ecological data we will rely on several example data sets we used to develop this guide. These data sets were selected because they cover a broad variety of different structures and different levels of [FAIR](#FAIR), ranging from observational to experimental data and from highly unstructured and undocumented data to data that already fulfils some of the FAIR principles. 
 
 ## Bud burst data {#budburst}
@@ -9,7 +9,7 @@ The first dataset contains long-term data on the phenology of different tree spe
 <p class="caption">(\#fig:budburst)FAIR assessment of bud burst data.</p>
 </div>
 
-## Cricket data {#cricket}
+## Cricket data {#cricket} 
 The third data set contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (Gryllus campestris). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. 
 
 <div class="figure" style="text-align: center">

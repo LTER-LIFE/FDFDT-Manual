@@ -36,7 +36,7 @@ If you include personal information, like email addresses, of other people in th
 
 ## Licencing
 
-If you deposit your data online it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/. Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool ([License chooser](https://chooser-beta.creativecommons.org/)) that can help you to choose the best suited licence for your data.
+If you deposit your data online it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/). Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool ([License chooser](https://chooser-beta.creativecommons.org/)) that can help you to choose the best suited licence for your data.
 
 [**Table 4.1. Creative commons licences and their meanings.**]{style="font-size: 11px;"}
 
