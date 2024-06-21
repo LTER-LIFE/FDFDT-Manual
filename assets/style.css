@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-p.caption {
-  color: #777;
-  margin-top: 10px;
-}
+
+/*------------- Whole Document---------------- */
 p code {
   white-space: inherit;
 }
@@ -14,8 +12,6 @@ pre {
 pre code {
   white-space: inherit;
 }
-
- /*------------- Whole Document---------------- */
 body {
   text-align: justify;
   font-family: 'Urbanist';
@@ -46,6 +42,7 @@ p.caption {/*image captions*/
     font-size: 12px;
     text-align: center;
     padding: 2em 2em 2em 2em;
+    margin-top: 10px;
 }
 div.csl-entry {/*styles references at end of page */
     clear: both;
@@ -58,12 +55,23 @@ div.csl-entry {/*styles references at end of page */
 .book .book-body .navigation:hover{/*arrows to switch pages when hovered*/
   color: #008171ff;
 }
-/*-------------sytle of R & XML code blocks-------*/
-code span.kw {
+/*------------Index page------------------*/
+.book .book-body .page-wrapper .page-inner section.normal em {/*font style of authors and date*/
+    font-style: inherit;
+}
+
+/*-------sytle of R & XML code blocks----*/
+code span.kw { /*XML*/
     color: #00c0a8ff;
     font-weight: bold;
 }
-code span.ot {
+code span.ot {/*XML*/
+    color: #b18505;
+}
+code span.fu {/*R*/
+    color: #00c0a8ff;
+}
+code span.at {/*R*/
     color: #b18505;
 }
 .book .book-body .page-wrapper .page-inner section.normal pre { 
@@ -114,22 +122,6 @@ code span.ot {
   background: #00c0a805 7px center/5em no-repeat;
   background-image: url("../images/icon_example.png");
 }
-.sortTermsBox{
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  border: 3px solid #15ce6aff;
-  border-radius: 10px;
-  background: #15ce6a17 5px center/3em no-repeat;
-  overflow: auto;
-}
-.XMLbox{
-  padding: 0.5em 1em 0.5em 1em;
-  margin-bottom: 36px;
-  border: 2px dotted #00c0a8ff;
-  border-radius: 13px;
-  overflow: auto;
-  background: #00c0a805 10px center/4em no-repeat;
-}
 
 /*------------Tables----------- */
 th {
@@ -145,7 +137,9 @@ td {
   border-bottom: 2px solid #ddd;
   font-size: 14px;
 }
-
+.book .book-body .page-wrapper .page-inner section.normal table td, .book .book-body .page-wrapper .page-inner section.normal table th {
+    padding: 5px 3px;
+}
 .tableDwCterms{
   display: block;
   overflow-x: scroll;

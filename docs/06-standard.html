@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-20" />
+<meta name="date" content="2024-06-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -266,7 +266,11 @@ div.csl-indent {
 <li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
 <li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
 <li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
-<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
+<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
 <li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
@@ -570,10 +574,10 @@ Time Zones can be specified by adding a “Z” at the end, if the time is recor
 <li><p>scientificName</p></li>
 </ul>
 <p>The specificEpithet only contains the name of the first or species epithet, while the scientificName contains the full scientific name together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological <a href="09-glossary.html#taxonomy">taxonomy</a> for the complete classification of the taxa in your data, to avoid misspellings or the use of outdated classification.</p>
-<p>Generally, taxa sometimes come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section biological taxonomies.</p>
+<p>Generally, taxa sometimes come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section <a href="06.1-taxonomies.html#biological-taxonomies">biological taxonomies</a>.</p>
 <p>However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can quickly occur through to, for example, similar taxa names or for rare species.</p>
 <div class="examplebox exampleimg">
-<p>For the cricket dataset, we queried the taxonomic information of the European field cricket (<em>Gryllus campestris</em>) directly from GBIF, which resulted in the following taxonomic terms (table XX).</p>
+<p>For the cricket dataset, we queried the taxonomic information of the European field cricket (<em>Gryllus campestris</em>) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).</p>
 <p><span style="font-size: 11px;"><strong>Table 6.1. Taxonomic information for <em>Gryllus campestris</em> as retrieved from GBIF stored in respective Darwin Core terms.</strong></span></p>
 <table style="width:100%;">
 <colgroup>
@@ -678,7 +682,7 @@ Time Zones can be specified by adding a “Z” at the end, if the time is recor
 <div class="examplebox exampleimg">
 <p>Example:
 To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).</p>
-<p><span style="font-size: 11px;"><strong>Table 6.3. Bud burst data before (top) and after (bottom) mapping to Darwin Core terms.</strong></span></p>
+<p><span style="font-size: 11px;"><strong>Table 6.3. Bud burst data in original state.</strong></span></p>
 <table>
 <thead>
 <tr class="header">
@@ -697,6 +701,7 @@ To exemplify how the four terms measurementValue, measurementUnit, measurementTy
 </tr>
 </tbody>
 </table>
+<p><span style="font-size: 11px;"><strong>Table 6.4. Bud burst data after mapping to Darwin Core terms.</strong></span></p>
 <table>
 <colgroup>
 <col width="25%" />

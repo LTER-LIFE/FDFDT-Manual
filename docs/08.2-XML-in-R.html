@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-20" />
+<meta name="date" content="2024-06-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -266,7 +266,11 @@ div.csl-indent {
 <li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
 <li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
 <li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
-<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a></li>
+<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
 <li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
@@ -292,9 +296,13 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="create-xml-files-in-r" class="section level2 hasAnchor" number="8.6">
 <h2><span class="header-section-number">8.6</span> Create XML files in R<a href="08.2-XML-in-R.html#create-xml-files-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Both the EML and the meta file are XML files. Creating XML files in R is facilitated by a range of useful packages, such as <code>emld</code> (<span class="citation">Boettiger et al. (<a href="#ref-R-emld">2020</a>)</span>), <code>EML</code> (<span class="citation">Boettiger &amp; Jones (<a href="#ref-R-EML">2022</a>)</span>) and <code>xml2</code> (<span class="citation">Wickham et al. (<a href="#ref-R-xml2">2023</a>)</span>).</p>
-<p>The key for creating the EML file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term.</p>
-<div class="XMLbox">
+<p>Both the EML and the meta file are XML files. XML stands for extensible Markup Language and is a humans- and machine-readable format to store and transport data. The general structure of XML files is a hierarchical tree consisting of a root element and an unlimited number of sub-elements of different levels, as well as attributes and text. For an extensive description on how to build XML files, see the <a href="https://www.w3schools.com/xml/default.asp">tutorial of the W³ schools</a>.</p>
+<p>To create the two XML files needed for the Darwin Core Archive, you do not have to be an expert in XML. In R, there are several packages that facilitate the creation of XML and even more specific, EML files, for example <code>emld</code> (<span class="citation">Boettiger et al. (<a href="#ref-R-emld">2020</a>)</span>), <code>EML</code> (<span class="citation">Boettiger &amp; Jones (<a href="#ref-R-EML">2022</a>)</span>) and <code>xml2</code> (<span class="citation">Wickham et al. (<a href="#ref-R-xml2">2023</a>)</span>).</p>
+<p>Additionally, you can find a nice overview over packages and helpful websites to build EML files in R on the website of the <a href="https://livingnorway.github.io/LivingNorwayR/articles/EML_R_packages_overview.html">LivingNorwayR package</a>.</p>
+<div id="eml.xml-file" class="section level3 hasAnchor" number="8.6.1">
+<h3><span class="header-section-number">8.6.1</span> EML.xml file<a href="08.2-XML-in-R.html#eml.xml-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The key for creating the EML.xml file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term (see example box below).</p>
+<div class="examplebox exampleimg">
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="08.2-XML-in-R.html#cb2-1" tabindex="-1"></a><span class="co"># Provide keywords and their thesaurus fo the EML term &quot;keywordSet&quot;</span></span>
 <span id="cb2-2"><a href="08.2-XML-in-R.html#cb2-2" tabindex="-1"></a>keywordSet <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">keyword =</span> <span class="fu">list</span>(<span class="st">&quot;bud burst&quot;</span>, <span class="st">&quot;trees&quot;</span>, <span class="st">&quot;ecology&quot;</span>, <span class="st">&quot;plant phenology&quot;</span>),</span>
 <span id="cb2-3"><a href="08.2-XML-in-R.html#cb2-3" tabindex="-1"></a>                      <span class="at">keywordThesaurus =</span> <span class="st">&quot;envThes&quot;</span>),</span>
@@ -313,8 +321,79 @@ div.csl-indent {
 <span id="cb3-10"><a href="08.2-XML-in-R.html#cb3-10" tabindex="-1"></a>      &lt;<span class="kw">keywordThesaurus</span>&gt;GEMET&lt;/<span class="kw">keywordThesaurus</span>&gt;</span>
 <span id="cb3-11"><a href="08.2-XML-in-R.html#cb3-11" tabindex="-1"></a>    &lt;/<span class="kw">keywordSet</span>&gt;</span></code></pre></div>
 </div>
-<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. Instead of creating the meta file by hand, this process can be more easily automated.</p>
+<p>The lists of all terms have to be combined in a final list that can then be converted into an XML file through the function <code>write_eml()</code> of the <code>EML</code> package.
+Some EML terms require XML attributes (see EML terms). These can be assigned using the <code>xml2</code> package by first identifying all nodes for which the attribute should be set (<code>xml2::xml_find_all()</code>) and then setting the attribute with <code>xml2::xml_set_attr()</code>).</p>
+<div class="examplebox exampleimg">
+<p>The following example shows how the final list is converted into the EML file and how to set the attribute “provider” for the taxonID.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="08.2-XML-in-R.html#cb4-1" tabindex="-1"></a><span class="co"># Combine all components in one list</span></span>
+<span id="cb4-2"><a href="08.2-XML-in-R.html#cb4-2" tabindex="-1"></a>eml <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">dataset =</span></span>
+<span id="cb4-3"><a href="08.2-XML-in-R.html#cb4-3" tabindex="-1"></a>              <span class="fu">list</span>(<span class="at">title =</span> title,</span>
+<span id="cb4-4"><a href="08.2-XML-in-R.html#cb4-4" tabindex="-1"></a>                   <span class="at">creator =</span> creator,</span>
+<span id="cb4-5"><a href="08.2-XML-in-R.html#cb4-5" tabindex="-1"></a>                   <span class="at">pubDate =</span> publication_date,</span>
+<span id="cb4-6"><a href="08.2-XML-in-R.html#cb4-6" tabindex="-1"></a>                   <span class="at">language =</span> language,</span>
+<span id="cb4-7"><a href="08.2-XML-in-R.html#cb4-7" tabindex="-1"></a>                   <span class="at">abstract =</span> abstract,</span>
+<span id="cb4-8"><a href="08.2-XML-in-R.html#cb4-8" tabindex="-1"></a>                   <span class="at">keywordSet =</span> keywords,</span>
+<span id="cb4-9"><a href="08.2-XML-in-R.html#cb4-9" tabindex="-1"></a>                   <span class="at">licensed =</span> licensed,</span>
+<span id="cb4-10"><a href="08.2-XML-in-R.html#cb4-10" tabindex="-1"></a>                   <span class="at">coverage =</span> coverage,</span>
+<span id="cb4-11"><a href="08.2-XML-in-R.html#cb4-11" tabindex="-1"></a>                   <span class="at">contact =</span> contact_person,</span>
+<span id="cb4-12"><a href="08.2-XML-in-R.html#cb4-12" tabindex="-1"></a>                   <span class="at">methods =</span> methods,</span>
+<span id="cb4-13"><a href="08.2-XML-in-R.html#cb4-13" tabindex="-1"></a>                   <span class="at">maintenance =</span> maintenance,</span>
+<span id="cb4-14"><a href="08.2-XML-in-R.html#cb4-14" tabindex="-1"></a>                   <span class="at">intellectualRights =</span> intellectualRights),</span>
+<span id="cb4-15"><a href="08.2-XML-in-R.html#cb4-15" tabindex="-1"></a>            <span class="at">packageId =</span> packageId, </span>
+<span id="cb4-16"><a href="08.2-XML-in-R.html#cb4-16" tabindex="-1"></a>            <span class="at">system =</span> <span class="st">&quot;uuid&quot;</span>)</span>
+<span id="cb4-17"><a href="08.2-XML-in-R.html#cb4-17" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="08.2-XML-in-R.html#cb4-18" tabindex="-1"></a><span class="co"># Write EML file</span></span>
+<span id="cb4-19"><a href="08.2-XML-in-R.html#cb4-19" tabindex="-1"></a>EML<span class="sc">::</span><span class="fu">write_eml</span>(EML, <span class="at">file =</span> <span class="st">&quot;cricket_EML.xml&quot;</span>)          </span>
+<span id="cb4-20"><a href="08.2-XML-in-R.html#cb4-20" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="08.2-XML-in-R.html#cb4-21" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="08.2-XML-in-R.html#cb4-22" tabindex="-1"></a><span class="co"># Add attributes for specific nodes -------------------------------</span></span>
+<span id="cb4-23"><a href="08.2-XML-in-R.html#cb4-23" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="08.2-XML-in-R.html#cb4-24" tabindex="-1"></a><span class="co"># Read EML file as XML file</span></span>
+<span id="cb4-25"><a href="08.2-XML-in-R.html#cb4-25" tabindex="-1"></a>EML <span class="ot">&lt;-</span> xml2<span class="sc">::</span><span class="fu">read_xml</span>(<span class="st">&quot;cricket_EML.xml&quot;</span>)</span>
+<span id="cb4-26"><a href="08.2-XML-in-R.html#cb4-26" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="08.2-XML-in-R.html#cb4-27" tabindex="-1"></a><span class="co"># Identify all taxonId nodes for which attribute shall be set</span></span>
+<span id="cb4-28"><a href="08.2-XML-in-R.html#cb4-28" tabindex="-1"></a>taxonId_node <span class="ot">&lt;-</span> xml2<span class="sc">::</span><span class="fu">xml_find_all</span>(EML, <span class="at">xpath =</span> <span class="st">&quot;//taxonId&quot;</span>)</span>
+<span id="cb4-29"><a href="08.2-XML-in-R.html#cb4-29" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="08.2-XML-in-R.html#cb4-30" tabindex="-1"></a><span class="co"># Set &quot;provider&quot; attribute for taxonId nodes</span></span>
+<span id="cb4-31"><a href="08.2-XML-in-R.html#cb4-31" tabindex="-1"></a>xml2<span class="sc">::</span><span class="fu">xml_set_attr</span>(taxonId_node, <span class="at">attr =</span> <span class="st">&quot;provider&quot;</span>, <span class="at">value =</span> <span class="st">&quot;https://www.gbif.org/&quot;</span>)</span></code></pre></div>
+</div>
+<p>Once you set all required attributes, you should check whether your EML file is schema-valid. This can be done with the function <code>eml_validate()</code> of the <code>emld</code> package.</p>
+</div>
+<div id="meta.xml-file" class="section level3 hasAnchor" number="8.6.2">
+<h3><span class="header-section-number">8.6.2</span> meta.xml file<a href="08.2-XML-in-R.html#meta.xml-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. The root element <code>&lt;archive&gt;</code>consists of the subelements <code>&lt;core&gt;</code> and <code>&lt;extension&gt;</code>, once for every extension file. Within these elements, there is a <code>&lt;field&gt;</code> element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description see the <a href="https://dwc.tdwg.org/text/">Darwin Core text guide</a>.</p>
+<div class="examplebox exampleimg">
+<p>A shortened example of the meta.xml file of the cricket data.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="08.2-XML-in-R.html#cb5-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">&quot;1.0&quot;</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="fu">?&gt;</span></span>
+<span id="cb5-2"><a href="08.2-XML-in-R.html#cb5-2" tabindex="-1"></a>&lt;<span class="kw">archive</span><span class="ot"> xmlns=</span><span class="st">&quot;http://rs.tdwg.org/dwc/text/&quot;</span><span class="ot"> xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="ot"> xmlns:xs=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema&quot;</span><span class="ot"> xsi:schemaLocation=</span><span class="st">&quot;http://rs.tdwg.org/dwc/text/ http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd&quot;</span>&gt;</span>
+<span id="cb5-3"><a href="08.2-XML-in-R.html#cb5-3" tabindex="-1"></a>  &lt;<span class="kw">core</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="ot"> fieldsTerminatedBy=</span><span class="st">&quot;,&quot;</span><span class="ot"> linesTerminatedBy=</span><span class="st">&quot;\n&quot;</span><span class="ot"> fieldsEnclosedBy=</span><span class="st">&quot;&quot;</span><span class="ot"> ignoreHeaderLines=</span><span class="st">&quot;1&quot;</span><span class="ot"> rowType=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/Event&quot;</span>&gt;</span>
+<span id="cb5-4"><a href="08.2-XML-in-R.html#cb5-4" tabindex="-1"></a>    &lt;<span class="kw">files</span>&gt;</span>
+<span id="cb5-5"><a href="08.2-XML-in-R.html#cb5-5" tabindex="-1"></a>      &lt;<span class="kw">location</span>&gt;crickets_event.csv&lt;/<span class="kw">location</span>&gt;</span>
+<span id="cb5-6"><a href="08.2-XML-in-R.html#cb5-6" tabindex="-1"></a>    &lt;/<span class="kw">files</span>&gt;</span>
+<span id="cb5-7"><a href="08.2-XML-in-R.html#cb5-7" tabindex="-1"></a>    &lt;<span class="kw">id</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span>/&gt;</span>
+<span id="cb5-8"><a href="08.2-XML-in-R.html#cb5-8" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/eventID&quot;</span>/&gt;</span>
+<span id="cb5-9"><a href="08.2-XML-in-R.html#cb5-9" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;1&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/samplingProtocol&quot;</span>/&gt;</span>
+<span id="cb5-10"><a href="08.2-XML-in-R.html#cb5-10" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;2&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/sampleSizeValue&quot;</span>/&gt;</span>
+<span id="cb5-11"><a href="08.2-XML-in-R.html#cb5-11" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;3&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/sampleSizeUnit&quot;</span>/&gt;</span>
+<span id="cb5-12"><a href="08.2-XML-in-R.html#cb5-12" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;4&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/eventDate&quot;</span>/&gt;</span>
+<span id="cb5-13"><a href="08.2-XML-in-R.html#cb5-13" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;5&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/year&quot;</span>/&gt;</span>
+<span id="cb5-14"><a href="08.2-XML-in-R.html#cb5-14" tabindex="-1"></a>    [...]</span>
+<span id="cb5-15"><a href="08.2-XML-in-R.html#cb5-15" tabindex="-1"></a>  &lt;/<span class="kw">core</span>&gt;</span>
+<span id="cb5-16"><a href="08.2-XML-in-R.html#cb5-16" tabindex="-1"></a>  &lt;<span class="kw">extension</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="ot"> fieldsTerminatedBy=</span><span class="st">&quot;,&quot;</span><span class="ot"> linesTerminatedBy=</span><span class="st">&quot;\n&quot;</span><span class="ot"> fieldsEnclosedBy=</span><span class="st">&quot;&quot;</span><span class="ot"> ignoreHeaderLines=</span><span class="st">&quot;1&quot;</span><span class="ot"> rowType=</span><span class="st">&quot;http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact&quot;</span>&gt;</span>
+<span id="cb5-17"><a href="08.2-XML-in-R.html#cb5-17" tabindex="-1"></a>    &lt;<span class="kw">files</span>&gt;</span>
+<span id="cb5-18"><a href="08.2-XML-in-R.html#cb5-18" tabindex="-1"></a>      &lt;<span class="kw">location</span>&gt;crickets_extendedmeasurementorfact.csv&lt;/<span class="kw">location</span>&gt;</span>
+<span id="cb5-19"><a href="08.2-XML-in-R.html#cb5-19" tabindex="-1"></a>    &lt;/<span class="kw">files</span>&gt;</span>
+<span id="cb5-20"><a href="08.2-XML-in-R.html#cb5-20" tabindex="-1"></a>    &lt;<span class="kw">coreid</span><span class="ot"> index=</span><span class="st">&quot;1&quot;</span>/&gt;</span>
+<span id="cb5-21"><a href="08.2-XML-in-R.html#cb5-21" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementID&quot;</span>/&gt;</span>
+<span id="cb5-22"><a href="08.2-XML-in-R.html#cb5-22" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;2&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementType&quot;</span>/&gt;</span>
+<span id="cb5-23"><a href="08.2-XML-in-R.html#cb5-23" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;3&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementValue&quot;</span>/&gt;</span>
+<span id="cb5-24"><a href="08.2-XML-in-R.html#cb5-24" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;4&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementUnit&quot;</span>/&gt;</span>
+<span id="cb5-25"><a href="08.2-XML-in-R.html#cb5-25" tabindex="-1"></a>    [...]</span></code></pre></div>
+</div>
+<div>
 
+
+</div>
 </div>
 </div>
 <h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>

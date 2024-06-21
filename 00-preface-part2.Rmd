@@ -27,3 +27,5 @@ This guide is designed in a way that you can only read the chapters that are rel
 
 We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.
 :::
+
+<div>

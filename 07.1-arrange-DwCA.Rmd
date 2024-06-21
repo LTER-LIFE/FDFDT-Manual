@@ -38,7 +38,7 @@ The event file can include the following terms:
 -   all terms of the class Location
 -   all terms of the class GeologicalContext
 
-:::{.sortTermsBox}
+:::{.examplebox}
 <span style="color: #d111d4ff;">**Required**:</span>
 
 - <span style="color: #d111d4ff;">eventID</span>
@@ -73,7 +73,7 @@ All of the terms that can be included in the event file can also be included in 
 - all terms of the class Taxon
 - all terms of the class Identification
 
-:::{.sortTermsBox}
+:::{.examplebox}
 <span style="color: #d111d4ff;">**Required**:</span>
 
 - <span style="color: #d111d4ff;">scientificName</span>
@@ -105,7 +105,7 @@ All of the terms that can be included in the event file can also be included in 
 
 The taxon file only contains the record-level terms and all terms of the class taxon. 
 
-:::{.sortTermsBox}
+:::{.examplebox}
 <span style="color: #d111d4ff;">**Required**:</span> 
 
 - <span style="color: #d111d4ff;">taxonID</span>
@@ -128,3 +128,5 @@ The taxon file only contains the record-level terms and all terms of the class t
 ### MeasurementOrFact file
 
 The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included. The extendedMeasurementOrFact extension additionally contains the occurrenceID and three ID fields (measurementTypeID, measurementValueID, measurementUnitID) which are however not from the Darwin Core namespace but refer to OBIS. As their [IRIs](#URI) are not resolvable, we would not recommend using them. 
+
+<div>

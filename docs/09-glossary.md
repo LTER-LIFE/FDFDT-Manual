@@ -36,13 +36,13 @@ Data is defined as information that is collected to be used for decision making 
 
 The data lifecycle describes the stages that the data goes through, starting with planning of data collection, followed by the data collection or acquisition. Afterwards the data is processed to then be used and analysed. After that, the data should be properly stored and curated to be preserved in the long run, which finally leads to publishing and sharing the data, allowing others to reuse it, with which the cycle can start again. There are however different versions of the data lifecycle, differing slightly in the respective steps.
 
--   [More information: <https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf>]{style="text-align: left;"}
+[-   More information: <https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf>]{style="text-align: left;"}
 
 #### Data management {#datamanagement .unnumbered}
 
 Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others.
 
--   [More information: <https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf>]{style="text-align: left;"}
+[-   More information: <https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf>]{style="text-align: left;"}
 
 #### Dublin Core {#dublincore .unnumbered}
 

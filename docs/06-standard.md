@@ -143,13 +143,13 @@ Taxonomic information should always be specified to the lowest level possible. W
 
 The specificEpithet only contains the name of the first or species epithet, while the scientificName contains the full scientific name together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological [taxonomy](#taxonomy) for the complete classification of the taxa in your data, to avoid misspellings or the use of outdated classification. 
 
-Generally, taxa sometimes come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section biological taxonomies.
+Generally, taxa sometimes come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section [biological taxonomies](#biological-taxonomies).
 
 However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can quickly occur through to, for example, similar taxa names or for rare species. 
 
 :::{.examplebox .exampleimg}
 
-For the cricket dataset, we queried the taxonomic information of the European field cricket (*Gryllus campestris*) directly from GBIF, which resulted in the following taxonomic terms (table XX).
+For the cricket dataset, we queried the taxonomic information of the European field cricket (*Gryllus campestris*) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).
 
 [**Table 6.1. Taxonomic information for *Gryllus campestris* as retrieved from GBIF stored in respective Darwin Core terms.**]{style="font-size: 11px;"}
 
@@ -187,12 +187,13 @@ With the long format and all measurements being stored in measurementValue, you 
 Example: 
 To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).
 
-[**Table 6.3. Bud burst data before (top) and after (bottom) mapping to Darwin Core terms.**]{style="font-size: 11px;"}
+[**Table 6.3. Bud burst data in original state.**]{style="font-size: 11px;"}
 
 |Year |TreeID|TreeTopScore|TreeAllScore|
 |:--:|:--:|:--:|:--:|
 |1988|61|2|2|
 
+[**Table 6.4. Bud burst data after mapping to Darwin Core terms.**]{style="font-size: 11px;"}
 
 |measurementType|measurementValue|measurementUnit|measurementMethod|
 |:--:|:--:|:--:|:--:|

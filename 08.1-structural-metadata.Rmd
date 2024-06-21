@@ -1,8 +1,8 @@
 ## Structural metadata - The meta.xml file
 
-The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised, i.e., which file is the [core](#core), which are the [extensions](#extension), and it links every column of each file to its corresponding Darwin Core term by providing its [IRI](#URI) (Internationalized Resource Identifier). The file format of the meta-file is [XML](#xml).
+The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised, i.e., which file is the [core](#core), which are the [extensions](#extension), and it links every column of each file to its corresponding Darwin Core term by providing its [URI](#URI) (Uniform Resource Identifier). The file format of the meta-file is [XML](#xml).
 
-:::{.XMLbox} 
+:::{.examplebox .exampleimg} 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -25,3 +25,5 @@ The meta-file contains the structural metadata and is required by the Darwin Cor
     <field index="10" term="http://rs.tdwg.org/dwc/terms/countryCode"/>
 ```
 :::
+
+<div>

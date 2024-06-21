@@ -1,5 +1,5 @@
 fig:FAIR
-fig:unnamed-chunk-1
+fig:MSSS-FAIR
 fig:budburst
 fig:crickets
 fig:CLUE
@@ -82,5 +82,7 @@ our-choice-2
 eml-terms
 structural-metadata---the-meta.xml-file
 create-xml-files-in-r
+eml.xml-file
+meta.xml-file
 glossary
 references

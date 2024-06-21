@@ -46,11 +46,11 @@ Here we want to provide you with some examples of commonly used repositories for
 
 **OBIS**, the [Ocean Biodiversity Information System](https://obis.org/), is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
 
-Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a [Darwin Core Archive](#DwC-A) (for more information see later chapters). There is extensive documentation on how to use the IPT by GBIF [here](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide). Once the dataset is published it is assigned a DOI.
+Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a [Darwin Core Archive](#DwC-A) (for more information see [later chapters](#darwin-core-archive)). There is extensive documentation on how to use the IPT by GBIF [here](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide). Once the dataset is published it is assigned a DOI.
 
 **Dataverse** is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found [here](https://dataverse.org/installations).
 
-[Zenodo](https://zenodo.org/) is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data. 
+[**Zenodo**](https://zenodo.org/) is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data. 
 
 ### Dutch repositories
 Since the project partners behind this guide are situated in the Netherlands, we also want to highlight some Dutch repositories. 
@@ -66,6 +66,7 @@ Since the project partners behind this guide are situated in the Netherlands, we
 - There is versioning to track changes and re-uploads of the data
 
 - The custody of the data stays with the data owners
+
 
 **DANS Data Station Life Sciences**
 
