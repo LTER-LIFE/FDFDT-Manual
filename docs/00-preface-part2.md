@@ -23,9 +23,9 @@ Data management is the practice of taking care of data throughout its entire [li
 This guide is designed in a way that you can only read the chapters that are relevant for improving the maturity of your data. To find these chapters, we provide you with a self-assessment tool that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR assessment you will be provided with a tailored list of the chapters in this guide you could go through to further mature your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.
 
 :::{.disclaimer .disclaimerimg} 
-**Disclaimer**
+### Disclaimer {-}
 
-We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.
+We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets. The FAIR principles are not set in stone but rather intended as guidance. Practical implications should be interpreted by each community individually, while sticking as closely as possible to the principles themselves (cf. [Maturity Indicator Authoring Group](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/#!/)). We therefore also want to stress that the way we implement FAIR in this guide is only one way of operationalizing it and is based on our own interpretations and extensions of the FAIR principles @Wilkinson_2016.
 :::
 
 <div>
