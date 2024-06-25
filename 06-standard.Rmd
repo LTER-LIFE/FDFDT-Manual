@@ -77,11 +77,13 @@ Some guides about persistent identifiers (e.g., @Richards) state that IDs should
 :::
 
 :::{.examplebox .exampleimg}
+**Bud burst**:
 
 This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event. 
 :::
 
 :::{.examplebox .exampleimg}
+**Crickets**:
 
 In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-05 (= individual cricket number 1 and event group 5). 
 :::
@@ -148,6 +150,7 @@ Generally, taxa sometimes come with several authorship information or with synon
 However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can quickly occur through to, for example, similar taxa names or for rare species. 
 
 :::{.examplebox .exampleimg}
+**Crickets**:
 
 For the cricket dataset, we queried the taxonomic information of the European field cricket (*Gryllus campestris*) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).
 
@@ -159,6 +162,7 @@ Gryllus campestris Linnaeus, 1758|Animalia|Arthropoda|Insecta|Orthoptera|Gryllid
 :::
 
 :::{.examplebox .exampleimg}
+**CLUE data**:
 
 The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table XX where the species name in the data was Deschampsia flexuos which is a synonym of the species name Avenella flexuosa. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
 
@@ -184,7 +188,8 @@ After transforming your data into the long format, the column containing the mea
 With the long format and all measurements being stored in measurementValue, you additionally need to store the information **what** has been measured, i.e., what each measurement or fact means. This is done by the term measurementType. Additionally, you should use the term measurementMethod that states how each measurement was measured. For both terms, it is recommended to use controlled vocabulary where possible. For more information on the use of ontologies, see section ontologies. 
 
 :::{.examplebox .exampleimg}
-Example: 
+**Bud burst**:
+
 To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).
 
 [**Table 6.3. Bud burst data in original state.**]{style="font-size: 11px;"}
@@ -207,9 +212,9 @@ The measurementID assigns a unique ID to every measurement or fact. Several meas
 If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement, will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements.
 
 :::{.examplebox .exampleimg}
-**budburst**: measurementID = HV2004_99_5_1_m2 for the second measurement of the eventID HV2004_99_5 and the occurrenceID HV2004_99_5_1
+**Budburst**: measurementID = HV2004_99_5_1_m2 for the second measurement of the eventID HV2004_99_5 and the occurrenceID HV2004_99_5_1
 
 
-**crickets**: measurementID = Cr1-05_1_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05_1
+**Crickets**: measurementID = Cr1-05_1_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05_1
 
 ::: 

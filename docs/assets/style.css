@@ -77,6 +77,9 @@ code span.at {/*R*/
 .book .book-body .page-wrapper .page-inner section.normal pre { 
   line-height: 1.5;
 }
+.book .book-body .page-wrapper .page-inner section.normal code {
+    padding: 0em;
+}
 /*------------Mavigation pane----------- */
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
@@ -89,13 +92,11 @@ code span.at {/*R*/
 }
 /*------------Info boxes----------- */
 .disclaimerimg{
+  background-image: url("../images/icon_disclaimer.png");
   background: #c0290217 10px center/4em no-repeat;
 }
-.disclaimerimg{
-  background-image: url("../images/icon_disclaimer.png");
-}
 .disclaimer{
-  padding: 0.5em 1em 0.5em 6em;
+  padding: 0em 1em 0.5em 6em;
   margin-top: 10px;
   margin-bottom: 10px;
   border: 3.5px dashed #c02902ff;

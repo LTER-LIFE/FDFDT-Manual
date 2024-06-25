@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 3 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 3 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 3 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
   
@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-24" />
+<meta name="date" content="2024-06-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,70 +54,6 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
   
@@ -168,7 +104,10 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#why-you-should-use-this-guide-and-improve-your-data-management"><i class="fa fa-check"></i>Why you should use this guide and improve your data management</a></li>
-<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a>
+<ul>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -185,95 +124,90 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="02-example-datasets.html"><a href="02-example-datasets.html#CLUE"><i class="fa fa-check"></i><b>2.3</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
 </ul></li>
 <li class="part"><span><b>- II. How-to chapters -</b></span></li>
-<li class="chapter" data-level="3" data-path="03-workflow.html"><a href="03-workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
-<li class="part"><span><b>a. Metadata I</b></span></li>
-<li class="chapter" data-level="4" data-path="04-Describe-data.html"><a href="04-Describe-data.html"><i class="fa fa-check"></i><b>4</b> Describe your data - Metadata (content)</a>
+<li class="chapter" data-level="" data-path=""><a href="#part-a.-metadata-i"><i class="fa fa-check"></i>(PART*) a. Metadata I</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1</b> Licencing</a></li>
+<li class="chapter" data-level="2.4" data-path="03-workflow.html"><a href="03-workflow.html"><i class="fa fa-check"></i><b>2.4</b> Licencing</a></li>
 </ul></li>
-<li class="part"><span><b>b. Storage</b></span></li>
-<li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
+<li class="chapter" data-level="" data-path=""><a href="#part-b.-storage"><i class="fa fa-check"></i>(PART*) b. Storage</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>5.1</b> Choosing a repository</a></li>
-<li class="chapter" data-level="5.2" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>5.2</b> Repositories to store biodiversity data</a>
+<li class="chapter" data-level="2.5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>2.5</b> Choosing a repository</a></li>
+<li class="chapter" data-level="2.6" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>2.6</b> Repositories to store biodiversity data</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="05-storage.html"><a href="05-storage.html#global-repositories"><i class="fa fa-check"></i><b>5.2.1</b> Global repositories</a></li>
-<li class="chapter" data-level="5.2.2" data-path="05-storage.html"><a href="05-storage.html#dutch-repositories"><i class="fa fa-check"></i><b>5.2.2</b> Dutch repositories</a></li>
+<li class="chapter" data-level="2.6.1" data-path="05-storage.html"><a href="05-storage.html#global-repositories"><i class="fa fa-check"></i><b>2.6.1</b> Global repositories</a></li>
+<li class="chapter" data-level="2.6.2" data-path="05-storage.html"><a href="05-storage.html#dutch-repositories"><i class="fa fa-check"></i><b>2.6.2</b> Dutch repositories</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="05-storage.html"><a href="05-storage.html#tools-to-help-you"><i class="fa fa-check"></i><b>5.3</b> Tools to help you</a></li>
-<li class="chapter" data-level="5.4" data-path="05-storage.html"><a href="05-storage.html#our-choice"><i class="fa fa-check"></i><b>5.4</b> Our choice</a></li>
+<li class="chapter" data-level="2.7" data-path="05-storage.html"><a href="05-storage.html#tools-to-help-you"><i class="fa fa-check"></i><b>2.7</b> Tools to help you</a></li>
+<li class="chapter" data-level="2.8" data-path="05-storage.html"><a href="05-storage.html#our-choice"><i class="fa fa-check"></i><b>2.8</b> Our choice</a></li>
 </ul></li>
-<li class="part"><span><b>c. Standards</b></span></li>
-<li class="chapter" data-level="6" data-path="06-standard.html"><a href="06-standard.html"><i class="fa fa-check"></i><b>6</b> Standardise your data</a>
+<li class="chapter" data-level="" data-path=""><a href="#part-c.-standards"><i class="fa fa-check"></i>(PART*) c. Standards</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="06-standard.html"><a href="06-standard.html#choose-a-data-standard"><i class="fa fa-check"></i><b>6.1</b> Choose a data standard</a></li>
-<li class="chapter" data-level="6.2" data-path="06-standard.html"><a href="06-standard.html#data-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>6.2</b> Data standards for biodiversity data</a></li>
-<li class="chapter" data-level="6.3" data-path="06-standard.html"><a href="06-standard.html#tools-to-help-you-1"><i class="fa fa-check"></i><b>6.3</b> Tools to help you</a></li>
-<li class="chapter" data-level="6.4" data-path="06-standard.html"><a href="06-standard.html#our-choice-1"><i class="fa fa-check"></i><b>6.4</b> Our choice</a>
+<li class="chapter" data-level="2.9" data-path="06-standard.html"><a href="06-standard.html"><i class="fa fa-check"></i><b>2.9</b> Choose a data standard</a></li>
+<li class="chapter" data-level="2.10" data-path="06-standard.html"><a href="06-standard.html#data-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>2.10</b> Data standards for biodiversity data</a></li>
+<li class="chapter" data-level="2.11" data-path="06-standard.html"><a href="06-standard.html#tools-to-help-you-1"><i class="fa fa-check"></i><b>2.11</b> Tools to help you</a></li>
+<li class="chapter" data-level="2.12" data-path="06-standard.html"><a href="06-standard.html#our-choice-1"><i class="fa fa-check"></i><b>2.12</b> Our choice</a>
 <ul>
-<li class="chapter" data-level="6.4.1" data-path="06-standard.html"><a href="06-standard.html#why-darwin-core"><i class="fa fa-check"></i><b>6.4.1</b> Why Darwin Core?</a></li>
+<li class="chapter" data-level="2.12.1" data-path="06-standard.html"><a href="06-standard.html#why-darwin-core"><i class="fa fa-check"></i><b>2.12.1</b> Why Darwin Core?</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="06-standard.html"><a href="06-standard.html#mapping-your-data-to-darwin-core"><i class="fa fa-check"></i><b>6.5</b> Mapping your data to Darwin Core</a>
+<li class="chapter" data-level="2.13" data-path="06-standard.html"><a href="06-standard.html#mapping-your-data-to-darwin-core"><i class="fa fa-check"></i><b>2.13</b> Mapping your data to Darwin Core</a>
 <ul>
-<li class="chapter" data-level="6.5.1" data-path="06-standard.html"><a href="06-standard.html#darwin-core-namespaces"><i class="fa fa-check"></i><b>6.5.1</b> Darwin Core namespaces</a></li>
-<li class="chapter" data-level="6.5.2" data-path="06-standard.html"><a href="06-standard.html#darwin-core-terms"><i class="fa fa-check"></i><b>6.5.2</b> Darwin Core terms</a></li>
-<li class="chapter" data-level="6.5.3" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-event"><i class="fa fa-check"></i><b>6.5.3</b> Terms of class Event</a></li>
-<li class="chapter" data-level="6.5.4" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-location"><i class="fa fa-check"></i><b>6.5.4</b> Terms of class Location</a></li>
-<li class="chapter" data-level="6.5.5" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-organism"><i class="fa fa-check"></i><b>6.5.5</b> Terms of class Organism</a></li>
-<li class="chapter" data-level="6.5.6" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-occurrence"><i class="fa fa-check"></i><b>6.5.6</b> Terms of class Occurrence</a></li>
-<li class="chapter" data-level="6.5.7" data-path="06-standard.html"><a href="06-standard.html#mof"><i class="fa fa-check"></i><b>6.5.7</b> Terms of class Measurement or fact</a></li>
+<li class="chapter" data-level="2.13.1" data-path="06-standard.html"><a href="06-standard.html#darwin-core-namespaces"><i class="fa fa-check"></i><b>2.13.1</b> Darwin Core namespaces</a></li>
+<li class="chapter" data-level="2.13.2" data-path="06-standard.html"><a href="06-standard.html#darwin-core-terms"><i class="fa fa-check"></i><b>2.13.2</b> Darwin Core terms</a></li>
+<li class="chapter" data-level="2.13.3" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-event"><i class="fa fa-check"></i><b>2.13.3</b> Terms of class Event</a></li>
+<li class="chapter" data-level="2.13.4" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-location"><i class="fa fa-check"></i><b>2.13.4</b> Terms of class Location</a></li>
+<li class="chapter" data-level="2.13.5" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-organism"><i class="fa fa-check"></i><b>2.13.5</b> Terms of class Organism</a></li>
+<li class="chapter" data-level="2.13.6" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-occurrence"><i class="fa fa-check"></i><b>2.13.6</b> Terms of class Occurrence</a></li>
+<li class="chapter" data-level="2.13.7" data-path="06-standard.html"><a href="06-standard.html#mof"><i class="fa fa-check"></i><b>2.13.7</b> Terms of class Measurement or fact</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html"><i class="fa fa-check"></i><b>6.6</b> Ontologies and controlled vocabulary</a>
+<li class="chapter" data-level="2.14" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html"><i class="fa fa-check"></i><b>2.14</b> Ontologies and controlled vocabulary</a>
 <ul>
-<li class="chapter" data-level="6.6.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-2"><i class="fa fa-check"></i><b>6.6.1</b> Tools to help you</a></li>
+<li class="chapter" data-level="2.14.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-2"><i class="fa fa-check"></i><b>2.14.1</b> Tools to help you</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#biological-taxonomies"><i class="fa fa-check"></i><b>6.7</b> Biological taxonomies</a>
+<li class="chapter" data-level="2.15" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#biological-taxonomies"><i class="fa fa-check"></i><b>2.15</b> Biological taxonomies</a>
 <ul>
-<li class="chapter" data-level="6.7.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#gbif-backbone-taxonomy"><i class="fa fa-check"></i><b>6.7.1</b> GBIF Backbone taxonomy</a></li>
-<li class="chapter" data-level="6.7.2" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#catalogue-of-life-col"><i class="fa fa-check"></i><b>6.7.2</b> Catalogue of Life (COL)</a></li>
-<li class="chapter" data-level="6.7.3" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#encyclopedia-of-life-eol"><i class="fa fa-check"></i><b>6.7.3</b> Encyclopedia of Life (EOL)</a></li>
-<li class="chapter" data-level="6.7.4" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#integrated-taxonomic-information-system-itis"><i class="fa fa-check"></i><b>6.7.4</b> Integrated Taxonomic Information System (ITIS)</a></li>
-<li class="chapter" data-level="6.7.5" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>6.7.5</b> World Registry of Marine Species (WoRMS)</a></li>
-<li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
+<li class="chapter" data-level="2.15.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#gbif-backbone-taxonomy"><i class="fa fa-check"></i><b>2.15.1</b> GBIF Backbone taxonomy</a></li>
+<li class="chapter" data-level="2.15.2" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#catalogue-of-life-col"><i class="fa fa-check"></i><b>2.15.2</b> Catalogue of Life (COL)</a></li>
+<li class="chapter" data-level="2.15.3" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#encyclopedia-of-life-eol"><i class="fa fa-check"></i><b>2.15.3</b> Encyclopedia of Life (EOL)</a></li>
+<li class="chapter" data-level="2.15.4" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#integrated-taxonomic-information-system-itis"><i class="fa fa-check"></i><b>2.15.4</b> Integrated Taxonomic Information System (ITIS)</a></li>
+<li class="chapter" data-level="2.15.5" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>2.15.5</b> World Registry of Marine Species (WoRMS)</a></li>
+<li class="chapter" data-level="2.15.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>2.15.6</b> Tools to help you</a></li>
 </ul></li>
-<li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="2.16" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>2.16</b> Creating GUIDs</a></li>
 </ul></li>
-<li class="part"><span><b>d. Structure</b></span></li>
-<li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
+<li class="chapter" data-level="" data-path=""><a href="#part-d.-structure"><i class="fa fa-check"></i>(PART*) d. Structure</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="07-structure.html"><a href="07-structure.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
-<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
-<li class="chapter" data-level="7.3" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
+<li class="chapter" data-level="2.17" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>2.17</b> Relational database</a></li>
+<li class="chapter" data-level="2.18" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>2.18</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="2.19" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>2.19</b> The Core &amp; its extensions</a>
 <ul>
-<li class="chapter" data-level="7.3.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
-<li class="chapter" data-level="7.3.2" data-path="07-structure.html"><a href="07-structure.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>7.3.2</b> Occurrence core vs. event core</a></li>
+<li class="chapter" data-level="2.19.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>2.19.1</b> Find the core</a></li>
+<li class="chapter" data-level="2.19.2" data-path="07-structure.html"><a href="07-structure.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>2.19.2</b> Occurrence core vs. event core</a></li>
 </ul></li>
-<li class="chapter" data-level="7.4" data-path="07-structure.html"><a href="07-structure.html#which-extensions"><i class="fa fa-check"></i><b>7.4</b> Which extension(s)?</a></li>
-<li class="chapter" data-level="7.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html"><i class="fa fa-check"></i><b>7.5</b> Arrange Darwin Core terms in core and extension files</a>
+<li class="chapter" data-level="2.20" data-path="07-structure.html"><a href="07-structure.html#which-extensions"><i class="fa fa-check"></i><b>2.20</b> Which extension(s)?</a></li>
+<li class="chapter" data-level="2.21" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html"><i class="fa fa-check"></i><b>2.21</b> Arrange Darwin Core terms in core and extension files</a>
 <ul>
-<li class="chapter" data-level="7.5.1" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>7.5.1</b> General terms (Terms of class Record-level)</a></li>
-<li class="chapter" data-level="7.5.2" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#event-file"><i class="fa fa-check"></i><b>7.5.2</b> Event file</a></li>
-<li class="chapter" data-level="7.5.3" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#occurrence-file"><i class="fa fa-check"></i><b>7.5.3</b> Occurrence file</a></li>
-<li class="chapter" data-level="7.5.4" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#taxon-file"><i class="fa fa-check"></i><b>7.5.4</b> Taxon file</a></li>
-<li class="chapter" data-level="7.5.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#measurementorfact-file"><i class="fa fa-check"></i><b>7.5.5</b> MeasurementOrFact file</a></li>
+<li class="chapter" data-level="2.21.1" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>2.21.1</b> General terms (Terms of class Record-level)</a></li>
+<li class="chapter" data-level="2.21.2" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#event-file"><i class="fa fa-check"></i><b>2.21.2</b> Event file</a></li>
+<li class="chapter" data-level="2.21.3" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#occurrence-file"><i class="fa fa-check"></i><b>2.21.3</b> Occurrence file</a></li>
+<li class="chapter" data-level="2.21.4" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#taxon-file"><i class="fa fa-check"></i><b>2.21.4</b> Taxon file</a></li>
+<li class="chapter" data-level="2.21.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#measurementorfact-file"><i class="fa fa-check"></i><b>2.21.5</b> MeasurementOrFact file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>e. Metadata II</b></span></li>
-<li class="chapter" data-level="8" data-path="08-metadata.html"><a href="08-metadata.html"><i class="fa fa-check"></i><b>8</b> Standardise and structure your metadata</a>
+<li class="chapter" data-level="3" data-path="08-metadata.html"><a href="08-metadata.html"><i class="fa fa-check"></i><b>3</b> Standardise and structure your metadata</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
-<li class="chapter" data-level="8.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
-<li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
-<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
-<li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
-<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Create XML files in R</a>
+<li class="chapter" data-level="3.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>3.1</b> Metadata standards (for biodiversity data)</a></li>
+<li class="chapter" data-level="3.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>3.2</b> Tools to help you</a></li>
+<li class="chapter" data-level="3.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>3.3</b> Our choice</a></li>
+<li class="chapter" data-level="3.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>3.4</b> EML terms</a></li>
+<li class="chapter" data-level="3.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>3.5</b> Structural metadata - The meta.xml file</a></li>
+<li class="chapter" data-level="3.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>3.6</b> Create XML files in R</a>
 <ul>
-<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+<li class="chapter" data-level="3.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>3.6.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="3.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>3.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="chapter" data-level="4" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>4</b> Glossary</a></li>
+<li class="chapter" data-level="5" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>5</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -294,27 +228,27 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="standardise-and-structure-your-metadata" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number"> 8</span> Standardise and structure your metadata<a href="08-metadata.html#standardise-and-structure-your-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Once you have described your data and assigned <a href="09-glossary.html#metadata">metadata</a> to it (see <a href="04-Describe-data.html#describe-data">chapter 4</a>), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and <a href="09-glossary.html#DwC">Darwin Core</a> sometimes is also referred to as a metadata standard.</p>
-<div id="metadata-standards-for-biodiversity-data" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Metadata standards (for biodiversity data)<a href="08-metadata.html#metadata-standards-for-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="standardise-and-structure-your-metadata" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number"> 3</span> Standardise and structure your metadata<a href="08-metadata.html#standardise-and-structure-your-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Once you have described your data and assigned <a href="09-glossary.html#metadata">metadata</a> to it (see <a href="#describe-data">chapter 4</a>), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and <a href="09-glossary.html#DwC">Darwin Core</a> sometimes is also referred to as a metadata standard.</p>
+<div id="metadata-standards-for-biodiversity-data" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Metadata standards (for biodiversity data)<a href="08-metadata.html#metadata-standards-for-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>As with the data standards, a wide range of metadata standards exists, partly tailored to specific research domains.</p>
 <p>For ecological data, a widely used metadata standard, for example by <a href="09-glossary.html#OBIS">OBIS</a> and <a href="09-glossary.html#GBIF">GBIF</a>, is the <a href="09-glossary.html#eml"><strong>Ecological metadata language (EML)</strong></a>, which is also the required format for metadata in the <a href="09-glossary.html#DwC-A">Darwin Core Archives</a>. It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable <a href="09-glossary.html#XML">XML</a> markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their <a href="https://eml.ecoinformatics.org/schema/">interactive schema documentation</a>.</p>
 <p><strong>Dublin Core</strong> is a metadata standard consisting of a set of 15 terms used to describe metadata. The terms themselves consist of several dozen properties, classes, data types, and vocabulary encoding schemes and are maintained by the <a href="https://dublincore.org/">Dublin Core Metadata Initiative (DCMI)</a>.</p>
 </div>
-<div id="tools-to-help-you-4" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> Tools to help you<a href="08-metadata.html#tools-to-help-you-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="tools-to-help-you-4" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Tools to help you<a href="08-metadata.html#tools-to-help-you-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>The <a href="https://rdamsc.bath.ac.uk/">metadata standard catalog</a>, provides a nice overview of the different metadata standards and is searchable, for example, for specific topics.</li>
 </ul>
 </div>
-<div id="our-choice-2" class="section level2 hasAnchor" number="8.3">
-<h2><span class="header-section-number">8.3</span> Our choice<a href="08-metadata.html#our-choice-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="our-choice-2" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Our choice<a href="08-metadata.html#our-choice-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>For all of our datasets we choose EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Additionally, as we went with Darwin Core Archives to structure the data, EML was required to use as a metadata standard.</p>
 </div>
-<div id="eml-terms" class="section level2 hasAnchor" number="8.4">
-<h2><span class="header-section-number">8.4</span> EML terms<a href="08-metadata.html#eml-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="eml-terms" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> EML terms<a href="08-metadata.html#eml-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found <a href="https://eml.ecoinformatics.org/schema/">here</a> and some best practices <a href="https://ediorg.github.io/data-package-best-practices/eml-best-practices.html">here</a>). For all terms containing text the “xml:lang” attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.</p>
 <p><span style="color: #d111d4ff;"><strong>Required terms</strong></span></p>
 <p>EML comes with only three terms that are required to make the EML document schema valid.</p>
@@ -326,8 +260,11 @@ div.csl-indent {
 <p><span style="color: #dd7f08ff;"><strong>Highly recommended terms</strong></span></p>
 <p>The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.</p>
 <ul>
-<li><p><span style="color: #dd7f08ff;"><code>&lt;metadataProvider&gt;</code></span>: information about the person that has provides the metadata in the EML file</p>
-<p><strong>Creator, contact and metadataProvider</strong> The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
+<li><span style="color: #dd7f08ff;"><code>&lt;metadataProvider&gt;</code></span>: information about the person that has provides the metadata in the EML file</li>
+</ul>
+<div class="infobox infoimg">
+<p><strong>Creator, contact and metadataProvider</strong></p>
+<p>The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
 <ul>
 <li><p><code>&lt;individualName&gt;</code>: the name of an individual person can be given with three subterms:</p>
 <ul>
@@ -337,15 +274,17 @@ div.csl-indent {
 </ul></li>
 <li><p><code>&lt;organisationName&gt;</code></p></li>
 <li><p><code>&lt;positionName&gt;</code></p></li>
-<li><p><code>&lt;address&gt;</code></p></li>
-<li><p><code>&lt;city&gt;</code></p></li>
-<li><p><code>&lt;postalCode&gt;</code></p></li>
-<li><p><code>&lt;country&gt;</code></p></li>
-<li><p><code>&lt;electronicMalAddress&gt;</code></p></li>
-<li><p><code>&lt;userID&gt;</code>: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute <code>&lt;directory&gt;</code> to state which directory the ID refers to and will generally be an URL (e.g., <a href="https://orcid.org" class="uri">https://orcid.org</a>)</p></li>
+<li><p><code>&lt;address&gt;</code></p>
+<ul>
+<li><code>&lt;city&gt;</code></li>
+<li><code>&lt;postalCode&gt;</code></li>
+<li><code>&lt;country&gt;</code></li>
 </ul></li>
+<li><p><code>&lt;electronicMalAddress&gt;</code></p></li>
+<li><p><code>&lt;userID&gt;</code>: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute “directory” to state which directory the ID refers to and will generally be an URL (e.g., <a href="https://orcid.org" class="uri">https://orcid.org</a>)</p></li>
 </ul>
 <p>The contact, creator and metadataProvider can be different people/organisations/positions but can also all be the same. In the latter case, do this.</p>
+</div>
 <ul>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;language&gt;</code></span>: provides the language the resource is written in and can either be a well-known language name or ideally, a <a href="https://www.w3schools.com/tags/ref_language_codes.asp">ISO language code</a></p></li>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;abstract&gt;</code></span>: a short summary of the data that includes basic information to give an idea what the data is about.</p>
@@ -361,22 +300,28 @@ div.csl-indent {
 <ul>
 <li><span style="color: #dd7f08ff;"><code>&lt;temporalCoverage&gt;</code></span>: information on what time span is covered in the data. Use <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> (i.e., YYYY-MM-DD) for date and time information. Needs either one of the subterms:
 <ul>
-<li><code>&lt;singleDateTime&gt;</code>: describes a single date and time either by describing a calendar date or a geologic date, using the subterms:</li>
+<li><code>&lt;singleDateTime&gt;</code>: describes a single date and time either by describing a calendar date or a geologic date, using the subterms:
+<ul>
 <li><code>&lt;calendarDate&gt;</code></li>
 <li><code>&lt;time&gt;</code></li>
 <li><code>&lt;alternativeTimeScale&gt;</code>: can describe alternative time scale, e.g., geological date, with a range of subterms</li>
-<li><code>&lt;rangeOfDates&gt;</code>: allows to describe a time range by specifying start and end date (with the same subterms as for singleDateTime). Can be repeated if there are several time ranges that need to be described.</li>
+</ul></li>
+<li><code>&lt;rangeOfDates&gt;</code>: allows to describe a time range by specifying start and end date (with the same subterms as for singleDateTime). Can be repeated if there are several time ranges that need to be described.
+<ul>
 <li><code>&lt;beginDate&gt;</code></li>
 <li><code>&lt;endDate&gt;</code></li>
+</ul></li>
 </ul></li>
 <li><span style="color: #dd7f08ff;"><code>&lt;geographicCoverage&gt;</code></span>: information about the spatial extent of the data that should be given as text and coordinates with the subterms:
 <ul>
 <li><code>&lt;geographicDescription&gt;</code>: short text explanation of the spatial extent</li>
-<li><code>&lt;boundingCoordinates&gt;</code>: stating the four edges of a bounding box, by giving:</li>
+<li><code>&lt;boundingCoordinates&gt;</code>: stating the four edges of a bounding box, by giving:
+<ul>
 <li><code>&lt;westBoundingCoordinate&gt;</code></li>
 <li><code>&lt;eastBoundingCoordinate&gt;</code></li>
 <li><code>&lt;northBoundingCoordinate&gt;</code></li>
 <li><code>&lt;southBoundingCoordinate&gt;</code></li>
+</ul></li>
 </ul></li>
 <li><span style="color: #dd7f08ff;"><code>&lt;taxonomicCoverage&gt;</code></span>: information about the taxa covered in the data
 <ul>
@@ -393,8 +338,10 @@ div.csl-indent {
 <li><p><span style="color: #dd7f08ff;"><code>&lt;maintenance&gt;</code></span>: information on with which frequency the data is updated and whether data collection is still ongoing</p>
 <ul>
 <li><code>&lt;maintenanceUpdateFrequency&gt;</code>: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown</li>
-<li><code>&lt;description&gt;</code>: text description of maintenance stated with subterm</li>
+<li><code>&lt;description&gt;</code>: text description of maintenance stated with subterm
+<ul>
 <li><code>&lt;para&gt;</code></li>
+</ul></li>
 </ul></li>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;methods&gt;</code></span>: stepwise information on methods for data collection</p>
 <ul>

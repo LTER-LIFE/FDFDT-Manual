@@ -77,6 +77,9 @@ code span.at {/*R*/
 .book .book-body .page-wrapper .page-inner section.normal pre { 
   line-height: 1.5;
 }
+.book .book-body .page-wrapper .page-inner section.normal code {
+    padding: 0em;
+}
 /*------------Mavigation pane----------- */
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {

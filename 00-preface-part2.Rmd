@@ -14,7 +14,7 @@ This guide is for anybody who has ecological data and wants to improve their dat
 
 - anyone else … 
  
-## Why you should use this guide and improve your data management {-}  
+## Why you should use this guide {-}  
 
 Data management is the practice of taking care of data throughout its entire [lifecycle](#datalifecycle), from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss  and have higher traceability of changes and errors. Additionally, by describing, annotating,  and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
 

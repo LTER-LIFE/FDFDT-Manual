@@ -40,31 +40,31 @@ The following set of terms is not strictly required by EML but we would highly r
 
 -   [`<metadataProvider>`]{style="color: #dd7f08ff;"}: information about the person that has provides the metadata in the EML file
 
-    **Creator, contact and metadataProvider** The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms `<individualName>`, `<organizationName>` or `<positionName>`.
+:::{.infobox .infoimg}
+**Creator, contact and metadataProvider** 
+    
+The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms `<individualName>`, `<organizationName>` or `<positionName>`.
 
-    -   `<individualName>`: the name of an individual person can be given with three subterms:
+-   `<individualName>`: the name of an individual person can be given with three subterms:
+    -   `<salutation>`: can be a title (e.g., "Dr.") or another salutation ("Mr."/"Ms.")
+    -   `<givenName>`
+    -   `<surName>`
 
-        -   `<salutation>`: can be a title (e.g., "Dr.") or another salutation ("Mr."/"Ms.")
-        -   `<givenName>`
-        -   `<surName>`
+-   `<organisationName>`
 
-    -   `<organisationName>`
+-   `<positionName>`
 
-    -   `<positionName>`
-
-    -   `<address>`
-
+-   `<address>`
     -   `<city>`
-
     -   `<postalCode>`
-
     -   `<country>`
 
-    -   `<electronicMalAddress>`
+-   `<electronicMalAddress>`
 
-    -   `<userID>`: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute `<directory>` to state which directory the ID refers to and will generally be an URL (e.g., <https://orcid.org>)
+-   `<userID>`: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute "directory" to state which directory the ID refers to and will generally be an URL (e.g., <https://orcid.org>)
 
 The contact, creator and metadataProvider can be different people/organisations/positions but can also all be the same. In the latter case, do this.
+:::
 
 -   [`<language>`]{style="color: #dd7f08ff;"}: provides the language the resource is written in and can either be a well-known language name or ideally, a [ISO language code](https://www.w3schools.com/tags/ref_language_codes.asp)
 
@@ -81,19 +81,19 @@ The contact, creator and metadataProvider can be different people/organisations/
 
     -   [`<temporalCoverage>`]{style="color: #dd7f08ff;"}: information on what time span is covered in the data. Use [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) (i.e., YYYY-MM-DD) for date and time information. Needs either one of the subterms:
         -   `<singleDateTime>`: describes a single date and time either by describing a calendar date or a geologic date, using the subterms:
-        -   `<calendarDate>`
-        -   `<time>`
-        -   `<alternativeTimeScale>`: can describe alternative time scale, e.g., geological date, with a range of subterms
+            -   `<calendarDate>`
+            -   `<time>`
+            -   `<alternativeTimeScale>`: can describe alternative time scale, e.g., geological date, with a range of subterms
         -   `<rangeOfDates>`: allows to describe a time range by specifying start and end date (with the same subterms as for singleDateTime). Can be repeated if there are several time ranges that need to be described.
-        -   `<beginDate>`
-        -   `<endDate>`
+            -   `<beginDate>`
+            -   `<endDate>`
     -   [`<geographicCoverage>`]{style="color: #dd7f08ff;"}: information about the spatial extent of the data that should be given as text and coordinates with the subterms:
         -   `<geographicDescription>`: short text explanation of the spatial extent
         -   `<boundingCoordinates>`: stating the four edges of a bounding box, by giving:
-        -   `<westBoundingCoordinate>`
-        -   `<eastBoundingCoordinate>`
-        -   `<northBoundingCoordinate>`
-        -   `<southBoundingCoordinate>`
+            -   `<westBoundingCoordinate>`
+            -   `<eastBoundingCoordinate>`
+            -   `<northBoundingCoordinate>`
+            -   `<southBoundingCoordinate>`
     -   [`<taxonomicCoverage>`]{style="color: #dd7f08ff;"}: information about the taxa covered in the data
         -   `<generalTaxonomicCoverage>`: text description of the taxa included in the data
         -   `<taxonomicClassification>`: taxonomic classification of the range of taxa included in the data, specified through a set of subterms:
@@ -106,7 +106,7 @@ The contact, creator and metadataProvider can be different people/organisations/
 
     -   `<maintenanceUpdateFrequency>`: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown
     -   `<description>`: text description of maintenance stated with subterm
-    -   `<para>`
+        -   `<para>`
 
 -   [`<methods>`]{style="color: #dd7f08ff;"}: stepwise information on methods for data collection
 
@@ -133,13 +133,11 @@ There are plenty of other terms that can be suitable to use for your data. The f
         -   `<studyAreaDescription>`
 
 -   [`<intellectualRights>`]{style="color: #14d16eff;"}: information on the intellectual property rights as text using subterm
-
     -   `<para>`
 
 -   [`<alternateIdentifier>`]{style="color: #14d16eff;"}
 
 -   [`<additionalInfo>`]{style="color: #14d16eff;"}: Can capture any information that cannot be captured by the remaining terms and is filled with text using subterm
-
     -   `<para>`
 
 -   [`<introduction>`]{style="color: #14d16eff;"}: overview of background and context of the dataset, similar to an introduction of a journal article
