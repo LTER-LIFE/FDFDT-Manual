@@ -92,12 +92,12 @@ code span.at {/*R*/
 }
 /*------------Info boxes----------- */
 .disclaimerimg{
-  background-image: url("../images/icon_disclaimer.png");
   background: #c0290217 10px center/4em no-repeat;
+  background-image: url("../images/icon_disclaimer.png");
 }
 .disclaimer{
-  padding: 0em 1em 0.5em 6em;
-  margin-top: 10px;
+  padding: 1em 1em 0.5em 6em;
+  margin-top: 30px;
   margin-bottom: 10px;
   border: 3.5px dashed #c02902ff;
   border-radius: 13px;
@@ -125,6 +125,14 @@ code span.at {/*R*/
 }
 
 /*------------Tables----------- */
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table td, table th {
+    border: 2px solid #ddd;
+}
 th {
   background-color: #00c0a8ff;
   color: black;

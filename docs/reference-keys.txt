@@ -1,5 +1,6 @@
 fig:FAIR
 fig:MSSS-FAIR
+fig:Fig-mapping
 fig:budburst
 fig:crickets
 fig:CLUE
@@ -12,6 +13,7 @@ extending-fair
 fair-is-not-open
 why-should-your-data-be-fair
 fair-assessment-of-your-data
+mapping-of-assessment-questions-to-fair-principles
 example-datasets
 budburst
 cricket
@@ -86,3 +88,7 @@ eml.xml-file
 meta.xml-file
 glossary
 references
+acknowledgements
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
+how-this-guide-came-to-be---project
+why-should-you-make-your-data-more-fair

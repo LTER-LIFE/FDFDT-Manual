@@ -1,8 +1,8 @@
 ## FAIR assessment of your data
 
-As stated before, every dataset is different and datasets can vary widely in their level of FAIR. FAIR is a gradient (see also [FAIR Data Maturity Model. Specification and Guidelines of RDA](https://zenodo.org/records/3909563)) and different datasets can fulfil different criteria of FAIR but reach the same overall level of FAIRness. It is therefore important to first assess which state your data is in and what steps your data need to be improved. There are already a range of FAIR assessment tools (see [here](https://fairassist.org/) for an overview), which score your data but there is much less guidance on how to actually improve the FAIRness of your data. It is therefore important to first assess which state your data is in and what steps your data needs to be improved. 
+Datasets vary widely in format and complexity, as well as degree of structure and FAIRness. It is therefore important to first assess which state your data is in and what steps you can take to increase the maturity of your data. 
 
-Even though there is already a range of FAIR assessment tools available (see here for an overview), that can either automatically assess the FAIRness of your data or provide self-assessment questionnaires, we decided to develop our own tool for several reasons:
+Even though there is already a range of FAIR assessment tools available (see [here](https://fairassist.org/) for an overview), that can either automatically assess the FAIRness of your data or provide self-assessment questionnaires, we decided to develop our own tool for several reasons:
 
 - Existing tools tend to purely assign a score to the data but provide little guidance on how to actually improve the FAIRness of the data (@Krans_2022). In contrast, our tool directly provides suggestions on how to improve the maturity of the data based on the given answers and by directing the user to the corresponding chapters of this guide.
 
@@ -21,7 +21,7 @@ We therefore developed our own tool that provides you with a set of simple quest
 
 **Structure** is about whether your data is organised in a consistent and logical way.
 
-Besides the questions about structure, they are all directly based on the FAIR principles. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the assessment link to the letters of FAIR. Your answers will provide you with a circle-diagram showing how mature your dataset is in each of the properties and connected to that a list of chapters of this manual you can work through to further improve the maturity of your data.
+Apart from the questions about structure, the questions in the assessment are all directly based on the FAIR principles. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the assessment link to the letters of FAIR. Your answers will provide you with a circle diagram showing how mature your dataset is in each of the properties and an associated list of chapters of this manual you can work through to further improve the maturity of your data.
 
 ```{r MSSS-FAIR, echo = FALSE, out.width = '30%', fig.cap = 'Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR.', fig.align = 'center'}
 
@@ -29,6 +29,8 @@ knitr::include_graphics("images/Fig2_MSSS-FAIR.png")
 
 ```
 
-It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data or information scientists instead of ecologists, we will not look into these topics in this guide. 
+::: {.infobox .infoimg}
+It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide.
+:::
 
 <div>

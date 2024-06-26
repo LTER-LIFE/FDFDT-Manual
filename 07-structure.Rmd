@@ -12,9 +12,9 @@ Relational databases are a common format in structuring your data files, where i
 
 In contrast to Darwin Core Archives (see Chapter Darwin Core Archive), relational databases can reduce redundancy in the data and are more flexible in linking information.
 
-```{r relational-database, echo = FALSE, out.width = '100%', fig.cap = '**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked.'}
+```{r relational-database, echo = FALSE, out.width = '100%', fig.cap = '**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked.', dev = 'svg'}
 
-knitr::include_graphics("images/DwC_relationalDatabase.png")
+knitr::include_graphics("images/DwC-relationalDatabase-SVG.svg")
 
 ```
 

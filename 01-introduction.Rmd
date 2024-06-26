@@ -19,16 +19,18 @@ knitr::include_graphics("images/Figure1-FAIR.png")
 
 ```
 
+The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations – partly through the distinction between data and metadata – and to different maturity levels (see also [FAIR Data Maturity Model. Specification and Guidelines of RDA](https://zenodo.org/records/3909563)). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.
+
 ## Extending FAIR
 
-In our guide we will extend FAIR as it would be strictly defined by the FAIR principles in order to make it workable in practice. This means that we also include the component of structuring your data into the process of FAIRifying it.
+In this guide we extend FAIR as it is defined by the FAIR principles in order to make it workable in practice. This means that we include the component of structuring your data into the process of FAIRifying it. 
 
-**Structured.** Structuring your data, so organising it in a tidy way, can clearly make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data.
+**Structured.** Structuring your data, i.e., organising it in a tidy way, can make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data.
 
 ## FAIR is not open
 
-It is important to stress here that FAIR is **not equal** to open. While the metadata of your data should be openly available, informing others about the existence of your data, the data itself does not have to be open. If you have reasons for not making the data openly available to everyone (e.g., because it contains sensitive information), this can and should be made clear in the metadata where according licensing information and access rights can be provided. As long as this is guaranteed, restricted or closed data can also be completely FAIR.
+It is important to stress here that FAIR is **not equal** to open. While the metadata of your data should be openly available to enable the discovery of your data by others, the data itself does not have to be open. If you have reasons for not making the data openly available to everyone (e.g., because it contains sensitive information), this can and should be made clear in the metadata where according licensing information and access rights can be provided. As long as this is guaranteed, restricted or closed data can also be completely FAIR. 
 
-## Why should your data be FAIR?
+## Why should you make your data more FAIR?
 
 Depending on the current maturity of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of the data additionally increases the possibilities for collaborations and will in total benefit the scientific community.

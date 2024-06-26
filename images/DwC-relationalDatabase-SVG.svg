@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="250.2885mm"
+   height="38.540638mm"
+   viewBox="0 0 250.2885 38.540638"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-1-9-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-0-7-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-1-9-9-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-0-7-4-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-1-9-9-2-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-0-7-4-6-3" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-20.36211,-94.702952)">
+    <g
+       id="g1"
+       transform="translate(-23.510634,-2.9058086)">
+      <g
+         id="g10"
+         transform="matrix(1.4745372,0,0,1.4772964,80.827474,7.0724955)"
+         style="stroke-width:0.677546">
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke-width:0.338772;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.820144"
+           id="rect17"
+           width="4.3444057"
+           height="6.4820838"
+           x="-16.118929"
+           y="61.285103"
+           ry="0.13381787" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#e580ad;fill-opacity:0.9;stroke:#1a729f;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="-23.744043"
+           y="77.028732"
+           id="text1-2-5"><tspan
+             id="tspan1-4-4"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-opacity:1"
+             x="-23.744043"
+             y="77.028732">- measurementID</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-opacity:1"
+             x="-23.744043"
+             y="80.2034"
+             id="tspan2-4">- eventID</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-opacity:1"
+             x="-23.744043"
+             y="83.378067"
+             id="tspan3-9">- occurrenceID</tspan></text>
+        <rect
+           style="fill:none;fill-opacity:0.501199;stroke:#42da88;stroke-width:0.135509;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0.326294;stroke-opacity:0.490196"
+           id="rect2-1"
+           width="35.067616"
+           height="14.378757"
+           x="-24.994164"
+           y="70.237671"
+           ry="1.3365391" />
+        <rect
+           style="fill:#42da88;fill-opacity:0.490196;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.439216"
+           id="rect11-0"
+           width="33.929726"
+           height="3.6205502"
+           x="-24.373499"
+           y="70.858337"
+           ry="1.8102751" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13547px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#e580ad;fill-opacity:0.9;stroke:#1a729f;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="-7.4995623"
+           y="73.756615"
+           id="text15-6"><tspan
+             id="tspan15-2"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13546px;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-opacity:1"
+             x="-7.4995627"
+             y="73.756615">Measurement or Fact</tspan></text>
+        <rect
+           style="fill:#42da88;fill-opacity:0.490196;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           id="rect7-1"
+           width="33.929726"
+           height="3.6205502"
+           x="20.279457"
+           y="73.994667"
+           ry="1.8102751" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13547px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:0.9;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="37.153393"
+           y="76.89138"
+           id="text7-3"><tspan
+             id="tspan11-6"
+             x="37.153393"
+             y="76.89138"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13546px;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">Event</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:0.9;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="20.908913"
+           y="80.165062"
+           id="text10-8"><tspan
+             id="tspan12-7"
+             x="20.908913"
+             y="80.165062"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">- eventID</tspan><tspan
+             id="tspan13-9"
+             x="20.908913"
+             y="83.339729"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0" /></text>
+        <rect
+           style="fill:none;fill-opacity:0.501199;stroke:#42da88;stroke-width:0.135509;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0.326294;stroke-opacity:0.490196"
+           id="rect10-6"
+           width="35.067616"
+           height="8.4824314"
+           x="19.658792"
+           y="73.374001"
+           ry="0.78846198" />
+        <rect
+           style="fill:#42da88;fill-opacity:0.490196;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           id="rect7-6-2"
+           width="33.929726"
+           height="3.6205502"
+           x="65.442604"
+           y="70.858337"
+           ry="1.8102751" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13547px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:0.9;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="82.394928"
+           y="73.766022"
+           id="text7-6-4"><tspan
+             id="tspan14-1"
+             x="82.394928"
+             y="73.766022"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13546px;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">Occurrence</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:0.9;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="66.07206"
+           y="77.028732"
+           id="text10-7-5"><tspan
+             id="tspan24-8"
+             x="66.07206"
+             y="77.028732"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">- occurrenceID</tspan><tspan
+             id="tspan25-8"
+             x="66.07206"
+             y="80.2034"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">- eventID</tspan><tspan
+             id="tspan26-5"
+             x="66.07206"
+             y="83.378067"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">- taxonID</tspan><tspan
+             id="tspan27-1"
+             x="66.07206"
+             y="86.552734"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">- organismID</tspan></text>
+        <rect
+           style="fill:none;fill-opacity:0.501199;stroke:#42da88;stroke-width:0.135509;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0.326294;stroke-opacity:0.490196"
+           id="rect10-9-0"
+           width="35.067616"
+           height="17.068308"
+           x="64.821938"
+           y="70.237671"
+           ry="1.5865394" />
+        <rect
+           style="fill:#42da88;fill-opacity:0.490196;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           id="rect7-2-4"
+           width="33.929726"
+           height="3.7102058"
+           x="110.16374"
+           y="76.94738"
+           ry="1.8551029" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13547px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:0.9;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="128.77141"
+           y="78.944077"
+           id="text7-0-1"
+           transform="scale(0.9878438,1.0123058)"><tspan
+             id="tspan19-7"
+             x="128.77141"
+             y="78.944077"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.13546px;font-family:Asap;-inkscape-font-specification:'Asap, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">Taxon</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;line-height:1.35;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:0.9;stroke:none;stroke-width:0;stroke-linecap:square;stroke-dashoffset:0.326294;stroke-opacity:0.699367"
+           x="112.1566"
+           y="82.258324"
+           id="text10-0-0"
+           transform="scale(0.9878438,1.0123058)"><tspan
+             id="tspan20-1"
+             x="112.1566"
+             y="82.258324"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">- taxonID</tspan><tspan
+             id="tspan21-8"
+             x="112.1566"
+             y="85.432991"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0" /><tspan
+             id="tspan22-9"
+             x="112.1566"
+             y="88.607658"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.3516px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0" /></text>
+        <rect
+           style="fill:none;fill-opacity:0.501199;stroke:#42da88;stroke-width:0.135509;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0.326294;stroke-opacity:0.490196"
+           id="rect10-7-5"
+           width="35.067616"
+           height="8.4804707"
+           x="109.54308"
+           y="76.31134"
+           ry="0.78827965" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.375219;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#RoundedArrow-1-9-1);marker-end:url(#RoundedArrow-1-9-1);paint-order:normal"
+           d="M 17.385586,79.542759 12.81029,79.523819"
+           id="path9-2-0-2" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.375219;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#RoundedArrow-1-9-1);marker-end:url(#RoundedArrow-1-9-9-3);paint-order:normal"
+           d="m 57.369608,79.570901 4.575296,0.01894"
+           id="path9-2-0-4-2" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.375219;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#RoundedArrow-1-9-1);marker-end:url(#RoundedArrow-1-9-9-2-5);paint-order:normal"
+           d="m 107.03021,82.624733 -4.57529,-0.01894"
+           id="path9-2-0-4-0-9" />
+      </g>
+    </g>
+  </g>
+</svg>
