@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-8-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-5-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-0-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-2-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-8-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-5-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-0-6-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-2-9-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-8-7-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-5-9-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-8-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-5-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-8-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-5-6" />
+    </marker>
+  </defs>
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5196px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;mix-blend-mode:normal;fill:#1a1a1a;fill-opacity:0.490196;stroke:none;stroke-width:0.679786;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:10.1004;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       x="4.019928"
+       y="157.47046"
+       id="text14"><tspan
+         id="tspan16"
+         x="4.019928"
+         y="157.47046"
+         style="stroke-width:0.679786">I</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.60912px;line-height:2.60795px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="101.0371"
+       y="52.165516"
+       id="text29"><tspan
+         id="tspan29"
+         style="stroke-width:0.802577"
+         x="101.0371"
+         y="52.165516" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:27.5196px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';mix-blend-mode:normal;fill:#1a1a1a;fill-opacity:0.490196;stroke:#000000;stroke-width:0.679786;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:10.1004;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       x="0.34605941"
+       y="59.274544"
+       id="text12"><tspan
+         id="tspan12"
+         style="fill:#1a1a1a;fill-opacity:0.490196;stroke:none;stroke-width:0.679786"
+         x="0.34605941"
+         y="59.274544">F</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.568672;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1"
+       width="55.458324"
+       height="13.6454"
+       x="15.738057"
+       y="3.6209722"
+       ry="1.9846233" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="18.937923"
+       y="8.2881985"
+       id="text2"><tspan
+         id="tspan1"
+         x="18.937923"
+         y="8.2881985"
+         style="line-height:3.52778px">F1. (Meta)data are assigned a </tspan><tspan
+         id="tspan2"
+         x="18.937923"
+         y="11.815979"
+         style="line-height:3.52778px">globally unique and persistent </tspan><tspan
+         id="tspan3"
+         x="18.937923"
+         y="15.343759"
+         style="line-height:3.52778px">identifier</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.514118;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-9"
+       width="55.512878"
+       height="11.141967"
+       x="15.528463"
+       y="19.027344"
+       ry="1.6205174" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="18.83209"
+       y="23.786938"
+       id="text4"><tspan
+         id="tspan4"
+         x="18.83209"
+         y="23.786938"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">F2.Data are described with rich </tspan><tspan
+         id="tspan5"
+         x="18.83209"
+         y="27.314718"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">metadata (defined by R1 below)</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.568672;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-1"
+       width="55.458324"
+       height="13.6454"
+       x="15.55574"
+       y="33.119522"
+       ry="1.9846233" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="16.630751"
+       y="37.373997"
+       id="text6"><tspan
+         id="tspan6"
+         x="16.630751"
+         y="37.373997"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">F3. Metadata clearly and explicitly</tspan><tspan
+         id="tspan7"
+         x="16.630751"
+         y="40.901775"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576"> include  the identifier of the data</tspan><tspan
+         x="16.630751"
+         y="44.429558"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576"
+         id="tspan23"> they describe</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.514118;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-7"
+       width="55.512878"
+       height="11.141967"
+       x="16.255585"
+       y="65.573784"
+       ry="1.6205174" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="19.114313"
+       y="70.747894"
+       id="text8"><tspan
+         id="tspan8"
+         x="19.114313"
+         y="70.747894"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">F4. (Meta)data are registered or</tspan><tspan
+         id="tspan9"
+         x="19.114313"
+         y="74.275673"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576"> indexed in a searchable resource</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.456737;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2"
+       width="46.738426"
+       height="10.444503"
+       x="87.127037"
+       y="4.1713195"
+       ry="1.5190761" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.937988"
+       y="8.5892372"
+       id="text10"><tspan
+         id="tspan10"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="88.937988"
+         y="8.5892372">Q8. Does the dataset</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="88.937988"
+         y="12.117018"
+         id="tspan11">have a persistent identifier?</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.475798;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-4"
+       width="50.805672"
+       height="10.427068"
+       x="87.136566"
+       y="47.466625"
+       ry="1.5165404" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.937988"
+       y="51.875824"
+       id="text16"><tspan
+         id="tspan13"
+         x="88.937988"
+         y="51.875824">Q9. Is data stored in a </tspan><tspan
+         id="tspan14"
+         x="88.937988"
+         y="55.403603">repository?</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.476821;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-2"
+       width="51.008148"
+       height="10.430366"
+       x="87.137077"
+       y="59.517921"
+       ry="1.5170201" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.966209"
+       y="63.928772"
+       id="text18"><tspan
+         id="tspan18"
+         x="88.966209"
+         y="63.928772">Q10. Is metadata stored in </tspan><tspan
+         id="tspan21"
+         x="88.966209"
+         y="67.456551">a repository?</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.525374;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-6"
+       width="62.214737"
+       height="10.381812"
+       x="87.161354"
+       y="72.342705"
+       ry="1.5099584" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52076px;line-height:3.52076px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.800978;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="89.755539"
+       y="76.561676"
+       id="text19"
+       transform="scale(0.99790852,1.0020959)"><tspan
+         id="tspan24"
+         x="89.755539"
+         y="76.561676"
+         style="stroke-width:0.800978">Q11. Is the data registered or indexed</tspan><tspan
+         id="tspan25"
+         x="89.755539"
+         y="80.082428"
+         style="stroke-width:0.800978"> in a searchable resource/catalogue?</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.563117;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-3"
+       width="62.432827"
+       height="11.885373"
+       x="87.186272"
+       y="85.081665"
+       ry="1.7286403" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.945045"
+       y="88.449074"
+       id="text21"><tspan
+         id="tspan34"
+         x="88.945045"
+         y="88.449074">Q12. Is the metadata registered or </tspan><tspan
+         id="tspan35"
+         x="88.945045"
+         y="91.976852">indexed in a searchable resource/</tspan><tspan
+         id="tspan36"
+         x="88.945045"
+         y="95.504631">catalogue?</tspan></text>
+    <rect
+       style="fill:none;stroke:#de6e9f;stroke-width:0.451014;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-4-5-0"
+       width="45.729767"
+       height="10.409026"
+       x="87.124176"
+       y="19.399492"
+       ry="1.5139164" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.945045"
+       y="24.155977"
+       id="text27"><tspan
+         id="tspan27"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.802577"
+         x="88.945045"
+         y="24.155977">Q1. Does data have</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.802577"
+         x="88.945045"
+         y="27.683758"
+         id="tspan28">detailed metadata?</tspan></text>
+    <rect
+       style="fill:none;stroke:#de6e9f;stroke-width:0.528802;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-4-5"
+       width="50.767948"
+       height="12.889224"
+       x="87.163071"
+       y="32.730724"
+       ry="1.8746431" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57193px;line-height:3.57193px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.812621;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.478424"
+       y="37.440807"
+       id="text30"
+       transform="scale(1.0130295,0.98713813)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57193px;line-height:3.57193px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.812622"
+         x="88.478424"
+         y="37.440807"
+         id="tspan31">Q5. Is metadata mentioning</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57193px;line-height:3.57193px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.812622"
+         x="88.478424"
+         y="41.012741"
+         id="tspan32">the persistent identifier (PID)</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57193px;line-height:3.57193px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.812622"
+         x="88.478424"
+         y="44.584679"
+         id="tspan33">of the dataset?</tspan></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.252303,65.148308 7.601921,-6.173545"
+       id="path174" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.086038,69.344409 9.565628,-2.097745"
+       id="path175" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.22693,76.350723 8.067345,5.551563"
+       id="path176" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.058617,72.894779 9.688633,1.425512"
+       id="path177" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.00056,9.3773979 9.792952,-0.00232"
+       id="path163" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.00056,24.594763 9.792953,-0.0023"
+       id="path164" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="m 73.00056,38.660905 9.792953,-0.0023"
+       id="path165" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5196px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;mix-blend-mode:normal;fill:#1a1a1a;fill-opacity:0.490196;stroke:none;stroke-width:0.679786;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:10.1004;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       x="152.56551"
+       y="157.44293"
+       id="text15"><tspan
+         id="tspan15"
+         x="152.56551"
+         y="157.44293"
+         style="stroke-width:0.679786">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.60912px;line-height:2.60795px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="244.74586"
+       y="19.545908"
+       id="text109"><tspan
+         id="tspan109"
+         style="stroke-width:0.802577"
+         x="244.74586"
+         y="19.545908" /></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8)"
+       d="m 73.860469,122.2232 9.383512,-2.80208"
+       id="path165-3" />
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.637284;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-3"
+       width="55.389713"
+       height="17.15797"
+       x="15.590047"
+       y="116.90723"
+       ry="2.4955008" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="18.941452"
+       y="121.20348"
+       id="text40"><tspan
+         id="tspan48"
+         x="18.941452"
+         y="121.20348"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">I1. (Meta)data use a formal, </tspan><tspan
+         id="tspan49"
+         x="18.941452"
+         y="124.73126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">accessible, shared, and broadly </tspan><tspan
+         id="tspan50"
+         x="18.941452"
+         y="128.25905"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">applicable language for </tspan><tspan
+         x="18.941452"
+         y="131.78682"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576"
+         id="tspan30">knowledge representation.</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.514118;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-96"
+       width="55.512878"
+       height="11.141967"
+       x="15.528463"
+       y="142.26256"
+       ry="1.6205174" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="18.980257"
+       y="147.08565"
+       id="text43"><tspan
+         id="tspan43"
+         x="18.980257"
+         y="147.08565"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">I2. (Meta)data use vocabularies </tspan><tspan
+         id="tspan44"
+         x="18.980257"
+         y="150.61343"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">that follow FAIR principles</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.514118;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-8"
+       width="55.512878"
+       height="11.141967"
+       x="15.528463"
+       y="166.40047"
+       ry="1.6205174" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="18.83209"
+       y="171.21651"
+       id="text45"><tspan
+         id="tspan46"
+         x="18.83209"
+         y="171.21651"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">I3. (Meta)data include qualified </tspan><tspan
+         id="tspan47"
+         x="18.83209"
+         y="174.74429"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">references to other (meta)data</tspan></text>
+    <rect
+       style="fill:none;stroke:#55c2b4;stroke-width:0.593889;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-3-5-2"
+       width="62.635933"
+       height="13.177016"
+       x="87.195618"
+       y="108.40807"
+       ry="1.9165003" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.966209"
+       y="112.42836"
+       id="text54"><tspan
+         id="tspan37"
+         x="88.966209"
+         y="112.42836">Q19. Are your metadata machine </tspan><tspan
+         id="tspan38"
+         x="88.966209"
+         y="115.95614">readable according to a generally </tspan><tspan
+         id="tspan39"
+         x="88.966209"
+         y="119.48392">accepted standard?</tspan></text>
+    <rect
+       style="fill:none;stroke:#55c2b4;stroke-width:0.606211;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-3-5"
+       width="62.879414"
+       height="13.676292"
+       x="87.201775"
+       y="123.41795"
+       ry="1.9891163" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.962685"
+       y="127.68081"
+       id="text56"><tspan
+         id="tspan45"
+         x="88.962685"
+         y="127.68081">Q20. Are your data machine </tspan><tspan
+         id="tspan51"
+         x="88.962685"
+         y="131.20859">readable according to a </tspan><tspan
+         id="tspan52"
+         x="88.962685"
+         y="134.73637">generally accepted standard?</tspan></text>
+    <rect
+       style="fill:none;stroke:#55c2b4;stroke-width:0.504141;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-3-5-4"
+       width="55.588745"
+       height="10.699084"
+       x="87.150742"
+       y="138.88222"
+       ry="1.5561035" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="89.001488"
+       y="143.42036"
+       id="text58"><tspan
+         id="tspan57"
+         x="89.001488"
+         y="143.42036">Q17. Does the metadata use </tspan><tspan
+         id="tspan58"
+         x="89.001488"
+         y="146.94815">standard vocabulary/ontologies?</tspan></text>
+    <rect
+       style="fill:none;stroke:#55c2b4;stroke-width:0.502901;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-3-5-3"
+       width="55.309845"
+       height="10.700218"
+       x="87.150124"
+       y="151.31763"
+       ry="1.5562682" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="89.064987"
+       y="155.85635"
+       id="text60"><tspan
+         id="tspan60"
+         x="89.064987"
+         y="155.85635"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">Q18. Does the data use standard </tspan><tspan
+         id="tspan61"
+         x="89.064987"
+         y="159.38414"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">vocabulary/ontologies?</tspan></text>
+    <rect
+       style="fill:none;stroke:#de6e9f;stroke-width:0.516811;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-4-5-6"
+       width="58.73637"
+       height="10.641111"
+       x="87.157074"
+       y="163.7605"
+       ry="1.5476713" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.043724"
+       y="168.27673"
+       id="text65"><tspan
+         id="tspan55"
+         x="88.043724"
+         y="168.27673">Q6. Does metadata include qualified </tspan><tspan
+         id="tspan56"
+         x="88.043724"
+         y="171.80452">reference to other (meta)data?</tspan></text>
+    <rect
+       style="fill:none;stroke:#de6e9f;stroke-width:0.512415;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-4-5-9"
+       width="57.717548"
+       height="10.645507"
+       x="87.154877"
+       y="176.14903"
+       ry="1.5483106" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.55081px;line-height:3.55081px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.807815;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="88.330887"
+       y="181.90392"
+       id="text69"
+       transform="scale(1.0068425,0.99320401)"><tspan
+         id="tspan53"
+         x="88.330887"
+         y="181.90392"
+         style="stroke-width:0.807815">Q7. Does data include qualified </tspan><tspan
+         id="tspan54"
+         x="88.330887"
+         y="185.45473"
+         style="stroke-width:0.807815">reference to other(meta)data?</tspan></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8)"
+       d="m 73.860469,124.68304 9.383512,2.80208"
+       id="path140" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-6)"
+       d="m 73.860469,146.40389 9.383512,-2.80208"
+       id="path165-3-8" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-6)"
+       d="m 73.860469,148.86373 9.383512,2.80208"
+       id="path140-6" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-6)"
+       d="m 73.860469,170.84199 9.383512,-2.80208"
+       id="path1" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-6)"
+       d="m 73.860469,173.30183 9.383512,2.80208"
+       id="path2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5196px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;mix-blend-mode:normal;fill:#1a1a1a;fill-opacity:0.490196;stroke:none;stroke-width:0.679786;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:10.1004;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       x="153.61125"
+       y="59.302063"
+       id="text13"><tspan
+         id="tspan17"
+         x="153.61125"
+         y="59.302063"
+         style="stroke-width:0.679786">A</tspan></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-0)"
+       d="m 230.21866,74.49969 9.79296,-0.0023"
+       id="path165-1" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-0-6-5)"
+       d="m 230.21869,41.205357 9.79295,-0.0031"
+       id="path165-1-2-2" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-7)"
+       d="m 230.42157,24.933135 8.43432,4.976351"
+       id="path165-3-2" />
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.624584;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-19"
+       width="55.701004"
+       height="16.388918"
+       x="173.03148"
+       y="16.392712"
+       ry="2.3836479" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="174.80992"
+       y="20.311501"
+       id="text75"><tspan
+         id="tspan41"
+         x="174.80992"
+         y="20.311501">A1. (Meta)data are retrievable </tspan><tspan
+         id="tspan42"
+         x="174.80992"
+         y="23.839281">by their identifier using a </tspan><tspan
+         id="tspan59"
+         x="174.80992"
+         y="27.367062">standardised communications </tspan><tspan
+         id="tspan62"
+         x="174.80992"
+         y="30.89484">protocol</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.515485;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-85"
+       width="55.810104"
+       height="11.14164"
+       x="172.97693"
+       y="35.831326"
+       ry="1.6204698" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="174.80992"
+       y="40.604866"
+       id="text82"><tspan
+         id="tspan83"
+         x="174.80992"
+         y="40.604866"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">A1.1 The protocol is open, free, </tspan><tspan
+         id="tspan84"
+         x="174.80992"
+         y="44.132645"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">and universally implementable</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.538027;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-94"
+       width="55.787563"
+       height="12.142292"
+       x="172.9882"
+       y="51.368942"
+       ry="1.7660074" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="174.80992"
+       y="54.878922"
+       id="text85"><tspan
+         id="tspan85"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="174.80992"
+         y="54.878922">A1.2 The protocol allows for an</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="174.80992"
+         y="58.4067"
+         id="tspan86">authentication and authorisation</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="174.80992"
+         y="61.934483"
+         id="tspan87">procedure, where necessary</tspan></text>
+    <rect
+       style="fill:none;stroke:#181818;stroke-width:0.539364;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+       id="rect1-89"
+       width="55.786224"
+       height="12.203022"
+       x="172.98886"
+       y="68.399719"
+       ry="1.7748401" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="174.80992"
+       y="72.289314"
+       id="text88"><tspan
+         id="tspan88"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="174.80992"
+         y="72.289314">A2. Metadata are accessible, even</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="174.80992"
+         y="75.817093"
+         id="tspan89">when the data are no longer</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="174.80992"
+         y="79.344872"
+         id="tspan90">available</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.497476;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-5"
+       width="52.450058"
+       height="20.678373"
+       x="243.93175"
+       y="31.024914"
+       ry="3.0075181" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="244.81288"
+       y="35.268097"
+       id="text110"><tspan
+         id="tspan64"
+         x="244.81288"
+         y="35.268097">Q13. Is data retrievable through</tspan><tspan
+         id="tspan65"
+         x="244.81288"
+         y="38.795876"> a standardised communication</tspan><tspan
+         id="tspan66"
+         x="244.81288"
+         y="42.323658"> protocol,that allows for </tspan><tspan
+         id="tspan67"
+         x="244.81288"
+         y="45.851437">authentication and authorisation </tspan><tspan
+         id="tspan68"
+         x="244.81288"
+         y="49.379219">procedure where necessary?</tspan></text>
+    <rect
+       style="fill:none;stroke:#1a729f;stroke-width:0.529881;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-27"
+       width="52.249237"
+       height="12.574973"
+       x="243.94795"
+       y="70.185722"
+       ry="1.8289376" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="247.78424"
+       y="73.897926"
+       id="text122"><tspan
+         id="tspan125"
+         x="247.78424"
+         y="73.897926"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">Q14. Is metadata persistently </tspan><tspan
+         id="tspan126"
+         x="247.78424"
+         y="77.425705"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">accessible also when data is </tspan><tspan
+         x="247.78424"
+         y="80.953484"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576"
+         id="tspan70">no longer available?</tspan></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-7-5)"
+       d="m 230.42157,57.608872 8.43432,-4.976351"
+       id="path165-3-2-9" />
+    <g
+       id="g105">
+      <rect
+         style="fill:none;stroke:#181818;stroke-width:0.55849;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+         id="rect1-70"
+         width="55.767097"
+         height="13.088282"
+         x="172.99843"
+         y="114.62505"
+         ry="1.9035946" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         x="174.6794"
+         y="119.00843"
+         id="text91"><tspan
+           id="tspan71"
+           x="174.6794"
+           y="119.00843">R1. (Meta)data are richly </tspan><tspan
+           id="tspan72"
+           x="174.6794"
+           y="122.53621">described with a plurality of </tspan><tspan
+           id="tspan73"
+           x="174.6794"
+           y="126.06399">accurate and relevant attributes</tspan></text>
+    </g>
+    <g
+       id="g106"
+       transform="translate(0,2.0230283)">
+      <rect
+         style="fill:none;stroke:#181818;stroke-width:0.554717;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+         id="rect1-16"
+         width="55.77087"
+         height="12.911178"
+         x="172.99655"
+         y="131.74968"
+         ry="1.8778361" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         x="174.30898"
+         y="135.94685"
+         id="text93"><tspan
+           id="tspan93"
+           x="174.30898"
+           y="135.94685"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:Asap;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">R1.1. (Meta)data are released with </tspan><tspan
+           id="tspan94"
+           x="174.30898"
+           y="139.57228"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:Asap;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">a clear and accessible data usage </tspan><tspan
+           x="174.30898"
+           y="143.19769"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:Asap;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576"
+           id="tspan92">license</tspan></text>
+    </g>
+    <g
+       id="g107"
+       transform="translate(0,3.1750001)">
+      <rect
+         style="fill:none;stroke:#181818;stroke-width:0.515485;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+         id="rect1-35"
+         width="55.810104"
+         height="11.14164"
+         x="172.97693"
+         y="166.70665"
+         ry="1.6204698" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         x="174.57004"
+         y="171.52959"
+         id="text97"><tspan
+           id="tspan97"
+           x="174.57004"
+           y="171.52959"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">R1.3. (Meta)data meet domain-</tspan><tspan
+           id="tspan98"
+           x="174.57004"
+           y="175.05737"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">relevant community standards</tspan></text>
+    </g>
+    <rect
+       style="fill:none;stroke:#de6e9f;stroke-width:0.411976;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-27-4"
+       width="46.101719"
+       height="8.6149988"
+       x="243.88901"
+       y="131.27133"
+       ry="1.2529885" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="247.78424"
+       y="135.1308"
+       id="text127"><tspan
+         id="tspan74"
+         x="247.78424"
+         y="135.1308"
+         style="line-height:3.52778px">Q2. Does metadata have </tspan><tspan
+         id="tspan75"
+         x="247.78424"
+         y="138.65858"
+         style="line-height:3.52778px">a licence?</tspan></text>
+    <rect
+       style="fill:none;stroke:#de6e9f;stroke-width:0.407749;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-27-4-6"
+       width="46.105946"
+       height="8.4383488"
+       x="243.88689"
+       y="142.14394"
+       ry="1.227296" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="247.75601"
+       y="145.91508"
+       id="text128"><tspan
+         id="tspan77"
+         x="247.75601"
+         y="145.91508">Q3. Does data have a </tspan><tspan
+         id="tspan78"
+         x="247.75601"
+         y="149.44287">licence?</tspan></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-0-6)"
+       d="m 230.21869,158.27106 9.79295,-0.003"
+       id="path165-1-2" />
+    <g
+       id="g104"
+       transform="translate(0,3.0512083)">
+      <rect
+         style="fill:none;stroke:#181818;stroke-width:0.515485;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.490196;paint-order:markers stroke fill"
+         id="rect1-6"
+         width="55.810104"
+         height="11.14164"
+         x="172.97693"
+         y="149.67055"
+         ry="1.6204698" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         x="174.74289"
+         y="154.49348"
+         id="text95"><tspan
+           id="tspan95"
+           x="174.74289"
+           y="154.49348"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">R1.2. (Meta)data are associated </tspan><tspan
+           id="tspan96"
+           x="174.74289"
+           y="158.02127"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802576">with detailed provenance</tspan></text>
+    </g>
+    <g
+       id="g103"
+       transform="translate(-3.6358833e-6,2.1166667)">
+      <rect
+         style="fill:none;stroke:#de6e9f;stroke-width:0.414692;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect2-27-4-5"
+         width="46.214157"
+         height="8.707756"
+         x="243.89037"
+         y="151.79758"
+         ry="1.2664793" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         x="245.81512"
+         y="155.34712"
+         id="text129"><tspan
+           id="tspan79"
+           x="245.81512"
+           y="155.34712">Q4. Does metadata include </tspan><tspan
+           id="tspan80"
+           x="245.81512"
+           y="158.87491">provenance details?</tspan></text>
+    </g>
+    <rect
+       style="fill:none;stroke:#55c2b4;stroke-width:0.414709;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-27-4-3"
+       width="46.322292"
+       height="8.688158"
+       x="243.89037"
+       y="165.72253"
+       ry="1.2636288" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="247.81952"
+       y="169.6133"
+       id="text131"><tspan
+         id="tspan131"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="247.81952"
+         y="169.6133">Q15. Is metadata in a </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="247.81952"
+         y="173.14108"
+         id="tspan101">standard format?</tspan></text>
+    <rect
+       style="fill:none;stroke:#55c2b4;stroke-width:0.426357;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2-27-4-0"
+       width="46.459518"
+       height="9.1559038"
+       x="243.89619"
+       y="176.67888"
+       ry="1.331659" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.802576;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="247.81952"
+       y="180.80351"
+       id="text132"><tspan
+         id="tspan132"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="247.81952"
+         y="180.80351">Q16. Is data in a</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:3.52778px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.802577"
+         x="247.81952"
+         y="184.3313"
+         id="tspan102">standard format?</tspan></text>
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-9)"
+       d="m 230.33288,139.51878 9.38351,-2.80208"
+       id="path165-3-25" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-9)"
+       d="m 230.33288,141.97862 9.38351,2.80208"
+       id="path140-0" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-3)"
+       d="m 230.33288,173.9803 9.38351,-2.80208"
+       id="path165-3-83" />
+    <path
+       style="mix-blend-mode:normal;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798969;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-8-3)"
+       d="m 230.33288,176.44014 9.38351,2.80208"
+       id="path140-7" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.798738;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+       d="M 171.79624,121.41984 C 159.74975,120.24563 147.02648,24.750675 135.69552,24.452584"
+       id="path9" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:3.52777px;font-family:Asap;-inkscape-font-specification:'Asap, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.761;stroke-linecap:round;paint-order:markers stroke fill"
+       x="71.879433"
+       y="39.392998"
+       id="text22"><tspan
+         id="tspan22"
+         style="stroke-width:0.761" /></text>
+  </g>
+</svg>

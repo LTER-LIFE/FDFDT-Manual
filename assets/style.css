@@ -93,7 +93,7 @@ code span.at {/*R*/
 /*------------Info boxes----------- */
 .disclaimerimg{
   background: #c0290217 10px center/4em no-repeat;
-  background-image: url("../images/icon_disclaimer.png");
+  background-image: url("../images/icon_disclaimer.svg");
 }
 .disclaimer{
   padding: 1em 1em 0.5em 6em;
@@ -110,7 +110,7 @@ code span.at {/*R*/
 }
 .infoimg{
    background: #ef9e0510 10px center/4em no-repeat;
-   background-image: url("../images/icon_note.png");
+   background-image: url("../images/icon_note.svg");
 }
 .examplebox{
   padding: 0.5em 1em 0.5em 6em;
@@ -121,33 +121,28 @@ code span.at {/*R*/
 }
 .exampleimg{
   background: #00c0a805 7px center/5em no-repeat;
-  background-image: url("../images/icon_example.png");
+  background-image: url("../images/icon_example.svg");
 }
 
 /*------------Tables----------- */
-table {
-    border-collapse: collapse;
-    border-style: hidden;
-}
-
-table td, table th {
-    border: 2px solid #ddd;
-}
 th {
   background-color: #00c0a8ff;
   color: black;
   text-align: center;
   font-size: 14px;
 }
-
-tr:nth-child(even) {background-color: #f8f8f8;}
-
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+  
+}
 td {
   border-bottom: 2px solid #ddd;
   font-size: 14px;
 }
 .book .book-body .page-wrapper .page-inner section.normal table td, .book .book-body .page-wrapper .page-inner section.normal table th {
     padding: 5px 3px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
 }
 .tableDwCterms{
   display: block;

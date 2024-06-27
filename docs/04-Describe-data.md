@@ -1,4 +1,4 @@
-# (PART\*) a. Metadata I {.unnumbered} 
+# (PART\*) a. Metadata I {.unnumbered}
 
 # Describe your data - Metadata (content) {#describe-data}
 

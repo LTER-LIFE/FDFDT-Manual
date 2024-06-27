@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.881847mm"
+   height="27.883619mm"
+   viewBox="0 0 31.881847 27.883619"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><g
+     id="layer1"
+     transform="translate(-78.581255,-74.877081)"><rect
+       style="fill:#ffcc00;fill-opacity:0.526912;stroke:none;stroke-width:1.85698;stroke-linecap:round;stroke-opacity:1"
+       id="rect1-1"
+       width="30.232494"
+       height="25.928936"
+       x="85.275497"
+       y="69.161873"
+       ry="0.43771619"
+       transform="rotate(3.9330625)" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.89074px;font-family:Papyrus;-inkscape-font-specification:'Papyrus, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.738162;stroke:none;stroke-width:0.0703735;stroke-linecap:round;stroke-opacity:1"
+       x="86.239105"
+       y="87.187317"
+       id="text1-1"
+       transform="matrix(1.0205214,0.07016382,-0.06705342,0.97528115,0,0)"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.89074px;font-family:Papyrus;-inkscape-font-specification:'Papyrus, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.738162;stroke-width:0.0703735"
+         x="86.239105"
+         y="87.187317">Note</tspan></text><path
+       d="m 94.522119,77.21934 c -0.05935,7e-6 -0.117565,0.0032 -0.175918,0.0072 0.433941,0.364454 0.709309,0.911799 0.708996,1.52283 -4.19e-4,1.096017 -0.888812,1.984414 -1.984833,1.984833 -0.400611,2.06e-4 -0.773627,-0.11949 -1.085705,-0.323398 0.266489,1.155698 1.300853,2.018425 2.53746,2.018594 1.438609,-1.96e-4 2.604787,-1.166371 2.604979,-2.60498 -1.92e-4,-1.438613 -1.16637,-2.604787 -2.604979,-2.604983 z"
+       style="fill:#ff0000;fill-opacity:0.607843;stroke:#000000;stroke-width:0.0343857;stroke-linecap:round"
+       id="path29" /><path
+       d="m 93.070364,76.76267 a 1.9855928,1.9855928 0 0 0 -1.986608,1.986607 1.9855928,1.9855928 0 0 0 1.986608,1.984834 1.9855928,1.9855928 0 0 0 1.984833,-1.984834 1.9855928,1.9855928 0 0 0 -1.984833,-1.986607 z"
+       style="fill:#ff0000;fill-opacity:0.607843;stroke:#000000;stroke-width:0.036596;stroke-linecap:round"
+       id="path28" /></g></svg>

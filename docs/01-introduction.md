@@ -12,9 +12,8 @@ Research data often is stored on local hard drives, not well described or not fo
 
 **Reusable.** The ultimate goal of the FAIR concept is to make the data reusable, which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.
 
-
 <div class="figure" style="text-align: center">
-<img src="images/Figure1-FAIR.png" alt="**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles." width="100%" />
+<img src="images/Figure1.svg" alt="**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles." width="100%" />
 <p class="caption">(\#fig:FAIR)**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.</p>
 </div>
 

@@ -11,7 +11,7 @@ introduction
 what-is-fair
 extending-fair
 fair-is-not-open
-why-should-your-data-be-fair
+why-should-you-make-your-data-more-fair
 fair-assessment-of-your-data
 mapping-of-assessment-questions-to-fair-principles
 example-datasets
@@ -83,12 +83,9 @@ tools-to-help-you-4
 our-choice-2
 eml-terms
 structural-metadata---the-meta.xml-file
-create-xml-files-in-r
+tools-to-help-you-5
 eml.xml-file
 meta.xml-file
 glossary
 references
-acknowledgements
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
-how-this-guide-came-to-be---project
-why-should-you-make-your-data-more-fair
