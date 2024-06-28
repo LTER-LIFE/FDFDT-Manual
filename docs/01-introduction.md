@@ -1,4 +1,4 @@
-# Introduction
+# Introduction 
 
 ## What is FAIR?
 
@@ -19,11 +19,9 @@ Research data often is stored on local hard drives, not well described or not fo
 
 The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations – partly through the distinction between data and metadata – and to different maturity levels (see also [FAIR Data Maturity Model. Specification and Guidelines of RDA](https://zenodo.org/records/3909563)). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.
 
-## Extending FAIR
+## Adding structure to FAIR
 
-In this guide we extend FAIR as it is defined by the FAIR principles in order to make it workable in practice. This means that we include the component of structuring your data into the process of FAIRifying it. 
-
-**Structured.** Structuring your data, i.e., organising it in a tidy way, can make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data.
+In this guide we extend FAIR as it is defined by the FAIR principles in order to make it workable in practice. This means that we include the component of structuring your data into the FAIRification process. **Structuring** your data, i.e., organising it in a tidy way, can make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data. 
 
 ## FAIR is not open
 
@@ -31,4 +29,4 @@ It is important to stress here that FAIR is **not equal** to open. While the met
 
 ## Why should you make your data more FAIR?
 
-Depending on the current maturity of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of the data additionally increases the possibilities for collaborations and will in total benefit the scientific community.
+Depending on the current maturity of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well-annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of your data additionally increases the possibilities for collaborations, as your data can be integrated with other data, and hence will benefit the scientific community as a whole. 

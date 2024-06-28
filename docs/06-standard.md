@@ -10,7 +10,7 @@ Once you have deposited your data to an online repository, you can start to [sta
 
 If the community is already familiar with the standard the threshold to reuse your standardised data is likely lower.
 
-**Is the standard well maintained and stable?**
+**Is the standard well-maintained and stable?**
 
 Data standards should be maintained, further developed and adapted by following the developments in the field they are tailored to and the needs of the community. Terms should also be stable and not change in meaning and always be referred to by a persistent identifier.
 
@@ -69,8 +69,8 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 Before assigning the terms of the event class to your data you should define what exactly one event is in your data. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data. 
 
 #### eventID & parentEventID {#eventID}
-The eventID can be a globally unique identifier or an identifier specific to the data set. For more information on how to create globally unique identifiers, see [this chapter](#GUIDcreation). 
-If you choose to create identifiers specific to the data set, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.  
+The eventID can be a globally unique identifier or an identifier specific to the dataset. For more information on how to create globally unique identifiers, see [this chapter](#GUIDcreation). 
+If you choose to create identifiers specific to the dataset, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.  
 
 :::{.infobox .infoimg}
 Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
@@ -115,7 +115,7 @@ Individual organisms can be assigned a unique organismID. This is helpful, if yo
 Occurrence is generally defined as the existence of an organism at a certain time and place. 
 
 #### occurrenceID {#occurrenceID}
-The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can belong to one eventID, for example when different species occurred at the same event. You can either assign GUIDs (see [here](#GUIDcreation)) or identifiers specific to the data set. If you choose to create identifiers specific to the dataset, we recommend creating informative IDs that give information about the occurrences they describe (see [eventID](#eventID) for more details). If you also have an eventID in your data, we recommend proceeding with the block-structure of IDs we have already used there, which means extending the eventID of the corresponding event by a new block that numbers the occurrences of that event. If there are occurrence records for different event levels, extending the eventID will lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this and create unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1.
+The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can belong to one eventID, for example when different species occurred at the same event. You can either assign GUIDs (see [here](#GUIDcreation)) or identifiers specific to the dataset. If you choose to create identifiers specific to the dataset, we recommend creating informative IDs that give information about the occurrences they describe (see [eventID](#eventID) for more details). If you also have an eventID in your data, we recommend proceeding with the block-structure of IDs we have already used there, which means extending the eventID of the corresponding event by a new block that numbers the occurrences of that event. If there are occurrence records for different event levels, extending the eventID will lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this and create unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1.
 
 
 :::{.examplebox .exampleimg}
@@ -164,7 +164,7 @@ Gryllus campestris Linnaeus, 1758|Animalia|Arthropoda|Insecta|Orthoptera|Gryllid
 :::{.examplebox .exampleimg}
 **CLUE data**:
 
-The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table XX where the species name in the data was Deschampsia flexuos which is a synonym of the species name Avenella flexuosa. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
+The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was Deschampsia flexuos which is a synonym of the species name Avenella flexuosa. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
 
 [**Table 6.2. Taxonomic information for *Deschampsia flexuosa*, which is a synonym of *Avenella flexuosa*, as retrieved from GBIF and stored in respective Darwin Core terms.**]{style="font-size: 11px;"}
 

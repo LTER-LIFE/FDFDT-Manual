@@ -1,4 +1,4 @@
-# (PART\*) e. Metadata II {.unnumbered}
+# (PART\*) e. Metadata {.unnumbered}
 
 # Standardise and structure your metadata
 
@@ -34,13 +34,7 @@ EML comes with only three terms that are required to make the EML document schem
 
 -   [`<contact>`]{style="color: #d111d4ff;"}: information on the person or organisation that contacted about the data, e.g., if questions arise
 
-[**Highly recommended terms**]{style="color: #dd7f08ff;"}
 
-The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.
-
--   [`<metadataProvider>`]{style="color: #dd7f08ff;"}: information about the person that has provides the metadata in the EML file
-
-:::{.infobox .infoimg}
 **Creator, contact and metadataProvider** 
     
 The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms `<individualName>`, `<organizationName>` or `<positionName>`.
@@ -63,8 +57,35 @@ The creator and the contact can either be a named person, a certain position tha
 
 -   `<userID>`: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute "directory" to state which directory the ID refers to and will generally be an URL (e.g., <https://orcid.org>)
 
-The contact, creator and metadataProvider can be different people/organisations/positions but can also all be the same. In the latter case, do this.
+The `<contact, `<creator and `<metadataProvider>` can be different people/organisations/positions but can also all be the same. For example, if the same person is the `<metadataProvider>` and `<contact>` for a dataset, their name and email address can be provided once as part of the `<metadataProvider>` element, and then their `<id>` can be used in the `<references>` element of `<contact>`.  This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.
+
+
+:::{.examplebox .exampleimg}
+
+```xml
+<metadataProvider id="id-1" scope="document">
+  <individualName>
+    <givenName>Mary</givenName>
+    <surName>Shelley</surName>
+  </individualName>
+  <organizationName>Netherlands Institute of Ecology (NIOO-KNAW)</organizationName>
+  <electronicMailAddress>m.shelley@nioo.knaw.nl</electronicMailAddress>
+</metadataProvider>
+<contact>
+  <references>id-1</references>
+</contact>
+```
 :::
+
+
+[**Highly recommended terms**]{style="color: #dd7f08ff;"}
+
+The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.
+
+-   [`<metadataProvider>`]{style="color: #dd7f08ff;"}: information about the person that has provides the metadata in the EML file
+
+
+
 
 -   [`<language>`]{style="color: #dd7f08ff;"}: provides the language the resource is written in and can either be a well-known language name or ideally, a [ISO language code](https://www.w3schools.com/tags/ref_language_codes.asp)
 
@@ -119,11 +140,11 @@ The contact, creator and metadataProvider can be different people/organisations/
     -   `<licenseName>`: official name of the licence
     -   `<url>`: [URL](#URI) referring to the licence (e.g., <https://creativecommons.org/licenses/by/4.0/>)
 
-[**Other terms**]{style="color: #14d16eff;"}
+[**Other terms**]{style="color: #C60945;"}
 
 There are plenty of other terms that can be suitable to use for your data. The following are just some examples, for a full overview check the EML schema documentation.
 
--   [`<project>`]{style="color: #14d16eff;"}: broader background information on the project in which the data was collected, needs to have the subterms
+-   [`<project>`]{style="color: #C60945;"}: broader background information on the project in which the data was collected, needs to have the subterms
 
     -   `<title>`
     -   `<personnel>`
@@ -132,14 +153,14 @@ There are plenty of other terms that can be suitable to use for your data. The f
         -   `<funding>`
         -   `<studyAreaDescription>`
 
--   [`<intellectualRights>`]{style="color: #14d16eff;"}: information on the intellectual property rights as text using subterm
+-   [`<intellectualRights>`]{style="color: #C60945;"}: information on the intellectual property rights as text using subterm
     -   `<para>`
 
--   [`<alternateIdentifier>`]{style="color: #14d16eff;"}
+-   [`<alternateIdentifier>`]{style="color: #C60945;"}
 
--   [`<additionalInfo>`]{style="color: #14d16eff;"}: Can capture any information that cannot be captured by the remaining terms and is filled with text using subterm
+-   [`<additionalInfo>`]{style="color: #C60945;"}: Can capture any information that cannot be captured by the remaining terms and is filled with text using subterm
     -   `<para>`
 
--   [`<introduction>`]{style="color: #14d16eff;"}: overview of background and context of the dataset, similar to an introduction of a journal article
+-   [`<introduction>`]{style="color: #C60945;"}: overview of background and context of the dataset, similar to an introduction of a journal article
 
--   [`<usageCitation>`]{style="color: #14d16eff;"}: citation to articles or other products where the data is used, consists of a range of subterms
+-   [`<usageCitation>`]{style="color: #C60945;"}: citation to articles or other products where the data is used, consists of a range of subterms

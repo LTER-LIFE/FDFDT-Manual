@@ -33,7 +33,7 @@ There are four main components that together, bundled in one zip-folder, build t
 
 ## The Core & its extensions
 
-The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure \@ref(fig:star-schema)). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.
+The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure \@ref(fig:star-schema)). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently (per June 2024) under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.
 
 <div class="figure" style="text-align: center">
 <img src="images/star-schema-svg.svg" alt="Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
@@ -54,7 +54,7 @@ The first step to build your archive therefore is to choose your core file. Whic
 
 It is not always directly clear what the difference between the occurrence and the event core is and when you should use which of them. The most crucial difference between the two is whether the data was collected following a certain protocol with documented sampling effort. If that is the case, you have sampling event data and therefore an event core. If data collection did not follow a sampling protocol, your core will be the occurrence file. For measurement on individual specimens and museum collections in general, occurrence is however mostly the preferred core.
 
-Most of the ecological data falls into sampling event data, as was the case for all of the data sets we used in the development of this guide. We will therefore focus on Event as the core file. If you have checklist data, there is already a detailed description on how to transform that into a Darwin Core Archive in the publication of @Reyershove.
+Most of the ecological data falls into sampling event data, as was the case for all of the datasets we used in the development of this guide. We will therefore focus on Event as the core file. If you have checklist data, there is already a detailed description on how to transform that into a Darwin Core Archive in the publication of @Reyershove.
 
 ## Which extension(s)?
 

@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-06-27"
+date: "2024-06-28"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -21,11 +21,11 @@ This interactive manual aims to provide ecologists and other data owners of ecol
 
 ### Availability of example code {.unnumbered}
 
-This guide was developed based on practical work on [different data sets](#example-datasets). Throughout this guide, we refer to examples and code snippets from this work. The complete R code can be found on this [GitHub repository](https://github.com/LTER-LIFE/FDFDT).
+This guide was developed based on practical work on [different datasets](#example-datasets). Throughout this guide, we refer to examples and code snippets from this work. The complete R code can be found on this [GitHub repository](https://github.com/LTER-LIFE/FDFDT).
 
 ## How to cite and licence {.unnumbered}
 
-This guide is licenced under a [Creative Commons Attribution-Noncommercial 4.0 International license](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
+This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 
 
 ::: {.disclaimer .disclaimerimg}

@@ -2,7 +2,7 @@
 
 # Workflow
  
-The general workflow that we present in this guide to make your data more [FAIR](#FAIR) is shown in Figure \@ref(fig:workflow) and shortly described in the following section.
+The general workflow of making your data more [FAIR](#FAIR) and structured is shown in Figure \@ref(fig:workflow) and shortly described in the following section.
 
 To make your data more FAIR and structured, you should:
 

@@ -1,22 +1,24 @@
-# (PART\*) a. Metadata I {.unnumbered}
+# (PART\*) a. Primary data {.unnumbered}
 
-# Describe your data - Metadata (content) {#describe-data}
+# Primary data 
 
-The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and basically provides information about your dataset that helps to understand it. We can differentiate into administrative metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data and structural metadata, which is giving information on how the data set is organised and how single data files connect to each other.
+## Describe your data - Metadata (content) {#describe-data}
 
-Many repositories require a minimal set of metadata for uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are however no regulations on what information a README should contain and in reality, the extent of it varies a lot. In general, the richer the data is described the better.
+The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and provides information about your dataset that helps to understand it. We can differentiate into descriptive metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data, and structural metadata, which contains information on how the dataset is organised and how single data files connect to each other.
 
-Based on best practices of writing readme files and in terms of [standardising](#standardise) the metadata in a later step, we recommend to gather the following information about your data:
+Many repositories require a minimal set of metadata when uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are, however, no regulations on what information a README should contain and in practice, the extent and detail of it varies a lot. In general, the richer the data is described the better. 
+
+Based on best practices of writing README files and in terms of [standardising](#standardise) the metadata in a later step, we recommend to gather the following information about your data:
 
 About the dataset: 
  
 -   Title of the dataset
 
--   Short description what contents each data file contains
+-   Short description of the contents of each data file
 
 -   Short description of the methods used for data collection
 
--   Responsible parties, including who created the data and who can be contacted about the data
+-   Responsible parties, including those who created the data and those who can be contacted to answer questions about the data
 
 -   When was the data collected? Which time span is covered?
 
@@ -26,6 +28,8 @@ About the dataset:
 
 -   Changes in the data or updates should ideally also be recorded in the README
 
+**For tabular data**:
+
 About individual data files:
 
 -   What do columns mean?
@@ -34,9 +38,9 @@ About individual data files:
 
 If you include personal information, like email addresses, of other people in the metadata that is made available online later on, it should always be asked for permission beforehand.
 
-## Licencing
+### Licencing
 
-If you deposit your data online it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/). Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool ([License chooser](https://chooser-beta.creativecommons.org/)) that can help you to choose the best suited licence for your data.
+If you deposit your data online, it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of [Creative Commons (CC)](https://creativecommons.org/share-your-work/cclicenses/). Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool ([License chooser](https://chooser-beta.creativecommons.org/)) that can help you to choose the best suited licence for your data.
 
 [**Table 4.1. Creative commons licences and their meanings.**]{style="font-size: 11px;"}
 
@@ -53,3 +57,6 @@ If you deposit your data online it is important to communicate to potential user
 ::: {#Note-licence .infobox .infoimg} 
 Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
 :::
+
+
+## Structuring your tabular data

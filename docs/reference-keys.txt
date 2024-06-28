@@ -9,7 +9,7 @@ fig:relational-database
 fig:star-schema
 introduction
 what-is-fair
-extending-fair
+adding-structure-to-fair
 fair-is-not-open
 why-should-you-make-your-data-more-fair
 fair-assessment-of-your-data
@@ -19,9 +19,12 @@ budburst
 cricket
 CLUE
 workflow
+primary-data
 describe-data
 licencing
+structuring-your-tabular-data
 storing-your-data
+which-data-to-store
 choosing-a-repository
 repositories-to-store-biodiversity-data
 global-repositories
@@ -88,4 +91,3 @@ eml.xml-file
 meta.xml-file
 glossary
 references
-url-your-book-url-like-httpsbookdown.orgyihuibookdown

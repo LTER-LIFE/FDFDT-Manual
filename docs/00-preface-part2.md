@@ -15,7 +15,9 @@ This guide is for anybody who has ecological data and wants to improve their dat
  
 ## Why you should use this guide {-}  
 
-Data management is the practice of taking care of data throughout its entire [lifecycle](#datalifecycle), from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss  and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
+Data management is the practice of taking care of data throughout its entire [lifecycle](#datalifecycle), from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss  and have higher traceability of changes and errors. Additionally, by describing, annotating,  and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
+
+One way of reaching the goals of good data management is to make your data findable, accessible, interoperable and reusable ([FAIR](#FAIR)). For this, FAIR guiding principles have been developed that provide people with a set of considerations to evaluate whether data can be discovered and reused by others. See [this chapter](#What-is-FAIR) for more info on FAIR.
 
 
 ## How to read this guide {-}
@@ -26,6 +28,6 @@ This guide is designed in a way that you can only read the chapters that are rel
 
 The project “Data for Digital Twins - Piloting a FAIR Data Infrastructure for the Advanced Modelling of Ecological Data”, or FAIR Data for Digital Twins for short, was a collaborative project between the Netherlands Institute of Ecology (NIOO-KNAW) and the Dutch Data Archiving and Networked Services (DANS-KNAW) funded by the research fund of the Royal Netherlands Academy of Arts and Sciences (KNAW) in 2023-2024. The project aimed to explore how to make quantitative ecological data more FAIR and fit for advanced analytical and modelling purposes, such as artificial intelligence and digital twins. 
 
-One of the main goals of this project was to use hands-on experience from FAIRifying a range of different ecological datasets to create a manual that guides ecologists step-by-step through the process of FAIRifying their ecological data themselves. Many ecological data sets are not compliant with the FAIR data principles, which makes it difficult to share and exchange biological data. This is also true for the data collected at NIOO and together with the general movement towards open and FAIR data, this initialised this project. 
+One of the main goals of this project was to use hands-on experience from FAIRifying a range of different ecological datasets to create a manual that guides ecologists step-by-step through the process of FAIRifying their ecological data themselves. Many ecological datasets are not compliant with the FAIR data principles, which makes it difficult to share and exchange biological data. This is also true for the data collected at NIOO and together with the general movement towards open and FAIR data, this initialised this project. 
 
 <div>

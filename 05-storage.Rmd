@@ -3,11 +3,14 @@
 # Storing your data
 Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by [mobilising](#mobilisation) your data to an online repository. 
 
-**Mobilising raw or standardised data?**
+## Which data to store?
 
-<Mobilising raw data and benefits. Mobilising [standard](#standardise) data and benefits. [Metadata](#metadata) can “always” be mobilised.>
+Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., raw data or primary data) or your data in a [standard](#standardise) format.
+
+Either way, it’s recommended to always share your [metadata](#metadata). Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.
 
 ## Choosing a repository 
+
 The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:
 
 **Which data formats are accepted?**
@@ -32,17 +35,18 @@ The metadata of your dataset should be stored persistently so that users can sti
 
 **Do you want version control?**
 
-Not all repositories provide version control, meaning that changes in the data and reuploads are not tracked but only the most recent version is available. If this is an important component for you, you should make sure the chosen repository provides this option. At [re3data.org](http://re3data.org), for example, you can directly filter for repositories with versioning. 
+Version control means that changes in the data and reuploads are tracked and that  multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At [re3data.org](http://re3data.org), for example, you can directly filter for repositories with versioning. 
 
 **Do you retain custody of your data or is it transferred to the repository?**
 
 There are repositories that obtain the custody of your data once it is uploaded there, meaning that the [data management](#datamanagement) is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited. 
 
 ## Repositories to store biodiversity data
-Here we want to provide you with some examples of commonly used repositories for biodiversity data but this is of course a non-exclusive list and other options might be more suitable for your data.
+
+Here are some examples of commonly used repositories for biodiversity data. This list is non-exclusive;  other options might exist that are more suitable for your data.
 
 ### Global repositories
-**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
+**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions @GBIF_2021. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
 
 **OBIS**, the [Ocean Biodiversity Information System](https://obis.org/), is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
 
@@ -81,4 +85,4 @@ The [DANS Data Station for Life Sciences](https://dans.knaw.nl/en/life-sciences/
 - [DataCite Commons](https://commons.datacite.org/) provides a repository finder that integrates information on repositories from re3data within the [FAIRisFAIR](https://www.fairsfair.eu/) project. It allows users to search for repositories by keywords and filter the repositories for certificates, such as the CoreTrustSeal, or the software they are based on. 
 
 ## Our choice
-For the data sets we owned ourselves within our department ([bud burst](#budburst)), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners. 
+For the datasets we owned ourselves within our department ([bud burst](#budburst)), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners. 
