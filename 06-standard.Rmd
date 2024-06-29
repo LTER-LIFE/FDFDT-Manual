@@ -4,7 +4,7 @@
 
 ## Choose a data standard
 
-Once you have deposited your data to an online repository, you can start to [standardise](#standardise) the data. The first step here is to choose a data standard, i.e., a standard format to name and organise the data. There is a wide range of standards available and many of them are directly tailored to a certain domain. Standards within the field of biodiversity are mostly maintained by the non-profit organisation [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/). Which standard is best suited for your data depends on its content and format. In order to choose a standard, you should consider:
+Once you have considered the mobilisation of your data and metadata to an online repository, you can start to [standardise](#standardise) the data. The first step here is to choose a data standard, i.e., a standard format to name and organise the data. There is a wide range of standards available and many of them are directly tailored to a certain domain. Standards within the field of biodiversity are mostly maintained by the non-profit organisation [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/). Which standard is best suited for your data depends on its content and format. In order to choose a standard, you should consider:
 
 **Is the standard accepted and used by your community?**
 
@@ -143,11 +143,11 @@ Taxonomic information should always be specified to the lowest level possible. W
 
 - scientificName
 
-The specificEpithet only contains the name of the first or species epithet, while the scientificName contains the full scientific name together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological [taxonomy](#taxonomy) for the complete classification of the taxa in your data, to avoid misspellings or the use of outdated classification. 
+The specificEpithet only contains the second part in the scientific name of a species , while the scientificName contains the full scientific name (i.e., genus + species epithet) together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological [taxonomy](#taxonomy) for the complete classification of the taxa in your data,  to avoid misspellings and/or the use of outdated classification. 
 
-Generally, taxa sometimes come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section [biological taxonomies](#biological-taxonomies).
+Some taxa come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section [biological taxonomies](#biological-taxonomies).
 
-However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can quickly occur through to, for example, similar taxa names or for rare species. 
+However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can easily occur in the case of rare species or taxa with similar names (e.g., for the plant genus *Convolvulus* and the animal genus *Conovulus*).  
 
 :::{.examplebox .exampleimg}
 **Crickets**:
@@ -158,19 +158,19 @@ For the cricket dataset, we queried the taxonomic information of the European fi
 
 scientificName |kingdom|phylum|class|order|family|genus|specificEpithet|taxonRank|
 |:---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| 
-Gryllus campestris Linnaeus, 1758|Animalia|Arthropoda|Insecta|Orthoptera|Gryllidae|Gryllus|campestris|species|
+*Gryllus campestris* Linnaeus, 1758|Animalia|Arthropoda|Insecta|Orthoptera|Gryllidae|Gryllus|campestris|species|
 :::
 
 :::{.examplebox .exampleimg}
 **CLUE data**:
 
-The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was Deschampsia flexuos which is a synonym of the species name Avenella flexuosa. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
+The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was *Deschampsia flexuos* which is a synonym of the accepted species name *Avenella flexuosa*. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
 
 [**Table 6.2. Taxonomic information for *Deschampsia flexuosa*, which is a synonym of *Avenella flexuosa*, as retrieved from GBIF and stored in respective Darwin Core terms.**]{style="font-size: 11px;"}
 
 |scientificName |kingdom|phylum|class|order|family|genus|specificEpithet|taxonRank|
 |:---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| 
-|Deschampsia flexuosa (L.) Trin.|Plantae|Tracheophyta|Liliopsida|Poales|Poaceae|Avenella|flexuosa|species|
+|*Deschampsia flexuosa* (L.) Trin.|Plantae|Tracheophyta|Liliopsida|Poales|Poaceae|Avenella|flexuosa|species|
 :::
 
 #### individualCount and organismQuantity

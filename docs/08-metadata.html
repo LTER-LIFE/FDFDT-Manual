@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-06-28" />
+<meta name="date" content="2024-06-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -193,7 +193,7 @@ div.csl-indent {
 <li class="part"><span><b>a. Primary data</b></span></li>
 <li class="chapter" data-level="4" data-path="04-Describe-data.html"><a href="04-Describe-data.html"><i class="fa fa-check"></i><b>4</b> Primary data</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#describe-data"><i class="fa fa-check"></i><b>4.1</b> Describe your data - Metadata (content)</a>
+<li class="chapter" data-level="4.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#describe-data"><i class="fa fa-check"></i><b>4.1</b> Describe your data (Metadata)</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
 </ul></li>
@@ -352,8 +352,9 @@ div.csl-indent {
 <li><p><code>&lt;electronicMalAddress&gt;</code></p></li>
 <li><p><code>&lt;userID&gt;</code>: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute “directory” to state which directory the ID refers to and will generally be an URL (e.g., <a href="https://orcid.org" class="uri">https://orcid.org</a>)</p></li>
 </ul>
-<p>The <code>&lt;contact,</code>&lt;creator and <code>&lt;metadataProvider&gt;</code> can be different people/organisations/positions but can also all be the same. For example, if the same person is the <code>&lt;metadataProvider&gt;</code> and <code>&lt;contact&gt;</code> for a dataset, their name and email address can be provided once as part of the <code>&lt;metadataProvider&gt;</code> element, and then their <code>&lt;id&gt;</code> can be used in the <code>&lt;references&gt;</code> element of <code>&lt;contact&gt;</code>. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.</p>
+<p>The <code>&lt;contact&gt;</code>, <code>&lt;creator&gt;</code> and <code>&lt;metadataProvider&gt;</code> can be different people/organisations/positions but can also all be the same. For example, if the same person is the <code>&lt;metadataProvider&gt;</code> and <code>&lt;contact&gt;</code> for a dataset, their name and email address can be provided once as part of the <code>&lt;metadataProvider&gt;</code> element, and then their <code>&lt;id&gt;</code> can be used in the <code>&lt;references&gt;</code> element of <code>&lt;contact&gt;</code>. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.</p>
 <div class="examplebox exampleimg">
+<p>The metadata provider is assigned with “id-1”. As the contact for the dataset is the same person, it can directly be referred to “id-1” instead of adding the full personal information again.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="08-metadata.html#cb7-1" tabindex="-1"></a>&lt;<span class="kw">metadataProvider</span><span class="ot"> id=</span><span class="st">&quot;id-1&quot;</span><span class="ot"> scope=</span><span class="st">&quot;document&quot;</span>&gt;</span>
 <span id="cb7-2"><a href="08-metadata.html#cb7-2" tabindex="-1"></a>  &lt;<span class="kw">individualName</span>&gt;</span>
 <span id="cb7-3"><a href="08-metadata.html#cb7-3" tabindex="-1"></a>    &lt;<span class="kw">givenName</span>&gt;Mary&lt;/<span class="kw">givenName</span>&gt;</span>

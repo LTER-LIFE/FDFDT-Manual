@@ -57,10 +57,12 @@ The creator and the contact can either be a named person, a certain position tha
 
 -   `<userID>`: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute "directory" to state which directory the ID refers to and will generally be an URL (e.g., <https://orcid.org>)
 
-The `<contact, `<creator and `<metadataProvider>` can be different people/organisations/positions but can also all be the same. For example, if the same person is the `<metadataProvider>` and `<contact>` for a dataset, their name and email address can be provided once as part of the `<metadataProvider>` element, and then their `<id>` can be used in the `<references>` element of `<contact>`.  This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.
+The `<contact>`, `<creator>` and `<metadataProvider>` can be different people/organisations/positions but can also all be the same. For example, if the same person is the `<metadataProvider>` and `<contact>` for a dataset, their name and email address can be provided once as part of the `<metadataProvider>` element, and then their `<id>` can be used in the `<references>` element of `<contact>`. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.
 
 
 :::{.examplebox .exampleimg}
+
+The metadata provider is assigned with "id-1". As the contact for the dataset is the same person, it can directly be referred to "id-1" instead of adding the full personal information again. 
 
 ```xml
 <metadataProvider id="id-1" scope="document">
@@ -83,9 +85,6 @@ The `<contact, `<creator and `<metadataProvider>` can be different people/organi
 The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.
 
 -   [`<metadataProvider>`]{style="color: #dd7f08ff;"}: information about the person that has provides the metadata in the EML file
-
-
-
 
 -   [`<language>`]{style="color: #dd7f08ff;"}: provides the language the resource is written in and can either be a well-known language name or ideally, a [ISO language code](https://www.w3schools.com/tags/ref_language_codes.asp)
 

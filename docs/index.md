@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-06-28"
+date: "2024-06-29"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -24,6 +24,10 @@ This interactive manual aims to provide ecologists and other data owners of ecol
 This guide was developed based on practical work on [different datasets](#example-datasets). Throughout this guide, we refer to examples and code snippets from this work. The complete R code can be found on this [GitHub repository](https://github.com/LTER-LIFE/FDFDT).
 
 ## How to cite and licence {.unnumbered}
+
+If you want to cite this guide, please refer to it as:
+
+Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. <url>/<doi>
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 

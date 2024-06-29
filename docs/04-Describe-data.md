@@ -2,7 +2,7 @@
 
 # Primary data 
 
-## Describe your data - Metadata (content) {#describe-data}
+## Describe your data (Metadata) {#describe-data}
 
 The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and provides information about your dataset that helps to understand it. We can differentiate into descriptive metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data, and structural metadata, which contains information on how the dataset is organised and how single data files connect to each other.
 
@@ -28,6 +28,7 @@ About the dataset:
 
 -   Changes in the data or updates should ideally also be recorded in the README
 
+
 **For tabular data**:
 
 About individual data files:
@@ -35,6 +36,8 @@ About individual data files:
 -   What do columns mean?
 
 -   Which units belong to each column?
+
+- Which data type (e.g., integer, string, datetime) does each column contain?
 
 If you include personal information, like email addresses, of other people in the metadata that is made available online later on, it should always be asked for permission beforehand.
 
