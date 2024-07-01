@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-06-29"
+date: "2024-07-01"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -27,7 +27,7 @@ This guide was developed based on practical work on [different datasets](#exampl
 
 If you want to cite this guide, please refer to it as:
 
-Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. <url>/<doi>
+Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. < url >/< doi >
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 
@@ -42,4 +42,6 @@ This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 I
 
 ## Acknowledgements {.unnumbered}
 
-Thanks!
+We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, Eric Kuijt - for the regular discussions, feedback and suggestions on the manual and guide. 
+
+<... to be added ...>

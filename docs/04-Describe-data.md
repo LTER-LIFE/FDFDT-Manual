@@ -24,9 +24,11 @@ About the dataset:
 
 -   Where has the data been collected?
 
--   Licencing information: How can others use your data? To find out more about different licences, see section Licencing.
+-   Licencing information: How can others use your data? To find out more about different licences, see section [Licencing](#Licencing)
 
 -   Changes in the data or updates should ideally also be recorded in the README
+
+- Do different tables within a file and/or different files in the dataset link to each other? If yes, a short description of how they link (e.g., by which identifier)
 
 
 **For tabular data**:
@@ -60,6 +62,3 @@ If you deposit your data online, it is important to communicate to potential use
 ::: {#Note-licence .infobox .infoimg} 
 Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
 :::
-
-
-## Structuring your tabular data

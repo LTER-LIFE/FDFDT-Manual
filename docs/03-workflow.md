@@ -4,7 +4,7 @@
  
 The general workflow of making your data more [FAIR](#FAIR) and structured is shown in Figure \@ref(fig:workflow) and shortly described in the following section.
 
-To make your data more FAIR and structured, you should:
+To make your data more FAIR and structured, we recommend you to:
 
 -   First, describe your data and thereby gather [metadata](#metadata).
 

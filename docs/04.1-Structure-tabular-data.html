@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3.5 Structuring your tabular data | A hands-on guide to FAIR and structured ecological data</title>
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3.5 Structuring your tabular data | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3.5 Structuring your tabular data | A hands-on guide to FAIR and structured ecological data" />
+  
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  
+
+<meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
+
+
+<meta name="date" content="2024-07-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="04-Describe-data.html"/>
+<link rel="next" href="05-storage.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#why-you-should-use-this-guide"><i class="fa fa-check"></i>Why you should use this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-this-guide-came-to-be"><i class="fa fa-check"></i>How this guide came to be</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="01-introduction.html"><a href="01-introduction.html#what-is-fair"><i class="fa fa-check"></i><b>2.1</b> What is FAIR?</a></li>
+<li class="chapter" data-level="2.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>2.2</b> Adding structure to FAIR</a></li>
+<li class="chapter" data-level="2.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>2.3</b> FAIR is not open</a></li>
+<li class="chapter" data-level="2.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>2.4</b> Why should you make your data more FAIR?</a></li>
+<li class="chapter" data-level="2.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>2.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="2.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>2.6</b> Mapping of assessment questions to FAIR principles</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>3</b> Example datasets</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="02-example-datasets.html"><a href="02-example-datasets.html#budburst"><i class="fa fa-check"></i><b>3.1</b> Bud burst data</a></li>
+<li class="chapter" data-level="3.2" data-path="02-example-datasets.html"><a href="02-example-datasets.html#cricket"><i class="fa fa-check"></i><b>3.2</b> Cricket data</a></li>
+<li class="chapter" data-level="3.3" data-path="02-example-datasets.html"><a href="02-example-datasets.html#CLUE"><i class="fa fa-check"></i><b>3.3</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
+</ul></li>
+<li class="part"><span><b>- II. How-to chapters -</b></span></li>
+<li class="chapter" data-level="" data-path=""><a href="#part-a.-primary-data"><i class="fa fa-check"></i>(PART*) a. Primary data</a>
+<ul>
+<li class="chapter" data-level="3.4" data-path="03-workflow.html"><a href="03-workflow.html"><i class="fa fa-check"></i><b>3.4</b> Describe your data (Metadata)</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="03-workflow.html"><a href="03-workflow.html#licencing"><i class="fa fa-check"></i><b>3.4.1</b> Licencing</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>3.5</b> Structuring your tabular data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#part-b.-storage"><i class="fa fa-check"></i>(PART*) b. Storage</a>
+<ul>
+<li class="chapter" data-level="3.6" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>3.6</b> Which data to store?</a></li>
+<li class="chapter" data-level="3.7" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>3.7</b> Choosing a repository</a></li>
+<li class="chapter" data-level="3.8" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>3.8</b> Repositories to store biodiversity data</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="05-storage.html"><a href="05-storage.html#global-repositories"><i class="fa fa-check"></i><b>3.8.1</b> Global repositories</a></li>
+<li class="chapter" data-level="3.8.2" data-path="05-storage.html"><a href="05-storage.html#dutch-repositories"><i class="fa fa-check"></i><b>3.8.2</b> Dutch repositories</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="05-storage.html"><a href="05-storage.html#tools-to-help-you"><i class="fa fa-check"></i><b>3.9</b> Tools to help you</a></li>
+<li class="chapter" data-level="3.10" data-path="05-storage.html"><a href="05-storage.html#our-choice"><i class="fa fa-check"></i><b>3.10</b> Our choice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#part-c.-standards"><i class="fa fa-check"></i>(PART*) c. Standards</a>
+<ul>
+<li class="chapter" data-level="3.11" data-path="06-standard.html"><a href="06-standard.html"><i class="fa fa-check"></i><b>3.11</b> Choose a data standard</a></li>
+<li class="chapter" data-level="3.12" data-path="06-standard.html"><a href="06-standard.html#data-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>3.12</b> Data standards for biodiversity data</a></li>
+<li class="chapter" data-level="3.13" data-path="06-standard.html"><a href="06-standard.html#tools-to-help-you-1"><i class="fa fa-check"></i><b>3.13</b> Tools to help you</a></li>
+<li class="chapter" data-level="3.14" data-path="06-standard.html"><a href="06-standard.html#our-choice-1"><i class="fa fa-check"></i><b>3.14</b> Our choice</a>
+<ul>
+<li class="chapter" data-level="3.14.1" data-path="06-standard.html"><a href="06-standard.html#why-darwin-core"><i class="fa fa-check"></i><b>3.14.1</b> Why Darwin Core?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.15" data-path="06-standard.html"><a href="06-standard.html#mapping-your-data-to-darwin-core"><i class="fa fa-check"></i><b>3.15</b> Mapping your data to Darwin Core</a>
+<ul>
+<li class="chapter" data-level="3.15.1" data-path="06-standard.html"><a href="06-standard.html#darwin-core-namespaces"><i class="fa fa-check"></i><b>3.15.1</b> Darwin Core namespaces</a></li>
+<li class="chapter" data-level="3.15.2" data-path="06-standard.html"><a href="06-standard.html#darwin-core-terms"><i class="fa fa-check"></i><b>3.15.2</b> Darwin Core terms</a></li>
+<li class="chapter" data-level="3.15.3" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-event"><i class="fa fa-check"></i><b>3.15.3</b> Terms of class Event</a></li>
+<li class="chapter" data-level="3.15.4" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-location"><i class="fa fa-check"></i><b>3.15.4</b> Terms of class Location</a></li>
+<li class="chapter" data-level="3.15.5" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-organism"><i class="fa fa-check"></i><b>3.15.5</b> Terms of class Organism</a></li>
+<li class="chapter" data-level="3.15.6" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-occurrence"><i class="fa fa-check"></i><b>3.15.6</b> Terms of class Occurrence</a></li>
+<li class="chapter" data-level="3.15.7" data-path="06-standard.html"><a href="06-standard.html#mof"><i class="fa fa-check"></i><b>3.15.7</b> Terms of class Measurement or fact</a></li>
+</ul></li>
+<li class="chapter" data-level="3.16" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html"><i class="fa fa-check"></i><b>3.16</b> Ontologies and controlled vocabulary</a>
+<ul>
+<li class="chapter" data-level="3.16.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-2"><i class="fa fa-check"></i><b>3.16.1</b> Tools to help you</a></li>
+</ul></li>
+<li class="chapter" data-level="3.17" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#biological-taxonomies"><i class="fa fa-check"></i><b>3.17</b> Biological taxonomies</a>
+<ul>
+<li class="chapter" data-level="3.17.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#gbif-backbone-taxonomy"><i class="fa fa-check"></i><b>3.17.1</b> GBIF Backbone taxonomy</a></li>
+<li class="chapter" data-level="3.17.2" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#catalogue-of-life-col"><i class="fa fa-check"></i><b>3.17.2</b> Catalogue of Life (COL)</a></li>
+<li class="chapter" data-level="3.17.3" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#encyclopedia-of-life-eol"><i class="fa fa-check"></i><b>3.17.3</b> Encyclopedia of Life (EOL)</a></li>
+<li class="chapter" data-level="3.17.4" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#integrated-taxonomic-information-system-itis"><i class="fa fa-check"></i><b>3.17.4</b> Integrated Taxonomic Information System (ITIS)</a></li>
+<li class="chapter" data-level="3.17.5" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>3.17.5</b> World Registry of Marine Species (WoRMS)</a></li>
+<li class="chapter" data-level="3.17.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>3.17.6</b> Tools to help you</a></li>
+</ul></li>
+<li class="chapter" data-level="3.18" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>3.18</b> Creating GUIDs</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#part-d.-structure"><i class="fa fa-check"></i>(PART*) d. Structure</a>
+<ul>
+<li class="chapter" data-level="3.19" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>3.19</b> Relational database</a></li>
+<li class="chapter" data-level="3.20" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>3.20</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="3.21" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>3.21</b> The Core &amp; its extensions</a>
+<ul>
+<li class="chapter" data-level="3.21.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>3.21.1</b> Find the core</a></li>
+<li class="chapter" data-level="3.21.2" data-path="07-structure.html"><a href="07-structure.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>3.21.2</b> Occurrence core vs. event core</a></li>
+</ul></li>
+<li class="chapter" data-level="3.22" data-path="07-structure.html"><a href="07-structure.html#which-extensions"><i class="fa fa-check"></i><b>3.22</b> Which extension(s)?</a></li>
+<li class="chapter" data-level="3.23" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html"><i class="fa fa-check"></i><b>3.23</b> Arrange Darwin Core terms in core and extension files</a>
+<ul>
+<li class="chapter" data-level="3.23.1" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>3.23.1</b> General terms (Terms of class Record-level)</a></li>
+<li class="chapter" data-level="3.23.2" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#event-file"><i class="fa fa-check"></i><b>3.23.2</b> Event file</a></li>
+<li class="chapter" data-level="3.23.3" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#occurrence-file"><i class="fa fa-check"></i><b>3.23.3</b> Occurrence file</a></li>
+<li class="chapter" data-level="3.23.4" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#taxon-file"><i class="fa fa-check"></i><b>3.23.4</b> Taxon file</a></li>
+<li class="chapter" data-level="3.23.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#measurementorfact-file"><i class="fa fa-check"></i><b>3.23.5</b> MeasurementOrFact file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#part-e.-metadata"><i class="fa fa-check"></i>(PART*) e. Metadata</a>
+<ul>
+<li class="chapter" data-level="3.24" data-path="08-metadata.html"><a href="08-metadata.html"><i class="fa fa-check"></i><b>3.24</b> Metadata standards (for biodiversity data)</a></li>
+<li class="chapter" data-level="3.25" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>3.25</b> Tools to help you</a></li>
+<li class="chapter" data-level="3.26" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>3.26</b> Our choice</a></li>
+<li class="chapter" data-level="3.27" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>3.27</b> EML terms</a></li>
+<li class="chapter" data-level="3.28" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>3.28</b> Structural metadata - The meta.xml file</a></li>
+<li class="chapter" data-level="3.29" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>3.29</b> Tools to help you</a>
+<ul>
+<li class="chapter" data-level="3.29.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>3.29.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="3.29.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>3.29.2</b> meta.xml file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>4</b> Glossary</a></li>
+<li class="chapter" data-level="5" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>5</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A hands-on guide to FAIR and structured ecological data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="structuring-your-tabular-data" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Structuring your tabular data<a href="04.1-Structure-tabular-data.html#structuring-your-tabular-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A common way of storing biodiversity data is in tables. However, entering the data in a spreadsheet does often not adhere to the strict requirements of tabular data.</p>
+<p><strong>Characteristics of tabular data:</strong></p>
+<ul>
+<li><p>Structured in rows and columns</p></li>
+<li><p>Rectangular shape, in which each row has the same number of columns and each column the same number of rows</p></li>
+<li><p>Cells in a row/column can be left empty</p></li>
+<li><p>The columns describe properties of the entities that are described by the rows.</p></li>
+</ul>
+<p>For a more extensive description of the tabular data model, see <a href="https://www.w3.org/TR/tabular-data-model/">here</a>.</p>
+<p>To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that should be tabular follows these characteristics. You should therefore reshape your data accordingly.</p>
+<p>&lt; Add To do??… &gt;</p>
+<div>
+
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="04-Describe-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="05-storage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04.1-Structure-tabular-data.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
