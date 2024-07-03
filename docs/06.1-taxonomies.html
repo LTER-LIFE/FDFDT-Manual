@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-01" />
+<meta name="date" content="2024-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
-<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure assessment of your data</a></li>
 <li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
@@ -197,7 +197,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="04-Describe-data.html"><a href="04-Describe-data.html#structuring-your-tabular-data"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
 </ul></li>
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
@@ -246,6 +246,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
 <li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="6.9" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#crossref-in-data"><i class="fa fa-check"></i><b>6.9</b> Cross-referencing other resources in the data</a></li>
 </ul></li>
 <li class="part"><span><b>d. Structure</b></span></li>
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
@@ -281,8 +282,9 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="chapter" data-level="9" data-path="09-completely-FAIR.html"><a href="09-completely-FAIR.html"><i class="fa fa-check"></i><b>9</b> How to be completely FAIR</a></li>
+<li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
+<li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -306,7 +308,7 @@ div.csl-indent {
 <div id="ontologies-and-controlled-vocabulary" class="section level2 hasAnchor" number="6.6">
 <h2><span class="header-section-number">6.6</span> Ontologies and controlled vocabulary<a href="06.1-taxonomies.html#ontologies-and-controlled-vocabulary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Ontologies provide definitions of terms by defining their relation to other terms in a human interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain. In simpler words, ontologies define terms and set them in relation to one another. With these references you can ensure that terms in your data are always interpreted the same way and it is clear for other users what each term means. This is especially useful for filling in Darwin Core terms like <strong>measurementType</strong> or <strong>measurementMethod</strong> (see chapter <a href="06-standard.html#mof">Terms of class Measurement or fact</a>).
-Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri is a bit more cumbersome, as there are no look-up servers where you can directly query several thesauri at once. For filling in the keywords of your <a href="09-glossary.html#metadata">metadata</a> a thesaurus can however be quite helpful and is recommended to use, so we want to list a few thesauri tailored to biodiversity or ecological data:</p>
+Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri is a bit more cumbersome, as there are no look-up servers where you can directly query several thesauri at once. For filling in the keywords of your <a href="10-glossary.html#metadata">metadata</a> a thesaurus can however be quite helpful and is recommended to use, so we want to list a few thesauri tailored to biodiversity or ecological data:</p>
 <ul>
 <li><p><a href="https://www.eionet.europa.eu/gemet/en/themes/">GEMET</a> - GEneral Multilingual Environmental Thesaurus</p></li>
 <li><p><a href="https://vocabs.lter-europe.net/envthes/en/">EnvThes</a> - Thesaurus for long term ecological research, monitoring and experiments</p></li>
@@ -315,10 +317,10 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 <div id="tools-to-help-you-2" class="section level3 hasAnchor" number="6.6.1">
 <h3><span class="header-section-number">6.6.1</span> Tools to help you<a href="06.1-taxonomies.html#tools-to-help-you-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>The <a href="http://ebi.ac.uk/ols4/">Ontology Lookup Service</a> (OLS) is a repository for biomedical ontologies but it also holds plenty of terms and ontologies relevant for ecology. You can search across ontologies for specific terms or filter for certain ontologies. There is also an <a href="09-glossary.html#API">API</a> available to facilitate the use of OLS in workflows/programs.</p></li>
+<li><p>The <a href="http://ebi.ac.uk/ols4/">Ontology Lookup Service</a> (OLS) is a repository for biomedical ontologies but it also holds plenty of terms and ontologies relevant for ecology. You can search across ontologies for specific terms or filter for certain ontologies. There is also an <a href="10-glossary.html#API">API</a> available to facilitate the use of OLS in workflows/programs.</p></li>
 <li><p><a href="http://ontobee.org">Ontobee</a> is a linked data server and another option to browse through around 260 different ontologies and directly search for specific terms.</p></li>
 <li><p>If you are more interested in finding an ontology dedicated to a specific domain, looking directly at the <a href="http://obofoundry.org/">OBO foundry</a> can be helpful. The OBO Foundry (Open Biological and Biomedical Ontology Foundry) is tailored to biological sciences and develops and maintains ontologies. It is not searchable for individual terms but provides information on each ontology.</p></li>
-<li><p>If you chose a specific ontology and before using it you want to assess how <a href="09-glossary.html#FAIR">FAIR</a> this ontology is, you can use <a href="https://foops.linkeddata.es/FAIR_validator.html#">FOOPS!</a>. It is considered a ontology pitfall scanner for FAIR and by providing the <a href="09-glossary.html#URI">URI</a> of an ontology it assesses how well the ontology matches the FAIR principles.</p></li>
+<li><p>If you chose a specific ontology and before using it you want to assess how <a href="10-glossary.html#FAIR">FAIR</a> this ontology is, you can use <a href="https://foops.linkeddata.es/FAIR_validator.html#">FOOPS!</a>. It is considered a ontology pitfall scanner for FAIR and by providing the <a href="10-glossary.html#URI">URI</a> of an ontology it assesses how well the ontology matches the FAIR principles.</p></li>
 </ul>
 </div>
 </div>
@@ -327,7 +329,7 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 <p>There is a diversity of biological taxonomies that you can use to query taxonomic information for the taxa occurring in your dataset. In this guide we cannot cover all of them but we want to provide some more information on a selected set of taxonomies.</p>
 <div id="gbif-backbone-taxonomy" class="section level3 hasAnchor" number="6.7.1">
 <h3><span class="header-section-number">6.7.1</span> GBIF Backbone taxonomy<a href="06.1-taxonomies.html#gbif-backbone-taxonomy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The <a href="https://doi.org/10.15468/39omei">GBIF backbone taxonomy</a>, as the name indicates, builds the basis of the indexing of the species occurrence records stored at <a href="09-glossary.html#GBIF">GBIF</a> and aims to cover all the species that GBIF deals with. It further aims to bring all different taxa names together and organise them. Taxa are assembled from a hierarchical list of 105 sources, using the Catalogue of Life (COL) as a starting point and thereby tightly linking these two taxonomies. Species not found in the COL are then assembled from the remaining sources that are checked afterwards, making the GBIF backbone taxonomy relatively wide-ranging.</p>
+<p>The <a href="https://doi.org/10.15468/39omei">GBIF backbone taxonomy</a>, as the name indicates, builds the basis of the indexing of the species occurrence records stored at <a href="10-glossary.html#GBIF">GBIF</a> and aims to cover all the species that GBIF deals with. It further aims to bring all different taxa names together and organise them. Taxa are assembled from a hierarchical list of 105 sources, using the Catalogue of Life (COL) as a starting point and thereby tightly linking these two taxonomies. Species not found in the COL are then assembled from the remaining sources that are checked afterwards, making the GBIF backbone taxonomy relatively wide-ranging.</p>
 </div>
 <div id="catalogue-of-life-col" class="section level3 hasAnchor" number="6.7.2">
 <h3><span class="header-section-number">6.7.2</span> Catalogue of Life (COL)<a href="06.1-taxonomies.html#catalogue-of-life-col" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -347,7 +349,7 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 </div>
 <div id="tools-to-help-you-3" class="section level3 hasAnchor" number="6.7.6">
 <h3><span class="header-section-number">6.7.6</span> Tools to help you<a href="06.1-taxonomies.html#tools-to-help-you-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the <a href="09-glossary.html#API">APIs</a> of each of these taxonomies, which is called <code>taxize</code> (<span class="citation">Chamberlain et al. (<a href="#ref-R-taxize">2022</a>)</span>). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., <code>get_gbifid_()</code> retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (<code>gnr_resolve()</code>). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.</p>
+<p>If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the <a href="10-glossary.html#API">APIs</a> of each of these taxonomies, which is called <code>taxize</code> (<span class="citation">Chamberlain et al. (<a href="#ref-R-taxize">2022</a>)</span>). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., <code>get_gbifid_()</code> retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (<code>gnr_resolve()</code>). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.</p>
 <div class="examplebox exampleimg">
 <p><strong>Bud burst</strong>:</p>
 <p>One of the tree species in the bud burst data is the Pedunculate oak (<em>Quercus robur</em>). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package.</p>
@@ -427,7 +429,7 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 </div>
 <div id="GUIDcreation" class="section level2 hasAnchor" number="6.8">
 <h2><span class="header-section-number">6.8</span> Creating GUIDs<a href="06.1-taxonomies.html#GUIDcreation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A globally unique identifier (GUID) is a text string of 36 characters that can be used, amongst others, to assign unique identifiers to each data record. It was established as a variation of the Universally Unique Identifier (UUID) but now both are used synonymously. In contrast to other <a href="09-glossary.html#PID">persistent identifiers (PID)</a> that are assigned to the data level, such as DOI, GUIDs do not have to be issued by a central authority but can be created individually by using a generation algorithm/generator. There are different types of GUID, for more information see <a href="https://www.techtarget.com/searchwindowsserver/definition/GUID-global-unique-identifier">here</a>.</p>
+<p>A globally unique identifier (GUID) is a text string of 36 characters that can be used, amongst others, to assign unique identifiers to each data record. It was established as a variation of the Universally Unique Identifier (UUID) but now both are used synonymously. In contrast to other <a href="10-glossary.html#PID">persistent identifiers (PID)</a> that are assigned to the data level, such as DOI, GUIDs do not have to be issued by a central authority but can be created individually by using a generation algorithm/generator. There are different types of GUID, for more information see <a href="https://www.techtarget.com/searchwindowsserver/definition/GUID-global-unique-identifier">here</a>.</p>
 <p>A GUID is build as follows:</p>
 <blockquote>
 <p>{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}</p>
@@ -438,6 +440,9 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 <li><p>use an online GUID generator, for example <a href="https://www.uuidgenerator.net" class="uri">https://www.uuidgenerator.net</a></p></li>
 <li><p>use the R package <code>uuid</code>(<span class="citation">Urbanek &amp; Ts’o (<a href="#ref-R-uuid">2023</a>)</span>) and its function <code>UUIDgenerate()</code></p></li>
 </ul>
+</div>
+<div id="crossref-in-data" class="section level2 hasAnchor" number="6.9">
+<h2><span class="header-section-number">6.9</span> Cross-referencing other resources in the data<a href="06.1-taxonomies.html#crossref-in-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div>
 
 
@@ -446,7 +451,7 @@ Next to ontologies, you can also refer to terms listed in a thesaurus, which can
 
 
 
-<h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3> References<a href="11-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-R-taxize" class="csl-entry">
 Chamberlain, S., Szoecs, E., Foster, Z., &amp; Arendsee, Z. (2022). <em>Taxize: Taxonomic information from around the web</em>. <a href="https://docs.ropensci.org/taxize/">https://docs.ropensci.org/taxize/</a>

@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-07-01"
+date: "2024-07-03"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -42,6 +42,8 @@ This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 I
 
 ## Acknowledgements {.unnumbered}
 
-We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, Eric Kuijt - for the regular discussions, feedback and suggestions on the manual and guide. 
+We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, and Eric Kuijt - for the regular discussions, feedback and suggestions on the manual and guide. We thank Marcel E. Visser and Wim Hugo for their input and advice on the overall project.
 
-<... to be added ...>
+Many thanks to the custodians of the datasets that are used as examples throughout this guide. The lessons learned from FAIRifying and structuring these datasets form the bedrock for the design and implementation of the workflow. We thank Judith Risse, Marcel E. Visser (bud burst data), Joost Vogels, Wilco C.E.P. Verberk (cricket data), G.F. (Ciska) Veen, Freddy ten Hooven, and Wim H. van der Putten (CLUE data), as well as all the people who contributed to the many years of data collection.
+
+We thank the Royal Netherlands Academy of Arts and Sciences (KNAW) for their financial support through the Institutes Research Fund 2022 ( ).

@@ -12,7 +12,7 @@ what-is-fair
 adding-structure-to-fair
 fair-is-not-open
 why-should-you-make-your-data-more-fair
-fair-assessment-of-your-data
+fair-and-structure-assessment-of-your-data
 mapping-of-assessment-questions-to-fair-principles
 example-datasets
 budburst
@@ -67,6 +67,7 @@ integrated-taxonomic-information-system-itis
 world-registry-of-marine-species-worms
 tools-to-help-you-3
 GUIDcreation
+crossref-in-data
 structuring-your-standardised-data
 relational-database
 darwin-core-archive
@@ -89,6 +90,7 @@ structural-metadata---the-meta.xml-file
 tools-to-help-you-5
 eml.xml-file
 meta.xml-file
+how-to-be-completely-fair
 glossary
 references
 url-your-book-url-like-httpsbookdown.orgyihuibookdown

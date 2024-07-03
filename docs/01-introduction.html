@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-01" />
+<meta name="date" content="2024-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
-<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure assessment of your data</a></li>
 <li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
@@ -197,7 +197,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="04-Describe-data.html"><a href="04-Describe-data.html#structuring-your-tabular-data"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
 </ul></li>
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
@@ -246,6 +246,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
 <li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="6.9" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#crossref-in-data"><i class="fa fa-check"></i><b>6.9</b> Cross-referencing other resources in the data</a></li>
 </ul></li>
 <li class="part"><span><b>d. Structure</b></span></li>
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
@@ -281,8 +282,9 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="chapter" data-level="9" data-path="09-completely-FAIR.html"><a href="09-completely-FAIR.html"><i class="fa fa-check"></i><b>9</b> How to be completely FAIR</a></li>
+<li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
+<li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -308,7 +310,7 @@ div.csl-indent {
 <div id="what-is-fair" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> What is FAIR?<a href="01-introduction.html#what-is-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Research data often is stored on local hard drives, not well described or not formatted in a consistent and standard way. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, <span class="citation">Wilkinson et al. (<a href="#ref-Wilkinson_2016">2016</a>)</span> introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable and <strong>R</strong>eusable, which more concrete means the following:</p>
-<p><strong>Findable.</strong> This means that the <a href="09-glossary.html#metadata">metadata</a> (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.</p>
+<p><strong>Findable.</strong> This means that the <a href="10-glossary.html#metadata">metadata</a> (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.</p>
 <p><strong>Accessible.</strong> It is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required.</p>
 <p><strong>Interoperable.</strong> In order to integrate the data with other data and to incorporate it into workflows or applications, the data needs to be fully compatible with other data. In easier words this means that data resources should ‘speak the same language’ to be used together.</p>
 <p><strong>Reusable.</strong> The ultimate goal of the FAIR concept is to make the data reusable, which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.</p>
@@ -319,6 +321,9 @@ Figure 1.1: <strong>The FAIR concept.</strong> The four letters of FAIR stand fo
 </p>
 </div>
 <p>The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations – partly through the distinction between data and metadata – and to different maturity levels (see also <a href="https://zenodo.org/records/3909563">FAIR Data Maturity Model. Specification and Guidelines of RDA</a>). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.</p>
+<div class="infobox infoimg">
+<p>For an entertaining but still serious description of the FAIR principles and their meaning, we recommend reading through “<em>A FAIRy tale - A fake story in a trustworthy guide to the FAIR principles for research data</em>” created within the Danish ‘FAIR across’ (FAIR på tværs) project: <a href="https://forskningsdata.dk/fairytale/" class="uri">https://forskningsdata.dk/fairytale/</a> (<span class="citation">Hansen et al. (<a href="#ref-FAIRy_tale">2018</a>)</span>).</p>
+</div>
 </div>
 <div id="adding-structure-to-fair" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> Adding structure to FAIR<a href="01-introduction.html#adding-structure-to-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -333,8 +338,11 @@ Figure 1.1: <strong>The FAIR concept.</strong> The four letters of FAIR stand fo
 <p>Depending on the current maturity of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well-annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of your data additionally increases the possibilities for collaborations, as your data can be integrated with other data, and hence will benefit the scientific community as a whole.</p>
 
 </div>
-<h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3> References<a href="11-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-FAIRy_tale" class="csl-entry">
+Hansen, K. K., Buss, M., &amp; Haahr, L. S. (2018). <em>A FAIRy tale</em>. Zenodo. <a href="https://doi.org/10.5281/ZENODO.2248200">https://doi.org/10.5281/ZENODO.2248200</a>
+</div>
 <div id="ref-Wilkinson_2016" class="csl-entry">
 Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Silva Santos, L. B. da, Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1). <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
 </div>

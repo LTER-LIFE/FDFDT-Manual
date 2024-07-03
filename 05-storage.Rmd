@@ -21,13 +21,13 @@ Depending on the format your data is stored in, not every repository will accept
 
 Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline. 
 
-**Is a persistent identifier assigned? **
+**Is a persistent identifier assigned and explicitly mentioned?**
 
-To ensure that your dataset can always be found, it is important that your data is associated with a [persistent identifier (PID)](#PID). Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.   
+To ensure that your dataset can always be found, it is important that your data is associated with a [persistent identifier (PID)](#PID) and that this PID is explicitly mentioned in the metadata. Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.   
 
 **How can the dataset be accessed?**
 
-Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an [API (Application Programming Interfaces)](#API)? Can the data be easily accessed?
+Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an [API (Application Programming Interfaces)](#API)?  Is the repository using an open, free and standardised protocol, like the [Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)](https://www.openarchives.org/pmh/), to make the data accessible?
 
 **Is metadata stored persistently even when the data is no longer available?**
 
@@ -36,6 +36,11 @@ The metadata of your dataset should be stored persistently so that users can sti
 **Do you want version control?**
 
 Version control means that changes in the data and reuploads are tracked and that  multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At [re3data.org](http://re3data.org), for example, you can directly filter for repositories with versioning. 
+
+**Is the repository indexing the data?**
+
+To make your data findable on the web by search engines, it has to be registered or indexed in a catalogue. Many repositories do this automatically and make your dataset findable, for example, through [Google dataset search](https://datasetsearch.research.google.com/). 
+
 
 **Do you retain custody of your data or is it transferred to the repository?**
 
@@ -63,7 +68,7 @@ Since the project partners behind this guide are situated in the Netherlands, we
 
 - It automatically gets a persistent identifier
 
-- The metadata is finable through web services like Google dataset search
+- The metadata is finable through web services like [Google dataset search](https://datasetsearch.research.google.com/)
 
 - The data is easily retrievable through an [API](#API) 
 

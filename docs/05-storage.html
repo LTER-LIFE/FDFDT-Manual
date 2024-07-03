@@ -23,14 +23,14 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-01" />
+<meta name="date" content="2024-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="04-Describe-data.html"/>
+<link rel="prev" href="04.1-Structure-tabular-data.html"/>
 <link rel="next" href="06-standard.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
-<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure assessment of your data</a></li>
 <li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
@@ -197,7 +197,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="04-Describe-data.html"><a href="04-Describe-data.html#structuring-your-tabular-data"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
 </ul></li>
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
@@ -246,6 +246,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
 <li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="6.9" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#crossref-in-data"><i class="fa fa-check"></i><b>6.9</b> Cross-referencing other resources in the data</a></li>
 </ul></li>
 <li class="part"><span><b>d. Structure</b></span></li>
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
@@ -281,8 +282,9 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="chapter" data-level="9" data-path="09-completely-FAIR.html"><a href="09-completely-FAIR.html"><i class="fa fa-check"></i><b>9</b> How to be completely FAIR</a></li>
+<li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
+<li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -305,11 +307,11 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="storing-your-data" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number"> 5</span> Storing your data<a href="05-storage.html#storing-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by <a href="09-glossary.html#mobilisation">mobilising</a> your data to an online repository.</p>
+<p>Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by <a href="10-glossary.html#mobilisation">mobilising</a> your data to an online repository.</p>
 <div id="which-data-to-store" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Which data to store?<a href="05-storage.html#which-data-to-store" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., raw data or primary data) or your data in a <a href="09-glossary.html#standardise">standard</a> format.</p>
-<p>Either way, it’s recommended to always share your <a href="09-glossary.html#metadata">metadata</a>. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.</p>
+<p>Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., raw data or primary data) or your data in a <a href="10-glossary.html#standardise">standard</a> format.</p>
+<p>Either way, it’s recommended to always share your <a href="10-glossary.html#metadata">metadata</a>. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.</p>
 </div>
 <div id="choosing-a-repository" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Choosing a repository<a href="05-storage.html#choosing-a-repository" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -318,25 +320,27 @@ div.csl-indent {
 <p>Depending on the format your data is stored in, not every repository will accept your data. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see <a href="https://dans.knaw.nl/en/file-formats/">here</a> for an example).</p>
 <p><strong>What repository is commonly used in your organisation, community or discipline? </strong></p>
 <p>Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline.</p>
-<p><strong>Is a persistent identifier assigned? </strong></p>
-<p>To ensure that your dataset can always be found, it is important that your data is associated with a <a href="09-glossary.html#PID">persistent identifier (PID)</a>. Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.</p>
+<p><strong>Is a persistent identifier assigned and explicitly mentioned?</strong></p>
+<p>To ensure that your dataset can always be found, it is important that your data is associated with a <a href="10-glossary.html#PID">persistent identifier (PID)</a> and that this PID is explicitly mentioned in the metadata. Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.</p>
 <p><strong>How can the dataset be accessed?</strong></p>
-<p>Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an <a href="09-glossary.html#API">API (Application Programming Interfaces)</a>? Can the data be easily accessed?</p>
+<p>Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an <a href="10-glossary.html#API">API (Application Programming Interfaces)</a>? Is the repository using an open, free and standardised protocol, like the <a href="https://www.openarchives.org/pmh/">Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)</a>, to make the data accessible?</p>
 <p><strong>Is metadata stored persistently even when the data is no longer available?</strong></p>
 <p>The metadata of your dataset should be stored persistently so that users can still find out about the existence of your data, even if it is no longer available on the repository itself.</p>
 <p><strong>Do you want version control?</strong></p>
 <p>Version control means that changes in the data and reuploads are tracked and that multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At <a href="http://re3data.org">re3data.org</a>, for example, you can directly filter for repositories with versioning.</p>
+<p><strong>Is the repository indexing the data?</strong></p>
+<p>To make your data findable on the web by search engines, it has to be registered or indexed in a catalogue. Many repositories do this automatically and make your dataset findable, for example, through <a href="https://datasetsearch.research.google.com/">Google dataset search</a>.</p>
 <p><strong>Do you retain custody of your data or is it transferred to the repository?</strong></p>
-<p>There are repositories that obtain the custody of your data once it is uploaded there, meaning that the <a href="09-glossary.html#datamanagement">data management</a> is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited.</p>
+<p>There are repositories that obtain the custody of your data once it is uploaded there, meaning that the <a href="10-glossary.html#datamanagement">data management</a> is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited.</p>
 </div>
 <div id="repositories-to-store-biodiversity-data" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> Repositories to store biodiversity data<a href="05-storage.html#repositories-to-store-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Here are some examples of commonly used repositories for biodiversity data. This list is non-exclusive; other options might exist that are more suitable for your data.</p>
 <div id="global-repositories" class="section level3 hasAnchor" number="5.3.1">
 <h3><span class="header-section-number">5.3.1</span> Global repositories<a href="05-storage.html#global-repositories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>GBIF</strong>, the <a href="http://gbif.org">Global Biodiversity Information Facility</a>, is a data infrastructure and international network providing open access to biodiversity data. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions <span class="citation">GBIF (<a href="#ref-GBIF_2021">2021</a>)</span>. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as <a href="09-glossary.html#DwC">Darwin Core</a>, and is openly accessible to everyone.</p>
+<p><strong>GBIF</strong>, the <a href="http://gbif.org">Global Biodiversity Information Facility</a>, is a data infrastructure and international network providing open access to biodiversity data. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions <span class="citation">GBIF (<a href="#ref-GBIF_2021">2021</a>)</span>. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as <a href="10-glossary.html#DwC">Darwin Core</a>, and is openly accessible to everyone.</p>
 <p><strong>OBIS</strong>, the <a href="https://obis.org/">Ocean Biodiversity Information System</a>, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.</p>
-<p>Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a <a href="09-glossary.html#DwC-A">Darwin Core Archive</a> (for more information see <a href="07-structure.html#darwin-core-archive">later chapters</a>). There is extensive documentation on how to use the IPT by GBIF <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide">here</a>. Once the dataset is published it is assigned a DOI.</p>
+<p>Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a <a href="10-glossary.html#DwC-A">Darwin Core Archive</a> (for more information see <a href="07-structure.html#darwin-core-archive">later chapters</a>). There is extensive documentation on how to use the IPT by GBIF <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide">here</a>. Once the dataset is published it is assigned a DOI.</p>
 <p><strong>Dataverse</strong> is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found <a href="https://dataverse.org/installations">here</a>.</p>
 <p><a href="https://zenodo.org/"><strong>Zenodo</strong></a> is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data.</p>
 </div>
@@ -346,8 +350,8 @@ div.csl-indent {
 <p><strong><a href="https://dataverse.nl/">DataverseNL</a></strong> is a Dutch installation of Dataverse and is hosted by DANS-KNAW. Researchers from all collaborating institutes within the Netherlands can store their data there and make it available to everybody. Reasons for uploading data to DataverseNL:</p>
 <ul>
 <li><p>It automatically gets a persistent identifier</p></li>
-<li><p>The metadata is finable through web services like Google dataset search</p></li>
-<li><p>The data is easily retrievable through an <a href="09-glossary.html#API">API</a></p></li>
+<li><p>The metadata is finable through web services like <a href="https://datasetsearch.research.google.com/">Google dataset search</a></p></li>
+<li><p>The data is easily retrievable through an <a href="10-glossary.html#API">API</a></p></li>
 <li><p>There is versioning to track changes and re-uploads of the data</p></li>
 <li><p>The custody of the data stays with the data owners</p></li>
 </ul>
@@ -372,7 +376,7 @@ div.csl-indent {
 
 
 
-<h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3> References<a href="11-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-GBIF_2021" class="csl-entry">
 GBIF. (2021). <em>GBIF strategic framework 2023-2027</em>. <a href="https://doi.org/10.35035/doc-0kkq-0t82">https://doi.org/10.35035/doc-0kkq-0t82</a>
@@ -383,7 +387,7 @@ GBIF. (2021). <em>GBIF strategic framework 2023-2027</em>. <a href="https://doi.
           </div>
         </div>
       </div>
-<a href="04-Describe-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="04.1-Structure-tabular-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="06-standard.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

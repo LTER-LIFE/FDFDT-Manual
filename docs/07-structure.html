@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-01" />
+<meta name="date" content="2024-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
-<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure assessment of your data</a></li>
 <li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
@@ -197,7 +197,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="04-Describe-data.html"><a href="04-Describe-data.html#structuring-your-tabular-data"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
 </ul></li>
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
@@ -246,6 +246,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
 <li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="6.9" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#crossref-in-data"><i class="fa fa-check"></i><b>6.9</b> Cross-referencing other resources in the data</a></li>
 </ul></li>
 <li class="part"><span><b>d. Structure</b></span></li>
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
@@ -281,8 +282,9 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="chapter" data-level="9" data-path="09-completely-FAIR.html"><a href="09-completely-FAIR.html"><i class="fa fa-check"></i><b>9</b> How to be completely FAIR</a></li>
+<li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
+<li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -305,7 +307,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="structuring-your-standardised-data" class="section level1 hasAnchor" number="7">
 <h1><span class="header-section-number"> 7</span> Structuring your standardised data<a href="07-structure.html#structuring-your-standardised-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby <a href="09-glossary.html#standardise">standardising</a> your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more <a href="09-glossary.html#FAIR">FAIR</a> is to also standardise the structure of your data.</p>
+<p>Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby <a href="10-glossary.html#standardise">standardising</a> your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more <a href="10-glossary.html#FAIR">FAIR</a> is to also standardise the structure of your data.</p>
 <p>Specifically tailored to Darwin Core, we present two options to structure your data in the following: a relational database and the Darwin Core Archive.</p>
 <div id="relational-database" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Relational database<a href="07-structure.html#relational-database" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -320,13 +322,13 @@ Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong>
 </div>
 <div id="darwin-core-archive" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> Darwin Core Archive<a href="07-structure.html#darwin-core-archive" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>For biodiversity data that uses <a href="09-glossary.html#DwC">Darwin Core</a> terms, <a href="09-glossary.html#DwC-A">Darwin Core Archives</a> (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories <a href="09-glossary.html#GBIF">GBIF</a> and <a href="09-glossary.html#OBIS">OBIS</a>.</p>
+<p>For biodiversity data that uses <a href="10-glossary.html#DwC">Darwin Core</a> terms, <a href="10-glossary.html#DwC-A">Darwin Core Archives</a> (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories <a href="10-glossary.html#GBIF">GBIF</a> and <a href="10-glossary.html#OBIS">OBIS</a>.</p>
 <p>There are four main components that together, bundled in one zip-folder, build the Darwin Core Archive:</p>
 <ul>
-<li><p>the <a href="09-glossary.html#core">core</a> file</p></li>
-<li><p>several <a href="09-glossary.html#extension">extension</a> files (optional)</p></li>
-<li><p>an <a href="09-glossary.html#eml">EML</a> file (see later chapter)</p></li>
-<li><p>a <a href="09-glossary.html#metaxml">meta XML</a> file (see later chapter).</p></li>
+<li><p>the <a href="10-glossary.html#core">core</a> file</p></li>
+<li><p>several <a href="10-glossary.html#extension">extension</a> files (optional)</p></li>
+<li><p>an <a href="10-glossary.html#eml">EML</a> file (see later chapter)</p></li>
+<li><p>a <a href="10-glossary.html#metaxml">meta XML</a> file (see later chapter).</p></li>
 </ul>
 </div>
 <div id="the-core-its-extensions" class="section level2 hasAnchor" number="7.3">
@@ -342,9 +344,9 @@ Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core
 <h3><span class="header-section-number">7.3.1</span> Find the core<a href="07-structure.html#find-the-core" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The first step to build your archive therefore is to choose your core file. Which core to choose depends on the type of your data, which for biodiversity data is likely on of the following:</p>
 <ol style="list-style-type: decimal">
-<li><p>Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: <a href="09-glossary.html#event"><strong>Event</strong></a></p></li>
+<li><p>Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: <a href="10-glossary.html#event"><strong>Event</strong></a></p></li>
 <li><p>Checklist data: data contains information on annotated species checklists, taxonomic catalogues or other information about taxa. → core file: <strong>Taxon</strong></p></li>
-<li><p>Occurrence data: data contains information on the evidence of an occurrence of a specific taxon either in nature, a collection or a datasets. This is the case if you have a list of species that occur at a particular place and a specific time but this was not measured by following a certain sampling protocol. → core file: <a href="09-glossary.html#occurrence"><strong>Occurrence</strong></a></p></li>
+<li><p>Occurrence data: data contains information on the evidence of an occurrence of a specific taxon either in nature, a collection or a datasets. This is the case if you have a list of species that occur at a particular place and a specific time but this was not measured by following a certain sampling protocol. → core file: <a href="10-glossary.html#occurrence"><strong>Occurrence</strong></a></p></li>
 </ol>
 </div>
 <div id="occurrence-core-vs.-event-core" class="section level3 hasAnchor" number="7.3.2">
@@ -360,7 +362,7 @@ Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core
 <li><p><strong>Event</strong> (if event is not the core)</p></li>
 <li><p><strong>Occurrence</strong> (if occurrence is not the core)</p></li>
 <li><p><strong>Taxon</strong> (if taxon is not the core)</p></li>
-<li><p>(extended) measurement or fact: The <a href="09-glossary.html#measurementorfact"><strong>measurementOrFact</strong></a> file contains information on all the actual measurement values or facts that have been recorded for the records in the core file. The measurementOrFact file is always an extension file. There is also the <strong>extendedMeasurementOrFact</strong> extension, which is developed to be used with an event core and creates an additional link between the occurrence extension file and the measurements by including the occurrenceID next to the coreID (i.e. eventID).</p></li>
+<li><p>(extended) measurement or fact: The <a href="10-glossary.html#measurementorfact"><strong>measurementOrFact</strong></a> file contains information on all the actual measurement values or facts that have been recorded for the records in the core file. The measurementOrFact file is always an extension file. There is also the <strong>extendedMeasurementOrFact</strong> extension, which is developed to be used with an event core and creates an additional link between the occurrence extension file and the measurements by including the occurrenceID next to the coreID (i.e. eventID).</p></li>
 <li><p><strong>ResourceRelationship</strong>: describes the relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset</p></li>
 <li><p><strong>Identification</strong>: additional information on multiple identifications for species listed in Occurrence core</p></li>
 <li><p><strong>dnaDerivedData</strong>: DNA related data, used either with occurrence or event core</p></li>
@@ -372,7 +374,7 @@ Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core
 <p>Based on our use cases with an event core, we recommend occurrence and extended measurement or fact as extension files for sampling event data, because this allows storing taxonomic information for every event, as well as all measured values.</p>
 
 </div>
-<h3> References<a href="10-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3> References<a href="11-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-Reyershove" class="csl-entry">
 Reyserhove, L., Desmet, P., Oldoni, D., Adriaens, T., Strubbe, D., Davis, A. J. S., Vanderhoeven, S., Verloove, F., &amp; Groom, Q. (2020). <span class="nocase">A checklist recipe: making species data open and FAIR</span>. <em>Database</em>, <em>2020</em>, baaa084. <a href="https://doi.org/10.1093/database/baaa084">https://doi.org/10.1093/database/baaa084</a>

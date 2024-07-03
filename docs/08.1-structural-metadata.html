@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-01" />
+<meta name="date" content="2024-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -179,7 +179,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
-<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure assessment of your data</a></li>
 <li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
@@ -197,7 +197,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="04-Describe-data.html"><a href="04-Describe-data.html#structuring-your-tabular-data"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
 </ul></li>
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
@@ -246,6 +246,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
 </ul></li>
 <li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="6.9" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#crossref-in-data"><i class="fa fa-check"></i><b>6.9</b> Cross-referencing other resources in the data</a></li>
 </ul></li>
 <li class="part"><span><b>d. Structure</b></span></li>
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
@@ -281,8 +282,9 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
-<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="chapter" data-level="9" data-path="09-completely-FAIR.html"><a href="09-completely-FAIR.html"><i class="fa fa-check"></i><b>9</b> How to be completely FAIR</a></li>
+<li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
+<li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -305,7 +307,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="structural-metadata---the-meta.xml-file" class="section level2 hasAnchor" number="8.5">
 <h2><span class="header-section-number">8.5</span> Structural metadata - The meta.xml file<a href="08.1-structural-metadata.html#structural-metadata---the-meta.xml-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised, i.e., which file is the <a href="09-glossary.html#core">core</a>, which are the <a href="09-glossary.html#extension">extensions</a>, and it links every column of each file to its corresponding Darwin Core term by providing its <a href="09-glossary.html#URI">URI</a> (Uniform Resource Identifier). The file format of the meta-file is <a href="#xml">XML</a>.</p>
+<p>The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised, i.e., which file is the <a href="10-glossary.html#core">core</a>, which are the <a href="10-glossary.html#extension">extensions</a>, and it links every column of each file to its corresponding Darwin Core term by providing its <a href="10-glossary.html#URI">URI</a> (Uniform Resource Identifier). The file format of the meta-file is <a href="#xml">XML</a>.</p>
 <div class="examplebox exampleimg">
 <p><strong>Bud burst</strong>:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb8-1"><a href="08.1-structural-metadata.html#cb8-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">&quot;1.0&quot;</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="fu">?&gt;</span></span>

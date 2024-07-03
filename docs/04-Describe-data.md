@@ -30,6 +30,7 @@ About the dataset:
 
 - Do different tables within a file and/or different files in the dataset link to each other? If yes, a short description of how they link (e.g., by which identifier)
 
+- Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., dataset A is a derivative of dataset B or B contains complementary information to A).
 
 **For tabular data**:
 

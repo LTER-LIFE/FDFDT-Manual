@@ -19,6 +19,11 @@ Research data often is stored on local hard drives, not well described or not fo
 
 The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations – partly through the distinction between data and metadata – and to different maturity levels (see also [FAIR Data Maturity Model. Specification and Guidelines of RDA](https://zenodo.org/records/3909563)). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.
 
+:::{.infobox .infoimg}
+
+For an entertaining but still serious description of the FAIR principles and their meaning, we recommend reading through “*A FAIRy tale - A fake story in a trustworthy guide to the FAIR principles for research data*” created within the Danish ‘FAIR across’ (FAIR på tværs) project: https://forskningsdata.dk/fairytale/ (@FAIRy_tale).
+
+:::
 ## Adding structure to FAIR
 
 In this guide we extend FAIR as it is defined by the FAIR principles in order to make it workable in practice. This means that we include the component of structuring your data into the FAIRification process. **Structuring** your data, i.e., organising it in a tidy way, can make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data. 
