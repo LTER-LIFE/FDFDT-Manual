@@ -1,4 +1,4 @@
-## FAIR and structure assessment of your data
+## FAIR and structure assessment of your data {#assessment}
 
 Datasets vary widely in format and complexity, as well as degree of structure and FAIRness. It is therefore important to first assess which state your data is in and what steps you can take to increase the maturity of your data. 
 
@@ -6,7 +6,7 @@ Even though there is already a range of FAIR assessment tools available (see [he
 
 - Existing tools tend to purely assign a score to the data but provide little guidance on how to actually improve the FAIRness of the data (@Krans_2022). In contrast, our tool directly provides suggestions on how to improve the maturity of the data based on the given answers and by directing the user to the corresponding chapters of this guide.
 
-- We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the assessment questions of the first three components are directly derived from the FAIR principles, the structure component is an extension of FAIR not included in other tools. 
+- We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the assessment questions of the first three components are directly derived from the [FAIR principles](#what-is-fair), the structure component is an extension of FAIR not included in other tools. 
 
 - Automated tools often require the data to be available online already, which is not the state at which we want to start with our FAIR assessment.
 
@@ -30,7 +30,7 @@ knitr::include_graphics("images/Fig2_MSSS-FAIR.svg")
 ```
 
 ::: {.infobox .infoimg}
-It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide.
+It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide. For more information on full interoperability, [see this section](#fully-interoperable).
 :::
 
 <div>

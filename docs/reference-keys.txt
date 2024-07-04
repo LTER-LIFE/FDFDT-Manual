@@ -90,7 +90,6 @@ structural-metadata---the-meta.xml-file
 tools-to-help-you-5
 eml.xml-file
 meta.xml-file
-how-to-be-completely-fair
+fully-interoperable
 glossary
 references
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
