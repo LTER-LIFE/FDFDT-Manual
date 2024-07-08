@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-04" />
+<meta name="date" content="2024-07-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,7 +282,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>____________________________</b></span></li>
+<li class="part"><span><b>________________________________</b></span></li>
 <li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to be fully interoperable</a></li>
 <li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
 <li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
@@ -349,14 +349,14 @@ div.csl-indent {
 <p><span style="font-size: 11px;"><strong>Table 6.1. Selected set of Darwin Core terms of each class.</strong> Bold terms are described in more detail in the following sections.</span></p>
 <table>
 <colgroup>
+<col width="9%" />
+<col width="12%" />
+<col width="10%" />
 <col width="13%" />
-<col width="20%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
+<col width="15%" />
+<col width="12%" />
+<col width="11%" />
+<col width="14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -520,8 +520,7 @@ div.csl-indent {
 <p>Before assigning the terms of the event class to your data you should define what exactly one event is in your data. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data.</p>
 <div id="eventID" class="section level4 hasAnchor" number="6.5.3.1">
 <h4><span class="header-section-number">6.5.3.1</span> eventID &amp; parentEventID<a href="06-standard.html#eventID" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>The eventID can be a globally unique identifier or an identifier specific to the dataset. For more information on how to create globally unique identifiers, see <a href="06.1-taxonomies.html#GUIDcreation">this chapter</a>.
-If you choose to create identifiers specific to the dataset, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.</p>
+<p>The eventID can be a globally unique identifier or an identifier specific to the dataset. For more information on how to create globally unique identifiers, see <a href="06.1-taxonomies.html#GUIDcreation">this chapter</a>. If you choose to create identifiers specific to the dataset, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., “_” or “-”) to indicate the different blocks of the event levels within an eventID.</p>
 <div class="infobox infoimg">
 <p>Some guides about persistent identifiers (e.g., <span class="citation">Richards et al. (<a href="#ref-Richards">2011</a>)</span>) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.</p>
 </div>
@@ -541,8 +540,7 @@ If you choose to create identifiers specific to the dataset, we recommend establ
 </div>
 <div id="time-information-eventtime" class="section level4 hasAnchor" number="6.5.3.3">
 <h4><span class="header-section-number">6.5.3.3</span> Time information (eventTime)<a href="06-standard.html#time-information-eventtime" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>If you also have time information in your data, this can either also be stored in eventDate or additionally in an extra column as <strong>eventTime</strong>. As with date, time should be given in time of day (in 24h system) following the ISO standard 8601-1:2019. Time intervals can again be given by separating times with a slash, e.g., 13:00:00/15:30:00 (the interval between 13:00 and 15:30). If time information should be added to eventDate (which is recommended, as eventDate should be as precise as possible), the date and the time are separated with a “T”, for example, 2018-08-29T15:19.
-Time Zones can be specified by adding a “Z” at the end, if the time is recorded in UTC (e.g., 2010-02-16T08:40Z) or by stating the deviation from UTC by adding a plus or minus and the number of hours of the deviation, e.g., 2010-02-16T08:40-0300 meaning UTC minus 3 hours). If neither of both is given, it is assumed that the time is given as the local time.</p>
+<p>If you also have time information in your data, this can either also be stored in eventDate or additionally in an extra column as <strong>eventTime</strong>. As with date, time should be given in time of day (in 24h system) following the ISO standard 8601-1:2019. Time intervals can again be given by separating times with a slash, e.g., 13:00:00/15:30:00 (the interval between 13:00 and 15:30). If time information should be added to eventDate (which is recommended, as eventDate should be as precise as possible), the date and the time are separated with a “T”, for example, 2018-08-29T15:19. Time Zones can be specified by adding a “Z” at the end, if the time is recorded in UTC (e.g., 2010-02-16T08:40Z) or by stating the deviation from UTC by adding a plus or minus and the number of hours of the deviation, e.g., 2010-02-16T08:40-0300 meaning UTC minus 3 hours). If neither of both is given, it is assumed that the time is given as the local time.</p>
 </div>
 </div>
 <div id="terms-of-class-location" class="section level3 hasAnchor" number="6.5.4">
@@ -594,17 +592,17 @@ Time Zones can be specified by adding a “Z” at the end, if the time is recor
 <p><strong>Crickets</strong>:</p>
 <p>For the cricket dataset, we queried the taxonomic information of the European field cricket (<em>Gryllus campestris</em>) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).</p>
 <p><span style="font-size: 11px;"><strong>Table 6.1. Taxonomic information for <em>Gryllus campestris</em> as retrieved from GBIF stored in respective Darwin Core terms.</strong></span></p>
-<table style="width:100%;">
+<table>
 <colgroup>
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
+<col width="28%" />
+<col width="7%" />
+<col width="9%" />
+<col width="7%" />
+<col width="9%" />
+<col width="8%" />
+<col width="7%" />
+<col width="13%" />
+<col width="8%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -638,17 +636,17 @@ Time Zones can be specified by adding a “Z” at the end, if the time is recor
 <p><strong>CLUE data</strong>:</p>
 <p>The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was <em>Deschampsia flexuos</em> which is a synonym of the accepted species name <em>Avenella flexuosa</em>. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.</p>
 <p><span style="font-size: 11px;"><strong>Table 6.2. Taxonomic information for <em>Deschampsia flexuosa</em>, which is a synonym of <em>Avenella flexuosa</em>, as retrieved from GBIF and stored in respective Darwin Core terms.</strong></span></p>
-<table style="width:100%;">
+<table>
 <colgroup>
+<col width="28%" />
+<col width="7%" />
 <col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
+<col width="9%" />
+<col width="6%" />
+<col width="7%" />
+<col width="8%" />
+<col width="13%" />
+<col width="8%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -720,10 +718,10 @@ Time Zones can be specified by adding a “Z” at the end, if the time is recor
 <p><span style="font-size: 11px;"><strong>Table 6.4. Bud burst data after mapping to Darwin Core terms.</strong></span></p>
 <table>
 <colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
+<col width="38%" />
+<col width="14%" />
+<col width="13%" />
+<col width="33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -752,8 +750,7 @@ Time Zones can be specified by adding a “Z” at the end, if the time is recor
 </div>
 <div id="measurementid" class="section level4 hasAnchor" number="6.5.7.3">
 <h4><span class="header-section-number">6.5.7.3</span> measurementID<a href="06-standard.html#measurementid" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the <a href="06-standard.html#eventID">eventID</a> and <a href="06-standard.html#occurrenceID">occurrenceID</a>.
-If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement, will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements.</p>
+<p>The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the <a href="06-standard.html#eventID">eventID</a> and <a href="06-standard.html#occurrenceID">occurrenceID</a>. If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement, will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements.</p>
 <div class="examplebox exampleimg">
 <p><strong>Budburst</strong>: measurementID = HV2004_99_5_1_m2 for the second measurement of the eventID HV2004_99_5 and the occurrenceID HV2004_99_5_1</p>
 <p><strong>Crickets</strong>: measurementID = Cr1-05_1_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05_1</p>

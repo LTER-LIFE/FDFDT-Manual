@@ -11,7 +11,7 @@ Even though there is already a range of FAIR assessment tools available (see [he
 - Automated tools often require the data to be available online already, which is not the state at which we want to start with our FAIR assessment.
 
 
-We therefore developed our own tool that provides you with a set of simple questions about four properties of your data: **metadata**, **storage**, **standards** and **structure**.
+Our assessment tool < add name and link > provides you with a set of simple questions about four properties of your data: **metadata**, **storage**, **standards** and **structure**.
 
 **Metadata** is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.
 
@@ -19,7 +19,7 @@ We therefore developed our own tool that provides you with a set of simple quest
 
 **Standards** describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets.
 
-**Structure** is about whether your data is organised in a consistent and logical way.
+**Structure** is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others.
 
 Apart from the questions about structure, the questions in the assessment are all directly based on the FAIR principles. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the assessment link to the letters of FAIR. Your answers will provide you with a circle diagram showing how mature your dataset is in each of the properties and an associated list of chapters of this manual you can work through to further improve the maturity of your data.
 
@@ -30,7 +30,7 @@ knitr::include_graphics("images/Fig2_MSSS-FAIR.svg")
 ```
 
 ::: {.infobox .infoimg}
-It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide. For more information on full interoperability, [see this section](#fully-interoperable).
+It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (@Pagano_2013). One step to reach interoperability is to use a language for knowledge representation and linked data, such as [RDF (Resource Description Framework)](#RDF). However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide. For more information on full interoperability [see this section](#fully-interoperable).
 :::
 
 <div>

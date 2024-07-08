@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-07-04"
+date: "2024-07-08"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -37,7 +37,7 @@ This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 I
 
 -   We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.
 
--   The FAIR principles are not set in stone but rather intended as guidance. Practical implications should be interpreted by each community individually, while sticking as closely as possible to the principles themselves (cf. [Maturity Indicator Authoring Group](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/#!/)). We therefore also want to stress that the way we implement FAIR in this guide is only one way of operationalizing it and is based on our own interpretations and extensions of the FAIR principles @Wilkinson_2016.
+-   The FAIR principles are not set in stone but rather intended as guidance. Practical implications should be interpreted by each community individually, while sticking as closely as possible to the principles themselves (cf. [Maturity Indicator Authoring Group](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/#!/)). We therefore also want to stress that the way we implement FAIR in this guide is **only one way** of operationalising it and is based on our own interpretations and extensions of the FAIR principles @Wilkinson_2016.
 :::
 
 ## Acknowledgements {.unnumbered}

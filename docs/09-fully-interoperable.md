@@ -1,4 +1,4 @@
-# (PART\*) ____________________________ {.unnumbered}
+# (PART\*) ________________________________ {.unnumbered}
 
 # How to be fully interoperable {#fully-interoperable}
 

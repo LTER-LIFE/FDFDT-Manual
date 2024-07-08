@@ -22,9 +22,10 @@ The 15 guiding principles describe different elements or characteristics of data
 
 :::{.infobox .infoimg}
 
-For an entertaining but still serious description of the FAIR principles and their meaning, we recommend reading through “*A FAIRy tale - A fake story in a trustworthy guide to the FAIR principles for research data*” created within the Danish ‘FAIR across’ (FAIR på tværs) project: https://forskningsdata.dk/fairytale/ (@FAIRy_tale).
+For an entertaining but serious description of the FAIR principles and their meaning, we recommend reading “*A FAIRy tale - A fake story in a trustworthy guide to the FAIR principles for research data*” created within the Danish ‘FAIR across’ (FAIR på tværs) project: https://forskningsdata.dk/fairytale/ (@FAIRy_tale).
 
 :::
+
 ## Adding structure to FAIR
 
 In this guide we extend FAIR as it is defined by the FAIR principles in order to make it workable in practice. This means that we include the component of structuring your data into the FAIRification process. **Structuring** your data, i.e., organising it in a tidy way, can make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data. 

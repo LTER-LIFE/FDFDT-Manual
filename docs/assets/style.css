@@ -65,15 +65,15 @@ div.csl-entry {/*styles references at end of page */
   color: #008171ff;
 }
 li.appendix span, li.part span { /* for TOC part names */
-  margin-top: 1em;
+  margin-top: 0.5em;
   opacity: 0.8 !important;
   color: #008171ff !important;
   font-family: 'Asap';
 }
 /*------------Index page------------------*/
-.book .book-body .page-wrapper .page-inner section.normal em {/*font style of authors and date*/
-    font-style: inherit;
-}
+/*.book .book-body .page-wrapper .page-inner section.normal em {/*font style of authors and date*/
+/*    font-style: inherit;
+/*}
 
 /*-------sytle of R & XML code blocks----*/
 code span.kw { /*XML*/

@@ -12,7 +12,7 @@ what-is-fair
 adding-structure-to-fair
 fair-is-not-open
 why-should-you-make-your-data-more-fair
-fair-and-structure-assessment-of-your-data
+assessment
 mapping-of-assessment-questions-to-fair-principles
 example-datasets
 budburst
