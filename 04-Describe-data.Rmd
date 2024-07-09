@@ -61,5 +61,7 @@ If you deposit your data online, it is important to communicate to potential use
 | [CC0 ("CC Zero")](https://creativecommons.org/publicdomain/zero/1.0/) |    [<img src="images/CC-Zero_logo.png" width="100"/>](images/CC-Zero_logo.png)    | copyrights are given up and work is put into the public domain                                                                                                                           |
 
 ::: {#Note-licence .infobox .infoimg} 
+
 Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
+
 :::

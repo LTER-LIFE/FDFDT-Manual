@@ -8,7 +8,7 @@ Even though there is already a range of FAIR assessment tools available (see [he
 
 - We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the assessment questions of the first three components are directly derived from the [FAIR principles](#what-is-fair), the structure component is an extension of FAIR not included in other tools. 
 
-- Automated tools often require the data to be available online already, which is not the state at which we want to start with our FAIR assessment.
+- Automated tools often require the data to be available online already, which is not the state at which we want to start with our assessment.
 
 
 Our assessment tool < add name and link > provides you with a set of simple questions about four properties of your data: **metadata**, **storage**, **standards** and **structure**.

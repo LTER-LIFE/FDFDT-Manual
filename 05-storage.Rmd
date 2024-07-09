@@ -5,9 +5,9 @@ Data is often stored locally on personal computers or external hard drives which
 
 ## Which data to store?
 
-Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., raw data or primary data) or your data in a [standard](#standardise) format.
+Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., primary data) or your data in a [standard](#standardise) format. Data in its original format, provided that it is accompanied by detailed [metadata](#metadata) to enable optimal reuse (see section [4.1](#describe-data)), is closest to the raw data and can be shared without requiring additional effort to reformat the data. Alternatively, data in a common standard format can be reused by others in your community as well as more easily integrated with other datasets in the same format. You may also consider providing both versions of the data next to each other in the same repository allowing users to choose the version best suited for their own needs. 
 
-Either way, it’s recommended to always share your [metadata](#metadata). Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.
+Either way, it’s recommended to always share your metadata. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.
 
 ## Choosing a repository 
 
@@ -35,7 +35,7 @@ The metadata of your dataset should be stored persistently so that users can sti
 
 **Do you want version control?**
 
-Version control means that changes in the data and reuploads are tracked and that  multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At [re3data.org](http://re3data.org), for example, you can directly filter for repositories with versioning. 
+Version control means that changes in the data and reuploads are tracked and that multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At [re3data.org](http://re3data.org), for example, you can directly filter for repositories with versioning. 
 
 **Is the repository indexing the data?**
 
@@ -44,14 +44,16 @@ To make your data findable on the web by search engines, it has to be registered
 
 **Do you retain custody of your data or is it transferred to the repository?**
 
-There are repositories that obtain the custody of your data once it is uploaded there, meaning that the [data management](#datamanagement) is done by the repository and your possibilities in managing the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you want to still be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited. 
+There are repositories that obtain the custody of your data once it is uploaded there, meaning that the [data management](#datamanagement) is done by the repository and your possibilities to manage the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you still want to be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited. 
+
 
 ## Repositories to store biodiversity data
 
-Here are some examples of commonly used repositories for biodiversity data. This list is non-exclusive;  other options might exist that are more suitable for your data.
+Here are some examples of commonly used repositories for biodiversity data. This list is non-exclusive; other options might exist that are more suitable for your data.
 
 ### Global repositories
-**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions @GBIF_2021. It holds species occurrence data from different sources, ranging from museum collections to field observations. Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
+
+**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions (@GBIF_2021). Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
 
 **OBIS**, the [Ocean Biodiversity Information System](https://obis.org/), is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
 
@@ -68,7 +70,7 @@ Since the project partners behind this guide are situated in the Netherlands, we
 
 - It automatically gets a persistent identifier
 
-- The metadata is finable through web services like [Google dataset search](https://datasetsearch.research.google.com/)
+- The metadata is findable through web services like [Google dataset search](https://datasetsearch.research.google.com/)
 
 - The data is easily retrievable through an [API](#API) 
 
@@ -83,7 +85,7 @@ The [DANS Data Station for Life Sciences](https://dans.knaw.nl/en/life-sciences/
 
 ## Tools to help you 
 
-- [re3data.org](http://re3data.org) is a registry of repositories for research data where you can filter a broad range of repositories for a different criteria, such as subject, country, persistent identifier system, versioning or licences
+- [re3data.org](http://re3data.org) is a registry of repositories for research data where you can filter a broad range of repositories for different criteria, such as subject, country, persistent identifier system, versioning or licences.
 
 - [fairsharing.org](http://fairsharing.org) is a registry that lists a variety of standards, databases and policies. To find repositories you can either directly search for a specific one and get detailed information on it or search all repositories/databases and filter for a range of options, such as country, subject or specific tags. 
 
