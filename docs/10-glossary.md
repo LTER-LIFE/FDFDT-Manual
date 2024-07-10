@@ -26,11 +26,11 @@ Darwin Core Archives are a way of structuring a dataset that uses the Darwin Cor
 
 #### Data(set){#dataset .unnumbered}
 
-Data is defined as information that is collected to be used for decision making or refers to information in a digital format that can be used by computers. Dataset refers to a collection of data. The two terms are not always used consistently across sources. We use data to describe the collected/recorded data itself (in contrast to metadata that describes it), which can (but does not have to) consist of several data files. Dataset is used when we refer to the data and the metadata together. 
+Data is defined as information that is collected to be used for decision making or refers to information in a digital format that can be used by computers. Dataset refers to a collection of data. The two terms are not always used consistently across sources. Data is often used to describe the collected/recorded data itself (in contrast to metadata that describes it), while the dataset describes all files of collected data together with the metadata, if metadata is available. 
 
 -   Sources: 
     - https://dictionary.cambridge.org/dictionary/english/data
-    - https://dictionary.cambridge.org/dictionary/english/datset 
+    - https://dictionary.cambridge.org/dictionary/english/dataset 
 
 #### Data lifecycle {#datalifecycle .unnumbered}
 
@@ -133,6 +133,13 @@ Occurrence is a Darwin Core class describing the existence or presence of an org
 Ontologies provide definitions of terms by defining their relation to other terms in a human interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain.
 
 -   More information: <https://www.ontotext.com/knowledgehub/fundamentals/what-are-ontologies/>
+
+#### OWL (Web Ontology Language) {#OWL .unnumbered}
+
+OWL is a semantic web language for ontologies in the World Wide Web designed for knowledge representation that is machine-readable and can represent rich and complex knowledge about things and their relations to each other. 
+
+-   Source: https://www.w3.org/OWL/
+
 
 #### Persistent identifier (PID) {#PID .unnumbered}
 

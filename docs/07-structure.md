@@ -27,9 +27,9 @@ There are four main components that together, bundled in one zip-folder, build t
 
 -   several [extension](#extension) files (optional)
 
--   an [EML](#eml) file (see later chapter)
+-   an [EML](#eml) file (see [later section](#eml-terms))
 
--   a [meta XML](#metaxml) file (see later chapter).
+-   a [meta XML](#metaxml) file (see [later section](#structural-metadata)).
 
 ## The Core & its extensions
 
@@ -42,7 +42,7 @@ The core file is the central element of the archive to which each of the extensi
 
 ### Find the core
 
-The first step to build your archive therefore is to choose your core file. Which core to choose depends on the type of your data, which for biodiversity data is likely on of the following:
+The first step to build your archive therefore is to choose your core file. Which core to choose depends on the type of your data, which for biodiversity data is likely one of the following:
 
 1.  Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: [**Event**](#event)
 

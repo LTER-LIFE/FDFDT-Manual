@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-08" />
+<meta name="date" content="2024-07-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,8 +282,8 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>________________________________</b></span></li>
-<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to be fully interoperable</a></li>
+<li class="part"><span><b>__________________________________</b></span></li>
+<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to reach full interoperability</a></li>
 <li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
 <li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
@@ -314,14 +314,15 @@ div.csl-indent {
 <p>There are terms that can always be included in the core-file, independent of what the core is. Those are record-level terms, which are generic and can apply to any type of records in the data. The content of these terms can be considered <a href="10-glossary.html#metadata">metadata</a>, which is why it is likely that you do not have corresponding columns in your data yet but need to create new columns. Many of these terms are from the <a href="10-glossary.html#dublincore">Dublin Core</a> namespace and few come with a fixed vocabulary to use to fill them.</p>
 <p>The following terms can be useful to add, while none of them are required:</p>
 <ul>
-<li><p>type: to be filled with one of the terms in the DCMI type vocabulary</p></li>
-<li><p>language: use controlled vocabulary, such as the ISO language code</p></li>
-<li><p>licence: see section “licencing”</p></li>
+<li><p>type: to be filled with one of the terms in the <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7">DCMI type vocabulary</a></p></li>
+<li><p>language: use controlled vocabulary, such as the <a href="https://www.w3schools.com/tags/ref_language_codes.asp">ISO language code</a></p></li>
+<li><p>licence: see <a href="#Licencing">section “licencing”</a></p></li>
 <li><p>rightsHolder</p></li>
 <li><p>accessRights</p></li>
 <li><p>bibliographicCitation: should provide clear information on how to cite the resource itself</p></li>
 <li><p>references</p></li>
-<li><p>institutionCode, institutionID</p></li>
+<li><p>institutionCode</p></li>
+<li><p>institutionID</p></li>
 <li><p>datasetID</p></li>
 <li><p>basisOfRecord: best practise is to use controlled vocabulary, such as the names of the Darwin Core classes:</p>
 <ul>
@@ -333,9 +334,9 @@ div.csl-indent {
 <h3><span class="header-section-number">7.5.2</span> Event file<a href="07.1-arrange-DwCA.html#event-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The event file can include the following terms:</p>
 <ul>
-<li>all terms of the class Event</li>
-<li>all terms of the class Location</li>
-<li>all terms of the class GeologicalContext</li>
+<li>all terms of the class <strong>Event</strong></li>
+<li>all terms of the class <strong>Location</strong></li>
+<li>all terms of the class <strong>GeologicalContext</strong></li>
 </ul>
 <p><strong>Required</strong>:</p>
 <ul>
@@ -357,10 +358,10 @@ div.csl-indent {
 <h3><span class="header-section-number">7.5.3</span> Occurrence file<a href="07.1-arrange-DwCA.html#occurrence-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>All of the terms that can be included in the event file can also be included in the occurrence file. The occurrence file is however more flexible and additionally allows for more terms. You can additionally include:</p>
 <ul>
-<li>all terms of the class Occurrence</li>
-<li>all terms of the class Organism</li>
-<li>all terms of the class Taxon</li>
-<li>all terms of the class Identification</li>
+<li>all terms of the class <strong>Occurrence</strong></li>
+<li>all terms of the class <strong>Organism</strong></li>
+<li>all terms of the class <strong>Taxon</strong></li>
+<li>all terms of the class <strong>Identification</strong></li>
 </ul>
 <p><strong>Required</strong>:</p>
 <ul>
@@ -381,7 +382,7 @@ div.csl-indent {
 </div>
 <div id="taxon-file" class="section level3 hasAnchor" number="7.5.4">
 <h3><span class="header-section-number">7.5.4</span> Taxon file<a href="07.1-arrange-DwCA.html#taxon-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The taxon file only contains the record-level terms and all terms of the class taxon.</p>
+<p>The taxon file only contains the record-level terms and all terms of the class <strong>taxon</strong>.</p>
 <p><strong>Required</strong>:</p>
 <ul>
 <li><p>taxonID</p></li>
@@ -397,7 +398,8 @@ div.csl-indent {
 </div>
 <div id="measurementorfact-file" class="section level3 hasAnchor" number="7.5.5">
 <h3><span class="header-section-number">7.5.5</span> MeasurementOrFact file<a href="07.1-arrange-DwCA.html#measurementorfact-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included. The extendedMeasurementOrFact extension additionally contains the occurrenceID and three ID fields (measurementTypeID, measurementValueID, measurementUnitID) which are however not from the Darwin Core namespace but refer to OBIS. As their <a href="10-glossary.html#URI">IRIs</a> are not resolvable, we would not recommend using them.</p>
+<p>The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included.</p>
+<p>The <strong>extendedMeasurementOrFact</strong> extension additionally includes the occurrenceID and three ID fields: measurementTypeID, measurementValueID, and measurementUnitID. These fields are not part of the Darwin Core namespace but refer to <a href="10-glossary.html#OBIS">OBIS</a>. As their <a href="10-glossary.html#URI">IRIs</a> are not resolvable, we do not recommend using them.</p>
 <div>
 
 

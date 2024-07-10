@@ -2,7 +2,7 @@
 
 # Standardise and structure your metadata
 
-Once you have described your data and assigned [metadata](#metadata) to it (see [chapter 4](#describe-data)), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and [Darwin Core](#DwC) sometimes is also referred to as a metadata standard.
+Once you have described your data and assigned [metadata](#metadata) to it (see [section 4](#describe-data)), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and [Darwin Core](#DwC) sometimes is also referred to as a metadata standard.
 
 ## Metadata standards (for biodiversity data)
 
@@ -20,7 +20,7 @@ For ecological data, a widely used metadata standard, for example by [OBIS](#OBI
 
 For all of our datasets we choose EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Additionally, as we went with Darwin Core Archives to structure the data, EML was required to use as a metadata standard.
 
-## EML terms
+## EML terms {#eml-terms}
 
 EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found [here](https://eml.ecoinformatics.org/schema/) and some best practices [here](https://ediorg.github.io/data-package-best-practices/eml-best-practices.html)). For all terms containing text the "xml:lang" attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.
 
@@ -55,7 +55,7 @@ The creator and the contact can either be a named person, a certain position tha
 
 -   `<electronicMalAddress>`
 
--   `<userID>`: an identifier that links the person or organisation to a directory if individuals, e.g., an ORCID. This terms requires the attribute "directory" to state which directory the ID refers to and will generally be an URL (e.g., <https://orcid.org>)
+-   `<userID>`: an identifier that links the person or organisation to a directory of individuals, e.g., an ORCID. This term requires the attribute "directory" to state which directory the ID refers to and will generally be an URL (e.g., <https://orcid.org>)
 
 The `<contact>`, `<creator>` and `<metadataProvider>` can be different people/organisations/positions but can also all be the same. For example, if the same person is the `<metadataProvider>` and `<contact>` for a dataset, their name and email address can be provided once as part of the `<metadataProvider>` element, and then their `<id>` can be used in the `<references>` element of `<contact>`. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.
 
@@ -88,7 +88,7 @@ The following set of terms is not strictly required by EML but we would highly r
 
 -   [`<language>`]{style="color: #dd7f08ff;"}: provides the language the resource is written in and can either be a well-known language name or ideally, a [ISO language code](https://www.w3schools.com/tags/ref_language_codes.asp)
 
--   [`<abstract>`]{style="color: #dd7f08ff;"}: a short summary of the data that includes basic information to give an idea what the data is about.
+-   [`<abstract>`]{style="color: #dd7f08ff;"}: a short summary of the data that includes basic information to give an idea what the data is about
 
     -   `<para>`: Text is stored in this subterm, which can either directly have a text string or a set of subterms consisting of markup tags allowing for formatting of the text.
 
@@ -125,8 +125,7 @@ The following set of terms is not strictly required by EML but we would highly r
 -   [`<maintenance>`]{style="color: #dd7f08ff;"}: information on with which frequency the data is updated and whether data collection is still ongoing
 
     -   `<maintenanceUpdateFrequency>`: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown
-    -   `<description>`: text description of maintenance stated with subterm
-        -   `<para>`
+    -   `<description>`: text description of maintenance stated with the `<para>` subterm
 
 -   [`<methods>`]{style="color: #dd7f08ff;"}: stepwise information on methods for data collection
 
@@ -143,7 +142,7 @@ The following set of terms is not strictly required by EML but we would highly r
 
 There are plenty of other terms that can be suitable to use for your data. The following are just some examples, for a full overview check the EML schema documentation.
 
--   [`<project>`]{style="color: #C60945;"}: broader background information on the project in which the data was collected, needs to have the subterms
+-   [`<project>`]{style="color: #C60945;"}: broader background information on the project in which the data was collected, needs to have the subterms:
 
     -   `<title>`
     -   `<personnel>`
@@ -152,13 +151,11 @@ There are plenty of other terms that can be suitable to use for your data. The f
         -   `<funding>`
         -   `<studyAreaDescription>`
 
--   [`<intellectualRights>`]{style="color: #C60945;"}: information on the intellectual property rights as text using subterm
-    -   `<para>`
+-   [`<intellectualRights>`]{style="color: #C60945;"}: information on the intellectual property rights as text using `<para>` subterm
 
 -   [`<alternateIdentifier>`]{style="color: #C60945;"}
 
--   [`<additionalInfo>`]{style="color: #C60945;"}: Can capture any information that cannot be captured by the remaining terms and is filled with text using subterm
-    -   `<para>`
+-   [`<additionalInfo>`]{style="color: #C60945;"}: any information that cannot be captured by the remaining terms and is filled with text using `<para>` subterm
 
 -   [`<introduction>`]{style="color: #C60945;"}: overview of background and context of the dataset, similar to an introduction of a journal article
 

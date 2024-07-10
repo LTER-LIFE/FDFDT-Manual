@@ -23,13 +23,17 @@ This interactive manual aims to provide ecologists and other data owners of ecol
 
 This guide was developed based on practical work on [different datasets](#example-datasets). Throughout this guide, we refer to examples and code snippets from this work. The complete R code can be found on this [GitHub repository](https://github.com/LTER-LIFE/FDFDT).
 
-## How to cite and licence {.unnumbered}
+### How to cite and licence {.unnumbered}
 
 If you want to cite this guide, please refer to it as:
 
 Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. < url >/< doi >
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
+
+### How to provide feedback {.unnumbered}
+
+If you have any suggestions, concerns or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through the Github repository where you can add your remarks as a new issue! 
 
 
 ::: {.disclaimer .disclaimerimg}
@@ -42,7 +46,9 @@ This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 I
 
 ## Acknowledgements {.unnumbered}
 
-We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, and Eric Kuijt - for the regular discussions, feedback and suggestions on the manual and guide. We thank Marcel E. Visser and Wim Hugo for their input and advice on the overall project.
+We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, and Eric Kuijt - for the regular discussions, feedback and suggestions on the assessment tool and guide. We thank Marcel E. Visser and Wim Hugo for their input and advice on the overall project.
+
+Thanks to Parinaz Rashidi, W. Daniel Kissling, Geerten M. Hengeveld and others involved in LTER-LIFE, for their contributions to the guide and for their efforts in continuing the development of this work through LTER-LIFE.
 
 Many thanks to the custodians of the datasets that are used as examples throughout this guide. The lessons learned from FAIRifying and structuring these datasets form the bedrock for the design and implementation of the workflow. We thank Judith Risse, Marcel E. Visser (bud burst data), Joost Vogels, Wilco C.E.P. Verberk (cricket data), G.F. (Ciska) Veen, Freddy ten Hooven, and Wim H. van der Putten (CLUE data), as well as all the people who contributed to the many years of data collection.
 

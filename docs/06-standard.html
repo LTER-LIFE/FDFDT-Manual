@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-08" />
+<meta name="date" content="2024-07-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,8 +282,8 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>________________________________</b></span></li>
-<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to be fully interoperable</a></li>
+<li class="part"><span><b>__________________________________</b></span></li>
+<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to reach full interoperability</a></li>
 <li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
 <li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
@@ -340,23 +340,28 @@ div.csl-indent {
 <h2><span class="header-section-number">6.5</span> Mapping your data to Darwin Core<a href="06-standard.html#mapping-your-data-to-darwin-core" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="darwin-core-namespaces" class="section level3 hasAnchor" number="6.5.1">
 <h3><span class="header-section-number">6.5.1</span> Darwin Core namespaces<a href="06-standard.html#darwin-core-namespaces" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Darwin Core list of terms uses four different namespaces. The <a href="http://rs.tdwg.org/dwc/terms/">dwc:</a> namespace marks Darwin Core terms and generally has string values, just as the <a href="http://purl.org/dc/elements/1.1/">dc:</a> namespace that marks terms belonging to elements/1.1 namespace of Dublin Core. Terms of the <a href="http://rs.tdwg.org/dwc/iri/">dwciri:</a> namespace are also Darwin Core terms but must be used with <a href="10-glossary.html#URI">IRI</a> values and are generally used in RDFs, while <a href="http://purl.org/dc/terms/">dcterms:</a> refers to terms coming from the terms namespace of Dublin Core and their values depend on the details of the respective term.</p>
+<p>Namespaces are prefixes used to distinguish between terms from different vocabularies or standards, ensuring there are no conflicts between similarly named terms. In the context of Darwin Core, four main namespaces are used:</p>
+<ul>
+<li><p><a href="http://rs.tdwg.org/dwc/terms/"><em>dwc</em></a>: marks standard Darwin Core terms and generally has string values (e.g., dwc:scientificName)</p></li>
+<li><p><a href="http://purl.org/dc/elements/1.1/"><em>dc:</em></a>: marks terms belonging to “elements/1.1” namespace of Dublin Core and generally have string values (e.g., dc:title)</p></li>
+<li><p><a href="http://rs.tdwg.org/dwc/iri/"><em>dwciri</em></a>: marks Darwin Core terms that must be used with <a href="10-glossary.html#URI">Internationalized Resource Identifier (IRI)</a> values and are generally used in <a href="10-glossary.html#RDF">RDFs</a> (e.g., dwciri:recordedBy)</p></li>
+<li><p><a href="http://purl.org/dc/terms/"><em>dcterms</em></a>: refers to terms coming from the “terms” namespace of Dublin Core and their values depend on the details of the respective term (e.g., dcterms:identifier)</p></li>
+</ul>
 </div>
 <div id="darwin-core-terms" class="section level3 hasAnchor" number="6.5.2">
 <h3><span class="header-section-number">6.5.2</span> Darwin Core terms<a href="06-standard.html#darwin-core-terms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the <a href="https://dwc.tdwg.org/list/">Darwin Core List of terms</a>.</p>
-<div class="tableDwCterms">
 <p><span style="font-size: 11px;"><strong>Table 6.1. Selected set of Darwin Core terms of each class.</strong> Bold terms are described in more detail in the following sections.</span></p>
 <table>
 <colgroup>
-<col width="9%" />
 <col width="12%" />
-<col width="10%" />
-<col width="13%" />
-<col width="15%" />
 <col width="12%" />
-<col width="11%" />
-<col width="14%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -514,7 +519,6 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
-</div>
 <div id="terms-of-class-event" class="section level3 hasAnchor" number="6.5.3">
 <h3><span class="header-section-number">6.5.3</span> Terms of class Event<a href="06-standard.html#terms-of-class-event" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Before assigning the terms of the event class to your data you should define what exactly one event is in your data. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data.</p>
@@ -530,17 +534,17 @@ div.csl-indent {
 </div>
 <div class="examplebox exampleimg">
 <p><strong>Crickets</strong>:</p>
-<p>In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Defining events for the cricket measurements were more difficult, as the data did not specify concrete date and time information of the events. Through data documentation it became clear which measurements have been taken at the same point in time, so that we could group them into the same event. This leads to 18 different event groups per individual cricket, from which we build the eventID by combining the cricket identifier with the event group number, e.g., Cr1-05 (= individual cricket number 1 and event group 5).</p>
+<p>In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using data documentation, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).</p>
 </div>
 </div>
 <div id="date-information-eventdate-year-month-day" class="section level4 hasAnchor" number="6.5.3.2">
 <h4><span class="header-section-number">6.5.3.2</span> Date information (eventDate, year, month, day)<a href="06-standard.html#date-information-eventdate-year-month-day" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><strong>eventDate</strong> is necessary to be filled but can vary in its precision. If a full date is available, use the <a href="https://www.iso.org/obp/ui/en/#iso:std:iso:8601:-1:ed-1:v1:en">ISO standard (8601-1:2019)</a> date format of YYYY-MM-DD. You always should give the date as precise as possible, so if the exact day is not available, give at least the year and month, etc. You can also give an interval if a distinct point in time is not available by separating the days or months or years by a slash, e.g., 2014-04-01/08 meaning some time in the interval between the first April 2014 and the 08 April 2014. If the interval starts and ends at days of different months, also repeat the year (e.g., 2014-04-01/2014-07-01).</p>
-<p>In addition to eventDate, we recommend to use the terms <strong>year</strong>, <strong>month</strong> and <strong>day</strong> (if applicable) as this can facilitate later analysis with the data. If eventDates of different levels are not all of the same format, for example the parent event only has the year (2024), while the child event has an exact date (2024-11-05), the event dates can be transformed to characters, as programs like R do not accept different date formats in the same column. In this case, the additional columns of year, month and day are especially helpful, as missing values can be left empty/filled with NA, while the rest is numeric.</p>
+<p>In addition to eventDate, we recommend to use the terms <strong>year</strong>, <strong>month</strong> and <strong>day</strong> (if applicable) as this can facilitate later analysis with the data. If eventDates of different levels are not all of the same format, for example the parent event only has the year (2024), while the child event has an exact date (2024-11-05), the event dates can be transformed to characters, as programs like R do not accept different date formats in the same column. In this case, the additional columns of year, month and day are especially helpful, as missing values can be left empty/filled with <em>NA</em>, while the rest is numeric.</p>
 </div>
 <div id="time-information-eventtime" class="section level4 hasAnchor" number="6.5.3.3">
 <h4><span class="header-section-number">6.5.3.3</span> Time information (eventTime)<a href="06-standard.html#time-information-eventtime" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>If you also have time information in your data, this can either also be stored in eventDate or additionally in an extra column as <strong>eventTime</strong>. As with date, time should be given in time of day (in 24h system) following the ISO standard 8601-1:2019. Time intervals can again be given by separating times with a slash, e.g., 13:00:00/15:30:00 (the interval between 13:00 and 15:30). If time information should be added to eventDate (which is recommended, as eventDate should be as precise as possible), the date and the time are separated with a “T”, for example, 2018-08-29T15:19. Time Zones can be specified by adding a “Z” at the end, if the time is recorded in UTC (e.g., 2010-02-16T08:40Z) or by stating the deviation from UTC by adding a plus or minus and the number of hours of the deviation, e.g., 2010-02-16T08:40-0300 meaning UTC minus 3 hours). If neither of both is given, it is assumed that the time is given as the local time.</p>
+<p>If you also have time information in your data, this can either also be stored in eventDate or additionally in an extra column as <strong>eventTime</strong>. As with date, time should be given in time of day (in 24h system) following the <a href="https://www.iso.org/obp/ui/en/#iso:std:iso:8601:-1:ed-1:v1:en">ISO standard 8601-1:2019</a>. Time intervals can again be given by separating times with a slash, e.g., 13:00:00/15:30:00 (the interval between 13:00 and 15:30). If time information should be added to eventDate (which is recommended, as eventDate should be as precise as possible), the date and the time are separated with a “T”, for example, 2018-08-29T15:19. Time Zones can be specified by adding a “Z” at the end, if the time is recorded in UTC (e.g., 2010-02-16T08:40Z) or by stating the deviation from UTC by adding a plus or minus and the number of hours of the deviation, e.g., 2010-02-16T08:40-0300 meaning UTC minus 3 hours. If neither of both is given, it is assumed that the time is given as the local time.</p>
 </div>
 </div>
 <div id="terms-of-class-location" class="section level3 hasAnchor" number="6.5.4">
@@ -567,7 +571,8 @@ div.csl-indent {
 <p>Occurrence is generally defined as the existence of an organism at a certain time and place.</p>
 <div id="occurrenceID" class="section level4 hasAnchor" number="6.5.6.1">
 <h4><span class="header-section-number">6.5.6.1</span> occurrenceID<a href="06-standard.html#occurrenceID" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can belong to one eventID, for example when different species occurred at the same event. You can either assign GUIDs (see <a href="06.1-taxonomies.html#GUIDcreation">here</a>) or identifiers specific to the dataset. If you choose to create identifiers specific to the dataset, we recommend creating informative IDs that give information about the occurrences they describe (see <a href="06-standard.html#eventID">eventID</a> for more details). If you also have an eventID in your data, we recommend proceeding with the block-structure of IDs we have already used there, which means extending the eventID of the corresponding event by a new block that numbers the occurrences of that event. If there are occurrence records for different event levels, extending the eventID will lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this and create unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1.</p>
+<p>The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can be associated with a single eventID, for example when different species occurred at the same event. You can either assign GUIDs (see <a href="06.1-taxonomies.html#GUIDcreation">here</a>) or identifiers specific to the dataset. If you choose to create dataset-specific identifiers, we recommend creating informative IDs that give information about the occurrences they describe (see <a href="06-standard.html#eventID">eventID</a> for more details).</p>
+<p>If your data also includes an eventID, we recommend proceeding with the block-structure of IDs we have already used there by extending the eventID of the corresponding event with a new block that numbers the occurrences of that event. However, if there are occurrence records for different event levels, extending the eventID may lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004_99_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004_99). To avoid this confusion and ensure unique IDs, we therefore add the prefix “o” (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004_99_5_o1. This method helps maintain clarity and uniqueness across different event levels.</p>
 <div class="examplebox exampleimg">
 <p><strong>crickets</strong>: occurrenceID = Cr1-05_1 (corresponding to eventID Cr1-05, indicating the first occurrence of that event)</p>
 </div>
@@ -576,16 +581,16 @@ div.csl-indent {
 <h4><span class="header-section-number">6.5.6.2</span> Taxonomic information<a href="06-standard.html#taxonomic-information" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Taxonomic information should always be specified to the lowest level possible. Which level this is can be specified with the term <strong>taxonRank</strong>. We recommend to use at least the following DwC terms to describe taxon information:</p>
 <ul>
-<li><p>kingdom</p></li>
-<li><p>phylum</p></li>
-<li><p>class</p></li>
-<li><p>order</p></li>
-<li><p>family</p></li>
-<li><p>genus</p></li>
-<li><p>specificEpithet</p></li>
-<li><p>scientificName</p></li>
+<li><p><strong>kingdom</strong></p></li>
+<li><p><strong>phylum</strong></p></li>
+<li><p><strong>class</strong></p></li>
+<li><p><strong>order</strong></p></li>
+<li><p><strong>family</strong></p></li>
+<li><p><strong>genus</strong></p></li>
+<li><p><strong>specificEpithet</strong></p></li>
+<li><p><strong>scientificName</strong></p></li>
 </ul>
-<p>The specificEpithet only contains the second part in the scientific name of a species , while the scientificName contains the full scientific name (i.e., genus + species epithet) together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological <a href="10-glossary.html#taxonomy">taxonomy</a> for the complete classification of the taxa in your data, to avoid misspellings and/or the use of outdated classification.</p>
+<p>The <strong>specificEpithet</strong> only contains the second part in the scientific name of a species, while the <strong>scientificName</strong> contains the full scientific name (i.e., genus + species epithet) together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological <a href="10-glossary.html#taxonomy">taxonomy</a> for the complete classification of the taxa in your data, to avoid misspellings and/or the use of outdated classification.</p>
 <p>Some taxa come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section <a href="06.1-taxonomies.html#biological-taxonomies">biological taxonomies</a>.</p>
 <p>However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can easily occur in the case of rare species or taxa with similar names (e.g., for the plant genus <em>Convolvulus</em> and the animal genus <em>Conovulus</em>).</p>
 <div class="examplebox exampleimg">
@@ -594,15 +599,15 @@ div.csl-indent {
 <p><span style="font-size: 11px;"><strong>Table 6.1. Taxonomic information for <em>Gryllus campestris</em> as retrieved from GBIF stored in respective Darwin Core terms.</strong></span></p>
 <table>
 <colgroup>
-<col width="28%" />
-<col width="7%" />
-<col width="9%" />
-<col width="7%" />
-<col width="9%" />
-<col width="8%" />
-<col width="7%" />
-<col width="13%" />
-<col width="8%" />
+<col width="14%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -638,15 +643,15 @@ div.csl-indent {
 <p><span style="font-size: 11px;"><strong>Table 6.2. Taxonomic information for <em>Deschampsia flexuosa</em>, which is a synonym of <em>Avenella flexuosa</em>, as retrieved from GBIF and stored in respective Darwin Core terms.</strong></span></p>
 <table>
 <colgroup>
-<col width="28%" />
-<col width="7%" />
-<col width="11%" />
-<col width="9%" />
-<col width="6%" />
-<col width="7%" />
-<col width="8%" />
 <col width="13%" />
-<col width="8%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -688,11 +693,11 @@ div.csl-indent {
 <p>The <a href="10-glossary.html#measurementorfact">measurement or fact</a> terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column.</p>
 <div id="measurementvalue-measurementunit" class="section level4 hasAnchor" number="6.5.7.1">
 <h4><span class="header-section-number">6.5.7.1</span> measurementValue &amp; measurementUnit<a href="06-standard.html#measurementvalue-measurementunit" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>After transforming your data into the long format, the column containing the measured values or facts can be mapped to the Darwin Core term measurementValue. Measurements come with units, which are often either stored within the column heading or not specified at all in the raw data. Darwin Core accounts for that by the term measurementUnit, which has to be added if you use measurementValue. It is best practice to use SI (International System of Units) units if possible. For unitless measurements the measurementUnit should still be present in the data but can be left empty/filled with NA.</p>
+<p>After transforming your data into the long format, the column containing the measured values or facts can be mapped to the Darwin Core term <strong>measurementValue</strong>. Measurements come with units, which are often either stored within the column heading or not specified at all in the raw data. Darwin Core accounts for that by the term <strong>measurementUnit</strong>, which has to be added if you use measurementValue. It is best practice to use SI (International System of Units) units if possible. For unitless measurements, the measurementUnit should still be present in the data but can be left empty/filled with <em>NA</em>.</p>
 </div>
 <div id="measurementtype-measurementmethod" class="section level4 hasAnchor" number="6.5.7.2">
 <h4><span class="header-section-number">6.5.7.2</span> measurementType &amp; measurementMethod<a href="06-standard.html#measurementtype-measurementmethod" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>With the long format and all measurements being stored in measurementValue, you additionally need to store the information <strong>what</strong> has been measured, i.e., what each measurement or fact means. This is done by the term measurementType. Additionally, you should use the term measurementMethod that states how each measurement was measured. For both terms, it is recommended to use controlled vocabulary where possible. For more information on the use of ontologies, see section ontologies.</p>
+<p>With the long format and all measurements being stored in measurementValue, you additionally need to store <strong>what</strong> has been measured, i.e., what each measurement or fact means. This is done by the term <strong>measurementType</strong>. Additionally, you should use the term <strong>measurementMethod</strong> that states how each measurement was measured. For both terms, it is recommended to use controlled vocabulary where possible. For more information on the use of ontologies, see <a href="06.1-taxonomies.html#ontologies">section ontologies</a>.</p>
 <div class="examplebox exampleimg">
 <p><strong>Bud burst</strong>:</p>
 <p>To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).</p>
@@ -718,10 +723,10 @@ div.csl-indent {
 <p><span style="font-size: 11px;"><strong>Table 6.4. Bud burst data after mapping to Darwin Core terms.</strong></span></p>
 <table>
 <colgroup>
-<col width="38%" />
-<col width="14%" />
-<col width="13%" />
-<col width="33%" />
+<col width="32%" />
+<col width="20%" />
+<col width="20%" />
+<col width="27%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -750,7 +755,7 @@ div.csl-indent {
 </div>
 <div id="measurementid" class="section level4 hasAnchor" number="6.5.7.3">
 <h4><span class="header-section-number">6.5.7.3</span> measurementID<a href="06-standard.html#measurementid" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the <a href="06-standard.html#eventID">eventID</a> and <a href="06-standard.html#occurrenceID">occurrenceID</a>. If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement, will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements.</p>
+<p>The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the <a href="06-standard.html#eventID">eventID</a> and <a href="06-standard.html#occurrenceID">occurrenceID</a>. If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix “m” (for measurement) in the block of the ID that numbers the measurements.</p>
 <div class="examplebox exampleimg">
 <p><strong>Budburst</strong>: measurementID = HV2004_99_5_1_m2 for the second measurement of the eventID HV2004_99_5 and the occurrenceID HV2004_99_5_1</p>
 <p><strong>Crickets</strong>: measurementID = Cr1-05_1_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05_1</p>

@@ -1,8 +1,8 @@
-# (PART\*) ________________________________ {.unnumbered}
+# (PART\*) __________________________________ {.unnumbered}
 
-# How to be fully interoperable {#fully-interoperable}
+# How to reach full interoperability {#fully-interoperable}
 
-As stated [before](#assessment) (note box), you cannot reach the full score in the standard section of the assessment of your data by going through this guide alone, as it is not covering the implementation of the [FAIR principle **I1**](https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/): *(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation*. Using, for example, RDF (Resource description framework) or OWL (Web ontology language) for knowledge representation and transforming the data accordingly, is more the task of data scientists rather than ecologists and was therefore falling out of the scope of this guide.
+As mentioned [before](#assessment) (see note box), you cannot reach the full score in the assessment of your data by going through this guide alone. This is because we do not cover the implementation of the [FAIR principle **I1**](https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/): *(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation*. We think that data scientists rather than ecologists are better equipped at using, for example, [RDF](#RDF) (Resource description framework) or [OWL](#OWL) (Web ontology language) for knowledge representation and transforming the data accordingly. 
 
 If you are however interested in making your data fully FAIR and cover principle I1, the following resources can be a good starting point:
 

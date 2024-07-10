@@ -57,7 +57,7 @@ mof
 measurementvalue-measurementunit
 measurementtype-measurementmethod
 measurementid
-ontologies-and-controlled-vocabulary
+ontologies
 tools-to-help-you-2
 biological-taxonomies
 gbif-backbone-taxonomy
@@ -86,7 +86,7 @@ metadata-standards-for-biodiversity-data
 tools-to-help-you-4
 our-choice-2
 eml-terms
-structural-metadata---the-meta.xml-file
+structural-metadata
 tools-to-help-you-5
 eml.xml-file
 meta.xml-file

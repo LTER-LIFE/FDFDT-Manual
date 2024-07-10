@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-08" />
+<meta name="date" content="2024-07-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,8 +282,8 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>________________________________</b></span></li>
-<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to be fully interoperable</a></li>
+<li class="part"><span><b>__________________________________</b></span></li>
+<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to reach full interoperability</a></li>
 <li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
 <li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
@@ -311,13 +311,15 @@ div.csl-indent {
 <p>A common way of storing biodiversity data is in tables. However, simply entering the data into a spreadsheet does often not adhere to the strict requirements of tabular data, which has the following characteristics:</p>
 <ul>
 <li><p>Structured in rows and columns</p></li>
+<li><p>A row contains information about a single entity (e.g., a person’s name, age, or occupation), whilst a single column describes the same property of each entity (e.g., the names of all persons)</p></li>
 <li><p>Rectangular shape, in which each row has the same number of columns and each column the same number of rows</p></li>
 <li><p>Cells in a row/column can be left empty</p></li>
-<li><p>The columns describe properties of the entities that are described by the rows.</p></li>
 </ul>
-<p>For a more extensive description of the tabular data model, see <a href="https://www.w3.org/TR/tabular-data-model/">here</a>.</p>
-<p>To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that should be tabular follows these characteristics. You should therefore reshape your data accordingly.</p>
-<p>Once you applied a data standard and also want to standardise the structure of your data, you can do that by following the steps in <a href="07-structure.html#structuring-your-standardised-data">this section</a>.</p>
+<p>For a more extensive and formal description of tabular data, see W3C’s <a href="https://www.w3.org/TR/tabular-data-model/">tabular data model</a>.</p>
+<p>To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that is meant to be tabular follows the aforementioned characteristics. If not, reshape your data accordingly.</p>
+<div class="infobox infoboximg">
+<p>If your data consists of multiple tables, the relationships between these tables should be made clear. This can be done either by describing it in a README file (see <a href="04-Describe-data.html#describe-data">section 4.1</a>) or, if your data is already in a standard format, in a more standardised way, such as the meta.xml file described <a href="08.1-structural-metadata.html#structural-metadata">here</a>.</p>
+</div>
 <div>
 
 

@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-08" />
+<meta name="date" content="2024-07-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,8 +282,8 @@ div.csl-indent {
 <li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>________________________________</b></span></li>
-<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to be fully interoperable</a></li>
+<li class="part"><span><b>__________________________________</b></span></li>
+<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to reach full interoperability</a></li>
 <li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
 <li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
 <li class="divider"></li>
@@ -309,7 +309,7 @@ div.csl-indent {
 <div id="tools-to-help-you-5" class="section level2 hasAnchor" number="8.6">
 <h2><span class="header-section-number">8.6</span> Tools to help you<a href="08.2-XML-in-R.html#tools-to-help-you-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Both the EML and the meta file are XML files. XML stands for extensible Markup Language and is a human- and machine-readable format to store and transport data. The general structure of XML files is a hierarchical tree consisting of a root element and an unlimited number of sub-elements of different levels, as well as attributes and text. For an extensive description on how to build XML files, see the <a href="https://www.w3schools.com/xml/default.asp">tutorial of the W³ schools</a>.</p>
-<p>To create the two XML files needed for the Darwin Core Archive, you do not have to be an expert in XML. In R, there are several packages that facilitate the creation of XML and even more specific, EML files, for example <code>emld</code> (<span class="citation">Boettiger et al. (<a href="#ref-R-emld">2020</a>)</span>), <code>EML</code> (<span class="citation">Boettiger &amp; Jones (<a href="#ref-R-EML">2022</a>)</span>) and <code>xml2</code> (<span class="citation">Wickham et al. (<a href="#ref-R-xml2">2023</a>)</span>).</p>
+<p>To create the two XML files needed for the Darwin Core Archive, you do not have to be an expert in XML. In R, there are several packages that facilitate the creation of XML and even more specific, EML files, for example <code>emld</code> (<span class="citation">Boettiger et al. (<a href="#ref-R-emld">2020</a>)</span>), <code>EML</code> (<span class="citation">Boettiger &amp; Jones (<a href="#ref-R-EML">2022</a>)</span>) and <code>xml2</code> (<span class="citation">Wickham, Hester, et al. (<a href="#ref-R-xml2">2023</a>)</span>).</p>
 <p>Additionally, you can find a nice overview over packages and helpful websites to build EML files in R on the website of the <a href="https://livingnorway.github.io/LivingNorwayR/articles/EML_R_packages_overview.html">LivingNorwayR package</a>.</p>
 <div id="eml.xml-file" class="section level3 hasAnchor" number="8.6.1">
 <h3><span class="header-section-number">8.6.1</span> EML.xml file<a href="08.2-XML-in-R.html#eml.xml-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -375,7 +375,7 @@ Some EML terms require XML attributes (see EML terms). These can be assigned usi
 </div>
 <div id="meta.xml-file" class="section level3 hasAnchor" number="8.6.2">
 <h3><span class="header-section-number">8.6.2</span> meta.xml file<a href="08.2-XML-in-R.html#meta.xml-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. The root element <code>&lt;archive&gt;</code>consists of the subelements <code>&lt;core&gt;</code> and <code>&lt;extension&gt;</code> (once for every extension file). Within these elements, there is a <code>&lt;field&gt;</code> element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description of the components of the meta.xml file see the <a href="https://dwc.tdwg.org/text/">Darwin Core text guide</a>.</p>
+<p>In contrast to the EML file, where the metadata is specific to the dataset and has to be filled in by hand, the meta file always consists of the same content only depending on the file and column names of the individual Darwin Core Archive. The root element <code>&lt;archive&gt;</code> consists of the subelements <code>&lt;core&gt;</code> and <code>&lt;extension&gt;</code> (once for every extension file). Within these elements, there is a <code>&lt;field&gt;</code> element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description of the components of the meta.xml file see the <a href="https://dwc.tdwg.org/text/">Darwin Core text guide</a>.</p>
 <p>As the meta.xml is always structured in the same way and the contents can directly be derived from the column headers in the Darwin Core Archive files and do not need to be filled individually, the creation of the meta.xml file can be automated. <a href="https://github.com/LTER-LIFE/FDFDT/blob/main/R/create-meta-xml-of-DwCA.R">Here</a> you can find a function that you can use to do this in R.</p>
 <div class="examplebox exampleimg">
 <p><strong>Crickets</strong>:</p>
