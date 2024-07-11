@@ -10,7 +10,8 @@ As with the data standards, a wide range of metadata standards exists, partly ta
 
 For ecological data, a widely used metadata standard, for example by [OBIS](#OBIS) and [GBIF](#GBIF), is the [**Ecological metadata language (EML)**](#eml), which is also the required format for metadata in the [Darwin Core Archives](#DwC-A). It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable [XML](#XML) markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their [interactive schema documentation](https://eml.ecoinformatics.org/schema/).
 
-**Dublin Core** is a metadata standard consisting of a set of 15 terms used to describe metadata. The terms themselves consist of several dozen properties, classes, data types, and vocabulary encoding schemes and are maintained by the [Dublin Core Metadata Initiative (DCMI)](https://dublincore.org/).
+**Dublin Core** is a widely adopted, universal metadata standard maintained by the [Dublin Core Metadata Initiative ](https://dublincore.org/)(DCMI). It consists of a set of 15 core terms used to describe the basic elements of any resource, online or physical. In addition, Dublin Core contains several dozen properties, classes, data types, and vocabulary encoding schemes that help refine the core description.
+
 
 ## Tools to help you
 

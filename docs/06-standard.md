@@ -94,7 +94,7 @@ This can be exemplified with our bud burst use case, where we have three differe
 ::: {.examplebox .exampleimg}
 **Crickets**:
 
-In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using data documentation, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).
+In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using the publication belonging to the dataset and the documentation file accompanying the data, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).
 :::
 
 #### Date information (eventDate, year, month, day)
@@ -199,6 +199,14 @@ There is ongoing discussion on which of the two terms to use. Some suggest depre
 ### Terms of class Measurement or fact {#mof}
 
 The [measurement or fact](#measurementorfact) terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column.
+
+:::{.infobox .infoimg}
+
+**Wide versus long format**
+
+When storing multiple measurements (or observations) of the same subject in a table, you can store this in a wide or in a long format. Data in the wide format is structured with each row representing a single subject and each column representing a different measure. In contrast, in the long format, each row represents a single measurement or observation and the measured value and measurement type are stored in separate columns. In Darwin Core, measurements are stored in a long format.
+
+:::
 
 #### measurementValue & measurementUnit
 

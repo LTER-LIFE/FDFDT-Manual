@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-10" />
+<meta name="date" content="2024-07-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -167,6 +167,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#why-you-should-use-this-guide"><i class="fa fa-check"></i>Why you should use this guide</a></li>
@@ -534,7 +535,7 @@ div.csl-indent {
 </div>
 <div class="examplebox exampleimg">
 <p><strong>Crickets</strong>:</p>
-<p>In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using data documentation, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).</p>
+<p>In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using the publication belonging to the dataset and the documentation file accompanying the data, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).</p>
 </div>
 </div>
 <div id="date-information-eventdate-year-month-day" class="section level4 hasAnchor" number="6.5.3.2">
@@ -691,6 +692,10 @@ div.csl-indent {
 <div id="mof" class="section level3 hasAnchor" number="6.5.7">
 <h3><span class="header-section-number">6.5.7</span> Terms of class Measurement or fact<a href="06-standard.html#mof" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <a href="10-glossary.html#measurementorfact">measurement or fact</a> terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column.</p>
+<div class="infobox infoimg">
+<p><strong>Wide versus long format</strong></p>
+<p>When storing multiple measurements (or observations) of the same subject in a table, you can store this in a wide or in a long format. Data in the wide format is structured with each row representing a single subject and each column representing a different measure. In contrast, in the long format, each row represents a single measurement or observation and the measured value and measurement type are stored in separate columns. In Darwin Core, measurements are stored in a long format.</p>
+</div>
 <div id="measurementvalue-measurementunit" class="section level4 hasAnchor" number="6.5.7.1">
 <h4><span class="header-section-number">6.5.7.1</span> measurementValue &amp; measurementUnit<a href="06-standard.html#measurementvalue-measurementunit" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>After transforming your data into the long format, the column containing the measured values or facts can be mapped to the Darwin Core term <strong>measurementValue</strong>. Measurements come with units, which are often either stored within the column heading or not specified at all in the raw data. Darwin Core accounts for that by the term <strong>measurementUnit</strong>, which has to be added if you use measurementValue. It is best practice to use SI (International System of Units) units if possible. For unitless measurements, the measurementUnit should still be present in the data but can be left empty/filled with <em>NA</em>.</p>

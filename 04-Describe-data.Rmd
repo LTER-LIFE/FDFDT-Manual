@@ -4,7 +4,13 @@
 
 ## Describe your data (Metadata) {#describe-data}
 
-The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and provides information about your dataset that helps to understand it. We can differentiate into descriptive metadata that, for example, contains information about the authors, the contents, coverage and the maintenance of the described data, and structural metadata, which contains information on how the dataset is organised and how single data files connect to each other.
+The first step before you store your data properly should always be to describe and annotate it. This type of description is called [metadata](#metadata) and provides information about your dataset that helps to find, understand, and reuse it. We can distinguish between administrative, descriptive and structural metadata:
+
+- Administrative metadata includes information about the authors, usage (i.e., licence), and maintenance of the data
+
+- Descriptive metadata includes information about the contents, [provenance](#provenance) (i.e., the source and/or history), and coverage (e.g., time, geographic location) of the data
+
+- Structural metadata provides details about how the dataset is organised and how individual data files are related to each other
 
 Many repositories require a minimal set of metadata when uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are, however, no regulations on what information a README should contain and in practice, the extent and detail of it varies a lot. In general, the richer the data is described the better. 
 
