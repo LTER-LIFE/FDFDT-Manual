@@ -52,7 +52,7 @@ Namespaces are prefixes used to distinguish between terms from different vocabul
 
 Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the [Darwin Core List of terms](https://dwc.tdwg.org/list/).
 
-
+:::{.tableDwCterms}
 [**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections.]{style="font-size: 11px;"}
 
 | Event             | Occurrence               | Taxon                | MeasurementOrFact         | Location                      | Organism                | MaterialEntity        | GeologicalContext           |
@@ -72,6 +72,7 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 | fieldNotes        | occurrenceRemarks        | taxonRank            |                           |                               |                         |                       |                             |
 | eventRemarks      | catalogNumber            | vernacularName       |                           |                               |                         |                       |                             |
 
+:::
 
 ### Terms of class Event
 

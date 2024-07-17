@@ -38,15 +38,21 @@ About the dataset:
 
 - Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., *dataset A is a derivative of dataset B* or *B contains complementary information to A*).
 
+
 **For tabular data**:
 
-About individual data files:
+In addition to providing metadata at the dataset level, as listed above, it is recommended for tabular data to provide a [data dictionary](#data-dictionary) (sometimes called a codebook). A data dictionary provides the meaning of the columns and values in your data files. It serves as a reference guide for people who want to reuse your data, as it improves the interpretation and understanding of the data. 
 
--   What do columns mean?
+For data stored in a relational database, the data dictionary is an active document, meaning that it is updated whenever the tables and columns in the database change. In most other cases, data dictionaries are static documents that need to be created manually. When you do so, describe:
 
--   Which units belong to each column?
+- The meaning or definition of columns
 
-- Which data type (e.g., integer, string, datetime) does each column contain?
+- The data type (e.g., integer, string, datetime)
+
+- The unit in which the measurement is given
+
+- The accepted values for a column, including the meaning of codes (e.g., 0 = absent, 1 = present) (*optional*)
+
 
 If you include personal information, like email addresses, of other people in the metadata that is made available online later on, it should always be asked for permission beforehand.
 
@@ -66,7 +72,7 @@ If you deposit your data online, it is important to communicate to potential use
 |   [CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)   | [<img src="images/CCBY-NC-ND_logo.png" width="100"/>](images/CCBY-NC-ND_logo.png) | users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator and data cannot be used commercially                                |
 | [CC0 ("CC Zero")](https://creativecommons.org/publicdomain/zero/1.0/) |    [<img src="images/CC-Zero_logo.png" width="100"/>](images/CC-Zero_logo.png)    | copyrights are given up and work is put into the public domain                                                                                                                           |
 
-::: {#Note-licence .infobox .infoimg} 
+:::{.infobox .infoimg} 
 
 Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
 

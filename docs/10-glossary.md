@@ -4,7 +4,7 @@
 
 An Application Programming Interface (API) defines a way of communication between two applications based on requests and responses, which allows data exchange between these applications.
 
--   Source: <https://www.ibm.com/topics/api>
+-   More information: https://www.neonscience.org/about/faq/what-api
 
 #### Core file {#core .unnumbered}
 
@@ -26,11 +26,18 @@ Darwin Core Archives are a way of structuring a dataset that uses the Darwin Cor
 
 #### Data(set){#dataset .unnumbered}
 
-Data is defined as information that is collected to be used for decision making or refers to information in a digital format that can be used by computers. Dataset refers to a collection of data. The two terms are not always used consistently across sources. Data is often used to describe the collected/recorded data itself (in contrast to metadata that describes it), while the dataset describes all files of collected data together with the metadata, if metadata is available. 
+Data is defined as information that is collected to be used for decision making or refers to information in a digital format that can be used by computers. Dataset refers to a collection of data. The two terms are not always used consistently across sources. *Data* is often used to describe the collected/recorded data itself (in contrast to metadata that describes it). *Dataset* is often used to describe all files of collected data, or the combination of data and metadata. 
 
 -   Sources: 
     - https://dictionary.cambridge.org/dictionary/english/data
     - https://dictionary.cambridge.org/dictionary/english/dataset 
+    
+#### Data dictionary {#data-dictionary .unnumbered}
+
+A data dictionary is a collection of names, definitions, and attributes about data elements (e.g., columns in a table) in a dataset. It provides guidance on interpretation, accepted meanings and representation (i.e., format) so that others can easily understand your data. Data dictionaries often include a definition and/or description, the data type (e.g., integer, string), the measurement units (e.g., metre), the allowable values (e.g., 1-10) and what they mean (e.g., 0 = absent, 1 = present).
+
+- More information: https://help.osf.io/article/217-how-to-make-a-data-dictionary 
+
 
 #### Data lifecycle {#datalifecycle .unnumbered}
 
