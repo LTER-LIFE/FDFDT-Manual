@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1.5 FAIR and structure assessment of your data | A hands-on guide to FAIR and structured ecological data</title>
-  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1.5 FAIR and structure assessment of your data | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
-  <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
+  <meta name="github-repo" content="LTER-LIFE/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="1.5 FAIR and structure assessment of your data | A hands-on guide to FAIR and structured ecological data" />
   
-  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   
 
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-17" />
+<meta name="date" content="2024-07-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -316,20 +316,20 @@ div.csl-indent {
 <li><p>We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the assessment questions of the first three components are directly derived from the <a href="01-introduction.html#what-is-fair">FAIR principles</a>, the structure component is an extension of FAIR not included in other tools.</p></li>
 <li><p>Automated tools often require the data to be available online already, which is not the state at which we want to start with our assessment.</p></li>
 </ul>
-<p>Our assessment tool &lt; add name and link &gt; provides you with a set of simple questions about four properties of your data: <strong>metadata</strong>, <strong>storage</strong>, <strong>standards</strong> and <strong>structure</strong>.</p>
+<p>Our assessment tool <strong>“FAIR + Structure Evaluation Tool”</strong> provides you with a set of simple questions about four properties of your data: <strong>metadata</strong>, <strong>storage</strong>, <strong>standards</strong> and <strong>structure</strong>.</p>
 <p><strong>Metadata</strong> is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.</p>
 <p><strong>Storage</strong> is about whether your data is stored persistently and in a way that makes it findable and accessible to others.</p>
 <p><strong>Standards</strong> describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets.</p>
 <p><strong>Structure</strong> is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others.</p>
 <p>Apart from the questions about structure, the questions in the assessment are all directly based on the FAIR principles. Figure <a href="01.1-FAIR-assessment.html#fig:MSSS-FAIR">1.2</a> visualises how the data properties in the assessment link to the letters of FAIR. Your answers will provide you with a circle diagram showing how mature your dataset is in each of the properties and an associated list of chapters of this manual you can work through to further improve the maturity of your data.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:MSSS-FAIR"></span>
-<img src="images/Fig2_MSSS-FAIR.svg" alt="Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR." width="30%" />
+<img src="images/Fig2_MSSS-FAIR.svg" alt="Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR and structure evaluation (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blank space means that this data property has no direct influence on the respective letter of FAIR." width="30%" />
 <p class="caption">
-Figure 1.2: Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR assessment (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blanc space means that this data property has no direct influence on the respective letter of FAIR.
+Figure 1.2: Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR and structure evaluation (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blank space means that this data property has no direct influence on the respective letter of FAIR.
 </p>
 </div>
 <div class="infobox infoimg">
-<p>It will likely be difficult to reach the full score in all of the properties of your data, but this also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (<span class="citation">Pagano et al. (<a href="#ref-Pagano_2013">2013</a>)</span>). One step to reach interoperability is to use a language for knowledge representation and linked data, such as <a href="10-glossary.html#RDF">RDF (Resource Description Framework)</a>. However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide. For more information on full interoperability <a href="09-fully-interoperable.html#fully-interoperable">see this section</a>.</p>
+<p>It will likely be difficult to reach the full score in all of the properties of your data, but this is also not necessarily the aim of this assessment or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines (<span class="citation">Pagano et al. (<a href="#ref-Pagano_2013">2013</a>)</span>). One step to reach interoperability is to use a language for knowledge representation and linked data, such as <a href="10-glossary.html#RDF">RDF (Resource Description Framework)</a>. However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the assessment of “Standards” by only following this guide. For more information on full interoperability <a href="09-fully-interoperable.html#fully-interoperable">see this section</a>.</p>
 </div>
 <div>
 

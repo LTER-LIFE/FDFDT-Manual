@@ -27,7 +27,7 @@ To ensure that your dataset can always be found, it is important that your data 
 
 **How can the dataset be accessed?**
 
-Do users have to download the dataset directly from the repositories website or is there a more automated option available, such as an [API (Application Programming Interfaces)](#API)?  Is the repository using an open, free and standardised protocol, like the [Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)](https://www.openarchives.org/pmh/), to make the data accessible?
+Do users have to download the dataset directly from the repository's website or is there a more automated option available, such as an [API (Application Programming Interfaces)](#API)?  Is the repository using an open, free and standardised protocol, like the [Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)](https://www.openarchives.org/pmh/), to make the data accessible?
 
 **Is metadata stored persistently even when the data is no longer available?**
 
@@ -92,4 +92,4 @@ The [DANS Data Station for Life Sciences](https://dans.knaw.nl/en/life-sciences/
 - [DataCite Commons](https://commons.datacite.org/) provides a repository finder that integrates information on repositories from re3data within the [FAIRisFAIR](https://www.fairsfair.eu/) project. It allows users to search for repositories by keywords and filter the repositories for certificates, such as the CoreTrustSeal, or the software they are based on. 
 
 ## Our choice
-For the datasets we owned ourselves within our department ([bud burst](#budburst)), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners. 
+For the dataset we owned ourselves within our department ([bud burst](#budburst)), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners. 

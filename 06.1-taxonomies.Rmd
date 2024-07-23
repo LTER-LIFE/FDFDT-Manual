@@ -16,7 +16,7 @@ Ontologies provide definitions of terms and their relationships to other terms i
 
 -   If you are more interested in finding an ontology dedicated to a specific domain, looking directly at the [OBO foundry](http://obofoundry.org/) can be helpful. The OBO Foundry (Open Biological and Biomedical Ontology Foundry) is tailored to biological sciences and develops and maintains ontologies. It is not searchable for individual terms but provides information on each ontology.
 
--   If you chose a specific ontology and before using it you want to assess how [FAIR](#FAIR) this ontology is, you can use [FOOPS!](https://foops.linkeddata.es/FAIR_validator.html#). It is considered a ontology pitfall scanner for FAIR and by providing the [URI](#URI) of an ontology it assesses how well the ontology matches the FAIR principles.
+-   If you chose a specific ontology and before using it you want to assess how [FAIR](#FAIR) this ontology is, you can use [FOOPS!](https://foops.linkeddata.es/FAIR_validator.html#). It is considered an ontology pitfall scanner for FAIR and by providing the [URI](#URI) of an ontology it assesses how well the ontology matches the FAIR principles.
 
 ## Biological taxonomies
 
@@ -40,7 +40,7 @@ The [Encyclopedia of Life](https://www.eol.org/) aims to gather knowledge about 
 
 ### World Registry of Marine Species (WoRMS)
 
-[WoRMS](https://www.marinespecies.org/) is authoritative classification and catalogue for marine taxa managed by taxonomists and thematic experts that includes accepted and synonym taxonomic information which allows interpretation of the taxonomic literature. It is the recommended biological taxonomy to retrieve information from when publishing data to OBIS.
+[WoRMS](https://www.marinespecies.org/) is authoritative classification and catalogue for marine taxa managed by taxonomists and thematic experts that includes accepted and synonym taxonomic information allowing for interpretation of the taxonomic literature. It is the recommended biological taxonomy to retrieve information from when publishing data to OBIS.
 
 ### Tools to help you
 

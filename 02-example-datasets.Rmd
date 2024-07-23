@@ -11,7 +11,7 @@ knitr::include_graphics("images/ID-card_budburst.svg")
 ```
 
 ## Cricket data {#cricket} 
-This dataset contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (Gryllus campestris). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. 
+This dataset contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (*Gryllus campestris*). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. 
 
 ```{r crickets, echo = FALSE, out.width = '50%', fig.cap = 'FAIR assessment of cricket data.', fig.align = 'center', dev = 'svg'}
 

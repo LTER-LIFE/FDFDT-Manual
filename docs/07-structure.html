@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 7 Structuring your standardised data | A hands-on guide to FAIR and structured ecological data</title>
-  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 7 Structuring your standardised data | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
-  <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
+  <meta name="github-repo" content="LTER-LIFE/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content=" 7 Structuring your standardised data | A hands-on guide to FAIR and structured ecological data" />
   
-  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   
 
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-17" />
+<meta name="date" content="2024-07-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -330,7 +330,7 @@ Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong>
 <li><p>the <a href="10-glossary.html#core">core</a> file</p></li>
 <li><p>several <a href="10-glossary.html#extension">extension</a> files (optional)</p></li>
 <li><p>an <a href="10-glossary.html#eml">EML</a> file (see <a href="08-metadata.html#eml-terms">later section</a>)</p></li>
-<li><p>a <a href="10-glossary.html#metaxml">meta XML</a> file (see <a href="08.1-structural-metadata.html#structural-metadata">later section</a>).</p></li>
+<li><p>a <a href="10-glossary.html#metaxml">meta XML</a> file (see <a href="08.1-structural-metadata.html#structural-metadata">later section</a>)</p></li>
 </ul>
 </div>
 <div id="the-core-its-extensions" class="section level2 hasAnchor" number="7.3">
@@ -353,7 +353,7 @@ Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core
 </div>
 <div id="occurrence-core-vs.-event-core" class="section level3 hasAnchor" number="7.3.2">
 <h3><span class="header-section-number">7.3.2</span> Occurrence core vs. event core<a href="07-structure.html#occurrence-core-vs.-event-core" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is not always directly clear what the difference between the occurrence and the event core is and when you should use which of them. The most crucial difference between the two is whether the data was collected following a certain protocol with documented sampling effort. If that is the case, you have sampling event data and therefore an event core. If data collection did not follow a sampling protocol, your core will be the occurrence file. For measurement on individual specimens and museum collections in general, occurrence is however mostly the preferred core.</p>
+<p>It is not always directly clear what the difference between the occurrence and the event core is and when you should use which of them. The most crucial difference between the two is whether the data was collected following a certain protocol with documented sampling effort. If that is the case, you have sampling event data and therefore an event core. If data collection did not follow a sampling protocol, your core will be the occurrence file. For measurements on individual specimens and museum collections in general, occurrence is however mostly the preferred core.</p>
 <p>Most of the ecological data falls into sampling event data, as was the case for all of the datasets we used in the development of this guide. We will therefore focus on Event as the core file. If you have checklist data, there is already a detailed description on how to transform that into a Darwin Core Archive in the publication of <span class="citation">Reyserhove et al. (<a href="#ref-Reyershove">2020</a>)</span>.</p>
 </div>
 </div>

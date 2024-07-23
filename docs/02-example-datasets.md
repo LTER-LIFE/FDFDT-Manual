@@ -10,7 +10,7 @@ This dataset contains long-term data on the phenology of different tree species.
 </div>
 
 ## Cricket data {#cricket} 
-This dataset contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (Gryllus campestris). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. 
+This dataset contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (*Gryllus campestris*). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. 
 
 <div class="figure" style="text-align: center">
 <img src="images/ID-card_cricket.svg" alt="FAIR assessment of cricket data." width="50%" />

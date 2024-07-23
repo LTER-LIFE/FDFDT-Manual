@@ -11,6 +11,7 @@ To make your data more FAIR and structured, we recommend you to:
 -   Afterwards, you should decide whether your raw data should be [mobilised](#mobilisation) to an online repository.
 
     -   If yes, you have to choose a suitable repository and upload your metadata and data there.
+    
 
 -   Next, you can start to [standardise](#standardise) both the data and the metadata. With which of the two you start does not matter, as they can both be structured and standardised separately.
 
@@ -34,7 +35,7 @@ For the data:
 
 -   Once standards and structure are applied, structural metadata can be created that describes how the data is organised in its new form.
 
-As a last step your standardised data and metadata should be persistently stored in an online storage.
+As a last step, your standardised data and metadata should be persistently stored in an online storage.
 If you have not chosen a repository before (or if you want to store the standardised data elsewhere), you should:
 
 -   Choose a suitable repository that accepts your new data structure/format.

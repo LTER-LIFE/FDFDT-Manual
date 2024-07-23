@@ -42,7 +42,7 @@ Namespaces are prefixes used to distinguish between terms from different vocabul
 
 - [*dwc*](http://rs.tdwg.org/dwc/terms/): marks standard Darwin Core terms and generally has string values (e.g., dwc:scientificName)
 
-- [*dc:*](http://purl.org/dc/elements/1.1/): marks terms belonging to "elements/1.1" namespace of Dublin Core and generally have string values (e.g., dc:title)
+- [*dc:*](http://purl.org/dc/elements/1.1/): marks terms belonging to "elements/1.1" namespace of Dublin Core and generally has string values (e.g., dc:title)
 
 - [*dwciri*](http://rs.tdwg.org/dwc/iri/): marks Darwin Core terms that must be used with [Internationalized Resource Identifier (IRI)](#URI) values and are generally used in [RDFs](#RDF) (e.g., dwciri:recordedBy)
 
@@ -76,20 +76,20 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 
 ### Terms of class Event
 
-Before assigning the terms of the event class to your data you should define what exactly one event is in your data. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data.
+Before assigning the terms of the event class to your data, you should define what exactly one event in your data is. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data.
 
 #### eventID & parentEventID {#eventID}
 
 The eventID can be a globally unique identifier or an identifier specific to the dataset. For more information on how to create globally unique identifiers, see [this chapter](#GUIDcreation). If you choose to create identifiers specific to the dataset, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., "\_" or "-") to indicate the different blocks of the event levels within an eventID.
 
 ::: {.infobox .infoimg}
-Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly referred to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset specific IDs. This problem does of course not occur if you choose GUIDs.
+Some guides about persistent identifiers (e.g., @Richards) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly refer to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset-specific IDs. This problem does of course not occur if you choose GUIDs.
 :::
 
 ::: {.examplebox .exampleimg}
 **Bud burst**:
 
-This can be exemplified with our bud burst use case, where we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event.
+In the bud burst data, we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g. HV2004_99_5. This way, the eventID is easily human-readable and directly gives the most important information about the event.
 :::
 
 ::: {.examplebox .exampleimg}
@@ -100,7 +100,7 @@ In the cricket data, there were two different event types, one relating to measu
 
 #### Date information (eventDate, year, month, day)
 
-**eventDate** is necessary to be filled but can vary in its precision. If a full date is available, use the [ISO standard (8601-1:2019)](https://www.iso.org/obp/ui/en/#iso:std:iso:8601:-1:ed-1:v1:en) date format of YYYY-MM-DD. You always should give the date as precise as possible, so if the exact day is not available, give at least the year and month, etc. You can also give an interval if a distinct point in time is not available by separating the days or months or years by a slash, e.g., 2014-04-01/08 meaning some time in the interval between the first April 2014 and the 08 April 2014. If the interval starts and ends at days of different months, also repeat the year (e.g., 2014-04-01/2014-07-01).
+**eventDate** is necessary to be filled but can vary in its precision. If a full date is available, use the [ISO standard (8601-1:2019)](https://www.iso.org/obp/ui/en/#iso:std:iso:8601:-1:ed-1:v1:en) date format of YYYY-MM-DD. You should always give the date as precise as possible, so if the exact day is not available, give at least the year and month, etc. You can also give an interval if a distinct point in time is not available by separating the days or months or years by a slash, e.g., 2014-04-01/08 meaning some time in the interval between the first April 2014 and the 08 April 2014. If the interval starts and ends at days of different months, also repeat the year (e.g., 2014-04-01/2014-07-01).
 
 In addition to eventDate, we recommend to use the terms **year**, **month** and **day** (if applicable) as this can facilitate later analysis with the data. If eventDates of different levels are not all of the same format, for example the parent event only has the year (2024), while the child event has an exact date (2024-11-05), the event dates can be transformed to characters, as programs like R do not accept different date formats in the same column. In this case, the additional columns of year, month and day are especially helpful, as missing values can be left empty/filled with *NA*, while the rest is numeric.
 
