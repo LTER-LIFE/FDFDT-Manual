@@ -12,8 +12,8 @@ what-is-fair
 adding-structure-to-fair
 fair-is-not-open
 why-should-you-make-your-data-more-fair
-assessment
-mapping-of-assessment-questions-to-fair-principles
+evaluation
+mapping-of-evaluation-questions-to-fair-principles
 example-datasets
 budburst
 cricket

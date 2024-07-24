@@ -20,7 +20,7 @@ One way of reaching the goals of good data management is to make your data finda
 
 ## How to read this guide {.unnumbered}
 
-This guide is designed in a way that you can only read the chapters that are relevant for improving the maturity of *your* data. To find these chapters, we provide you with a [self-assessment tool](#assessment) that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR assessment you will be provided with a tailored list of the chapters in this guide you could go through to further mature your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.
+This guide is designed in a way that you can only read the chapters that are relevant for improving the maturity of *your* data. To find these chapters, we provide you with a [self-evaluation tool](#evaluation) that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR and structure evaluation you will be provided with a tailored list of the chapters in this guide you could go through to further mature your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.
 
 ## How this guide came to be {.unnumbered}
 

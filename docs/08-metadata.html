@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-23" />
+<meta name="date" content="2024-07-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -180,8 +180,8 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
-<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure assessment of your data</a></li>
-<li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure evaluation of your data</a></li>
+<li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of evaluation questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
 <ul>
@@ -313,7 +313,7 @@ div.csl-indent {
 <div id="metadata-standards-for-biodiversity-data" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Metadata standards (for biodiversity data)<a href="08-metadata.html#metadata-standards-for-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>As with the data standards, a wide range of metadata standards exists, partly tailored to specific research domains.</p>
-<p>For ecological data, a widely used metadata standard, for example by <a href="10-glossary.html#OBIS">OBIS</a> and <a href="10-glossary.html#GBIF">GBIF</a>, is the <a href="10-glossary.html#eml"><strong>Ecological metadata language (EML)</strong></a>, which is also the required format for metadata in the <a href="10-glossary.html#DwC-A">Darwin Core Archives</a>. It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable <a href="10-glossary.html#XML">XML</a> markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their <a href="https://eml.ecoinformatics.org/schema/">interactive schema documentation</a>.</p>
+<p>For ecological data, a widely used metadata standard, for example by <a href="10-glossary.html#OBIS">OBIS</a> and <a href="10-glossary.html#GBIF">GBIF</a>, is the <a href="10-glossary.html#eml"><strong>Ecological metadata language (EML)</strong></a>, which is also the required format for metadata in the <a href="10-glossary.html#DwC-A">Darwin Core Archives</a>. It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable <a href="10-glossary.html#XML">XML</a> markup syntax that balances the machine- and human-readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their <a href="https://eml.ecoinformatics.org/schema/">interactive schema documentation</a>.</p>
 <p><strong>Dublin Core</strong> is a widely adopted, universal metadata standard maintained by the <a href="https://dublincore.org/">Dublin Core Metadata Initiative</a>(DCMI). It consists of a set of 15 core terms used to describe the basic elements of any resource, online or physical. In addition, Dublin Core contains several dozen properties, classes, data types, and vocabulary encoding schemes that help refine the core description.</p>
 </div>
 <div id="tools-to-help-you-4" class="section level2 hasAnchor" number="8.2">
@@ -328,16 +328,21 @@ div.csl-indent {
 </div>
 <div id="eml-terms" class="section level2 hasAnchor" number="8.4">
 <h2><span class="header-section-number">8.4</span> EML terms<a href="08-metadata.html#eml-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found <a href="https://eml.ecoinformatics.org/schema/">here</a> and some best practices <a href="https://ediorg.github.io/data-package-best-practices/eml-best-practices.html">here</a>). For all terms containing text the “xml:lang” attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.</p>
+<p>EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found <a href="https://eml.ecoinformatics.org/schema/">here</a> and some best practices <a href="https://ediorg.github.io/data-package-best-practices/eml-best-practices.html">here</a>). For all terms containing text, the “xml:lang” attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.</p>
 <p><span style="color: #d111d4ff;"><strong>Required terms</strong></span></p>
 <p>EML comes with only three terms that are required to make the EML document schema valid.</p>
 <ul>
 <li><p><span style="color: #d111d4ff;"><code>&lt;title&gt;</code></span>: a brief title that provides enough information to distinguish this dataset or resource from others and makes clear what the data is about. The “xml:lang” attribute can be used to specify in which language the title is given, which is especially useful if you want to give alternative titles in different languages.</p></li>
-<li><p><span style="color: #d111d4ff;"><code>&lt;creator&gt;</code></span>: information on the person or organisation that created the dataset</p></li>
-<li><p><span style="color: #d111d4ff;"><code>&lt;contact&gt;</code></span>: information on the person or organisation that contacted about the data, e.g., if questions arise</p></li>
+<li><p><span style="color: #d111d4ff;"><code>&lt;creator&gt;</code></span>: information on the person or organisation that created the dataset (subterms see below)</p></li>
+<li><p><span style="color: #d111d4ff;"><code>&lt;contact&gt;</code></span>: information on the person or organisation that contacted about the data, e.g., if questions arise (subterms see below)</p></li>
+</ul>
+<p><span style="color: #dd7f08ff;"><strong>Highly recommended terms</strong></span></p>
+<p>The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.</p>
+<ul>
+<li><span style="color: #dd7f08ff;"><code>&lt;metadataProvider&gt;</code></span>: information about the person that provides the metadata in the EML file</li>
 </ul>
 <p><strong>Creator, contact and metadataProvider</strong></p>
-<p>The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
+<p>The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including <code>&lt;metadataProvider&gt;</code>) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms <code>&lt;individualName&gt;</code>, <code>&lt;organizationName&gt;</code> or <code>&lt;positionName&gt;</code>.</p>
 <ul>
 <li><p><code>&lt;individualName&gt;</code>: the name of an individual person can be given with three subterms:</p>
 <ul>
@@ -371,10 +376,7 @@ div.csl-indent {
 <span id="cb8-10"><a href="08-metadata.html#cb8-10" tabindex="-1"></a>  &lt;<span class="kw">references</span>&gt;id-1&lt;/<span class="kw">references</span>&gt;</span>
 <span id="cb8-11"><a href="08-metadata.html#cb8-11" tabindex="-1"></a>&lt;/<span class="kw">contact</span>&gt;</span></code></pre></div>
 </div>
-<p><span style="color: #dd7f08ff;"><strong>Highly recommended terms</strong></span></p>
-<p>The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.</p>
 <ul>
-<li><p><span style="color: #dd7f08ff;"><code>&lt;metadataProvider&gt;</code></span>: information about the person that has provides the metadata in the EML file</p></li>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;language&gt;</code></span>: provides the language the resource is written in and can either be a well-known language name or ideally, a <a href="https://www.w3schools.com/tags/ref_language_codes.asp">ISO language code</a></p></li>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;abstract&gt;</code></span>: a short summary of the data that includes basic information to give an idea what the data is about</p>
 <ul>
@@ -418,23 +420,23 @@ div.csl-indent {
 <li><code>&lt;taxonomicClassification&gt;</code>: taxonomic classification of the range of taxa included in the data, specified through a set of subterms:
 <ul>
 <li><code>&lt;taxonRankName&gt;</code>: taxonomic level of information</li>
-<li><code>&lt;taxonRankValue&gt;</code>: taxonomic nam</li>
+<li><code>&lt;taxonRankValue&gt;</code>: name of the taxonomic rank being described</li>
 <li><code>&lt;commonName&gt;</code></li>
 <li><code>&lt;taxonID&gt;</code>: identifier of the taxon from a certain provider that has to be specified with the attribute “provider” containing a <a href="10-glossary.html#URI">URI</a> (e.g., provider = “<a href="https://eol.org" class="uri">https://eol.org</a>” if the taxon ID is retrieved from EOL)</li>
 </ul></li>
 </ul></li>
 </ul></li>
-<li><p><span style="color: #dd7f08ff;"><code>&lt;maintenance&gt;</code></span>: information on with which frequency the data is updated and whether data collection is still ongoing</p>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;maintenance&gt;</code></span>: information on the frequency with which the data is updated and whether data collection is still ongoing</p>
 <ul>
 <li><code>&lt;maintenanceUpdateFrequency&gt;</code>: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown</li>
 <li><code>&lt;description&gt;</code>: text description of maintenance stated with the <code>&lt;para&gt;</code> subterm</li>
 </ul></li>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;methods&gt;</code></span>: stepwise information on methods for data collection</p>
 <ul>
-<li><code>&lt;methodStep&gt;</code>: can be repeated for each method step and includes a range of subterms to specify instruments, software, protocols, descriptions and citations of the methods</li>
+<li><code>&lt;methodStep&gt;</code>: can be repeated for each method step and includes a range of subterms to specify instruments, software, protocols, descriptions, and citations of the methods</li>
 </ul></li>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;pubDate&gt;</code></span>: publication date of the resource in <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> (i.e., YYYY-MM-DD)</p></li>
-<li><p><span style="color: #dd7f08ff;"><code>&lt;licensed&gt;</code></span>: information on the licence of the data and how it can be used by others, for information in which licence to assign see chapter licencing</p>
+<li><p><span style="color: #dd7f08ff;"><code>&lt;licensed&gt;</code></span>: information on the licence of the data and how it can be used by others, for information in which licence to assign (see section <a href="#Licencing">licencing</a>)</p>
 <ul>
 <li><code>&lt;licenseName&gt;</code>: official name of the licence</li>
 <li><code>&lt;url&gt;</code>: <a href="10-glossary.html#URI">URL</a> referring to the licence (e.g., <a href="https://creativecommons.org/licenses/by/4.0/" class="uri">https://creativecommons.org/licenses/by/4.0/</a>)</li>
@@ -456,7 +458,7 @@ div.csl-indent {
 </ul></li>
 <li><p><span style="color: #C60945;"><code>&lt;intellectualRights&gt;</code></span>: information on the intellectual property rights as text using <code>&lt;para&gt;</code> subterm</p></li>
 <li><p><span style="color: #C60945;"><code>&lt;alternateIdentifier&gt;</code></span></p></li>
-<li><p><span style="color: #C60945;"><code>&lt;additionalInfo&gt;</code></span>: any information that cannot be captured by the remaining terms and is filled with text using <code>&lt;para&gt;</code> subterm</p></li>
+<li><p><span style="color: #C60945;"><code>&lt;additionalInfo&gt;</code></span>: any information that cannot be captured by the remaining terms; filled with text using <code>&lt;para&gt;</code> subterm</p></li>
 <li><p><span style="color: #C60945;"><code>&lt;introduction&gt;</code></span>: overview of background and context of the dataset, similar to an introduction of a journal article</p></li>
 <li><p><span style="color: #C60945;"><code>&lt;usageCitation&gt;</code></span>: citation to articles or other products where the data is used, consists of a range of subterms</p></li>
 </ul>

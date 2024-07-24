@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-07-23"
+date: "2024-07-24"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -46,7 +46,7 @@ If you have any suggestions, questions or comments while reading through this gu
 
 ## Acknowledgements {.unnumbered}
 
-We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, and Eric Kuijt - for the regular discussions, feedback and suggestions on the assessment tool and guide. We thank Marcel E. Visser and Wim Hugo for their input and advice on the overall project.
+We would like to thank the FAIR Data for Digital Twins team - Cees Hof, Kim Ferguson, and Eric Kuijt - for the regular discussions, feedback and suggestions on the evaluation tool and guide. We thank Marcel E. Visser and Wim Hugo for their input and advice on the overall project.
 
 Thanks to Parinaz Rashidi, W. Daniel Kissling, Geerten M. Hengeveld and others involved in [LTER-LIFE](https://lter-life.nl/en), for their contributions to the guide and for their efforts in continuing the development of this work through LTER-LIFE.
 

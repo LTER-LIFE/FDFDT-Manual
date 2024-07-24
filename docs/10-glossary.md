@@ -79,7 +79,7 @@ Extension files are a file type that can exist in Darwin Core Archives next to t
 
 #### FAIR {#FAIR .unnumbered}
 
-FAIR stands for Findable, Accessible, Interoperable and Reusable and comes with 15 guiding principles developed by Wilkinson et al. in 2015. Findability means that the metadata (and the data) can easily be found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines. Additionally, it is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required (Accessibility). Interoperability means that the data is fully compatible with other data making it integrable with other data resources and allows to incorporate it into workflows or applications. In easier words this means that data resources should 'speak the same language' to be used together. The ultimate goal of the FAIR concept is to make the data reusable (Reusability), which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.
+FAIR stands for Findable, Accessible, Interoperable and Reusable and comes with 15 guiding principles developed by @Wilkinson_2016. Findability means that the metadata (and the data) can easily be found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines. Additionally, it is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required (Accessibility). Interoperability means that the data is fully compatible with other data making it integrable with other data resources and allows to incorporate it into workflows or applications. In easier words this means that data resources should 'speak the same language' to be used together. The ultimate goal of the FAIR concept is to make the data reusable (Reusability), which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.
 
 -   More information: <https://www.go-fair.org/fair-principles/>
 
@@ -186,6 +186,6 @@ Taxonomy is a standard way of describing, naming and classifying things in a hie
 
 #### XML {#XML .unnumbered}
 
-Extensible markup language, XML, is a hardware- and software independent tool for storing and transmitting data by balancing human-readability with machine-readability. It is the file format used for the two metadata files in the Darwin Core Archive.
+Extensible markup language, XML, is a hardware- and software-independent tool for storing and transmitting data by balancing human-readability with machine-readability. It is the file format used for the two metadata files in the Darwin Core Archive.
 
 -   Source: <https://www.w3schools.com/xml/>

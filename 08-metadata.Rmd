@@ -8,7 +8,7 @@ Once you have described your data and assigned [metadata](#metadata) to it (see 
 
 As with the data standards, a wide range of metadata standards exists, partly tailored to specific research domains.
 
-For ecological data, a widely used metadata standard, for example by [OBIS](#OBIS) and [GBIF](#GBIF), is the [**Ecological metadata language (EML)**](#eml), which is also the required format for metadata in the [Darwin Core Archives](#DwC-A). It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable [XML](#XML) markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their [interactive schema documentation](https://eml.ecoinformatics.org/schema/).
+For ecological data, a widely used metadata standard, for example by [OBIS](#OBIS) and [GBIF](#GBIF), is the [**Ecological metadata language (EML)**](#eml), which is also the required format for metadata in the [Darwin Core Archives](#DwC-A). It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable [XML](#XML) markup syntax that balances the machine- and human-readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their [interactive schema documentation](https://eml.ecoinformatics.org/schema/).
 
 **Dublin Core** is a widely adopted, universal metadata standard maintained by the [Dublin Core Metadata Initiative ](https://dublincore.org/)(DCMI). It consists of a set of 15 core terms used to describe the basic elements of any resource, online or physical. In addition, Dublin Core contains several dozen properties, classes, data types, and vocabulary encoding schemes that help refine the core description.
 
@@ -23,7 +23,7 @@ For all of our datasets we choose EML as the metadata standard because it is ver
 
 ## EML terms {#eml-terms}
 
-EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found [here](https://eml.ecoinformatics.org/schema/) and some best practices [here](https://ediorg.github.io/data-package-best-practices/eml-best-practices.html)). For all terms containing text the "xml:lang" attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.
+EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found [here](https://eml.ecoinformatics.org/schema/) and some best practices [here](https://ediorg.github.io/data-package-best-practices/eml-best-practices.html)). For all terms containing text, the "xml:lang" attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.
 
 [**Required terms**]{style="color: #d111d4ff;"}
 
@@ -31,14 +31,20 @@ EML comes with only three terms that are required to make the EML document schem
 
 -   [`<title>`]{style="color: #d111d4ff;"}: a brief title that provides enough information to distinguish this dataset or resource from others and makes clear what the data is about. The "xml:lang" attribute can be used to specify in which language the title is given, which is especially useful if you want to give alternative titles in different languages.
 
--   [`<creator>`]{style="color: #d111d4ff;"}: information on the person or organisation that created the dataset
+-   [`<creator>`]{style="color: #d111d4ff;"}: information on the person or organisation that created the dataset (subterms see below)
 
--   [`<contact>`]{style="color: #d111d4ff;"}: information on the person or organisation that contacted about the data, e.g., if questions arise
+-   [`<contact>`]{style="color: #d111d4ff;"}: information on the person or organisation that contacted about the data, e.g., if questions arise (subterms see below)
 
+
+[**Highly recommended terms**]{style="color: #dd7f08ff;"}
+
+The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.
+
+-   [`<metadataProvider>`]{style="color: #dd7f08ff;"}: information about the person that provides the metadata in the EML file
 
 **Creator, contact and metadataProvider** 
     
-The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including metadataProvider) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms `<individualName>`, `<organizationName>` or `<positionName>`.
+The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including `<metadataProvider>`) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms `<individualName>`, `<organizationName>` or `<positionName>`.
 
 -   `<individualName>`: the name of an individual person can be given with three subterms:
     -   `<salutation>`: can be a title (e.g., "Dr.") or another salutation ("Mr."/"Ms.")
@@ -81,12 +87,6 @@ The metadata provider is assigned with "id-1". As the contact for the dataset is
 :::
 
 
-[**Highly recommended terms**]{style="color: #dd7f08ff;"}
-
-The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.
-
--   [`<metadataProvider>`]{style="color: #dd7f08ff;"}: information about the person that has provides the metadata in the EML file
-
 -   [`<language>`]{style="color: #dd7f08ff;"}: provides the language the resource is written in and can either be a well-known language name or ideally, a [ISO language code](https://www.w3schools.com/tags/ref_language_codes.asp)
 
 -   [`<abstract>`]{style="color: #dd7f08ff;"}: a short summary of the data that includes basic information to give an idea what the data is about
@@ -119,22 +119,22 @@ The following set of terms is not strictly required by EML but we would highly r
         -   `<generalTaxonomicCoverage>`: text description of the taxa included in the data
         -   `<taxonomicClassification>`: taxonomic classification of the range of taxa included in the data, specified through a set of subterms:
             -   `<taxonRankName>`: taxonomic level of information
-            -   `<taxonRankValue>`: taxonomic nam
+            -   `<taxonRankValue>`: name of the taxonomic rank being described
             -   `<commonName>`
             -   `<taxonID>`: identifier of the taxon from a certain provider that has to be specified with the attribute "provider" containing a [URI](#URI) (e.g., provider = "<https://eol.org>" if the taxon ID is retrieved from EOL)
 
--   [`<maintenance>`]{style="color: #dd7f08ff;"}: information on with which frequency the data is updated and whether data collection is still ongoing
+-   [`<maintenance>`]{style="color: #dd7f08ff;"}: information on the frequency with which the data is updated and whether data collection is still ongoing
 
     -   `<maintenanceUpdateFrequency>`: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown
     -   `<description>`: text description of maintenance stated with the `<para>` subterm
 
 -   [`<methods>`]{style="color: #dd7f08ff;"}: stepwise information on methods for data collection
 
-    -   `<methodStep>`: can be repeated for each method step and includes a range of subterms to specify instruments, software, protocols, descriptions and citations of the methods
+    -   `<methodStep>`: can be repeated for each method step and includes a range of subterms to specify instruments, software, protocols, descriptions, and citations of the methods
 
 -   [`<pubDate>`]{style="color: #dd7f08ff;"}: publication date of the resource in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) (i.e., YYYY-MM-DD)
 
--   [`<licensed>`]{style="color: #dd7f08ff;"}: information on the licence of the data and how it can be used by others, for information in which licence to assign see chapter licencing
+-   [`<licensed>`]{style="color: #dd7f08ff;"}: information on the licence of the data and how it can be used by others, for information in which licence to assign (see section [licencing](#Licencing))
 
     -   `<licenseName>`: official name of the licence
     -   `<url>`: [URL](#URI) referring to the licence (e.g., <https://creativecommons.org/licenses/by/4.0/>)
@@ -156,7 +156,7 @@ There are plenty of other terms that can be suitable to use for your data. The f
 
 -   [`<alternateIdentifier>`]{style="color: #C60945;"}
 
--   [`<additionalInfo>`]{style="color: #C60945;"}: any information that cannot be captured by the remaining terms and is filled with text using `<para>` subterm
+-   [`<additionalInfo>`]{style="color: #C60945;"}: any information that cannot be captured by the remaining terms; filled with text using `<para>` subterm
 
 -   [`<introduction>`]{style="color: #C60945;"}: overview of background and context of the dataset, similar to an introduction of a journal article
 
