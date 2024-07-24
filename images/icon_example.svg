@@ -10,7 +10,9 @@
    xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
-     id="defs1" /><g
+     id="defs1">
+	 <style type="text/css">@import url('http://fonts.googleapis.com/css?family=Asap');</style>
+	 </defs><g
      id="layer1"
      transform="translate(-39.784371,-210.55964)"><g
        id="g2"><g

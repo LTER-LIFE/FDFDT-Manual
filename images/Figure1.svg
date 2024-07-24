@@ -33,7 +33,9 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" /><defs
-     id="defs1"><marker
+     id="defs1">
+	 <style type="text/css">@import url('http://fonts.googleapis.com/css?family=Asap');</style>
+	 <marker
        style="overflow:visible"
        id="RoundedArrow"
        refX="0"

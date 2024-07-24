@@ -37,7 +37,9 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:export-bgcolor="#ffffffff" /><defs
-     id="defs1" /><g
+     id="defs1">
+	 <style type="text/css">@import url('http://fonts.googleapis.com/css?family=Asap');</style>
+	 </defs><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
