@@ -1,12 +1,11 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682) & [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2024-07-24"
+date: "2024-07-25"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: https://lter-life.github.io/FDFDT-Manual/docs/index.html 
-# cover-image: 
+url: https://lter-life.github.io/FDFDT-Manual 
 description: |
   This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured.
 link-citations: yes

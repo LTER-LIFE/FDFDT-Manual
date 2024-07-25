@@ -11,7 +11,6 @@ bookdown::gitbook:
         <li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
