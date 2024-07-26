@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Structuring your tabular data | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 12 Questions for FAIR + Structure Evaluation Tool | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Structuring your tabular data | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 12 Questions for FAIR + Structure Evaluation Tool | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   <meta name="github-repo" content="LTER-LIFE/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Structuring your tabular data | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 12 Questions for FAIR + Structure Evaluation Tool | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="04-Describe-data.html"/>
-<link rel="next" href="05-storage.html"/>
+<link rel="prev" href="11-references.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -287,8 +287,8 @@ div.csl-indent {
 <li class="part"><span><b>__________________________________</b></span></li>
 <li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to reach full interoperability</a></li>
 <li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
-<li class="chapter" data-level="11" data-path="11-questions-for-tool.html"><a href="11-questions-for-tool.html"><i class="fa fa-check"></i><b>11</b> Questions for FAIR + Structure Evaluation Tool</a></li>
-<li class="chapter" data-level="12" data-path="12-references.html"><a href="12-references.html"><i class="fa fa-check"></i><b>12</b> References</a></li>
+<li class="chapter" data-level="11" data-path="11-references.html"><a href="11-references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
+<li class="chapter" data-level="12" data-path="12-questions-for-tool.html"><a href="12-questions-for-tool.html"><i class="fa fa-check"></i><b>12</b> Questions for FAIR + Structure Evaluation Tool</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -309,35 +309,193 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="structuring-your-tabular-data" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Structuring your tabular data<a href="04.1-Structure-tabular-data.html#structuring-your-tabular-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A common way of storing biodiversity data is in tables. However, simply entering the data into a spreadsheet does often not adhere to the strict requirements of tabular data, which has the following characteristics:</p>
+<div id="questions-tool" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number"> 12</span> Questions for FAIR + Structure Evaluation Tool<a href="12-questions-for-tool.html#questions-tool" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Please answer every question with yes/no. If your answer is no, please go through the linked section in this guide to further enrich your dataset.</p>
+<div id="metadata-1" class="section level4 hasAnchor" number="12.0.0.1">
+<h4><span class="header-section-number">12.0.0.1</span> Metadata<a href="12-questions-for-tool.html#metadata-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Metadata is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to find, understand and reuse it.</p>
+<p><strong>Q1. Does the data have detailed metadata?</strong></p>
 <ul>
-<li><p>Structured in rows and columns</p></li>
-<li><p>A row contains information about a single entity (e.g., a person’s name, age, or occupation), whilst a single column describes the same property of each entity (e.g., the names of all persons)</p></li>
-<li><p>Rectangular shape, in which each row has the same number of columns and each column the same number of rows</p></li>
-<li><p>Cells in a row/column can be left empty</p></li>
+<li>info: Metadata is “data about data” and describes the dataset. It can provide information (amongst others) about the creator of the data, data collection, geographic and temporal extent and access conditions. Metadata is relevant for different properties of FAIR which makes it important that it is detailed (also often called “rich”) enough to give a user with no prior knowledge enough information about the data to reuse it.<br />
+</li>
+<li>Go through <a href="04-Describe-data.html#describe-data">4.1 Describe your data</a></li>
 </ul>
-<p>For a more extensive and formal description of tabular data, see W3C’s <a href="https://www.w3.org/TR/tabular-data-model/">tabular data model</a>.</p>
-<p>To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that is meant to be tabular follows the aforementioned characteristics. If not, reshape your data accordingly.</p>
-<div class="infobox infoimg">
-<p>If your data consists of multiple tables, the relationships between these tables should be made clear. This can be done either by describing it in a README file (see <a href="04-Describe-data.html#describe-data">section 4.1</a>) or, if your data is already in a standard format, in a more standardised way, such as the meta.xml file described <a href="08.1-structural-metadata.html#structural-metadata">here</a>.</p>
+<p><strong>Q2. Does the dataset have a licence?</strong></p>
+<ul>
+<li>info: As soon as your dataset is made available to others, it is important to clarify if and under which conditions others can use it. This is done by assigning a licence, which is basically a legal agreement between the data owner and the user.</li>
+<li>Go through <a href="04-Describe-data.html#licencing">4.1.1 Licencing</a></li>
+</ul>
+<p><strong>Q3. Does the metadata include provenance details?</strong></p>
+<ul>
+<li>info: Provenance details provide information about the history of the dataset, which includes people and parties that were involved in its creation, as well as how, where and when the data was created. Additionally, the provenance details should inform about previous versions of the data.</li>
+<li>Go through <a href="04-Describe-data.html#describe-data">4.1 Describe your data</a></li>
+</ul>
+<p><strong>Q4. Is the metadata mentioning the persistent identifier (PID) of the dataset?</strong>
+- info: The metadata usually is stored in a different file than the data itself. To make a clear link between the two, the metadata file should always directly refer to the data by including the unique, persistent identifier that has been assigned to it.
+- Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></p>
+<p><strong>Q5. Does the metadata include qualified reference to other (meta)data?</strong></p>
+<ul>
+<li>info: Next to your dataset, there can be other, related datasets, metadata files or other complementary information stored elsewhere, which should be linked to your data to increase its contextual knowledge. This can be done by a proper citation/reference in the metadata, ideally using the persistent identifier of the linked datasets, if available. Additionally, it should be specified if one dataset builds upon another, whether another dataset is needed to complete your data and how they link to each other scientifically.</li>
+<li>Go through <a href="04-Describe-data.html#describe-data">4.1 Describe your data</a></li>
+</ul>
+<p><strong>Q6. Does the data include qualified reference to other (meta)data?</strong></p>
+<ul>
+<li>info: Next to your dataset, there can be other, related datasets, metadata files or resources describing the same concepts as your data. These should be linked to your dataset to increase its contextual knowledge. This can be done by a proper citation/reference in the data, ideally using the persistent identifier of the linked datasets, or a mapping that describes how different data sources are linked.</li>
+<li>Go through <a href="06.1-taxonomies.html#crossref-in-data">6.9 Cross-referencing other resources in the data</a></li>
+</ul>
 </div>
-<div>
+<div id="storage" class="section level4 hasAnchor" number="12.0.0.2">
+<h4><span class="header-section-number">12.0.0.2</span> Storage<a href="12-questions-for-tool.html#storage" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Storage is about whether your data is stored persistently and in a way that makes it findable and accessible to others.</p>
+<p><strong>Q7. Does the dataset have a persistent and globally unique identifier?</strong></p>
+<ul>
+<li>info: A persistent identifier (also known as a “PID”) is a permanent reference to the dataset that is globally unique and always directs the user (both humans and machines) directly to the dataset. Some identifiers assigned to datasets might be unique but not necessarily persistent. Having any identifier is already helpful but the key for making the data FAIR is the persistence of that identifier.</li>
+<li>Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></li>
+</ul>
+<p><strong>Q8. Is the data stored in a repository?</strong></p>
+<ul>
+<li>info: A data repository is a storage location where data and metadata can be collected, stored and managed. Storing data on a repository prevents data loss compared to storing it locally and thereby improves the longevity of the data. A repository also facilitates sharing and accessing the data, as well as making it findable for others.</li>
+<li>Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></li>
+</ul>
+<p><strong>Q9. Is the metadata stored in a repository?</strong>
+- info: A data repository is a storage location where data and metadata can be collected, stored and managed. Storing the metadata on a repository facilitates sharing and accessing the dataset and making it findable for others.
+- Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></p>
+<p><strong>Q10. Is the data registered or indexed in a searchable resource/catalogue?</strong></p>
+<ul>
+<li>info: To make your data findable on the internet and thereby increase its visibility, it has to be indexed or registered in a catalogue. This allows search engines (e.g., Google Scholar) to find your data and inform others about it. Repositories often automatically index your data.</li>
+<li>Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></li>
+</ul>
+<p><strong>Q11. Is the metadata registered or indexed in a searchable resource/catalogue?</strong></p>
+<ul>
+<li>info: To make your metadata findable on the internet and thereby increase its visibility, it has to be indexed or registered in a catalogue. This allows search engines (e.g., Google Scholar) to find your metadata and inform others about your dataset. Repositories often automatically index your metadata.</li>
+<li>Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></li>
+</ul>
+<p><strong>Q12. Is the data retrievable through a standardised communication protocol, that allows for authentication and authorisation procedure where necessary?</strong></p>
+<ul>
+<li>info: The retrieval of the data and metadata should not be dependent on a method or tool that is specialised or related to someone’s ownership. Instead, the protocol should be free and open(source) ensuring that everybody is able to at least access the metadata. Additionally, as FAIR data does not have to be open, accessibility should be specified in a way that machines can automatically interpret it and authentication and authorisation are implemented, if necessary. An example for such a protocol would be the <a href="https://www.openarchives.org/pmh/">Open Archives Initiative Protocol for Metadata Harvesting</a> (OAI-PMH).</li>
+<li>Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></li>
+</ul>
+<p><strong>Q13. Is the metadata persistently accessible also when data is no longer available?</strong></p>
+<ul>
+<li>info: The metadata should be preserved even if the data itself is no longer available so that all published references are persistently linking to the metadata of the dataset and remain resolvable. Even if the data is no longer available, the metadata assures discovery and citation of the data and can be helpful for future reuse.</li>
+<li>Go through <a href="05-storage.html#choosing-a-repository">5.2 Choosing a repository</a></li>
+</ul>
+</div>
+<div id="standards" class="section level4 hasAnchor" number="12.0.0.3">
+<h4><span class="header-section-number">12.0.0.3</span> Standards<a href="12-questions-for-tool.html#standards" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Standards describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets. This also includes that data records use standardised vocabulary, where possible to avoid ambiguity of terms.</p>
+<p><strong>Q14. Is the metadata in a standard format?</strong></p>
+<ul>
+<li>info: Metadata is easier to reuse and to be interpreted correctly if the terms that organise it, are in a standard format, which is ideally domain-specific. Following the same standard, different metadata files become more compatible (interoperable) with each other as they use the same terminology and are organised in a standardised way.</li>
+<li>Go through <a href="08-metadata.html#standardise-and-structure-your-metadata">8 Standardise and structure your metadata</a></li>
+</ul>
+<p><strong>Q15. Is the data in a standard format?</strong></p>
+<ul>
+<li>info: Data is easier to reuse and to be interpreted correctly if the terms that organise it (e.g., column headers in tabular data) are in a standard format, which is ideally domain-specific. Following the same standard, different dataset become more compatible (interoperable) with each other as they use the same terminology and are organised in a standardised way.</li>
+<li>Go through <a href="06-standard.html#standardise-your-data">6 Standardise your data</a></li>
+</ul>
+<p><strong>Q16. Does the metadata use standard vocabulary/ontologies?</strong></p>
+<ul>
+<li>info: Standard or controlled vocabulary are lists of defined terms of a specific context that are stored, for example, in thesauri or ontologies and used on the record-level to describe the data contents. Using controlled vocabularies increases understandability of the data as ambiguity of terms can be avoided, which also enables easier linking and discovery of the data. It also improves interoperability with other data as datasets that use the same terminology cover the same information.</li>
+<li>Go through <a href="06.1-taxonomies.html#ontologies">6.6 Ontologies and controlled vocabulary</a></li>
+</ul>
+<p><strong>Q17. Does the data use standard vocabulary/ontologies?</strong></p>
+<ul>
+<li>info: Standard or controlled vocabulary are lists of defined terms of a specific context that are stored, for example, in thesauri or ontologies and used on the record-level to describe the data contents. Using controlled vocabularies increases understandability of the data as ambiguity of terms can be avoided, which also enables easier linking and discovery of the data. It also improves interoperability with other data as datasets that use the same terminology cover the same information.</li>
+<li>Go through <a href="06.1-taxonomies.html#ontologies">6.6 Ontologies and controlled vocabulary</a></li>
+</ul>
+<p><strong>Q18. Is the metadata machine readable according to a generally accepted standard?</strong></p>
+<ul>
+<li>info: (Meta)data and other digital objects should be easily readable by humans but also by computers. For the latter, the language that is used for knowledge representation should have a formal specification about its syntax and grammar and these specifications should be shared and accessible to others. Additionally, the language should be usable in different contexts to increase interoperability. This can be reached by using RDFs (Resource description framework) or OWL (Web Ontology Language) to represent your (meta)data.</li>
+<li>Go through <a href="09-fully-interoperable.html#fully-interoperable">9 How to reach full interoperability</a></li>
+</ul>
+<p><strong>Q19. Is the data machine readable according to a generally accepted standard?</strong></p>
+<ul>
+<li>info: (Meta)data and other digital objects should be easily readable by humans but also by computers. For the latter, the language that is used for knowledge representation should have a formal specification about its syntax and grammar and these specifications should be shared and accessible to others. Additionally, the language should be usable in different contexts to increase interoperability. This can be reached by using RDFs (Resource description framework) or OWL (Web Ontology Language) to represent your (meta)data.</li>
+<li>Go through <a href="09-fully-interoperable.html#fully-interoperable">9 How to reach full interoperability</a></li>
+</ul>
+</div>
+<div id="structure-tabular-data" class="section level4 hasAnchor" number="12.0.0.4">
+<h4><span class="header-section-number">12.0.0.4</span> Structure (tabular data)<a href="12-questions-for-tool.html#structure-tabular-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Structure is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others. While structure is important for all types of data, the questions here are <em>explicitly tailored to tabular data</em> and should not be answered, if your data is in another, non-tabular format.</p>
+<p><strong>Q20. Is the data structured in rows, each of which contains information about a single entity and in which each row has the same number of cells?</strong></p>
+<ul>
+<li>info: Tabular data consists of rows and columns, where rows represent information horizontally and often describe observations. Each row should describe only one entity (e.g., one individual bird) and all rows should have the same number of cells. Cells can be empty if there is no information on that entity for a property/column.</li>
+<li>Go through <a href="04.1-Structure-tabular-data.html#structuring-your-tabular-data">4.2 Structuring your tabular data</a></li>
+</ul>
+<p><strong>Q21. Do cells in the same column describe (or provide values for) the same property of the entities described by each row?</strong></p>
+<ul>
+<li>info: Tabular data consists of rows and columns, where columns display information vertically and describe a property of the rows, which are often measured values. A column should always describe the same property for all rows and all columns should have the same number of cells. Cells can be empty if there is no information of this property for an entity/row.</li>
+<li>Go through <a href="04.1-Structure-tabular-data.html#structuring-your-tabular-data">4.2 Structuring your tabular data</a></li>
+</ul>
+<p><strong>Q22. Do you describe how different files within the dataset and/or tables within files link to each other?</strong></p>
+<ul>
+<li>info: A dataset can consist of several files or several tables within a single data file that can be connected to each other, e.g., by an identifier. For users of the data to understand whether and how files and tables are linked, this should be clearly described, for example, in a README file.</li>
+<li>Go through <a href="04-Describe-data.html#describe-data">4.1 Describe your data</a></li>
+</ul>
+<p><strong>Q23. Do you provide a comprehensive description of the columns in your files?</strong></p>
+<ul>
+<li>info: To help users correctly interpret and understand the data, best practice is to create a data dictionary, a codebook, or a similar overview in a README. This data dictionary provides an overview of the definitions, data types (e.g., integer, text, date), units, and accepted values of the data stored in columns.</li>
+<li>Go through <a href="04-Describe-data.html#describe-data">4.1 Describe your data</a></li>
+</ul>
 
-
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+<div class="csl-entry">
+Boettiger, C., &amp; Jones, M. B. (2022). <em>EML: Read and write ecological metadata language files</em>. <a href="https://docs.ropensci.org/EML/">https://docs.ropensci.org/EML/</a>
+</div>
+<div class="csl-entry">
+Boettiger, C., Jones, M. B., &amp; Mecum, B. (2020). <em>Emld: Ecological metadata as linked data</em>. <a href="https://docs.ropensci.org/emld/">https://docs.ropensci.org/emld/</a>
+</div>
+<div class="csl-entry">
+Chamberlain, S., Szoecs, E., Foster, Z., &amp; Arendsee, Z. (2022). <em>Taxize: Taxonomic information from around the web</em>. <a href="https://docs.ropensci.org/taxize/">https://docs.ropensci.org/taxize/</a>
+</div>
+<div class="csl-entry">
+GBIF. (2021). <em>GBIF strategic framework 2023-2027</em>. <a href="https://doi.org/10.35035/doc-0kkq-0t82">https://doi.org/10.35035/doc-0kkq-0t82</a>
+</div>
+<div class="csl-entry">
+Hansen, K. K., Buss, M., &amp; Haahr, L. S. (2018). <em>A FAIRy tale</em>. Zenodo. <a href="https://doi.org/10.5281/ZENODO.2248200">https://doi.org/10.5281/ZENODO.2248200</a>
+</div>
+<div class="csl-entry">
+Krans, N. A., Ammar, A., Nymark, P., Willighagen, E. L., Bakker, M. I., &amp; Quik, J. T. K. (2022). FAIR assessment tools: Evaluating use and performance. <em>NanoImpact</em>, <em>27</em>, 100402. <a href="https://doi.org/10.1016/j.impact.2022.100402">https://doi.org/10.1016/j.impact.2022.100402</a>
+</div>
+<div class="csl-entry">
+Pagano, P., Candela, L., &amp; Castelli, D. (2013). Data interoperability. <em>Data Science Journal</em>, <em>12</em>(0), GRDI19–GRDI25. <a href="https://doi.org/10.2481/dsj.grdi-004">https://doi.org/10.2481/dsj.grdi-004</a>
+</div>
+<div class="csl-entry">
+Reyserhove, L., Desmet, P., Oldoni, D., Adriaens, T., Strubbe, D., Davis, A. J. S., Vanderhoeven, S., Verloove, F., &amp; Groom, Q. (2020). <span class="nocase">A checklist recipe: making species data open and FAIR</span>. <em>Database</em>, <em>2020</em>, baaa084. <a href="https://doi.org/10.1093/database/baaa084">https://doi.org/10.1093/database/baaa084</a>
+</div>
+<div class="csl-entry">
+Richards, K., White, R., Nicolson, N., &amp; Pyle, R. (2011). <em>A beginner’s guide to persistent identifiers</em>. <a href="https://doi.org/10.35035/MJGQ-D052">https://doi.org/10.35035/MJGQ-D052</a>
+</div>
+<div class="csl-entry">
+Urbanek, S., &amp; Ts’o, T. (2023). <em>Uuid: Tools for generating and handling of UUIDs</em>. <a href="https://www.rforge.net/uuid">https://www.rforge.net/uuid</a>
+</div>
+<div class="csl-entry">
+Visser, M. E., &amp; Holleman, L. J. M. (2001). Warmer springs disrupt the synchrony of oak and winter moth phenology. <em>Proceedings of the Royal Society of London. Series B: Biological Sciences</em>, <em>268</em>(1464), 289–294. <a href="https://doi.org/10.1098/rspb.2000.1363">https://doi.org/10.1098/rspb.2000.1363</a>
+</div>
+<div class="csl-entry">
+Vogels, J. J., Verberk, W. C. E. P., Kuper, J. T., Weijters, M. J., Bobbink, R., &amp; Siepel, H. (2021). How to restore invertebrate diversity of degraded heathlands? A case study on the reproductive performance of the field cricket gryllus campestris (l.). <em>Frontiers in Ecology and Evolution</em>, <em>9</em>. <a href="https://doi.org/10.3389/fevo.2021.659363">https://doi.org/10.3389/fevo.2021.659363</a>
+</div>
+<div class="csl-entry">
+Wickham, H., François, R., Henry, L., Müller, K., &amp; Vaughan, D. (2023). <em>Dplyr: A grammar of data manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr">https://CRAN.R-project.org/package=dplyr</a>
+</div>
+<div class="csl-entry">
+Wickham, H., Hester, J., &amp; Ooms, J. (2023). <em>xml2: Parse XML</em>. <a href="https://xml2.r-lib.org/">https://xml2.r-lib.org/</a>
+</div>
+<div class="csl-entry">
+Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Silva Santos, L. B. da, Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1). <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
 </div>
 </div>
-
-
-
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="04-Describe-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="05-storage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="11-references.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

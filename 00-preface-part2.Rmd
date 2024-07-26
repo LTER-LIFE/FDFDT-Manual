@@ -6,7 +6,7 @@ This guide is for anybody who has ecological data and wants to improve their dat
 
 -   students who collect data for their thesis or internship and want to make their data reusable for others after their project is finished
 
--   institutions and organisations that want to provide their employees with some practical guidance on how to increase their data maturity
+-   institutions and organisations that want to provide their employees with some practical guidance on how to increase the understandability and reuse of their data
 
 -   data stewards and managers who want to assist their colleagues in improving their research data management
 
@@ -20,7 +20,7 @@ One way of reaching the goals of good data management is to make your data finda
 
 ## How to read this guide {.unnumbered}
 
-This guide is designed in a way that you can only read the chapters that are relevant for improving the maturity of *your* data. To find these chapters, we provide you with a [self-evaluation tool](#evaluation) that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR and structure evaluation you will be provided with a tailored list of the chapters in this guide you could go through to further mature your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.
+This guide is designed in a way that you can only read the chapters that are relevant for enriching *your* data. To find these chapters, we provide you with a [self-evaluation tool](#evaluation) that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR and structure evaluation you will be provided with a tailored list of the chapters in this guide you could go through to further enrich your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.
 
 ## How this guide came to be {.unnumbered}
 

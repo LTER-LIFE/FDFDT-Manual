@@ -12,8 +12,6 @@ link-citations: yes
 github-repo: LTER-LIFE/FDFDT-Manual
 ---
 
-# (PART\*) - I. Background - {.unnumbered}
-
 # Preface {.unnumbered}
 
 This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more structured and more [FAIR](#FAIR) and tackle the problems that can occur along this process. 
@@ -26,7 +24,7 @@ This guide was developed based on practical work on [different datasets](#exampl
 
 If you want to cite this guide, please refer to it as:
 
-Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. https://lter-life.github.io/FDFDT-Manual/docs/index.html < doi >
+Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. https://lter-life.github.io/FDFDT-Manual/docs/index.html
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 

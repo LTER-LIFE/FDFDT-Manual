@@ -1,17 +1,23 @@
 ## FAIR and structure evaluation of your data {#evaluation}
 
-Datasets vary widely in format and complexity, as well as degree of structure and FAIRness. It is therefore important to first evaluate which state your data is in and what steps you can take to increase the maturity of your data. 
+Datasets vary widely in format and complexity, as well as degree of structure and FAIRness. It is therefore important to first evaluate which state your data is in and what steps you can take to further enrich of your data. 
 
 Even though there is already a range of FAIR assessment tools available (see [here](https://fairassist.org/) for an overview), that can either automatically assess the FAIRness of your data or provide self-assessment questionnaires, we decided to develop our own tool for several reasons:
 
-- Existing tools tend to purely assign a score to the data but provide little guidance on how to actually improve the FAIRness of the data (@Krans_2022). In contrast, our tool directly provides suggestions on how to improve the maturity of the data based on the given answers and by directing the user to the corresponding chapters of this guide.
+- Existing tools tend to purely assign a score to the data but provide little guidance on how to actually improve the FAIRness of the data (@Krans_2022). In contrast, our tool directly provides suggestions on how to enrich the data based on the given answers and by directing the user to the corresponding chapters of this guide.
 
 - We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the evaluation questions of the first three components are directly derived from the [FAIR principles](#what-is-fair), the structure component is an extension of FAIR not included in other tools. 
 
 - Automated tools often require the data to be available online already, which is not the state at which we want to start with our evaluation.
 
 
-Our evaluation tool **“FAIR + Structure Evaluation Tool”** provides you with a set of simple questions about four properties of your data: **metadata**, **storage**, **standards** and **structure**.
+Our evaluation tool “**FAIR + Structure Evaluation Tool**” provides you with a set of simple questions about four properties of your data: **metadata**, **storage**, **standards** and **structure**.
+
+::: {.disclaimer .disclaimerimg}
+[**Disclaimer**]{style="font: 22px 'Asap';"}
+
+The FAIR + Structure Evaluation Tool is currently still under development and therefore not yet accessible outside of the Netherlands Institute of Ecology (NIOO-KNAW). For now, you can answer the evaluation questions in a non-interactive way by going through the list of questions in section [Questions for FAIR + Structure Evaluation Tool](#questions-tool).
+:::
 
 **Metadata** is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.
 
@@ -21,7 +27,7 @@ Our evaluation tool **“FAIR + Structure Evaluation Tool”** provides you with
 
 **Structure** is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others.
 
-Apart from the questions about structure, the questions in the evaluation are all directly based on the FAIR principles. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the evaluation link to the letters of FAIR. Your answers will provide you with a circle diagram showing how mature your dataset is in each of the properties and an associated list of chapters of this manual you can work through to further improve the maturity of your data.
+Apart from the questions about structure, the questions in the evaluation are all directly based on the FAIR principles. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the evaluation link to the letters of FAIR. Your answers will provide you with a circle diagram showing the status of your dataset in each of the properties and an associated list of chapters of this manual you can work through to further enrich your data.
 
 ```{r MSSS-FAIR, echo = FALSE, out.width = '30%', fig.cap = 'Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR and structure evaluation (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blank space means that this data property has no direct influence on the respective letter of FAIR.', fig.align = 'center', dev = 'svg'}
 

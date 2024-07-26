@@ -1,6 +1,6 @@
 # Questions for FAIR + Structure Evaluation Tool {#questions-tool}
 
-Please answer every question with yes/no. If your answer is no, please go through the linked section in this guide to further enrich your data.
+Please answer every question with yes/no. If your answer is no, please go through the linked section in this guide to further enrich your dataset.
 
 #### Metadata
 

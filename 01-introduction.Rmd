@@ -1,3 +1,5 @@
+# (PART\*) - I. Background - {.unnumbered}
+
 # Introduction 
 
 ## What is FAIR?
@@ -36,4 +38,4 @@ It is important to stress here that FAIR is **not equal** to open. While the met
 
 ## Why should you make your data more FAIR?
 
-Depending on the current maturity of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well-annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of your data additionally increases the possibilities for collaborations, as your data can be integrated with other data, and hence will benefit the scientific community as a whole. 
+Depending on the current status of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well-annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research. Increasing the interoperability of your data additionally increases the possibilities for collaborations, as your data can be integrated with other data, and hence will benefit the scientific community as a whole. 
