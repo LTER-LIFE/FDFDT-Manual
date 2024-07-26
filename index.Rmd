@@ -24,13 +24,13 @@ This guide was developed based on practical work on [different datasets](#exampl
 
 If you want to cite this guide, please refer to it as:
 
-Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. https://lter-life.github.io/FDFDT-Manual/docs/index.html
+Jantzen, C.C., & Vriend, S.J.G. (2024). A hands-on guide to FAIR and structured ecological data. https://lter-life.github.io/FDFDT-Manual/index.html
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 
 ### How to provide feedback {.unnumbered}
 
-If you have any suggestions, questions or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through [the Github repository]( https://github.com/LTER-LIFE/FDFDT-Manual/issues/new) where you can add your remarks as a new issue! 
+If you have any suggestions, questions or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through [the Github repository](https://github.com/LTER-LIFE/FDFDT-Manual/issues/new) where you can add your remarks as a new issue! 
 
 
 ::: {.disclaimer .disclaimerimg}
