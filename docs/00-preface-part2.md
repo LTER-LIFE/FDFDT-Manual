@@ -16,7 +16,7 @@ This guide is for anybody who has ecological data and wants to improve their dat
 
 Data management is the practice of taking care of data throughout its entire [lifecycle](#datalifecycle), from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself and others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
 
-One way of reaching the goals of good data management is to make your data findable, accessible, interoperable and reusable ([FAIR](#FAIR)). For this, FAIR guiding principles have been developed that provide people with a set of considerations to evaluate whether data can be discovered and reused by others. See [this chapter](#What-is-FAIR) for more info on FAIR.
+One way of reaching the goals of good data management is to make your data findable, accessible, interoperable and reusable ([FAIR](#FAIR)). For this, FAIR guiding principles have been developed that provide people with a set of considerations to evaluate whether data can be discovered and reused by others. See [this chapter](#what-is-fair) for more info on FAIR.
 
 ## How to read this guide {.unnumbered}
 
