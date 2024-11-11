@@ -8,6 +8,7 @@ bibliography: [book.bib, packages.bib]
 url: https://lter-life.github.io/FDFDT-Manual 
 description: |
   This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured.
+favicon: images/LTER-LIFE-logo.svg 
 link-citations: yes
 github-repo: LTER-LIFE/FDFDT-Manual
 ---
@@ -30,7 +31,7 @@ This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 I
 
 ### How to provide feedback {.unnumbered}
 
-If you have any suggestions, questions or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through [the Github repository](https://github.com/LTER-LIFE/FDFDT-Manual/issues/new) where you can add your remarks as a new issue! 
+If you have any suggestions, questions or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through [the Github repository](https://github.com/LTER-LIFE/FDFDT/issues/new) where you can add your remarks as a new issue! 
 
 
 ::: {.disclaimer .disclaimerimg}

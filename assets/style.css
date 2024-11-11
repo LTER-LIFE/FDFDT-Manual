@@ -108,6 +108,25 @@ code span.at {/*R*/
     display: block;
     padding: 8px 7px; /* distance of headeres in navigation pane */
 }
+
+/*--------------- Logo -------------------*/
+
+.toc-logo {
+  width: 200px !important;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.toc-logo img {
+  max-width: 70%;
+  margin-bottom: 10px;
+}
+
+.summary > li:first-child {
+  height: auto !important; 
+}
+
 /*------------Info boxes----------- */
 .disclaimerimg{
   background: #c0290217 10px center/4em no-repeat;
