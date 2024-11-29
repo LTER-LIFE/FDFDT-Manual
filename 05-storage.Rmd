@@ -9,13 +9,16 @@ Before choosing a suitable repository, you have to decide which version of your 
 
 Either way, it’s recommended to always share your metadata. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.
 
+### Sensitive information
+<to be filled>
+
 ## Choosing a repository 
 
 The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:
 
-**Which data formats are accepted?**
+**Which data and metadata formats are accepted?**
 
-Depending on the format your data is stored in, not every repository will accept your data. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see [here](https://dans.knaw.nl/en/file-formats/) for an example).
+Depending on the format your data/metadata is stored in, not every repository will accept your data/metadata. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see [here](https://dans.knaw.nl/en/file-formats/) for an example).
 
 **What repository is commonly used in your organisation, community or discipline? **
 

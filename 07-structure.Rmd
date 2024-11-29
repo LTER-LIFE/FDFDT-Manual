@@ -18,7 +18,7 @@ knitr::include_graphics("images/DwC-relationalDatabase-SVG.svg")
 
 ```
 
-## Darwin Core Archive 
+## Darwin Core Archive {#DarwinCore-Archive}
 
 For biodiversity data that uses [Darwin Core](#DwC) terms, [Darwin Core Archives](#DwC-A) (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories [GBIF](#GBIF) and [OBIS](#OBIS).
 

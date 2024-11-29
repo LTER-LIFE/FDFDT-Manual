@@ -3,7 +3,7 @@ To illustrate the process of FAIRifying and structuring ecological data, we rely
 
 :::{.infobox .infoimg}
 
-For all example datasets we went through the full [workflow](#workflow) described in this guide, except the step of publishing the standardized and structured version of the data on a repository. This is still work in progress, as we rely on datasets of others whose permission is needed for that. Without storing the data on a repository, many of the circles in the [evaluation](#evaluation) cannot be filled. In the following figures we therefore use solid circles for already fulfilled evaluation criteria and striped circles for criteria that will be fulfilled once the dataset is stored in a suitable repository.
+For all example datasets we went through the full [workflow](#workflow) described in this guide, except the step of publishing the standardized and structured version of the data on a [repository](#repository). This is still work in progress, as we rely on datasets of others whose permission is needed for that. Without storing the data on a repository, many of the circles in the [evaluation](#evaluation) cannot be filled. In the following figures we therefore use solid circles for already fulfilled evaluation criteria and striped circles for criteria that will be fulfilled once the dataset is stored in a suitable repository.
 
 :::
 
