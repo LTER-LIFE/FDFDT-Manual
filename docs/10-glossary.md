@@ -158,6 +158,12 @@ Provenance is a form of metadata that provides information about the history of 
 
 -   More information: <https://www.pldn.nl/wiki/Provenance>
 
+#### Repository {#repository .unnumbered}
+
+A data repository is an online data storage tailored to store data in an organised and logical manner and to preserve it in the long-run. Most repositories assign persistent identifier to uploaded data and thereby facilitate the findability and sharing of the data. 
+
+-  Source <https://datamanagement.hms.harvard.edu/share-publish/data-repositories>
+
 #### RDF {#RDF .unnumbered}
 
 RDF, the resource description framework, is a framework to represent interconnected data on the web. In RDF, objects are linked using semantic triples consisting of two objects and the link between them, often referred to as subject (= object 1), predicate ( = link) and object (= object 2). RDFs are machine readable and allow high interoperability between different data sources.

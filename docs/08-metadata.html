@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 8 Standardise and structure your metadata | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-26" />
+<meta name="date" content="2024-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -203,7 +203,10 @@ div.csl-indent {
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a></li>
+<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="05-storage.html"><a href="05-storage.html#sensitive-information"><i class="fa fa-check"></i><b>5.1.1</b> Sensitive information</a></li>
+</ul></li>
 <li class="chapter" data-level="5.2" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>5.2</b> Choosing a repository</a></li>
 <li class="chapter" data-level="5.3" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>5.3</b> Repositories to store biodiversity data</a>
 <ul>
@@ -253,7 +256,7 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="07-structure.html"><a href="07-structure.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
-<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#DarwinCore-Archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
 <li class="chapter" data-level="7.3" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
@@ -275,12 +278,15 @@ div.csl-indent {
 <li class="chapter" data-level="8.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
 <li class="chapter" data-level="8.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
 <li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
-<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
-<li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
-<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Tools to help you</a>
+<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#metadata-DwCA"><i class="fa fa-check"></i><b>8.4</b> Metadata in the Darwin Core Archive</a>
 <ul>
-<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+<li class="chapter" data-level="8.4.1" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4.1</b> EML terms</a></li>
+<li class="chapter" data-level="8.4.2" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.4.2</b> Structural metadata - The meta.xml file</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -325,10 +331,12 @@ div.csl-indent {
 </div>
 <div id="our-choice-2" class="section level2 hasAnchor" number="8.3">
 <h2><span class="header-section-number">8.3</span> Our choice<a href="08-metadata.html#our-choice-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>For all of our datasets we choose EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Additionally, as we went with Darwin Core Archives to structure the data, EML was required to use as a metadata standard.</p>
+<p>As we decided to go with Darwin Core Archives to structure our data, we used EML and meta.xml files to store the descriptive and structural metadata, respectively, of all our example datasets as this are the required formats of the DwC-A. Independent of this, we would have chosen EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Instead of using the meta.xml file to store structural metadata, this information can also be stored in EML.</p>
 </div>
-<div id="eml-terms" class="section level2 hasAnchor" number="8.4">
-<h2><span class="header-section-number">8.4</span> EML terms<a href="08-metadata.html#eml-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="metadata-DwCA" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Metadata in the Darwin Core Archive<a href="08-metadata.html#metadata-DwCA" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="eml-terms" class="section level3 hasAnchor" number="8.4.1">
+<h3><span class="header-section-number">8.4.1</span> EML terms<a href="08-metadata.html#eml-terms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found <a href="https://eml.ecoinformatics.org/schema/">here</a> and some best practices <a href="https://ediorg.github.io/data-package-best-practices/eml-best-practices.html">here</a>). For all terms containing text, the “xml:lang” attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.</p>
 <p><span style="color: #d111d4ff;"><strong>Required terms</strong></span></p>
 <p>EML comes with only three terms that are required to make the EML document schema valid.</p>

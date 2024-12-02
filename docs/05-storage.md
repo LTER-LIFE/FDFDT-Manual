@@ -9,13 +9,20 @@ Before choosing a suitable repository, you have to decide which version of your 
 
 Either way, it’s recommended to always share your metadata. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.
 
+### Sensitive information
+Before you publish any data online, be aware that some data is not yours to publish and requires special protection. Personal information and any privacy information in your data or metadata has to be treated according to local privacy protection regulations (e.g., the [General Data Protection Regulation (GDPR)](https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en) in the EU). 
+
+Additionally, your data can contain biologically sensitive information, for example, about endangered or rare species. Options to handle this are, for example, restricted access to this information or less precise spatial information. 
+
+To get the best advice on how to handle your data, you should consult the responsible person at your institution (e.g., data steward or privacy officer).
+
 ## Choosing a repository 
 
 The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:
 
-**Which data formats are accepted?**
+**Which data and metadata formats are accepted?**
 
-Depending on the format your data is stored in, not every repository will accept your data. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see [here](https://dans.knaw.nl/en/file-formats/) for an example).
+Depending on the format your data/metadata is stored in, not every repository will accept your data/metadata. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see [here](https://dans.knaw.nl/en/file-formats/) for an example).
 
 **What repository is commonly used in your organisation, community or discipline? **
 

@@ -19,9 +19,11 @@ For ecological data, a widely used metadata standard, for example by [OBIS](#OBI
 
 ## Our choice
 
-For all of our datasets we choose EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Additionally, as we went with Darwin Core Archives to structure the data, EML was required to use as a metadata standard.
+As we decided to go with Darwin Core Archives to structure our data, we used EML and meta.xml files to store the descriptive and structural metadata, respectively, of all our example datasets as this are the required formats of the DwC-A. Independent of this, we would have chosen EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Instead of using the meta.xml file to store structural metadata, this information can also be stored in EML.  
 
-## EML terms {#eml-terms}
+## Metadata in the Darwin Core Archive {#metadata-DwCA}
+
+### EML terms {#eml-terms}
 
 EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found [here](https://eml.ecoinformatics.org/schema/) and some best practices [here](https://ediorg.github.io/data-package-best-practices/eml-best-practices.html)). For all terms containing text, the "xml:lang" attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.
 

@@ -17,7 +17,7 @@ In contrast to Darwin Core Archives (see Chapter Darwin Core Archive), relationa
 <p class="caption">(\#fig:relational-database)**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked.</p>
 </div>
 
-## Darwin Core Archive 
+## Darwin Core Archive {#DarwinCore-Archive}
 
 For biodiversity data that uses [Darwin Core](#DwC) terms, [Darwin Core Archives](#DwC-A) (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories [GBIF](#GBIF) and [OBIS](#OBIS).
 

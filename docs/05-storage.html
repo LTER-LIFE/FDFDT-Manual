@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 5 Storing your data | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 5 Storing your data | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-26" />
+<meta name="date" content="2024-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -203,7 +203,10 @@ div.csl-indent {
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a></li>
+<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="05-storage.html"><a href="05-storage.html#sensitive-information"><i class="fa fa-check"></i><b>5.1.1</b> Sensitive information</a></li>
+</ul></li>
 <li class="chapter" data-level="5.2" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>5.2</b> Choosing a repository</a></li>
 <li class="chapter" data-level="5.3" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>5.3</b> Repositories to store biodiversity data</a>
 <ul>
@@ -253,7 +256,7 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="07-structure.html"><a href="07-structure.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
-<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#DarwinCore-Archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
 <li class="chapter" data-level="7.3" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
@@ -275,12 +278,15 @@ div.csl-indent {
 <li class="chapter" data-level="8.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
 <li class="chapter" data-level="8.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
 <li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
-<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
-<li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
-<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Tools to help you</a>
+<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#metadata-DwCA"><i class="fa fa-check"></i><b>8.4</b> Metadata in the Darwin Core Archive</a>
 <ul>
-<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+<li class="chapter" data-level="8.4.1" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4.1</b> EML terms</a></li>
+<li class="chapter" data-level="8.4.2" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.4.2</b> Structural metadata - The meta.xml file</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -315,12 +321,18 @@ div.csl-indent {
 <h2><span class="header-section-number">5.1</span> Which data to store?<a href="05-storage.html#which-data-to-store" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., primary data) or your data in a <a href="10-glossary.html#standardise">standard</a> format. Data in its original format, provided that it is accompanied by detailed <a href="10-glossary.html#metadata">metadata</a> to enable optimal reuse (see section <a href="04-Describe-data.html#describe-data">4.1</a>), is closest to the raw data and can be shared without requiring additional effort to reformat the data. Alternatively, data in a common standard format can be reused by others in your community as well as more easily integrated with other datasets in the same format. You may also consider providing both versions of the data next to each other in the same repository allowing users to choose the version best suited for their own needs.</p>
 <p>Either way, it’s recommended to always share your metadata. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.</p>
+<div id="sensitive-information" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Sensitive information<a href="05-storage.html#sensitive-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before you publish any data online, be aware that some data is not yours to publish and requires special protection. Personal information and any privacy information in your data or metadata has to be treated according to local privacy protection regulations (e.g., the <a href="https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en">General Data Protection Regulation (GDPR)</a> in the EU).</p>
+<p>Additionally, your data can contain biologically sensitive information, for example, about endangered or rare species. Options to handle this are, for example, restricted access to this information or less precise spatial information.</p>
+<p>To get the best advice on how to handle your data, you should consult the responsible person at your institution (e.g., data steward or privacy officer).</p>
+</div>
 </div>
 <div id="choosing-a-repository" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Choosing a repository<a href="05-storage.html#choosing-a-repository" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:</p>
-<p><strong>Which data formats are accepted?</strong></p>
-<p>Depending on the format your data is stored in, not every repository will accept your data. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see <a href="https://dans.knaw.nl/en/file-formats/">here</a> for an example).</p>
+<p><strong>Which data and metadata formats are accepted?</strong></p>
+<p>Depending on the format your data/metadata is stored in, not every repository will accept your data/metadata. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see <a href="https://dans.knaw.nl/en/file-formats/">here</a> for an example).</p>
 <p><strong>What repository is commonly used in your organisation, community or discipline? </strong></p>
 <p>Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline.</p>
 <p><strong>Is a persistent identifier assigned and explicitly mentioned?</strong></p>
@@ -343,7 +355,7 @@ div.csl-indent {
 <h3><span class="header-section-number">5.3.1</span> Global repositories<a href="05-storage.html#global-repositories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>GBIF</strong>, the <a href="http://gbif.org">Global Biodiversity Information Facility</a>, is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions (<span class="citation">GBIF (<a href="#ref-GBIF_2021">2021</a>)</span>). Data is stored using data standards, such as <a href="10-glossary.html#DwC">Darwin Core</a>, and is openly accessible to everyone.</p>
 <p><strong>OBIS</strong>, the <a href="https://obis.org/">Ocean Biodiversity Information System</a>, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.</p>
-<p>Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a <a href="10-glossary.html#DwC-A">Darwin Core Archive</a> (for more information see <a href="07-structure.html#darwin-core-archive">later chapters</a>). There is extensive documentation on how to use the IPT by GBIF <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide">here</a>. Once the dataset is published it is assigned a DOI.</p>
+<p>Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a <a href="10-glossary.html#DwC-A">Darwin Core Archive</a> (for more information see <a href="#darwin-core-archive">later chapters</a>). There is extensive documentation on how to use the IPT by GBIF <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide">here</a>. Once the dataset is published it is assigned a DOI.</p>
 <p><strong>Dataverse</strong> is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found <a href="https://dataverse.org/installations">here</a>.</p>
 <p><a href="https://zenodo.org/"><strong>Zenodo</strong></a> is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data.</p>
 </div>
