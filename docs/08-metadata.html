@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-12-02" />
+<meta name="date" content="2024-12-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -373,17 +373,17 @@ div.csl-indent {
 <p>The <code>&lt;contact&gt;</code>, <code>&lt;creator&gt;</code> and <code>&lt;metadataProvider&gt;</code> can be different people/organisations/positions but can also all be the same. For example, if the same person is the <code>&lt;metadataProvider&gt;</code> and <code>&lt;contact&gt;</code> for a dataset, their name and email address can be provided once as part of the <code>&lt;metadataProvider&gt;</code> element, and then their <code>&lt;id&gt;</code> can be used in the <code>&lt;references&gt;</code> element of <code>&lt;contact&gt;</code>. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.</p>
 <div class="examplebox exampleimg">
 <p>The metadata provider is assigned with “id-1”. As the contact for the dataset is the same person, it can directly be referred to “id-1” instead of adding the full personal information again.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb8-1"><a href="08-metadata.html#cb8-1" tabindex="-1"></a>&lt;<span class="kw">metadataProvider</span><span class="ot"> id=</span><span class="st">&quot;id-1&quot;</span><span class="ot"> scope=</span><span class="st">&quot;document&quot;</span>&gt;</span>
-<span id="cb8-2"><a href="08-metadata.html#cb8-2" tabindex="-1"></a>  &lt;<span class="kw">individualName</span>&gt;</span>
-<span id="cb8-3"><a href="08-metadata.html#cb8-3" tabindex="-1"></a>    &lt;<span class="kw">givenName</span>&gt;Mary&lt;/<span class="kw">givenName</span>&gt;</span>
-<span id="cb8-4"><a href="08-metadata.html#cb8-4" tabindex="-1"></a>    &lt;<span class="kw">surName</span>&gt;Shelley&lt;/<span class="kw">surName</span>&gt;</span>
-<span id="cb8-5"><a href="08-metadata.html#cb8-5" tabindex="-1"></a>  &lt;/<span class="kw">individualName</span>&gt;</span>
-<span id="cb8-6"><a href="08-metadata.html#cb8-6" tabindex="-1"></a>  &lt;<span class="kw">organizationName</span>&gt;Netherlands Institute of Ecology (NIOO-KNAW)&lt;/<span class="kw">organizationName</span>&gt;</span>
-<span id="cb8-7"><a href="08-metadata.html#cb8-7" tabindex="-1"></a>  &lt;<span class="kw">electronicMailAddress</span>&gt;m.shelley@nioo.knaw.nl&lt;/<span class="kw">electronicMailAddress</span>&gt;</span>
-<span id="cb8-8"><a href="08-metadata.html#cb8-8" tabindex="-1"></a>&lt;/<span class="kw">metadataProvider</span>&gt;</span>
-<span id="cb8-9"><a href="08-metadata.html#cb8-9" tabindex="-1"></a>&lt;<span class="kw">contact</span>&gt;</span>
-<span id="cb8-10"><a href="08-metadata.html#cb8-10" tabindex="-1"></a>  &lt;<span class="kw">references</span>&gt;id-1&lt;/<span class="kw">references</span>&gt;</span>
-<span id="cb8-11"><a href="08-metadata.html#cb8-11" tabindex="-1"></a>&lt;/<span class="kw">contact</span>&gt;</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb9-1"><a href="08-metadata.html#cb9-1" tabindex="-1"></a>&lt;<span class="kw">metadataProvider</span><span class="ot"> id=</span><span class="st">&quot;id-1&quot;</span><span class="ot"> scope=</span><span class="st">&quot;document&quot;</span>&gt;</span>
+<span id="cb9-2"><a href="08-metadata.html#cb9-2" tabindex="-1"></a>  &lt;<span class="kw">individualName</span>&gt;</span>
+<span id="cb9-3"><a href="08-metadata.html#cb9-3" tabindex="-1"></a>    &lt;<span class="kw">givenName</span>&gt;Mary&lt;/<span class="kw">givenName</span>&gt;</span>
+<span id="cb9-4"><a href="08-metadata.html#cb9-4" tabindex="-1"></a>    &lt;<span class="kw">surName</span>&gt;Shelley&lt;/<span class="kw">surName</span>&gt;</span>
+<span id="cb9-5"><a href="08-metadata.html#cb9-5" tabindex="-1"></a>  &lt;/<span class="kw">individualName</span>&gt;</span>
+<span id="cb9-6"><a href="08-metadata.html#cb9-6" tabindex="-1"></a>  &lt;<span class="kw">organizationName</span>&gt;Netherlands Institute of Ecology (NIOO-KNAW)&lt;/<span class="kw">organizationName</span>&gt;</span>
+<span id="cb9-7"><a href="08-metadata.html#cb9-7" tabindex="-1"></a>  &lt;<span class="kw">electronicMailAddress</span>&gt;m.shelley@nioo.knaw.nl&lt;/<span class="kw">electronicMailAddress</span>&gt;</span>
+<span id="cb9-8"><a href="08-metadata.html#cb9-8" tabindex="-1"></a>&lt;/<span class="kw">metadataProvider</span>&gt;</span>
+<span id="cb9-9"><a href="08-metadata.html#cb9-9" tabindex="-1"></a>&lt;<span class="kw">contact</span>&gt;</span>
+<span id="cb9-10"><a href="08-metadata.html#cb9-10" tabindex="-1"></a>  &lt;<span class="kw">references</span>&gt;id-1&lt;/<span class="kw">references</span>&gt;</span>
+<span id="cb9-11"><a href="08-metadata.html#cb9-11" tabindex="-1"></a>&lt;/<span class="kw">contact</span>&gt;</span></code></pre></div>
 </div>
 <ul>
 <li><p><span style="color: #dd7f08ff;"><code>&lt;language&gt;</code></span>: provides the language the resource is written in and can either be a well-known language name or ideally, a <a href="https://www.w3schools.com/tags/ref_language_codes.asp">ISO language code</a></p></li>

@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-12-02" />
+<meta name="date" content="2024-12-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -452,7 +452,22 @@ div.csl-indent {
 </div>
 <div id="crossref-in-data" class="section level2 hasAnchor" number="6.9">
 <h2><span class="header-section-number">6.9</span> Cross-referencing other resources in the data<a href="06.1-taxonomies.html#crossref-in-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Some contents or entities in your data might also be mentioned in another source or other sources might contain related records. To provide context to your data and to properly embed the data into related resources, your data should refer to these by cross-referencing, for example, their unique identifier. Identifiers for the same entity or concept are likely different in different resources and therefore the different identifiers should be mapped to one another. The simplest way of mapping is through a comma- or tab-separated file where each row describes a single entity and the columns provide the identifiers in each dataset. There are other ways of doing this and a more detailed description of these mapping methods can be found <a href="https://faircookbook.elixir-europe.org/content/recipes/interoperability/identifier-mapping.html">here</a>.</p>
+<p>Some contents of datasets do not exist in isolation and to provide context to your data and to properly embed the data into related resources, your data should refer to these by cross-referencing, for example, their unique identifier.</p>
+<p>If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the <a href="08-metadata.html#eml-terms">EML metadata file</a> by using the <code>&lt;additionalMetadata&gt;</code> term and its subterm <code>&lt;metadata&gt;</code>. The <code>&lt;metadata&gt;</code> term can then be filled with the Dublin Core term <a href="http://purl.org/dc/terms/relation"><code>dc:relation</code></a> that ideally is filled with the URI/DOI of the dataset that should be linked or, if that is not available, with a string conforming to a formal identification system.</p>
+<div class="examplebox exampleimg">
+<p><strong>CLUE data:</strong></p>
+<p>As <a href="02-example-datasets.html#CLUE">described for the CLUE data</a>, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term <code>relation</code> in the <code>&lt;additionalMetadata&gt;</code> filed of the EML file to reference to its DOI.</p>
+<p><strong>Note</strong>: As the CLUE data is not published yet, there is no DOI, so this is a mock-up DOI.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="06.1-taxonomies.html#cb7-1" tabindex="-1"></a>  &lt;<span class="kw">dataset</span>&gt;</span>
+<span id="cb7-2"><a href="06.1-taxonomies.html#cb7-2" tabindex="-1"></a>    &lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span>&gt;CLUE field data - Vegetation cover under 4 different treatments - Terrestrial Ecology/NIOO-KNAW&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb7-3"><a href="06.1-taxonomies.html#cb7-3" tabindex="-1"></a>  &lt;/<span class="kw">dataset</span>&gt;</span>
+<span id="cb7-4"><a href="06.1-taxonomies.html#cb7-4" tabindex="-1"></a>  &lt;<span class="kw">additionalMetadata</span>&gt;</span>
+<span id="cb7-5"><a href="06.1-taxonomies.html#cb7-5" tabindex="-1"></a>    &lt;<span class="kw">metadata</span>&gt;</span>
+<span id="cb7-6"><a href="06.1-taxonomies.html#cb7-6" tabindex="-1"></a>      &lt;<span class="kw">relation</span>&gt;10.3xxxx/5S3xxx&lt;/<span class="kw">relation</span>&gt;</span>
+<span id="cb7-7"><a href="06.1-taxonomies.html#cb7-7" tabindex="-1"></a>    &lt;/<span class="kw">metadata</span>&gt;</span>
+<span id="cb7-8"><a href="06.1-taxonomies.html#cb7-8" tabindex="-1"></a>  &lt;/<span class="kw">additionalMetadata</span>&gt;</span></code></pre></div>
+</div>
+<p>Identifiers for the same entity or concept are likely different in different resources and therefore the different identifiers should be mapped to one another. The simplest way of mapping is through a comma- or tab-separated file where each row describes a single entity and the columns provide the identifiers in each dataset. There are other ways of doing this and a more detailed description of these mapping methods can be found <a href="https://faircookbook.elixir-europe.org/content/recipes/interoperability/identifier-mapping.html">here</a>.</p>
 <div class="examplebox exampleimg">
 <p><strong>Crickets:</strong></p>
 <p>The European field cricket (<em>Gryllus campestris</em> Linnaeus, 1758) is listed in several taxonomies with different identifiers. To integrate these different sources, links can be described by creating a mapping file (e.g., CSV, see below), where the row represents the species, and columns contain the identifiers from each taxonomy.</p>
