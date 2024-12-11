@@ -24,6 +24,7 @@ The meta-file contains the structural metadata and is required by the Darwin Cor
     <field index="8" term="http://rs.tdwg.org/dwc/terms/day"/>
     <field index="9" term="http://rs.tdwg.org/dwc/terms/country"/>
     <field index="10" term="http://rs.tdwg.org/dwc/terms/countryCode"/>
+    [...]
 ```
 :::
 

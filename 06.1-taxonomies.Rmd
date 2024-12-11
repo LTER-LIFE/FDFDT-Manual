@@ -99,27 +99,33 @@ To assign GUIDs to your data you can:
 
 ## Cross-referencing other resources in the data {#crossref-in-data}
 
-Some contents of datasets do not exist in isolation and to provide context to your data and to properly embed the data into related resources, your data should refer to these by cross-referencing, for example, their unique identifier. 
+Some contents of datasets do not exist in isolation. To provide context to your data and to properly link the data to related resources, your data should refer to these by cross-referencing, for example, their unique identifier. 
 
-If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the [EML metadata file](#eml-terms) by using the `<additionalMetadata>` term and its subterm `<metadata>`. The `<metadata>` term can then be filled with the Dublin Core term [`dc:relation`](http://purl.org/dc/terms/relation) that ideally is filled with the URI/DOI of the dataset that should be linked or, if that is not available, with a string conforming to a formal identification system. 
+If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the [EML metadata file](#eml-terms) by using the `<additionalMetadata>` term and its subterm `<metadata>`. The `<metadata>` term can then be filled with the Dublin Core term [`dc:relation`](http://purl.org/dc/terms/relation) that ideally is filled with the URI/DOI of the dataset that should be linked. Note that it is important to add the Dublin Core namespace `xmlns:dc="http://purl.org/dc/terms/"` to the other namespaces in the `<eml>` element at the top of the document.
 
 ::: {.examplebox .exampleimg}
 **CLUE data:**
 
-As [described for the CLUE data](#CLUE), two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term `relation` in the `<additionalMetadata>` filed of the EML file to reference to its DOI.
+As [described for the CLUE data](#CLUE), two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term `dc:relation` in the `<additionalMetadata>` filed of the EML file to reference to its DOI.
 
 **Note**: As the CLUE data is not published yet, there is no DOI, so this is a mock-up DOI.
 
 ```xml
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2"
+         packageId="09aa6a9d-bccc-4eba-a98c-191e3cd09322" system="uuid"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
   <dataset>
     <title xml:lang="en">CLUE field data - Vegetation cover under 4 different treatments - Terrestrial Ecology/NIOO-KNAW</title>
   </dataset>
   <additionalMetadata>
     <metadata>
-      <relation>10.3xxxx/5S3xxx</relation>
+      <dc:relation>10.3xxxx/5S3xxx</dc:relation>
     </metadata>
   </additionalMetadata>
-
+</eml>
 ``` 
 :::
 

@@ -53,7 +53,7 @@ Namespaces are prefixes used to distinguish between terms from different vocabul
 Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the [Darwin Core List of terms](https://dwc.tdwg.org/list/). As Darwin Core is only a vocabulary, it does not have any required terms. Only if you later on want to organise your Darwin Core terms in a [Darwin Core Archive](#DwC-A), some of the terms are required (see [this section](#DarwinCore-Archive)).
 
 :::{.tableDwCterms}
-[**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections.]{style="font-size: 11px;"}
+[**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections. Note that none of the following terms are strictly required.]{style="font-size: 11px;"}
 
 | Event             | Occurrence               | Taxon                | MeasurementOrFact         | Location                      | Organism                | MaterialEntity        | GeologicalContext           |
 |:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|
