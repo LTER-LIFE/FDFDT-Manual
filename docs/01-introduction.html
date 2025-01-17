@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 1 Introduction | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 1 Introduction | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
@@ -23,13 +23,13 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-07-26" />
+<meta name="date" content="2025-01-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="images/LTER-LIFE-logo.svg" type="image/x-icon" />
 <link rel="prev" href="00-preface-part2.html"/>
 <link rel="next" href="01.1-FAIR-assessment.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -56,7 +56,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -128,7 +128,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -160,13 +159,14 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
+<li class="toc-logo"><a href="./"><img src="images/LTER-LIFE-logo.svg"></a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#release-notes"><i class="fa fa-check"></i>Release notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
@@ -204,7 +204,10 @@ div.csl-indent {
 <li class="part"><span><b>b. Storage</b></span></li>
 <li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a></li>
+<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="05-storage.html"><a href="05-storage.html#sensitive-information"><i class="fa fa-check"></i><b>5.1.1</b> Sensitive information</a></li>
+</ul></li>
 <li class="chapter" data-level="5.2" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>5.2</b> Choosing a repository</a></li>
 <li class="chapter" data-level="5.3" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>5.3</b> Repositories to store biodiversity data</a>
 <ul>
@@ -254,7 +257,7 @@ div.csl-indent {
 <li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="07-structure.html"><a href="07-structure.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
-<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#DarwinCore-Archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
 <li class="chapter" data-level="7.3" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
@@ -276,12 +279,15 @@ div.csl-indent {
 <li class="chapter" data-level="8.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
 <li class="chapter" data-level="8.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
 <li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
-<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
-<li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
-<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Tools to help you</a>
+<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#metadata-DwCA"><i class="fa fa-check"></i><b>8.4</b> Metadata in the Darwin Core Archive</a>
 <ul>
-<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+<li class="chapter" data-level="8.4.1" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4.1</b> EML terms</a></li>
+<li class="chapter" data-level="8.4.2" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.4.2</b> Structural metadata - The meta.xml file</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -314,10 +320,10 @@ div.csl-indent {
 <div id="what-is-fair" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> What is FAIR?<a href="01-introduction.html#what-is-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Research data often is stored on local hard drives, not well described or not formatted in a consistent and standard way. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, <span class="citation">Wilkinson et al. (<a href="#ref-Wilkinson_2016">2016</a>)</span> introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable and <strong>R</strong>eusable, which more concrete means the following:</p>
-<p><strong>Findable.</strong> This means that the <a href="10-glossary.html#metadata">metadata</a> (and the data) can be easily found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines.</p>
-<p><strong>Accessible.</strong> It is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required.</p>
-<p><strong>Interoperable.</strong> In order to integrate the data with other data and to incorporate it into workflows or applications, the data needs to be fully compatible with other data. In easier words this means that data resources should ‘speak the same language’ to be used together.</p>
-<p><strong>Reusable.</strong> The ultimate goal of the FAIR concept is to make the data reusable, which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.</p>
+<p><strong>Findable</strong> means that the <a href="10-glossary.html#metadata">metadata</a> and the data can be easily found by both humans and computers, and that machine-actionable metadata allows for discovery of the data by machines. When you present data in a relevant repository and make sure that they are described with thorough and relevant metadata, you make it possible for others to find them.</p>
+<p><strong>Accessible</strong> means that there is information on how humans or computers gain access to the data. This does not mean that the data have to be openly available for everyone (see <a href="01-introduction.html#fair-is-not-open">FAIR is not open</a>), but that the freely available metadata clearly indicates to both humans and computers how and under what conditions data can be retrieved.</p>
+<p><strong>Interoperable</strong> means that (meta)data can be integrated with other (meta)data, and that (meta)data can be exchanged and used across different systems. In other words, data resources should ‘speak the same language’ to be used together.</p>
+<p><strong>Reusable</strong> means that data are sufficiently annotated and curated so that others – humans and machines – can understand the context and methods of data collection, correctly interpret the meaning of the data, and accurately reuse the data.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FAIR"></span>
 <img src="images/Figure1.svg" alt="**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles." width="100%" />
 <p class="caption">
@@ -335,7 +341,7 @@ Figure 1.1: <strong>The FAIR concept.</strong> The four letters of FAIR stand fo
 </div>
 <div id="fair-is-not-open" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> FAIR is not open<a href="01-introduction.html#fair-is-not-open" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>It is important to stress here that FAIR is <strong>not equal</strong> to open. While the metadata of your data should be openly available to enable the discovery of your data by others, the data itself does not have to be open. If you have reasons for not making the data openly available to everyone (e.g., because it contains sensitive information), this can and should be made clear in the metadata where according licensing information and access rights can be provided. As long as this is guaranteed, restricted or closed data can also be completely FAIR.</p>
+<p>It is important to emphasise that FAIR is <strong>not equal</strong> to open. While the metadata of your data should be openly available to enable the discovery of your data by others, the data itself does not have to be open. If you have reasons for not making the data openly available to everyone (e.g., because it contains sensitive information), this can and should be made clear in the metadata where according licensing information and access rights can be provided. As long as this is guaranteed, restricted or closed data can also be completely FAIR.</p>
 </div>
 <div id="why-should-you-make-your-data-more-fair" class="section level2 hasAnchor" number="1.4">
 <h2><span class="header-section-number">1.4</span> Why should you make your data more FAIR?<a href="01-introduction.html#why-should-you-make-your-data-more-fair" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -343,7 +349,7 @@ Figure 1.1: <strong>The FAIR concept.</strong> The four letters of FAIR stand fo
 
 </div>
 <h3> References<a href="12-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-FAIRy_tale" class="csl-entry">
 Hansen, K. K., Buss, M., &amp; Haahr, L. S. (2018). <em>A FAIRy tale</em>. Zenodo. <a href="https://doi.org/10.5281/ZENODO.2248200">https://doi.org/10.5281/ZENODO.2248200</a>
 </div>

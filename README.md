@@ -17,6 +17,15 @@ Add a summary of the changes in the release notes below.
 
 # Release notes
 
+### Version 0.1.1 :memo:
+_Date: 2025/01/17_
+
+- Add logo
+- Update section on evaluation tool
+- Update description of FAIR
+- Add link to README templates
+- Fix cross-references and typos
+
 ### Version 0.1.0 :rocket:
 _Date: 2024/07/26_
 

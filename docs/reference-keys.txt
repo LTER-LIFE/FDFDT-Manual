@@ -25,6 +25,7 @@ licencing
 structuring-your-tabular-data
 storing-your-data
 which-data-to-store
+sensitive-information
 choosing-a-repository
 repositories-to-store-biodiversity-data
 global-repositories
@@ -70,7 +71,7 @@ GUIDcreation
 crossref-in-data
 structuring-your-standardised-data
 relational-database
-darwin-core-archive
+DarwinCore-Archive
 the-core-its-extensions
 find-the-core
 occurrence-core-vs.-event-core
@@ -85,6 +86,7 @@ standardise-and-structure-your-metadata
 metadata-standards-for-biodiversity-data
 tools-to-help-you-4
 our-choice-2
+metadata-DwCA
 eml-terms
 structural-metadata
 tools-to-help-you-5

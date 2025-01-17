@@ -108,6 +108,25 @@ code span.at {/*R*/
     display: block;
     padding: 8px 7px; /* distance of headeres in navigation pane */
 }
+
+/*--------------- Logo -------------------*/
+
+.toc-logo {
+  width: 200px !important;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.toc-logo img {
+  max-width: 70%;
+  margin-bottom: 10px;
+}
+
+.summary > li:first-child {
+  height: auto !important; 
+}
+
 /*------------Info boxes----------- */
 .disclaimerimg{
   background: #c0290217 10px center/4em no-repeat;
@@ -115,8 +134,8 @@ code span.at {/*R*/
 }
 .disclaimer{
   padding: 1em 1em 0.5em 6em;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 3.5px dashed #c02902ff;
   border-radius: 13px;
 }
