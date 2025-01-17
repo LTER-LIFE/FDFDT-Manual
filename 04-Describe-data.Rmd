@@ -44,6 +44,10 @@ Recommended best practises for minimum metadata:
 
 - Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., *dataset A is a derivative of dataset B* or *B contains complementary information to A*).
 
+::: {.infobox .infoimg}
+A template that covers these minimum metadata data fields can be found here: [README template](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md). Or follow this [example](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md) of the bud burst data.
+:::
+
 **For tabular data**:
 
 In addition to providing metadata at the dataset level, as listed above, it is recommended for tabular data to provide a [data dictionary](#data-dictionary) (sometimes called a codebook). A data dictionary provides the meaning of the columns and values in your data files. It serves as a reference guide for people who want to reuse your data, as it improves the interpretation and understanding of the data. 
