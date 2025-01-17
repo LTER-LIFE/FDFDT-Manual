@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-12-09" />
+<meta name="date" content="2025-01-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -166,6 +166,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#release-notes"><i class="fa fa-check"></i>Release notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
@@ -452,20 +453,27 @@ div.csl-indent {
 </div>
 <div id="crossref-in-data" class="section level2 hasAnchor" number="6.9">
 <h2><span class="header-section-number">6.9</span> Cross-referencing other resources in the data<a href="06.1-taxonomies.html#crossref-in-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Some contents of datasets do not exist in isolation and to provide context to your data and to properly embed the data into related resources, your data should refer to these by cross-referencing, for example, their unique identifier.</p>
-<p>If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the <a href="08-metadata.html#eml-terms">EML metadata file</a> by using the <code>&lt;additionalMetadata&gt;</code> term and its subterm <code>&lt;metadata&gt;</code>. The <code>&lt;metadata&gt;</code> term can then be filled with the Dublin Core term <a href="http://purl.org/dc/terms/relation"><code>dc:relation</code></a> that ideally is filled with the URI/DOI of the dataset that should be linked or, if that is not available, with a string conforming to a formal identification system.</p>
+<p>Some contents of datasets do not exist in isolation. To provide context to your data and to properly link the data to related resources, your data should refer to these by cross-referencing, for example, their unique identifier.</p>
+<p>If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the <a href="08-metadata.html#eml-terms">EML metadata file</a> by using the <code>&lt;additionalMetadata&gt;</code> term and its subterm <code>&lt;metadata&gt;</code>. The <code>&lt;metadata&gt;</code> term can then be filled with the Dublin Core term <a href="http://purl.org/dc/terms/relation"><code>dc:relation</code></a> that ideally is filled with the URI/DOI of the dataset that should be linked. Note that it is important to add the Dublin Core namespace <code>xmlns:dc="http://purl.org/dc/terms/"</code> to the other namespaces in the <code>&lt;eml&gt;</code> element at the top of the document.</p>
 <div class="examplebox exampleimg">
 <p><strong>CLUE data:</strong></p>
-<p>As <a href="02-example-datasets.html#CLUE">described for the CLUE data</a>, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term <code>relation</code> in the <code>&lt;additionalMetadata&gt;</code> filed of the EML file to reference to its DOI.</p>
+<p>As <a href="02-example-datasets.html#CLUE">described for the CLUE data</a>, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term <code>dc:relation</code> in the <code>&lt;additionalMetadata&gt;</code> filed of the EML file to reference to its DOI.</p>
 <p><strong>Note</strong>: As the CLUE data is not published yet, there is no DOI, so this is a mock-up DOI.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="06.1-taxonomies.html#cb7-1" tabindex="-1"></a>  &lt;<span class="kw">dataset</span>&gt;</span>
-<span id="cb7-2"><a href="06.1-taxonomies.html#cb7-2" tabindex="-1"></a>    &lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span>&gt;CLUE field data - Vegetation cover under 4 different treatments - Terrestrial Ecology/NIOO-KNAW&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb7-3"><a href="06.1-taxonomies.html#cb7-3" tabindex="-1"></a>  &lt;/<span class="kw">dataset</span>&gt;</span>
-<span id="cb7-4"><a href="06.1-taxonomies.html#cb7-4" tabindex="-1"></a>  &lt;<span class="kw">additionalMetadata</span>&gt;</span>
-<span id="cb7-5"><a href="06.1-taxonomies.html#cb7-5" tabindex="-1"></a>    &lt;<span class="kw">metadata</span>&gt;</span>
-<span id="cb7-6"><a href="06.1-taxonomies.html#cb7-6" tabindex="-1"></a>      &lt;<span class="kw">relation</span>&gt;10.3xxxx/5S3xxx&lt;/<span class="kw">relation</span>&gt;</span>
-<span id="cb7-7"><a href="06.1-taxonomies.html#cb7-7" tabindex="-1"></a>    &lt;/<span class="kw">metadata</span>&gt;</span>
-<span id="cb7-8"><a href="06.1-taxonomies.html#cb7-8" tabindex="-1"></a>  &lt;/<span class="kw">additionalMetadata</span>&gt;</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="06.1-taxonomies.html#cb7-1" tabindex="-1"></a>&lt;<span class="kw">eml:eml</span><span class="ot"> xmlns:eml=</span><span class="st">&quot;https://eml.ecoinformatics.org/eml-2.2.0&quot;</span></span>
+<span id="cb7-2"><a href="06.1-taxonomies.html#cb7-2" tabindex="-1"></a><span class="ot">         xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span>
+<span id="cb7-3"><a href="06.1-taxonomies.html#cb7-3" tabindex="-1"></a><span class="ot">         xmlns:dc=</span><span class="st">&quot;http://purl.org/dc/terms/&quot;</span></span>
+<span id="cb7-4"><a href="06.1-taxonomies.html#cb7-4" tabindex="-1"></a><span class="ot">         xmlns:stmml=</span><span class="st">&quot;http://www.xml-cml.org/schema/stmml-1.2&quot;</span></span>
+<span id="cb7-5"><a href="06.1-taxonomies.html#cb7-5" tabindex="-1"></a><span class="ot">         packageId=</span><span class="st">&quot;09aa6a9d-bccc-4eba-a98c-191e3cd09322&quot;</span><span class="ot"> system=</span><span class="st">&quot;uuid&quot;</span></span>
+<span id="cb7-6"><a href="06.1-taxonomies.html#cb7-6" tabindex="-1"></a><span class="ot">         xsi:schemaLocation=</span><span class="st">&quot;https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd&quot;</span>&gt;</span>
+<span id="cb7-7"><a href="06.1-taxonomies.html#cb7-7" tabindex="-1"></a>  &lt;<span class="kw">dataset</span>&gt;</span>
+<span id="cb7-8"><a href="06.1-taxonomies.html#cb7-8" tabindex="-1"></a>    &lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span>&gt;CLUE field data - Vegetation cover under 4 different treatments - Terrestrial Ecology/NIOO-KNAW&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb7-9"><a href="06.1-taxonomies.html#cb7-9" tabindex="-1"></a>  &lt;/<span class="kw">dataset</span>&gt;</span>
+<span id="cb7-10"><a href="06.1-taxonomies.html#cb7-10" tabindex="-1"></a>  &lt;<span class="kw">additionalMetadata</span>&gt;</span>
+<span id="cb7-11"><a href="06.1-taxonomies.html#cb7-11" tabindex="-1"></a>    &lt;<span class="kw">metadata</span>&gt;</span>
+<span id="cb7-12"><a href="06.1-taxonomies.html#cb7-12" tabindex="-1"></a>      &lt;<span class="kw">dc:relation</span>&gt;10.3xxxx/5S3xxx&lt;/<span class="kw">dc:relation</span>&gt;</span>
+<span id="cb7-13"><a href="06.1-taxonomies.html#cb7-13" tabindex="-1"></a>    &lt;/<span class="kw">metadata</span>&gt;</span>
+<span id="cb7-14"><a href="06.1-taxonomies.html#cb7-14" tabindex="-1"></a>  &lt;/<span class="kw">additionalMetadata</span>&gt;</span>
+<span id="cb7-15"><a href="06.1-taxonomies.html#cb7-15" tabindex="-1"></a>&lt;/<span class="kw">eml</span>&gt;</span></code></pre></div>
 </div>
 <p>Identifiers for the same entity or concept are likely different in different resources and therefore the different identifiers should be mapped to one another. The simplest way of mapping is through a comma- or tab-separated file where each row describes a single entity and the columns provide the identifiers in each dataset. There are other ways of doing this and a more detailed description of these mapping methods can be found <a href="https://faircookbook.elixir-europe.org/content/recipes/interoperability/identifier-mapping.html">here</a>.</p>
 <div class="examplebox exampleimg">

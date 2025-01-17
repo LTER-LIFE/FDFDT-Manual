@@ -17,7 +17,7 @@ Many repositories require a minimal set of metadata when uploading data, which c
 ::: {.disclaimer .disclaimerimg}
 [**Be aware**]{style="font: 22px 'Asap';"}
 
-There is another section on [standardising your metadata](#standardise-and-structure-your-metadata) that builds on the current section as it assumes that metadata has already been collected. If you want to go through both steps, you can however also do both steps at once and directly write the metadata in the standard format instead of creating a README. 
+There is another section on [standardising your metadata](#standardise-and-structure-your-metadata) that builds on the current section as it assumes that metadata has already been gathered. If you want to both gather and standardise metadata, you can do both steps at once and directly write the metadata in the standard format instead of creating a README first. 
 :::
 
 Based on best practices of writing README files and in terms of [standardising](#standardise) the metadata in a later step, we recommend to gather the following information about your data:
@@ -44,6 +44,9 @@ Recommended best practises for minimum metadata:
 
 - Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., *dataset A is a derivative of dataset B* or *B contains complementary information to A*).
 
+::: {.infobox .infoimg}
+A template that covers these minimum metadata data fields can be found here: [README template](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md). Or follow this [example](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md) of the bud burst data.
+:::
 
 **For tabular data**:
 

@@ -12,9 +12,9 @@ Either way, it’s recommended to always share your metadata. Even when you are 
 ### Sensitive information
 Before you publish any data online, be aware that some data is not yours to publish and requires special protection. Personal information and any privacy information in your data or metadata has to be treated according to local privacy protection regulations (e.g., the [General Data Protection Regulation (GDPR)](https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en) in the EU). 
 
-Additionally, your data can contain biologically sensitive information, for example, about endangered or rare species. Options to handle this are, for example, restricted access to this information or less precise spatial information. 
+Additionally, your data can contain biologically sensitive information, for example, about endangered or rare species. Options to handle this are, for example, making your data available with restricted access or providing spatial information at a lower resolution.
 
-To get the best advice on how to handle your data, you should consult the responsible person at your institution (e.g., data steward or privacy officer).
+For the best advice on how to handle your data, you should consult the responsible person at your institution (e.g., data steward, data protection officer, or privacy officer).
 
 ## Choosing a repository 
 

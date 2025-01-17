@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2024-12-09" />
+<meta name="date" content="2025-01-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -166,6 +166,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#release-notes"><i class="fa fa-check"></i>Release notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
@@ -327,7 +328,7 @@ div.csl-indent {
 <p>Many repositories require a minimal set of metadata when uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are, however, no regulations on what information a README should contain and in practice, the extent and detail of it varies a lot. In general, the richer the data is described the better.</p>
 <div class="disclaimer disclaimerimg">
 <p><span style="font: 22px &#39;Asap&#39;;"><strong>Be aware</strong></span></p>
-<p>There is another section on <a href="08-metadata.html#standardise-and-structure-your-metadata">standardising your metadata</a> that builds on the current section as it assumes that metadata has already been collected. If you want to go through both steps, you can however also do both steps at once and directly write the metadata in the standard format instead of creating a README.</p>
+<p>There is another section on <a href="08-metadata.html#standardise-and-structure-your-metadata">standardising your metadata</a> that builds on the current section as it assumes that metadata has already been gathered. If you want to both gather and standardise metadata, you can do both steps at once and directly write the metadata in the standard format instead of creating a README first.</p>
 </div>
 <p>Based on best practices of writing README files and in terms of <a href="10-glossary.html#standardise">standardising</a> the metadata in a later step, we recommend to gather the following information about your data:</p>
 <p>Recommended best practises for minimum metadata:</p>
@@ -343,6 +344,9 @@ div.csl-indent {
 <li><p>Do different tables within a file and/or different files in the dataset link to each other? If yes, a short description of how they link (e.g., by which identifier)</p></li>
 <li><p>Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., <em>dataset A is a derivative of dataset B</em> or <em>B contains complementary information to A</em>).</p></li>
 </ul>
+<div class="infobox infoimg">
+<p>A template that covers these minimum metadata data fields can be found here: <a href="https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md">README template</a>. Or follow this <a href="https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md">example</a> of the bud burst data.</p>
+</div>
 <p><strong>For tabular data</strong>:</p>
 <p>In addition to providing metadata at the dataset level, as listed above, it is recommended for tabular data to provide a <a href="10-glossary.html#data-dictionary">data dictionary</a> (sometimes called a codebook). A data dictionary provides the meaning of the columns and values in your data files. It serves as a reference guide for people who want to reuse your data, as it improves the interpretation and understanding of the data.</p>
 <p>For data stored in a relational database, the data dictionary is an active document, meaning that it is updated whenever the tables and columns in the database change. In most other cases, data dictionaries are static documents that need to be created manually. When you do so, describe:</p>
