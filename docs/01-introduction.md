@@ -8,7 +8,7 @@ Research data often is stored on local hard drives, not well described or not fo
 
 **Findable** means that the [metadata](#metadata) and the data can be easily found by both humans and computers, and that machine-actionable metadata allows for discovery of the data by machines. When you present data in a relevant repository and make sure that they are described with thorough and relevant metadata, you make it possible for others to find them.
   
-**Accessible** means that there is information on how humans or computers gain access to the data. This does not mean that the data have to be openly available for everyone (see [FAIR is not open](#fair-is-not-open)), but that the freely available metadata clearly indicates to both humans and computers how and under what conditions data could be retrieved. 
+**Accessible** means that there is information on how humans or computers gain access to the data. This does not mean that the data have to be openly available for everyone (see [FAIR is not open](#fair-is-not-open)), but that the freely available metadata clearly indicates to both humans and computers how and under what conditions data can be retrieved. 
 
 **Interoperable** means that (meta)data can be integrated with other (meta)data, and that (meta)data can be exchanged and used across different systems. In other words, data resources should 'speak the same language' to be used together.
 

@@ -19,7 +19,7 @@ For ecological data, a widely used metadata standard, for example by [OBIS](#OBI
 
 ## Our choice
 
-As we decided to go with Darwin Core Archives to structure our data, we used EML and meta.xml files to store the descriptive and structural metadata, respectively, of all our example datasets as this are the required formats of the DwC-A. Independent of this, we would have chosen EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. Instead of using the meta.xml file to store structural metadata, this information can also be stored in EML.  
+As we decided to go with Darwin Core Archives to structure our data, we used EML and meta.xml files to store the descriptive and structural metadata, respectively, of all our example datasets as this are the required formats of the DwC-A. Independent of this, we would have chosen EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example. 
 
 ## Metadata in the Darwin Core Archive {#metadata-DwCA}
 

@@ -45,7 +45,7 @@ Recommended best practises for minimum metadata:
 - Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., *dataset A is a derivative of dataset B* or *B contains complementary information to A*).
 
 ::: {.infobox .infoimg}
-A template that covers these minimum metadata data fields can be found here: [README template](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md). Or follow this [example](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md) of the bud burst data.
+A template that covers these minimum metadata fields can be found here: [README template](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md). Or follow this [example](https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md) of the bud burst data.
 :::
 
 **For tabular data**:
