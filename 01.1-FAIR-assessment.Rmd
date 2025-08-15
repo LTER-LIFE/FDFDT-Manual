@@ -31,7 +31,7 @@ A complete list of the questions and their info boxes can also be found in the e
 
 **Structure** is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others.
 
-Apart from the questions about structure, the questions in the evaluation are all directly based on the FAIR principles. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the evaluation link to the letters of FAIR. Your answers will provide you with a circle diagram showing the status of your dataset in each of the properties and an associated list of chapters of this manual you can work through to further enrich your data.
+Apart from the questions about structure, the questions in the evaluation are all directly based on the FAIR principles @Wilkinson_2016. Figure \@ref(fig:MSSS-FAIR) visualises how the data properties in the evaluation link to the letters of FAIR. Your answers will provide you with a circle diagram showing the status of your dataset in each of the properties and an associated list of chapters of this manual you can work through to further enrich your data.
 
 ```{r MSSS-FAIR, echo = FALSE, out.width = '30%', fig.cap = 'Link between data properties and FAIR. The letters on the left stand for the data properties used in the FAIR and structure evaluation (metadata, storage, standard, structure). Each plus indicates that the data property improves the maturity of each of the respective letter of FAIR. A blank space means that this data property has no direct influence on the respective letter of FAIR.', fig.align = 'center', dev = 'svg'}
 
