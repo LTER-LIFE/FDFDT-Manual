@@ -1,7 +1,7 @@
 # (PART\*) b. Storage {.unnumbered}
 
 # Storing your data
-Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss. These drawbacks can be overcome by [mobilising](#mobilisation) your data to an online repository. 
+Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss [@Tenopir_2020]. These drawbacks can be overcome by [mobilising](#mobilisation) your data to an online repository. 
 
 ## Which data to store?
 
@@ -60,7 +60,7 @@ Here are some examples of commonly used repositories for biodiversity data. This
 
 ### Global repositories
 
-**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions (@GBIF_2021). Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
+**GBIF**, the [Global Biodiversity Information Facility](http://gbif.org), is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions [@GBIF_2021]. Data is stored using data standards, such as [Darwin Core](#DwC), and is openly accessible to everyone. 
 
 **OBIS**, the [Ocean Biodiversity Information System](https://obis.org/), is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms. 
 

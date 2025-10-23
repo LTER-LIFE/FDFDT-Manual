@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.5 FAIR and structure evaluation of your data | A hands-on guide to FAIR and structured ecological data</title>
+  <title> 1 Quick-start guide | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.5 FAIR and structure evaluation of your data | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:title" content=" 1 Quick-start guide | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   <meta name="github-repo" content="LTER-LIFE/FDFDT-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.5 FAIR and structure evaluation of your data | A hands-on guide to FAIR and structured ecological data" />
+  <meta name="twitter:title" content=" 1 Quick-start guide | A hands-on guide to FAIR and structured ecological data" />
   
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/LTER-LIFE-logo.svg" type="image/x-icon" />
-<link rel="prev" href="01-introduction.html"/>
-<link rel="next" href="02-example-datasets.html"/>
+<link rel="prev" href="00-preface-part2.html"/>
+<link rel="next" href="01-introduction.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -316,60 +316,40 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="evaluation" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> FAIR and structure evaluation of your data<a href="01.1-FAIR-assessment.html#evaluation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Datasets vary widely in format and complexity, as well as degree of structure and FAIRness. It is therefore important to first evaluate which state your data is in and what steps you can take to further enrich of your data.</p>
-<p>Even though there is already a range of FAIR assessment tools available (see <a href="https://fairassist.org/">here</a> for an overview), that can either automatically assess the FAIRness of your data or provide self-assessment questionnaires, we decided to develop our own tool for several reasons:</p>
+<div id="quick-start" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number"> 1</span> Quick-start guide<a href="00.1-quick-start.html#quick-start" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Making data FAIR can require a substantial amount of time, depending on the initial state of the data. This can seem daunting and raises the threshold to start. <strong>But every step towards FAIR is already a great improvement!</strong></p>
+<p>The <a href="01.1-FAIR-assessment.html#evaluation">FAIR evaluation tool</a> that we introduce with this guide provides you with an easy access to FAIR, as it evaluates the state of your data and points you to the sections in this guide that can help you to further enhance the data. <strong>You therefore do not have to go through this guide A to Z!</strong></p>
+<p>If your data is however still in a very original state, the tool will point you to the full <a href="03-workflow.html#workflow">workflow</a>. If you do not have time to go through everything, we encourage you to follow at least the following two steps, as these are most important for ensuring data persistence, understandability and reuse:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Describe your data</strong>: Describing your data in a way that others can understand them is crucial to allow others (or your future self) to understand and interpret the data. This description can in the simplest form be a README text file that contains information on the data contents, the data collection, the data files and their structure and licensing information.</li>
+</ol>
 <ul>
-<li><p>Existing tools tend to purely assign a score to the data but provide little guidance on how to actually improve the FAIRness of the data <span class="citation">(<a href="#ref-Krans_2022">Krans et al., 2022</a>)</span>. In contrast, our tool directly provides suggestions on how to enrich the data based on the given answers and by directing the user to the corresponding chapters of this guide.</p></li>
-<li><p>We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the evaluation questions of the first three components are directly derived from the <a href="01-introduction.html#what-is-fair">FAIR principles</a>, the structure component is an extension of FAIR not included in other tools.</p></li>
-<li><p>Automated tools often require the data to be available online already, which is not the state at which we want to start with our evaluation.</p></li>
+<li>See <a href="04-Describe-data.html#describe-data">Chapter 4.1</a> for more details and a template to create a README.</li>
 </ul>
-<p>Our evaluation tool <a href="https://lter-life-experience.org/fairset/">“<strong>FAIR + Structure Evaluation Tool</strong>”</a> (FAIR+SET) provides you with a set of simple questions about four properties of your data: <strong>metadata</strong>, <strong>storage</strong>, <strong>standards</strong> and <strong>structure</strong>.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Store your data</strong>: Data that only exists locally are at high risk to be lost and inaccessible for others. Storing your data persistently in an online repository, together with the description you created in step 1 (= metadata) ensures the longevity of your data and makes it visible to others. Sharing the data online does not necessarily mean that it is openly available to everyone! If you do not want to make it open, upload your data to a repository anyway e.g., under restricted access. As long as your metadata is openly available, this is fully compliant with FAIR and allows other users to find your data and contact you for access options.</li>
+</ol>
+<ul>
+<li>See <a href="05-storage.html#storing-your-data">Chapter 5</a> for more details and options where to store your data.</li>
+</ul>
 <div class="infobox infoimg">
-<p><span style="font: 22px &#39;Asap&#39;;"><strong>FAIR + Structure Evaluation Tool (FAIR+SET)</strong></span></p>
-<p>The FAIR + Structure Evaluation Tool is still in development, but a preliminary version can be accessed through <a href="https://lter-life-experience.org/fairset/" class="uri">https://lter-life-experience.org/fairset/</a>.</p>
-<p>Every question in the tool comes with a small info box (when clicking on the question mark) and can be answered with yes or no. Once you submit your answers, you will be provided with the evaluation outcome and the links to the respective sections in the guide useful to further enhance your data.</p>
-<p>A complete list of the questions and their info boxes can also be found in the end of this guide in the section <a href="11-questions-for-tool.html#questions-tool">Questions for FAIR + Structure Evaluation Tool</a>.</p>
-</div>
-<p><strong>Metadata</strong> is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.</p>
-<p><strong>Storage</strong> is about whether your data is stored persistently and in a way that makes it findable and accessible to others.</p>
-<p><strong>Standards</strong> describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets.</p>
-<p><strong>Structure</strong> is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others.</p>
-<p>Apart from the questions about structure, the questions in the evaluation are all directly based on the FAIR principles <span class="citation">(<a href="#ref-Wilkinson_2016">Wilkinson et al., 2016</a>)</span>. Figure <a href="01.1-FAIR-assessment.html#fig:MSSS-FAIR">2.2</a> visualises how the questions link to the FAIR principles and the data properties (metadata, storage, standards, structure). Each FAIR principle translates to one or more questions and principles that are applicable to both data and metadata are split into separate questions. Answering all these questions in the evaluation tool will provide you with a circle diagram showing the status of your dataset in each of the properties and an associated list of chapters of this manual you can work through to further enrich your data.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:MSSS-FAIR"></span>
-<img src="images/figure_FAIRtoMSSS.svg" alt="**Link between data properties, FAIR principles and questions in the evaluation tool.** The grey letters on the left stand for the FAIR principles, each coloured box for a data property. The questions of the evaluation tool are placed in the row of the respective FAIR principle they are derived from and the column of the data property they belong too. Note that the same question can occur twice if it maps to more than one principle." width="100%" />
-<p class="caption">
-Figure 2.2: <strong>Link between data properties, FAIR principles and questions in the evaluation tool.</strong> The grey letters on the left stand for the FAIR principles, each coloured box for a data property. The questions of the evaluation tool are placed in the row of the respective FAIR principle they are derived from and the column of the data property they belong too. Note that the same question can occur twice if it maps to more than one principle.
-</p>
-</div>
-<div class="infobox infoimg">
-<p>It will likely be difficult to reach the full score in all of the properties of your data, but this is also not necessarily the aim of this evaluation or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines <span class="citation">(<a href="#ref-Pagano_2013">Pagano et al., 2013</a>)</span>. One step to reach interoperability is to use a language for knowledge representation and linked data, such as <a href="10-glossary.html#RDF">RDF (Resource Description Framework)</a>. However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the evaluation of “Standards” by only following this guide. For more information on full interoperability <a href="09-fully-interoperable.html#fully-interoperable">see this section</a>.</p>
+<p>Following these two steps is a great start! If you now want to make your data even more reusable, follow the remaining steps of the <a href="03-workflow.html#workflow">workflow</a> or use the <a href="01.1-FAIR-assessment.html#evaluation">Evaluation tool</a> to be pointed to the remaining chapters that can be useful for you.</p>
 </div>
 <div>
 
 
 </div>
-</div>
-<h3> References<a href="12-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
-<div id="ref-Krans_2022" class="csl-entry">
-Krans, N. A., Ammar, A., Nymark, P., Willighagen, E. L., Bakker, M. I., &amp; Quik, J. T. K. (2022). FAIR assessment tools: Evaluating use and performance. <em>NanoImpact</em>, <em>27</em>, 100402. <a href="https://doi.org/10.1016/j.impact.2022.100402">https://doi.org/10.1016/j.impact.2022.100402</a>
-</div>
-<div id="ref-Pagano_2013" class="csl-entry">
-Pagano, P., Candela, L., &amp; Castelli, D. (2013). Data interoperability. <em>Data Science Journal</em>, <em>12</em>(0), GRDI19–GRDI25. <a href="https://doi.org/10.2481/dsj.grdi-004">https://doi.org/10.2481/dsj.grdi-004</a>
-</div>
-<div id="ref-Wilkinson_2016" class="csl-entry">
-Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Silva Santos, L. B. da, Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1). <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
-</div>
-</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="01-introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="02-example-datasets.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="00-preface-part2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="01-introduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

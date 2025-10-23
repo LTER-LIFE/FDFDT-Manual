@@ -10,7 +10,7 @@ Specifically tailored to Darwin Core, we present two options to structure your d
 
 Relational databases are a common format in structuring your data files, where individual files are linked to each other by specific identifiers. This allows for a high flexibility in structuring your data and does as such not require your data to be in a standardised format. In Darwin Core several ID fields exist with which tables/files can be connected to each other, allowing the possibility to structure your standardised data as a relational database (Figure \@ref(fig:relational-database)).
 
-In contrast to Darwin Core Archives (see Chapter Darwin Core Archive), relational databases can reduce redundancy in the data and are more flexible in linking information.
+In contrast to Darwin Core Archives (see [Chapter Darwin Core Archive](#DarwinCore-Archive)), relational databases can reduce redundancy in the data and are more flexible in linking information.
 
 <div class="figure">
 <img src="images/DwC-relationalDatabase-SVG.svg" alt="**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked." width="100%" />
@@ -19,7 +19,7 @@ In contrast to Darwin Core Archives (see Chapter Darwin Core Archive), relationa
 
 ## Darwin Core Archive {#DarwinCore-Archive}
 
-For biodiversity data that uses [Darwin Core](#DwC) terms, [Darwin Core Archives](#DwC-A) (DwC-A) are one standard format to organise your data, which is also required when you want to publish data on the aforementioned repositories [GBIF](#GBIF) and [OBIS](#OBIS).
+For biodiversity data that uses [Darwin Core](#DwC) terms, [Darwin Core Archives](#DwC-A) (DwC-A) are one standard format to organise your data [@GBIF_2021_DwCA], which is also required when you want to publish data on the aforementioned repositories [GBIF](#GBIF) and [OBIS](#OBIS).
 
 There are four main components that together, bundled in one zip-folder, build the Darwin Core Archive:
 

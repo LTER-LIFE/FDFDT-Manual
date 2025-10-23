@@ -1,6 +1,6 @@
 ## Ontologies and controlled vocabulary {#ontologies}
 
-Ontologies provide definitions of terms and their relationships to other terms in a human-interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain. In simpler words, ontologies are a way of showing the terms used in a subject area and how they relate to one another. With these references you can ensure that terms in your data are always interpreted the same way and clearly understood by others. For example, ontologies can be particularly useful for filling in Darwin Core terms like **measurementType** or **measurementMethod** (see section [Terms of class Measurement or fact](#mof)). Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri can be a bit more cumbersome, as there are no look-up services where you can directly query several thesauri simultaneously.  However, thesauri can be quite helpful for filling in the keywords of your metadata, and it is recommended to use them. We therefore provide a few examples of thesauri tailored to biodiversity or ecological data:
+Ontologies provide definitions of terms and their relationships to other terms in a human-interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain [@Madin_2008]. In simpler words, ontologies are a way of showing the terms used in a subject area and how they relate to one another. With these references you can ensure that terms in your data are always interpreted the same way and clearly understood by others. For example, ontologies can be particularly useful for filling in Darwin Core terms like **measurementType** or **measurementMethod** (see section [Terms of class Measurement or fact](#mof)). Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri can be a bit more cumbersome, as there are no look-up services where you can directly query several thesauri simultaneously.  However, thesauri can be quite helpful for filling in the keywords of your metadata, and it is recommended to use them. We therefore provide a few examples of thesauri tailored to biodiversity or ecological data:
 
 -   [GEMET](https://www.eionet.europa.eu/gemet/en/themes/) - **Ge**neral **M**ultilingual **E**nvironmental **T**hesaurus
 
@@ -44,12 +44,12 @@ The [Encyclopedia of Life](https://www.eol.org/) aims to gather knowledge about 
 
 ### Tools to help you
 
-If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the [APIs](#API) of each of these taxonomies, which is called `taxize` (@R-taxize). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., `get_gbifid_()` retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (`gnr_resolve()`). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.
+If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the [APIs](#API) of each of these taxonomies, which is called `taxize` [@R-taxize]. With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., `get_gbifid_()` retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (`gnr_resolve()`). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.
 
 ::: {.examplebox .exampleimg}
 **Bud burst**:
 
-One of the tree species in the bud burst data is the Pedunculate oak (*Quercus robur*). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package (@dplyr_2023).
+One of the tree species in the bud burst data is the Pedunculate oak (*Quercus robur*). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package [@dplyr_2023].
 
 ```{r message = FALSE}
 taxonInfo <- taxize::get_gbifid_(sci = "Quercus robur") |>
@@ -93,7 +93,7 @@ To assign GUIDs to your data you can:
 
 -   use an online GUID generator, for example <https://www.uuidgenerator.net>
 
--   use the R package `uuid`(@R-uuid) and its function `UUIDgenerate()`
+-   use the R package `uuid`[@R-uuid] and its function `UUIDgenerate()`
 
 **Note:** Once you created an UUID for your dataset, this should not change anymore.
 
