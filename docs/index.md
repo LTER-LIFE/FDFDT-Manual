@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682), [Kim B. Ferguson](https://orcid.org/0000-0001-6483-1936), [Cees H.J. Hof](https://orcid.org/0000-0001-9624-2431), [Eric Kuijt](https://orcid.org/0009-0000-9455-6680), [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2025-10-23"
+date: "2026-01-06"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -17,6 +17,13 @@ github-repo: LTER-LIFE/FDFDT-Manual
 
 This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more structured and more [FAIR](#FAIR) and tackle the problems that can occur along this process. 
 
+::: {.infobox .infoimg}
+[**Quick-start guide**]{style="font: 22px 'Asap';"}
+
+If you want to make your data more FAIR but do not have time to go through all the suggested chapters, we encourage you to follow at least the steps highlighted in this [quick-start guide](#quick-start)! 
+:::
+
+
 ### How to cite and licence {.unnumbered}
 
 If you want to cite this guide, please refer to it as:
@@ -25,8 +32,6 @@ Jantzen, C.C., Ferguson, K.B., Hof, C.H.J., Kuijt, E. & Vriend, S.J.G. (2025). A
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 
-### Quick-start guide {.unnumbered}
-If you want to make your data more FAIR but do not have time to go through all the suggested chapters, we encourage you to follow at least the steps highlighted in this [quick-start guide](#quick-start)! 
 
 ### Release notes {.unnumbered}
 

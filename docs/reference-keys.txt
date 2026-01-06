@@ -6,7 +6,6 @@ fig:CLUE
 fig:workflow
 fig:relational-database
 fig:star-schema
-quick-start
 introduction
 what-is-fair
 adding-structure-to-fair
