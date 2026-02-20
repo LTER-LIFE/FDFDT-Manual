@@ -14,7 +14,13 @@ In contrast to Darwin Core Archives (see [Chapter Darwin Core Archive](#DarwinCo
 
 ```{r relational-database, echo = FALSE, out.width = '100%', fig.cap = '**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked.', dev = 'svg'}
 
-knitr::include_graphics("images/DwC-relationalDatabase-SVG.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/DwC-relationalDatabase.pdf"
+  } else {
+    "images/DwC-relationalDatabase.svg"
+  }
+)
 
 ```
 
@@ -38,7 +44,13 @@ The core file is the central element of the archive to which each of the extensi
 
 ```{r star-schema, echo = FALSE, out.width = '80%', fig.cap = 'Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. ', fig.align = 'center', dev = 'svg'}
 
-knitr::include_graphics("images/star-schema-svg.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/star-schema.pdf"
+  } else {
+    "images/star-schema.svg"
+  }
+)
 
 ```
 

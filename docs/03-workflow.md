@@ -47,7 +47,6 @@ You can enter this workflow at any point, depending on the status of your data, 
 Even though this guide is tailored to ecological data, the workflow presented here should be generally applicable to any type of data, only the implementations of each step will differ.
 In the following chapters, we will go through each of the steps and provide some general background, introduce some options for implementation for ecological data and considerations that can help to choose the best suited option for your data, as well as a short insight into our own choices for the [example datasets](#example-datasets).
 
-<div class="figure">
-<img src="images/workflow-svg.svg" alt="**Diagram of the workflow presented in this guide to FAIRify data.** The colours refer to the data properties introduced in this guide (metadata = red, storage = blue, standards = green, structure  = orange)." width="100%" />
-<p class="caption">(\#fig:workflow)**Diagram of the workflow presented in this guide to FAIRify data.** The colours refer to the data properties introduced in this guide (metadata = red, storage = blue, standards = green, structure  = orange).</p>
-</div>
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/workflow} \caption{**Diagram of the workflow presented in this guide to FAIRify data.** The colours refer to the data properties introduced in this guide (metadata = red, storage = blue, standards = green, structure  = orange).}(\#fig:workflow)
+\end{figure}

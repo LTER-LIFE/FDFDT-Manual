@@ -36,7 +36,13 @@ Apart from the questions about structure, the questions in the evaluation are al
 
 ```{r MSSS-FAIR, echo = FALSE, out.width = '100%', fig.cap = '**Link between data properties, FAIR principles and questions in the evaluation tool.** The grey letters on the left stand for the FAIR principles, each coloured box for a data property. The questions of the evaluation tool are placed in the row of the respective FAIR principle they are derived from and the column of the data property they belong too. Note that the same question can occur twice if it maps to more than one principle.', fig.align = 'center', dev = 'svg'}
 
-knitr::include_graphics("images/figure_FAIRtoMSSS.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/figure_FAIRtoMSSS.pdf"
+  } else {
+    "images/figure_FAIRtoMSSS.svg"
+  }
+)
 
 ```
 

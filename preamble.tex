@@ -1,1 +1,263 @@
 \usepackage{booktabs}
+
+% ===================
+% Footers and headers
+% ===================
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Clear default styles
+\fancyhf{}
+
+% Footer (bottom of page)
+\fancyfoot[C]{\thepage} 
+
+% Header
+\renewcommand{\headrulewidth}{0pt}
+
+% ============================================================
+% LINE SPACING
+% ============================================================
+\usepackage{setspace}
+\onehalfspacing
+
+% ============================================================
+% FONT SETUP: Urbanist for headers, Asap for body
+% ============================================================
+\usepackage{fontspec}
+
+% Option 1: Using font paths directly
+\setmainfont{Asap}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
+
+\newfontfamily\headerfont{Urbanist}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
+
+% Apply header font to all heading levels
+\usepackage{sectsty}
+\chapterfont{\headerfont\bfseries}
+\sectionfont{\headerfont\bfseries}
+\subsectionfont{\headerfont}
+\subsubsectionfont{\headerfont}
+
+% ============================================================
+% PAGE BREAKS & SPACING
+% ============================================================
+
+% Control orphans and widows (prevent single lines at page breaks)
+\usepackage[all]{nowidow}
+
+% Reduce space before chapters
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{6pt}
+
+\usepackage[margin=2.5cm]{geometry} 
+
+\usepackage{etoolbox}
+
+% Redefine \part to remove forced \cleardoublepage
+\makeatletter
+\patchcmd{\@part}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+% ===================================
+% References
+% ===================================
+\usepackage[backend=biber,style=verbose,autocite=footnote]{biblatex}
+\addbibresource{book.bib} 
+
+% ============================================================
+% CHAPTER STYLING
+% ============================================================
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+% ============================================================
+% HYPERLINKS & PDF PROPERTIES
+% ============================================================
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={FDFDT Manual},
+  pdfauthor={LTER-LIFE},
+  pdfsubject={Field Data Collection Manual},
+  pdfkeywords={fieldwork, data, manual},
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  bookmarksnumbered=true,
+  bookmarksopen=true
+}
+
+% ============================================================
+% COLORS
+% ============================================================
+\usepackage{xcolor}
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{25,25,112}
+\definecolor{darkgreen}{RGB}{34,139,34}
+
+% Use in hyperlinks
+% \hypersetup{linkcolor=darkblue, urlcolor=darkblue}
+
+% ============================================================
+% FIGURES & TABLES
+% ============================================================
+\usepackage{graphicx}
+\usepackage{float}
+
+% Improve table formatting
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+% Set maximum width for figures
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Add spacing around tables
+\renewcommand{\arraystretch}{1.3}
+
+% ============================================================
+% LIST FORMATTING
+% ============================================================
+\usepackage{enumitem}
+
+% Reduce spacing in lists
+\setlist[enumerate]{itemsep=4pt,topsep=6pt}
+\setlist[itemize]{itemsep=4pt,topsep=6pt}
+
+% ============================================================
+% CODE & VERBATIM
+% ============================================================
+\usepackage{fancyvrb}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!10},
+  language=R
+}
+
+% ============================================================
+% MISC PACKAGES
+% ============================================================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{lastpage}  % For \pageref{LastPage}
+
+
+% ============================================================
+% Custom blocks
+% ============================================================
+\usepackage{booktabs}
+\usepackage{framed}
+\usepackage{fancyvrb}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+
+% Define colours for custom blocks
+\definecolor{shadecolor}{RGB}{248,248,248}
+% Define Shaded environment if not already defined
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+% Define Highlighting environment if using knitr syntax highlighting
+\newenvironment{Highlighting}[1][]
+  {\VerbatimEnvironment
+   \begin{snugshade}\begin{Verbatim}[#1]}
+  {\end{Verbatim}\end{snugshade}}
+
+\definecolor{infocolor}{RGB}{239, 158, 5}
+\definecolor{examplecolor}{RGB}{0, 192, 168}
+\definecolor{disclaimercolor}{RGB}{192, 41, 2}
+
+\usepackage{tcolorbox}
+
+% Info box style with PDF icon
+\newtcolorbox{infobox}{
+  colframe=infocolor,
+  colback=infocolor!10,
+  boxrule=2pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_note.pdf}\hspace{5mm}},
+}
+
+% Example box style with PDF icon
+\newtcolorbox{examplebox}{
+  colframe=examplecolor,
+  colback=examplecolor!10,
+  boxrule=1.5pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_example.pdf}\hspace{5mm}},
+}
+
+% Disclaimer box style with PDF icon
+\newtcolorbox{disclaimerbox}{
+  colframe=disclaimercolor,
+  colback=disclaimercolor!10,
+  boxrule=2.5pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_disclaimer.pdf}\hspace{5mm}},
+}
+
+
+% ==================
+% Tables
+% ==================
+
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ltablex}
+\keepXColumns
+\usepackage{pdflscape}  % For \begin{landscape} ... \end{landscape}
+
+
+% ===================
+% Add logo to title page
+% ===================
+% Add logo to title page
+\usepackage{graphicx} 
+\usepackage{titling} 
+
+% Redefine \maketitle
+\pretitle{%
+  \begin{center}
+  \includegraphics[width=0.25\textwidth]{images/LTER-LIFE-logo.pdf}\par\vspace{1em} 
+  \LARGE
+}
+\posttitle{\end{center}}

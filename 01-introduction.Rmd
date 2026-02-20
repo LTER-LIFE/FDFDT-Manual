@@ -16,7 +16,13 @@ Research data often is stored on local hard drives [@Tenopir_2020], not well des
 
 ```{r FAIR, fig.align='center', fig.cap= "**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.", echo = FALSE, out.width = '100%', dev= 'svg'}
 
-knitr::include_graphics("images/Figure1.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/Figure1.pdf"
+  } else {
+    "images/Figure1.svg"
+  }
+)
 
 ```
 

@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2026-02-19" />
+<meta name="date" content="2026-02-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -360,6 +362,379 @@ div.csl-indent {
 <div id="darwin-core-terms" class="section level3 hasAnchor" number="6.5.2">
 <h3><span class="header-section-number">6.5.2</span> Darwin Core terms<a href="06-standard.html#darwin-core-terms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the <a href="https://dwc.tdwg.org/list/">Darwin Core List of terms</a>. As Darwin Core is only a vocabulary, it does not have any required terms. Only if you later on want to organise your Darwin Core terms in a <a href="10-glossary.html#DwC-A">Darwin Core Archive</a>, some of the terms are required (see <a href="07-structure.html#DarwinCore-Archive">this section</a>).</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-1">Table 6.1: </span><strong>Selected set of Darwin Core terms of each class</strong>. Terms with (*) are described in more detail in the following sections. Note that none of the following terms are strictly required.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Event
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Occurrence
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Taxon
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+MeasurementOrFact
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Location
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Organism
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+MaterialEntity
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+GeologicalContext
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+eventID*
+</td>
+<td style="text-align:left;">
+occurrenceID*
+</td>
+<td style="text-align:left;">
+taxonID
+</td>
+<td style="text-align:left;">
+measurementID*
+</td>
+<td style="text-align:left;">
+locationID
+</td>
+<td style="text-align:left;">
+organismID*
+</td>
+<td style="text-align:left;">
+materialEntityID
+</td>
+<td style="text-align:left;">
+geologicalContext
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+parentEventID*
+</td>
+<td style="text-align:left;">
+recordedBy
+</td>
+<td style="text-align:left;">
+kingdom*
+</td>
+<td style="text-align:left;">
+parentMeasurementID
+</td>
+<td style="text-align:left;">
+country*
+</td>
+<td style="text-align:left;">
+organismName
+</td>
+<td style="text-align:left;">
+preparations
+</td>
+<td style="text-align:left;">
+earliestEonOrLowestEonothem
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+eventType
+</td>
+<td style="text-align:left;">
+recordedByID
+</td>
+<td style="text-align:left;">
+phylum*
+</td>
+<td style="text-align:left;">
+measurementType*
+</td>
+<td style="text-align:left;">
+countryCode*
+</td>
+<td style="text-align:left;">
+organismScope
+</td>
+<td style="text-align:left;">
+disposition
+</td>
+<td style="text-align:left;">
+earliestEraOrLowestErathem
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+eventDate*
+</td>
+<td style="text-align:left;">
+recordedByID
+</td>
+<td style="text-align:left;">
+class*
+</td>
+<td style="text-align:left;">
+measurementValue*
+</td>
+<td style="text-align:left;">
+verbatimLocality*
+</td>
+<td style="text-align:left;">
+associatedOrganisms
+</td>
+<td style="text-align:left;">
+verbatimLabel
+</td>
+<td style="text-align:left;">
+earliestEpochOrLowestSeries
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+eventTime*
+</td>
+<td style="text-align:left;">
+individualCount*
+</td>
+<td style="text-align:left;">
+order*
+</td>
+<td style="text-align:left;">
+measurementUnit*
+</td>
+<td style="text-align:left;">
+decimalLongitude*
+</td>
+<td style="text-align:left;">
+previousIdentifications
+</td>
+<td style="text-align:left;">
+associatedSequences
+</td>
+<td style="text-align:left;">
+lowestBiostratigraphicZone
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+year*
+</td>
+<td style="text-align:left;">
+organismQuantity*
+</td>
+<td style="text-align:left;">
+family*
+</td>
+<td style="text-align:left;">
+measurementMethod*
+</td>
+<td style="text-align:left;">
+decimalLatitude*
+</td>
+<td style="text-align:left;">
+organismRemarks
+</td>
+<td style="text-align:left;">
+materialEntityRemarks
+</td>
+<td style="text-align:left;">
+lithostratigraphicTerms
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+month*
+</td>
+<td style="text-align:left;">
+organismQuantityType*
+</td>
+<td style="text-align:left;">
+genus*
+</td>
+<td style="text-align:left;">
+measurementAccuracy
+</td>
+<td style="text-align:left;">
+geodeticDatum*
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+formation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+day*
+</td>
+<td style="text-align:left;">
+sex
+</td>
+<td style="text-align:left;">
+specificEpithet*
+</td>
+<td style="text-align:left;">
+measurementDeterminedDate
+</td>
+<td style="text-align:left;">
+coordinateUncertaintyInMeters
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+bed
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+samplingProtocol
+</td>
+<td style="text-align:left;">
+behavior
+</td>
+<td style="text-align:left;">
+scientificName*
+</td>
+<td style="text-align:left;">
+measurementDeterminedBy
+</td>
+<td style="text-align:left;">
+footprintWKT
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sampleSizeValue
+</td>
+<td style="text-align:left;">
+lifeStage
+</td>
+<td style="text-align:left;">
+acceptedNameUsage
+</td>
+<td style="text-align:left;">
+measurementRemarks
+</td>
+<td style="text-align:left;">
+minimumElevationInMeters
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sampleSizeUnit
+</td>
+<td style="text-align:left;">
+degreeOfEstablishment
+</td>
+<td style="text-align:left;">
+nameAccordingTo
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+minimumDepthinMeters
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+samplingEffort
+</td>
+<td style="text-align:left;">
+occurrenceStatus
+</td>
+<td style="text-align:left;">
+higherClassification
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+georeferenceProtocol
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fieldNotes
+</td>
+<td style="text-align:left;">
+occurrenceRemarks
+</td>
+<td style="text-align:left;">
+taxonRank
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+eventRemarks
+</td>
+<td style="text-align:left;">
+catalogNumber
+</td>
+<td style="text-align:left;">
+vernacularName
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="tableDwCterms">
 <p><span style="font-size: 11px;"><strong>Table 6.1. Selected set of Darwin Core terms of each class.</strong> Bold terms are described in more detail in the following sections. Note that none of the following terms are strictly required.</span></p>
 <table>
@@ -604,46 +979,74 @@ div.csl-indent {
 <p>The <strong>specificEpithet</strong> only contains the second part in the scientific name of a species, while the <strong>scientificName</strong> contains the full scientific name (i.e., genus + species epithet) together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological <a href="10-glossary.html#taxonomy">taxonomy</a> for the complete classification of the taxa in your data, to avoid misspellings and/or the use of outdated classification.</p>
 <p>Some taxa come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section <a href="06.1-taxonomies.html#biological-taxonomies">biological taxonomies</a>.</p>
 <p>However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can easily occur in the case of rare species or taxa with similar names (e.g., for the plant genus <em>Convolvulus</em> and the animal genus <em>Conovulus</em>).</p>
-<div class="examplebox exampleimg">
-<p><strong>Crickets</strong>:</p>
+<p>::: {.examplebox .exampleimg}
+<strong>Crickets</strong>:</p>
 <p>For the cricket dataset, we queried the taxonomic information of the European field cricket (<em>Gryllus campestris</em>) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).</p>
-<p><span style="font-size: 11px;"><strong>Table 6.1. Taxonomic information for <em>Gryllus campestris</em> as retrieved from GBIF stored in respective Darwin Core terms.</strong></span></p>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-</colgroup>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 6.2: </span>Taxonomic information for <em>Gryllus campestris</em> as retrieved from GBIF stored in respective Darwin Core terms.
+</caption>
 <thead>
-<tr class="header">
-<th align="center">scientificName</th>
-<th align="center">kingdom</th>
-<th align="center">phylum</th>
-<th align="center">class</th>
-<th align="center">order</th>
-<th align="center">family</th>
-<th align="center">genus</th>
-<th align="center">specificEpithet</th>
-<th align="center">taxonRank</th>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+scientificData
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+kingdom
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+phylum
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+class
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+order
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+family
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+genus
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+specificEpithet
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+taxonRank
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center"><em>Gryllus campestris</em> Linnaeus, 1758</td>
-<td align="center">Animalia</td>
-<td align="center">Arthropoda</td>
-<td align="center">Insecta</td>
-<td align="center">Orthoptera</td>
-<td align="center">Gryllidae</td>
-<td align="center">Gryllus</td>
-<td align="center">campestris</td>
-<td align="center">species</td>
+<tr>
+<td style="text-align:left;">
+Gryllus campestris Linnaeus, 1758
+</td>
+<td style="text-align:left;">
+Animalia
+</td>
+<td style="text-align:left;">
+Arthropoda
+</td>
+<td style="text-align:left;">
+Insecta
+</td>
+<td style="text-align:left;">
+Orthoptera
+</td>
+<td style="text-align:left;">
+Gryllidae
+</td>
+<td style="text-align:left;">
+Gryllus
+</td>
+<td style="text-align:left;">
+campestris
+</td>
+<td style="text-align:left;">
+species
+</td>
 </tr>
 </tbody>
 </table>
@@ -651,46 +1054,75 @@ div.csl-indent {
 <div class="examplebox exampleimg">
 <p><strong>CLUE data</strong>:</p>
 <p>The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was <em>Deschampsia flexuos</em> which is a synonym of the accepted species name <em>Avenella flexuosa</em>. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.</p>
-<p><span style="font-size: 11px;"><strong>Table 6.2. Taxonomic information for <em>Deschampsia flexuosa</em>, which is a synonym of <em>Avenella flexuosa</em>, as retrieved from GBIF and stored in respective Darwin Core terms.</strong></span></p>
-<table>
-<colgroup>
-<col width="13%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-<col width="10%" />
-</colgroup>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 6.3: </span>Taxonomic information for <em>Deschampsia flexuosa</em>, which is a synonym of <em>Avenella flexuosa</em>, as retrieved from GBIF and stored in respective Darwin Core terms.
+</caption>
 <thead>
-<tr class="header">
-<th align="center">scientificName</th>
-<th align="center">kingdom</th>
-<th align="center">phylum</th>
-<th align="center">class</th>
-<th align="center">order</th>
-<th align="center">family</th>
-<th align="center">genus</th>
-<th align="center">specificEpithet</th>
-<th align="center">taxonRank</th>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+scientificData
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+kingdom
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+phylum
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+class
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+order
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+family
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+genus
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+specificEpithet
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+taxonRank
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center"><em>Deschampsia flexuosa</em> (L.) Trin.</td>
-<td align="center">Plantae</td>
-<td align="center">Tracheophyta</td>
-<td align="center">Liliopsida</td>
-<td align="center">Poales</td>
-<td align="center">Poaceae</td>
-<td align="center">Avenella</td>
-<td align="center">flexuosa</td>
-<td align="center">species</td>
+<tr>
+<td style="text-align:left;">
+Deschampsia flexuosa (L.) Trin.
+</td>
+<td style="text-align:left;">
+Plantae
+</td>
+<td style="text-align:left;">
+Tracheophyta
+</td>
+<td style="text-align:left;">
+Liliopsida
+</td>
+<td style="text-align:left;">
+Poales
+</td>
+<td style="text-align:left;">
+Poaceae
+</td>
+<td style="text-align:left;">
+Avenella
+</td>
+<td style="text-align:left;">
+flexuosa
+</td>
+<td style="text-align:left;">
+species
+</td>
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 <div id="individualcount-and-organismquantity" class="section level4 hasAnchor" number="6.5.6.3">

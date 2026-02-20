@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.15)  15 AUG 2025 16:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.20)  20 FEB 2026 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **_main.tex
 (./_main.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
@@ -24,7 +24,7 @@ File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/06/16 v2.17y AMS math features
+Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 For additional information on amsmath, use the `?' option.
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -84,8 +84,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \multlinegap=\skip52
 \multlinetaggap=\skip53
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2949.
-LaTeX Info: Redefining \] on input line 2950.
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -98,9 +98,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-08-13 L3 programming layer (loader) 
+Package: expl3 2026-01-19 L3 programming layer (loader) 
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2025-06-09 L3 backend support: XeTeX
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count292
 \g__pdfannot_backend_int=\count293
 \g__pdfannot_backend_link_int=\count294
@@ -109,13 +109,13 @@ Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
 Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2025-10-09 L3 Experimental document command parser
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count295
 \l__fontspec_language_int=\count296
 \l__fontspec_strnum_int=\count297
@@ -131,7 +131,7 @@ Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpb_dim=\dimen159
 \l__fontspec_tmpc_dim=\dimen160
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
@@ -310,7 +310,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 274.
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -320,93 +320,77 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
-)
-\FV@CodeLineNo=\count309
-\FV@InFile=\read2
-\FV@TabBox=\box55
-\c@FancyVerbLine=\count310
-\FV@StepNumber=\count311
-\FV@OutFile=\write3
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip54
-\fb@frw=\dimen161
-\fb@frh=\dimen162
-\FrameRule=\dimen163
-\FrameSep=\dimen164
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
-\LTleft=\skip55
-\LTright=\skip56
-\LTpre=\skip57
-\LTpost=\skip58
-\LTchunksize=\count312
-\LTcapwidth=\dimen165
-\LT@head=\box56
-\LT@firsthead=\box57
-\LT@foot=\box58
-\LT@lastfoot=\box59
-\LT@gbox=\box60
-\LT@cols=\count313
-\LT@rows=\count314
-\c@LT@tables=\count315
-\c@LT@chunks=\count316
-\LT@p@ftn=\toks23
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count309
+\LTcapwidth=\dimen161
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count310
+\LT@rows=\count311
+\c@LT@tables=\count312
+\c@LT@chunks=\count313
+\LT@p@ftn=\toks22
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen166
-\lightrulewidth=\dimen167
-\cmidrulewidth=\dimen168
-\belowrulesep=\dimen169
-\belowbottomsep=\dimen170
-\aboverulesep=\dimen171
-\abovetopsep=\dimen172
-\cmidrulesep=\dimen173
-\cmidrulekern=\dimen174
-\defaultaddspace=\dimen175
-\@cmidla=\count317
-\@cmidlb=\count318
-\@aboverulesep=\dimen176
-\@belowrulesep=\dimen177
-\@thisruleclass=\count319
-\@lastruleclass=\count320
-\@thisrulewidth=\dimen178
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count314
+\@cmidlb=\count315
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count316
+\@lastruleclass=\count317
+\@thisrulewidth=\dimen174
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
-\col@sep=\dimen179
-\ar@mcellbox=\box61
-\extrarowheight=\dimen180
-\NC@list=\toks24
-\extratabsurround=\skip59
-\backup@length=\skip60
-\ar@cellbox=\box62
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen175
+\ar@mcellbox=\box60
+\extrarowheight=\dimen176
+\NC@list=\toks23
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box61
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count321
-\calc@Bcount=\count322
-\calc@Adimen=\dimen181
-\calc@Bdimen=\dimen182
-\calc@Askip=\skip61
-\calc@Bskip=\skip62
+\calc@Acount=\count318
+\calc@Bcount=\count319
+\calc@Adimen=\dimen177
+\calc@Bdimen=\dimen178
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count323
-\calc@Cskip=\skip63
+\calc@Ccount=\count320
+\calc@Cskip=\skip62
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count324
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count321
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box63
-\fn@width=\dimen183
+\fn@notes=\box62
+\fn@width=\dimen179
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
@@ -415,25 +399,227 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 )
-\Gin@req@height=\dimen184
-\Gin@req@width=\dimen185
+\Gin@req@height=\dimen180
+\Gin@req@width=\dimen181
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip63
+\f@nch@offset@elh=\skip64
+\f@nch@offset@erh=\skip65
+\f@nch@offset@olh=\skip66
+\f@nch@offset@orh=\skip67
+\f@nch@offset@elf=\skip68
+\f@nch@offset@erf=\skip69
+\f@nch@offset@olf=\skip70
+\f@nch@offset@orf=\skip71
+\f@nch@height=\skip72
+\f@nch@footalignment=\skip73
+\f@nch@widthL=\skip74
+\f@nch@widthC=\skip75
+\f@nch@widthR=\skip76
+\@temptokenb=\toks25
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 )
-\cslhangindent=\skip64
-\csllabelwidth=\skip65
-\cslentryspacingunit=\skip66
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+Package fontspec Info: 
+(fontspec)             Asap-Regular scale = 0.8240895802820682.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Regular scale = 0.8240895802820682.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Regular scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Bold scale = 0.8240895802820682.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Bold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Italic scale = 0.8240895802820682.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Italic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-BoldItalic scale = 0.8240895802820682.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-BoldItalic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Asap(0)' created for font 'Asap' with
+(fontspec)             options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX,Scale=1,Path =
+(fontspec)             fonts/,Extension = .ttf,UprightFont =
+(fontspec)             *-Regular,BoldFont = *-Bold,ItalicFont =
+(fontspec)             *-Italic,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[fonts/Asap-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[fonts/Asap-Bold.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[fonts/Asap-Italic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[fonts/Asap-BoldItalic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 103.
+
+Package fontspec Info: 
+(fontspec)             Asap-Regular scale = 0.9999970824556386.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Regular scale = 0.9999970824556386.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Bold scale = 0.9999970824556386.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-Italic scale = 0.9999970824556386.
+
+
+Package fontspec Info: 
+(fontspec)             Asap-BoldItalic scale = 0.9999970824556386.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Asap(1)' created for font 'Asap' with
+(fontspec)             options [Scale=MatchLowercase,Path = fonts/,Extension =
+(fontspec)             .ttf,UprightFont = *-Regular,BoldFont =
+(fontspec)             *-Bold,ItalicFont = *-Italic,BoldItalicFont =
+(fontspec)             *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999970824556386]"[fonts/Asap-Regular.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999970824556386]"[fonts/Asap-Bold.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999970824556386]"[fonts/Asap-Italic.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999970824556386]"[fonts/Asap-BoldItalic.ttf]/OT:script=latn;language=dflt;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/Asap(1)/m/n on input line 103.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/Asap(1)/m/it on input line 103.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/Asap(1)/b/n on input line 103.
+
+Package fontspec Info: 
+(fontspec)             Urbanist-Regular scale = 1.04599595338149.
+
+
+Package fontspec Info: 
+(fontspec)             Urbanist-Regular scale = 1.04599595338149.
+
+
+Package fontspec Info: 
+(fontspec)             Urbanist-Bold scale = 1.04599595338149.
+
+
+Package fontspec Info: 
+(fontspec)             Urbanist-Italic scale = 1.04599595338149.
+
+
+Package fontspec Info: 
+(fontspec)             Urbanist-BoldItalic scale = 1.04599595338149.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Urbanist(0)' created for font 'Urbanist'
+(fontspec)             with options [Scale=MatchLowercase,Path =
+(fontspec)             fonts/,Extension = .ttf,UprightFont =
+(fontspec)             *-Regular,BoldFont = *-Bold,ItalicFont =
+(fontspec)             *-Italic,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.04599595338149]"[fonts/Urbanist-Regular.ttf]/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.04599595338149]"[fonts/Urbanist-Bold.ttf]/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.04599595338149]"[fonts/Urbanist-Italic.ttf]/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.04599595338149]"[fonts/Urbanist-BoldItalic.ttf]/OT:script=DFLT;language=dflt;"
+
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/nowidow/nowidow.sty
+Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
+Package: nowidow 
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box63
+\beforetitleunit=\skip77
+\aftertitleunit=\skip78
+\ttl@plus=\dimen182
+\ttl@minus=\dimen183
+\ttl@toksa=\toks26
+\titlewidth=\dimen184
+\titlewidthlast=\dimen185
+\titlewidthfirst=\dimen186
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count322
+\Gm@cntv=\count323
+\c@Gm@tempcnt=\count324
+\Gm@bindingoffset=\dimen187
+\Gm@wd@mp=\dimen188
+\Gm@odd@mp=\dimen189
+\Gm@even@mp=\dimen190
+\Gm@layoutwidth=\dimen191
+\Gm@layoutheight=\dimen192
+\Gm@layouthoffset=\dimen193
+\Gm@layoutvoffset=\dimen194
+\Gm@dimlist=\toks27
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
@@ -441,75 +627,301 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count325
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count326
+\c@listtotal=\count327
+\c@listcount=\count328
+\c@liststart=\count329
+\c@liststop=\count330
+\c@citecount=\count331
+\c@citetotal=\count332
+\c@multicitecount=\count333
+\c@multicitetotal=\count334
+\c@instcount=\count335
+\c@maxnames=\count336
+\c@minnames=\count337
+\c@maxitems=\count338
+\c@minitems=\count339
+\c@citecounter=\count340
+\c@maxcitecounter=\count341
+\c@savedcitecounter=\count342
+\c@uniquelist=\count343
+\c@uniquename=\count344
+\c@refsection=\count345
+\c@refsegment=\count346
+\c@maxextratitle=\count347
+\c@maxextratitleyear=\count348
+\c@maxextraname=\count349
+\c@maxextradate=\count350
+\c@maxextraalpha=\count351
+\c@abbrvpenalty=\count352
+\c@highnamepenalty=\count353
+\c@lownamepenalty=\count354
+\c@maxparens=\count355
+\c@parenlevel=\count356
+\blx@tempcnta=\count357
+\blx@tempcntb=\count358
+\blx@tempcntc=\count359
+\c@blx@maxsection=\count360
+\blx@maxsegment@0=\count361
+\blx@notetype=\count362
+\blx@parenlevel@text=\count363
+\blx@parenlevel@foot=\count364
+\blx@sectionciteorder@0=\count365
+\blx@sectionciteorderinternal@0=\count366
+\blx@entrysetcounter=\count367
+\blx@biblioinstance=\count368
+\labelnumberwidth=\skip79
+\labelalphawidth=\skip80
+\biblabelsep=\skip81
+\bibitemsep=\skip82
+\bibnamesep=\skip83
+\bibinitsep=\skip84
+\bibparsep=\skip85
+\bibhang=\skip86
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language3
+\c@mincomprange=\count369
+\c@maxcomprange=\count370
+\c@mincompwidth=\count371
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'verbose.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count372
+\c@savedafterword=\count373
+\c@annotator=\count374
+\c@savedannotator=\count375
+\c@author=\count376
+\c@savedauthor=\count377
+\c@bookauthor=\count378
+\c@savedbookauthor=\count379
+\c@commentator=\count380
+\c@savedcommentator=\count381
+\c@editor=\count382
+\c@savededitor=\count383
+\c@editora=\count384
+\c@savededitora=\count385
+\c@editorb=\count386
+\c@savededitorb=\count387
+\c@editorc=\count388
+\c@savededitorc=\count389
+\c@foreword=\count390
+\c@savedforeword=\count391
+\c@holder=\count392
+\c@savedholder=\count393
+\c@introduction=\count394
+\c@savedintroduction=\count395
+\c@namea=\count396
+\c@savednamea=\count397
+\c@nameb=\count398
+\c@savednameb=\count399
+\c@namec=\count400
+\c@savednamec=\count401
+\c@translator=\count402
+\c@savedtranslator=\count403
+\c@shortauthor=\count404
+\c@savedshortauthor=\count405
+\c@shorteditor=\count406
+\c@savedshorteditor=\count407
+\c@labelname=\count408
+\c@savedlabelname=\count409
+\c@institution=\count410
+\c@savedinstitution=\count411
+\c@lista=\count412
+\c@savedlista=\count413
+\c@listb=\count414
+\c@savedlistb=\count415
+\c@listc=\count416
+\c@savedlistc=\count417
+\c@listd=\count418
+\c@savedlistd=\count419
+\c@liste=\count420
+\c@savedliste=\count421
+\c@listf=\count422
+\c@savedlistf=\count423
+\c@location=\count424
+\c@savedlocation=\count425
+\c@organization=\count426
+\c@savedorganization=\count427
+\c@origlocation=\count428
+\c@savedoriglocation=\count429
+\c@origpublisher=\count430
+\c@savedorigpublisher=\count431
+\c@publisher=\count432
+\c@savedpublisher=\count433
+\c@language=\count434
+\c@savedlanguage=\count435
+\c@origlanguage=\count436
+\c@savedoriglanguage=\count437
+\c@pageref=\count438
+\c@savedpageref=\count439
+\shorthandwidth=\skip87
+\shortjournalwidth=\skip88
+\shortserieswidth=\skip89
+\shorttitlewidth=\skip90
+\shortauthorwidth=\skip91
+\shorteditorwidth=\skip92
+\locallabelnumberwidth=\skip93
+\locallabelalphawidth=\skip94
+\localshorthandwidth=\skip95
+\localshortjournalwidth=\skip96
+\localshortserieswidth=\skip97
+\localshorttitlewidth=\skip98
+\localshortauthorwidth=\skip99
+\localshorteditorwidth=\skip100
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count440
+\c@textcitetotal=\count441
+\c@textcitemaxnames=\count442
+\c@biburlbigbreakpenalty=\count443
+\c@biburlbreakpenalty=\count444
+\c@biburlnumpenalty=\count445
+\c@biburlucpenalty=\count446
+\c@biburllcpenalty=\count447
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count448
+)
+Package biblatex Info: Trying to load bibliography style 'verbose'...
+Package biblatex Info: ... file 'verbose.bbx' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/verbose.bbx
+File: verbose.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.bbx' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
+File: authortitle.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count449
+\c@bbx:relatedtotal=\count450
+)))
+Package biblatex Info: Trying to load citation style 'verbose'...
+Package biblatex Info: ... file 'verbose.cbx' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/verbose.cbx
+File: verbose.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2026-01-19 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-))
-\c@section@level=\count325
+)
+\c@section@level=\count451
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen186
-\Hy@linkcounter=\count326
-\Hy@pagecounter=\count327
+\@linkdim=\dimen195
+\Hy@linkcounter=\count452
+\Hy@pagecounter=\count453
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count328
+\Hy@SavedSpaceFactor=\count454
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4066.
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Option `unicode' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count329
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip19
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen187
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count455
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen196
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count330
-\Field@Width=\dimen188
-\Fld@charsize=\dimen189
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count331
-\c@Item=\count332
-\c@Hfootnote=\count333
+\Fld@menulength=\count456
+\Field@Width=\dimen197
+\Fld@charsize=\dimen198
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count457
+\c@Item=\count458
+\c@Hfootnote=\count459
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
+File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
 \pdfm@box=\box64
-\c@Hy@AnnotLevel=\count334
-\HyField@AnnotCount=\count335
-\Fld@listcount=\count336
-\c@bookmark@seq@number=\count337
+\c@Hy@AnnotLevel=\count460
+\HyField@AnnotCount=\count461
+\Fld@listcount=\count462
+\c@bookmark@seq@number=\count463
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -517,59 +929,367 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip67
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
-File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
-\BKM@id=\count338
+\Hy@SectionHShift=\skip101
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 171.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 171.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 171.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count464
+\float@exts=\toks28
+\float@box=\box65
+\@float@everytoks=\toks29
+\@floatcapt=\box66
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen199
+\TX@old@table=\dimen256
+\TX@old@col=\dimen257
+\TX@target=\dimen258
+\TX@delta=\dimen259
+\TX@cols=\count465
+\TX@ftn=\toks30
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip102
+\enit@outerparindent=\dimen260
+\enit@toks=\toks31
+\enit@inbox=\box67
+\enit@count@id=\count466
+\enitdp@description=\count467
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count468
+\FV@InFile=\read3
+\FV@TabBox=\box68
+\c@FancyVerbLine=\count469
+\FV@StepNumber=\count470
+\FV@OutFile=\write4
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count471
+\lst@gtempboxa=\box69
+\lst@token=\toks32
+\lst@length=\count472
+\lst@currlwidth=\dimen261
+\lst@column=\count473
+\lst@pos=\count474
+\lst@lostspace=\dimen262
+\lst@width=\dimen263
+\lst@newlines=\count475
+\lst@lineno=\count476
+\lst@maxwidth=\dimen264
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count477
+\lst@skipnumbers=\count478
+\lst@framebox=\box70
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-No file _main.aux.
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2025/11/14 1.11b listings language file
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpage2e.sty
+Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (HMM)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
+Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count479
+) 
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip103
+\fb@frw=\dimen265
+\fb@frh=\dimen266
+\FrameRule=\dimen267
+\FrameSep=\dimen268
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen269
+\pgfutil@tempdimb=\dimen270
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box71
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks36
+))
+\pgf@x=\dimen271
+\pgf@y=\dimen272
+\pgf@xa=\dimen273
+\pgf@ya=\dimen274
+\pgf@xb=\dimen275
+\pgf@yb=\dimen276
+\pgf@xc=\dimen277
+\pgf@yc=\dimen278
+\pgf@xd=\dimen279
+\pgf@yd=\dimen280
+\w@pgf@writea=\write5
+\r@pgf@reada=\read4
+\c@pgf@counta=\count480
+\c@pgf@countb=\count481
+\c@pgf@countc=\count482
+\c@pgf@countd=\count483
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
+\pgf@sys@id@count=\count484
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-xetex.def
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count485
+))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count486
+\pgfsyssoftpath@bigbuffer@items=\count487
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen281
+\pgfmath@count=\count488
+\pgfmath@box=\box72
+\pgfmath@toks=\toks40
+\pgfmath@stack@operand=\toks41
+\pgfmath@stack@operation=\toks42
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count489
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen282
+\pgf@picmaxx=\dimen283
+\pgf@picminy=\dimen284
+\pgf@picmaxy=\dimen285
+\pgf@pathminx=\dimen286
+\pgf@pathmaxx=\dimen287
+\pgf@pathminy=\dimen288
+\pgf@pathmaxy=\dimen289
+\pgf@xx=\dimen290
+\pgf@xy=\dimen291
+\pgf@yx=\dimen292
+\pgf@yy=\dimen293
+\pgf@zx=\dimen294
+\pgf@zy=\dimen295
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen296
+\pgf@path@lasty=\dimen297
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen298
+\pgf@shorten@start@additional=\dimen299
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box73
+\pgf@hbox=\box74
+\pgf@layerbox@main=\box75
+\pgf@picture@serial@count=\count490
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen300
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen301
+\pgf@pt@y=\dimen302
+\pgf@pt@temp=\dimen303
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen304
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen305
+\pgf@sys@shading@range@num=\count491
+\pgf@shadingcount=\count492
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box76
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box77
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen306
+\pgf@nodesepend=\dimen307
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen308
+\pgffor@skip=\dimen309
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count493
+\pgfplotmarksize=\dimen310
+)
+\tikz@lastx=\dimen311
+\tikz@lasty=\dimen312
+\tikz@lastxsaved=\dimen313
+\tikz@lastysaved=\dimen314
+\tikz@lastmovetox=\dimen315
+\tikz@lastmovetoy=\dimen316
+\tikzleveldistance=\dimen317
+\tikzsiblingdistance=\dimen318
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count494
+\tikznumberofchildren=\count495
+\tikznumberofcurrentchild=\count496
+\tikz@fig@count=\count497
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count498
+\pgfmatrixcurrentcolumn=\count499
+\pgf@matrix@numberofcolumns=\count500
+)
+\tikz@expandcount=\count501
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks45
+\verbatim@line=\toks46
+\verbatim@in@stream=\read5
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box82
+\tcb@upperbox=\box83
+\tcb@lowerbox=\box84
+\tcb@phantombox=\box85
+\c@tcbbreakpart=\count502
+\c@tcblayer=\count503
+\c@tcolorbox@number=\count504
+\l__tcobox_tmpa_box=\box86
+\l__tcobox_tmpa_dim=\dimen319
+\tcb@temp=\box87
+\tcb@temp=\box88
+\tcb@temp=\box89
+\tcb@temp=\box90
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ltablex/ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip104
+\thanksmargin=\skip105
+\droptitle=\skip106
+) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
+\BKM@id=\count505
+))
+\@quotelevel=\count506
+\@quotereset=\count507
+(./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 146.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 146.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 146.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 348.
+LaTeX Font Info:    ... okay on input line 348.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 146.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 348.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 146.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 348.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 146.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 348.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 146.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 348.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
@@ -581,31 +1301,31 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 146.
+(Font)              scaled to size 12.13455pt on input line 348.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
@@ -617,278 +1337,1215 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 146.
+(Font)              scaled to size 12.13455pt on input line 348.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 146.
+(Font)              `operators' in the math version `normal' on input line 348.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 146.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 348.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 146.
+(Font)              `operators' in the math version `bold' on input line 348.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 146.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 348.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213573821872755.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213573821872755.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213573821872755.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213573821872755.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.213573821872755.
 
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
-(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
-(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
-(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
-(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
-(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
-(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
-(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
-(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
-(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax }].
+(fontspec)             8\font =8.21509pt\relax \fontdimen 9\font
+(fontspec)             =4.78102pt\relax \fontdimen 10\font =5.38774pt\relax
+(fontspec)             \fontdimen 11\font =8.32431pt\relax \fontdimen 12\font
+(fontspec)             =4.18642pt\relax \fontdimen 13\font =4.40485pt\relax
+(fontspec)             \fontdimen 14\font =4.40485pt\relax \fontdimen 15\font
+(fontspec)             =3.50688pt\relax \fontdimen 16\font =2.99724pt\relax
+(fontspec)             \fontdimen 17\font =2.99724pt\relax \fontdimen 18\font
+(fontspec)             =3.03365pt\relax \fontdimen 19\font =2.42691pt\relax
+(fontspec)             \fontdimen 22\font =3.03365pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.213573821872755]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.213573821872755]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.213573821872755]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.213573821872755]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 146.
+(Font)              `symbols' in the math version `normal' on input line 348.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 146.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 348.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 146.
+(Font)              `symbols' in the math version `bold' on input line 348.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 146.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 348.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213331131377429.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213331131377429.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213331131377429.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.213331131377429.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.213452476625092.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.213331131377429.
 
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
-(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
-(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
-(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)             8\font =0.48538pt\relax \fontdimen 9\font
+(fontspec)             =2.42691pt\relax \fontdimen 10\font =2.02647pt\relax
+(fontspec)             \fontdimen 11\font =1.34694pt\relax \fontdimen 12\font
+(fontspec)             =7.28073pt\relax \fontdimen 13\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.213331131377429]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.213331131377429]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.213331131377429]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.213331131377429]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 146.
+(Font)              `largesymbols' in the math version `normal' on input line 348.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 146.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 348.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 146.
+(Font)              `largesymbols' in the math version `bold' on input line 348.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 146.
-Package hyperref Info: Link coloring OFF on input line 146.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 348.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Warning: Rerun to get /PageLabels entry.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `_main.bcf'.
 
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '_main.bbl' found.
+(./_main.bbl)
+Package biblatex Info: Reference section=0 on input line 348.
+Package biblatex Info: Reference segment=0 on input line 348.
+Package hyperref Info: Link coloring OFF on input line 348.
+\c@lstlisting=\count508
+File: images/LTER-LIFE-logo.pdf Graphic file (type pdf)
+<use images/LTER-LIFE-logo.pdf>
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 349.
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 148.
+(Font)              scaled to size 14.56146pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 9.70764pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 148.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 148.
+(Font)              scaled to size 7.28073pt on input line 349.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 349.
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 148.
+(Font)              scaled to size 14.56293pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 148.
+(Font)              scaled to size 9.70862pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 148.
+(Font)              scaled to size 7.28146pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 148.
+(Font)              scaled to size 14.56pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 148.
+(Font)              scaled to size 9.70667pt on input line 349.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 148.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 148.
+(Font)              scaled to size 7.28pt on input line 349.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 349.
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 148.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 349.
 (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[1
+) [1
 
 
-]
-
-[2
+] [2
 
 ]
-No file _main.toc.
-\tf@toc=\write4
-\openout4 = `_main.toc'.
-
-
-
-[3]
-
-[4
-
-]
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 353.
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 20.74pt on input line 353.
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 353.
+(./_main.toc
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 171.
+(Font)              scaled to size 8.49419pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 171.
+(Font)              scaled to size 6.06728pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 171.
+(Font)              scaled to size 12.13577pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 171.
+(Font)              scaled to size 8.49504pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 171.
+(Font)              scaled to size 6.06789pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 171.
+(Font)              scaled to size 12.13333pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 171.
+(Font)              scaled to size 8.49333pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 171.
+(Font)              scaled to size 6.06667pt on input line 6.
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 12.
+[3] [4])
+\tf@toc=\write6
+\openout6 = `_main.toc'.
 
-Package hyperref Warning: Suppressing empty link on input line 173.
+[5] [6
 
+]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
+(Font)              scaled to size 12.55188pt on input line 370.
 
+Package hyperref Warning: Suppressing empty link on input line 377.
 
-[5]
+File: images/icon_disclaimer.pdf Graphic file (type pdf)
+<use images/icon_disclaimer.pdf>
 
-[6]
+Underfull \vbox (badness 1762) has occurred while \output is active []
 
 [7]
-
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 420.
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 420.
+LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
+(Font)              scaled to size 15.06224pt on input line 420.
 [8]
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 454.
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 454.
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 454.
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 454.
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 462.
+[9] [10]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[11
 
-[9
+] [12
 
 ]
-
-[10]
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 517.
+[13] [14]
 Chapter 1.
+File: images/Figure1.pdf Graphic file (type pdf)
+<use images/Figure1.pdf>
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[15
 
-Underfull \hbox (badness 3668) in paragraph at lines 265--266
-[]\TU/lmr/bx/n/10 Interoperable \TU/lmr/m/n/10 means that (meta)data can be integrated with other
+] [16] [17]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[18]
+File: images/figure_FAIRtoMSSS.pdf Graphic file (type pdf)
+<use images/figure_FAIRtoMSSS.pdf>
+
+LaTeX Warning: Float too large for page by 72.11221pt on input line 622.
+
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[19] [20]
+Chapter 2.
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+File: images/ID-card_budburst.pdf Graphic file (type pdf)
+<use images/ID-card_budburst.pdf>
+File: images/ID-card_cricket.pdf Graphic file (type pdf)
+<use images/ID-card_cricket.pdf>
+[21
+
+] [22]
+File: images/ID-card_CLUE.pdf Graphic file (type pdf)
+<use images/ID-card_CLUE.pdf>
+[23] [24
+
+] [25] [26]
+Chapter 3.
+[27
+
+]
+File: images/workflow.pdf Graphic file (type pdf)
+<use images/workflow.pdf>
+[28] [29
+
+] [30]
+Chapter 4.
+File: images/icon_disclaimer.pdf Graphic file (type pdf)
+<use images/icon_disclaimer.pdf>
+[31
+
+]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[32]
+
+Package hyperref Warning: Suppressing empty link on input line 878.
+
+
+Package hyperref Warning: Suppressing empty link on input line 879.
+
+
+Package hyperref Warning: Suppressing empty link on input line 880.
+
+
+Package hyperref Warning: Suppressing empty link on input line 881.
+
+
+Package hyperref Warning: Suppressing empty link on input line 882.
+
+
+Package hyperref Warning: Suppressing empty link on input line 883.
+
+
+Package hyperref Warning: Suppressing empty link on input line 884.
+
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[33]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[34] [35
+
+] [36]
+Chapter 5.
+[37
+
+]
+Underfull \hbox (badness 3291) in paragraph at lines 952--953
+[]\TU/Asap(0)/m/n/10 Depending on the format your data/metadata is stored in, not every repository will accept your
+ []
+
+[38] [39] [40] [41
+
+] [42]
+Chapter 6.
+[43
+
+] [44] [45]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=681.15898pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-45.43198pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1154.
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 1154.
+
+Overfull \hbox (5.96231pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 parentMeasurementID| 
  []
 
 
+Overfull \hbox (32.11432pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 earliestEonOrLowestEonothem| 
+ []
 
-[11
+
+Overfull \hbox (24.84131pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 earliestEraOrLowestErathem| 
+ []
+
+
+Overfull \hbox (1.39131pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 associatedOrganisms| 
+ []
+
+
+Overfull \hbox (26.18532pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 earliestEpochOrLowestSeries| 
+ []
+
+
+Overfull \hbox (6.70432pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 previousIdentifications| 
+ []
+
+
+Overfull \hbox (1.7483pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 associatedSequences| 
+ []
+
+
+Overfull \hbox (21.18732pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 lowestBiostratigraphicZone| 
+ []
+
+
+Overfull \hbox (2.79831pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/b/n/7 measurementMethod| 
+ []
+
+
+Overfull \hbox (7.1103pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 materialEntityRemarks| 
+ []
+
+
+Overfull \hbox (8.15332pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 lithostratigraphicTerms| 
+ []
+
+
+Overfull \hbox (6.1233pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/b/n/7 organismQuantityType| 
+ []
+
+
+Overfull \hbox (6.81631pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 measurementAccuracy| 
+ []
+
+
+Overfull \hbox (30.25931pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 measurementDeterminedDate| 
+ []
+
+
+Overfull \hbox (33.10132pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 coordinateUncertaintyInMeters| 
+ []
+
+
+Overfull \hbox (23.00032pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 measurementDeterminedBy| 
+ []
+
+
+Overfull \hbox (2.3993pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 acceptedNameUsage| 
+ []
+
+
+Overfull \hbox (5.73131pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 measurementRemarks| 
+ []
+
+
+Overfull \hbox (21.55132pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 minimumElevationInMeters| 
+ []
+
+
+Overfull \hbox (8.85332pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 degreeOfEstablishment| 
+ []
+
+
+Overfull \hbox (11.61832pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 minimumDepthinMeters| 
+ []
+
+
+Overfull \hbox (3.3583pt too wide) in paragraph at lines 1154--1154
+[]|\TU/Asap(0)/m/n/7 georeferenceProtocol| 
+ []
+
+[46
+
 
 ]
+Overfull \hbox (2.39612pt too wide) in paragraph at lines 1175--1176
+[]\TU/Asap(0)/m/n/10 Occurrence  
+ []
 
-! LaTeX Error: File `images/Figure1' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.271 ...aphics[width=1\linewidth]{images/Figure1}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (41.59612pt too wide) in paragraph at lines 1179--1180
+[]\TU/Asap(0)/m/n/10 MeasurementOrFact  
+ []
 
- 
+
+Overfull \hbox (14.14612pt too wide) in paragraph at lines 1185--1186
+[]\TU/Asap(0)/m/n/10 MaterialEntity  
+ []
+
+
+Overfull \hbox (33.46611pt too wide) in paragraph at lines 1187--1188
+[]\TU/Asap(0)/m/n/10 GeologicalContext  
+ []
+
+
+Overfull \hbox (10.5561pt too wide) in paragraph at lines 1193--1193
+[]|\TU/Asap(0)/b/n/10 occurrenceID|  
+ []
+
+
+Overfull \hbox (22.00612pt too wide) in paragraph at lines 1193--1193
+[]|\TU/Asap(0)/b/n/10 measurementID|  
+ []
+
+
+Overfull \hbox (1.8661pt too wide) in paragraph at lines 1193--1193
+[]|\TU/Asap(0)/b/n/10 organismID|  
+ []
+
+
+Overfull \hbox (23.97612pt too wide) in paragraph at lines 1193--1193
+[]|\TU/Asap(0)/m/n/10 materialEntityID|  
+ []
+
+
+Overfull \hbox (32.00612pt too wide) in paragraph at lines 1193--1194
+[]|\TU/Asap(0)/m/n/10 geologicalContext|  
+ []
+
+
+Overfull \hbox (14.88611pt too wide) in paragraph at lines 1194--1194
+[]|\TU/Asap(0)/b/n/10 parentEventID|  
+ []
+
+
+Overfull \hbox (1.57611pt too wide) in paragraph at lines 1194--1194
+[]|\TU/Asap(0)/m/n/10 recordedBy|  
+ []
+
+
+Overfull \hbox (50.97612pt too wide) in paragraph at lines 1194--1194
+[]|\TU/Asap(0)/m/n/10 parentMeasurementID|  
+ []
+
+
+Overfull \hbox (18.59612pt too wide) in paragraph at lines 1194--1194
+[]|\TU/Asap(0)/m/n/10 organismName|  
+ []
+
+
+Overfull \hbox (7.62611pt too wide) in paragraph at lines 1194--1194
+[]|\TU/Asap(0)/m/n/10 preparations|  
+ []
+
+
+Overfull \hbox (88.3361pt too wide) in paragraph at lines 1194--1195
+[]|\TU/Asap(0)/m/n/10 earliestEonOrLowestEonothem|  
+ []
+
+
+Overfull \hbox (11.35611pt too wide) in paragraph at lines 1195--1195
+[]|\TU/Asap(0)/m/n/10 recordedByID|  
+ []
+
+
+Overfull \hbox (33.14612pt too wide) in paragraph at lines 1195--1195
+[]|\TU/Asap(0)/b/n/10 measurementType|  
+ []
+
+
+Overfull \hbox (7.98611pt too wide) in paragraph at lines 1195--1195
+[]|\TU/Asap(0)/b/n/10 countryCode|  
+ []
+
+
+Overfull \hbox (18.74611pt too wide) in paragraph at lines 1195--1195
+[]|\TU/Asap(0)/m/n/10 organismScope|  
+ []
+
+
+Overfull \hbox (77.9461pt too wide) in paragraph at lines 1195--1196
+[]|\TU/Asap(0)/m/n/10 earliestEraOrLowestErathem|  
+ []
+
+
+Overfull \hbox (11.35611pt too wide) in paragraph at lines 1196--1196
+[]|\TU/Asap(0)/m/n/10 recordedByID|  
+ []
+
+
+Overfull \hbox (37.37611pt too wide) in paragraph at lines 1196--1196
+[]|\TU/Asap(0)/b/n/10 measurementValue|  
+ []
+
+
+Overfull \hbox (25.6661pt too wide) in paragraph at lines 1196--1196
+[]|\TU/Asap(0)/b/n/10 verbatimLocality|  
+ []
+
+
+Overfull \hbox (44.4461pt too wide) in paragraph at lines 1196--1196
+[]|\TU/Asap(0)/m/n/10 associatedOrganisms|  
+ []
+
+
+Overfull \hbox (15.32611pt too wide) in paragraph at lines 1196--1196
+[]|\TU/Asap(0)/m/n/10 verbatimLabel|  
+ []
+
+
+Overfull \hbox (79.8661pt too wide) in paragraph at lines 1196--1197
+[]|\TU/Asap(0)/m/n/10 earliestEpochOrLowestSeries|  
+ []
+
+
+Overfull \hbox (21.59612pt too wide) in paragraph at lines 1197--1197
+[]|\TU/Asap(0)/b/n/10 individualCount|  
+ []
+
+
+Overfull \hbox (30.98611pt too wide) in paragraph at lines 1197--1197
+[]|\TU/Asap(0)/b/n/10 measurementUnit|  
+ []
+
+
+Overfull \hbox (31.07611pt too wide) in paragraph at lines 1197--1197
+[]|\TU/Asap(0)/b/n/10 decimalLongitude|  
+ []
+
+
+Overfull \hbox (52.03612pt too wide) in paragraph at lines 1197--1197
+[]|\TU/Asap(0)/m/n/10 previousIdentifications|  
+ []
+
+
+Overfull \hbox (44.95612pt too wide) in paragraph at lines 1197--1197
+[]|\TU/Asap(0)/m/n/10 associatedSequences|  
+ []
+
+
+Overfull \hbox (72.72612pt too wide) in paragraph at lines 1197--1198
+[]|\TU/Asap(0)/m/n/10 lowestBiostratigraphicZone|  
+ []
+
+
+Overfull \hbox (30.28612pt too wide) in paragraph at lines 1198--1198
+[]|\TU/Asap(0)/b/n/10 organismQuantity|  
+ []
+
+
+Overfull \hbox (46.45612pt too wide) in paragraph at lines 1198--1198
+[]|\TU/Asap(0)/b/n/10 measurementMethod|  
+ []
+
+
+Overfull \hbox (23.22612pt too wide) in paragraph at lines 1198--1198
+[]|\TU/Asap(0)/b/n/10 decimalLatitude|  
+ []
+
+
+Overfull \hbox (30.50612pt too wide) in paragraph at lines 1198--1198
+[]|\TU/Asap(0)/m/n/10 organismRemarks|  
+ []
+
+
+Overfull \hbox (52.61612pt too wide) in paragraph at lines 1198--1198
+[]|\TU/Asap(0)/m/n/10 materialEntityRemarks|  
+ []
+
+
+Overfull \hbox (54.10611pt too wide) in paragraph at lines 1198--1199
+[]|\TU/Asap(0)/m/n/10 lithostratigraphicTerms|  
+ []
+
+
+Overfull \hbox (51.20612pt too wide) in paragraph at lines 1199--1199
+[]|\TU/Asap(0)/b/n/10 organismQuantityType|  
+ []
+
+
+Overfull \hbox (52.1961pt too wide) in paragraph at lines 1199--1199
+[]|\TU/Asap(0)/m/n/10 measurementAccuracy|  
+ []
+
+
+Overfull \hbox (19.56612pt too wide) in paragraph at lines 1199--1199
+[]|\TU/Asap(0)/b/n/10 geodeticDatum|  
+ []
+
+
+Overfull \hbox (16.61612pt too wide) in paragraph at lines 1200--1200
+[]|\TU/Asap(0)/b/n/10 specificEpithet|  
+ []
+
+
+Overfull \hbox (85.68611pt too wide) in paragraph at lines 1200--1200
+[]|\TU/Asap(0)/m/n/10 measurementDeterminedDate|  
+ []
+
+
+Overfull \hbox (89.74611pt too wide) in paragraph at lines 1200--1200
+[]|\TU/Asap(0)/m/n/10 coordinateUncertaintyInMeters|  
+ []
+
+
+Overfull \hbox (29.3061pt too wide) in paragraph at lines 1201--1201
+[]|\TU/Asap(0)/m/n/10 samplingProtocol|  
+ []
+
+
+Overfull \hbox (17.4161pt too wide) in paragraph at lines 1201--1201
+[]|\TU/Asap(0)/b/n/10 scientificName|  
+ []
+
+
+Overfull \hbox (75.31612pt too wide) in paragraph at lines 1201--1201
+[]|\TU/Asap(0)/m/n/10 measurementDeterminedBy|  
+ []
+
+
+Overfull \hbox (10.92612pt too wide) in paragraph at lines 1201--1201
+[]|\TU/Asap(0)/m/n/10 footprintWKT|  
+ []
+
+
+Overfull \hbox (26.42612pt too wide) in paragraph at lines 1202--1202
+[]|\TU/Asap(0)/m/n/10 sampleSizeValue|  
+ []
+
+
+Overfull \hbox (45.88611pt too wide) in paragraph at lines 1202--1202
+[]|\TU/Asap(0)/m/n/10 acceptedNameUsage|  
+ []
+
+
+Overfull \hbox (50.64612pt too wide) in paragraph at lines 1202--1202
+[]|\TU/Asap(0)/m/n/10 measurementRemarks|  
+ []
+
+
+Overfull \hbox (73.24611pt too wide) in paragraph at lines 1202--1202
+[]|\TU/Asap(0)/m/n/10 minimumElevationInMeters|  
+ []
+
+
+Overfull \hbox (20.03612pt too wide) in paragraph at lines 1203--1203
+[]|\TU/Asap(0)/m/n/10 sampleSizeUnit|  
+ []
+
+
+Overfull \hbox (55.10611pt too wide) in paragraph at lines 1203--1203
+[]|\TU/Asap(0)/m/n/10 degreeOfEstablishment|  
+ []
+
+
+Overfull \hbox (31.17612pt too wide) in paragraph at lines 1203--1203
+[]|\TU/Asap(0)/m/n/10 nameAccordingTo|  
+ []
+
+
+Overfull \hbox (59.0561pt too wide) in paragraph at lines 1203--1203
+[]|\TU/Asap(0)/m/n/10 minimumDepthinMeters|  
+ []
+
+
+Overfull \hbox (16.46611pt too wide) in paragraph at lines 1204--1204
+[]|\TU/Asap(0)/m/n/10 samplingEffort|  
+ []
+
+
+Overfull \hbox (27.76611pt too wide) in paragraph at lines 1204--1204
+[]|\TU/Asap(0)/m/n/10 occurrenceStatus|  
+ []
+
+
+Overfull \hbox (39.00612pt too wide) in paragraph at lines 1204--1204
+[]|\TU/Asap(0)/m/n/10 higherClassification|  
+ []
+
+
+Overfull \hbox (47.25612pt too wide) in paragraph at lines 1204--1204
+[]|\TU/Asap(0)/m/n/10 georeferenceProtocol|  
+ []
+
+
+Overfull \hbox (39.1961pt too wide) in paragraph at lines 1205--1205
+[]|\TU/Asap(0)/m/n/10 occurrenceRemarks|  
+ []
+
+
+Overfull \hbox (14.3361pt too wide) in paragraph at lines 1206--1206
+[]|\TU/Asap(0)/m/n/10 eventRemarks|  
+ []
+
+
+Overfull \hbox (20.6661pt too wide) in paragraph at lines 1206--1206
+[]|\TU/Asap(0)/m/n/10 catalogNumber|  
+ []
+
+
+Overfull \hbox (25.32611pt too wide) in paragraph at lines 1206--1206
+[]|\TU/Asap(0)/m/n/10 vernacularName|  
+ []
+
+LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
+(Font)              scaled to size 10.4599pt on input line 1215.
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+[47
+
+
+]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[48] [49]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+[50]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/it' will be
+(Font)              scaled to size 10.0pt on input line 1355.
+
+Overfull \hbox (16.20581pt too wide) in paragraph at lines 1369--1370
+ []\TU/Asap(0)/m/n/10 scientificName 
+ []
+
+
+Overfull \hbox (2.34906pt too wide) in paragraph at lines 1371--1372
+ []\TU/Asap(0)/m/n/10 kingdom 
+ []
+
+
+Overfull \hbox (28.95908pt too wide) in paragraph at lines 1383--1384
+ []\TU/Asap(0)/m/n/10 specificEpithet 
+ []
+
+
+Overfull \hbox (11.04907pt too wide) in paragraph at lines 1385--1386
+ []\TU/Asap(0)/m/n/10 taxonRank 
+ []
+
+
+Overfull \hbox (3.18907pt too wide) in paragraph at lines 1391--1391
+ []|\TU/Asap(0)/m/n/10 Animalia| 
+ []
+
+
+Overfull \hbox (14.26907pt too wide) in paragraph at lines 1391--1391
+ []|\TU/Asap(0)/m/n/10 Arthropoda| 
+ []
+
+
+Overfull \hbox (12.81906pt too wide) in paragraph at lines 1392--1392
+ []|\TU/Asap(0)/m/n/10 Orthoptera| 
+ []
+
+
+Overfull \hbox (4.10907pt too wide) in paragraph at lines 1392--1392
+ []|\TU/Asap(0)/m/n/10 Gryllidae| 
+ []
+
+
+Overfull \hbox (11.72906pt too wide) in paragraph at lines 1392--1392
+ []|\TU/Asap(0)/m/n/10 campestris| 
+ []
+
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+[51]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Overfull \hbox (20.13579pt too wide) in paragraph at lines 1422--1423
+ []\TU/Asap(0)/m/n/10 scientificName 
+ []
+
+
+Overfull \hbox (1.8785pt too wide) in paragraph at lines 1424--1425
+ []\TU/Asap(0)/m/n/10 kingdom 
+ []
+
+
+Overfull \hbox (28.48851pt too wide) in paragraph at lines 1436--1437
+ []\TU/Asap(0)/m/n/10 specificEpithet 
+ []
+
+
+Overfull \hbox (10.5785pt too wide) in paragraph at lines 1438--1439
+ []\TU/Asap(0)/m/n/10 taxonRank 
+ []
+
+
+Overfull \hbox (13.07579pt too wide) in paragraph at lines 1444--1444
+ []|\TU/Asap(0)/m/it/10 Deschampsia 
+ []
+
+
+Overfull \hbox (23.6085pt too wide) in paragraph at lines 1444--1444
+ []|\TU/Asap(0)/m/n/10 Tracheophyta| 
+ []
+
+
+Overfull \hbox (5.7785pt too wide) in paragraph at lines 1445--1445
+ []|\TU/Asap(0)/m/n/10 Liliopsida| 
+ []
+
+
+Overfull \hbox (1.0885pt too wide) in paragraph at lines 1445--1445
+ []|\TU/Asap(0)/m/n/10 Poaceae| 
+ []
+
+
+Overfull \hbox (1.9885pt too wide) in paragraph at lines 1445--1445
+ []|\TU/Asap(0)/m/n/10 Avenella| 
+ []
+
+[52]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Overfull \hbox (5.02632pt too wide) in paragraph at lines 1514--1515
+ []\TU/Asap(0)/m/n/10 measurementValue 
+ []
+
+[53]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[54] [55] [56]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1677--1677
+[]\TU/lmtt/m/n/10 ##                                                                                   note[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1678--1678
+[]\TU/lmtt/m/n/10 ## 1                                                                                 <NA>[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1679--1679
+[]\TU/lmtt/m/n/10 ## 2   Similarity: name=110; authorship=0; classification=-2; rank=6; status=0; score=114[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1680--1680
+[]\TU/lmtt/m/n/10 ## 3  Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1681--1681
+[]\TU/lmtt/m/n/10 ## 4  Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1682--1682
+[]\TU/lmtt/m/n/10 ## 5     Similarity: name=95; authorship=0; classification=-2; rank=6; status=0; score=99[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1683--1683
+[]\TU/lmtt/m/n/10 ## 6     Similarity: name=90; authorship=0; classification=-2; rank=6; status=1; score=95[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1684--1684
+[]\TU/lmtt/m/n/10 ## 7      Similarity: name=5; authorship=0; classification=-2; rank=6; status=1; score=10[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1685--1685
+[]\TU/lmtt/m/n/10 ## 8       Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1686--1686
+[]\TU/lmtt/m/n/10 ## 9       Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1687--1687
+[]\TU/lmtt/m/n/10 ## 10      Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1688--1688
+[]\TU/lmtt/m/n/10 ## 11     Similarity: name=5; authorship=0; classification=-2; rank=6; status=-5; score=4[] 
+ []
+
+
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1689--1689
+[]\TU/lmtt/m/n/10 ## 12     Similarity: name=5; authorship=0; classification=-2; rank=6; status=-5; score=4[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[57]
+Overfull \vbox (1411.1691pt too high) has occurred while \output is active []
+
+[58]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+[59]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[60] [61] [62
+
+] [63] [64]
+Chapter 7.
+File: images/DwC-relationalDatabase.pdf Graphic file (type pdf)
+<use images/DwC-relationalDatabase.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[65
+
+]
+File: images/star-schema.pdf Graphic file (type pdf)
+<use images/star-schema.pdf>
+[66] [67] [68] [69] [70] [71] [72
+
+] [73] [74]
+Chapter 8.
+[75
+
+]
+Underfull \hbox (badness 1681) in paragraph at lines 2200--2201
+\TU/Asap(0)/m/n/10 son/position/organisation accordingly. It is therefore required to choose at least one of the terms
+ []
+
+[76]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+[77]
+LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
+(Font)              scaled to size 13.00003pt on input line 2293.
+[78] [79]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+[80]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[81]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[83]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[84] [85] [86
+
+] [87] [88]
+Chapter 9.
+[89
+
+] [90
+
+]
+Chapter 10.
+[91]
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2713--2714
+[]\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
+ []
+
+
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2721--2722
+[]\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
+ []
+
+[92] [93] [94] [95] [96] [97] [98
+
+]
+Chapter 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3041--3043
+
+ []
+
+[99] [100] [101] [102] [103] [104
+
+] [105] [106] [107
+
+] [108] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(./_main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package logreq Info: Writing requests to '_main.run.xml'.
+\openout1 = `_main.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 17038 strings out of 470456
- 313379 string characters out of 5489228
- 859484 words of memory out of 5000000
- 45160 multiletter control sequences out of 15000+600000
- 633276 words of font info for 93 fonts, out of 8000000 for 9000
+ 40263 strings out of 470189
+ 811169 string characters out of 5476835
+ 1833939 words of memory out of 5000000
+ 68237 multiletter control sequences out of 15000+600000
+ 634380 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,6n,114p,931b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on _main.pdf (11 pages).
+ 98i,12n,116p,1454b,5730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on _main.pdf (108 pages).

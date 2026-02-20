@@ -98,7 +98,7 @@ code span.at {/*R*/
 .sourceCode {
   margin-bottom: 0.85em; /* adds same amount of margin as a <p> would */
 }
-/*------------Mavigation pane----------- */
+/*------------Navigation pane----------- */
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
     color: #00c0a8ff; /*-colour of active header in TOC and hover colour-*/

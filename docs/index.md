@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682), [Kim B. Ferguson](https://orcid.org/0000-0001-6483-1936), [Cees H.J. Hof](https://orcid.org/0000-0001-9624-2431), [Eric Kuijt](https://orcid.org/0009-0000-9455-6680), [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2026-02-19"
+date: "2026-02-20"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

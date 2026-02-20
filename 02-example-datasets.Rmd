@@ -12,7 +12,13 @@ This dataset contains long-term data on the phenology of different tree species.
 
 ```{r budburst, echo = FALSE, out.width = '50%', fig.cap = 'FAIR assessment of bud burst data. Striped circles indicate the hypothetical status of the dataset once it is stored in a repository (see note box above).', fig.align = 'center', dev = 'svg'}
 
-knitr::include_graphics("images/ID-card_budburst.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/ID-card_budburst.pdf"
+  } else {
+    "images/ID-card_budburst.svg"
+  }
+)
 
 ```
 
@@ -21,7 +27,13 @@ This dataset contains experimental data on invertebrates belonging to the public
 
 ```{r crickets, echo = FALSE, out.width = '50%', fig.cap = 'FAIR assessment of cricket data. Striped circles indicate the hypothetical status of the dataset once it is stored in a repository (see note box above).', fig.align = 'center', dev = 'svg'}
 
-knitr::include_graphics("images/ID-card_cricket.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/ID-card_cricket.pdf"
+  } else {
+    "images/ID-card_cricket.svg"
+  }
+)
 
 ```
 
@@ -31,6 +43,12 @@ This dataset consists of data on vegetation cover collected in a long-term grass
 
 ```{r CLUE, echo = FALSE, out.width = '50%', fig.cap = 'FAIR assessment of CLUE data. Striped circles indicate the hypothetical status of the dataset once it is stored in a repository (see note box above).', fig.align = 'center', dev = 'svg'}
 
-knitr::include_graphics("images/ID-card_CLUE.svg")
+knitr::include_graphics(
+  if (knitr::is_latex_output()) {
+    "images/ID-card_CLUE.pdf"
+  } else {
+    "images/ID-card_CLUE.svg"
+  }
+)
 
 ```

@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2026-02-19" />
+<meta name="date" content="2026-02-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -324,7 +326,7 @@ div.csl-indent {
 <p>Relational databases are a common format in structuring your data files, where individual files are linked to each other by specific identifiers. This allows for a high flexibility in structuring your data and does as such not require your data to be in a standardised format. In Darwin Core several ID fields exist with which tables/files can be connected to each other, allowing the possibility to structure your standardised data as a relational database (Figure <a href="07-structure.html#fig:relational-database">7.1</a>).</p>
 <p>In contrast to Darwin Core Archives (see <a href="07-structure.html#DarwinCore-Archive">Chapter Darwin Core Archive</a>), relational databases can reduce redundancy in the data and are more flexible in linking information.</p>
 <div class="figure"><span style="display:block;" id="fig:relational-database"></span>
-<img src="images/DwC-relationalDatabase-SVG.svg" alt="**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked." width="100%" />
+<img src="images/DwC-relationalDatabase.svg" alt="**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked." width="100%" />
 <p class="caption">
 Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong> Arrows refer to the identifier through which two files are linked.
 </p>
@@ -345,7 +347,7 @@ Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong>
 <h2><span class="header-section-number">7.3</span> The Core &amp; its extensions<a href="07-structure.html#the-core-its-extensions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure <a href="07-structure.html#fig:star-schema">7.2</a>). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently (per June 2024) under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:star-schema"></span>
-<img src="images/star-schema-svg.svg" alt="Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
+<img src="images/star-schema.svg" alt="Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
 <p class="caption">
 Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files.
 </p>
