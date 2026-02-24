@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.20)  23 FEB 2026 13:07
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.20)  24 FEB 2026 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1746,601 +1746,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[35] [36]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: xetex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(14.22636pt, 585.84227pt, 14.22636pt)
-* v-part:(T,H,B)=(14.22636pt, 766.51726pt, 14.22636pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=585.84227pt
-* \textheight=766.51726pt
-* \oddsidemargin=-58.04362pt
-* \evensidemargin=-58.04362pt
-* \topmargin=-88.11111pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-Overfull \hbox (13.93765pt too wide) in paragraph at lines 1141--1141
-[]|\TU/Asap(0)/m/n/10 MeasurementOrFact|  
- []
-
-
-Overfull \hbox (5.80765pt too wide) in paragraph at lines 1141--1142
-[]|\TU/Asap(0)/m/n/10 GeologicalContext|  
- []
-
-
-Overfull \hbox (95.99995pt too wide) in alignment at lines 1133--1143
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (13.93765pt too wide) in paragraph at lines 1147--1147
-[]|\TU/Asap(0)/m/n/10 MeasurementOrFact|  
- []
-
-
-Overfull \hbox (5.80765pt too wide) in paragraph at lines 1147--1148
-[]|\TU/Asap(0)/m/n/10 GeologicalContext|  
- []
-
-
-Overfull \hbox (95.99995pt too wide) in alignment at lines 1143--1149
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (95.99995pt too wide) in alignment at lines 1149--1152
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (95.99995pt too wide) in alignment at lines 1152--1155
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (4.34766pt too wide) in paragraph at lines 1157--1158
-[]|\TU/Asap(0)/m/n/10 geologicalContext|  
- []
-
-
-Overfull \hbox (23.31766pt too wide) in paragraph at lines 1158--1158
-[]|\TU/Asap(0)/m/n/10 parentMeasurementID|  
- []
-
-
-Overfull \hbox (60.67764pt too wide) in paragraph at lines 1158--1159
-[]|\TU/Asap(0)/m/n/10 earliestEonOrLowestEonothem|  
- []
-
-
-Overfull \hbox (5.48766pt too wide) in paragraph at lines 1159--1159
-[]|\TU/Asap(0)/b/n/10 measurementType|  
- []
-
-
-Overfull \hbox (50.28764pt too wide) in paragraph at lines 1159--1160
-[]|\TU/Asap(0)/m/n/10 earliestEraOrLowestErathem|  
- []
-
-
-Overfull \hbox (9.71765pt too wide) in paragraph at lines 1160--1160
-[]|\TU/Asap(0)/b/n/10 measurementValue|  
- []
-
-
-Overfull \hbox (22.6518pt too wide) in paragraph at lines 1160--1160
-[]|\TU/Asap(0)/m/n/10 associatedOrganisms|  
- []
-
-
-Overfull \hbox (52.20764pt too wide) in paragraph at lines 1160--1161
-[]|\TU/Asap(0)/m/n/10 earliestEpochOrLowestSeries|  
- []
-
-
-Overfull \hbox (3.32765pt too wide) in paragraph at lines 1161--1161
-[]|\TU/Asap(0)/b/n/10 measurementUnit|  
- []
-
-
-Overfull \hbox (3.41765pt too wide) in paragraph at lines 1161--1161
-[]|\TU/Asap(0)/b/n/10 decimalLongitude|  
- []
-
-
-Overfull \hbox (30.2418pt too wide) in paragraph at lines 1161--1161
-[]|\TU/Asap(0)/m/n/10 previousIdentifications|  
- []
-
-
-Overfull \hbox (17.29765pt too wide) in paragraph at lines 1161--1161
-[]|\TU/Asap(0)/m/n/10 associatedSequences|  
- []
-
-
-Overfull \hbox (45.06766pt too wide) in paragraph at lines 1161--1162
-[]|\TU/Asap(0)/m/n/10 lowestBiostratigraphicZone|  
- []
-
-
-Overfull \hbox (8.4918pt too wide) in paragraph at lines 1162--1162
-[]|\TU/Asap(0)/b/n/10 organismQuantity|  
- []
-
-
-Overfull \hbox (18.79765pt too wide) in paragraph at lines 1162--1162
-[]|\TU/Asap(0)/b/n/10 measurementMethod|  
- []
-
-
-Overfull \hbox (8.7118pt too wide) in paragraph at lines 1162--1162
-[]|\TU/Asap(0)/m/n/10 organismRemarks|  
- []
-
-
-Overfull \hbox (24.95766pt too wide) in paragraph at lines 1162--1162
-[]|\TU/Asap(0)/m/n/10 materialEntityRemarks|  
- []
-
-
-Overfull \hbox (26.44765pt too wide) in paragraph at lines 1162--1163
-[]|\TU/Asap(0)/m/n/10 lithostratigraphicTerms|  
- []
-
-
-Overfull \hbox (29.4118pt too wide) in paragraph at lines 1163--1163
-[]|\TU/Asap(0)/b/n/10 organismQuantityType|  
- []
-
-
-Overfull \hbox (24.53764pt too wide) in paragraph at lines 1163--1163
-[]|\TU/Asap(0)/m/n/10 measurementAccuracy|  
- []
-
-
-Overfull \hbox (58.02765pt too wide) in paragraph at lines 1164--1164
-[]|\TU/Asap(0)/m/n/10 measurementDeterminedDate|  
- []
-
-
-Overfull \hbox (62.08765pt too wide) in paragraph at lines 1164--1164
-[]|\TU/Asap(0)/m/n/10 coordinateUncertaintyInMeters|  
- []
-
-
-Overfull \hbox (7.5118pt too wide) in paragraph at lines 1165--1165
-[]|\TU/Asap(0)/m/n/10 samplingProtocol|  
- []
-
-
-Overfull \hbox (47.65765pt too wide) in paragraph at lines 1165--1165
-[]|\TU/Asap(0)/m/n/10 measurementDeterminedBy|  
- []
-
-
-Overfull \hbox (4.6318pt too wide) in paragraph at lines 1166--1166
-[]|\TU/Asap(0)/m/n/10 sampleSizeValue|  
- []
-
-
-Overfull \hbox (24.0918pt too wide) in paragraph at lines 1166--1166
-[]|\TU/Asap(0)/m/n/10 acceptedNameUsage|  
- []
-
-
-Overfull \hbox (22.98766pt too wide) in paragraph at lines 1166--1166
-[]|\TU/Asap(0)/m/n/10 measurementRemarks|  
- []
-
-
-Overfull \hbox (45.58765pt too wide) in paragraph at lines 1166--1166
-[]|\TU/Asap(0)/m/n/10 minimumElevationInMeters|  
- []
-
-
-Overfull \hbox (33.3118pt too wide) in paragraph at lines 1167--1167
-[]|\TU/Asap(0)/m/n/10 degreeOfEstablishment|  
- []
-
-
-Overfull \hbox (9.3818pt too wide) in paragraph at lines 1167--1167
-[]|\TU/Asap(0)/m/n/10 nameAccordingTo|  
- []
-
-
-Overfull \hbox (31.39764pt too wide) in paragraph at lines 1167--1167
-[]|\TU/Asap(0)/m/n/10 minimumDepthinMeters|  
- []
-
-
-Overfull \hbox (5.9718pt too wide) in paragraph at lines 1168--1168
-[]|\TU/Asap(0)/m/n/10 occurrenceStatus|  
- []
-
-
-Overfull \hbox (17.2118pt too wide) in paragraph at lines 1168--1168
-[]|\TU/Asap(0)/m/n/10 higherClassification|  
- []
-
-
-Overfull \hbox (19.59766pt too wide) in paragraph at lines 1168--1168
-[]|\TU/Asap(0)/m/n/10 georeferenceProtocol|  
- []
-
-
-Overfull \hbox (17.4018pt too wide) in paragraph at lines 1169--1169
-[]|\TU/Asap(0)/m/n/10 occurrenceRemarks|  
- []
-
-
-Overfull \hbox (3.5318pt too wide) in paragraph at lines 1170--1170
-[]|\TU/Asap(0)/m/n/10 vernacularName|  
- []
-
-
-Overfull \hbox (95.99995pt too wide) in alignment at lines 1155--1172
- [] [] [] [] [] [] [] [] 
- []
-
-[37
-
-
-
-]
-Overfull \hbox (2.39612pt too wide) in paragraph at lines 1192--1193
-[]\TU/Asap(0)/m/n/10 Occurrence  
- []
-
-
-Overfull \hbox (41.59612pt too wide) in paragraph at lines 1196--1197
-[]\TU/Asap(0)/m/n/10 MeasurementOrFact  
- []
-
-
-Overfull \hbox (14.14612pt too wide) in paragraph at lines 1202--1203
-[]\TU/Asap(0)/m/n/10 MaterialEntity  
- []
-
-
-Overfull \hbox (33.46611pt too wide) in paragraph at lines 1204--1205
-[]\TU/Asap(0)/m/n/10 GeologicalContext  
- []
-
-
-Overfull \hbox (10.5561pt too wide) in paragraph at lines 1210--1210
-[]|\TU/Asap(0)/b/n/10 occurrenceID|  
- []
-
-
-Overfull \hbox (22.00612pt too wide) in paragraph at lines 1210--1210
-[]|\TU/Asap(0)/b/n/10 measurementID|  
- []
-
-
-Overfull \hbox (1.8661pt too wide) in paragraph at lines 1210--1210
-[]|\TU/Asap(0)/b/n/10 organismID|  
- []
-
-
-Overfull \hbox (23.97612pt too wide) in paragraph at lines 1210--1210
-[]|\TU/Asap(0)/m/n/10 materialEntityID|  
- []
-
-
-Overfull \hbox (32.00612pt too wide) in paragraph at lines 1210--1211
-[]|\TU/Asap(0)/m/n/10 geologicalContext|  
- []
-
-
-Overfull \hbox (14.88611pt too wide) in paragraph at lines 1211--1211
-[]|\TU/Asap(0)/b/n/10 parentEventID|  
- []
-
-
-Overfull \hbox (1.57611pt too wide) in paragraph at lines 1211--1211
-[]|\TU/Asap(0)/m/n/10 recordedBy|  
- []
-
-
-Overfull \hbox (50.97612pt too wide) in paragraph at lines 1211--1211
-[]|\TU/Asap(0)/m/n/10 parentMeasurementID|  
- []
-
-
-Overfull \hbox (18.59612pt too wide) in paragraph at lines 1211--1211
-[]|\TU/Asap(0)/m/n/10 organismName|  
- []
-
-
-Overfull \hbox (7.62611pt too wide) in paragraph at lines 1211--1211
-[]|\TU/Asap(0)/m/n/10 preparations|  
- []
-
-
-Overfull \hbox (88.3361pt too wide) in paragraph at lines 1211--1212
-[]|\TU/Asap(0)/m/n/10 earliestEonOrLowestEonothem|  
- []
-
-
-Overfull \hbox (11.35611pt too wide) in paragraph at lines 1212--1212
-[]|\TU/Asap(0)/m/n/10 recordedByID|  
- []
-
-
-Overfull \hbox (33.14612pt too wide) in paragraph at lines 1212--1212
-[]|\TU/Asap(0)/b/n/10 measurementType|  
- []
-
-
-Overfull \hbox (7.98611pt too wide) in paragraph at lines 1212--1212
-[]|\TU/Asap(0)/b/n/10 countryCode|  
- []
-
-
-Overfull \hbox (18.74611pt too wide) in paragraph at lines 1212--1212
-[]|\TU/Asap(0)/m/n/10 organismScope|  
- []
-
-
-Overfull \hbox (77.9461pt too wide) in paragraph at lines 1212--1213
-[]|\TU/Asap(0)/m/n/10 earliestEraOrLowestErathem|  
- []
-
-
-Overfull \hbox (11.35611pt too wide) in paragraph at lines 1213--1213
-[]|\TU/Asap(0)/m/n/10 recordedByID|  
- []
-
-
-Overfull \hbox (37.37611pt too wide) in paragraph at lines 1213--1213
-[]|\TU/Asap(0)/b/n/10 measurementValue|  
- []
-
-
-Overfull \hbox (25.6661pt too wide) in paragraph at lines 1213--1213
-[]|\TU/Asap(0)/b/n/10 verbatimLocality|  
- []
-
-
-Overfull \hbox (44.4461pt too wide) in paragraph at lines 1213--1213
-[]|\TU/Asap(0)/m/n/10 associatedOrganisms|  
- []
-
-
-Overfull \hbox (15.32611pt too wide) in paragraph at lines 1213--1213
-[]|\TU/Asap(0)/m/n/10 verbatimLabel|  
- []
-
-
-Overfull \hbox (79.8661pt too wide) in paragraph at lines 1213--1214
-[]|\TU/Asap(0)/m/n/10 earliestEpochOrLowestSeries|  
- []
-
-
-Overfull \hbox (21.59612pt too wide) in paragraph at lines 1214--1214
-[]|\TU/Asap(0)/b/n/10 individualCount|  
- []
-
-
-Overfull \hbox (30.98611pt too wide) in paragraph at lines 1214--1214
-[]|\TU/Asap(0)/b/n/10 measurementUnit|  
- []
-
-
-Overfull \hbox (31.07611pt too wide) in paragraph at lines 1214--1214
-[]|\TU/Asap(0)/b/n/10 decimalLongitude|  
- []
-
-
-Overfull \hbox (52.03612pt too wide) in paragraph at lines 1214--1214
-[]|\TU/Asap(0)/m/n/10 previousIdentifications|  
- []
-
-
-Overfull \hbox (44.95612pt too wide) in paragraph at lines 1214--1214
-[]|\TU/Asap(0)/m/n/10 associatedSequences|  
- []
-
-
-Overfull \hbox (72.72612pt too wide) in paragraph at lines 1214--1215
-[]|\TU/Asap(0)/m/n/10 lowestBiostratigraphicZone|  
- []
-
-
-Overfull \hbox (30.28612pt too wide) in paragraph at lines 1215--1215
-[]|\TU/Asap(0)/b/n/10 organismQuantity|  
- []
-
-
-Overfull \hbox (46.45612pt too wide) in paragraph at lines 1215--1215
-[]|\TU/Asap(0)/b/n/10 measurementMethod|  
- []
-
-
-Overfull \hbox (23.22612pt too wide) in paragraph at lines 1215--1215
-[]|\TU/Asap(0)/b/n/10 decimalLatitude|  
- []
-
-
-Overfull \hbox (30.50612pt too wide) in paragraph at lines 1215--1215
-[]|\TU/Asap(0)/m/n/10 organismRemarks|  
- []
-
-
-Overfull \hbox (52.61612pt too wide) in paragraph at lines 1215--1215
-[]|\TU/Asap(0)/m/n/10 materialEntityRemarks|  
- []
-
-
-Overfull \hbox (54.10611pt too wide) in paragraph at lines 1215--1216
-[]|\TU/Asap(0)/m/n/10 lithostratigraphicTerms|  
- []
-
-
-Overfull \hbox (51.20612pt too wide) in paragraph at lines 1216--1216
-[]|\TU/Asap(0)/b/n/10 organismQuantityType|  
- []
-
-
-Overfull \hbox (52.1961pt too wide) in paragraph at lines 1216--1216
-[]|\TU/Asap(0)/m/n/10 measurementAccuracy|  
- []
-
-
-Overfull \hbox (19.56612pt too wide) in paragraph at lines 1216--1216
-[]|\TU/Asap(0)/b/n/10 geodeticDatum|  
- []
-
-
-Overfull \hbox (16.61612pt too wide) in paragraph at lines 1217--1217
-[]|\TU/Asap(0)/b/n/10 specificEpithet|  
- []
-
-
-Overfull \hbox (85.68611pt too wide) in paragraph at lines 1217--1217
-[]|\TU/Asap(0)/m/n/10 measurementDeterminedDate|  
- []
-
-
-Overfull \hbox (89.74611pt too wide) in paragraph at lines 1217--1217
-[]|\TU/Asap(0)/m/n/10 coordinateUncertaintyInMeters|  
- []
-
-
-Overfull \hbox (29.3061pt too wide) in paragraph at lines 1218--1218
-[]|\TU/Asap(0)/m/n/10 samplingProtocol|  
- []
-
-
-Overfull \hbox (17.4161pt too wide) in paragraph at lines 1218--1218
-[]|\TU/Asap(0)/b/n/10 scientificName|  
- []
-
-
-Overfull \hbox (75.31612pt too wide) in paragraph at lines 1218--1218
-[]|\TU/Asap(0)/m/n/10 measurementDeterminedBy|  
- []
-
-
-Overfull \hbox (10.92612pt too wide) in paragraph at lines 1218--1218
-[]|\TU/Asap(0)/m/n/10 footprintWKT|  
- []
-
-
-Overfull \hbox (26.42612pt too wide) in paragraph at lines 1219--1219
-[]|\TU/Asap(0)/m/n/10 sampleSizeValue|  
- []
-
-
-Overfull \hbox (45.88611pt too wide) in paragraph at lines 1219--1219
-[]|\TU/Asap(0)/m/n/10 acceptedNameUsage|  
- []
-
-
-Overfull \hbox (50.64612pt too wide) in paragraph at lines 1219--1219
-[]|\TU/Asap(0)/m/n/10 measurementRemarks|  
- []
-
-
-Overfull \hbox (73.24611pt too wide) in paragraph at lines 1219--1219
-[]|\TU/Asap(0)/m/n/10 minimumElevationInMeters|  
- []
-
-
-Overfull \hbox (20.03612pt too wide) in paragraph at lines 1220--1220
-[]|\TU/Asap(0)/m/n/10 sampleSizeUnit|  
- []
-
-
-Overfull \hbox (55.10611pt too wide) in paragraph at lines 1220--1220
-[]|\TU/Asap(0)/m/n/10 degreeOfEstablishment|  
- []
-
-
-Overfull \hbox (31.17612pt too wide) in paragraph at lines 1220--1220
-[]|\TU/Asap(0)/m/n/10 nameAccordingTo|  
- []
-
-
-Overfull \hbox (59.0561pt too wide) in paragraph at lines 1220--1220
-[]|\TU/Asap(0)/m/n/10 minimumDepthinMeters|  
- []
-
-
-Overfull \hbox (16.46611pt too wide) in paragraph at lines 1221--1221
-[]|\TU/Asap(0)/m/n/10 samplingEffort|  
- []
-
-
-Overfull \hbox (27.76611pt too wide) in paragraph at lines 1221--1221
-[]|\TU/Asap(0)/m/n/10 occurrenceStatus|  
- []
-
-
-Overfull \hbox (39.00612pt too wide) in paragraph at lines 1221--1221
-[]|\TU/Asap(0)/m/n/10 higherClassification|  
- []
-
-
-Overfull \hbox (47.25612pt too wide) in paragraph at lines 1221--1221
-[]|\TU/Asap(0)/m/n/10 georeferenceProtocol|  
- []
-
-
-Overfull \hbox (39.1961pt too wide) in paragraph at lines 1222--1222
-[]|\TU/Asap(0)/m/n/10 occurrenceRemarks|  
- []
-
-
-Overfull \hbox (14.3361pt too wide) in paragraph at lines 1223--1223
-[]|\TU/Asap(0)/m/n/10 eventRemarks|  
- []
-
-
-Overfull \hbox (20.6661pt too wide) in paragraph at lines 1223--1223
-[]|\TU/Asap(0)/m/n/10 catalogNumber|  
- []
-
-
-Overfull \hbox (25.32611pt too wide) in paragraph at lines 1223--1223
-[]|\TU/Asap(0)/m/n/10 vernacularName|  
- []
-
+[35]
+File: images/DwC-term-table-vertical.pdf Graphic file (type pdf)
+<use images/DwC-term-table-vertical.pdf>
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 10.4599pt on input line 1232.
+(Font)              scaled to size 10.4599pt on input line 1126.
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[38
-
-
-
-
-]
+[36]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 File: images/icon_example.pdf Graphic file (type pdf)
@@ -2348,216 +1761,218 @@ File: images/icon_example.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39] [40]
+[37] [38] [39]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
-[41]
+[40]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1372.
+(Font)              scaled to size 10.0pt on input line 1266.
 
-Overfull \hbox (16.20581pt too wide) in paragraph at lines 1386--1387
+Overfull \hbox (16.20581pt too wide) in paragraph at lines 1280--1281
  []\TU/Asap(0)/m/n/10 scientificName 
  []
 
 
-Overfull \hbox (2.34906pt too wide) in paragraph at lines 1388--1389
+Overfull \hbox (2.34906pt too wide) in paragraph at lines 1282--1283
  []\TU/Asap(0)/m/n/10 kingdom 
  []
 
 
-Overfull \hbox (28.95908pt too wide) in paragraph at lines 1400--1401
+Overfull \hbox (28.95908pt too wide) in paragraph at lines 1294--1295
  []\TU/Asap(0)/m/n/10 specificEpithet 
  []
 
 
-Overfull \hbox (11.04907pt too wide) in paragraph at lines 1402--1403
+Overfull \hbox (11.04907pt too wide) in paragraph at lines 1296--1297
  []\TU/Asap(0)/m/n/10 taxonRank 
  []
 
 
-Overfull \hbox (3.18907pt too wide) in paragraph at lines 1408--1408
+Overfull \hbox (3.18907pt too wide) in paragraph at lines 1302--1302
  []|\TU/Asap(0)/m/n/10 Animalia| 
  []
 
 
-Overfull \hbox (14.26907pt too wide) in paragraph at lines 1408--1408
+Overfull \hbox (14.26907pt too wide) in paragraph at lines 1302--1302
  []|\TU/Asap(0)/m/n/10 Arthropoda| 
  []
 
 
-Overfull \hbox (12.81906pt too wide) in paragraph at lines 1409--1409
+Overfull \hbox (12.81906pt too wide) in paragraph at lines 1303--1303
  []|\TU/Asap(0)/m/n/10 Orthoptera| 
  []
 
 
-Overfull \hbox (4.10907pt too wide) in paragraph at lines 1409--1409
+Overfull \hbox (4.10907pt too wide) in paragraph at lines 1303--1303
  []|\TU/Asap(0)/m/n/10 Gryllidae| 
  []
 
 
-Overfull \hbox (11.72906pt too wide) in paragraph at lines 1409--1409
+Overfull \hbox (11.72906pt too wide) in paragraph at lines 1303--1303
  []|\TU/Asap(0)/m/n/10 campestris| 
  []
 
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (20.13579pt too wide) in paragraph at lines 1333--1334
+ []\TU/Asap(0)/m/n/10 scientificName 
+ []
+
+
+Overfull \hbox (1.8785pt too wide) in paragraph at lines 1335--1336
+ []\TU/Asap(0)/m/n/10 kingdom 
+ []
+
+
+Overfull \hbox (28.48851pt too wide) in paragraph at lines 1347--1348
+ []\TU/Asap(0)/m/n/10 specificEpithet 
+ []
+
+
+Overfull \hbox (10.5785pt too wide) in paragraph at lines 1349--1350
+ []\TU/Asap(0)/m/n/10 taxonRank 
+ []
+
+
+Overfull \hbox (13.07579pt too wide) in paragraph at lines 1355--1355
+ []|\TU/Asap(0)/m/it/10 Deschampsia 
+ []
+
+
+Overfull \hbox (23.6085pt too wide) in paragraph at lines 1355--1355
+ []|\TU/Asap(0)/m/n/10 Tracheophyta| 
+ []
+
+
+Overfull \hbox (5.7785pt too wide) in paragraph at lines 1356--1356
+ []|\TU/Asap(0)/m/n/10 Liliopsida| 
+ []
+
+
+Overfull \hbox (1.0885pt too wide) in paragraph at lines 1356--1356
+ []|\TU/Asap(0)/m/n/10 Poaceae| 
+ []
+
+
+Overfull \hbox (1.9885pt too wide) in paragraph at lines 1356--1356
+ []|\TU/Asap(0)/m/n/10 Avenella| 
+ []
+
+[41]
+File: images/icon_note.pdf Graphic file (type pdf)
+<use images/icon_note.pdf>
+
+Underfull \vbox (badness 3815) has occurred while \output is active []
 
 [42]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (20.13579pt too wide) in paragraph at lines 1439--1440
- []\TU/Asap(0)/m/n/10 scientificName 
- []
-
-
-Overfull \hbox (1.8785pt too wide) in paragraph at lines 1441--1442
- []\TU/Asap(0)/m/n/10 kingdom 
- []
-
-
-Overfull \hbox (28.48851pt too wide) in paragraph at lines 1453--1454
- []\TU/Asap(0)/m/n/10 specificEpithet 
- []
-
-
-Overfull \hbox (10.5785pt too wide) in paragraph at lines 1455--1456
- []\TU/Asap(0)/m/n/10 taxonRank 
- []
-
-
-Overfull \hbox (13.07579pt too wide) in paragraph at lines 1461--1461
- []|\TU/Asap(0)/m/it/10 Deschampsia 
- []
-
-
-Overfull \hbox (23.6085pt too wide) in paragraph at lines 1461--1461
- []|\TU/Asap(0)/m/n/10 Tracheophyta| 
- []
-
-
-Overfull \hbox (5.7785pt too wide) in paragraph at lines 1462--1462
- []|\TU/Asap(0)/m/n/10 Liliopsida| 
- []
-
-
-Overfull \hbox (1.0885pt too wide) in paragraph at lines 1462--1462
- []|\TU/Asap(0)/m/n/10 Poaceae| 
- []
-
-
-Overfull \hbox (1.9885pt too wide) in paragraph at lines 1462--1462
- []|\TU/Asap(0)/m/n/10 Avenella| 
- []
-
-[43]
-File: images/icon_note.pdf Graphic file (type pdf)
-<use images/icon_note.pdf>
-File: images/icon_example.pdf Graphic file (type pdf)
-<use images/icon_example.pdf>
-
-Overfull \hbox (5.02632pt too wide) in paragraph at lines 1531--1532
+Overfull \hbox (5.02632pt too wide) in paragraph at lines 1425--1426
  []\TU/Asap(0)/m/n/10 measurementValue 
  []
 
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[43]
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
 [44]
-File: images/icon_example.pdf Graphic file (type pdf)
-<use images/icon_example.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[47]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1694--1694
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1588--1588
 []\TU/lmtt/m/n/10 ##                                                                                   note[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1695--1695
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1589--1589
 []\TU/lmtt/m/n/10 ## 1                                                                                 <NA>[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1696--1696
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1590--1590
 []\TU/lmtt/m/n/10 ## 2   Similarity: name=110; authorship=0; classification=-2; rank=6; status=0; score=114[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1697--1697
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1591--1591
 []\TU/lmtt/m/n/10 ## 3  Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1698--1698
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1592--1592
 []\TU/lmtt/m/n/10 ## 4  Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1699--1699
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1593--1593
 []\TU/lmtt/m/n/10 ## 5     Similarity: name=95; authorship=0; classification=-2; rank=6; status=0; score=99[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1700--1700
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1594--1594
 []\TU/lmtt/m/n/10 ## 6     Similarity: name=90; authorship=0; classification=-2; rank=6; status=1; score=95[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1701--1701
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1595--1595
 []\TU/lmtt/m/n/10 ## 7      Similarity: name=5; authorship=0; classification=-2; rank=6; status=1; score=10[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1702--1702
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1596--1596
 []\TU/lmtt/m/n/10 ## 8       Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1703--1703
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1597--1597
 []\TU/lmtt/m/n/10 ## 9       Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1598--1598
 []\TU/lmtt/m/n/10 ## 10      Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1705--1705
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1599--1599
 []\TU/lmtt/m/n/10 ## 11     Similarity: name=5; authorship=0; classification=-2; rank=6; status=-5; score=4[] 
  []
 
 
-Overfull \hbox (32.36201pt too wide) in paragraph at lines 1706--1706
+Overfull \hbox (32.36201pt too wide) in paragraph at lines 1600--1600
 []\TU/lmtt/m/n/10 ## 12     Similarity: name=5; authorship=0; classification=-2; rank=6; status=-5; score=4[] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48]
+[46]
 Overfull \vbox (1337.1691pt too high) has occurred while \output is active []
 
-[49]
+[47]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[50]
+[48]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51] [52] [53
+[49] [50] [51
 
 ]
 Chapter 7.
@@ -2566,7 +1981,7 @@ File: images/DwC-relationalDatabase.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[54
+[52
 
 ]
 File: images/star-schema.pdf Graphic file (type pdf)
@@ -2574,45 +1989,62 @@ File: images/star-schema.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[55]
+[53]
 Underfull \vbox (badness 1735) has occurred while \output is active []
+
+[54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[58]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[59] [60] [61
+[57] [58] [59
 
 ]
 Chapter 8.
-[62
+[60
 
 ]
-Underfull \hbox (badness 1681) in paragraph at lines 2217--2218
+Underfull \hbox (badness 1681) in paragraph at lines 2111--2112
 \TU/Asap(0)/m/n/10 son/position/organisation accordingly. It is therefore required to choose at least one of the terms
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[63]
+[61]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[64]
+[62]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 13.00003pt on input line 2310.
+(Font)              scaled to size 13.00003pt on input line 2204.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[64]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [65]
+File: images/icon_example.pdf Graphic file (type pdf)
+<use images/icon_example.pdf>
+
+Overfull \hbox (42.86201pt too wide) in paragraph at lines 2396--2396
+[]\TU/lmtt/m/n/10 keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology", "plant phenology"),[] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [66]
@@ -2622,84 +2054,61 @@ File: images/icon_example.pdf Graphic file (type pdf)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [67]
-File: images/icon_example.pdf Graphic file (type pdf)
-<use images/icon_example.pdf>
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [68]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (42.86201pt too wide) in paragraph at lines 2535--2535
-[]\TU/lmtt/m/n/10 keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology", "plant phenology"),[] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[69]
-File: images/icon_example.pdf Graphic file (type pdf)
-<use images/icon_example.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[70]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[71]
-File: images/icon_example.pdf Graphic file (type pdf)
-<use images/icon_example.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[72] [73] [74
+[69] [70] [71
 
 ]
 Chapter 9.
-[75
+[72
 
 ]
 Chapter 10.
-[76
+[73
 
 ]
-Overfull \hbox (4.1288pt too wide) in paragraph at lines 2761--2762
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2622--2623
 []\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (4.1288pt too wide) in paragraph at lines 2769--2770
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2630--2631
 []\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
  []
 
 
 Underfull \vbox (badness 3792) has occurred while \output is active []
 
-[77] [78] [79] [80] [81] [82]
+[74] [75] [76] [77] [78] [79]
 Chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3089--3091
+Underfull \hbox (badness 10000) in paragraph at lines 2950--2952
 
  []
 
 
 Underfull \vbox (badness 4181) has occurred while \output is active []
 
-[83
+[80
 
-] [84]
+] [81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[85] [86]
+[82] [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[87] [88]
+[84] [85]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 3348.
-[89
+(Font)              scaled to size 10.0pt on input line 3193.
+[86
 
-] [90] 
+] [87] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./_main.aux)
  ***********
@@ -2714,12 +2123,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39054 strings out of 470189
- 792338 string characters out of 5476835
- 1806136 words of memory out of 5000000
- 67053 multiletter control sequences out of 15000+600000
+ 39057 strings out of 470189
+ 792599 string characters out of 5476835
+ 1792676 words of memory out of 5000000
+ 67055 multiletter control sequences out of 15000+600000
  633395 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,12n,116p,1355b,5728s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on _main.pdf (90 pages).
+Output written on _main.pdf (87 pages).

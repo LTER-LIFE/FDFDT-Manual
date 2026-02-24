@@ -53,90 +53,11 @@ Namespaces are prefixes used to distinguish between terms from different vocabul
 Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the [Darwin Core List of terms](https://dwc.tdwg.org/list/). As Darwin Core is only a vocabulary, it does not have any required terms. Only if you later on want to organise your Darwin Core terms in a [Darwin Core Archive](#DwC-A), some of the terms are required (see [this section](#DarwinCore-Archive)).
 
 
-``` {=latex}
-{=latex}
-\begin{fulllandscape}
 
-\renewcommand{\arraystretch}{1.3}
-\setlength{\tabcolsep}{6pt}
-
-\begin{longtable}{
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
-}
-
-\caption{\textbf{Selected set of Darwin Core terms of each class.}
-Bold terms are described in more detail in the following sections.
-Note that none of the following terms are strictly required.}
-\label{tab:dwc_terms} \\
-
-\toprule
-Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialEntity & GeologicalContext \\
-\midrule
-\endfirsthead
-
-\caption[]{\textbf{Table \thetable\ (continued).}} \\
-\toprule
-Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialEntity & GeologicalContext \\
-\midrule
-\endhead
-
-\bottomrule
-\endfoot
-
-\bottomrule
-\endlastfoot
-
-\textbf{eventID} & \textbf{occurrenceID} & taxonID & \textbf{measurementID} & locationID & \textbf{organismID} & materialEntityID & geologicalContext \\
-\textbf{parentEventID} & recordedBy & \textbf{kingdom} & parentMeasurementID & \textbf{country} & organismName & preparations & earliestEonOrLowestEonothem \\
-eventType & recordedByID & \textbf{phylum} & \textbf{measurementType} & \textbf{countryCode} & organismScope & disposition & earliestEraOrLowestErathem \\
-\textbf{eventDate} & recordedByID & \textbf{class} & \textbf{measurementValue} & \textbf{verbatimLocality} & associatedOrganisms & verbatimLabel & earliestEpochOrLowestSeries \\
-\textbf{eventTime} & \textbf{individualCount} & \textbf{order} & \textbf{measurementUnit} & \textbf{decimalLongitude} & previousIdentifications & associatedSequences & lowestBiostratigraphicZone \\
-\textbf{year} & \textbf{organismQuantity} & \textbf{family} & \textbf{measurementMethod} & \textbf{decimalLatitude} & organismRemarks & materialEntityRemarks & lithostratigraphicTerms \\
-\textbf{month} & \textbf{organismQuantityType} & \textbf{genus} & measurementAccuracy & \textbf{geodeticDatum} &  &  & formation \\
-\textbf{day} & sex & \textbf{specificEpithet} & measurementDeterminedDate & coordinateUncertaintyInMeters &  &  & bed \\
-samplingProtocol & behavior & \textbf{scientificName} & measurementDeterminedBy & footprintWKT &  &  &  \\
-sampleSizeValue & lifeStage & acceptedNameUsage & measurementRemarks & minimumElevationInMeters &  &  &  \\
-sampleSizeUnit & degreeOfEstablishment & nameAccordingTo &  & minimumDepthinMeters &  &  &  \\
-samplingEffort & occurrenceStatus & higherClassification &  & georeferenceProtocol &  &  &  \\
-fieldNotes & occurrenceRemarks & taxonRank &  &  &  &  &  \\
-eventRemarks & catalogNumber & vernacularName &  &  &  &  &  \\
-
-\end{longtable}
-
-\restoregeometry
-\end{fulllandscape}
-
-```
+\includegraphics[width=1\linewidth]{images/DwC-term-table-vertical} 
 
 
-:::{.only-html .tableDwCterms}
-[**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections. Note that none of the following terms are strictly required.]{style="font-size: 11px;"}
 
-| Event             | Occurrence               | Taxon                | MeasurementOrFact         | Location                      | Organism                | MaterialEntity        | GeologicalContext           |
-|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|
-| **eventID**       | **occurrenceID**         | taxonID              | **measurementID**         | locationID                    | **organismID**          | materialEntityID      | geologicalContext           |
-| **parentEventID** | recordedBy               | **kingdom**          | parentMeasurementID       | **country**                   | organismName            | preparations          | earliestEonOrLowestEonothem |
-| eventType         | recordedByID             | **phylum**           | **measurementType**       | **countryCode**               | organismScope           | disposition           | earliestEraOrLowestErathem  |
-| **eventDate**     | recordedByID             | **class**            | **measurementValue**      | **verbatimLocality**          | associatedOrganisms     | verbatimLabel         | earliestEpochOrLowestSeries |
-| **eventTime**     | **individualCount**      | **order**            | **measurementUnit**       | **decimalLongitude**          | previousIdentifications | associatedSequences   | lowestBiostratigraphicZone  |
-| **year**          | **organismQuantity**     | **family**           | **measurementMethod**     | **decimalLatitude**           | organismRemarks         | materialEntityRemarks | lithostratigraphicTerms     |
-| **month**         | **organismQuantityType** | **genus**            | measurementAccuracy       | **geodeticDatum**             |                         |                       | formation                   |
-| **day**           | sex                      | **specificEpithet**  | measurementDeterminedDate | coordinateUncertaintyInMeters |                         |                       | bed                         |
-| samplingProtocol  | behavior                 | **scientificName**   | measurementDeterminedBy   | footprintWKT                  |                         |                       |                             |
-| sampleSizeValue   | lifeStage                | acceptedNameUsage    | measurementRemarks        | minimumElevationInMeters      |                         |                       |                             |
-| sampleSizeUnit    | degreeOfEstablishment    | nameAccordingTo      |                           | minimumDepthinMeters          |                         |                       |                             |
-| samplingEffort    | occurrenceStatus         | higherClassification |                           | georeferenceProtocol          |                         |                       |                             |
-| fieldNotes        | occurrenceRemarks        | taxonRank            |                           |                               |                         |                       |                             |
-| eventRemarks      | catalogNumber            | vernacularName       |                           |                               |                         |                       |                             |
-
-:::
 
 ### Terms of class Event
 

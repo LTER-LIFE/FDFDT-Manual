@@ -349,7 +349,7 @@
 
 \title{A hands-on guide to FAIR and structured ecological data}
 \author{\href{https://orcid.org/0009-0006-0723-2682}{Cherine C. Jantzen}, \href{https://orcid.org/0000-0001-6483-1936}{Kim B. Ferguson}, \href{https://orcid.org/0000-0001-9624-2431}{Cees H.J. Hof}, \href{https://orcid.org/0009-0000-9455-6680}{Eric Kuijt}, \href{http://orcid.org/0000-0002-9006-5988}{Stefan J.G. Vriend}}
-\date{2026-02-23}
+\date{2026-02-24}
 
 \begin{document}
 \maketitle
@@ -1115,113 +1115,7 @@ Namespaces are prefixes used to distinguish between terms from different vocabul
 
 Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the \href{https://dwc.tdwg.org/list/}{Darwin Core List of terms}. As Darwin Core is only a vocabulary, it does not have any required terms. Only if you later on want to organise your Darwin Core terms in a \protect\hyperlink{DwC-A}{Darwin Core Archive}, some of the terms are required (see \protect\hyperlink{DarwinCore-Archive}{this section}).
 
-{=latex}
-\begin{fulllandscape}
-
-\renewcommand{\arraystretch}{1.3}
-\setlength{\tabcolsep}{6pt}
-
-\begin{longtable}{
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
->{\raggedright\arraybackslash}p{0.12\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
->{\raggedright\arraybackslash}p{0.13\linewidth}
-}
-
-\caption{\textbf{Selected set of Darwin Core terms of each class.}
-Bold terms are described in more detail in the following sections.
-Note that none of the following terms are strictly required.}
-\label{tab:dwc_terms} \\
-
-\toprule
-Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialEntity & GeologicalContext \\
-\midrule
-\endfirsthead
-
-\caption[]{\textbf{Table \thetable\ (continued).}} \\
-\toprule
-Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialEntity & GeologicalContext \\
-\midrule
-\endhead
-
-\bottomrule
-\endfoot
-
-\bottomrule
-\endlastfoot
-
-\textbf{eventID} & \textbf{occurrenceID} & taxonID & \textbf{measurementID} & locationID & \textbf{organismID} & materialEntityID & geologicalContext \\
-\textbf{parentEventID} & recordedBy & \textbf{kingdom} & parentMeasurementID & \textbf{country} & organismName & preparations & earliestEonOrLowestEonothem \\
-eventType & recordedByID & \textbf{phylum} & \textbf{measurementType} & \textbf{countryCode} & organismScope & disposition & earliestEraOrLowestErathem \\
-\textbf{eventDate} & recordedByID & \textbf{class} & \textbf{measurementValue} & \textbf{verbatimLocality} & associatedOrganisms & verbatimLabel & earliestEpochOrLowestSeries \\
-\textbf{eventTime} & \textbf{individualCount} & \textbf{order} & \textbf{measurementUnit} & \textbf{decimalLongitude} & previousIdentifications & associatedSequences & lowestBiostratigraphicZone \\
-\textbf{year} & \textbf{organismQuantity} & \textbf{family} & \textbf{measurementMethod} & \textbf{decimalLatitude} & organismRemarks & materialEntityRemarks & lithostratigraphicTerms \\
-\textbf{month} & \textbf{organismQuantityType} & \textbf{genus} & measurementAccuracy & \textbf{geodeticDatum} &  &  & formation \\
-\textbf{day} & sex & \textbf{specificEpithet} & measurementDeterminedDate & coordinateUncertaintyInMeters &  &  & bed \\
-samplingProtocol & behavior & \textbf{scientificName} & measurementDeterminedBy & footprintWKT &  &  &  \\
-sampleSizeValue & lifeStage & acceptedNameUsage & measurementRemarks & minimumElevationInMeters &  &  &  \\
-sampleSizeUnit & degreeOfEstablishment & nameAccordingTo &  & minimumDepthinMeters &  &  &  \\
-samplingEffort & occurrenceStatus & higherClassification &  & georeferenceProtocol &  &  &  \\
-fieldNotes & occurrenceRemarks & taxonRank &  &  &  &  &  \\
-eventRemarks & catalogNumber & vernacularName &  &  &  &  &  \\
-
-\end{longtable}
-
-\restoregeometry
-\end{fulllandscape}
-
-{\textbf{Table 6.1. Selected set of Darwin Core terms of each class.} Bold terms are described in more detail in the following sections. Note that none of the following terms are strictly required.}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Event
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Occurrence
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Taxon
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-MeasurementOrFact
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Location
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Organism
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-MaterialEntity
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-GeologicalContext
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{eventID} & \textbf{occurrenceID} & taxonID & \textbf{measurementID} & locationID & \textbf{organismID} & materialEntityID & geologicalContext \\
-\textbf{parentEventID} & recordedBy & \textbf{kingdom} & parentMeasurementID & \textbf{country} & organismName & preparations & earliestEonOrLowestEonothem \\
-eventType & recordedByID & \textbf{phylum} & \textbf{measurementType} & \textbf{countryCode} & organismScope & disposition & earliestEraOrLowestErathem \\
-\textbf{eventDate} & recordedByID & \textbf{class} & \textbf{measurementValue} & \textbf{verbatimLocality} & associatedOrganisms & verbatimLabel & earliestEpochOrLowestSeries \\
-\textbf{eventTime} & \textbf{individualCount} & \textbf{order} & \textbf{measurementUnit} & \textbf{decimalLongitude} & previousIdentifications & associatedSequences & lowestBiostratigraphicZone \\
-\textbf{year} & \textbf{organismQuantity} & \textbf{family} & \textbf{measurementMethod} & \textbf{decimalLatitude} & organismRemarks & materialEntityRemarks & lithostratigraphicTerms \\
-\textbf{month} & \textbf{organismQuantityType} & \textbf{genus} & measurementAccuracy & \textbf{geodeticDatum} & & & formation \\
-\textbf{day} & sex & \textbf{specificEpithet} & measurementDeterminedDate & coordinateUncertaintyInMeters & & & bed \\
-samplingProtocol & behavior & \textbf{scientificName} & measurementDeterminedBy & footprintWKT & & & \\
-sampleSizeValue & lifeStage & acceptedNameUsage & measurementRemarks & minimumElevationInMeters & & & \\
-sampleSizeUnit & degreeOfEstablishment & nameAccordingTo & & minimumDepthinMeters & & & \\
-samplingEffort & occurrenceStatus & higherClassification & & georeferenceProtocol & & & \\
-fieldNotes & occurrenceRemarks & taxonRank & & & & & \\
-eventRemarks & catalogNumber & vernacularName & & & & & \\
-\end{longtable}
+\includegraphics[width=1\linewidth]{images/DwC-term-table-vertical}
 
 \hypertarget{terms-of-class-event}{%
 \subsection{Terms of class Event}\label{terms-of-class-event}}
@@ -2495,39 +2389,6 @@ The key for creating the EML.xml file are lists. The content of every EML term h
 \begin{examplebox}
 \textbf{Bud burst}:
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Provide keywords and their thesaurus fo the EML term "keywordSet"}
-\NormalTok{keywordSet }\OtherTok{\textless{}{-}} \FunctionTok{list}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{keyword =} \FunctionTok{list}\NormalTok{(}\StringTok{"bud burst"}\NormalTok{, }\StringTok{"trees"}\NormalTok{, }\StringTok{"ecology"}\NormalTok{, }\StringTok{"plant phenology"}\NormalTok{),}
-                      \AttributeTok{keywordThesaurus =} \StringTok{"envThes"}\NormalTok{),}
-                 \FunctionTok{list}\NormalTok{(}\AttributeTok{keyword =} \StringTok{"oak"}\NormalTok{,}
-                      \AttributeTok{keywordThesaurus =} \StringTok{"GEMET"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
-\emph{keyword} and \emph{keywordThesaurus} are the EML subterms of
-\emph{keywordSet}, which looks like this in XML:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{\textless{}}\KeywordTok{keywordSet}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keyword}\NormalTok{\textgreater{}bud burst\textless{}/}\KeywordTok{keyword}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keyword}\NormalTok{\textgreater{}trees\textless{}/}\KeywordTok{keyword}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keyword}\NormalTok{\textgreater{}ecology\textless{}/}\KeywordTok{keyword}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keyword}\NormalTok{\textgreater{}plant phenology\textless{}/}\KeywordTok{keyword}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keywordThesaurus}\NormalTok{\textgreater{}envThes\textless{}/}\KeywordTok{keywordThesaurus}\NormalTok{\textgreater{}}
-\NormalTok{\textless{}/}\KeywordTok{keywordSet}\NormalTok{\textgreater{}}
-\NormalTok{\textless{}}\KeywordTok{keywordSet}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keyword}\NormalTok{\textgreater{}oak\textless{}/}\KeywordTok{keyword}\NormalTok{\textgreater{}}
-\NormalTok{  \textless{}}\KeywordTok{keywordThesaurus}\NormalTok{\textgreater{}GEMET\textless{}/}\KeywordTok{keywordThesaurus}\NormalTok{\textgreater{}}
-\NormalTok{\textless{}/}\KeywordTok{keywordSet}\NormalTok{\textgreater{}}
-\end{Highlighting}
-\end{Shaded}
-\end{examplebox}
-
-\begin{examplebox}
-\textbf{Bud burst}:
-
 \begin{verbatim}
 In R:
 
@@ -3328,22 +3189,6 @@ Structure is about whether your data is organised in a consistent and logical wa
 \item
   Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
 \end{itemize}
-
-function Div(el)
-if el.attributes{[}`show-in'{]} then
-if FORMAT:match `latex' then
-if el.attributes{[}`show-in'{]} == ``html'' then
-el.content = ``\,''
-return el
-end
-elseif FORMAT:match `html' then
-if el.attributes{[}`show-in'{]} == `pdf' then
-el.content = ``\,''
-return el
-end
-end
-end
-end
 
 \printbibliography
 

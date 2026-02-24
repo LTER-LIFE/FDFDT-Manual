@@ -24,7 +24,7 @@ bookdown::pdf_book:
     - "--lua-filter"
     - "custom-blocks.lua"
     - "--no-highlight"
-    - "conditional-boxes.lua"
+    - "--lua-filter=conditional-boxes.lua"
   keep_tex: yes
 bookdown::epub_book:
   citation_package: none
