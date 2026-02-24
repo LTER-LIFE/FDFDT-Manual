@@ -1,3 +1,1 @@
 
-
-\printbibliography

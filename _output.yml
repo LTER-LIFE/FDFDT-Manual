@@ -17,11 +17,14 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: biblatex
+  biblio-style: apa
   pandoc_args: 
     - "--csl"
     - "apa.csl"
     - "--lua-filter"
     - "custom-blocks.lua"
+    - "--no-highlight"
+    - "conditional-boxes.lua"
   keep_tex: yes
 bookdown::epub_book:
   citation_package: none

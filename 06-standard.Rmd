@@ -54,15 +54,24 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 
 
 ``` {=latex}
-\begin{landscape}
-\newgeometry{left=1cm,right=1cm,top=2cm,bottom=2cm} 
-\scriptsize
-\setlength{\tabcolsep}{3pt}
+{=latex}
+\begin{fulllandscape}
 
-\begin{tabularx}{\linewidth}{XXXXXXXX} % 8 X columns
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
 
-\caption{\small 
-\textbf{Selected set of Darwin Core terms of each class.}
+\begin{longtable}{
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+}
+
+\caption{\textbf{Selected set of Darwin Core terms of each class.}
 Bold terms are described in more detail in the following sections.
 Note that none of the following terms are strictly required.}
 \label{tab:dwc_terms} \\
@@ -72,7 +81,7 @@ Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialE
 \midrule
 \endfirsthead
 
-\caption[]{\small \textbf{Table 6.1 (continued).}} \\
+\caption[]{\textbf{Table \thetable\ (continued).}} \\
 \toprule
 Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialEntity & GeologicalContext \\
 \midrule
@@ -80,6 +89,9 @@ Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialE
 
 \bottomrule
 \endfoot
+
+\bottomrule
+\endlastfoot
 
 \textbf{eventID} & \textbf{occurrenceID} & taxonID & \textbf{measurementID} & locationID & \textbf{organismID} & materialEntityID & geologicalContext \\
 \textbf{parentEventID} & recordedBy & \textbf{kingdom} & parentMeasurementID & \textbf{country} & organismName & preparations & earliestEonOrLowestEonothem \\
@@ -96,13 +108,13 @@ samplingEffort & occurrenceStatus & higherClassification &  & georeferenceProtoc
 fieldNotes & occurrenceRemarks & taxonRank &  &  &  &  &  \\
 eventRemarks & catalogNumber & vernacularName &  &  &  &  &  \\
 
-\end{tabularx}
+\end{longtable}
 
-\normalsize
 \restoregeometry
-\end{landscape}
+\end{fulllandscape}
 
 ```
+
 
 :::{.only-html .tableDwCterms}
 [**Table 6.1. Selected set of Darwin Core terms of each class.** Bold terms are described in more detail in the following sections. Note that none of the following terms are strictly required.]{style="font-size: 11px;"}

@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-]{book}
+  openany]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
@@ -82,13 +82,13 @@
 \renewcommand{\headrulewidth}{0pt}
 
 % ============================================================
-% LINE SPACING
+% Line spacing
 % ============================================================
 \usepackage{setspace}
 \onehalfspacing
 
 % ============================================================
-% FONT SETUP: Urbanist for headers, Asap for body
+% Fonts
 % ============================================================
 \usepackage{fontspec}
 
@@ -119,15 +119,19 @@
 \subsubsectionfont{\headerfont}
 
 % ============================================================
-% PAGE BREAKS & SPACING
+% Page breaks and spacing
 % ============================================================
-
 % Control orphans and widows (prevent single lines at page breaks)
 \usepackage[all]{nowidow}
 
+% paragraphs
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
 % Reduce space before chapters
 \usepackage{titlesec}
-\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\titlespacing*{\chapter}{0pt}{-15pt}{15pt}
 \titlespacing*{\section}{0pt}{12pt}{6pt}
 \titlespacing*{\subsection}{0pt}{10pt}{6pt}
 
@@ -157,22 +161,6 @@
 % HYPERLINKS & PDF PROPERTIES
 % ============================================================
 \usepackage{hyperref}
-\hypersetup{
-  pdftitle={FDFDT Manual},
-  pdfauthor={LTER-LIFE},
-  pdfsubject={Field Data Collection Manual},
-  pdfkeywords={fieldwork, data, manual},
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=blue,
-  urlcolor=blue,
-  bookmarksnumbered=true,
-  bookmarksopen=true
-}
-
-% ============================================================
-% COLORS
-% ============================================================
 \usepackage{xcolor}
 
 % Define custom colors
@@ -180,7 +168,7 @@
 \definecolor{darkgreen}{RGB}{34,139,34}
 
 % Use in hyperlinks
-% \hypersetup{linkcolor=darkblue, urlcolor=darkblue}
+\hypersetup{linkcolor=darkgreen, urlcolor=darkblue}
 
 % ============================================================
 % FIGURES & TABLES
@@ -196,8 +184,18 @@
 % Set maximum width for figures
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
-% Add spacing around tables
-\renewcommand{\arraystretch}{1.3}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+
+\newenvironment{fulllandscape}
+  {\clearpage
+   \begin{landscape}
+   \newgeometry{top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm}}
+  {\end{landscape}
+   \restoregeometry
+   \clearpage}
 
 % ============================================================
 % LIST FORMATTING
@@ -207,20 +205,6 @@
 % Reduce spacing in lists
 \setlist[enumerate]{itemsep=4pt,topsep=6pt}
 \setlist[itemize]{itemsep=4pt,topsep=6pt}
-
-% ============================================================
-% CODE & VERBATIM
-% ============================================================
-\usepackage{fancyvrb}
-\usepackage{listings}
-
-\lstset{
-  basicstyle=\ttfamily\small,
-  breaklines=true,
-  frame=single,
-  backgroundcolor=\color{gray!10},
-  language=R
-}
 
 % ============================================================
 % MISC PACKAGES
@@ -299,33 +283,55 @@
 }
 
 
-% ==================
-% Tables
-% ==================
-
-\usepackage{pdflscape}
-\usepackage{longtable}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{ltablex}
-\keepXColumns
-\usepackage{pdflscape}  % For \begin{landscape} ... \end{landscape}
-
-
 % ===================
 % Add logo to title page
 % ===================
-% Add logo to title page
-\usepackage{graphicx} 
-\usepackage{titling} 
+\usepackage{graphicx}
+\usepackage{titling}
 
-% Redefine \maketitle
-\pretitle{%
-  \begin{center}
-  \includegraphics[width=0.25\textwidth]{images/LTER-LIFE-logo.pdf}\par\vspace{1em} 
-  \LARGE
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    % Title
+    {\Huge\bfseries \thetitle \par}
+    \vspace{2em}
+
+    % Author
+    {\Large \theauthor \par}
+    \vspace{1em}
+
+    % Date
+    {\small \textsc{\thedate} \par}
+    \vspace{3em}
+
+    % Logo
+    \includegraphics[width=0.22\textwidth]{images/LTER-LIFE-logo.pdf}
+
+    \vspace*{\fill}
+  \end{titlepage}
 }
-\posttitle{\end{center}}
+
+
+% ============================================================
+% SYNTAX HIGHLIGHTING PASSTHROUGH
+% ============================================================
+% Make all highlighting macros just pass through the text
+\providecommand{\KeywordTok}[1]{#1}
+\providecommand{\DataTypeTok}[1]{#1}
+\providecommand{\DecValTok}[1]{#1}
+\providecommand{\StringTok}[1]{#1}
+\providecommand{\CommentTok}[1]{#1}
+\providecommand{\FunctionTok}[1]{#1}
+\providecommand{\NormalTok}[1]{#1}
+\providecommand{\OperatorTok}[1]{#1}
+\providecommand{\BuiltInTok}[1]{#1}
+\providecommand{\ErrorTok}[1]{#1}
+\providecommand{\WarningTok}[1]{#1}
+\providecommand{\AlertTok}[1]{#1}
+\providecommand{\ArgumentTok}[1]{#1}
+\providecommand{\RegionMarkerTok}[1]{#1}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -343,7 +349,7 @@
 
 \title{A hands-on guide to FAIR and structured ecological data}
 \author{\href{https://orcid.org/0009-0006-0723-2682}{Cherine C. Jantzen}, \href{https://orcid.org/0000-0001-6483-1936}{Kim B. Ferguson}, \href{https://orcid.org/0000-0001-9624-2431}{Cees H.J. Hof}, \href{https://orcid.org/0009-0000-9455-6680}{Eric Kuijt}, \href{http://orcid.org/0000-0002-9006-5988}{Stefan J.G. Vriend}}
-\date{2026-02-20}
+\date{2026-02-23}
 
 \begin{document}
 \maketitle
@@ -1109,15 +1115,24 @@ Namespaces are prefixes used to distinguish between terms from different vocabul
 
 Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the \href{https://dwc.tdwg.org/list/}{Darwin Core List of terms}. As Darwin Core is only a vocabulary, it does not have any required terms. Only if you later on want to organise your Darwin Core terms in a \protect\hyperlink{DwC-A}{Darwin Core Archive}, some of the terms are required (see \protect\hyperlink{DarwinCore-Archive}{this section}).
 
-\begin{landscape}
-\newgeometry{left=1cm,right=1cm,top=2cm,bottom=2cm} 
-\scriptsize
-\setlength{\tabcolsep}{3pt}
+{=latex}
+\begin{fulllandscape}
 
-\begin{tabularx}{\linewidth}{XXXXXXXX} % 8 X columns
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
 
-\caption{\small 
-\textbf{Selected set of Darwin Core terms of each class.}
+\begin{longtable}{
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.12\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.13\linewidth}
+}
+
+\caption{\textbf{Selected set of Darwin Core terms of each class.}
 Bold terms are described in more detail in the following sections.
 Note that none of the following terms are strictly required.}
 \label{tab:dwc_terms} \\
@@ -1127,7 +1142,7 @@ Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialE
 \midrule
 \endfirsthead
 
-\caption[]{\small \textbf{Table 6.1 (continued).}} \\
+\caption[]{\textbf{Table \thetable\ (continued).}} \\
 \toprule
 Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialEntity & GeologicalContext \\
 \midrule
@@ -1135,6 +1150,9 @@ Event & Occurrence & Taxon & MeasurementOrFact & Location & Organism & MaterialE
 
 \bottomrule
 \endfoot
+
+\bottomrule
+\endlastfoot
 
 \textbf{eventID} & \textbf{occurrenceID} & taxonID & \textbf{measurementID} & locationID & \textbf{organismID} & materialEntityID & geologicalContext \\
 \textbf{parentEventID} & recordedBy & \textbf{kingdom} & parentMeasurementID & \textbf{country} & organismName & preparations & earliestEonOrLowestEonothem \\
@@ -1151,11 +1169,10 @@ samplingEffort & occurrenceStatus & higherClassification &  & georeferenceProtoc
 fieldNotes & occurrenceRemarks & taxonRank &  &  &  &  &  \\
 eventRemarks & catalogNumber & vernacularName &  &  &  &  &  \\
 
-\end{tabularx}
+\end{longtable}
 
-\normalsize
 \restoregeometry
-\end{landscape}
+\end{fulllandscape}
 
 {\textbf{Table 6.1. Selected set of Darwin Core terms of each class.} Bold terms are described in more detail in the following sections. Note that none of the following terms are strictly required.}
 
@@ -2508,6 +2525,37 @@ The key for creating the EML.xml file are lists. The content of every EML term h
 \end{Shaded}
 \end{examplebox}
 
+\begin{examplebox}
+\textbf{Bud burst}:
+
+\begin{verbatim}
+In R:
+
+# Provide keywords and their thesaurus fo the EML term "keywordSet"
+keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology", "plant phenology"),
+                  keywordThesaurus = "envThes"),
+             list(keyword = "oak",
+                  keywordThesaurus = "GEMET"))
+\end{verbatim}
+
+\emph{keyword} and \emph{keywordThesaurus} are the EML subterms of
+\emph{keywordSet}, which looks like this in XML:
+
+\begin{verbatim}
+<keywordSet>
+  <keyword>bud burst</keyword>
+  <keyword>trees</keyword>
+  <keyword>ecology</keyword>
+  <keyword>plant phenology</keyword>
+  <keywordThesaurus>envThes</keywordThesaurus>
+</keywordSet>
+<keywordSet>
+ <keyword>oak</keyword>
+ <keywordThesaurus>GEMET</keywordThesaurus>
+</keywordSet>
+\end{verbatim}
+\end{examplebox}
+
 The lists of all terms have to be combined in a final list that can then be converted into an XML file through the function \texttt{write\_eml()} of the \texttt{EML} package.
 Some EML terms require XML attributes (see EML terms). These can be assigned using the \texttt{xml2} package by first identifying all nodes for which the attribute should be set (\texttt{xml2::xml\_find\_all()}) and then setting the attribute with \texttt{xml2::xml\_set\_attr()}).
 
@@ -3281,7 +3329,21 @@ Structure is about whether your data is organised in a consistent and logical wa
   Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
 \end{itemize}
 
-\printbibliography
+function Div(el)
+if el.attributes{[}`show-in'{]} then
+if FORMAT:match `latex' then
+if el.attributes{[}`show-in'{]} == ``html'' then
+el.content = ``\,''
+return el
+end
+elseif FORMAT:match `html' then
+if el.attributes{[}`show-in'{]} == `pdf' then
+el.content = ``\,''
+return el
+end
+end
+end
+end
 
 \printbibliography
 

@@ -17,13 +17,13 @@
 \renewcommand{\headrulewidth}{0pt}
 
 % ============================================================
-% LINE SPACING
+% Line spacing
 % ============================================================
 \usepackage{setspace}
 \onehalfspacing
 
 % ============================================================
-% FONT SETUP: Urbanist for headers, Asap for body
+% Fonts
 % ============================================================
 \usepackage{fontspec}
 
@@ -54,15 +54,19 @@
 \subsubsectionfont{\headerfont}
 
 % ============================================================
-% PAGE BREAKS & SPACING
+% Page breaks and spacing
 % ============================================================
-
 % Control orphans and widows (prevent single lines at page breaks)
 \usepackage[all]{nowidow}
 
+% paragraphs
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
 % Reduce space before chapters
 \usepackage{titlesec}
-\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\titlespacing*{\chapter}{0pt}{-15pt}{15pt}
 \titlespacing*{\section}{0pt}{12pt}{6pt}
 \titlespacing*{\subsection}{0pt}{10pt}{6pt}
 
@@ -92,22 +96,6 @@
 % HYPERLINKS & PDF PROPERTIES
 % ============================================================
 \usepackage{hyperref}
-\hypersetup{
-  pdftitle={FDFDT Manual},
-  pdfauthor={LTER-LIFE},
-  pdfsubject={Field Data Collection Manual},
-  pdfkeywords={fieldwork, data, manual},
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=blue,
-  urlcolor=blue,
-  bookmarksnumbered=true,
-  bookmarksopen=true
-}
-
-% ============================================================
-% COLORS
-% ============================================================
 \usepackage{xcolor}
 
 % Define custom colors
@@ -115,7 +103,7 @@
 \definecolor{darkgreen}{RGB}{34,139,34}
 
 % Use in hyperlinks
-% \hypersetup{linkcolor=darkblue, urlcolor=darkblue}
+\hypersetup{linkcolor=darkgreen, urlcolor=darkblue}
 
 % ============================================================
 % FIGURES & TABLES
@@ -131,8 +119,18 @@
 % Set maximum width for figures
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
-% Add spacing around tables
-\renewcommand{\arraystretch}{1.3}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+
+\newenvironment{fulllandscape}
+  {\clearpage
+   \begin{landscape}
+   \newgeometry{top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm}}
+  {\end{landscape}
+   \restoregeometry
+   \clearpage}
 
 % ============================================================
 % LIST FORMATTING
@@ -142,20 +140,6 @@
 % Reduce spacing in lists
 \setlist[enumerate]{itemsep=4pt,topsep=6pt}
 \setlist[itemize]{itemsep=4pt,topsep=6pt}
-
-% ============================================================
-% CODE & VERBATIM
-% ============================================================
-\usepackage{fancyvrb}
-\usepackage{listings}
-
-\lstset{
-  basicstyle=\ttfamily\small,
-  breaklines=true,
-  frame=single,
-  backgroundcolor=\color{gray!10},
-  language=R
-}
 
 % ============================================================
 % MISC PACKAGES
@@ -234,30 +218,52 @@
 }
 
 
-% ==================
-% Tables
-% ==================
-
-\usepackage{pdflscape}
-\usepackage{longtable}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{ltablex}
-\keepXColumns
-\usepackage{pdflscape}  % For \begin{landscape} ... \end{landscape}
-
-
 % ===================
 % Add logo to title page
 % ===================
-% Add logo to title page
-\usepackage{graphicx} 
-\usepackage{titling} 
+\usepackage{graphicx}
+\usepackage{titling}
 
-% Redefine \maketitle
-\pretitle{%
-  \begin{center}
-  \includegraphics[width=0.25\textwidth]{images/LTER-LIFE-logo.pdf}\par\vspace{1em} 
-  \LARGE
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    % Title
+    {\Huge\bfseries \thetitle \par}
+    \vspace{2em}
+
+    % Author
+    {\Large \theauthor \par}
+    \vspace{1em}
+
+    % Date
+    {\small \textsc{\thedate} \par}
+    \vspace{3em}
+
+    % Logo
+    \includegraphics[width=0.22\textwidth]{images/LTER-LIFE-logo.pdf}
+
+    \vspace*{\fill}
+  \end{titlepage}
 }
-\posttitle{\end{center}}
+
+
+% ============================================================
+% SYNTAX HIGHLIGHTING PASSTHROUGH
+% ============================================================
+% Make all highlighting macros just pass through the text
+\providecommand{\KeywordTok}[1]{#1}
+\providecommand{\DataTypeTok}[1]{#1}
+\providecommand{\DecValTok}[1]{#1}
+\providecommand{\StringTok}[1]{#1}
+\providecommand{\CommentTok}[1]{#1}
+\providecommand{\FunctionTok}[1]{#1}
+\providecommand{\NormalTok}[1]{#1}
+\providecommand{\OperatorTok}[1]{#1}
+\providecommand{\BuiltInTok}[1]{#1}
+\providecommand{\ErrorTok}[1]{#1}
+\providecommand{\WarningTok}[1]{#1}
+\providecommand{\AlertTok}[1]{#1}
+\providecommand{\ArgumentTok}[1]{#1}
+\providecommand{\RegionMarkerTok}[1]{#1}
