@@ -1,18 +1,3 @@
-
-## Tools to help you
-
-Both the EML and the meta file are XML files. XML stands for extensible Markup Language and is a human- and machine-readable format to store and transport data. The general structure of XML files is a hierarchical tree consisting of a root element and an unlimited number of sub-elements of different levels, as well as attributes and text. For an extensive description on how to build XML files, see the [tutorial of the W³ schools](https://www.w3schools.com/xml/default.asp). 
-
-To create the two XML files needed for the Darwin Core Archive, you do not have to be an expert in XML. In R, there are several packages that facilitate the creation of XML and even more specific, EML files, for example `emld` [@R-emld], `EML` [@R-EML] and `xml2` [@R-xml2].
-
-Additionally, you can find a nice overview over packages and helpful websites to build EML files in R on the website of the [LivingNorwayR package](https://livingnorway.github.io/LivingNorwayR/articles/EML_R_packages_overview.html).
-
-### EML.xml file
-
-The key for creating the EML.xml file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term (see example box below). For a full example, you can also browse our [GitHub repository](https://github.com/LTER-LIFE/FDFDT).
-
-
-
 :::{.examplebox .exampleimg}
 
 **Bud burst**:
@@ -88,8 +73,3 @@ The following example shows how the final list is converted into the EML file an
 :::
 
 Once you set all required attributes, you should check whether your EML file is schema-valid. This can be done with the function `eml_validate()` of the `emld` package. 
-
-
-
-
-<div>

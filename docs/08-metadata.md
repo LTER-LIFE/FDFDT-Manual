@@ -73,19 +73,22 @@ The `<contact>`, `<creator>` and `<metadataProvider>` can be different people/or
 
 The metadata provider is assigned with "id-1". As the contact for the dataset is the same person, it can directly be referred to "id-1" instead of adding the full personal information again. 
 
-```xml
-<metadataProvider id="id-1" scope="document">
-  <individualName>
-    <givenName>Mary</givenName>
-    <surName>Shelley</surName>
-  </individualName>
-  <organizationName>Netherlands Institute of Ecology (NIOO-KNAW)</organizationName>
-  <electronicMailAddress>m.shelley@nioo.knaw.nl</electronicMailAddress>
-</metadataProvider>
-<contact>
-  <references>id-1</references>
-</contact>
-```
+
+
+    <metadataProvider id="id-1" scope="document">
+      <individualName>
+        <givenName>Mary</givenName>
+        <surName>Shelley</surName>
+      </individualName>
+      <organizationName>Netherlands Institute of Ecology (NIOO-KNAW)</organizationName>
+      <electronicMailAddress>m.shelley@nioo.knaw.nl</electronicMailAddress>
+    </metadataProvider>
+    <contact>
+      <references>id-1</references>
+    </contact>
+
+
+
 :::
 
 

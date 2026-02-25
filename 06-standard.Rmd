@@ -55,7 +55,7 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 
 ```{r tableDwCterms, eval = knitr::is_latex_output(), echo = FALSE, out.width = '100%'}
 
-knitr::include_graphics("images/DwC-term-table-vertical.pdf")
+knitr::include_graphics("conditional_blocks/DwC-term-table-vertical.pdf")
 
 ```
 

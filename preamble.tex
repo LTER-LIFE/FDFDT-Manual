@@ -72,12 +72,13 @@
 
 \usepackage[margin=2.5cm]{geometry} 
 
-\usepackage{etoolbox}
-
 % Redefine \part to remove forced \cleardoublepage
 \makeatletter
 \patchcmd{\@part}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
+
+% vertical spacing (put white space at bottom)
+\raggedbottom
 
 % ===================================
 % References
@@ -92,18 +93,6 @@
   {\normalfont\huge\bfseries}
   {\chaptertitlename\ \thechapter}{20pt}{\Huge}
 
-% ============================================================
-% HYPERLINKS & PDF PROPERTIES
-% ============================================================
-\usepackage{hyperref}
-\usepackage{xcolor}
-
-% Define custom colors
-\definecolor{darkblue}{RGB}{25,25,112}
-\definecolor{darkgreen}{RGB}{34,139,34}
-
-% Use in hyperlinks
-\hypersetup{linkcolor=darkgreen, urlcolor=darkblue}
 
 % ============================================================
 % FIGURES & TABLES
@@ -114,23 +103,15 @@
 % Improve table formatting
 \usepackage{array}
 \usepackage{tabularx}
-\usepackage{longtable}
 
 % Set maximum width for figures
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
-\usepackage{pdflscape}
-\usepackage{longtable}
-\usepackage{booktabs}
-\usepackage{array}
+\usepackage{etoolbox}
 
-\newenvironment{fulllandscape}
-  {\clearpage
-   \begin{landscape}
-   \newgeometry{top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm}}
-  {\end{landscape}
-   \restoregeometry
-   \clearpage}
+\AtBeginEnvironment{table}{\scriptsize}
+\AtBeginEnvironment{longtable}{\scriptsize}
+\AtBeginEnvironment{tabular}{\scriptsize}
 
 % ============================================================
 % LIST FORMATTING
@@ -147,8 +128,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{textcomp}
-\usepackage{lastpage}  % For \pageref{LastPage}
-
+\usepackage{lastpage} 
 
 % ============================================================
 % Custom blocks
@@ -247,23 +227,3 @@
     \vspace*{\fill}
   \end{titlepage}
 }
-
-
-% ============================================================
-% SYNTAX HIGHLIGHTING PASSTHROUGH
-% ============================================================
-% Make all highlighting macros just pass through the text
-\providecommand{\KeywordTok}[1]{#1}
-\providecommand{\DataTypeTok}[1]{#1}
-\providecommand{\DecValTok}[1]{#1}
-\providecommand{\StringTok}[1]{#1}
-\providecommand{\CommentTok}[1]{#1}
-\providecommand{\FunctionTok}[1]{#1}
-\providecommand{\NormalTok}[1]{#1}
-\providecommand{\OperatorTok}[1]{#1}
-\providecommand{\BuiltInTok}[1]{#1}
-\providecommand{\ErrorTok}[1]{#1}
-\providecommand{\WarningTok}[1]{#1}
-\providecommand{\AlertTok}[1]{#1}
-\providecommand{\ArgumentTok}[1]{#1}
-\providecommand{\RegionMarkerTok}[1]{#1}

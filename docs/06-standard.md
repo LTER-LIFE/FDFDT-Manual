@@ -54,7 +54,7 @@ Every column name in your data should be mapped to a Darwin Core term. This some
 
 
 
-\includegraphics[width=1\linewidth]{images/DwC-term-table-vertical} 
+\includegraphics[width=1\linewidth]{conditional_blocks/DwC-term-table-vertical} 
 
 
 

@@ -14,15 +14,15 @@ Research data often is stored on local hard drives [@Tenopir_2020], not well des
 
 **Reusable** means that data are sufficiently annotated and curated so that others – humans and machines – can understand the context and methods of data collection, correctly interpret the meaning of the data, and accurately reuse the data.
 
-```{r FAIR, fig.align='center', fig.cap= "**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.", echo = FALSE, out.width = '100%', dev= 'svg'}
+```{r FAIR-html, fig.align='center', fig.cap= "**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.", echo = FALSE, out.width = '100%', dev= 'svg', eval = knitr::is_html_output()}
 
-knitr::include_graphics(
-  if (knitr::is_latex_output()) {
-    "images/Figure1.pdf"
-  } else {
-    "images/Figure1.svg"
-  }
-)
+knitr::include_graphics("images/Figure1.svg")
+
+```
+
+```{r FAIR-latex, fig.align='center', fig.cap= "The FAIR concept. The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.", echo = FALSE, out.width = '100%', eval = knitr::is_latex_output()}
+
+knitr::include_graphics("images/Figure1.pdf")
 
 ```
 

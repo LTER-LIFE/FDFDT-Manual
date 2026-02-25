@@ -1,13 +1,3 @@
-### Structural metadata - The meta.xml file {#structural-metadata}
-
-The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised (i.e., which file is the [core](#core), which are the [extensions](#extension)), and it links every column of each file to its corresponding Darwin Core term by providing its [URI](#URI) (Uniform Resource Identifier). The file format of the meta-file is [XML](#xml).
-
-In contrast to the EML file, where the metadata is specific to the dataset, the meta file always consists of the same content, only depending on the file and column names of the individual Darwin Core Archive. The root element `<archive>` consists of the sub-elements `<core>` and `<extension>` (once for every extension file). Within these elements, there is a `<field>` element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description of the components of the meta.xml file see the [Darwin Core text guide](https://dwc.tdwg.org/text/).
-
-:::{.examplebox .exampleimg} 
-**Bud burst**:
-
-
 
     <?xml version="1.0" encoding="UTF-8"?>
     <archive xmlns="http://rs.tdwg.org/dwc/text/" 
@@ -51,8 +41,3 @@ In contrast to the EML file, where the metadata is specific to the dataset, the 
       </extension>
       [...]
     </archive>
-
-
-:::
-
-<div>
