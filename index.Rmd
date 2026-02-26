@@ -4,7 +4,7 @@ author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682), [Kim B. Fe
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-classoption: openany
+classoption: oneside
 bibliography: [book.bib, packages.bib]
 url: https://lter-life.github.io/FDFDT-Manual 
 description: |

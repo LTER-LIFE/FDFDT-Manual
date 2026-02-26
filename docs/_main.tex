@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  openany]{book}
+  oneside]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
@@ -172,6 +172,7 @@
 % Set maximum width for figures
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
+% resize font in tables to avoid column overlap
 \usepackage{etoolbox}
 
 \AtBeginEnvironment{table}{\scriptsize}
@@ -309,7 +310,7 @@
 
 \title{A hands-on guide to FAIR and structured ecological data}
 \author{\href{https://orcid.org/0009-0006-0723-2682}{Cherine C. Jantzen}, \href{https://orcid.org/0000-0001-6483-1936}{Kim B. Ferguson}, \href{https://orcid.org/0000-0001-9624-2431}{Cees H.J. Hof}, \href{https://orcid.org/0009-0000-9455-6680}{Eric Kuijt}, \href{http://orcid.org/0000-0002-9006-5988}{Stefan J.G. Vriend}}
-\date{2026-02-25}
+\date{2026-02-26}
 
 \begin{document}
 \maketitle
@@ -625,7 +626,7 @@ be fulfilled once the dataset is stored in a suitable repository.\end{infobox}
 
 This dataset contains long-term data on the phenology of different tree species. Every year in spring, deciduous trees develop new leaves from their buds at a certain point in time. The timing of this can be crucial for herbivores, such as caterpillars, relying on newly emerging leaves as an important food source. To monitor shifts in tree phenology, the Department of Animal Ecology at NIOO-KNAW has assessed leaf development every year since 1988 by scoring the stage of bud opening on a fixed scale \autocite[cf.][]{Visser_2001}. Both the \href{https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/5SOKTV}{original dataset} and the \href{https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/72GQ4C}{final, enriched dataset} (i.e., the version after following the workflow of this guide) are stored on DataverseNL.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.5\linewidth]{images/ID-card_budburst} 
 
@@ -639,7 +640,7 @@ This dataset contains long-term data on the phenology of different tree species.
 
 This dataset contains experimental data on invertebrates belonging to the publication of \textcite{Vogels_2021}. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (\emph{Gryllus campestris}). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. The data is stored on the \href{https://lifesciences.datastations.nl/dataset.xhtml?persistentId=doi:10.17026/dans-zsa-f3y9}{DANS Data Station}.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.5\linewidth]{images/ID-card_cricket} 
 
@@ -2395,10 +2396,6 @@ xml2::xml_set_attr(taxonId_node, attr = "provider",
 \end{examplebox}
 
 Once you set all required attributes, you should check whether your EML file is schema-valid. This can be done with the function \texttt{eml\_validate()} of the \texttt{emld} package.
-
-\hypertarget{part-__________________________________}{%
-\part*{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}\label{part-__________________________________}}
-\addcontentsline{toc}{part}{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
 
 \hypertarget{fully-interoperable}{%
 \chapter{How to reach full interoperability}\label{fully-interoperable}}

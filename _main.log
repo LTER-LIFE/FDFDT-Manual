@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.20)  25 FEB 2026 14:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.20)  26 FEB 2026 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,34 +1205,34 @@ File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 (./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 314.
-LaTeX Font Info:    ... okay on input line 314.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 315.
+LaTeX Font Info:    ... okay on input line 315.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 314.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 315.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 314.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 315.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 314.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 315.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 314.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 315.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.213452476625092.
@@ -1260,7 +1260,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.13455pt on input line 314.
+(Font)              scaled to size 12.13455pt on input line 315.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.213452476625092.
@@ -1296,15 +1296,15 @@ Package fontspec Info:
 (fontspec)             <->s*[1.213452476625092]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.13455pt on input line 314.
+(Font)              scaled to size 12.13455pt on input line 315.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 314.
+(Font)              `operators' in the math version `normal' on input line 315.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 314.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 315.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 314.
+(Font)              `operators' in the math version `bold' on input line 315.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 314.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 315.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.213452476625092.
@@ -1370,13 +1370,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.213573821872755]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 314.
+(Font)              `symbols' in the math version `normal' on input line 315.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 314.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 315.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 314.
+(Font)              `symbols' in the math version `bold' on input line 315.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 314.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 315.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.213452476625092.
@@ -1436,13 +1436,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.213331131377429]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 314.
+(Font)              `largesymbols' in the math version `normal' on input line 315.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 314.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 315.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 314.
+(Font)              `largesymbols' in the math version `bold' on input line 315.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 314.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 315.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1450,7 +1450,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
 * \paperwidth=614.295pt
@@ -1464,7 +1464,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * \headsep=18.06749pt
 * \topskip=10.0pt
 * \footskip=25.29494pt
-* \marginparwidth=125.0pt
+* \marginparwidth=69.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -1472,8 +1472,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1491,20 +1491,20 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '_main.bbl' found.
 (./_main.bbl)
-Package biblatex Info: Reference section=0 on input line 314.
-Package biblatex Info: Reference segment=0 on input line 314.
-Package hyperref Info: Link coloring OFF on input line 314.
+Package biblatex Info: Reference section=0 on input line 315.
+Package biblatex Info: Reference segment=0 on input line 315.
+Package hyperref Info: Link coloring OFF on input line 315.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 316.
+(Font)              scaled to size 24.88pt on input line 317.
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 316.
+(Font)              scaled to size 24.88pt on input line 317.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 316.
+(Font)              scaled to size 14.4pt on input line 317.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 316.
+(Font)              scaled to size 9.0pt on input line 317.
 
 LaTeX Font Warning: Font shape `TU/Asap(0)/m/sc' undefined
-(Font)              using `TU/Asap(0)/m/n' instead on input line 316.
+(Font)              using `TU/Asap(0)/m/n' instead on input line 317.
 
 File: images/LTER-LIFE-logo.pdf Graphic file (type pdf)
 <use images/LTER-LIFE-logo.pdf>
@@ -1513,9 +1513,9 @@ File: images/LTER-LIFE-logo.pdf Graphic file (type pdf)
 
 ]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 319.
+(Font)              scaled to size 20.74pt on input line 320.
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 319.
+(Font)              scaled to size 20.74pt on input line 320.
 (./_main.toc
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 1.
@@ -1551,60 +1551,60 @@ LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 12.
-[2
+[1
 
 ])
 \tf@toc=\write6
 \openout6 = `_main.toc'.
 
-[3]
+[2]
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 12.55188pt on input line 336.
+(Font)              scaled to size 12.55188pt on input line 337.
 
-Package hyperref Warning: Suppressing empty link on input line 343.
+Package hyperref Warning: Suppressing empty link on input line 344.
 
 File: images/icon_disclaimer.pdf Graphic file (type pdf)
 <use images/icon_disclaimer.pdf>
-[4
+[3
 
 ]
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 386.
+(Font)              scaled to size 14.4pt on input line 387.
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 15.06224pt on input line 386.
-[5]
+(Font)              scaled to size 15.06224pt on input line 387.
+[4]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 420.
+(Font)              scaled to size 7.0pt on input line 421.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 420.
+(Font)              scaled to size 8.0pt on input line 421.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.70764pt on input line 420.
+(Font)              scaled to size 9.70764pt on input line 421.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.28073pt on input line 420.
+(Font)              scaled to size 7.28073pt on input line 421.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.70862pt on input line 420.
+(Font)              scaled to size 9.70862pt on input line 421.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.28146pt on input line 420.
+(Font)              scaled to size 7.28146pt on input line 421.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.70667pt on input line 420.
+(Font)              scaled to size 9.70667pt on input line 421.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.28pt on input line 420.
+(Font)              scaled to size 7.28pt on input line 421.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 420.
+(Font)              scaled to size 6.0pt on input line 421.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 420.
+(Font)              scaled to size 8.0pt on input line 421.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 420.
+(Font)              scaled to size 8.0pt on input line 421.
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 428.
-[6] [7]
+(Font)              scaled to size 10.0pt on input line 429.
+[5] [6]
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
-[8
+[7
 
-] [9
+] [8
 
 ]
 Chapter 1.
@@ -1612,33 +1612,34 @@ File: images/Figure1.pdf Graphic file (type pdf)
 <use images/Figure1.pdf>
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
-[10
+[9
 
-] [11] [12]
+] [10] [11]
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
-[13]
+[12]
 File: images/figure_FAIRtoMSSS.pdf Graphic file (type pdf)
 <use images/figure_FAIRtoMSSS.pdf>
 
-LaTeX Warning: Float too large for page by 17.16734pt on input line 588.
+LaTeX Warning: Float too large for page by 17.16734pt on input line 589.
 
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
-[14] [15]
+[13] [14]
 Chapter 2.
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 File: images/ID-card_budburst.pdf Graphic file (type pdf)
 <use images/ID-card_budburst.pdf>
+[15
+
+]
 File: images/ID-card_cricket.pdf Graphic file (type pdf)
 <use images/ID-card_cricket.pdf>
-[16
-
-] [17]
+[16]
 File: images/ID-card_CLUE.pdf Graphic file (type pdf)
 <use images/ID-card_CLUE.pdf>
-[18] [19
+[17] [18] [19
 
 ]
 Chapter 3.
@@ -1660,16 +1661,13 @@ File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 [24]
 
-Package hyperref Warning: Suppressing empty link on input line 844.
-
-
 Package hyperref Warning: Suppressing empty link on input line 845.
 
-LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 845.
 
 Package hyperref Warning: Suppressing empty link on input line 846.
 
+LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
+(Font)              scaled to size 7.0pt on input line 846.
 
 Package hyperref Warning: Suppressing empty link on input line 847.
 
@@ -1681,6 +1679,9 @@ Package hyperref Warning: Suppressing empty link on input line 849.
 
 
 Package hyperref Warning: Suppressing empty link on input line 850.
+
+
+Package hyperref Warning: Suppressing empty link on input line 851.
 
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
@@ -1694,7 +1695,7 @@ Chapter 5.
 [28
 
 ]
-Underfull \hbox (badness 3291) in paragraph at lines 918--919
+Underfull \hbox (badness 3291) in paragraph at lines 919--920
 []\TU/Asap(0)/m/n/10 Depending on the format your data/metadata is stored in, not every repository will accept your
  []
 
@@ -1708,7 +1709,7 @@ Chapter 6.
 File: conditional_blocks/DwC-term-table-vertical.pdf Graphic file (type pdf)
 <use conditional_blocks/DwC-term-table-vertical.pdf>
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 10.4599pt on input line 1086.
+(Font)              scaled to size 10.4599pt on input line 1087.
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 [36]
@@ -1723,24 +1724,24 @@ File: images/icon_example.pdf Graphic file (type pdf)
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1226.
+(Font)              scaled to size 10.0pt on input line 1227.
 
-Overfull \hbox (9.42307pt too wide) in paragraph at lines 1254--1255
+Overfull \hbox (9.42307pt too wide) in paragraph at lines 1255--1256
  []\TU/Asap(0)/m/n/7 specificEpithet 
  []
 
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 1262.
+(Font)              scaled to size 7.0pt on input line 1263.
 [40]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (8.9525pt too wide) in paragraph at lines 1307--1308
+Overfull \hbox (8.9525pt too wide) in paragraph at lines 1308--1309
  []\TU/Asap(0)/m/n/7 specificEpithet 
  []
 
 
-Overfull \hbox (5.5365pt too wide) in paragraph at lines 1315--1315
+Overfull \hbox (5.5365pt too wide) in paragraph at lines 1316--1316
  []|\TU/Asap(0)/m/n/7 Tracheophyta| 
  []
 
@@ -1785,7 +1786,7 @@ Chapter 8.
 [61
 
 ]
-Underfull \hbox (badness 1681) in paragraph at lines 2021--2022
+Underfull \hbox (badness 1681) in paragraph at lines 2022--2023
 \TU/Asap(0)/m/n/10 son/position/organisation accordingly. It is therefore required to choose at least one of the terms
  []
 
@@ -1793,13 +1794,13 @@ Underfull \hbox (badness 1681) in paragraph at lines 2021--2022
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (0.86201pt too wide) in paragraph at lines 2071--2071
+Overfull \hbox (0.86201pt too wide) in paragraph at lines 2072--2072
 []  \TU/lmtt/m/n/10 <organizationName>Netherlands Institute of Ecology (NIOO-KNAW)</organizationName>[] 
  []
 
 [63]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 13.00003pt on input line 2112.
+(Font)              scaled to size 13.00003pt on input line 2113.
 [64] [65]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
@@ -1812,41 +1813,39 @@ File: images/icon_example.pdf Graphic file (type pdf)
 [68]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
-[69] [70] [71
-
-]
+[69] [70]
 Chapter 9.
-[72
+[71
 
 ]
 Chapter 10.
-[73
+[72
 
 ]
-Overfull \hbox (4.1288pt too wide) in paragraph at lines 2510--2511
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2507--2508
 []\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (4.1288pt too wide) in paragraph at lines 2518--2519
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2515--2516
 []\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
  []
 
-[74] [75] [76] [77] [78] [79]
+[73] [74] [75] [76] [77] [78]
 Chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2838--2840
+Underfull \hbox (badness 10000) in paragraph at lines 2835--2837
 
  []
 
-[80
+[79
 
-] [81] [82] [83] [84] [85]
+] [80] [81] [82] [83] [84]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 3081.
-[86
+(Font)              scaled to size 10.0pt on input line 3078.
+[85
 
-] [87] 
+] [86] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./_main.aux)
  ***********
@@ -1861,10 +1860,10 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38983 strings out of 470189
- 790933 string characters out of 5476835
- 1758732 words of memory out of 5000000
- 66988 multiletter control sequences out of 15000+600000
+ 38982 strings out of 470189
+ 790896 string characters out of 5476835
+ 1758639 words of memory out of 5000000
+ 66987 multiletter control sequences out of 15000+600000
  633411 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,12n,116p,1355b,5728s stack positions out of 10000i,1000n,20000p,200000b,200000s

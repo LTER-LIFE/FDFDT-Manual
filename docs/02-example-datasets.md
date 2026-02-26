@@ -10,7 +10,7 @@ For all example datasets we went through the full [workflow](#workflow) describe
 ## Bud burst data {#budburst}
 This dataset contains long-term data on the phenology of different tree species. Every year in spring, deciduous trees develop new leaves from their buds at a certain point in time. The timing of this can be crucial for herbivores, such as caterpillars, relying on newly emerging leaves as an important food source. To monitor shifts in tree phenology, the Department of Animal Ecology at NIOO-KNAW has assessed leaf development every year since 1988 by scoring the stage of bud opening on a fixed scale [cf. @Visser_2001]. Both the [original dataset](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/5SOKTV) and the [final, enriched dataset](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/72GQ4C) (i.e., the version after following the workflow of this guide) are stored on DataverseNL.  
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.5\linewidth]{images/ID-card_budburst} 
 
@@ -22,7 +22,7 @@ This dataset contains long-term data on the phenology of different tree species.
 ## Cricket data {#cricket} 
 This dataset contains experimental data on invertebrates belonging to the publication of @Vogels_2021. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (*Gryllus campestris*). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. The data is stored on the [DANS Data Station](https://lifesciences.datastations.nl/dataset.xhtml?persistentId=doi:10.17026/dans-zsa-f3y9).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.5\linewidth]{images/ID-card_cricket} 
 
