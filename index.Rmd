@@ -36,7 +36,7 @@ This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 I
 
 ### Release notes {.unnumbered}
 
-For the changelog of this guide, see the [release notes](https://github.com/LTER-LIFE/FDFDT-Manual?tab=readme-ov-file#release-notes).
+For the changelog of this guide, see the [release notes](https://github.com/LTER-LIFE/FDFDT-Manual/releases).
 
 ### Availability of example code {.unnumbered}
 
