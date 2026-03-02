@@ -19,8 +19,6 @@ bookdown::pdf_book:
   citation_package: biblatex
   biblio-style: apa
   pandoc_args: 
-    - "--csl"
-    - "apa.csl"
     - "--lua-filter"
     - "custom-blocks.lua"
     - "--no-highlight"

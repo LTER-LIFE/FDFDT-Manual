@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2026-02-24" />
+<meta name="date" content="2026-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -287,7 +287,6 @@ div.csl-indent {
 <li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
 <ul>
 <li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -361,93 +360,53 @@ div.csl-indent {
 <p>If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the <a href="10-glossary.html#API">APIs</a> of each of these taxonomies, which is called <code>taxize</code> <span class="citation">(<a href="#ref-R-taxize">Chamberlain et al., 2022</a>)</span>. With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., <code>get_gbifid_()</code> retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (<code>gnr_resolve()</code>). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.</p>
 <div class="examplebox exampleimg">
 <p><strong>Bud burst</strong>:</p>
-<p>One of the tree species in the bud burst data is the Pedunculate oak (<em>Quercus robur</em>). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package <span class="citation">(<a href="#ref-dplyr_2023">Wickham, François, et al., 2023</a>)</span>.</p>
+<p>One of the tree species in the bud burst data is the Pedunculate oak (<em>Quercus robur</em>). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package <span class="citation">(<a href="#ref-dplyr_2023">Wickham, François, et al., 2023</a>)</span>. Note that we truncate the output here for readability.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="06.1-taxonomies.html#cb1-1" tabindex="-1"></a>taxonInfo <span class="ot">&lt;-</span> taxize<span class="sc">::</span><span class="fu">get_gbifid_</span>(<span class="at">sci =</span> <span class="st">&quot;Quercus robur&quot;</span>) <span class="sc">|&gt;</span></span>
 <span id="cb1-2"><a href="06.1-taxonomies.html#cb1-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>()</span>
 <span id="cb1-3"><a href="06.1-taxonomies.html#cb1-3" tabindex="-1"></a>  </span>
-<span id="cb1-4"><a href="06.1-taxonomies.html#cb1-4" tabindex="-1"></a>taxonInfo</span></code></pre></div>
-<pre><code>##    usagekey                     scientificname    rank   status matchtype
-## 1   2878688                   Quercus robur L. species ACCEPTED     EXACT
-## 2   8206510         Quercus robur (Ten.) A.DC. species  SYNONYM     EXACT
-## 3   7586523                Quercus robur Pall. species DOUBTFUL     EXACT
-## 4   7911626           Quercus robur Asso, 1779 species DOUBTFUL     EXACT
-## 5  12375765             Quercus roboris Wallr. species  SYNONYM     FUZZY
-## 6   2879532          Quercus robusta C.H.Mull. species ACCEPTED     FUZZY
-## 7   2880539                   Quercus rubra L. species ACCEPTED     FUZZY
-## 8   2880904           Quercus × rouxii A.Camus species  SYNONYM     FUZZY
-## 9   2881756           Quercus roxburghii Endl. species  SYNONYM     FUZZY
-## 10  8553076                Quercus rubra Rugel species  SYNONYM     FUZZY
-## 11  8421730         Quercus rubra Benth., 1857 species DOUBTFUL     FUZZY
-## 12  8030923 Quercus rubra Rugel ex A.DC., 1864 species DOUBTFUL     FUZZY
-##         canonicalname confidence kingdom       phylum   order   family
-## 1       Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae
-## 2       Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae
-## 3       Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae
-## 4       Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae
-## 5     Quercus roboris         92 Plantae Tracheophyta Fagales Fagaceae
-## 6     Quercus robusta         91 Plantae Tracheophyta Fagales Fagaceae
-## 7       Quercus rubra         10 Plantae Tracheophyta Fagales Fagaceae
-## 8      Quercus rouxii          9 Plantae Tracheophyta Fagales Fagaceae
-## 9  Quercus roxburghii          9 Plantae Tracheophyta Fagales Fagaceae
-## 10      Quercus rubra          9 Plantae Tracheophyta Fagales Fagaceae
-## 11      Quercus rubra          4 Plantae Tracheophyta Fagales Fagaceae
-## 12      Quercus rubra          4 Plantae Tracheophyta Fagales Fagaceae
-##          genus            species kingdomkey phylumkey classkey orderkey
-## 1      Quercus      Quercus robur          6   7707728      220     1354
-## 2      Quercus      Quercus robur          6   7707728      220     1354
-## 3      Quercus      Quercus robur          6   7707728      220     1354
-## 4      Quercus      Quercus robur          6   7707728      220     1354
-## 5      Quercus      Quercus robur          6   7707728      220     1354
-## 6      Quercus    Quercus robusta          6   7707728      220     1354
-## 7      Quercus      Quercus rubra          6   7707728      220     1354
-## 8      Quercus   Quercus auzendei          6   7707728      220     1354
-## 9  Castanopsis Castanopsis indica          6   7707728      220     1354
-## 10     Quercus      Quercus rubra          6   7707728      220     1354
-## 11     Quercus      Quercus rubra          6   7707728      220     1354
-## 12     Quercus      Quercus rubra          6   7707728      220     1354
-##    familykey genuskey specieskey         class acceptedusagekey
-## 1       4689  2877951    2878688 Magnoliopsida               NA
-## 2       4689  2877951    2878688 Magnoliopsida          2878688
-## 3       4689  2877951    7586523 Magnoliopsida               NA
-## 4       4689  2877951    7911626 Magnoliopsida               NA
-## 5       4689  2877951    2878688 Magnoliopsida          2878725
-## 6       4689  2877951    2879532 Magnoliopsida               NA
-## 7       4689  2877951    2880539 Magnoliopsida               NA
-## 8       4689  2877951   10879738 Magnoliopsida         10879738
-## 9       4689  2881728    5332911 Magnoliopsida          5332911
-## 10      4689  2877951    8030923 Magnoliopsida          8030923
-## 11      4689  2877951    8421730 Magnoliopsida               NA
-## 12      4689  2877951    8030923 Magnoliopsida               NA
-##                                                                                   note
-## 1                                                                                 &lt;NA&gt;
-## 2   Similarity: name=110; authorship=0; classification=-2; rank=6; status=0; score=114
-## 3  Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109
-## 4  Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109
-## 5     Similarity: name=95; authorship=0; classification=-2; rank=6; status=0; score=99
-## 6     Similarity: name=90; authorship=0; classification=-2; rank=6; status=1; score=95
-## 7      Similarity: name=5; authorship=0; classification=-2; rank=6; status=1; score=10
-## 8       Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9
-## 9       Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9
-## 10      Similarity: name=5; authorship=0; classification=-2; rank=6; status=0; score=9
-## 11     Similarity: name=5; authorship=0; classification=-2; rank=6; status=-5; score=4
-## 12     Similarity: name=5; authorship=0; classification=-2; rank=6; status=-5; score=4</code></pre>
+<span id="cb1-4"><a href="06.1-taxonomies.html#cb1-4" tabindex="-1"></a>taxonInfo[<span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>]</span></code></pre></div>
+<pre><code>##   usagekey             scientificname    rank   status matchtype
+## 1  2878688           Quercus robur L. species ACCEPTED     EXACT
+## 2  8206510 Quercus robur (Ten.) A.DC. species  SYNONYM     EXACT
+## 3  7586523        Quercus robur Pall. species DOUBTFUL     EXACT
+## 4  7911626   Quercus robur Asso, 1779 species DOUBTFUL     EXACT
+## 5 12375765     Quercus roboris Wallr. species  SYNONYM     FUZZY
+## 6  2879532  Quercus robusta C.H.Mull. species ACCEPTED     FUZZY
+## 7  2880539           Quercus rubra L. species ACCEPTED     FUZZY
+## 8  2880904   Quercus × rouxii A.Camus species  SYNONYM     FUZZY
+##     canonicalname confidence kingdom       phylum   order   family   genus
+## 1   Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 2   Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 3   Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 4   Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 5 Quercus roboris         92 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 6 Quercus robusta         91 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 7   Quercus rubra         10 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 8  Quercus rouxii          9 Plantae Tracheophyta Fagales Fagaceae Quercus
+##            species
+## 1    Quercus robur
+## 2    Quercus robur
+## 3    Quercus robur
+## 4    Quercus robur
+## 5    Quercus robur
+## 6  Quercus robusta
+## 7    Quercus rubra
+## 8 Quercus auzendei</code></pre>
 <p>There are four matches of our taxon in the GBIF backbone taxonomy. In this example, they differ in their scientific name and the author information given there. If we look at the column “status”, is becomes clear that only one of the matches contains the accepted scientific name, while the second match is a synonym and the others are considered “doubtful”. We therefore want to filter the results for only the matches that have the status “accepted” and the matchtype “exact”, which means that the canonical name matches our input name letter by letter. We again use the package dplyr to filter the data, which leaves us with one match.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="06.1-taxonomies.html#cb3-1" tabindex="-1"></a>taxonInfo <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="06.1-taxonomies.html#cb3-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>)</span></code></pre></div>
+<span id="cb3-2"><a href="06.1-taxonomies.html#cb3-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="06.1-taxonomies.html#cb3-3" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>)</span></code></pre></div>
 <pre><code>##   usagekey   scientificname    rank   status matchtype canonicalname confidence
 ## 1  2878688 Quercus robur L. species ACCEPTED     EXACT Quercus robur         97
-##   kingdom       phylum   order   family   genus       species kingdomkey
-## 1 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur          6
-##   phylumkey classkey orderkey familykey genuskey specieskey         class
-## 1   7707728      220     1354      4689  2877951    2878688 Magnoliopsida
-##   acceptedusagekey note
-## 1               NA &lt;NA&gt;</code></pre>
+##   kingdom       phylum   order   family   genus       species
+## 1 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur</code></pre>
 <p>If you have more than one taxon in your data, you can also directly query the taxonomic information for a number of species at once.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="06.1-taxonomies.html#cb5-1" tabindex="-1"></a>tree_species <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Quercus robur&quot;</span>, <span class="st">&quot;Quercus rubra&quot;</span>, <span class="st">&quot;Larix kaempferi&quot;</span>, <span class="st">&quot;Pinus sylvestris&quot;</span>, <span class="st">&quot;Betula pendula&quot;</span>)</span>
 <span id="cb5-2"><a href="06.1-taxonomies.html#cb5-2" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="06.1-taxonomies.html#cb5-3" tabindex="-1"></a>taxize<span class="sc">::</span><span class="fu">get_gbifid_</span>(<span class="at">sci =</span> tree_species) <span class="sc">|&gt;</span></span>
 <span id="cb5-4"><a href="06.1-taxonomies.html#cb5-4" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>() <span class="sc">|&gt;</span></span>
-<span id="cb5-5"><a href="06.1-taxonomies.html#cb5-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>)</span></code></pre></div>
+<span id="cb5-5"><a href="06.1-taxonomies.html#cb5-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-6"><a href="06.1-taxonomies.html#cb5-6" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>)</span></code></pre></div>
 <pre><code>##   usagekey                   scientificname    rank   status matchtype
 ## 1  2878688                 Quercus robur L. species ACCEPTED     EXACT
 ## 2  2880539                 Quercus rubra L. species ACCEPTED     EXACT
@@ -460,18 +419,12 @@ div.csl-indent {
 ## 3  Larix kaempferi         97 Plantae Tracheophyta Pinales   Pinaceae   Larix
 ## 4 Pinus sylvestris         98 Plantae Tracheophyta Pinales   Pinaceae   Pinus
 ## 5   Betula pendula         99 Plantae Tracheophyta Fagales Betulaceae  Betula
-##            species kingdomkey phylumkey classkey orderkey familykey genuskey
-## 1    Quercus robur          6   7707728      220     1354      4689  2877951
-## 2    Quercus rubra          6   7707728      220     1354      4689  2877951
-## 3  Larix kaempferi          6   7707728      194      640      3925  2686156
-## 4 Pinus sylvestris          6   7707728      194      640      3925  2684241
-## 5   Betula pendula          6   7707728      220     1354      4688  2875008
-##   specieskey         class acceptedusagekey note
-## 1    2878688 Magnoliopsida               NA &lt;NA&gt;
-## 2    2880539 Magnoliopsida               NA &lt;NA&gt;
-## 3    2686157     Pinopsida               NA &lt;NA&gt;
-## 4    5285637     Pinopsida               NA &lt;NA&gt;
-## 5    5331916 Magnoliopsida               NA &lt;NA&gt;</code></pre>
+##            species
+## 1    Quercus robur
+## 2    Quercus rubra
+## 3  Larix kaempferi
+## 4 Pinus sylvestris
+## 5   Betula pendula</code></pre>
 </div>
 <p>If you query your taxonomic information from a taxonomy you should however always check manually, whether the taxa are identified correctly. Not all taxa are present in all taxonomies or names between taxa are so similar that they are confused for the same taxon in the name matching process.</p>
 </div>

@@ -23,7 +23,7 @@
 <meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2026-02-24" />
+<meta name="date" content="2026-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -287,7 +287,6 @@ div.csl-indent {
 <li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
 <ul>
 <li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -321,9 +320,9 @@ div.csl-indent {
 <p>Specifically tailored to Darwin Core, we present two options to structure your data in the following: a relational database and the Darwin Core Archive.</p>
 <div id="relational-database" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Relational database<a href="07-structure.html#relational-database" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Relational databases are a common format in structuring your data files, where individual files are linked to each other by specific identifiers. This allows for a high flexibility in structuring your data and does as such not require your data to be in a standardised format. In Darwin Core several ID fields exist with which tables/files can be connected to each other, allowing the possibility to structure your standardised data as a relational database (Figure <a href="07-structure.html#fig:relational-database">7.1</a>).</p>
+<p>Relational databases are a common format in structuring your data files, where individual files are linked to each other by specific identifiers. This allows for a high flexibility in structuring your data and does as such not require your data to be in a standardised format. In Darwin Core several ID fields exist with which tables/files can be connected to each other, allowing the possibility to structure your standardised data as a relational database (Figure 7.1).</p>
 <p>In contrast to Darwin Core Archives (see <a href="07-structure.html#DarwinCore-Archive">Chapter Darwin Core Archive</a>), relational databases can reduce redundancy in the data and are more flexible in linking information.</p>
-<div class="figure"><span style="display:block;" id="fig:relational-database"></span>
+<div class="figure"><span style="display:block;" id="fig:relational-database-html"></span>
 <img src="images/DwC-relationalDatabase.svg" alt="**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked." width="100%" />
 <p class="caption">
 Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong> Arrows refer to the identifier through which two files are linked.
@@ -343,11 +342,11 @@ Figure 7.1: <strong>Relational database structure of Darwin Core files.</strong>
 </div>
 <div id="the-core-its-extensions" class="section level2 hasAnchor" number="7.3">
 <h2><span class="header-section-number">7.3</span> The Core &amp; its extensions<a href="07-structure.html#the-core-its-extensions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure <a href="07-structure.html#fig:star-schema">7.2</a>). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently (per June 2024) under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:star-schema"></span>
-<img src="images/star-schema.svg" alt="Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
+<p>The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure 7.2). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently (per June 2024) under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:star-schema-html"></span>
+<img src="images/star-schema.svg" alt="**Schematic of Darwin Core Archive.** The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
 <p class="caption">
-Figure 7.2: Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files.
+Figure 7.2: <strong>Schematic of Darwin Core Archive.</strong> The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files.
 </p>
 </div>
 <div id="find-the-core" class="section level3 hasAnchor" number="7.3.1">

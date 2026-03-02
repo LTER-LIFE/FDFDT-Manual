@@ -92,7 +92,6 @@
 % ============================================================
 \usepackage{fontspec}
 
-% Option 1: Using font paths directly
 \setmainfont{Asap}[
   Path = fonts/,
   Extension = .ttf,
@@ -148,7 +147,7 @@
 % ===================================
 % References
 % ===================================
-\usepackage[backend=biber,style=verbose,autocite=footnote]{biblatex}
+\usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{book.bib} 
 
 % ============================================================
@@ -199,7 +198,6 @@
 % ============================================================
 % Custom blocks
 % ============================================================
-\usepackage{booktabs}
 \usepackage{framed}
 \usepackage{fancyvrb}
 \usepackage{tcolorbox}
@@ -210,21 +208,25 @@
 
 % Define colours for custom blocks
 \definecolor{shadecolor}{RGB}{248,248,248}
+
 % Define Shaded environment if not already defined
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+
 % Define Highlighting environment if using knitr syntax highlighting
 \newenvironment{Highlighting}[1][]
   {\VerbatimEnvironment
    \begin{snugshade}\begin{Verbatim}[#1]}
   {\end{Verbatim}\end{snugshade}}
 
+% define custom colours for custom blocks
 \definecolor{infocolor}{RGB}{239, 158, 5}
 \definecolor{examplecolor}{RGB}{0, 192, 168}
 \definecolor{disclaimercolor}{RGB}{192, 41, 2}
 
+% set up custom blocks
 \usepackage{tcolorbox}
 
-% Info box style with PDF icon
+% Info box style with icon
 \newtcolorbox{infobox}{
   colframe=infocolor,
   colback=infocolor!10,
@@ -237,7 +239,7 @@
   before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_note.pdf}\hspace{5mm}},
 }
 
-% Example box style with PDF icon
+% Example box style with icon
 \newtcolorbox{examplebox}{
   colframe=examplecolor,
   colback=examplecolor!10,
@@ -250,7 +252,7 @@
   before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_example.pdf}\hspace{5mm}},
 }
 
-% Disclaimer box style with PDF icon
+% Disclaimer box style with icon
 \newtcolorbox{disclaimerbox}{
   colframe=disclaimercolor,
   colback=disclaimercolor!10,
@@ -262,7 +264,6 @@
   bottom=5mm,
   before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_disclaimer.pdf}\hspace{5mm}},
 }
-
 
 % ===================
 % Add logo to title page
@@ -310,7 +311,7 @@
 
 \title{A hands-on guide to FAIR and structured ecological data}
 \author{\href{https://orcid.org/0009-0006-0723-2682}{Cherine C. Jantzen}, \href{https://orcid.org/0000-0001-6483-1936}{Kim B. Ferguson}, \href{https://orcid.org/0000-0001-9624-2431}{Cees H.J. Hof}, \href{https://orcid.org/0009-0000-9455-6680}{Eric Kuijt}, \href{http://orcid.org/0000-0002-9006-5988}{Stefan J.G. Vriend}}
-\date{2026-02-26}
+\date{2026-03-02}
 
 \begin{document}
 \maketitle
@@ -326,12 +327,12 @@
 This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more structured and more \protect\hyperlink{FAIR}{FAIR} and tackle the problems that can occur along this process.
 
 \begin{infobox}
+
 {\textbf{Quick-start guide}}
 
-If you want to make your data more FAIR but do not have time to go
-through all the suggested chapters, we encourage you to follow at least
-the steps highlighted in this
-\protect\hyperlink{quick-start}{quick-start guide}!\end{infobox}
+If you want to make your data more FAIR but do not have time to go through all the suggested chapters, we encourage you to follow at least the steps highlighted in this \protect\hyperlink{quick-start}{quick-start guide}!
+
+\end{infobox}
 
 \hypertarget{how-to-cite-and-licence}{%
 \subsection*{How to cite and licence}\label{how-to-cite-and-licence}}
@@ -362,26 +363,17 @@ This guide was developed based on practical work on \protect\hyperlink{example-d
 If you have any suggestions, questions or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through \href{https://github.com/LTER-LIFE/FDFDT/issues/new}{the Github repository} where you can add your remarks as a new issue!
 
 \begin{disclaimerbox}
+
 {\textbf{Disclaimer}}
 
 \begin{itemize}
 \item
-  We want to emphasise here that there is no one-size-fits-all solution
-  and every dataset will bring its own challenges that need individual
-  solutions. We cannot tackle all of these challenges but only give
-  recommendations based on our own work with a range of different
-  ecological datasets.
+  We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.
 \item
-  The FAIR principles are not set in stone but rather intended as
-  guidance. Practical implications should be interpreted by each
-  community individually, while sticking as closely as possible to the
-  principles themselves
-  (cf.~\href{https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/\#!/}{Maturity
-  Indicator Authoring Group}). We therefore also want to stress that the
-  way we implement FAIR in this guide is \textbf{only one way} of
-  operationalising it and is based on our own interpretations and
-  extensions of the FAIR principles {[}@Wilkinson\_2016{]}.
-\end{itemize}\end{disclaimerbox}
+  The FAIR principles are not set in stone but rather intended as guidance. Practical implications should be interpreted by each community individually, while sticking as closely as possible to the principles themselves (cf.~\href{https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/\#!/}{Maturity Indicator Authoring Group}). We therefore also want to stress that the way we implement FAIR in this guide is \textbf{only one way} of operationalising it and is based on our own interpretations and extensions of the FAIR principles \autocite{Wilkinson_2016}.
+\end{itemize}
+
+\end{disclaimerbox}
 
 \hypertarget{acknowledgements}{%
 \section*{Acknowledgements}\label{acknowledgements}}
@@ -474,11 +466,10 @@ If your data is however still in a very original state, the tool will point you 
 \end{itemize}
 
 \begin{infobox}
-Following these two steps is a great start! If you now want to make your
-data even more reusable, follow the remaining steps of the
-\protect\hyperlink{workflow}{workflow} or use the
-\protect\hyperlink{evaluation}{Evaluation tool} to be pointed to the
-remaining chapters that can be useful for you.\end{infobox}
+
+Following these two steps is a great start! If you now want to make your data even more reusable, follow the remaining steps of the \protect\hyperlink{workflow}{workflow} or use the \protect\hyperlink{evaluation}{Evaluation tool} to be pointed to the remaining chapters that can be useful for you.
+
+\end{infobox}
 
 \hypertarget{part---i.-background--}{%
 \part*{- I. Background -}\label{part---i.-background--}}
@@ -512,11 +503,10 @@ Research data often is stored on local hard drives \autocite{Tenopir_2020}, not 
 The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations -- partly through the distinction between data and metadata -- and to different maturity levels (see also \href{https://zenodo.org/records/3909563}{FAIR Data Maturity Model. Specification and Guidelines of RDA}). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.
 
 \begin{infobox}
-For an entertaining but serious description of the FAIR principles and
-their meaning, we recommend reading ``\emph{A FAIRy tale - A fake story
-in a trustworthy guide to the FAIR principles for research data}''
-created within the Danish `FAIR across' (FAIR på tværs) project:
-\url{https://forskningsdata.dk/fairytale/} {[}@FAIRy\_tale{]}.\end{infobox}
+
+For an entertaining but serious description of the FAIR principles and their meaning, we recommend reading ``\emph{A FAIRy tale - A fake story in a trustworthy guide to the FAIR principles for research data}'' created within the Danish `FAIR across' (FAIR på tværs) project: \url{https://forskningsdata.dk/fairytale/} \autocite{FAIRy_tale}.
+
+\end{infobox}
 
 \hypertarget{adding-structure-to-fair}{%
 \section{Adding structure to FAIR}\label{adding-structure-to-fair}}
@@ -552,22 +542,16 @@ Even though there is already a range of FAIR assessment tools available (see \hr
 Our evaluation tool \href{https://lter-life-experience.org/fairset/}{``\textbf{FAIR + Structure Evaluation Tool}''} (FAIR+SET) provides you with a set of simple questions about four properties of your data: \textbf{metadata}, \textbf{storage}, \textbf{standards} and \textbf{structure}.
 
 \begin{infobox}
+
 {\textbf{FAIR + Structure Evaluation Tool (FAIR+SET)}}
 
-The FAIR + Structure Evaluation Tool is still in development, but a
-preliminary version can be accessed through
-\url{https://lter-life-experience.org/fairset/}.
+The FAIR + Structure Evaluation Tool is still in development, but a preliminary version can be accessed through \url{https://lter-life-experience.org/fairset/}.
 
-Every question in the tool comes with a small info box (when clicking on
-the question mark) and can be answered with yes or no. Once you submit
-your answers, you will be provided with the evaluation outcome and the
-links to the respective sections in the guide useful to further enhance
-your data.
+Every question in the tool comes with a small info box (when clicking on the question mark) and can be answered with yes or no. Once you submit your answers, you will be provided with the evaluation outcome and the links to the respective sections in the guide useful to further enhance your data.
 
-A complete list of the questions and their info boxes can also be found
-in the end of this guide in the section
-\protect\hyperlink{questions-tool}{Questions for FAIR + Structure
-Evaluation Tool}.\end{infobox}
+A complete list of the questions and their info boxes can also be found in the end of this guide in the section \protect\hyperlink{questions-tool}{Questions for FAIR + Structure Evaluation Tool}.
+
+\end{infobox}
 
 \textbf{Metadata} is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.
 
@@ -589,20 +573,10 @@ Apart from the questions about structure, the questions in the evaluation are al
 \end{figure}
 
 \begin{infobox}
-It will likely be difficult to reach the full score in all of the
-properties of your data, but this is also not necessarily the aim of
-this evaluation or guide. Every improvement is already a great step!
-Especially the components that link to interoperability are more
-difficult to implement, as true interoperability generally is a big
-challenge within and across disciplines {[}@Pagano\_2013{]}. One step to
-reach interoperability is to use a language for knowledge representation
-and linked data, such as \protect\hyperlink{RDF}{RDF (Resource
-Description Framework)}. However, as this is more the expertise of data
-scientists or information scientists instead of ecologists, we will not
-look into these topics in this guide and, hence, it is not possible to
-reach the full score in the evaluation of ``Standards'' by only
-following this guide. For more information on full interoperability
-\protect\hyperlink{fully-interoperable}{see this section}.\end{infobox}
+
+It will likely be difficult to reach the full score in all of the properties of your data, but this is also not necessarily the aim of this evaluation or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines \autocite{Pagano_2013}. One step to reach interoperability is to use a language for knowledge representation and linked data, such as \protect\hyperlink{RDF}{RDF (Resource Description Framework)}. However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the evaluation of ``Standards'' by only following this guide. For more information on full interoperability \protect\hyperlink{fully-interoperable}{see this section}.
+
+\end{infobox}
 
 \hypertarget{example-datasets}{%
 \chapter{Example datasets}\label{example-datasets}}
@@ -610,16 +584,10 @@ following this guide. For more information on full interoperability
 To illustrate the process of FAIRifying and structuring ecological data, we rely on several example datasets we used to develop this guide. These datasets were selected because they cover a broad variety of different structures and different levels of \protect\hyperlink{FAIR}{FAIR}, ranging from observational to experimental data and from highly unstructured and undocumented data to data that already fulfils some of the FAIR principles.
 
 \begin{infobox}
-For all example datasets we went through the full
-\protect\hyperlink{workflow}{workflow} described in this guide, except
-the step of publishing the standardized and structured version of the
-data on a \protect\hyperlink{repository}{repository}. This is still work
-in progress, as we rely on datasets of others whose permission is needed
-for that. Without storing the data on a repository, many of the circles
-in the \protect\hyperlink{evaluation}{evaluation} cannot be filled. In
-the following figures we therefore use solid circles for already
-fulfilled evaluation criteria and striped circles for criteria that will
-be fulfilled once the dataset is stored in a suitable repository.\end{infobox}
+
+For all example datasets we went through the full \protect\hyperlink{workflow}{workflow} described in this guide, except the step of publishing the standardized and structured version of the data on a \protect\hyperlink{repository}{repository}. This is still work in progress, as we rely on datasets of others whose permission is needed for that. Without storing the data on a repository, many of the circles in the \protect\hyperlink{evaluation}{evaluation} cannot be filled. In the following figures we therefore use solid circles for already fulfilled evaluation criteria and striped circles for criteria that will be fulfilled once the dataset is stored in a suitable repository.
+
+\end{infobox}
 
 \hypertarget{budburst}{%
 \section{Bud burst data}\label{budburst}}
@@ -758,14 +726,12 @@ Independent of whether you aim to publish your data, it is always important to p
 Many repositories require a minimal set of metadata when uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are, however, no regulations on what information a README should contain and in practice, the extent and detail of it varies a lot. In general, the richer the data is described the better.
 
 \begin{disclaimerbox}
+
 {\textbf{Be aware}}
 
-There is another section on
-\protect\hyperlink{standardise-and-structure-your-metadata}{standardising
-your metadata} that builds on the current section as it assumes that
-metadata has already been gathered. If you want to both gather and
-standardise metadata, you can do both steps at once and directly write
-the metadata in the standard format instead of creating a README first.\end{disclaimerbox}
+There is another section on \protect\hyperlink{standardise-and-structure-your-metadata}{standardising your metadata} that builds on the current section as it assumes that metadata has already been gathered. If you want to both gather and standardise metadata, you can do both steps at once and directly write the metadata in the standard format instead of creating a README first.
+
+\end{disclaimerbox}
 
 Based on best practices of writing README files and in terms of \protect\hyperlink{standardise}{standardising} the metadata in a later step, we recommend to gather the following information about your data:
 
@@ -795,11 +761,10 @@ Recommended best practises for minimum metadata:
 \end{itemize}
 
 \begin{infobox}
-A template that covers these minimum metadata fields can be found here:
-\href{https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md}{README
-template}. Or follow this
-\href{https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md}{example}
-of the bud burst data.\end{infobox}
+
+A template that covers these minimum metadata fields can be found here: \href{https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md}{README template}. Or follow this \href{https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md}{example} of the bud burst data.
+
+\end{infobox}
 
 \textbf{For tabular data}:
 
@@ -852,9 +817,10 @@ What can users do with your data?
 \end{longtable}
 
 \begin{infobox}
-Carefully consider which licence to choose. It cannot be revoked and
-every user of the data needs to comply with the licence's conditions of
-use, even if the data is no longer distributed.\end{infobox}
+
+Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
+
+\end{infobox}
 
 \hypertarget{structuring-your-tabular-data}{%
 \section{Structuring your tabular data}\label{structuring-your-tabular-data}}
@@ -877,12 +843,10 @@ For a more extensive and formal description of tabular data, see W3C's \href{htt
 To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that is meant to be tabular follows the aforementioned characteristics. If not, reshape your data accordingly.
 
 \begin{infobox}
-If your data consists of multiple tables, the relationships between
-these tables should be made clear. This can be done either by describing
-it in a README file (see \protect\hyperlink{describe-data}{section 4.1})
-or, if your data is already in a standard format, in a more standardised
-way, such as the meta.xml file described
-\protect\hyperlink{structural-metadata}{here}.\end{infobox}
+
+If your data consists of multiple tables, the relationships between these tables should be made clear. This can be done either by describing it in a README file (see \protect\hyperlink{describe-data}{section 4.1}) or, if your data is already in a standard format, in a more standardised way, such as the meta.xml file described \protect\hyperlink{structural-metadata}{here}.
+
+\end{infobox}
 
 \hypertarget{part-b.-storage}{%
 \part*{b. Storage}\label{part-b.-storage}}
@@ -1089,51 +1053,26 @@ Before assigning the terms of the event class to your data, you should define wh
 The eventID can be a globally unique identifier or an identifier specific to the dataset. For more information on how to create globally unique identifiers, see \protect\hyperlink{GUIDcreation}{this chapter}. If you choose to create identifiers specific to the dataset, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., ``\_'' or ``-'') to indicate the different blocks of the event levels within an eventID.
 
 \begin{infobox}
-Some guides about persistent identifiers (e.g., {[}@Richards{]}) state
-that IDs should be opaque, meaning that they do not give any information
-about what they describe or relationships between resources. By this it
-can be avoided that the ID contains information that might no longer be
-true at a later time (because the resource has changed). However, these
-guides mostly refer to opaque identifiers on the data or resource level
-and not on the record level, which is why we decided to increase
-human-readability by creating informative dataset-specific IDs. This
-problem does of course not occur if you choose GUIDs.\end{infobox}
+
+Some guides about persistent identifiers (e.g., \autocite{Richards}) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly refer to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset-specific IDs. This problem does of course not occur if you choose GUIDs.
+
+\end{infobox}
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
-In the bud burst data, we have three different event levels. The highest
-level describes the event of going to the field in a certain year to a
-certain area. The eventID therefore consists of an area abbreviation and
-the year, e.g., HV2004. For the event level below, the sampling on a
-specific day within a year and area, the previous eventID becomes the
-parentEventID and the level 2 eventID extends the parentEventID by a
-separator and the day of the year, e.g., HV2004\_99. The third and
-lowest event level describes the sampling of a specific tree on a day
-within an area and year. The eventID of level 2 becomes the
-parentEventID and the level 3 eventID extends the parentEventID by an
-underscore and the number of the tree, e.g.~HV2004\_99\_5. This way, the
-eventID is easily human-readable and directly gives the most important
-information about the event.\end{examplebox}
+In the bud burst data, we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004\_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g.~HV2004\_99\_5. This way, the eventID is easily human-readable and directly gives the most important information about the event.
+
+\end{examplebox}
 
 \begin{examplebox}
+
 \textbf{Crickets}:
 
-In the cricket data, there were two different event types, one relating
-to measurements that have been taken on plants and the other to
-measurements of individual crickets. For the plants, each plot-treatment
-combination was measured once, leading to one event for each of them.
-The eventIDs were therefore simply the plot name and a treatment code,
-for example, PM1-T1 (PM1 being the plot name, T1 the first treatment).
-Conversely, defining events for cricket measurements posed more
-challenges due to the lack of specific date and time information in the
-data. By using the publication belonging to the dataset and the
-documentation file accompanying the data, it was possible to identify
-which measurements were taken simultaneously, allowing them to be
-grouped into the same event. This approach yielded 18 distinct event
-groups per individual cricket from which we build the eventID by merging
-the cricket identifier with the event group number, e.g., Cr1-05
-(indicating individual cricket number 1 and event group 5).\end{examplebox}
+In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using the publication belonging to the dataset and the documentation file accompanying the data, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).
+
+\end{examplebox}
 
 \hypertarget{date-information-eventdate-year-month-day}{%
 \subsubsection{Date information (eventDate, year, month, day)}\label{date-information-eventdate-year-month-day}}
@@ -1183,8 +1122,10 @@ The occurrenceID assigns a unique ID to every occurrence record. Several occurre
 If your data also includes an eventID, we recommend proceeding with the block-structure of IDs we have already used there by extending the eventID of the corresponding event with a new block that numbers the occurrences of that event. However, if there are occurrence records for different event levels, extending the eventID may lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004\_99\_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004\_99). To avoid this confusion and ensure unique IDs, we therefore add the prefix ``o'' (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004\_99\_5\_o1. This method helps maintain clarity and uniqueness across different event levels.
 
 \begin{examplebox}
-\textbf{crickets}: occurrenceID = Cr1-05\_1 (corresponding to eventID
-Cr1-05, indicating the first occurrence of that event)\end{examplebox}
+
+\textbf{crickets}: occurrenceID = Cr1-05\_1 (corresponding to eventID Cr1-05, indicating the first occurrence of that event)
+
+\end{examplebox}
 
 \hypertarget{taxonomic-information}{%
 \subsubsection{Taxonomic information}\label{taxonomic-information}}
@@ -1217,14 +1158,12 @@ Some taxa come with several authorship information or with synonym names. To dea
 However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can easily occur in the case of rare species or taxa with similar names (e.g., for the plant genus \emph{Convolvulus} and the animal genus \emph{Conovulus}).
 
 \begin{examplebox}
+
 \textbf{Crickets}:
 
-For the cricket dataset, we queried the taxonomic information of the
-European field cricket (\emph{Gryllus campestris}) directly from GBIF,
-which resulted in the following taxonomic terms (table 6.1).
+For the cricket dataset, we queried the taxonomic information of the European field cricket (\emph{Gryllus campestris}) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).
 
-{\textbf{Table 6.1. Taxonomic information for \emph{Gryllus campestris}
-as retrieved from GBIF stored in respective Darwin Core terms.}}
+{\textbf{Table 6.1. Taxonomic information for \emph{Gryllus campestris} as retrieved from GBIF stored in respective Darwin Core terms.}}
 
 \begin{longtable}[]{@{}
   >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1467}}
@@ -1260,24 +1199,18 @@ taxonRank
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\emph{Gryllus campestris} Linnaeus, 1758 & Animalia & Arthropoda &
-Insecta & Orthoptera & Gryllidae & Gryllus & campestris & species \\
-\end{longtable}\end{examplebox}
+\emph{Gryllus campestris} Linnaeus, 1758 & Animalia & Arthropoda & Insecta & Orthoptera & Gryllidae & Gryllus & campestris & species \\
+\end{longtable}
+
+\end{examplebox}
 
 \begin{examplebox}
+
 \textbf{CLUE data}:
 
-The CLUE data covers around 130 different plant species and many of them
-were either misspelt or synonym names were used. One example is shown in
-table 6.2 where the species name in the data was \emph{Deschampsia
-flexuos} which is a synonym of the accepted species name \emph{Avenella
-flexuosa}. This was automatically detected while retrieving the
-taxonomic information from GBIF and the corresponding information
-correctly assigned accordingly.
+The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was \emph{Deschampsia flexuos} which is a synonym of the accepted species name \emph{Avenella flexuosa}. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
 
-{\textbf{Table 6.2. Taxonomic information for \emph{Deschampsia
-flexuosa}, which is a synonym of \emph{Avenella flexuosa}, as retrieved
-from GBIF and stored in respective Darwin Core terms.}}
+{\textbf{Table 6.2. Taxonomic information for \emph{Deschampsia flexuosa}, which is a synonym of \emph{Avenella flexuosa}, as retrieved from GBIF and stored in respective Darwin Core terms.}}
 
 \begin{longtable}[]{@{}
   >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1351}}
@@ -1313,9 +1246,10 @@ taxonRank
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\emph{Deschampsia flexuosa} (L.) Trin. & Plantae & Tracheophyta &
-Liliopsida & Poales & Poaceae & Avenella & flexuosa & species \\
-\end{longtable}\end{examplebox}
+\emph{Deschampsia flexuosa} (L.) Trin. & Plantae & Tracheophyta & Liliopsida & Poales & Poaceae & Avenella & flexuosa & species \\
+\end{longtable}
+
+\end{examplebox}
 
 \hypertarget{individualcount-and-organismquantity}{%
 \subsubsection{individualCount and organismQuantity}\label{individualcount-and-organismquantity}}
@@ -1330,16 +1264,12 @@ There is ongoing discussion on which of the two terms to use. Some suggest depre
 The \protect\hyperlink{measurementorfact}{measurement or fact} terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column.
 
 \begin{infobox}
+
 \textbf{Wide versus long format}
 
-When storing multiple measurements (or observations) of the same subject
-in a table, you can store this in a wide or in a long format. Data in
-the wide format is structured with each row representing a single
-subject and each column representing a different measure. In contrast,
-in the long format, each row represents a single measurement or
-observation and the measured value and measurement type are stored in
-separate columns. In Darwin Core, measurements are stored in a long
-format.\end{infobox}
+When storing multiple measurements (or observations) of the same subject in a table, you can store this in a wide or in a long format. Data in the wide format is structured with each row representing a single subject and each column representing a different measure. In contrast, in the long format, each row represents a single measurement or observation and the measured value and measurement type are stored in separate columns. In Darwin Core, measurements are stored in a long format.
+
+\end{infobox}
 
 \hypertarget{measurementvalue-measurementunit}{%
 \subsubsection{measurementValue \& measurementUnit}\label{measurementvalue-measurementunit}}
@@ -1352,13 +1282,10 @@ After transforming your data into the long format, the column containing the mea
 With the long format and all measurements being stored in measurementValue, you additionally need to store \textbf{what} has been measured, i.e., what each measurement or fact means. This is done by the term \textbf{measurementType}. Additionally, you should use the term \textbf{measurementMethod} that states how each measurement was measured. For both terms, it is recommended to use controlled vocabulary where possible. For more information on the use of ontologies, see \protect\hyperlink{ontologies}{section ontologies}.
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
-To exemplify how the four terms measurementValue, measurementUnit,
-measurementType and measurementMethod are used, the following shows the
-previous state of the measurements in the bud burst raw data (top) and
-how the columns containing measurements are mapped to the Darwin Core
-terms (bottom).
+To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).
 
 {\textbf{Table 6.3. Bud burst data in original state.}}
 
@@ -1393,11 +1320,11 @@ measurementMethod
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-bud burst stage (PO:0025532) of the tree crown & 2 & NA &
-\url{https://doi.org/10.1098/rspb.2000.1363} \\
-bud burst stage (PO:0025532) of the whole tree & 2 & NA &
-\url{https://doi.org/10.1098/rspb.2000.1363} \\
-\end{longtable}\end{examplebox}
+bud burst stage (PO:0025532) of the tree crown & 2 & NA & \url{https://doi.org/10.1098/rspb.2000.1363} \\
+bud burst stage (PO:0025532) of the whole tree & 2 & NA & \url{https://doi.org/10.1098/rspb.2000.1363} \\
+\end{longtable}
+
+\end{examplebox}
 
 \hypertarget{measurementid}{%
 \subsubsection{measurementID}\label{measurementid}}
@@ -1405,12 +1332,12 @@ bud burst stage (PO:0025532) of the whole tree & 2 & NA &
 The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the \protect\hyperlink{eventID}{eventID} and \protect\hyperlink{occurrenceID}{occurrenceID}. If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix ``m'' (for measurement) in the block of the ID that numbers the measurements.
 
 \begin{examplebox}
-\textbf{Budburst}: measurementID = HV2004\_99\_5\_1\_m2 for the second
-measurement of the eventID HV2004\_99\_5 and the occurrenceID
-HV2004\_99\_5\_1
 
-\textbf{Crickets}: measurementID = Cr1-05\_1\_m8 for the eighth
-measurement of eventID Cr1-05 and occurrenceID Cr-05\_1\end{examplebox}
+\textbf{Budburst}: measurementID = HV2004\_99\_5\_1\_m2 for the second measurement of the eventID HV2004\_99\_5 and the occurrenceID HV2004\_99\_5\_1
+
+\textbf{Crickets}: measurementID = Cr1-05\_1\_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05\_1
+
+\end{examplebox}
 
 \hypertarget{ontologies}{%
 \section{Ontologies and controlled vocabulary}\label{ontologies}}
@@ -1476,14 +1403,10 @@ The \href{https://www.eol.org/}{Encyclopedia of Life} aims to gather knowledge a
 If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the \protect\hyperlink{API}{APIs} of each of these taxonomies, which is called \texttt{taxize} \autocite{R-taxize}. With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., \texttt{get\_gbifid\_()} retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (\texttt{gnr\_resolve()}). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
-One of the tree species in the bud burst data is the Pedunculate oak
-(\emph{Quercus robur}). To get detailed taxonomic information for this
-species, we query it from the GBIF backbone taxonomy. As the results are
-presented in a list, we additionally bind the rows into a data frame
-using the dplyr package {[}@dplyr\_2023{]}. Note that we truncate the
-output here for readability.
+One of the tree species in the bud burst data is the Pedunculate oak (\emph{Quercus robur}). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package \autocite{dplyr_2023}. Note that we truncate the output here for readability.
 
 \begin{verbatim}
 taxonInfo <- taxize::get_gbifid_(sci = "Quercus robur") |>
@@ -1519,18 +1442,12 @@ taxonInfo[1:7, 1:13]
 ## 7    Quercus rubra
 \end{verbatim}
 
-There are four matches of our taxon in the GBIF backbone taxonomy. In
-this example, they differ in their scientific name and the author
-information given there. If we look at the column ``status'', is becomes
-clear that only one of the matches contains the accepted scientific
-name, while the second match is a synonym and the others are considered
-``doubtful''. We therefore want to filter the results for only the
-matches that have the status ``accepted'' and the matchtype ``exact'',
-which means that the canonical name matches our input name letter by
-letter. We again use the package dplyr to filter the data, which leaves
-us with one match.\end{examplebox}
+There are four matches of our taxon in the GBIF backbone taxonomy. In this example, they differ in their scientific name and the author information given there. If we look at the column ``status'', is becomes clear that only one of the matches contains the accepted scientific name, while the second match is a synonym and the others are considered ``doubtful''. We therefore want to filter the results for only the matches that have the status ``accepted'' and the matchtype ``exact'', which means that the canonical name matches our input name letter by letter. We again use the package dplyr to filter the data, which leaves us with one match.
+
+\end{examplebox}
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
 \begin{verbatim}
@@ -1546,8 +1463,7 @@ taxonInfo |>
 ## 1 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur
 \end{verbatim}
 
-If you have more than one taxon in your data, you can also directly
-query the taxonomic information for a number of species at once.
+If you have more than one taxon in your data, you can also directly query the taxonomic information for a number of species at once.
 
 \begin{verbatim}
 tree_species <- c("Quercus robur", "Quercus rubra", "Larix kaempferi", 
@@ -1579,6 +1495,7 @@ taxize::get_gbifid_(sci = tree_species) |>
 ## 4 Pinus sylvestris
 ## 5   Betula pendula
 \end{verbatim}
+
 \end{examplebox}
 
 If you query your taxonomic information from a taxonomy you should however always check manually, whether the taxa are identified correctly. Not all taxa are present in all taxonomies or names between taxa are so similar that they are confused for the same taxon in the name matching process.
@@ -1615,22 +1532,12 @@ Some contents of datasets do not exist in isolation. To provide context to your 
 If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the \protect\hyperlink{eml-terms}{EML metadata file} by using the \texttt{\textless{}additionalMetadata\textgreater{}} term and its subterm \texttt{\textless{}metadata\textgreater{}}. The \texttt{\textless{}metadata\textgreater{}} term can then be filled with the Dublin Core term \href{http://purl.org/dc/terms/relation}{\texttt{dcterms:relation}} that ideally is filled with the URI/DOI of the dataset that should be linked. Note that it is important to add the Dublin Core namespace \texttt{xmlns:dc="http://purl.org/dc/terms/"} to the other namespaces in the \texttt{\textless{}eml\textgreater{}} element at the top of the document.
 
 \begin{examplebox}
+
 \textbf{CLUE data:}
 
-As \protect\hyperlink{CLUE}{described for the CLUE data}, two different
-experiments have been performed in the same plots resulting in two
-different datasets that are closely linked through the experimental
-plots. As described above, the EML file of the dataset belonging to the
-first experiment can link to the dataset of the second experiment by
-using the Dublin Core term \texttt{dcterms:relation} in the
-\texttt{\textless{}additionalMetadata\textgreater{}} field of the EML
-file. Within \texttt{dcterms:relation} the sub-child
-\texttt{relatedResource} can be used to point to the DOI, and the
-sub-child \texttt{relationType} can further specify the relationship
-between the two resources.
+As \protect\hyperlink{CLUE}{described for the CLUE data}, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term \texttt{dcterms:relation} in the \texttt{\textless{}additionalMetadata\textgreater{}} field of the EML file. Within \texttt{dcterms:relation} the sub-child \texttt{relatedResource} can be used to point to the DOI, and the sub-child \texttt{relationType} can further specify the relationship between the two resources.
 
-\textbf{Note}: As the CLUE data is not published yet, there is no DOI,
-so this is a mock-up DOI.
+\textbf{Note}: As the CLUE data is not published yet, there is no DOI, so this is a mock-up DOI.
 
 \begin{verbatim}
 <eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
@@ -1655,27 +1562,25 @@ so this is a mock-up DOI.
   </additionalMetadata>
 </eml>
 \end{verbatim}
+
 \end{examplebox}
 
 Identifiers for the same entity or concept are likely different in different resources and therefore the different identifiers should be mapped to one another. The simplest way of mapping is through a comma- or tab-separated file where each row describes a single entity and the columns provide the identifiers in each dataset. There are other ways of doing this and a more detailed description of these mapping methods can be found \href{https://faircookbook.elixir-europe.org/content/recipes/interoperability/identifier-mapping.html}{here}.
 
 \begin{examplebox}
+
 \textbf{Crickets:}
 
-The European field cricket (\emph{Gryllus campestris} Linnaeus, 1758) is
-listed in several taxonomies with different identifiers. To integrate
-these different sources, links can be described by creating a mapping
-file (e.g., CSV, see below), where the row represents the species, and
-columns contain the identifiers from each taxonomy.
+The European field cricket (\emph{Gryllus campestris} Linnaeus, 1758) is listed in several taxonomies with different identifiers. To integrate these different sources, links can be described by creating a mapping file (e.g., CSV, see below), where the row represents the species, and columns contain the identifiers from each taxonomy.
 
 \begin{verbatim}
 scientificName,GBIF_ID,COL_ID,BOL_ID
 "Gryllus campestris (Linnaeus, 1785)",1716462,9GQRY,208632
 \end{verbatim}
 
-Note: All IDs are the real IDs from the respective taxonomies but we
-have not done this mapping in the cricket data ourselves (i.e., it
-cannot be found in the code on GitHub).\end{examplebox}
+Note: All IDs are the real IDs from the respective taxonomies but we have not done this mapping in the cricket data ourselves (i.e., it cannot be found in the code on GitHub).
+
+\end{examplebox}
 
 This structured approach ensures that data referencing the same entity across different systems is linked effectively, facilitating data integration and analysis.
 
@@ -2059,9 +1964,8 @@ The creator and the contact can either be a named person, a certain position tha
 The \texttt{\textless{}contact\textgreater{}}, \texttt{\textless{}creator\textgreater{}} and \texttt{\textless{}metadataProvider\textgreater{}} can be different people/organisations/positions but can also all be the same. For example, if the same person is the \texttt{\textless{}metadataProvider\textgreater{}} and \texttt{\textless{}contact\textgreater{}} for a dataset, their name and email address can be provided once as part of the \texttt{\textless{}metadataProvider\textgreater{}} element, and then their \texttt{\textless{}id\textgreater{}} can be used in the \texttt{\textless{}references\textgreater{}} element of \texttt{\textless{}contact\textgreater{}}. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.
 
 \begin{examplebox}
-The metadata provider is assigned with ``id-1''. As the contact for the
-dataset is the same person, it can directly be referred to ``id-1''
-instead of adding the full personal information again.
+
+The metadata provider is assigned with ``id-1''. As the contact for the dataset is the same person, it can directly be referred to ``id-1'' instead of adding the full personal information again.
 
 \begin{verbatim}
 <metadataProvider id="id-1" scope="document">
@@ -2076,6 +1980,7 @@ instead of adding the full personal information again.
   <references>id-1</references>
 </contact>
 \end{verbatim}
+
 \end{examplebox}
 
 \begin{itemize}
@@ -2256,6 +2161,7 @@ The meta-file contains the structural metadata and is required by the Darwin Cor
 In contrast to the EML file, where the metadata is specific to the dataset, the meta file always consists of the same content, only depending on the file and column names of the individual Darwin Core Archive. The root element \texttt{\textless{}archive\textgreater{}} consists of the sub-elements \texttt{\textless{}core\textgreater{}} and \texttt{\textless{}extension\textgreater{}} (once for every extension file). Within these elements, there is a \texttt{\textless{}field\textgreater{}} element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description of the components of the meta.xml file see the \href{https://dwc.tdwg.org/text/}{Darwin Core text guide}.
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
 \begin{verbatim}
@@ -2302,6 +2208,7 @@ In contrast to the EML file, where the metadata is specific to the dataset, the 
   [...]
 </archive>
 \end{verbatim}
+
 \end{examplebox}
 
 \hypertarget{tools-to-help-you-5}{%
@@ -2319,6 +2226,7 @@ Additionally, you can find a nice overview over packages and helpful websites to
 The key for creating the EML.xml file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term (see example box below). For a full example, you can also browse our \href{https://github.com/LTER-LIFE/FDFDT}{GitHub repository}.
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
 \begin{verbatim}
@@ -2332,8 +2240,7 @@ keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology",
                   keywordThesaurus = "GEMET"))
 \end{verbatim}
 
-\emph{keyword} and \emph{keywordThesaurus} are the EML subterms of
-\emph{keywordSet}, which looks like this in XML:
+\emph{keyword} and \emph{keywordThesaurus} are the EML subterms of \emph{keywordSet}, which looks like this in XML:
 
 \begin{verbatim}
 <keywordSet>
@@ -2348,16 +2255,17 @@ keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology",
  <keywordThesaurus>GEMET</keywordThesaurus>
 </keywordSet>
 \end{verbatim}
+
 \end{examplebox}
 
 The lists of all terms have to be combined in a final list that can then be converted into an XML file through the function \texttt{write\_eml()} of the \texttt{EML} package.
 Some EML terms require XML attributes (see EML terms). These can be assigned using the \texttt{xml2} package by first identifying all nodes for which the attribute should be set (\texttt{xml2::xml\_find\_all()}) and then setting the attribute with \texttt{xml2::xml\_set\_attr()}).
 
 \begin{examplebox}
+
 \textbf{Bud burst}:
 
-The following example shows how the final list is converted into the EML
-file and how to set the attribute ``provider'' for the taxonID.
+The following example shows how the final list is converted into the EML file and how to set the attribute ``provider'' for the taxonID.
 
 \begin{verbatim}
 # Combine all components in one list
@@ -2393,6 +2301,7 @@ taxonId_node <- xml2::xml_find_all(EML, xpath = "//taxonId")
 xml2::xml_set_attr(taxonId_node, attr = "provider", 
         value = "https://www.gbif.org/")
 \end{verbatim}
+
 \end{examplebox}
 
 Once you set all required attributes, you should check whether your EML file is schema-valid. This can be done with the function \texttt{eml\_validate()} of the \texttt{emld} package.

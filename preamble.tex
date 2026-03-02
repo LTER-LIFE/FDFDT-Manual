@@ -27,7 +27,6 @@
 % ============================================================
 \usepackage{fontspec}
 
-% Option 1: Using font paths directly
 \setmainfont{Asap}[
   Path = fonts/,
   Extension = .ttf,
@@ -83,7 +82,7 @@
 % ===================================
 % References
 % ===================================
-\usepackage[backend=biber,style=verbose,autocite=footnote]{biblatex}
+\usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{book.bib} 
 
 % ============================================================
@@ -134,7 +133,6 @@
 % ============================================================
 % Custom blocks
 % ============================================================
-\usepackage{booktabs}
 \usepackage{framed}
 \usepackage{fancyvrb}
 \usepackage{tcolorbox}
@@ -145,21 +143,25 @@
 
 % Define colours for custom blocks
 \definecolor{shadecolor}{RGB}{248,248,248}
+
 % Define Shaded environment if not already defined
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+
 % Define Highlighting environment if using knitr syntax highlighting
 \newenvironment{Highlighting}[1][]
   {\VerbatimEnvironment
    \begin{snugshade}\begin{Verbatim}[#1]}
   {\end{Verbatim}\end{snugshade}}
 
+% define custom colours for custom blocks
 \definecolor{infocolor}{RGB}{239, 158, 5}
 \definecolor{examplecolor}{RGB}{0, 192, 168}
 \definecolor{disclaimercolor}{RGB}{192, 41, 2}
 
+% set up custom blocks
 \usepackage{tcolorbox}
 
-% Info box style with PDF icon
+% Info box style with icon
 \newtcolorbox{infobox}{
   colframe=infocolor,
   colback=infocolor!10,
@@ -172,7 +174,7 @@
   before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_note.pdf}\hspace{5mm}},
 }
 
-% Example box style with PDF icon
+% Example box style with icon
 \newtcolorbox{examplebox}{
   colframe=examplecolor,
   colback=examplecolor!10,
@@ -185,7 +187,7 @@
   before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_example.pdf}\hspace{5mm}},
 }
 
-% Disclaimer box style with PDF icon
+% Disclaimer box style with icon
 \newtcolorbox{disclaimerbox}{
   colframe=disclaimercolor,
   colback=disclaimercolor!10,
@@ -197,7 +199,6 @@
   bottom=5mm,
   before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_disclaimer.pdf}\hspace{5mm}},
 }
-
 
 % ===================
 % Add logo to title page

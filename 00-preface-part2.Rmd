@@ -28,3 +28,4 @@ The project "Data for Digital Twins - Piloting a FAIR Data Infrastructure for th
 
 One of the main goals of this project was to use hands-on experience from FAIRifying a range of different ecological datasets to create a manual that guides ecologists step-by-step through the process of FAIRifying their ecological data themselves. Many ecological datasets are not compliant with the FAIR data principles, which makes it difficult to share and exchange biological data. This is also true for the data collected at NIOO and together with the general movement towards open and FAIR data, this initialised this project.
 
+<div>

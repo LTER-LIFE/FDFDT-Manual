@@ -1,39 +1,39 @@
 -- Custom block conversion for PDF output
--- Converts Pandoc fenced divs to LaTeX tcolorbox environments
+-- SAFE + preserves citations + preserves all content
 
 function Div(elem)
--- Get the class from the element
-local classes = elem.classes
 
-if classes:includes("infobox") then
--- Convert to LaTeX infobox
-return pandoc.RawBlock(
-  'latex',
-  '\\begin{infobox}\n' .. 
-  pandoc.write(pandoc.Pandoc(elem.content), 'latex') ..
-  '\\end{infobox}\n'
-)
-end
+  local function wrap_in_env(el, envname)
+    if FORMAT:match("latex") then
+      local blocks = pandoc.List()
 
-if classes:includes("examplebox") then
--- Convert to LaTeX examplebox
-return pandoc.RawBlock(
-  'latex',
-  '\\begin{examplebox}\n' ..
-  pandoc.write(pandoc.Pandoc(elem.content), 'latex') ..
-  '\\end{examplebox}\n'
-)
-end
+      blocks:insert(pandoc.RawBlock("latex",
+        "\\begin{" .. envname .. "}"))
 
-if classes:includes("disclaimer") then
--- Convert to LaTeX disclaimerbox
-return pandoc.RawBlock(
-  'latex',
-  '\\begin{disclaimerbox}\n' ..
-  pandoc.write(pandoc.Pandoc(elem.content), 'latex') ..
-  '\\end{disclaimerbox}\n'
-)
-end
+      for _, block in ipairs(el.content) do
+        blocks:insert(block)
+      end
 
-return elem
+      blocks:insert(pandoc.RawBlock("latex",
+        "\\end{" .. envname .. "}"))
+
+      return blocks
+    end
+
+    return elem
+  end
+
+  if elem.classes:includes("infobox") then
+    return wrap_in_env(elem, "infobox")
+  end
+
+  if elem.classes:includes("examplebox") then
+    return wrap_in_env(elem, "examplebox")
+  end
+
+  if elem.classes:includes("disclaimer") then
+    return wrap_in_env(elem, "disclaimerbox")
+  end
+
+  return elem
 end
