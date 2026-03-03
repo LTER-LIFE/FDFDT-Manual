@@ -1,0 +1,133 @@
+## Arrange Darwin Core terms in core and extension files
+
+In the Darwin Core Archive the Darwin Core terms are sorted into the different files, each having terms that are required and some that we highly recommend to use, while others are optional additions. Generally, every extension file needs to contain the core identifier of the core file. For example, if you have an event core, the core ID is the field "eventID" and every extension file therefore needs to have the column eventID, linking records to the records in the core. In the following we provide an overview which terms can be included in which file. This is based on the documentation in the [GBIF schema repository](https://rs.gbif.org/extensions.html). Additionally we indicate which terms we view as required to have in each file and which we strongly recommend, adapted from the data quality requirements of GBIF for each data type ([Sampling event](https://www.gbif.org/data-quality-requirements-sampling-events), [occurrence](https://www.gbif.org/data-quality-requirements-occurrences), [checklist](https://www.gbif.org/data-quality-requirements-checklists) data).
+
+### General terms (Terms of class Record-level)
+
+There are terms that can always be included in the core-file, independent of what the core is. Those are record-level terms, which are generic and can apply to any type of records in the data. The content of these terms can be considered [metadata](#metadata), which is why it is likely that you do not have corresponding columns in your data yet but need to create new columns. Many of these terms are from the [Dublin Core](#dublincore) namespace and few come with a fixed vocabulary to use to fill them.
+
+The following terms can be useful to add, while none of them are required:
+
+-   type: to be filled with one of the terms in the [DCMI type vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)
+
+-   language: use controlled vocabulary, such as the [ISO language code](https://www.w3schools.com/tags/ref_language_codes.asp)
+
+-   licence: see section [licencing](#Licencing)
+
+-   rightsHolder
+
+-   accessRights
+
+-   bibliographicCitation: should provide clear information on how to cite the resource itself
+
+-   references
+
+-   institutionCode
+
+-   institutionID
+
+-   datasetID
+
+-   basisOfRecord: best practise is to use controlled vocabulary, such as the names of the Darwin Core classes:
+
+    -   MaterialEntity, PreservedSpecimen, FossilSpecimen, LivingSpecimen, MaterialSample, Event, HumanObservation, MachineObservation, Taxon, Occurrence, MaterialCitation
+
+### Event file
+
+The event file can include the following terms:
+
+-   all terms of the class **Event**
+-   all terms of the class **Location**
+-   all terms of the class **GeologicalContext**
+
+
+**Required**:
+
+- eventID
+
+- eventDate
+
+- samplingProtocol
+
+- sampleSizeValue <span style="color: #1a1a1a7d;">&</span> sampleSizeUnit 
+
+
+**Recommended**:
+
+- parentEventID <span style="color: #1a1a1a7d;">(if applicable)</span>
+
+- samplingEffort
+
+- decimalLatitude <span style="color: #1a1a1a7d;">&</span> decimalLongitude <span style="color: #1a1a1a7d;">&</span> geodeticDatum
+
+- coordinateUncertaintyInMeters
+
+- countryCode
+
+
+### Occurrence file
+
+All of the terms that can be included in the event file can also be included in the occurrence file. The occurrence file is however more flexible and additionally allows for more terms. You can additionally include:
+
+- all terms of the class **Occurrence**
+- all terms of the class **Organism**
+- all terms of the class **Taxon**
+- all terms of the class **Identification**
+
+
+**Required**:
+
+- scientificName
+
+- occurrenceStatus
+
+- basisOfRecord
+
+- occurrenceID
+
+
+**Recommended**:
+
+- taxonRank
+
+- kingdom <span style="color: #1a1a1a7d;">(or other higher taxonomy)</span>
+
+- decimalLongitue <span style="color: #1a1a1a7d;">&</span> decimalLatitude <span style="color: #1a1a1a7d;">&</span> geodeticDatum
+
+- coordinateUncertaintyInMeters
+
+- countryCode
+
+- individualCount <span style="color: #1a1a1a7d;">**or**</span> organismQuantity <span style="color: #1a1a1a7d;">&</span> organismQuantityType
+
+
+### Taxon file
+
+The taxon file only contains the record-level terms and all terms of the class **taxon**. 
+
+
+**Required**:
+
+- taxonID
+
+- scientificName
+
+- taxonRank
+
+
+**Recommended**:
+
+- kingdom <span style="color: #1a1a1a7d;">(or other higher taxonomy)</span>
+
+- parentNameUsageID
+
+- acceptedNameUsageID
+
+
+### MeasurementOrFact file
+
+The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included. 
+
+The **extendedMeasurementOrFact** extension additionally includes the occurrenceID and three ID fields: measurementTypeID, measurementValueID, and measurementUnitID. These fields are not part of the Darwin Core namespace but refer to [OBIS](#OBIS).
+
+<div>

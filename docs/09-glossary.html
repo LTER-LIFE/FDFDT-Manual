@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 9 Glossary | A hands-on guide to FAIR and structured ecological data</title>
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 9 Glossary | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  <meta name="github-repo" content="CherineJ/FDFDT-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 9 Glossary | A hands-on guide to FAIR and structured ecological data" />
+  
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable)." />
+  
+
+<meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
+
+
+<meta name="date" content="2024-07-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="08.2-XML-in-R.html"/>
+<link rel="next" href="10-references.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A hands-on guide to FAIR and structured ecological data.</a></li>
+
+<li class="divider"></li>
+<li class="part"><span><b>- I. Background -</b></span></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#why-you-should-use-this-guide"><i class="fa fa-check"></i>Why you should use this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-this-guide-came-to-be"><i class="fa fa-check"></i>How this guide came to be</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="01-introduction.html"><a href="01-introduction.html#what-is-fair"><i class="fa fa-check"></i><b>1.1</b> What is FAIR?</a></li>
+<li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
+<li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
+<li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR assessment of your data</a></li>
+<li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of assessment questions to FAIR principles</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="02-example-datasets.html"><a href="02-example-datasets.html#budburst"><i class="fa fa-check"></i><b>2.1</b> Bud burst data</a></li>
+<li class="chapter" data-level="2.2" data-path="02-example-datasets.html"><a href="02-example-datasets.html#cricket"><i class="fa fa-check"></i><b>2.2</b> Cricket data</a></li>
+<li class="chapter" data-level="2.3" data-path="02-example-datasets.html"><a href="02-example-datasets.html#CLUE"><i class="fa fa-check"></i><b>2.3</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
+</ul></li>
+<li class="part"><span><b>- II. How-to chapters -</b></span></li>
+<li class="chapter" data-level="3" data-path="03-workflow.html"><a href="03-workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
+<li class="part"><span><b>a. Primary data</b></span></li>
+<li class="chapter" data-level="4" data-path="04-Describe-data.html"><a href="04-Describe-data.html"><i class="fa fa-check"></i><b>4</b> Primary data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#describe-data"><i class="fa fa-check"></i><b>4.1</b> Describe your data (Metadata)</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+</ul></li>
+<li class="part"><span><b>b. Storage</b></span></li>
+<li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a></li>
+<li class="chapter" data-level="5.2" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>5.2</b> Choosing a repository</a></li>
+<li class="chapter" data-level="5.3" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>5.3</b> Repositories to store biodiversity data</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="05-storage.html"><a href="05-storage.html#global-repositories"><i class="fa fa-check"></i><b>5.3.1</b> Global repositories</a></li>
+<li class="chapter" data-level="5.3.2" data-path="05-storage.html"><a href="05-storage.html#dutch-repositories"><i class="fa fa-check"></i><b>5.3.2</b> Dutch repositories</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="05-storage.html"><a href="05-storage.html#tools-to-help-you"><i class="fa fa-check"></i><b>5.4</b> Tools to help you</a></li>
+<li class="chapter" data-level="5.5" data-path="05-storage.html"><a href="05-storage.html#our-choice"><i class="fa fa-check"></i><b>5.5</b> Our choice</a></li>
+</ul></li>
+<li class="part"><span><b>c. Standards</b></span></li>
+<li class="chapter" data-level="6" data-path="06-standard.html"><a href="06-standard.html"><i class="fa fa-check"></i><b>6</b> Standardise your data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="06-standard.html"><a href="06-standard.html#choose-a-data-standard"><i class="fa fa-check"></i><b>6.1</b> Choose a data standard</a></li>
+<li class="chapter" data-level="6.2" data-path="06-standard.html"><a href="06-standard.html#data-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>6.2</b> Data standards for biodiversity data</a></li>
+<li class="chapter" data-level="6.3" data-path="06-standard.html"><a href="06-standard.html#tools-to-help-you-1"><i class="fa fa-check"></i><b>6.3</b> Tools to help you</a></li>
+<li class="chapter" data-level="6.4" data-path="06-standard.html"><a href="06-standard.html#our-choice-1"><i class="fa fa-check"></i><b>6.4</b> Our choice</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="06-standard.html"><a href="06-standard.html#why-darwin-core"><i class="fa fa-check"></i><b>6.4.1</b> Why Darwin Core?</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="06-standard.html"><a href="06-standard.html#mapping-your-data-to-darwin-core"><i class="fa fa-check"></i><b>6.5</b> Mapping your data to Darwin Core</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="06-standard.html"><a href="06-standard.html#darwin-core-namespaces"><i class="fa fa-check"></i><b>6.5.1</b> Darwin Core namespaces</a></li>
+<li class="chapter" data-level="6.5.2" data-path="06-standard.html"><a href="06-standard.html#darwin-core-terms"><i class="fa fa-check"></i><b>6.5.2</b> Darwin Core terms</a></li>
+<li class="chapter" data-level="6.5.3" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-event"><i class="fa fa-check"></i><b>6.5.3</b> Terms of class Event</a></li>
+<li class="chapter" data-level="6.5.4" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-location"><i class="fa fa-check"></i><b>6.5.4</b> Terms of class Location</a></li>
+<li class="chapter" data-level="6.5.5" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-organism"><i class="fa fa-check"></i><b>6.5.5</b> Terms of class Organism</a></li>
+<li class="chapter" data-level="6.5.6" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-occurrence"><i class="fa fa-check"></i><b>6.5.6</b> Terms of class Occurrence</a></li>
+<li class="chapter" data-level="6.5.7" data-path="06-standard.html"><a href="06-standard.html#mof"><i class="fa fa-check"></i><b>6.5.7</b> Terms of class Measurement or fact</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html"><i class="fa fa-check"></i><b>6.6</b> Ontologies and controlled vocabulary</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-2"><i class="fa fa-check"></i><b>6.6.1</b> Tools to help you</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#biological-taxonomies"><i class="fa fa-check"></i><b>6.7</b> Biological taxonomies</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#gbif-backbone-taxonomy"><i class="fa fa-check"></i><b>6.7.1</b> GBIF Backbone taxonomy</a></li>
+<li class="chapter" data-level="6.7.2" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#catalogue-of-life-col"><i class="fa fa-check"></i><b>6.7.2</b> Catalogue of Life (COL)</a></li>
+<li class="chapter" data-level="6.7.3" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#encyclopedia-of-life-eol"><i class="fa fa-check"></i><b>6.7.3</b> Encyclopedia of Life (EOL)</a></li>
+<li class="chapter" data-level="6.7.4" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#integrated-taxonomic-information-system-itis"><i class="fa fa-check"></i><b>6.7.4</b> Integrated Taxonomic Information System (ITIS)</a></li>
+<li class="chapter" data-level="6.7.5" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>6.7.5</b> World Registry of Marine Species (WoRMS)</a></li>
+<li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+</ul></li>
+<li class="part"><span><b>d. Structure</b></span></li>
+<li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="07-structure.html"><a href="07-structure.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
+<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#darwin-core-archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.3" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
+<li class="chapter" data-level="7.3.2" data-path="07-structure.html"><a href="07-structure.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>7.3.2</b> Occurrence core vs. event core</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="07-structure.html"><a href="07-structure.html#which-extensions"><i class="fa fa-check"></i><b>7.4</b> Which extension(s)?</a></li>
+<li class="chapter" data-level="7.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html"><i class="fa fa-check"></i><b>7.5</b> Arrange Darwin Core terms in core and extension files</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>7.5.1</b> General terms (Terms of class Record-level)</a></li>
+<li class="chapter" data-level="7.5.2" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#event-file"><i class="fa fa-check"></i><b>7.5.2</b> Event file</a></li>
+<li class="chapter" data-level="7.5.3" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#occurrence-file"><i class="fa fa-check"></i><b>7.5.3</b> Occurrence file</a></li>
+<li class="chapter" data-level="7.5.4" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#taxon-file"><i class="fa fa-check"></i><b>7.5.4</b> Taxon file</a></li>
+<li class="chapter" data-level="7.5.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#measurementorfact-file"><i class="fa fa-check"></i><b>7.5.5</b> MeasurementOrFact file</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>e. Metadata</b></span></li>
+<li class="chapter" data-level="8" data-path="08-metadata.html"><a href="08-metadata.html"><i class="fa fa-check"></i><b>8</b> Standardise and structure your metadata</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
+<li class="chapter" data-level="8.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
+<li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
+<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4</b> EML terms</a></li>
+<li class="chapter" data-level="8.5" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.5</b> Structural metadata - The meta.xml file</a></li>
+<li class="chapter" data-level="8.6" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.6</b> Tools to help you</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.6.1</b> EML.xml file</a></li>
+<li class="chapter" data-level="8.6.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.6.2</b> meta.xml file</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="09-glossary.html"><a href="09-glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a></li>
+<li class="chapter" data-level="10" data-path="10-references.html"><a href="10-references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A hands-on guide to FAIR and structured ecological data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="glossary" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number"> 9</span> Glossary<a href="09-glossary.html#glossary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="API" class="section level4 unnumbered hasAnchor">
+<h4>API<a href="09-glossary.html#API" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>An Application Programming Interface (API) defines a way of communication between two applications based on requests and responses, which allows data exchange between these applications.</p>
+<ul>
+<li>Source: <a href="https://www.ibm.com/topics/api" class="uri">https://www.ibm.com/topics/api</a></li>
+</ul>
+</div>
+<div id="core" class="section level4 unnumbered hasAnchor">
+<h4>Core file<a href="09-glossary.html#core" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The core file is the central element of the Darwin Core Archive to which all other files are linked. Different files are possible to be used as the core depending on the type of the data. While checklist data requires a taxon file as the core, occurrence data requires an occurrence file and sampling-event data an event file.</p>
+<ul>
+<li>More information: <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide" class="uri">https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide</a></li>
+</ul>
+</div>
+<div id="DwC" class="section level4 unnumbered hasAnchor">
+<h4>Darwin Core (DwC)<a href="09-glossary.html#DwC" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Darwin Core is a stable data standard maintained by TDWG (Biodiversity Information Standards) tailored to describe biodiversity data by using a defined library of terms. It is an extension of the Dublin Core Metadata Initiative and facilitates sharing of biodiversity data from various sources. Every term has a clear definition and a URL, which can be used irrespective of technology, e.g., XML or RDF.</p>
+<ul>
+<li>Source: <a href="https://www.tdwg.org/standards/dwc/" class="uri">https://www.tdwg.org/standards/dwc/</a></li>
+</ul>
+</div>
+<div id="DwC-A" class="section level4 unnumbered hasAnchor">
+<h4>Darwin Core Archive<a href="09-glossary.html#DwC-A" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Darwin Core Archives are a way of structuring a dataset that uses the Darwin Core standard. It consists of a core file and a number of extension files, as well as two files describing the metadata of the dataset. The first is called meta.xml and is a XML file describing the structural metadata, i.e., the organisation of the files and maps each column name (i.e., Darwin Core term) to its identifier. The second metadata file is the EML file containing the descriptive and administrative metadata using the metadata standard Ecological metadata language.</p>
+<ul>
+<li>More information: <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide" class="uri">https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide</a></li>
+</ul>
+</div>
+<div id="dataset" class="section level4 unnumbered hasAnchor">
+<h4>Data(set)<a href="09-glossary.html#dataset" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Data is defined as information that is collected to be used for decision making or refers to information in a digital format that can be used by computers. Dataset refers to a collection of data. The two terms are not always used consistently across sources. We use data to describe the collected/recorded data itself (in contrast to metadata that describes it), which can (but does not have to) consist of several data files. Dataset is used when we refer to the data and the metadata together.</p>
+<ul>
+<li>Sources:
+<ul>
+<li><a href="https://dictionary.cambridge.org/dictionary/english/data" class="uri">https://dictionary.cambridge.org/dictionary/english/data</a></li>
+<li><a href="https://dictionary.cambridge.org/dictionary/english/datset" class="uri">https://dictionary.cambridge.org/dictionary/english/datset</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="datalifecycle" class="section level4 unnumbered hasAnchor">
+<h4>Data lifecycle<a href="09-glossary.html#datalifecycle" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The data lifecycle describes the stages that the data goes through, starting with planning of data collection, followed by the data collection or acquisition. Afterwards the data is processed to then be used and analysed. After that, the data should be properly stored and curated to be preserved in the long run, which finally leads to publishing and sharing the data, allowing others to reuse it, with which the cycle can start again. There are however different versions of the data lifecycle, differing slightly in the respective steps.</p>
+<p><span style="text-align: left;">- More information: <a href="https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf" class="uri">https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf</a></span></p>
+</div>
+<div id="datamanagement" class="section level4 unnumbered hasAnchor">
+<h4>Data management<a href="09-glossary.html#datamanagement" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others.</p>
+<p><span style="text-align: left;">- More information: <a href="https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf" class="uri">https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf</a></span></p>
+</div>
+<div id="dublincore" class="section level4 unnumbered hasAnchor">
+<h4>Dublin Core<a href="09-glossary.html#dublincore" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Dublin Core is a metadata standard consisting of a set of 15 terms used to describe metadata. The terms themselves consist of several dozen properties, classes, data types, and vocabulary encoding schemes and are maintained by the Dublin Core Metadata Initiative (DCMI).</p>
+<ul>
+<li>More information: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" class="uri">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></li>
+</ul>
+</div>
+<div id="eml" class="section level4 unnumbered hasAnchor">
+<h4>EML<a href="09-glossary.html#eml" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>EML, the Ecological metadata language, is a metadata standard commonly used for ecological data. It consists of a set of terms with which metadata can be described. EML uses a readable XML markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata.</p>
+<ul>
+<li>More information: <a href="https://eml.ecoinformatics.org/schema/" class="uri">https://eml.ecoinformatics.org/schema/</a></li>
+</ul>
+</div>
+<div id="event" class="section level4 unnumbered hasAnchor">
+<h4>Event<a href="09-glossary.html#event" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Event is a Darwin Core class describing an action that occurs at some location during some time. In the context of Darwin Core archives events can be stored in an event-file that stores information on the time and place of the events, but also more administrative information, such as the data collector, sampling effort or sample size.</p>
+<ul>
+<li>Sources:
+<ul>
+<li><a href="https://dwc.tdwg.org/terms/#event" class="uri">https://dwc.tdwg.org/terms/#event</a></li>
+<li><a href="https://rs.gbif.org/core/dwc_event_2024-02-19.xml" class="uri">https://rs.gbif.org/core/dwc_event_2024-02-19.xml</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="extension" class="section level4 unnumbered hasAnchor">
+<h4>Extension file<a href="09-glossary.html#extension" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Extension files are a file type that can exist in Darwin Core Archives next to the core file. There can be an unlimited number of extensions, each holding a different kind of information and each row within an extension file directly links to a record in the core file through the core identifier. Commonly used extensions for biodiversity data collected on living organisms are occurrence, taxon or measurement or fact.</p>
+<ul>
+<li>More information: <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide" class="uri">https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide</a></li>
+</ul>
+</div>
+<div id="FAIR" class="section level4 unnumbered hasAnchor">
+<h4>FAIR<a href="09-glossary.html#FAIR" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>FAIR stands for Findable, Accessible, Interoperable and Reusable and comes with 15 guiding principles developed by Wilkinson et al. in 2015. Findability means that the metadata (and the data) can easily be found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines. Additionally, it is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required (Accessibility). Interoperability means that the data is fully compatible with other data making it integrable with other data resources and allows to incorporate it into workflows or applications. In easier words this means that data resources should ‘speak the same language’ to be used together. The ultimate goal of the FAIR concept is to make the data reusable (Reusability), which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.</p>
+<ul>
+<li>More information: <a href="https://www.go-fair.org/fair-principles/" class="uri">https://www.go-fair.org/fair-principles/</a></li>
+</ul>
+</div>
+<div id="GBIF" class="section level4 unnumbered hasAnchor">
+<h4>GBIF<a href="09-glossary.html#GBIF" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>GBIF, the global biodiversity information facility, is a data infrastructure and international network providing open access to biodiversity data.</p>
+<ul>
+<li>Source: <a href="https://www.gbif.org/" class="uri">https://www.gbif.org/</a></li>
+</ul>
+</div>
+<div id="URI" class="section level4 unnumbered hasAnchor">
+<h4>IRI, URI and URL<a href="09-glossary.html#URI" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Uniform resource identifiers (URI) are a standardised way to identify resources of information on the internet. One of the most common forms of the URI is the URL, the uniform resource locator, often also called a web address. The IRI (Internationalized Resource Identifier) is an internationalised expansion of the URI supporting a wider range of characters besides the Latin alphabet. While URL is location oriented and describes the physical location of a resource on the internet, the URI is identifier oriented and refers to the resource itself. They are however often treated the same way.</p>
+<ul>
+<li>Sources and more information:
+<ul>
+<li>GBIF (2011). A Beginner’s Guide to Persistent Identifiers, version 1.0. Released on 9 February 2011. Authors Kevin Richards, Richard White, Nicola Nicolson, Richard Pyle, Copenhagen: Global Biodiversity Information Facility, 33 pp, accessible online at <a href="http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf" class="uri">http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf</a></li>
+<li><a href="https://www.w3.org/2001/Talks/0912-IUC-IRI/paper.html" class="uri">https://www.w3.org/2001/Talks/0912-IUC-IRI/paper.html</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="measurementorfact" class="section level4 unnumbered hasAnchor">
+<h4>MeasurementOrFact<a href="09-glossary.html#measurementorfact" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Measurement or fact is a Darwin Core class describing measurement values and or facts about a resource. It can also be an extension file of the Darwin Core archive storing the measurements or facts belonging to the events or occurrences described in the core file.</p>
+<ul>
+<li>Source: <a href="https://dwc.tdwg.org/terms/#measurementorfact" class="uri">https://dwc.tdwg.org/terms/#measurementorfact</a></li>
+</ul>
+</div>
+<div id="metadata" class="section level4 unnumbered hasAnchor">
+<h4>Metadata<a href="09-glossary.html#metadata" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Metadata contains information about other data and provides descriptions that make the data easier to understand and reuse. Structural metadata contains information about how the data is organised, what variables mean and how files relate to one another, while administrative metadata provides information about ownership, preservation and rights and licences of the data. Thirdly, descriptive metadata describes the background of the data, such as how, where and when it was collected, who is responsible and what contents the data cover.</p>
+<ul>
+<li>More information: <a href="https://www.w3.org/TR/dwbp/#metadata" class="uri">https://www.w3.org/TR/dwbp/#metadata</a></li>
+</ul>
+</div>
+<div id="metaxml" class="section level4 unnumbered hasAnchor">
+<h4>Meta.xml<a href="09-glossary.html#metaxml" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The meta.xml file is a component of the Darwin Core Archive and contains its structural metadata in an XML file. The file describes how the data files in the archive are linked to each other and provides for each column the identifier of the corresponding Darwin Core term.</p>
+<ul>
+<li>More information: <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide" class="uri">https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide</a></li>
+</ul>
+</div>
+<div id="mobilisation" class="section level4 unnumbered hasAnchor">
+<h4>Mobilisation<a href="09-glossary.html#mobilisation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Transferring data that is stored locally to an online repository and thereby enabling its reuse by others.</p>
+<ul>
+<li>More information: <a href="https://www.gbif.org.nz/mobilising/" class="uri">https://www.gbif.org.nz/mobilising/</a></li>
+</ul>
+</div>
+<div id="OBIS" class="section level4 unnumbered hasAnchor">
+<h4>OBIS<a href="09-glossary.html#OBIS" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>OBIS, the Ocean Biodiversity Information System, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.</p>
+<ul>
+<li>Source: <a href="https://obis.org/about/" class="uri">https://obis.org/about/</a></li>
+</ul>
+</div>
+<div id="occurrence" class="section level4 unnumbered hasAnchor">
+<h4>Occurrence<a href="09-glossary.html#occurrence" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Occurrence is a Darwin Core class describing the existence or presence of an organism at a certain place and time. In the context of Darwin Core archives, occurrences are stored in an occurrence-file that contains quantitative information about organisms, as well as taxonomic information.</p>
+<ul>
+<li>Sources:
+<ul>
+<li><a href="https://dwc.tdwg.org/terms/#occurrence" class="uri">https://dwc.tdwg.org/terms/#occurrence</a></li>
+<li><a href="https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml" class="uri">https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="ontology" class="section level4 unnumbered hasAnchor">
+<h4>Ontology<a href="09-glossary.html#ontology" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Ontologies provide definitions of terms by defining their relation to other terms in a human interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain.</p>
+<ul>
+<li>More information: <a href="https://www.ontotext.com/knowledgehub/fundamentals/what-are-ontologies/" class="uri">https://www.ontotext.com/knowledgehub/fundamentals/what-are-ontologies/</a></li>
+</ul>
+</div>
+<div id="PID" class="section level4 unnumbered hasAnchor">
+<h4>Persistent identifier (PID)<a href="09-glossary.html#PID" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A persistent identifier is a unique identification code belonging to a digital resource that ensures persistent identification of the resource, even if the web address of the creator of the resource changes. For detailed information on different PID systems see <a href="https://www.pidwijzer.nl/en">here</a>.</p>
+</div>
+<div id="provenance" class="section level4 unnumbered hasAnchor">
+<h4>Provenance<a href="09-glossary.html#provenance" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Provenance is a form of metadata that provides information about the history of the dataset, which includes people and parties that were involved in its creation, as well as how, where and when the data was created. Additionally, the provenance details should inform about previous versions of the data and the change history.</p>
+<ul>
+<li>More information: <a href="https://www.pldn.nl/wiki/Provenance" class="uri">https://www.pldn.nl/wiki/Provenance</a></li>
+</ul>
+</div>
+<div id="RDF" class="section level4 unnumbered hasAnchor">
+<h4>RDF<a href="09-glossary.html#RDF" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>RDF, the resource description framework, is a framework to represent interconnected data on the web. In RDF, objects are linked using semantic triples consisting of two objects and the link between them, often referred to as subject (= object 1), predicate ( = link) and object (= object 2). RDFs are machine readable and allow high interoperability between different data sources.</p>
+<ul>
+<li>Source: <a href="https://www.w3.org/RDF/" class="uri">https://www.w3.org/RDF/</a></li>
+</ul>
+</div>
+<div id="standardise" class="section level4 unnumbered hasAnchor">
+<h4>Standardisation<a href="09-glossary.html#standardise" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Converting data and/or metadata to a standard format to increase compatibility with other data.</p>
+<ul>
+<li>More information: <a href="https://www.sisense.com/glossary/data-standardization/" class="uri">https://www.sisense.com/glossary/data-standardization/</a></li>
+</ul>
+</div>
+<div id="starschema" class="section level4 unnumbered hasAnchor">
+<h4>Star schema<a href="09-glossary.html#starschema" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The star schema is the way the core file and the extension files are organised in the Darwin Core Archive. Each of the extension files directly links to the core file, while they cannot link to one another, creating what is considered to be a star-shape.</p>
+<ul>
+<li>More information: <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide" class="uri">https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide</a></li>
+</ul>
+</div>
+<div id="taxonomy" class="section level4 unnumbered hasAnchor">
+<h4>Taxonomy<a href="09-glossary.html#taxonomy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Taxonomy is a standard way of describing, naming and classifying things in a hierarchical way and in a biological context, classifying living and extinct organisms and the relationship between taxa.</p>
+<ul>
+<li>Sources:
+<ul>
+<li><a href="http://purl.obolibrary.org/obo/NCIT_C17469" class="uri">http://purl.obolibrary.org/obo/NCIT_C17469</a></li>
+<li><a href="http://purl.obolibrary.org/obo/GSSO_004259" class="uri">http://purl.obolibrary.org/obo/GSSO_004259</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="XML" class="section level4 unnumbered hasAnchor">
+<h4>XML<a href="09-glossary.html#XML" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Extensible markup language, XML, is a hardware- and software independent tool for storing and transmitting data by balancing human-readability with machine-readability. It is the file format used for the two metadata files in the Darwin Core Archive.</p>
+<ul>
+<li>Source: <a href="https://www.w3schools.com/xml/" class="uri">https://www.w3schools.com/xml/</a></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="08.2-XML-in-R.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="10-references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/09-glossary.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "none"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

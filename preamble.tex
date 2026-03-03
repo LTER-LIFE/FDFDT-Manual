@@ -1,0 +1,231 @@
+\usepackage{booktabs}
+
+% ===================
+% Footers and headers
+% ===================
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Clear default styles
+\fancyhf{}
+
+% Footer (bottom of page)
+\fancyfoot[C]{\thepage} 
+
+% Header
+\renewcommand{\headrulewidth}{0pt}
+
+% ============================================================
+% Line spacing
+% ============================================================
+\usepackage{setspace}
+\onehalfspacing
+
+% ============================================================
+% Fonts
+% ============================================================
+\usepackage{fontspec}
+
+\setmainfont{Asap}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
+
+\newfontfamily\headerfont{Urbanist}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
+
+% Apply header font to all heading levels
+\usepackage{sectsty}
+\chapterfont{\headerfont\bfseries}
+\sectionfont{\headerfont\bfseries}
+\subsectionfont{\headerfont}
+\subsubsectionfont{\headerfont}
+
+% ============================================================
+% Page breaks and spacing
+% ============================================================
+% Control orphans and widows (prevent single lines at page breaks)
+\usepackage[all]{nowidow}
+
+% paragraphs
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+% Reduce space before chapters
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-15pt}{15pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{6pt}
+
+\usepackage[margin=2.5cm]{geometry} 
+
+% Redefine \part to remove forced \cleardoublepage
+\makeatletter
+\patchcmd{\@part}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+% vertical spacing (put white space at bottom)
+\raggedbottom
+
+% ===================================
+% References
+% ===================================
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{book.bib} 
+
+% ============================================================
+% CHAPTER STYLING
+% ============================================================
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+
+% ============================================================
+% FIGURES & TABLES
+% ============================================================
+\usepackage{graphicx}
+\usepackage{float}
+
+% Improve table formatting
+\usepackage{array}
+\usepackage{tabularx}
+
+% Set maximum width for figures
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% resize font in tables to avoid column overlap
+\usepackage{etoolbox}
+
+\AtBeginEnvironment{table}{\scriptsize}
+\AtBeginEnvironment{longtable}{\scriptsize}
+\AtBeginEnvironment{tabular}{\scriptsize}
+
+% ============================================================
+% LIST FORMATTING
+% ============================================================
+\usepackage{enumitem}
+
+% Reduce spacing in lists
+\setlist[enumerate]{itemsep=4pt,topsep=6pt}
+\setlist[itemize]{itemsep=4pt,topsep=6pt}
+
+% ============================================================
+% MISC PACKAGES
+% ============================================================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{lastpage} 
+
+% ============================================================
+% Custom blocks
+% ============================================================
+\usepackage{framed}
+\usepackage{fancyvrb}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+
+% Define colours for custom blocks
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+% Define Shaded environment if not already defined
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+
+% Define Highlighting environment if using knitr syntax highlighting
+\newenvironment{Highlighting}[1][]
+  {\VerbatimEnvironment
+   \begin{snugshade}\begin{Verbatim}[#1]}
+  {\end{Verbatim}\end{snugshade}}
+
+% define custom colours for custom blocks
+\definecolor{infocolor}{RGB}{239, 158, 5}
+\definecolor{examplecolor}{RGB}{0, 192, 168}
+\definecolor{disclaimercolor}{RGB}{192, 41, 2}
+
+% set up custom blocks
+\usepackage{tcolorbox}
+
+% Info box style with icon
+\newtcolorbox{infobox}{
+  colframe=infocolor,
+  colback=infocolor!10,
+  boxrule=2pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_note.pdf}\hspace{5mm}},
+}
+
+% Example box style with icon
+\newtcolorbox{examplebox}{
+  colframe=examplecolor,
+  colback=examplecolor!10,
+  boxrule=1.5pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_example.pdf}\hspace{5mm}},
+}
+
+% Disclaimer box style with icon
+\newtcolorbox{disclaimerbox}{
+  colframe=disclaimercolor,
+  colback=disclaimercolor!10,
+  boxrule=2.5pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_disclaimer.pdf}\hspace{5mm}},
+}
+
+% ===================
+% Add logo to title page
+% ===================
+\usepackage{graphicx}
+\usepackage{titling}
+
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    % Title
+    {\Huge\bfseries \thetitle \par}
+    \vspace{2em}
+
+    % Author
+    {\Large \theauthor \par}
+    \vspace{1em}
+
+    % Date
+    {\small \textsc{\thedate} \par}
+    \vspace{3em}
+
+    % Logo
+    \includegraphics[width=0.22\textwidth]{images/LTER-LIFE-logo.pdf}
+
+    \vspace*{\fill}
+  \end{titlepage}
+}

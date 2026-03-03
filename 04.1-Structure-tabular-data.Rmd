@@ -1,0 +1,27 @@
+## Structuring your tabular data
+
+A common way of storing biodiversity data is in tables. However, simply entering the data into a spreadsheet does often not adhere to the strict requirements of tabular data, which has the following characteristics:
+
+
+- Structured in rows and columns 
+
+- A row contains information about a single entity (e.g., a person’s name, age, or occupation), whilst a single column describes the same property of each entity (e.g., the names of all persons)
+
+- Rectangular shape, in which each row has the same number of columns and each column the same number of rows
+
+- Cells in a row/column can be left empty
+
+
+For a more extensive and formal description of tabular data, see W3C’s [tabular data model](https://www.w3.org/TR/tabular-data-model/).
+
+To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that is meant to be tabular follows the aforementioned characteristics. If not, reshape your data accordingly. 
+
+:::{.infobox .infoimg}
+
+If your data consists of multiple tables, the relationships between these tables should be made clear. This can be done either by describing it in a README file (see [section 4.1](#describe-data)) or, if your data is already in a standard format, in a more standardised way, such as the meta.xml file described [here](#structural-metadata). 
+
+:::
+
+
+
+<div>

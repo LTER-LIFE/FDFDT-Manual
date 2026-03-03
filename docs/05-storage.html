@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 5 Storing your data | A hands-on guide to FAIR and structured ecological data</title>
+  <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 5 Storing your data | A hands-on guide to FAIR and structured ecological data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
+  <meta name="github-repo" content="LTER-LIFE/FDFDT-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 5 Storing your data | A hands-on guide to FAIR and structured ecological data" />
+  
+  <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
+  
+
+<meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
+
+
+<meta name="date" content="2026-03-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="images/LTER-LIFE-logo.svg" type="image/x-icon" />
+<link rel="prev" href="04.1-Structure-tabular-data.html"/>
+<link rel="next" href="06-standard.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="./"><img src="images/LTER-LIFE-logo.svg"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#release-notes"><i class="fa fa-check"></i>Release notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#why-you-should-use-this-guide"><i class="fa fa-check"></i>Why you should use this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
+<li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-this-guide-came-to-be"><i class="fa fa-check"></i>How this guide came to be</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="00.1-quick-start.html"><a href="00.1-quick-start.html"><i class="fa fa-check"></i>Quick-start guide</a></li>
+<li class="part"><span><b>- I. Background -</b></span></li>
+<li class="chapter" data-level="1" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="01-introduction.html"><a href="01-introduction.html#what-is-fair"><i class="fa fa-check"></i><b>1.1</b> What is FAIR?</a></li>
+<li class="chapter" data-level="1.2" data-path="01-introduction.html"><a href="01-introduction.html#adding-structure-to-fair"><i class="fa fa-check"></i><b>1.2</b> Adding structure to FAIR</a></li>
+<li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
+<li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
+<li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure evaluation of your data</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="02-example-datasets.html"><a href="02-example-datasets.html#budburst"><i class="fa fa-check"></i><b>2.1</b> Bud burst data</a></li>
+<li class="chapter" data-level="2.2" data-path="02-example-datasets.html"><a href="02-example-datasets.html#cricket"><i class="fa fa-check"></i><b>2.2</b> Cricket data</a></li>
+<li class="chapter" data-level="2.3" data-path="02-example-datasets.html"><a href="02-example-datasets.html#CLUE"><i class="fa fa-check"></i><b>2.3</b> CLUE field vegetation cover data (i.e., CLUE data)</a></li>
+</ul></li>
+<li class="part"><span><b>- II. How-to chapters -</b></span></li>
+<li class="chapter" data-level="3" data-path="03-workflow.html"><a href="03-workflow.html"><i class="fa fa-check"></i><b>3</b> Workflow</a></li>
+<li class="part"><span><b>a. Data preparation</b></span></li>
+<li class="chapter" data-level="4" data-path="04-Describe-data.html"><a href="04-Describe-data.html"><i class="fa fa-check"></i><b>4</b> Primary data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#describe-data"><i class="fa fa-check"></i><b>4.1</b> Describe your data (Metadata)</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="04-Describe-data.html"><a href="04-Describe-data.html#licencing"><i class="fa fa-check"></i><b>4.1.1</b> Licencing</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="04.1-Structure-tabular-data.html"><a href="04.1-Structure-tabular-data.html"><i class="fa fa-check"></i><b>4.2</b> Structuring your tabular data</a></li>
+</ul></li>
+<li class="part"><span><b>b. Storage</b></span></li>
+<li class="chapter" data-level="5" data-path="05-storage.html"><a href="05-storage.html"><i class="fa fa-check"></i><b>5</b> Storing your data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="05-storage.html"><a href="05-storage.html#which-data-to-store"><i class="fa fa-check"></i><b>5.1</b> Which data to store?</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="05-storage.html"><a href="05-storage.html#sensitive-information"><i class="fa fa-check"></i><b>5.1.1</b> Sensitive information</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="05-storage.html"><a href="05-storage.html#choosing-a-repository"><i class="fa fa-check"></i><b>5.2</b> Choosing a repository</a></li>
+<li class="chapter" data-level="5.3" data-path="05-storage.html"><a href="05-storage.html#repositories-to-store-biodiversity-data"><i class="fa fa-check"></i><b>5.3</b> Repositories to store biodiversity data</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="05-storage.html"><a href="05-storage.html#global-repositories"><i class="fa fa-check"></i><b>5.3.1</b> Global repositories</a></li>
+<li class="chapter" data-level="5.3.2" data-path="05-storage.html"><a href="05-storage.html#dutch-repositories"><i class="fa fa-check"></i><b>5.3.2</b> Dutch repositories</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="05-storage.html"><a href="05-storage.html#tools-to-help-you"><i class="fa fa-check"></i><b>5.4</b> Tools to help you</a></li>
+<li class="chapter" data-level="5.5" data-path="05-storage.html"><a href="05-storage.html#our-choice"><i class="fa fa-check"></i><b>5.5</b> Our choice</a></li>
+</ul></li>
+<li class="part"><span><b>c. Standards</b></span></li>
+<li class="chapter" data-level="6" data-path="06-standard.html"><a href="06-standard.html"><i class="fa fa-check"></i><b>6</b> Standardise your data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="06-standard.html"><a href="06-standard.html#choose-a-data-standard"><i class="fa fa-check"></i><b>6.1</b> Choose a data standard</a></li>
+<li class="chapter" data-level="6.2" data-path="06-standard.html"><a href="06-standard.html#data-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>6.2</b> Data standards for biodiversity data</a></li>
+<li class="chapter" data-level="6.3" data-path="06-standard.html"><a href="06-standard.html#tools-to-help-you-1"><i class="fa fa-check"></i><b>6.3</b> Tools to help you</a></li>
+<li class="chapter" data-level="6.4" data-path="06-standard.html"><a href="06-standard.html#our-choice-1"><i class="fa fa-check"></i><b>6.4</b> Our choice</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="06-standard.html"><a href="06-standard.html#why-darwin-core"><i class="fa fa-check"></i><b>6.4.1</b> Why Darwin Core?</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="06-standard.html"><a href="06-standard.html#mapping-your-data-to-darwin-core"><i class="fa fa-check"></i><b>6.5</b> Mapping your data to Darwin Core</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="06-standard.html"><a href="06-standard.html#darwin-core-namespaces"><i class="fa fa-check"></i><b>6.5.1</b> Darwin Core namespaces</a></li>
+<li class="chapter" data-level="6.5.2" data-path="06-standard.html"><a href="06-standard.html#darwin-core-terms"><i class="fa fa-check"></i><b>6.5.2</b> Darwin Core terms</a></li>
+<li class="chapter" data-level="6.5.3" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-event"><i class="fa fa-check"></i><b>6.5.3</b> Terms of class Event</a></li>
+<li class="chapter" data-level="6.5.4" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-location"><i class="fa fa-check"></i><b>6.5.4</b> Terms of class Location</a></li>
+<li class="chapter" data-level="6.5.5" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-organism"><i class="fa fa-check"></i><b>6.5.5</b> Terms of class Organism</a></li>
+<li class="chapter" data-level="6.5.6" data-path="06-standard.html"><a href="06-standard.html#terms-of-class-occurrence"><i class="fa fa-check"></i><b>6.5.6</b> Terms of class Occurrence</a></li>
+<li class="chapter" data-level="6.5.7" data-path="06-standard.html"><a href="06-standard.html#mof"><i class="fa fa-check"></i><b>6.5.7</b> Terms of class Measurement or fact</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html"><i class="fa fa-check"></i><b>6.6</b> Ontologies and controlled vocabulary</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-2"><i class="fa fa-check"></i><b>6.6.1</b> Tools to help you</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#biological-taxonomies"><i class="fa fa-check"></i><b>6.7</b> Biological taxonomies</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#gbif-backbone-taxonomy"><i class="fa fa-check"></i><b>6.7.1</b> GBIF Backbone taxonomy</a></li>
+<li class="chapter" data-level="6.7.2" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#catalogue-of-life-col"><i class="fa fa-check"></i><b>6.7.2</b> Catalogue of Life (COL)</a></li>
+<li class="chapter" data-level="6.7.3" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#encyclopedia-of-life-eol"><i class="fa fa-check"></i><b>6.7.3</b> Encyclopedia of Life (EOL)</a></li>
+<li class="chapter" data-level="6.7.4" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#integrated-taxonomic-information-system-itis"><i class="fa fa-check"></i><b>6.7.4</b> Integrated Taxonomic Information System (ITIS)</a></li>
+<li class="chapter" data-level="6.7.5" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#world-registry-of-marine-species-worms"><i class="fa fa-check"></i><b>6.7.5</b> World Registry of Marine Species (WoRMS)</a></li>
+<li class="chapter" data-level="6.7.6" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#tools-to-help-you-3"><i class="fa fa-check"></i><b>6.7.6</b> Tools to help you</a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#GUIDcreation"><i class="fa fa-check"></i><b>6.8</b> Creating GUIDs</a></li>
+<li class="chapter" data-level="6.9" data-path="06.1-taxonomies.html"><a href="06.1-taxonomies.html#crossref-in-data"><i class="fa fa-check"></i><b>6.9</b> Cross-referencing other resources in the data</a></li>
+</ul></li>
+<li class="part"><span><b>d. Structure</b></span></li>
+<li class="chapter" data-level="7" data-path="07-structure.html"><a href="07-structure.html"><i class="fa fa-check"></i><b>7</b> Structuring your standardised data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="07-structure.html"><a href="07-structure.html#relational-database"><i class="fa fa-check"></i><b>7.1</b> Relational database</a></li>
+<li class="chapter" data-level="7.2" data-path="07-structure.html"><a href="07-structure.html#DarwinCore-Archive"><i class="fa fa-check"></i><b>7.2</b> Darwin Core Archive</a></li>
+<li class="chapter" data-level="7.3" data-path="07-structure.html"><a href="07-structure.html#the-core-its-extensions"><i class="fa fa-check"></i><b>7.3</b> The Core &amp; its extensions</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="07-structure.html"><a href="07-structure.html#find-the-core"><i class="fa fa-check"></i><b>7.3.1</b> Find the core</a></li>
+<li class="chapter" data-level="7.3.2" data-path="07-structure.html"><a href="07-structure.html#occurrence-core-vs.-event-core"><i class="fa fa-check"></i><b>7.3.2</b> Occurrence core vs. event core</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="07-structure.html"><a href="07-structure.html#which-extensions"><i class="fa fa-check"></i><b>7.4</b> Which extension(s)?</a></li>
+<li class="chapter" data-level="7.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html"><i class="fa fa-check"></i><b>7.5</b> Arrange Darwin Core terms in core and extension files</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#general-terms-terms-of-class-record-level"><i class="fa fa-check"></i><b>7.5.1</b> General terms (Terms of class Record-level)</a></li>
+<li class="chapter" data-level="7.5.2" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#event-file"><i class="fa fa-check"></i><b>7.5.2</b> Event file</a></li>
+<li class="chapter" data-level="7.5.3" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#occurrence-file"><i class="fa fa-check"></i><b>7.5.3</b> Occurrence file</a></li>
+<li class="chapter" data-level="7.5.4" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#taxon-file"><i class="fa fa-check"></i><b>7.5.4</b> Taxon file</a></li>
+<li class="chapter" data-level="7.5.5" data-path="07.1-arrange-DwCA.html"><a href="07.1-arrange-DwCA.html#measurementorfact-file"><i class="fa fa-check"></i><b>7.5.5</b> MeasurementOrFact file</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>e. Metadata</b></span></li>
+<li class="chapter" data-level="8" data-path="08-metadata.html"><a href="08-metadata.html"><i class="fa fa-check"></i><b>8</b> Standardise and structure your metadata</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="08-metadata.html"><a href="08-metadata.html#metadata-standards-for-biodiversity-data"><i class="fa fa-check"></i><b>8.1</b> Metadata standards (for biodiversity data)</a></li>
+<li class="chapter" data-level="8.2" data-path="08-metadata.html"><a href="08-metadata.html#tools-to-help-you-4"><i class="fa fa-check"></i><b>8.2</b> Tools to help you</a></li>
+<li class="chapter" data-level="8.3" data-path="08-metadata.html"><a href="08-metadata.html#our-choice-2"><i class="fa fa-check"></i><b>8.3</b> Our choice</a></li>
+<li class="chapter" data-level="8.4" data-path="08-metadata.html"><a href="08-metadata.html#metadata-DwCA"><i class="fa fa-check"></i><b>8.4</b> Metadata in the Darwin Core Archive</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="08-metadata.html"><a href="08-metadata.html#eml-terms"><i class="fa fa-check"></i><b>8.4.1</b> EML terms</a></li>
+<li class="chapter" data-level="8.4.2" data-path="08.1-structural-metadata.html"><a href="08.1-structural-metadata.html"><i class="fa fa-check"></i><b>8.4.2</b> Structural metadata - The meta.xml file</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>__________________________________</b></span></li>
+<li class="chapter" data-level="9" data-path="09-fully-interoperable.html"><a href="09-fully-interoperable.html"><i class="fa fa-check"></i><b>9</b> How to reach full interoperability</a></li>
+<li class="chapter" data-level="10" data-path="10-glossary.html"><a href="10-glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
+<li class="chapter" data-level="11" data-path="11-questions-for-tool.html"><a href="11-questions-for-tool.html"><i class="fa fa-check"></i><b>11</b> Questions for FAIR + Structure Evaluation Tool</a></li>
+<li class="chapter" data-level="12" data-path="12-references.html"><a href="12-references.html"><i class="fa fa-check"></i><b>12</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A hands-on guide to FAIR and structured ecological data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="storing-your-data" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number"> 5</span> Storing your data<a href="05-storage.html#storing-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss <span class="citation">(<a href="#ref-Tenopir_2020">Tenopir et al., 2020</a>)</span>. These drawbacks can be overcome by <a href="10-glossary.html#mobilisation">mobilising</a> your data to an online repository.</p>
+<div id="which-data-to-store" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Which data to store?<a href="05-storage.html#which-data-to-store" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., primary data) or your data in a <a href="10-glossary.html#standardise">standard</a> format. Data in its original format, provided that it is accompanied by detailed <a href="10-glossary.html#metadata">metadata</a> to enable optimal reuse (see section <a href="04-Describe-data.html#describe-data">4.1</a>), is closest to the raw data and can be shared without requiring additional effort to reformat the data. Alternatively, data in a common standard format can be reused by others in your community as well as more easily integrated with other datasets in the same format. You may also consider providing both versions of the data next to each other in the same repository allowing users to choose the version best suited for their own needs.</p>
+<p>Either way, it’s recommended to always share your metadata. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.</p>
+<div id="sensitive-information" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Sensitive information<a href="05-storage.html#sensitive-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before you publish any data online, be aware that some data is not yours to publish and requires special protection. Personal information and any privacy information in your data or metadata has to be treated according to local privacy protection regulations (e.g., the <a href="https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en">General Data Protection Regulation (GDPR)</a> in the EU).</p>
+<p>Additionally, your data can contain biologically sensitive information, for example, about endangered or rare species. Options to handle this are, for example, making your data available with restricted access or providing spatial information at a lower resolution.</p>
+<p>For the best advice on how to handle your data, you should consult the responsible person at your institution (e.g., data steward, data protection officer, or privacy officer).</p>
+</div>
+</div>
+<div id="choosing-a-repository" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Choosing a repository<a href="05-storage.html#choosing-a-repository" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:</p>
+<p><strong>Which data and metadata formats are accepted?</strong></p>
+<p>Depending on the format your data/metadata is stored in, not every repository will accept your data/metadata. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see <a href="https://dans.knaw.nl/en/file-formats/">here</a> for an example).</p>
+<p><strong>What repository is commonly used in your organisation, community or discipline? </strong></p>
+<p>Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline.</p>
+<p><strong>Is a persistent identifier assigned and explicitly mentioned?</strong></p>
+<p>To ensure that your dataset can always be found, it is important that your data is associated with a <a href="10-glossary.html#PID">persistent identifier (PID)</a> and that this PID is explicitly mentioned in the metadata. Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.</p>
+<p><strong>How can the dataset be accessed?</strong></p>
+<p>Do users have to download the dataset directly from the repository’s website or is there a more automated option available, such as an <a href="10-glossary.html#API">API (Application Programming Interfaces)</a>? Is the repository using an open, free and standardised protocol, like the <a href="https://www.openarchives.org/pmh/">Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)</a>, to make the data accessible?</p>
+<p><strong>Is metadata stored persistently even when the data is no longer available?</strong></p>
+<p>The metadata of your dataset should be stored persistently so that users can still find out about the existence of your data, even if it is no longer available on the repository itself.</p>
+<p><strong>Do you want version control?</strong></p>
+<p>Version control means that changes in the data and reuploads are tracked and that multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At <a href="http://re3data.org">re3data.org</a>, for example, you can directly filter for repositories with versioning.</p>
+<p><strong>Is the repository indexing the data?</strong></p>
+<p>To make your data findable on the web by search engines, it has to be registered or indexed in a catalogue. Many repositories do this automatically and make your dataset findable, for example, through <a href="https://datasetsearch.research.google.com/">Google dataset search</a>.</p>
+<p><strong>Do you retain custody of your data or is it transferred to the repository?</strong></p>
+<p>There are repositories that obtain the custody of your data once it is uploaded there, meaning that the <a href="10-glossary.html#datamanagement">data management</a> is done by the repository and your possibilities to manage the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you still want to be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited.</p>
+</div>
+<div id="repositories-to-store-biodiversity-data" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Repositories to store biodiversity data<a href="05-storage.html#repositories-to-store-biodiversity-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here are some examples of commonly used repositories for biodiversity data. This list is non-exclusive; other options might exist that are more suitable for your data.</p>
+<div id="global-repositories" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Global repositories<a href="05-storage.html#global-repositories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>GBIF</strong>, the <a href="http://gbif.org">Global Biodiversity Information Facility</a>, is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions <span class="citation">(<a href="#ref-GBIF_2021">GBIF, 2021b</a>)</span>. Data is stored using data standards, such as <a href="10-glossary.html#DwC">Darwin Core</a>, and is openly accessible to everyone.</p>
+<p><strong>OBIS</strong>, the <a href="https://obis.org/">Ocean Biodiversity Information System</a>, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.</p>
+<p>Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a <a href="10-glossary.html#DwC-A">Darwin Core Archive</a> (for more information see <a href="#darwin-core-archive">later chapters</a>). There is extensive documentation on how to use the IPT by GBIF <a href="https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide">here</a>. Once the dataset is published it is assigned a DOI.</p>
+<p><strong>Dataverse</strong> is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found <a href="https://dataverse.org/installations">here</a>.</p>
+<p><a href="https://zenodo.org/"><strong>Zenodo</strong></a> is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data.</p>
+</div>
+<div id="dutch-repositories" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Dutch repositories<a href="05-storage.html#dutch-repositories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since the project partners behind this guide are situated in the Netherlands, we also want to highlight some Dutch repositories.</p>
+<p><strong><a href="https://dataverse.nl/">DataverseNL</a></strong> is a Dutch installation of Dataverse and is hosted by DANS-KNAW. Researchers from all collaborating institutes within the Netherlands can store their data there and make it available to everybody. Reasons for uploading data to DataverseNL:</p>
+<ul>
+<li><p>It automatically gets a persistent identifier</p></li>
+<li><p>The metadata is findable through web services like <a href="https://datasetsearch.research.google.com/">Google dataset search</a></p></li>
+<li><p>The data is easily retrievable through an <a href="10-glossary.html#API">API</a></p></li>
+<li><p>There is versioning to track changes and re-uploads of the data</p></li>
+<li><p>The custody of the data stays with the data owners</p></li>
+</ul>
+<p><strong>DANS Data Station Life Sciences</strong></p>
+<p>The <a href="https://dans.knaw.nl/en/life-sciences/">DANS Data Station for Life Sciences</a> is a repository hosted by DANS-KNAW which is based on the Dataverse software. It is open for every individual researcher independent of institution both to store and retrieve data. It is always free of charge to access data and up until a data size of 50 GB also to store data. The Data Station for life sciences is domain specific, accepting data of medical, health and green life sciences, while there are other Data Stations hosted by DANS for other domains, such as <a href="https://dans.knaw.nl/en/social-sciences-and-humanities/">social sciences</a>, <a href="https://dans.knaw.nl/en/archaeology/">archeology</a> and <a href="https://dans.knaw.nl/en/physical-and-technical-sciences/">physical and technical sciences</a>. It also allows access restrictions, which is helpful if you want to store your data persistently but not necessarily make it open for everyone.</p>
+</div>
+</div>
+<div id="tools-to-help-you" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Tools to help you<a href="05-storage.html#tools-to-help-you" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><a href="http://re3data.org">re3data.org</a> is a registry of repositories for research data where you can filter a broad range of repositories for different criteria, such as subject, country, persistent identifier system, versioning or licences.</p></li>
+<li><p><a href="http://fairsharing.org">fairsharing.org</a> is a registry that lists a variety of standards, databases and policies. To find repositories you can either directly search for a specific one and get detailed information on it or search all repositories/databases and filter for a range of options, such as country, subject or specific tags.</p></li>
+<li><p><a href="https://commons.datacite.org/">DataCite Commons</a> provides a repository finder that integrates information on repositories from re3data within the <a href="https://www.fairsfair.eu/">FAIRisFAIR</a> project. It allows users to search for repositories by keywords and filter the repositories for certificates, such as the CoreTrustSeal, or the software they are based on.</p></li>
+</ul>
+</div>
+<div id="our-choice" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Our choice<a href="05-storage.html#our-choice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For the dataset we owned ourselves within our department (<a href="02-example-datasets.html#budburst">bud burst</a>), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners.</p>
+
+</div>
+</div>
+
+
+
+<h3> References<a href="12-references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+<div id="ref-GBIF_2021" class="csl-entry">
+GBIF. (2021b). <em>GBIF strategic framework 2023-2027</em>. <a href="https://doi.org/10.35035/doc-0kkq-0t82">https://doi.org/10.35035/doc-0kkq-0t82</a>
+</div>
+<div id="ref-Tenopir_2020" class="csl-entry">
+Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., Grant, B., Olendorf, R., &amp; Sandusky, R. J. (2020). Data sharing, management, use, and reuse: <span>Practices</span> and perceptions of scientists worldwide. <em>PLOS ONE</em>, <em>15</em>(3), e0229003. <a href="https://doi.org/10.1371/journal.pone.0229003">https://doi.org/10.1371/journal.pone.0229003</a>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="04.1-Structure-tabular-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="06-standard.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "none"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+```{r eval = knitr::is_html_output(), echo = FALSE, child = "conditional_blocks/interop-html.Rmd"}
+```
+
+```{r echo = FALSE, eval = knitr::is_latex_output(), child = "conditional_blocks/interop-latex.Rmd"}
+```
