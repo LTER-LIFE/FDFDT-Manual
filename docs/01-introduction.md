@@ -14,12 +14,16 @@ Research data often is stored on local hard drives [@Tenopir_2020], not well des
 
 **Reusable** means that data are sufficiently annotated and curated so that others – humans and machines – can understand the context and methods of data collection, correctly interpret the meaning of the data, and accurately reuse the data.
 
-<div class="figure" style="text-align: center">
-<img src="images/Figure1.svg" alt="**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles." width="100%" />
-<p class="caption">(\#fig:FAIR-html)**The FAIR concept.** The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.</p>
-</div>
 
 
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/Figure1} 
+
+}
+
+\caption{The FAIR concept. The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.}(\#fig:FAIR-latex)
+\end{figure}
 
 The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations – partly through the distinction between data and metadata – and to different maturity levels (see also [FAIR Data Maturity Model. Specification and Guidelines of RDA](https://zenodo.org/records/3909563)). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.
 

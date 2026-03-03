@@ -14,6 +14,8 @@ link-citations: yes
 github-repo: LTER-LIFE/FDFDT-Manual
 ---
 
+
+
 # Preface {.unnumbered}
 
 This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more structured and more [FAIR](#FAIR) and tackle the problems that can occur along this process. 
