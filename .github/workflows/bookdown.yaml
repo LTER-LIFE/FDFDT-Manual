@@ -35,7 +35,8 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
       
-      - uses: docker://ghcr.io/qjoly/xelatex:latest
+      - name: Install TinyTeX
+        run: Rscript -e 'tinytex::install_tinytex()'
 
       - name: Cache bookdown results
         uses: actions/cache@v4
@@ -45,7 +46,11 @@ jobs:
           restore-keys: bookdown-
 
       - name: Build site
-        run: bookdown::render_book("index.Rmd", quiet = TRUE, output_format = "all")
+        run: bookdown::render_book("index.Rmd", quiet = TRUE, output_format = "bookdown::gitbook")
+        shell: Rscript {0}
+        
+      - name: Build pdf
+        run: bookdown::render_book("index.Rmd", quiet = TRUE, output_format = "bookdown::pdf_book")
         shell: Rscript {0}
 
       - name: Deploy to GitHub pages 🚀
