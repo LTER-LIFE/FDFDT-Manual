@@ -12,12 +12,11 @@ Relational databases are a common format in structuring your data files, where i
 
 In contrast to Darwin Core Archives (see [Chapter Darwin Core Archive](#DarwinCore-Archive)), relational databases can reduce redundancy in the data and are more flexible in linking information.
 
-<div class="figure">
-<img src="images/DwC-relationalDatabase.svg" alt="**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked." width="100%" />
-<p class="caption">(\#fig:relational-database-html)**Relational database structure of Darwin Core files.** Arrows refer to the identifier through which two files are linked.</p>
-</div>
 
 
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/DwC-relationalDatabase} \caption{Relational database structure of Darwin Core files. Arrows refer to the identifier through which two files are linked.}(\#fig:relational-database-pdf)
+\end{figure}
 
 ## Darwin Core Archive {#DarwinCore-Archive}
 
@@ -37,12 +36,16 @@ There are four main components that together, bundled in one zip-folder, build t
 
 The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure 7.2). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently (per June 2024) under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.
 
-<div class="figure" style="text-align: center">
-<img src="images/star-schema.svg" alt="**Schematic of Darwin Core Archive.** The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. " width="80%" />
-<p class="caption">(\#fig:star-schema-html)**Schematic of Darwin Core Archive.** The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. </p>
-</div>
 
 
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/star-schema} 
+
+}
+
+\caption{Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. }(\#fig:star-schema-pdf)
+\end{figure}
 
 ### Find the core
 

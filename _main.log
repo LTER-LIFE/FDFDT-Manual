@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.20)  3 MAR 2026 09:45
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.2)  3 MAR 2026 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (./_main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count271
@@ -23,20 +23,20 @@ File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 For additional information on amsmath, use the `?' option.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen149
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen150
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count280
@@ -86,35 +86,35 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/home/runner/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-01-19 L3 programming layer (loader) 
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count292
 \g__pdfannot_backend_int=\count293
 \g__pdfannot_backend_link_int=\count294
 ))
 Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
 Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count295
 \l__fontspec_language_int=\count296
@@ -130,11 +130,11 @@ Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpa_dim=\dimen158
 \l__fontspec_tmpb_dim=\dimen159
 \l__fontspec_tmpc_dim=\dimen160
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/runner/.TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1) on input line 49.
@@ -269,7 +269,7 @@ LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on input
 \g__um_fonts_used_int=\count307
 \l__um_primecount_int=\count308
 \g__um_primekern_muskip=\muskip18
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (/home/runner/.TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -303,33 +303,29 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count309
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 274.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
@@ -338,7 +334,7 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip54
 \LTright=\skip55
@@ -356,7 +352,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count313
 \c@LT@chunks=\count314
 \LT@p@ftn=\toks23
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen162
 \lightrulewidth=\dimen163
@@ -375,7 +371,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count317
 \@lastruleclass=\count318
 \@thisrulewidth=\dimen174
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen175
 \ar@mcellbox=\box60
@@ -384,7 +380,7 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box61
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count319
 \calc@Bcount=\count320
@@ -396,24 +392,24 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count321
 \calc@Cskip=\skip62
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box62
 \fn@width=\dimen179
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 )
 \Gin@req@height=\dimen180
 \Gin@req@width=\dimen181
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip63
 \f@nch@offset@elh=\skip64
@@ -430,7 +426,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip75
 \f@nch@widthR=\skip76
 \@temptokenb=\toks25
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 
@@ -582,7 +578,7 @@ Package fontspec Info:
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1.04599595338149]"[fonts/Urbanist-BoldItalic.ttf]/OT:script=DFLT;language=dflt;"
 
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
 LaTeX Warning: Command \underbar  has changed.
@@ -592,10 +588,10 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/nowidow/nowidow.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/nowidow/nowidow.sty
 Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
 Package: nowidow 
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box63
 \beforetitleunit=\skip77
@@ -606,9 +602,9 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen184
 \titlewidthlast=\dimen185
 \titlewidthfirst=\dimen186
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count322
@@ -623,24 +619,24 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen193
 \Gm@layoutvoffset=\dimen194
 \Gm@dimlist=\toks27
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count325
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip19
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -703,12 +699,12 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count371
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'apa.dbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex-apa/apa.dbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex-apa/apa.dbx
 File: apa.dbx 2025/08/27 v9.20 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -807,15 +803,15 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip100
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-compat.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count450
 \c@textcitetotal=\count451
@@ -833,11 +829,11 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex-apa/apa.bbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex-apa/apa.bbx
 File: apa.bbx 2025/08/27 v9.20 APA biblatex references style
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count459
 \c@bbx:relatedtotal=\count460
@@ -849,7 +845,7 @@ Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already 
 )
 Package biblatex Info: Trying to load citation style 'apa'...
 Package biblatex Info: ... file 'apa.cbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex-apa/apa.cbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex-apa/apa.cbx
 File: apa.cbx 2025/08/27 v9.20 APA biblatex citation style
 Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
 Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined, overwriting.
@@ -871,7 +867,7 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.cfg
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: XeTeX detected.
@@ -881,16 +877,16 @@ Package biblatex Info: ... and expl3
 (biblatex)             2026-01-19 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count461
 \float@exts=\toks28
 \float@box=\box64
 \@float@everytoks=\toks29
 \@floatcapt=\box65
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen195
 \TX@old@table=\dimen196
@@ -899,7 +895,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen199
 \TX@cols=\count462
 \TX@ftn=\toks30
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip101
 \enit@outerparindent=\dimen256
@@ -907,22 +903,24 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box66
 \enit@count@id=\count463
 \enitdp@description=\count464
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpage.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpage2e.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/lastpage/lastpage2e.sty
 Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (HMM)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
 Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count465
 ) 
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip102
 \fb@frw=\dimen257
 \fb@frh=\dimen258
 \FrameRule=\dimen259
 \FrameSep=\dimen260
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count466
 \FV@InFile=\read3
@@ -930,24 +928,24 @@ Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \c@FancyVerbLine=\count467
 \FV@StepNumber=\count468
 \FV@OutFile=\write4
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen261
 \pgfutil@tempdimb=\dimen262
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box68
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks33
 \pgfkeys@temptoks=\toks34
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen263
@@ -970,36 +968,36 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
 \pgf@sys@id@count=\count473
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-xetex.def
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
 File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )
 \pgfsys@objnum=\count474
-))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count475
 \pgfsyssoftpath@bigbuffer@items=\count476
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen273
 \pgfmath@count=\count477
 \pgfmath@box=\box69
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count478
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen274
 \pgf@picmaxx=\dimen275
@@ -1015,75 +1013,75 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen285
 \pgf@zx=\dimen286
 \pgf@zy=\dimen287
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen288
 \pgf@path@lasty=\dimen289
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen290
 \pgf@shorten@start@additional=\dimen291
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box70
 \pgf@hbox=\box71
 \pgf@layerbox@main=\box72
 \pgf@picture@serial@count=\count479
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen292
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen293
 \pgf@pt@y=\dimen294
 \pgf@pt@temp=\dimen295
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen296
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen297
 \pgf@sys@shading@range@num=\count480
 \pgf@shadingcount=\count481
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box73
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box74
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen298
 \pgf@nodesepend=\dimen299
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/runner/.TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen300
 \pgffor@skip=\dimen301
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
-)) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count482
 \pgfplotmarksize=\dimen302
@@ -1104,23 +1102,23 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofchildren=\count484
 \tikznumberofcurrentchild=\count485
 \tikz@fig@count=\count486
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count487
 \pgfmatrixcurrentcolumn=\count488
 \pgf@matrix@numberofcolumns=\count489
 )
 \tikz@expandcount=\count490
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+))) (/home/runner/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks44
 \verbatim@line=\toks45
 \verbatim@in@stream=\read5
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \tcb@titlebox=\box79
@@ -1136,42 +1134,42 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box85
 \tcb@temp=\box86
 \tcb@temp=\box87
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titling/titling.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip103
 \thanksmargin=\skip104
 \droptitle=\skip105
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count494
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen312
 \Hy@linkcounter=\count495
 \Hy@pagecounter=\count496
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (/home/runner/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count497
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4072.
@@ -1185,9 +1183,9 @@ Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count498
 LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen313
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count499
@@ -1205,22 +1203,22 @@ Package hyperref Info: PDF/A mode OFF on input line 6114.
 \c@Hfootnote=\count502
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
 \pdfm@box=\box88
 \c@Hy@AnnotLevel=\count503
 \HyField@AnnotCount=\count504
 \Fld@listcount=\count505
 \c@bookmark@seq@number=\count506
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(/home/runner/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip106
-) (c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+) (/home/runner/.TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count507
 ))
@@ -1503,24 +1501,24 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
 File: english-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'american' -> 'american-apa'...
 Package biblatex Info: ... file 'american-apa.lbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
 File: american-apa.lbx 2025/08/27 v9.20 APA biblatex localisation
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/lbx/american.lbx
 File: american.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))))
 Package biblatex Info: XeTeX detected.
@@ -1565,7 +1563,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 6.06728pt on input line 6.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
@@ -1581,11 +1579,11 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.06667pt on input line 6.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
-(c:/Users/cherinej/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/home/runner/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
@@ -1602,9 +1600,9 @@ LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 12.55188pt on input line 338.
+(Font)              scaled to size 12.55188pt on input line 336.
 
-Package hyperref Warning: Suppressing empty link on input line 345.
+Package hyperref Warning: Suppressing empty link on input line 343.
 
 File: images/icon_disclaimer.pdf Graphic file (type pdf)
 <use images/icon_disclaimer.pdf>
@@ -1612,12 +1610,12 @@ File: images/icon_disclaimer.pdf Graphic file (type pdf)
 
 ]
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 379.
+(Font)              scaled to size 14.4pt on input line 373.
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 15.06224pt on input line 379.
+(Font)              scaled to size 15.06224pt on input line 373.
 [4]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 421.
+(Font)              scaled to size 10.0pt on input line 412.
 [5] [6]
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
@@ -1640,7 +1638,7 @@ File: images/icon_note.pdf Graphic file (type pdf)
 File: images/figure_FAIRtoMSSS.pdf Graphic file (type pdf)
 <use images/figure_FAIRtoMSSS.pdf>
 
-LaTeX Warning: Float too large for page by 17.16734pt on input line 573.
+LaTeX Warning: Float too large for page by 17.16734pt on input line 555.
 
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
@@ -1676,33 +1674,36 @@ File: images/icon_disclaimer.pdf Graphic file (type pdf)
 [22
 
 ]
+
+LaTeX Warning: Hyper reference `Licencing' on page 23 undefined on input line 727.
+
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 [23]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 795.
+(Font)              scaled to size 7.0pt on input line 767.
 
-Package hyperref Warning: Suppressing empty link on input line 810.
+Package hyperref Warning: Suppressing empty link on input line 782.
 
 
-Package hyperref Warning: Suppressing empty link on input line 811.
+Package hyperref Warning: Suppressing empty link on input line 783.
 
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 811.
+(Font)              scaled to size 7.0pt on input line 783.
 
-Package hyperref Warning: Suppressing empty link on input line 812.
-
-
-Package hyperref Warning: Suppressing empty link on input line 813.
+Package hyperref Warning: Suppressing empty link on input line 784.
 
 
-Package hyperref Warning: Suppressing empty link on input line 814.
+Package hyperref Warning: Suppressing empty link on input line 785.
 
 
-Package hyperref Warning: Suppressing empty link on input line 815.
+Package hyperref Warning: Suppressing empty link on input line 786.
 
 
-Package hyperref Warning: Suppressing empty link on input line 816.
+Package hyperref Warning: Suppressing empty link on input line 787.
+
+
+Package hyperref Warning: Suppressing empty link on input line 788.
 
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
@@ -1716,11 +1717,15 @@ Chapter 5.
 [27
 
 ]
-Underfull \hbox (badness 3291) in paragraph at lines 883--884
+Underfull \hbox (badness 3291) in paragraph at lines 849--850
 []\TU/Asap(0)/m/n/10 Depending on the format your data/metadata is stored in, not every repository will accept your
  []
 
-[28] [29] [30] [31] [32
+[28]
+
+LaTeX Warning: Hyper reference `darwin-core-archive' on page 29 undefined on input line 889.
+
+[29] [30] [31] [32
 
 ]
 Chapter 6.
@@ -1730,7 +1735,7 @@ Chapter 6.
 File: conditional_blocks/DwC-term-table-vertical.pdf Graphic file (type pdf)
 <use conditional_blocks/DwC-term-table-vertical.pdf>
 LaTeX Font Info:    Font shape `TU/Urbanist(0)/b/n' will be
-(Font)              scaled to size 10.4599pt on input line 1051.
+(Font)              scaled to size 10.4599pt on input line 1000.
 File: images/icon_note.pdf Graphic file (type pdf)
 <use images/icon_note.pdf>
 [35]
@@ -1745,23 +1750,23 @@ File: images/icon_example.pdf Graphic file (type pdf)
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 LaTeX Font Info:    Font shape `TU/Asap(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1166.
+(Font)              scaled to size 10.0pt on input line 1105.
 
-Overfull \hbox (9.42307pt too wide) in paragraph at lines 1194--1195
+Overfull \hbox (9.42307pt too wide) in paragraph at lines 1133--1134
  []\TU/Asap(0)/m/n/7 specificEpithet 
  []
 
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 1202.
+(Font)              scaled to size 7.0pt on input line 1141.
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (8.9525pt too wide) in paragraph at lines 1241--1242
+Overfull \hbox (8.9525pt too wide) in paragraph at lines 1180--1181
  []\TU/Asap(0)/m/n/7 specificEpithet 
  []
 
 
-Overfull \hbox (5.5365pt too wide) in paragraph at lines 1249--1249
+Overfull \hbox (5.5365pt too wide) in paragraph at lines 1188--1188
  []|\TU/Asap(0)/m/n/7 Tracheophyta| 
  []
 
@@ -1803,14 +1808,18 @@ File: images/DwC-relationalDatabase.pdf Graphic file (type pdf)
 ]
 File: images/star-schema.pdf Graphic file (type pdf)
 <use images/star-schema.pdf>
-[54] [55] [56] [57] [58] [59] [60
+[54] [55]
+
+LaTeX Warning: Hyper reference `Licencing' on page 56 undefined on input line 1626.
+
+[56] [57] [58] [59] [60
 
 ]
 Chapter 8.
 [61
 
 ]
-Underfull \hbox (badness 1681) in paragraph at lines 1927--1928
+Underfull \hbox (badness 1681) in paragraph at lines 1829--1830
 \TU/Asap(0)/m/n/10 son/position/organisation accordingly. It is therefore required to choose at least one of the terms
  []
 
@@ -1818,14 +1827,22 @@ Underfull \hbox (badness 1681) in paragraph at lines 1927--1928
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 
-Overfull \hbox (0.86201pt too wide) in paragraph at lines 1976--1976
+Overfull \hbox (0.86201pt too wide) in paragraph at lines 1878--1878
 []  \TU/lmtt/m/n/10 <organizationName>Netherlands Institute of Ecology (NIOO-KNAW)</organizationName>[] 
  []
 
 [63]
 LaTeX Font Info:    Font shape `TU/Asap(0)/m/n' will be
-(Font)              scaled to size 13.00003pt on input line 2018.
-[64] [65] [66]
+(Font)              scaled to size 13.00003pt on input line 1920.
+[64]
+
+LaTeX Warning: Hyper reference `Licencing' on page 65 undefined on input line 2008.
+
+[65]
+
+LaTeX Warning: Hyper reference `xml' on page 66 undefined on input line 2060.
+
+[66]
 File: images/icon_example.pdf Graphic file (type pdf)
 <use images/icon_example.pdf>
 [67]
@@ -1846,19 +1863,19 @@ Chapter 10.
 [74
 
 ]
-Overfull \hbox (4.1288pt too wide) in paragraph at lines 2416--2417
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2306--2307
 []\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (4.1288pt too wide) in paragraph at lines 2424--2425
+Overfull \hbox (4.1288pt too wide) in paragraph at lines 2313--2314
 []\TU/Asap(0)/m/n/10 - More information: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][] [][] [][][][][][][] [] [][][][][][][] [] [][][][] [] [][][][] [][] [][][][][][][][][][] [][]
  []
 
 [75] [76] [77] [78] [79] [80]
 Chapter 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2744--2746
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2610
 
  []
 
@@ -1876,15 +1893,18 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to '_main.run.xml'.
 \openout1 = `_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39737 strings out of 470189
- 807688 string characters out of 5476835
- 1875154 words of memory out of 5000000
- 67742 multiletter control sequences out of 15000+600000
+ 39721 strings out of 470191
+ 798817 string characters out of 5478687
+ 1874962 words of memory out of 5000000
+ 67729 multiletter control sequences out of 15000+600000
  631458 words of font info for 97 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,12n,116p,1350b,5845s stack positions out of 10000i,1000n,20000p,200000b,200000s
