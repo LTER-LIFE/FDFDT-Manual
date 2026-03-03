@@ -50,7 +50,7 @@ jobs:
         shell: Rscript {0}
         
       - name: Build pdf
-        run: bookdown::render_book("index.Rmd", quiet = TRUE, output_format = "bookdown::pdf_book")
+        run: bookdown::render_book("index.Rmd", quiet = TRUE, output_format = "bookdown::pdf_book", output_dir = "docs", output_file = "fdfdt-manual.pdf")
         shell: Rscript {0}
 
       - name: Deploy to GitHub pages 🚀
