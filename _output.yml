@@ -11,7 +11,8 @@ bookdown::gitbook:
         <li class="toc-logo"><a href="./"><img src="images/LTER-LIFE-logo.svg"></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    download: "pdf"
+    download:
+      - ["docs/fdfdt-manual.pdf", "PDF"]
     sharing:
       github: true
       facebook: false
