@@ -4,7 +4,7 @@
 
 ## Describe your data (Metadata) {#describe-data}
 
-Independent of whether you aim to publish your data, it is always important to properly describe and annotate the data. This type of description is called [metadata](#metadata) and provides information about your dataset that helps to find, understand, and reuse it. We can distinguish between administrative, descriptive and structural metadata:
+Independent of whether you aim to publish your data, it is always important to properly describe and annotate the data. This type of description is called [metadata](#metadata) and provides information about your dataset that helps to find, understand, and reuse it. We can distinguish between administrative, descriptive and structural metadata [@Riley_2017]:
 
 - Administrative metadata includes information about the authors, usage (i.e., licence), and maintenance of the data
 
@@ -50,7 +50,7 @@ A template that covers these minimum metadata fields can be found here: [README 
 
 **For tabular data**:
 
-In addition to providing metadata at the dataset level, as listed above, it is recommended for tabular data to provide a [data dictionary](#data-dictionary) (sometimes called a codebook). A data dictionary provides the meaning of the columns and values in your data files. It serves as a reference guide for people who want to reuse your data, as it improves the interpretation and understanding of the data. 
+In addition to providing metadata at the dataset level, as listed above, it is recommended for tabular data to provide a [data dictionary](#data-dictionary) (sometimes called a codebook). A data dictionary provides the meaning of the columns and values in your data files [@Buchanan_2021]. It serves as a reference guide for people who want to reuse your data, as it improves the interpretation and understanding of the data. 
 
 For data stored in a relational database, the data dictionary is an active document, meaning that it is updated whenever the tables and columns in the database change. In most other cases, data dictionaries are static documents that need to be created manually. When you do so, describe:
 

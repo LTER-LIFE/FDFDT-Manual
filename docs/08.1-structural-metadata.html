@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>8.4.2 Structural metadata - The meta.xml file | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="8.4.2 Structural metadata - The meta.xml file | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
@@ -20,10 +20,10 @@
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   
 
-<meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
+<meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2025-01-17" />
+<meta name="date" content="2026-03-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -164,9 +164,9 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#release-notes"><i class="fa fa-check"></i>Release notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
@@ -174,6 +174,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-this-guide-came-to-be"><i class="fa fa-check"></i>How this guide came to be</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="00.1-quick-start.html"><a href="00.1-quick-start.html"><i class="fa fa-check"></i>Quick-start guide</a></li>
 <li class="part"><span><b>- I. Background -</b></span></li>
 <li class="chapter" data-level="1" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -182,7 +183,6 @@ div.csl-indent {
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
 <li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure evaluation of your data</a></li>
-<li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of evaluation questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
 <ul>
@@ -287,7 +287,6 @@ div.csl-indent {
 <li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
 <ul>
 <li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -318,6 +317,7 @@ div.csl-indent {
 <div id="structural-metadata" class="section level3 hasAnchor" number="8.4.2">
 <h3><span class="header-section-number">8.4.2</span> Structural metadata - The meta.xml file<a href="08.1-structural-metadata.html#structural-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised (i.e., which file is the <a href="10-glossary.html#core">core</a>, which are the <a href="10-glossary.html#extension">extensions</a>), and it links every column of each file to its corresponding Darwin Core term by providing its <a href="10-glossary.html#URI">URI</a> (Uniform Resource Identifier). The file format of the meta-file is <a href="#xml">XML</a>.</p>
+<p>In contrast to the EML file, where the metadata is specific to the dataset, the meta file always consists of the same content, only depending on the file and column names of the individual Darwin Core Archive. The root element <code>&lt;archive&gt;</code> consists of the sub-elements <code>&lt;core&gt;</code> and <code>&lt;extension&gt;</code> (once for every extension file). Within these elements, there is a <code>&lt;field&gt;</code> element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description of the components of the meta.xml file see the <a href="https://dwc.tdwg.org/text/">Darwin Core text guide</a>.</p>
 <div class="examplebox exampleimg">
 <p><strong>Bud burst</strong>:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb10-1"><a href="08.1-structural-metadata.html#cb10-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">&quot;1.0&quot;</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="fu">?&gt;</span></span>
@@ -338,7 +338,22 @@ div.csl-indent {
 <span id="cb10-16"><a href="08.1-structural-metadata.html#cb10-16" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;8&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/day&quot;</span>/&gt;</span>
 <span id="cb10-17"><a href="08.1-structural-metadata.html#cb10-17" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;9&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/country&quot;</span>/&gt;</span>
 <span id="cb10-18"><a href="08.1-structural-metadata.html#cb10-18" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;10&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/countryCode&quot;</span>/&gt;</span>
-<span id="cb10-19"><a href="08.1-structural-metadata.html#cb10-19" tabindex="-1"></a>    [...]</span></code></pre></div>
+<span id="cb10-19"><a href="08.1-structural-metadata.html#cb10-19" tabindex="-1"></a>    [...]</span>
+<span id="cb10-20"><a href="08.1-structural-metadata.html#cb10-20" tabindex="-1"></a>  &lt;/<span class="kw">core</span>&gt;</span>
+<span id="cb10-21"><a href="08.1-structural-metadata.html#cb10-21" tabindex="-1"></a>  &lt;<span class="kw">extension</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="ot"> fieldsTerminatedBy=</span><span class="st">&quot;,&quot;</span><span class="ot"> linesTerminatedBy=</span><span class="st">&quot;\n&quot;</span><span class="ot"> fieldsEnclosedBy=</span><span class="st">&quot;&quot;</span><span class="ot"> ignoreHeaderLines=</span><span class="st">&quot;1&quot;</span><span class="ot"> rowType=</span><span class="st">&quot;http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact&quot;</span>&gt;</span>
+<span id="cb10-22"><a href="08.1-structural-metadata.html#cb10-22" tabindex="-1"></a>    &lt;<span class="kw">files</span>&gt;</span>
+<span id="cb10-23"><a href="08.1-structural-metadata.html#cb10-23" tabindex="-1"></a>      &lt;<span class="kw">location</span>&gt;budburst_extendedmeasurementorfact.csv&lt;/<span class="kw">location</span>&gt;</span>
+<span id="cb10-24"><a href="08.1-structural-metadata.html#cb10-24" tabindex="-1"></a>    &lt;/<span class="kw">files</span>&gt;</span>
+<span id="cb10-25"><a href="08.1-structural-metadata.html#cb10-25" tabindex="-1"></a>    &lt;<span class="kw">coreid</span><span class="ot"> index=</span><span class="st">&quot;1&quot;</span>/&gt;</span>
+<span id="cb10-26"><a href="08.1-structural-metadata.html#cb10-26" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementID&quot;</span>/&gt;</span>
+<span id="cb10-27"><a href="08.1-structural-metadata.html#cb10-27" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;2&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementType&quot;</span>/&gt;</span>
+<span id="cb10-28"><a href="08.1-structural-metadata.html#cb10-28" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;3&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementValue&quot;</span>/&gt;</span>
+<span id="cb10-29"><a href="08.1-structural-metadata.html#cb10-29" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;4&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementUnit&quot;</span>/&gt;</span>
+<span id="cb10-30"><a href="08.1-structural-metadata.html#cb10-30" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;5&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementMethod&quot;</span>/&gt;</span>
+<span id="cb10-31"><a href="08.1-structural-metadata.html#cb10-31" tabindex="-1"></a>    &lt;<span class="kw">field</span><span class="ot"> index=</span><span class="st">&quot;6&quot;</span><span class="ot"> term=</span><span class="st">&quot;http://rs.tdwg.org/dwc/terms/measurementRemarks&quot;</span>/&gt;</span>
+<span id="cb10-32"><a href="08.1-structural-metadata.html#cb10-32" tabindex="-1"></a>  &lt;/<span class="kw">extension</span>&gt;</span>
+<span id="cb10-33"><a href="08.1-structural-metadata.html#cb10-33" tabindex="-1"></a>  [...]</span>
+<span id="cb10-34"><a href="08.1-structural-metadata.html#cb10-34" tabindex="-1"></a>&lt;/<span class="kw">archive</span>&gt;</span></code></pre></div>
 </div>
 <div>
 
@@ -365,42 +380,42 @@ div.csl-indent {
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["_main.pdf", "_main.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "none"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "none"
+  }
 });
 });
 </script>

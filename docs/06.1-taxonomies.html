@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6.6 Ontologies and controlled vocabulary | A hands-on guide to FAIR and structured ecological data</title>
   <meta name="description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6.6 Ontologies and controlled vocabulary | A hands-on guide to FAIR and structured ecological data" />
   <meta property="og:type" content="book" />
@@ -20,10 +20,10 @@
   <meta name="twitter:description" content="This hands-on manual provides step by step guidance on how to make your ecological data more FAIR (findable, accesible, interoperable and reusable) and structured." />
   
 
-<meta name="author" content="Cherine C. Jantzen &amp; Stefan J.G. Vriend" />
+<meta name="author" content="Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend" />
 
 
-<meta name="date" content="2025-01-17" />
+<meta name="date" content="2026-03-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -164,9 +164,9 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-cite-and-licence"><i class="fa fa-check"></i>How to cite and licence</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#release-notes"><i class="fa fa-check"></i>Release notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#availability-of-example-code"><i class="fa fa-check"></i>Availability of example code</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-provide-feedback"><i class="fa fa-check"></i>How to provide feedback</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html"><i class="fa fa-check"></i>Who this guide is for</a></li>
@@ -174,6 +174,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-to-read-this-guide"><i class="fa fa-check"></i>How to read this guide</a></li>
 <li class="chapter" data-level="" data-path="00-preface-part2.html"><a href="00-preface-part2.html#how-this-guide-came-to-be"><i class="fa fa-check"></i>How this guide came to be</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="00.1-quick-start.html"><a href="00.1-quick-start.html"><i class="fa fa-check"></i>Quick-start guide</a></li>
 <li class="part"><span><b>- I. Background -</b></span></li>
 <li class="chapter" data-level="1" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -182,7 +183,6 @@ div.csl-indent {
 <li class="chapter" data-level="1.3" data-path="01-introduction.html"><a href="01-introduction.html#fair-is-not-open"><i class="fa fa-check"></i><b>1.3</b> FAIR is not open</a></li>
 <li class="chapter" data-level="1.4" data-path="01-introduction.html"><a href="01-introduction.html#why-should-you-make-your-data-more-fair"><i class="fa fa-check"></i><b>1.4</b> Why should you make your data more FAIR?</a></li>
 <li class="chapter" data-level="1.5" data-path="01.1-FAIR-assessment.html"><a href="01.1-FAIR-assessment.html"><i class="fa fa-check"></i><b>1.5</b> FAIR and structure evaluation of your data</a></li>
-<li class="chapter" data-level="1.6" data-path="01.2-Mapping-assessment-questions.html"><a href="01.2-Mapping-assessment-questions.html"><i class="fa fa-check"></i><b>1.6</b> Mapping of evaluation questions to FAIR principles</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="02-example-datasets.html"><a href="02-example-datasets.html"><i class="fa fa-check"></i><b>2</b> Example datasets</a>
 <ul>
@@ -287,7 +287,6 @@ div.csl-indent {
 <li class="chapter" data-level="8.5" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html"><i class="fa fa-check"></i><b>8.5</b> Tools to help you</a>
 <ul>
 <li class="chapter" data-level="8.5.1" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#eml.xml-file"><i class="fa fa-check"></i><b>8.5.1</b> EML.xml file</a></li>
-<li class="chapter" data-level="8.5.2" data-path="08.2-XML-in-R.html"><a href="08.2-XML-in-R.html#meta.xml-file"><i class="fa fa-check"></i><b>8.5.2</b> meta.xml file</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>__________________________________</b></span></li>
@@ -317,7 +316,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="ontologies" class="section level2 hasAnchor" number="6.6">
 <h2><span class="header-section-number">6.6</span> Ontologies and controlled vocabulary<a href="06.1-taxonomies.html#ontologies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Ontologies provide definitions of terms and their relationships to other terms in a human-interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain. In simpler words, ontologies are a way of showing the terms used in a subject area and how they relate to one another. With these references you can ensure that terms in your data are always interpreted the same way and clearly understood by others. For example, ontologies can be particularly useful for filling in Darwin Core terms like <strong>measurementType</strong> or <strong>measurementMethod</strong> (see section <a href="06-standard.html#mof">Terms of class Measurement or fact</a>). Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri can be a bit more cumbersome, as there are no look-up services where you can directly query several thesauri simultaneously. However, thesauri can be quite helpful for filling in the keywords of your metadata, and it is recommended to use them. We therefore provide a few examples of thesauri tailored to biodiversity or ecological data:</p>
+<p>Ontologies provide definitions of terms and their relationships to other terms in a human-interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain <span class="citation">(<a href="#ref-Madin_2008">Madin et al., 2008</a>)</span>. In simpler words, ontologies are a way of showing the terms used in a subject area and how they relate to one another. With these references you can ensure that terms in your data are always interpreted the same way and clearly understood by others. For example, ontologies can be particularly useful for filling in Darwin Core terms like <strong>measurementType</strong> or <strong>measurementMethod</strong> (see section <a href="06-standard.html#mof">Terms of class Measurement or fact</a>). Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri can be a bit more cumbersome, as there are no look-up services where you can directly query several thesauri simultaneously. However, thesauri can be quite helpful for filling in the keywords of your metadata, and it is recommended to use them. We therefore provide a few examples of thesauri tailored to biodiversity or ecological data:</p>
 <ul>
 <li><p><a href="https://www.eionet.europa.eu/gemet/en/themes/">GEMET</a> - <strong>Ge</strong>neral <strong>M</strong>ultilingual <strong>E</strong>nvironmental <strong>T</strong>hesaurus</p></li>
 <li><p><a href="https://vocabs.lter-europe.net/envthes/en/">EnvThes</a> - Thesaurus for long term ecological research, monitoring and experiments</p></li>
@@ -358,56 +357,56 @@ div.csl-indent {
 </div>
 <div id="tools-to-help-you-3" class="section level3 hasAnchor" number="6.7.6">
 <h3><span class="header-section-number">6.7.6</span> Tools to help you<a href="06.1-taxonomies.html#tools-to-help-you-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the <a href="10-glossary.html#API">APIs</a> of each of these taxonomies, which is called <code>taxize</code> (<span class="citation">Chamberlain et al. (<a href="#ref-R-taxize">2022</a>)</span>). With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., <code>get_gbifid_()</code> retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (<code>gnr_resolve()</code>). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.</p>
+<p>If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the <a href="10-glossary.html#API">APIs</a> of each of these taxonomies, which is called <code>taxize</code> <span class="citation">(<a href="#ref-R-taxize">Chamberlain et al., 2022</a>)</span>. With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., <code>get_gbifid_()</code> retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (<code>gnr_resolve()</code>). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.</p>
 <div class="examplebox exampleimg">
 <p><strong>Bud burst</strong>:</p>
-<p>One of the tree species in the bud burst data is the Pedunculate oak (<em>Quercus robur</em>). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package (<span class="citation">Wickham, François, et al. (<a href="#ref-dplyr_2023">2023</a>)</span>).</p>
+<p>One of the tree species in the bud burst data is the Pedunculate oak (<em>Quercus robur</em>). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package <span class="citation">(<a href="#ref-dplyr_2023">Wickham, François, et al., 2023</a>)</span>. Note that we truncate the output here for readability.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="06.1-taxonomies.html#cb1-1" tabindex="-1"></a>taxonInfo <span class="ot">&lt;-</span> taxize<span class="sc">::</span><span class="fu">get_gbifid_</span>(<span class="at">sci =</span> <span class="st">&quot;Quercus robur&quot;</span>) <span class="sc">|&gt;</span></span>
 <span id="cb1-2"><a href="06.1-taxonomies.html#cb1-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>()</span>
 <span id="cb1-3"><a href="06.1-taxonomies.html#cb1-3" tabindex="-1"></a>  </span>
-<span id="cb1-4"><a href="06.1-taxonomies.html#cb1-4" tabindex="-1"></a>taxonInfo</span></code></pre></div>
-<pre><code>##   usagekey             scientificname    rank   status matchtype canonicalname
-## 1  2878688           Quercus robur L. species ACCEPTED     EXACT Quercus robur
-## 2  8206510 Quercus robur (Ten.) A.DC. species  SYNONYM     EXACT Quercus robur
-## 3  7911626   Quercus robur Asso, 1779 species DOUBTFUL     EXACT Quercus robur
-## 4  7586523        Quercus robur Pall. species DOUBTFUL     EXACT Quercus robur
-##   confidence kingdom       phylum   order   family   genus       species
-## 1         97 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur
-## 2         97 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur
-## 3         96 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur
-## 4         96 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur
-##   kingdomkey phylumkey classkey orderkey familykey genuskey specieskey synonym
-## 1          6   7707728      220     1354      4689  2877951    2878688   FALSE
-## 2          6   7707728      220     1354      4689  2877951    2878688    TRUE
-## 3          6   7707728      220     1354      4689  2877951    7911626   FALSE
-## 4          6   7707728      220     1354      4689  2877951    7586523   FALSE
-##           class acceptedusagekey
-## 1 Magnoliopsida               NA
-## 2 Magnoliopsida          2878688
-## 3 Magnoliopsida               NA
-## 4 Magnoliopsida               NA
-##                                                                                  note
-## 1                                                                                &lt;NA&gt;
-## 2  Similarity: name=110; authorship=0; classification=-2; rank=6; status=0; score=114
-## 3 Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109
-## 4 Similarity: name=110; authorship=0; classification=-2; rank=6; status=-5; score=109</code></pre>
+<span id="cb1-4"><a href="06.1-taxonomies.html#cb1-4" tabindex="-1"></a>taxonInfo[<span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>]</span></code></pre></div>
+<pre><code>##   usagekey             scientificname    rank   status matchtype
+## 1  2878688           Quercus robur L. species ACCEPTED     EXACT
+## 2  8206510 Quercus robur (Ten.) A.DC. species  SYNONYM     EXACT
+## 3  7586523        Quercus robur Pall. species DOUBTFUL     EXACT
+## 4  7911626   Quercus robur Asso, 1779 species DOUBTFUL     EXACT
+## 5 12375765     Quercus roboris Wallr. species  SYNONYM     FUZZY
+## 6  2879532  Quercus robusta C.H.Mull. species ACCEPTED     FUZZY
+## 7  2880539           Quercus rubra L. species ACCEPTED     FUZZY
+## 8  2880904   Quercus × rouxii A.Camus species  SYNONYM     FUZZY
+##     canonicalname confidence kingdom       phylum   order   family   genus
+## 1   Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 2   Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 3   Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 4   Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 5 Quercus roboris         92 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 6 Quercus robusta         91 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 7   Quercus rubra         10 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 8  Quercus rouxii          9 Plantae Tracheophyta Fagales Fagaceae Quercus
+##            species
+## 1    Quercus robur
+## 2    Quercus robur
+## 3    Quercus robur
+## 4    Quercus robur
+## 5    Quercus robur
+## 6  Quercus robusta
+## 7    Quercus rubra
+## 8 Quercus auzendei</code></pre>
 <p>There are four matches of our taxon in the GBIF backbone taxonomy. In this example, they differ in their scientific name and the author information given there. If we look at the column “status”, is becomes clear that only one of the matches contains the accepted scientific name, while the second match is a synonym and the others are considered “doubtful”. We therefore want to filter the results for only the matches that have the status “accepted” and the matchtype “exact”, which means that the canonical name matches our input name letter by letter. We again use the package dplyr to filter the data, which leaves us with one match.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="06.1-taxonomies.html#cb3-1" tabindex="-1"></a>taxonInfo <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="06.1-taxonomies.html#cb3-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>)</span></code></pre></div>
+<span id="cb3-2"><a href="06.1-taxonomies.html#cb3-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="06.1-taxonomies.html#cb3-3" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>)</span></code></pre></div>
 <pre><code>##   usagekey   scientificname    rank   status matchtype canonicalname confidence
 ## 1  2878688 Quercus robur L. species ACCEPTED     EXACT Quercus robur         97
-##   kingdom       phylum   order   family   genus       species kingdomkey
-## 1 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur          6
-##   phylumkey classkey orderkey familykey genuskey specieskey synonym
-## 1   7707728      220     1354      4689  2877951    2878688   FALSE
-##           class acceptedusagekey note
-## 1 Magnoliopsida               NA &lt;NA&gt;</code></pre>
+##   kingdom       phylum   order   family   genus       species
+## 1 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur</code></pre>
 <p>If you have more than one taxon in your data, you can also directly query the taxonomic information for a number of species at once.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="06.1-taxonomies.html#cb5-1" tabindex="-1"></a>tree_species <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Quercus robur&quot;</span>, <span class="st">&quot;Quercus rubra&quot;</span>, <span class="st">&quot;Larix kaempferi&quot;</span>, <span class="st">&quot;Pinus sylvestris&quot;</span>, <span class="st">&quot;Betula pendula&quot;</span>)</span>
 <span id="cb5-2"><a href="06.1-taxonomies.html#cb5-2" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="06.1-taxonomies.html#cb5-3" tabindex="-1"></a>taxize<span class="sc">::</span><span class="fu">get_gbifid_</span>(<span class="at">sci =</span> tree_species) <span class="sc">|&gt;</span></span>
 <span id="cb5-4"><a href="06.1-taxonomies.html#cb5-4" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>() <span class="sc">|&gt;</span></span>
-<span id="cb5-5"><a href="06.1-taxonomies.html#cb5-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>)</span></code></pre></div>
+<span id="cb5-5"><a href="06.1-taxonomies.html#cb5-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(status <span class="sc">==</span> <span class="st">&quot;ACCEPTED&quot;</span> <span class="sc">&amp;</span> matchtype <span class="sc">==</span> <span class="st">&quot;EXACT&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-6"><a href="06.1-taxonomies.html#cb5-6" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>)</span></code></pre></div>
 <pre><code>##   usagekey                   scientificname    rank   status matchtype
 ## 1  2878688                 Quercus robur L. species ACCEPTED     EXACT
 ## 2  2880539                 Quercus rubra L. species ACCEPTED     EXACT
@@ -420,18 +419,12 @@ div.csl-indent {
 ## 3  Larix kaempferi         97 Plantae Tracheophyta Pinales   Pinaceae   Larix
 ## 4 Pinus sylvestris         98 Plantae Tracheophyta Pinales   Pinaceae   Pinus
 ## 5   Betula pendula         99 Plantae Tracheophyta Fagales Betulaceae  Betula
-##            species kingdomkey phylumkey classkey orderkey familykey genuskey
-## 1    Quercus robur          6   7707728      220     1354      4689  2877951
-## 2    Quercus rubra          6   7707728      220     1354      4689  2877951
-## 3  Larix kaempferi          6   7707728      194      640      3925  2686156
-## 4 Pinus sylvestris          6   7707728      194      640      3925  2684241
-## 5   Betula pendula          6   7707728      220     1354      4688  2875008
-##   specieskey synonym         class acceptedusagekey note
-## 1    2878688   FALSE Magnoliopsida               NA &lt;NA&gt;
-## 2    2880539   FALSE Magnoliopsida               NA &lt;NA&gt;
-## 3    2686157   FALSE     Pinopsida               NA &lt;NA&gt;
-## 4    5285637   FALSE     Pinopsida               NA &lt;NA&gt;
-## 5    5331916   FALSE Magnoliopsida               NA &lt;NA&gt;</code></pre>
+##            species
+## 1    Quercus robur
+## 2    Quercus rubra
+## 3  Larix kaempferi
+## 4 Pinus sylvestris
+## 5   Betula pendula</code></pre>
 </div>
 <p>If you query your taxonomic information from a taxonomy you should however always check manually, whether the taxa are identified correctly. Not all taxa are present in all taxonomies or names between taxa are so similar that they are confused for the same taxon in the name matching process.</p>
 </div>
@@ -447,21 +440,21 @@ div.csl-indent {
 <p>To assign GUIDs to your data you can:</p>
 <ul>
 <li><p>use an online GUID generator, for example <a href="https://www.uuidgenerator.net" class="uri">https://www.uuidgenerator.net</a></p></li>
-<li><p>use the R package <code>uuid</code>(<span class="citation">Urbanek &amp; Ts’o (<a href="#ref-R-uuid">2023</a>)</span>) and its function <code>UUIDgenerate()</code></p></li>
+<li><p>use the R package <code>uuid</code><span class="citation">(<a href="#ref-R-uuid">Urbanek &amp; Ts’o, 2023</a>)</span> and its function <code>UUIDgenerate()</code></p></li>
 </ul>
 <p><strong>Note:</strong> Once you created an UUID for your dataset, this should not change anymore.</p>
 </div>
 <div id="crossref-in-data" class="section level2 hasAnchor" number="6.9">
 <h2><span class="header-section-number">6.9</span> Cross-referencing other resources in the data<a href="06.1-taxonomies.html#crossref-in-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Some contents of datasets do not exist in isolation. To provide context to your data and to properly link the data to related resources, your data should refer to these by cross-referencing, for example, their unique identifier.</p>
-<p>If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the <a href="08-metadata.html#eml-terms">EML metadata file</a> by using the <code>&lt;additionalMetadata&gt;</code> term and its subterm <code>&lt;metadata&gt;</code>. The <code>&lt;metadata&gt;</code> term can then be filled with the Dublin Core term <a href="http://purl.org/dc/terms/relation"><code>dc:relation</code></a> that ideally is filled with the URI/DOI of the dataset that should be linked. Note that it is important to add the Dublin Core namespace <code>xmlns:dc="http://purl.org/dc/terms/"</code> to the other namespaces in the <code>&lt;eml&gt;</code> element at the top of the document.</p>
+<p>If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the <a href="08-metadata.html#eml-terms">EML metadata file</a> by using the <code>&lt;additionalMetadata&gt;</code> term and its subterm <code>&lt;metadata&gt;</code>. The <code>&lt;metadata&gt;</code> term can then be filled with the Dublin Core term <a href="http://purl.org/dc/terms/relation"><code>dcterms:relation</code></a> that ideally is filled with the URI/DOI of the dataset that should be linked. Note that it is important to add the Dublin Core namespace <code>xmlns:dc="http://purl.org/dc/terms/"</code> to the other namespaces in the <code>&lt;eml&gt;</code> element at the top of the document.</p>
 <div class="examplebox exampleimg">
 <p><strong>CLUE data:</strong></p>
-<p>As <a href="02-example-datasets.html#CLUE">described for the CLUE data</a>, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term <code>dc:relation</code> in the <code>&lt;additionalMetadata&gt;</code> filed of the EML file to reference to its DOI.</p>
+<p>As <a href="02-example-datasets.html#CLUE">described for the CLUE data</a>, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term <code>dcterms:relation</code> in the <code>&lt;additionalMetadata&gt;</code> field of the EML file. Within <code>dcterms:relation</code> the sub-child <code>relatedResource</code> can be used to point to the DOI, and the sub-child <code>relationType</code> can further specify the relationship between the two resources.</p>
 <p><strong>Note</strong>: As the CLUE data is not published yet, there is no DOI, so this is a mock-up DOI.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="06.1-taxonomies.html#cb7-1" tabindex="-1"></a>&lt;<span class="kw">eml:eml</span><span class="ot"> xmlns:eml=</span><span class="st">&quot;https://eml.ecoinformatics.org/eml-2.2.0&quot;</span></span>
 <span id="cb7-2"><a href="06.1-taxonomies.html#cb7-2" tabindex="-1"></a><span class="ot">         xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span>
-<span id="cb7-3"><a href="06.1-taxonomies.html#cb7-3" tabindex="-1"></a><span class="ot">         xmlns:dc=</span><span class="st">&quot;http://purl.org/dc/terms/&quot;</span></span>
+<span id="cb7-3"><a href="06.1-taxonomies.html#cb7-3" tabindex="-1"></a><span class="ot">         xmlns:dcterms=</span><span class="st">&quot;http://purl.org/dc/terms/&quot;</span></span>
 <span id="cb7-4"><a href="06.1-taxonomies.html#cb7-4" tabindex="-1"></a><span class="ot">         xmlns:stmml=</span><span class="st">&quot;http://www.xml-cml.org/schema/stmml-1.2&quot;</span></span>
 <span id="cb7-5"><a href="06.1-taxonomies.html#cb7-5" tabindex="-1"></a><span class="ot">         packageId=</span><span class="st">&quot;09aa6a9d-bccc-4eba-a98c-191e3cd09322&quot;</span><span class="ot"> system=</span><span class="st">&quot;uuid&quot;</span></span>
 <span id="cb7-6"><a href="06.1-taxonomies.html#cb7-6" tabindex="-1"></a><span class="ot">         xsi:schemaLocation=</span><span class="st">&quot;https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd&quot;</span>&gt;</span>
@@ -470,10 +463,14 @@ div.csl-indent {
 <span id="cb7-9"><a href="06.1-taxonomies.html#cb7-9" tabindex="-1"></a>  &lt;/<span class="kw">dataset</span>&gt;</span>
 <span id="cb7-10"><a href="06.1-taxonomies.html#cb7-10" tabindex="-1"></a>  &lt;<span class="kw">additionalMetadata</span>&gt;</span>
 <span id="cb7-11"><a href="06.1-taxonomies.html#cb7-11" tabindex="-1"></a>    &lt;<span class="kw">metadata</span>&gt;</span>
-<span id="cb7-12"><a href="06.1-taxonomies.html#cb7-12" tabindex="-1"></a>      &lt;<span class="kw">dc:relation</span>&gt;10.3xxxx/5S3xxx&lt;/<span class="kw">dc:relation</span>&gt;</span>
-<span id="cb7-13"><a href="06.1-taxonomies.html#cb7-13" tabindex="-1"></a>    &lt;/<span class="kw">metadata</span>&gt;</span>
-<span id="cb7-14"><a href="06.1-taxonomies.html#cb7-14" tabindex="-1"></a>  &lt;/<span class="kw">additionalMetadata</span>&gt;</span>
-<span id="cb7-15"><a href="06.1-taxonomies.html#cb7-15" tabindex="-1"></a>&lt;/<span class="kw">eml</span>&gt;</span></code></pre></div>
+<span id="cb7-12"><a href="06.1-taxonomies.html#cb7-12" tabindex="-1"></a>      &lt;<span class="kw">relations</span>&gt;</span>
+<span id="cb7-13"><a href="06.1-taxonomies.html#cb7-13" tabindex="-1"></a>        &lt;<span class="kw">dcterms:relation</span>&gt;</span>
+<span id="cb7-14"><a href="06.1-taxonomies.html#cb7-14" tabindex="-1"></a>          &lt;<span class="kw">relatedResource</span>&gt;10.3xxxx/5S3xxx&lt;/<span class="kw">relatedResource</span>&gt;</span>
+<span id="cb7-15"><a href="06.1-taxonomies.html#cb7-15" tabindex="-1"></a>        &lt;/<span class="kw">dcterms:relation</span>&gt;</span>
+<span id="cb7-16"><a href="06.1-taxonomies.html#cb7-16" tabindex="-1"></a>      &lt;/<span class="kw">relations</span>&gt;</span>
+<span id="cb7-17"><a href="06.1-taxonomies.html#cb7-17" tabindex="-1"></a>    &lt;/<span class="kw">metadata</span>&gt;</span>
+<span id="cb7-18"><a href="06.1-taxonomies.html#cb7-18" tabindex="-1"></a>  &lt;/<span class="kw">additionalMetadata</span>&gt;</span>
+<span id="cb7-19"><a href="06.1-taxonomies.html#cb7-19" tabindex="-1"></a>&lt;/<span class="kw">eml</span>&gt;</span></code></pre></div>
 </div>
 <p>Identifiers for the same entity or concept are likely different in different resources and therefore the different identifiers should be mapped to one another. The simplest way of mapping is through a comma- or tab-separated file where each row describes a single entity and the columns provide the identifiers in each dataset. There are other ways of doing this and a more detailed description of these mapping methods can be found <a href="https://faircookbook.elixir-europe.org/content/recipes/interoperability/identifier-mapping.html">here</a>.</p>
 <div class="examplebox exampleimg">
@@ -496,6 +493,9 @@ div.csl-indent {
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-R-taxize" class="csl-entry">
 Chamberlain, S., Szoecs, E., Foster, Z., &amp; Arendsee, Z. (2022). <em>Taxize: Taxonomic information from around the web</em>. <a href="https://docs.ropensci.org/taxize/">https://docs.ropensci.org/taxize/</a>
+</div>
+<div id="ref-Madin_2008" class="csl-entry">
+Madin, J. S., Bowers, S., Schildhauer, M. P., &amp; Jones, M. B. (2008). Advancing ecological research with ontologies. <em>Trends in Ecology &amp; Evolution</em>, <em>23</em>(3), 159–168. https://doi.org/<a href="https://doi.org/10.1016/j.tree.2007.11.007">https://doi.org/10.1016/j.tree.2007.11.007</a>
 </div>
 <div id="ref-R-uuid" class="csl-entry">
 Urbanek, S., &amp; Ts’o, T. (2023). <em>Uuid: Tools for generating and handling of UUIDs</em>. <a href="https://www.rforge.net/uuid">https://www.rforge.net/uuid</a>
@@ -524,42 +524,42 @@ Wickham, H., François, R., Henry, L., Müller, K., &amp; Vaughan, D. (2023). <e
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["_main.pdf", "_main.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "none"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "none"
+  }
 });
 });
 </script>

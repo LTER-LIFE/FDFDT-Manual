@@ -16,9 +16,10 @@ bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: none
-  pandoc_args: [ "--csl", "apa.csl" ]
+  citation_package: biblatex
+  biblio-style: apa
+  pandoc_args: 
+    - "--lua-filter"
+    - "custom-blocks.lua"
+    - "--no-highlight"
   keep_tex: yes
-bookdown::epub_book:
-  citation_package: none
-  pandoc_args: [ "--csl", "apa.csl" ]

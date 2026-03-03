@@ -1,0 +1,2989 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  oneside]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+
+% ===================
+% Footers and headers
+% ===================
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Clear default styles
+\fancyhf{}
+
+% Footer (bottom of page)
+\fancyfoot[C]{\thepage} 
+
+% Header
+\renewcommand{\headrulewidth}{0pt}
+
+% ============================================================
+% Line spacing
+% ============================================================
+\usepackage{setspace}
+\onehalfspacing
+
+% ============================================================
+% Fonts
+% ============================================================
+\usepackage{fontspec}
+
+\setmainfont{Asap}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
+
+\newfontfamily\headerfont{Urbanist}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
+
+% Apply header font to all heading levels
+\usepackage{sectsty}
+\chapterfont{\headerfont\bfseries}
+\sectionfont{\headerfont\bfseries}
+\subsectionfont{\headerfont}
+\subsubsectionfont{\headerfont}
+
+% ============================================================
+% Page breaks and spacing
+% ============================================================
+% Control orphans and widows (prevent single lines at page breaks)
+\usepackage[all]{nowidow}
+
+% paragraphs
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+% Reduce space before chapters
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-15pt}{15pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{6pt}
+
+\usepackage[margin=2.5cm]{geometry} 
+
+% Redefine \part to remove forced \cleardoublepage
+\makeatletter
+\patchcmd{\@part}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+% vertical spacing (put white space at bottom)
+\raggedbottom
+
+% ===================================
+% References
+% ===================================
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{book.bib} 
+
+% ============================================================
+% CHAPTER STYLING
+% ============================================================
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+
+% ============================================================
+% FIGURES & TABLES
+% ============================================================
+\usepackage{graphicx}
+\usepackage{float}
+
+% Improve table formatting
+\usepackage{array}
+\usepackage{tabularx}
+
+% Set maximum width for figures
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% resize font in tables to avoid column overlap
+\usepackage{etoolbox}
+
+\AtBeginEnvironment{table}{\scriptsize}
+\AtBeginEnvironment{longtable}{\scriptsize}
+\AtBeginEnvironment{tabular}{\scriptsize}
+
+% ============================================================
+% LIST FORMATTING
+% ============================================================
+\usepackage{enumitem}
+
+% Reduce spacing in lists
+\setlist[enumerate]{itemsep=4pt,topsep=6pt}
+\setlist[itemize]{itemsep=4pt,topsep=6pt}
+
+% ============================================================
+% MISC PACKAGES
+% ============================================================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{lastpage} 
+
+% ============================================================
+% Custom blocks
+% ============================================================
+\usepackage{framed}
+\usepackage{fancyvrb}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+
+% Define colours for custom blocks
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+% Define Shaded environment if not already defined
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+
+% Define Highlighting environment if using knitr syntax highlighting
+\newenvironment{Highlighting}[1][]
+  {\VerbatimEnvironment
+   \begin{snugshade}\begin{Verbatim}[#1]}
+  {\end{Verbatim}\end{snugshade}}
+
+% define custom colours for custom blocks
+\definecolor{infocolor}{RGB}{239, 158, 5}
+\definecolor{examplecolor}{RGB}{0, 192, 168}
+\definecolor{disclaimercolor}{RGB}{192, 41, 2}
+
+% set up custom blocks
+\usepackage{tcolorbox}
+
+% Info box style with icon
+\newtcolorbox{infobox}{
+  colframe=infocolor,
+  colback=infocolor!10,
+  boxrule=2pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_note.pdf}\hspace{5mm}},
+}
+
+% Example box style with icon
+\newtcolorbox{examplebox}{
+  colframe=examplecolor,
+  colback=examplecolor!10,
+  boxrule=1.5pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_example.pdf}\hspace{5mm}},
+}
+
+% Disclaimer box style with icon
+\newtcolorbox{disclaimerbox}{
+  colframe=disclaimercolor,
+  colback=disclaimercolor!10,
+  boxrule=2.5pt,
+  arc=5mm,
+  left=5mm,
+  right=5mm,
+  top=5mm,
+  bottom=5mm,
+  before upper={\parskip=2ex\hspace*{-4mm}\includegraphics[height=1cm]{images/icon_disclaimer.pdf}\hspace{5mm}},
+}
+
+% ===================
+% Add logo to title page
+% ===================
+\usepackage{graphicx}
+\usepackage{titling}
+
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    % Title
+    {\Huge\bfseries \thetitle \par}
+    \vspace{2em}
+
+    % Author
+    {\Large \theauthor \par}
+    \vspace{1em}
+
+    % Date
+    {\small \textsc{\thedate} \par}
+    \vspace{3em}
+
+    % Logo
+    \includegraphics[width=0.22\textwidth]{images/LTER-LIFE-logo.pdf}
+
+    \vspace*{\fill}
+  \end{titlepage}
+}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{biblatex}
+\addbibresource{book.bib}
+\addbibresource{packages.bib}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={A hands-on guide to FAIR and structured ecological data},
+  pdfauthor={Cherine C. Jantzen, Kim B. Ferguson, Cees H.J. Hof, Eric Kuijt, Stefan J.G. Vriend},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{A hands-on guide to FAIR and structured ecological data}
+\author{\href{https://orcid.org/0009-0006-0723-2682}{Cherine C. Jantzen}, \href{https://orcid.org/0000-0001-6483-1936}{Kim B. Ferguson}, \href{https://orcid.org/0000-0001-9624-2431}{Cees H.J. Hof}, \href{https://orcid.org/0009-0000-9455-6680}{Eric Kuijt}, \href{http://orcid.org/0000-0002-9006-5988}{Stefan J.G. Vriend}}
+\date{2026-03-03}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+This interactive manual aims to provide ecologists and other data owners of ecological data with a hands-on guide on how to make your ecological data more structured and more \protect\hyperlink{FAIR}{FAIR} and tackle the problems that can occur along this process.
+
+\begin{infobox}
+
+{\textbf{Quick-start guide}}
+
+If you want to make your data more FAIR but do not have time to go through all the suggested chapters, we encourage you to follow at least the steps highlighted in this \protect\hyperlink{quick-start}{quick-start guide}!
+
+\end{infobox}
+
+\hypertarget{how-to-cite-and-licence}{%
+\subsection*{How to cite and licence}\label{how-to-cite-and-licence}}
+\addcontentsline{toc}{subsection}{How to cite and licence}
+
+If you want to cite this guide, please refer to it as:
+
+Jantzen, C.C., Ferguson, K.B., Hof, C.H.J., Kuijt, E. \& Vriend, S.J.G. (2025). A hands-on guide to FAIR and structured ecological data. \url{https://lter-life.github.io/FDFDT-Manual}
+
+This guide is licensed under a \href{https://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons Attribution-Noncommercial 4.0 International licence} (CC BY-NC 4.0). \href{images/CCBY-NC_logo.png}{}
+
+\hypertarget{release-notes}{%
+\subsection*{Release notes}\label{release-notes}}
+\addcontentsline{toc}{subsection}{Release notes}
+
+For the changelog of this guide, see the \href{https://github.com/LTER-LIFE/FDFDT-Manual/releases}{release notes}.
+
+\hypertarget{availability-of-example-code}{%
+\subsection*{Availability of example code}\label{availability-of-example-code}}
+\addcontentsline{toc}{subsection}{Availability of example code}
+
+This guide was developed based on practical work on \protect\hyperlink{example-datasets}{different datasets}. Throughout this guide, we refer to examples and code snippets from this work. The complete R code can be found on this \href{https://github.com/LTER-LIFE/FDFDT}{GitHub repository}.
+
+\hypertarget{how-to-provide-feedback}{%
+\subsection*{How to provide feedback}\label{how-to-provide-feedback}}
+\addcontentsline{toc}{subsection}{How to provide feedback}
+
+If you have any suggestions, questions or comments while reading through this guide or want to provide any other feedback on how to improve this guide, we are happy to receive your feedback through \href{https://github.com/LTER-LIFE/FDFDT/issues/new}{the Github repository} where you can add your remarks as a new issue!
+
+\begin{disclaimerbox}
+
+{\textbf{Disclaimer}}
+
+\begin{itemize}
+\item
+  We want to emphasise here that there is no one-size-fits-all solution and every dataset will bring its own challenges that need individual solutions. We cannot tackle all of these challenges but only give recommendations based on our own work with a range of different ecological datasets.
+\item
+  The FAIR principles are not set in stone but rather intended as guidance. Practical implications should be interpreted by each community individually, while sticking as closely as possible to the principles themselves (cf.~\href{https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/\#!/}{Maturity Indicator Authoring Group}). We therefore also want to stress that the way we implement FAIR in this guide is \textbf{only one way} of operationalising it and is based on our own interpretations and extensions of the FAIR principles \autocite{Wilkinson_2016}.
+\end{itemize}
+
+\end{disclaimerbox}
+
+\hypertarget{acknowledgements}{%
+\section*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+We would like to thank Marcel E. Visser and Wim Hugo for their input and advice on the overall project.
+
+Thanks to Parinaz Rashidi, W. Daniel Kissling, Geerten M. Hengeveld and others involved in \href{https://lter-life.nl/en}{LTER-LIFE}, for their contributions to the guide and for their efforts in continuing the development of this work through LTER-LIFE.
+
+Many thanks to the custodians of the datasets that are used as examples throughout this guide. The lessons learned from FAIRifying and structuring these datasets form the bedrock for the design and implementation of the workflow. We thank Judith Risse, Marcel E. Visser (bud burst data), Joost Vogels, Wilco C.E.P. Verberk (cricket data), G.F. (Ciska) Veen, Freddy ten Hooven, and Wim H. van der Putten (CLUE data), as well as all the people who contributed to the many years of data collection.
+
+We thank the Royal Netherlands Academy of Arts and Sciences (KNAW) for their financial support through the Institutes Research Fund 2022.
+
+\hypertarget{who-this-guide-is-for}{%
+\section*{Who this guide is for}\label{who-this-guide-is-for}}
+\addcontentsline{toc}{section}{Who this guide is for}
+
+This guide is for anybody who has ecological data and wants to improve their data management by making their data more structured and more FAIR, for example:
+
+\begin{itemize}
+\item
+  ecologists who want to improve their research data management and by that make their data available for reuse by others
+\item
+  students who collect data for their thesis or internship and want to make their data reusable for others after their project is finished
+\item
+  institutions and organisations that want to provide their employees with some practical guidance on how to increase the understandability and reuse of their data
+\item
+  data stewards and managers who want to assist their colleagues in improving their research data management
+\item
+  anyone who wants to learn more about data management, FAIR and structured data and metadata, and best practices for increasing the reusability of data
+\end{itemize}
+
+\hypertarget{why-you-should-use-this-guide}{%
+\section*{Why you should use this guide}\label{why-you-should-use-this-guide}}
+\addcontentsline{toc}{section}{Why you should use this guide}
+
+Data management is the practice of taking care of data throughout its entire \protect\hyperlink{datalifecycle}{lifecycle}, from its collection, processing and use to its storage and sharing \autocite{Willoughby_2022}. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself and others. For example, by storing your data persistently and implementing versioning, you lower the risk of data loss and have higher traceability of changes and errors. Additionally, by describing, annotating, and organising the data, it becomes better understandable for others, facilitating its reuse and increasing its impact and that of the associated research.
+
+One way of reaching the goals of good data management is to make your data findable, accessible, interoperable and reusable (\protect\hyperlink{FAIR}{FAIR}). For this, FAIR guiding principles have been developed \autocite{Wilkinson_2016} that provide people with a set of considerations to evaluate whether data can be discovered and reused by others. See \protect\hyperlink{what-is-fair}{this chapter} for more info on FAIR.
+
+\hypertarget{how-to-read-this-guide}{%
+\section*{How to read this guide}\label{how-to-read-this-guide}}
+\addcontentsline{toc}{section}{How to read this guide}
+
+This guide is designed in a way that you can only read the chapters that are relevant for enriching \emph{your} data. To find these chapters, we provide you with a \protect\hyperlink{evaluation}{self-evaluation tool} that shows to what extent your data already complies with the FAIR principles. Directly based on the outcome of the FAIR and structure evaluation you will be provided with a tailored list of the chapters in this guide you could go through to further enrich your data. You therefore do not have to read the full guide from top to bottom but should easily be able to only go through the chapters most relevant to you.
+
+\hypertarget{how-this-guide-came-to-be}{%
+\section*{How this guide came to be}\label{how-this-guide-came-to-be}}
+\addcontentsline{toc}{section}{How this guide came to be}
+
+The project ``Data for Digital Twins - Piloting a FAIR Data Infrastructure for the Advanced Modelling of Ecological Data'', or FAIR Data for Digital Twins for short, was a collaborative project in 2023-2024 between the Netherlands Institute of Ecology (NIOO-KNAW) and the Dutch Data Archiving and Networked Services (DANS-KNAW) funded by the research fund of the Royal Netherlands Academy of Arts and Sciences (KNAW). The project aimed to explore how to make quantitative ecological data more FAIR and fit for advanced analytical and modelling purposes, such as artificial intelligence and digital twins.
+
+One of the main goals of this project was to use hands-on experience from FAIRifying a range of different ecological datasets to create a manual that guides ecologists step-by-step through the process of FAIRifying their ecological data themselves. Many ecological datasets are not compliant with the FAIR data principles, which makes it difficult to share and exchange biological data. This is also true for the data collected at NIOO and together with the general movement towards open and FAIR data, this initialised this project.
+
+\hypertarget{quick-start}{%
+\chapter*{Quick-start guide}\label{quick-start}}
+\addcontentsline{toc}{chapter}{Quick-start guide}
+
+Making data FAIR can require a substantial amount of time, depending on the initial state of the data. This can seem daunting and raises the threshold to start. \textbf{But every step towards FAIR is already a great improvement!}
+
+The \protect\hyperlink{evaluation}{FAIR evaluation tool} that we introduce with this guide provides an easy access to FAIR, as it evaluates the state of your data and points you to the sections in this guide that can help you to further enhance the data. \textbf{You therefore do not have to go through this guide A to Z!}
+
+If your data is however still in a very original state, the tool will point you to the full \protect\hyperlink{workflow}{workflow}. If you do not have time to go through everything, we encourage you to follow at least the following two steps, as they are most important for ensuring data persistence, understandability and reuse:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Describe your data}: Describing your data in a way that others can understand them is crucial to allow others (or your future self) to understand and interpret the data. This description can in the simplest form be a README text file that contains information on the data contents, the data collection, the data files and their structure, and licensing information.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  See \protect\hyperlink{describe-data}{Chapter 4.1} for more details and a template to create a README.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Store your data}: Data that only exists locally are at high risk to be lost and inaccessible for others. Storing your data persistently in an online repository, together with the description you created in step 1 (= metadata), ensures the longevity of your data and makes them visible to others. Sharing the data online does not necessarily mean that they are openly available to everyone! If you do not want to make the dataset open, upload your data to a repository anyway, e.g., under restricted access. As long as your metadata is openly available, this is fully compliant with FAIR and allows other users to find your data and contact you for access options.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  See \protect\hyperlink{storing-your-data}{Chapter 5} for more details and options where to store your data.
+\end{itemize}
+
+\begin{infobox}
+
+Following these two steps is a great start! If you now want to make your data even more reusable, follow the remaining steps of the \protect\hyperlink{workflow}{workflow} or use the \protect\hyperlink{evaluation}{Evaluation tool} to be pointed to the remaining chapters that can be useful for you.
+
+\end{infobox}
+
+\hypertarget{part---i.-background--}{%
+\part*{- I. Background -}\label{part---i.-background--}}
+\addcontentsline{toc}{part}{- I. Background -}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\hypertarget{what-is-fair}{%
+\section{What is FAIR?}\label{what-is-fair}}
+
+Research data often is stored on local hard drives \autocite{Tenopir_2020}, not well described or not formatted in a consistent and standard way \autocite{Roche_2015}. This makes it very difficult for others (and often even for the data owner themselves) to reuse the data or reproduce the research, because the data is not straightforward to understand, cannot be interpreted correctly, or, in case of local storage, might be unknown to others. In order to change this and increase the reusability of data, \textcite{Wilkinson_2016} introduced the FAIR concept together with 15 guiding principles providing guidance on how to implement it. FAIR stands for \textbf{F}indable, \textbf{A}ccessible, \textbf{I}nteroperable and \textbf{R}eusable, which more concrete means the following:
+
+\textbf{Findable} means that the \protect\hyperlink{metadata}{metadata} and the data can be easily found by both humans and computers, and that machine-actionable metadata allows for discovery of the data by machines. When you present data in a relevant repository and make sure that they are described with thorough and relevant metadata, you make it possible for others to find them.
+
+\textbf{Accessible} means that there is information on how humans or computers gain access to the data. This does not mean that the data have to be openly available for everyone (see \protect\hyperlink{fair-is-not-open}{FAIR is not open}), but that the freely available metadata clearly indicates to both humans and computers how and under what conditions data can be retrieved.
+
+\textbf{Interoperable} means that (meta)data can be integrated with other (meta)data, and that (meta)data can be exchanged and used across different systems. In other words, data resources should `speak the same language' to be used together.
+
+\textbf{Reusable} means that data are sufficiently annotated and curated so that others -- humans and machines -- can understand the context and methods of data collection, correctly interpret the meaning of the data, and accurately reuse the data.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/Figure1} 
+
+}
+
+\caption{The FAIR concept. The four letters of FAIR stand for findable, accessible, interoperable and reusable and come with 15 guiding principles.}\label{fig:FAIR-latex}
+\end{figure}
+
+The 15 guiding principles describe different elements or characteristics of datasets that can be adhered to in different combinations -- partly through the distinction between data and metadata -- and to different maturity levels (see also \href{https://zenodo.org/records/3909563}{FAIR Data Maturity Model. Specification and Guidelines of RDA}). As a result, datasets can vary widely in their FAIRness level and datasets that have the same overall level of FAIRness may differ in the components of FAIR they adhere to.
+
+\begin{infobox}
+
+For an entertaining but serious description of the FAIR principles and their meaning, we recommend reading ``\emph{A FAIRy tale - A fake story in a trustworthy guide to the FAIR principles for research data}'' created within the Danish `FAIR across' (FAIR på tværs) project: \url{https://forskningsdata.dk/fairytale/} \autocite{FAIRy_tale}.
+
+\end{infobox}
+
+\hypertarget{adding-structure-to-fair}{%
+\section{Adding structure to FAIR}\label{adding-structure-to-fair}}
+
+In this guide we extend FAIR as it is defined by the FAIR principles in order to make it workable in practice. This means that we include the component of structuring your data into the FAIRification process. \textbf{Structuring} your data, i.e., organising it in a tidy way, can make the data easier to access for others and enhances its understandability. We therefore think that this is a crucial component of increasing the reusability of your data.
+
+\hypertarget{fair-is-not-open}{%
+\section{FAIR is not open}\label{fair-is-not-open}}
+
+It is important to emphasise that FAIR is \textbf{not equal} to open. While the metadata of your data should be openly available to enable the discovery of your data by others, the data itself does not have to be open. If you have reasons for not making the data openly available to everyone (e.g., because it contains sensitive information), this can and should be made clear in the metadata where according licensing information and access rights can be provided. As long as this is guaranteed, restricted or closed data can also be completely FAIR.
+
+\hypertarget{why-should-you-make-your-data-more-fair}{%
+\section{Why should you make your data more FAIR?}\label{why-should-you-make-your-data-more-fair}}
+
+Depending on the current status of your data, making data FAIR certainly requires some effort, but the benefits are evident both for yourself and for others. Findable and well-annotated data facilitates your own reuse of your data in the future and the reuse of your data by others, which simultaneously increases the visibility and the impact of your research \autocite{McKiernan_2016}. Increasing the interoperability of your data additionally increases the possibilities for collaborations, as your data can be integrated with other data, and hence will benefit the scientific community as a whole.
+
+\hypertarget{evaluation}{%
+\section{FAIR and structure evaluation of your data}\label{evaluation}}
+
+Datasets vary widely in format and complexity, as well as degree of structure and FAIRness. It is therefore important to first evaluate which state your data is in and what steps you can take to further enrich of your data.
+
+Even though there is already a range of FAIR assessment tools available (see \href{https://fairassist.org/}{here} for an overview), that can either automatically assess the FAIRness of your data or provide self-assessment questionnaires, we decided to develop our own tool for several reasons:
+
+\begin{itemize}
+\item
+  Existing tools tend to purely assign a score to the data but provide little guidance on how to actually improve the FAIRness of the data \autocite{Krans_2022}. In contrast, our tool directly provides suggestions on how to enrich the data based on the given answers and by directing the user to the corresponding chapters of this guide.
+\item
+  We do not score the data for every letter of FAIR as done in other tools, but score them in the four properties metadata, storage, standards and structure (more details below). While the evaluation questions of the first three components are directly derived from the \protect\hyperlink{what-is-fair}{FAIR principles}, the structure component is an extension of FAIR not included in other tools.
+\item
+  Automated tools often require the data to be available online already, which is not the state at which we want to start with our evaluation.
+\end{itemize}
+
+Our evaluation tool \href{https://lter-life-experience.org/fairset/}{``\textbf{FAIR + Structure Evaluation Tool}''} (FAIR+SET) provides you with a set of simple questions about four properties of your data: \textbf{metadata}, \textbf{storage}, \textbf{standards} and \textbf{structure}.
+
+\begin{infobox}
+
+{\textbf{FAIR + Structure Evaluation Tool (FAIR+SET)}}
+
+The FAIR + Structure Evaluation Tool is still in development, but a preliminary version can be accessed through \url{https://lter-life-experience.org/fairset/}.
+
+Every question in the tool comes with a small info box (when clicking on the question mark) and can be answered with yes or no. Once you submit your answers, you will be provided with the evaluation outcome and the links to the respective sections in the guide useful to further enhance your data.
+
+A complete list of the questions and their info boxes can also be found in the end of this guide in the section \protect\hyperlink{questions-tool}{Questions for FAIR + Structure Evaluation Tool}.
+
+\end{infobox}
+
+\textbf{Metadata} is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to understand and reuse it without prior knowledge of the data.
+
+\textbf{Storage} is about whether your data is stored persistently and in a way that makes it findable and accessible to others.
+
+\textbf{Standards} describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets.
+
+\textbf{Structure} is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others.
+
+Apart from the questions about structure, the questions in the evaluation are all directly based on the FAIR principles \autocite{Wilkinson_2016}. Figure 1.2 visualises how the questions link to the FAIR principles and the data properties (metadata, storage, standards, structure). Each FAIR principle translates to one or more questions and principles that are applicable to both data and metadata are split into separate questions. Answering all these questions in the evaluation tool will provide you with a circle diagram showing the status of your dataset in each of the properties and an associated list of chapters of this manual you can work through to further enrich your data.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/figure_FAIRtoMSSS} 
+
+}
+
+\caption{Link between data properties, FAIR principles and questions in the evaluation tool. The grey letters on the left stand for the FAIR principles, each coloured box for a data property. The questions of the evaluation tool are placed in the row of the respective FAIR principle they are derived from and the column of the data property they belong too. Note that the same question can occur twice if it maps to more than one principle.}\label{fig:MSSS-FAIR-pdf}
+\end{figure}
+
+\begin{infobox}
+
+It will likely be difficult to reach the full score in all of the properties of your data, but this is also not necessarily the aim of this evaluation or guide. Every improvement is already a great step! Especially the components that link to interoperability are more difficult to implement, as true interoperability generally is a big challenge within and across disciplines \autocite{Pagano_2013}. One step to reach interoperability is to use a language for knowledge representation and linked data, such as \protect\hyperlink{RDF}{RDF (Resource Description Framework)}. However, as this is more the expertise of data scientists or information scientists instead of ecologists, we will not look into these topics in this guide and, hence, it is not possible to reach the full score in the evaluation of ``Standards'' by only following this guide. For more information on full interoperability \protect\hyperlink{fully-interoperable}{see this section}.
+
+\end{infobox}
+
+\hypertarget{example-datasets}{%
+\chapter{Example datasets}\label{example-datasets}}
+
+To illustrate the process of FAIRifying and structuring ecological data, we rely on several example datasets we used to develop this guide. These datasets were selected because they cover a broad variety of different structures and different levels of \protect\hyperlink{FAIR}{FAIR}, ranging from observational to experimental data and from highly unstructured and undocumented data to data that already fulfils some of the FAIR principles.
+
+\begin{infobox}
+
+For all example datasets we went through the full \protect\hyperlink{workflow}{workflow} described in this guide, except the step of publishing the standardized and structured version of the data on a \protect\hyperlink{repository}{repository}. This is still work in progress, as we rely on datasets of others whose permission is needed for that. Without storing the data on a repository, many of the circles in the \protect\hyperlink{evaluation}{evaluation} cannot be filled. In the following figures we therefore use solid circles for already fulfilled evaluation criteria and striped circles for criteria that will be fulfilled once the dataset is stored in a suitable repository.
+
+\end{infobox}
+
+\hypertarget{budburst}{%
+\section{Bud burst data}\label{budburst}}
+
+This dataset contains long-term data on the phenology of different tree species. Every year in spring, deciduous trees develop new leaves from their buds at a certain point in time. The timing of this can be crucial for herbivores, such as caterpillars, relying on newly emerging leaves as an important food source. To monitor shifts in tree phenology, the Department of Animal Ecology at NIOO-KNAW has assessed leaf development every year since 1988 by scoring the stage of bud opening on a fixed scale \autocite[cf.][]{Visser_2001}. Both the \href{https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/5SOKTV}{original dataset} and the \href{https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/72GQ4C}{final, enriched dataset} (i.e., the version after following the workflow of this guide) are stored on DataverseNL.
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.5\linewidth]{images/ID-card_budburst} 
+
+}
+
+\caption{FAIR assessment of bud burst data. Striped circles indicate the hypothetical status of the dataset once it is stored in a repository (see note box above).}\label{fig:budburst}
+\end{figure}
+
+\hypertarget{cricket}{%
+\section{Cricket data}\label{cricket}}
+
+This dataset contains experimental data on invertebrates belonging to the publication of \textcite{Vogels_2021}. They tested whether changes in plant N:P ratios following sod-cutting constrain the reproductive potential in the European field cricket (\emph{Gryllus campestris}). Different phosphorus and liming treatments were applied to vegetation plots in the heathlands of the Veluwe and the plants of these plots used in a feeding experiment in which the reproductive success of the female crickets was measured. The data is stored on the \href{https://lifesciences.datastations.nl/dataset.xhtml?persistentId=doi:10.17026/dans-zsa-f3y9}{DANS Data Station}.
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.5\linewidth]{images/ID-card_cricket} 
+
+}
+
+\caption{FAIR assessment of cricket data. Striped circles indicate the hypothetical status of the dataset once it is stored in a repository (see note box above).}\label{fig:crickets}
+\end{figure}
+
+\hypertarget{CLUE}{%
+\section{CLUE field vegetation cover data (i.e., CLUE data)}\label{CLUE}}
+
+This dataset consists of data on vegetation cover collected in a long-term grassland biodiversity field experiment site in the Veluwe, Netherlands, also abbreviated as \href{https://nioo.knaw.nl/en/facilities/clue-field-veluwe-database}{CLUE fields} (= changing land usage, enhancement of biodiversity and ecosystem development). Data collection started in 1996 and was done by the Department of Terrestrial Ecology of NIOO-KNAW. On a former agricultural field, experimental plots have been established in a random block design and different sowing treatments (i.e., high diversity, low diversity, continued agricultural rotation, and natural succession), as well as soil inoculation treatments have been applied in two different experiments in 1996. In both experiments, percent cover of each occurring plant species is measured annually. The data of both experiments resulted in two independent datasets. They are however very similar and their FAIRification process was nearly the same, so we treat them as one in this guide.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/ID-card_CLUE} 
+
+}
+
+\caption{FAIR assessment of CLUE data. Striped circles indicate the hypothetical status of the dataset once it is stored in a repository (see note box above).}\label{fig:CLUE}
+\end{figure}
+
+\hypertarget{part---ii.-how-to-chapters--}{%
+\part*{- II. How-to chapters -}\label{part---ii.-how-to-chapters--}}
+\addcontentsline{toc}{part}{- II. How-to chapters -}
+
+\hypertarget{workflow}{%
+\chapter{Workflow}\label{workflow}}
+
+The general workflow of making your data more \protect\hyperlink{FAIR}{FAIR} and structured is shown in Figure 3.1 and shortly described in the following section.
+
+To make your data more FAIR and structured, we recommend you to take the following steps:
+
+\begin{itemize}
+\item
+  Describe your data and thereby gather \protect\hyperlink{metadata}{metadata}
+\item
+  You should decide whether your raw data should be \protect\hyperlink{mobilisation}{mobilised} to an online \protect\hyperlink{repository}{repository}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If yes, you have to choose a suitable repository and upload your metadata and data there
+  \end{itemize}
+\item
+  Start to \protect\hyperlink{standardise}{standardise} both the data and the metadata. With which of the two you start does not matter, as they can both be structured and standardised separately
+\end{itemize}
+
+For the metadata:
+
+\begin{itemize}
+\item
+  Choose a metadata standard
+\item
+  Map the metadata to the selected standard
+\end{itemize}
+
+For the data:
+
+\begin{itemize}
+\item
+  Choose a suitable data standard
+\item
+  Map the data to that standard
+\item
+  For further standardisation of your data, use ontologies and biological taxonomies where possible to describe the contents of the data
+\item
+  Choose a standardised structure for the data
+\item
+  Restructure your data according to the chosen structure
+\item
+  Once standards and structure are applied, structural metadata can be created that describes how the data is organised in its new form
+\end{itemize}
+
+As a last step, your standardised data and metadata should be persistently stored in an online storage
+If you have not chosen a repository before (or if you want to store the standardised data elsewhere), you should:
+
+\begin{itemize}
+\item
+  Choose a suitable repository that accepts your new data structure/format
+\item
+  Mobilise the data and the metadata to the chosen repository
+\end{itemize}
+
+You can enter this workflow at any point, depending on the status of your data, and it might be necessary to go back and forth between some of the steps.
+
+Even though this guide is tailored to ecological data, the workflow presented here should be generally applicable to any type of data, only the implementations of each step will differ.
+In the following chapters, we will go through each of the steps and provide some general background, introduce some options for implementation for ecological data and considerations that can help to choose the best suited option for your data, as well as a short insight into our own choices for the \protect\hyperlink{example-datasets}{example datasets}.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/workflow} \caption{Diagram of the workflow presented in this guide to FAIRify data. The colours refer to the data properties introduced in this guide (metadata = red, storage = blue, standards = green, structure  = orange).}\label{fig:workflow-latex}
+\end{figure}
+
+\hypertarget{part-a.-data-preparation}{%
+\part*{a. Data preparation}\label{part-a.-data-preparation}}
+\addcontentsline{toc}{part}{a. Data preparation}
+
+\hypertarget{primary-data}{%
+\chapter{Primary data}\label{primary-data}}
+
+\hypertarget{describe-data}{%
+\section{Describe your data (Metadata)}\label{describe-data}}
+
+Independent of whether you aim to publish your data, it is always important to properly describe and annotate the data. This type of description is called \protect\hyperlink{metadata}{metadata} and provides information about your dataset that helps to find, understand, and reuse it. We can distinguish between administrative, descriptive and structural metadata \autocite{Riley_2017}:
+
+\begin{itemize}
+\item
+  Administrative metadata includes information about the authors, usage (i.e., licence), and maintenance of the data
+\item
+  Descriptive metadata includes information about the contents, \protect\hyperlink{provenance}{provenance} (i.e., the source and/or history), and coverage (e.g., time, geographic location) of the data
+\item
+  Structural metadata provides details about how the dataset is organised and how individual data files are related to each other
+\end{itemize}
+
+Many repositories require a minimal set of metadata when uploading data, which can either directly be entered in a fill-in form provided by the repository or added in a separate file that is uploaded together with the data. The simplest form of metadata is a README text file containing some basic information on what the data is about. There are, however, no regulations on what information a README should contain and in practice, the extent and detail of it varies a lot. In general, the richer the data is described the better.
+
+\begin{disclaimerbox}
+
+{\textbf{Be aware}}
+
+There is another section on \protect\hyperlink{standardise-and-structure-your-metadata}{standardising your metadata} that builds on the current section as it assumes that metadata has already been gathered. If you want to both gather and standardise metadata, you can do both steps at once and directly write the metadata in the standard format instead of creating a README first.
+
+\end{disclaimerbox}
+
+Based on best practices of writing README files and in terms of \protect\hyperlink{standardise}{standardising} the metadata in a later step, we recommend to gather the following information about your data:
+
+Recommended best practises for minimum metadata:
+
+\begin{itemize}
+\item
+  Title of the dataset
+\item
+  Short description of the contents of each data file
+\item
+  Short description of the methods used for data collection
+\item
+  Responsible parties, including those who created the data and those who can be contacted to answer questions about the data
+\item
+  When was the data collected? Which time span is covered?
+\item
+  Where has the data been collected?
+\item
+  Licencing information: How can others use your data? To find out more about different licences, see section \protect\hyperlink{Licencing}{Licencing}
+\item
+  Changes in the data or updates should ideally also be recorded in the README
+\item
+  Do different tables within a file and/or different files in the dataset link to each other? If yes, a short description of how they link (e.g., by which identifier)
+\item
+  Describe the context of the dataset by cross-referencing other relevant and related datasets or metadata. These links should be meaningful by qualifying how different resources link to each other (e.g., \emph{dataset A is a derivative of dataset B} or \emph{B contains complementary information to A}).
+\end{itemize}
+
+\begin{infobox}
+
+A template that covers these minimum metadata fields can be found here: \href{https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-template.md}{README template}. Or follow this \href{https://github.com/LTER-LIFE/FDFDT/blob/main/readme-templates/README-example-budburst.md}{example} of the bud burst data.
+
+\end{infobox}
+
+\textbf{For tabular data}:
+
+In addition to providing metadata at the dataset level, as listed above, it is recommended for tabular data to provide a \protect\hyperlink{data-dictionary}{data dictionary} (sometimes called a codebook). A data dictionary provides the meaning of the columns and values in your data files \autocite{Buchanan_2021}. It serves as a reference guide for people who want to reuse your data, as it improves the interpretation and understanding of the data.
+
+For data stored in a relational database, the data dictionary is an active document, meaning that it is updated whenever the tables and columns in the database change. In most other cases, data dictionaries are static documents that need to be created manually. When you do so, describe:
+
+\begin{itemize}
+\item
+  The meaning or definition of columns
+\item
+  The data type (e.g., integer, string, datetime)
+\item
+  The unit in which the measurement is given
+\item
+  The accepted values for a column, including the meaning of codes (e.g., 0 = absent, 1 = present) (\emph{optional})
+\end{itemize}
+
+If you include personal information, like email addresses, of other people in the metadata that is made available online later on, it should always be asked for permission beforehand.
+
+\hypertarget{licencing}{%
+\subsection{Licencing}\label{licencing}}
+
+If you deposit your data online, it is important to communicate to potential users what permissions they have and arrange a legal agreement in the form of a licence. A commonly used set of licences are the copyright licences of \href{https://creativecommons.org/share-your-work/cclicenses/}{Creative Commons (CC)}. Scientific datasets most often are published under a CC BY licence, but Creative Commons also offers other licensing options, as stated in Table 4.1. They also offer an interactive tool (\href{https://chooser-beta.creativecommons.org/}{License chooser}) that can help you to choose the best suited licence for your data.
+
+{\textbf{Table 4.1. Creative commons licences and their meanings.}}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2877}}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2603}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4521}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+Licence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What can users do with your data?
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\href{https://creativecommons.org/licenses/by/4.0/}{CC BY} & \href{images/CCBY_logo.png}{} & users can use, distribute and build upon the data but have to give credits to the creator \\
+\href{https://creativecommons.org/licenses/by-nc/4.0/}{CC BY-NC} & \href{images/CCBY-NC_logo.png}{} & users can use, distribute and build upon the data but have to give credits to the creator and data \textbf{cannot} be used commercially \\
+\href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA} & \href{images/CCBY-SA_logo.png}{} & users can use, distribute and build upon the data, they have to give credits to the creator and adaptations need to be shared under the same terms \\
+\href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{CC BY-NC-SA} & \href{images/CCBY-NC-SA_logo.png}{} & users can use, distribute and build upon the data, they have to give credits to the creator, adaptations need to be shared under the same terms and data \textbf{cannot} be used commercially \\
+\href{https://creativecommons.org/licenses/by-nd/4.0/}{CC BY-ND} & \href{images/CCBY-ND_logo.png}{} & users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator \\
+\href{https://creativecommons.org/licenses/by-nc-nd/4.0/}{CC BY-NC-ND} & \href{images/CCBY-NC-ND_logo.png}{} & users are not allowed to adapt or modify the data, but can copy or distribute it if they give credits to the creator and data cannot be used commercially \\
+\href{https://creativecommons.org/publicdomain/zero/1.0/}{CC0 (``CC Zero'')} & \href{images/CC-Zero_logo.png}{} & copyrights are given up and work is put into the public domain \\
+\end{longtable}
+
+\begin{infobox}
+
+Carefully consider which licence to choose. It cannot be revoked and every user of the data needs to comply with the licence's conditions of use, even if the data is no longer distributed.
+
+\end{infobox}
+
+\hypertarget{structuring-your-tabular-data}{%
+\section{Structuring your tabular data}\label{structuring-your-tabular-data}}
+
+A common way of storing biodiversity data is in tables. However, simply entering the data into a spreadsheet does often not adhere to the strict requirements of tabular data, which has the following characteristics:
+
+\begin{itemize}
+\item
+  Structured in rows and columns
+\item
+  A row contains information about a single entity (e.g., a person's name, age, or occupation), whilst a single column describes the same property of each entity (e.g., the names of all persons)
+\item
+  Rectangular shape, in which each row has the same number of columns and each column the same number of rows
+\item
+  Cells in a row/column can be left empty
+\end{itemize}
+
+For a more extensive and formal description of tabular data, see W3C's \href{https://www.w3.org/TR/tabular-data-model/}{tabular data model}.
+
+To standardise the data and make it reusable to others and to follow the remaining steps of this guide, it is a necessary prerequisite that data that is meant to be tabular follows the aforementioned characteristics. If not, reshape your data accordingly.
+
+\begin{infobox}
+
+If your data consists of multiple tables, the relationships between these tables should be made clear. This can be done either by describing it in a README file (see \protect\hyperlink{describe-data}{section 4.1}) or, if your data is already in a standard format, in a more standardised way, such as the meta.xml file described \protect\hyperlink{structural-metadata}{here}.
+
+\end{infobox}
+
+\hypertarget{part-b.-storage}{%
+\part*{b. Storage}\label{part-b.-storage}}
+\addcontentsline{toc}{part}{b. Storage}
+
+\hypertarget{storing-your-data}{%
+\chapter{Storing your data}\label{storing-your-data}}
+
+Data is often stored locally on personal computers or external hard drives which makes the data unavailable to others and increases the risk of data loss \autocite{Tenopir_2020}. These drawbacks can be overcome by \protect\hyperlink{mobilisation}{mobilising} your data to an online repository.
+
+\hypertarget{which-data-to-store}{%
+\section{Which data to store?}\label{which-data-to-store}}
+
+Before choosing a suitable repository, you have to decide which version of your data you wish to share: your data in its original format (i.e., primary data) or your data in a \protect\hyperlink{standardise}{standard} format. Data in its original format, provided that it is accompanied by detailed \protect\hyperlink{metadata}{metadata} to enable optimal reuse (see section \protect\hyperlink{describe-data}{4.1}), is closest to the raw data and can be shared without requiring additional effort to reformat the data. Alternatively, data in a common standard format can be reused by others in your community as well as more easily integrated with other datasets in the same format. You may also consider providing both versions of the data next to each other in the same repository allowing users to choose the version best suited for their own needs.
+
+Either way, it's recommended to always share your metadata. Even when you are unable to share your data if, for example, it contains ecologically or personally sensitive information, metadata-only records are valuable resources. By sharing your metadata on an online repository, others can learn from the considerations you made when collecting data or the methods you followed, and easily assess whether they want to request your data.
+
+\hypertarget{sensitive-information}{%
+\subsection{Sensitive information}\label{sensitive-information}}
+
+Before you publish any data online, be aware that some data is not yours to publish and requires special protection. Personal information and any privacy information in your data or metadata has to be treated according to local privacy protection regulations (e.g., the \href{https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en}{General Data Protection Regulation (GDPR)} in the EU).
+
+Additionally, your data can contain biologically sensitive information, for example, about endangered or rare species. Options to handle this are, for example, making your data available with restricted access or providing spatial information at a lower resolution.
+
+For the best advice on how to handle your data, you should consult the responsible person at your institution (e.g., data steward, data protection officer, or privacy officer).
+
+\hypertarget{choosing-a-repository}{%
+\section{Choosing a repository}\label{choosing-a-repository}}
+
+The range of existing repositories is very large and while some are domain specific, there are other repositories that accept data from different disciplines. To find the repository that is best suited for your data it can be helpful to take the following points into consideration:
+
+\textbf{Which data and metadata formats are accepted?}
+
+Depending on the format your data/metadata is stored in, not every repository will accept your data/metadata. Many repositories however accept a wide range of formats but have preferred formats to upload your data in, as these formats have best long-term guarantees in sustainability and accessibility (see \href{https://dans.knaw.nl/en/file-formats/}{here} for an example).
+
+\textbf{What repository is commonly used in your organisation, community or discipline? }
+
+Check which repositories your direct colleagues in your organisation, or other data providers in your community or field of research use. Using such repositories will likely make your data better linked to other datasets and found more easily by others in your discipline.
+
+\textbf{Is a persistent identifier assigned and explicitly mentioned?}
+
+To ensure that your dataset can always be found, it is important that your data is associated with a \protect\hyperlink{PID}{persistent identifier (PID)} and that this PID is explicitly mentioned in the metadata. Most repositories assign a PID when you submit your data, which is preferred over repositories in which you would need to assign the PID yourself. Different repositories also use different identifier systems which can be another selection criterion if you have personal preferences for a specific identifier system.
+
+\textbf{How can the dataset be accessed?}
+
+Do users have to download the dataset directly from the repository's website or is there a more automated option available, such as an \protect\hyperlink{API}{API (Application Programming Interfaces)}? Is the repository using an open, free and standardised protocol, like the \href{https://www.openarchives.org/pmh/}{Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)}, to make the data accessible?
+
+\textbf{Is metadata stored persistently even when the data is no longer available?}
+
+The metadata of your dataset should be stored persistently so that users can still find out about the existence of your data, even if it is no longer available on the repository itself.
+
+\textbf{Do you want version control?}
+
+Version control means that changes in the data and reuploads are tracked and that multiple versions of your data are available. Not all repositories provide version control, so if this is important for you, make sure that the chosen repository provides this option. At \href{http://re3data.org}{re3data.org}, for example, you can directly filter for repositories with versioning.
+
+\textbf{Is the repository indexing the data?}
+
+To make your data findable on the web by search engines, it has to be registered or indexed in a catalogue. Many repositories do this automatically and make your dataset findable, for example, through \href{https://datasetsearch.research.google.com/}{Google dataset search}.
+
+\textbf{Do you retain custody of your data or is it transferred to the repository?}
+
+There are repositories that obtain the custody of your data once it is uploaded there, meaning that the \protect\hyperlink{datamanagement}{data management} is done by the repository and your possibilities to manage the data are then very limited. This can be beneficial if you do not want to have further responsibility for your data, but if you still want to be able to manage the data yourself after uploading it, a repository where the custody stays with you will be better suited.
+
+\hypertarget{repositories-to-store-biodiversity-data}{%
+\section{Repositories to store biodiversity data}\label{repositories-to-store-biodiversity-data}}
+
+Here are some examples of commonly used repositories for biodiversity data. This list is non-exclusive; other options might exist that are more suitable for your data.
+
+\hypertarget{global-repositories}{%
+\subsection{Global repositories}\label{global-repositories}}
+
+\textbf{GBIF}, the \href{http://gbif.org}{Global Biodiversity Information Facility}, is a data infrastructure and international network providing open access to biodiversity data. It holds species occurrence data from different sources, ranging from museum collections to field observations. In the coming years, GBIF is expanding to include a variety of other data types, including eDNA data, camera trap data, and data on species interactions \autocite{GBIF_2021}. Data is stored using data standards, such as \protect\hyperlink{DwC}{Darwin Core}, and is openly accessible to everyone.
+
+\textbf{OBIS}, the \href{https://obis.org/}{Ocean Biodiversity Information System}, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.
+
+Both GBIF and OBIS use an Integrated Publishing Tool (IPT) as a way to submit data. It is a tool that facilitates the creation of metadata in a standard format and helps with mapping the data to Darwin Core and structure it in a \protect\hyperlink{DwC-A}{Darwin Core Archive} (for more information see \protect\hyperlink{darwin-core-archive}{later chapters}). There is extensive documentation on how to use the IPT by GBIF \href{https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide}{here}. Once the dataset is published it is assigned a DOI.
+
+\textbf{Dataverse} is an open-source repository software that has installations (i.e., repositories based on the software) all over the world. Data can only be published on a Dataverse instance if you are part of one of the collaborating institutions but is always accessible to everyone. A full list of Dataverse installations can be found \href{https://dataverse.org/installations}{here}.
+
+\href{https://zenodo.org/}{\textbf{Zenodo}} is an open European repository hosted by CERN and in contrast to the other repositories listed here not domain specific. It contains research data from several research domains, provides versioning, DOI assignment, restricted access options if wanted and assures persistent long-term storage of your data.
+
+\hypertarget{dutch-repositories}{%
+\subsection{Dutch repositories}\label{dutch-repositories}}
+
+Since the project partners behind this guide are situated in the Netherlands, we also want to highlight some Dutch repositories.
+
+\textbf{\href{https://dataverse.nl/}{DataverseNL}} is a Dutch installation of Dataverse and is hosted by DANS-KNAW. Researchers from all collaborating institutes within the Netherlands can store their data there and make it available to everybody. Reasons for uploading data to DataverseNL:
+
+\begin{itemize}
+\item
+  It automatically gets a persistent identifier
+\item
+  The metadata is findable through web services like \href{https://datasetsearch.research.google.com/}{Google dataset search}
+\item
+  The data is easily retrievable through an \protect\hyperlink{API}{API}
+\item
+  There is versioning to track changes and re-uploads of the data
+\item
+  The custody of the data stays with the data owners
+\end{itemize}
+
+\textbf{DANS Data Station Life Sciences}
+
+The \href{https://dans.knaw.nl/en/life-sciences/}{DANS Data Station for Life Sciences} is a repository hosted by DANS-KNAW which is based on the Dataverse software. It is open for every individual researcher independent of institution both to store and retrieve data. It is always free of charge to access data and up until a data size of 50 GB also to store data. The Data Station for life sciences is domain specific, accepting data of medical, health and green life sciences, while there are other Data Stations hosted by DANS for other domains, such as \href{https://dans.knaw.nl/en/social-sciences-and-humanities/}{social sciences}, \href{https://dans.knaw.nl/en/archaeology/}{archeology} and \href{https://dans.knaw.nl/en/physical-and-technical-sciences/}{physical and technical sciences}. It also allows access restrictions, which is helpful if you want to store your data persistently but not necessarily make it open for everyone.
+
+\hypertarget{tools-to-help-you}{%
+\section{Tools to help you}\label{tools-to-help-you}}
+
+\begin{itemize}
+\item
+  \href{http://re3data.org}{re3data.org} is a registry of repositories for research data where you can filter a broad range of repositories for different criteria, such as subject, country, persistent identifier system, versioning or licences.
+\item
+  \href{http://fairsharing.org}{fairsharing.org} is a registry that lists a variety of standards, databases and policies. To find repositories you can either directly search for a specific one and get detailed information on it or search all repositories/databases and filter for a range of options, such as country, subject or specific tags.
+\item
+  \href{https://commons.datacite.org/}{DataCite Commons} provides a repository finder that integrates information on repositories from re3data within the \href{https://www.fairsfair.eu/}{FAIRisFAIR} project. It allows users to search for repositories by keywords and filter the repositories for certificates, such as the CoreTrustSeal, or the software they are based on.
+\end{itemize}
+
+\hypertarget{our-choice}{%
+\section{Our choice}\label{our-choice}}
+
+For the dataset we owned ourselves within our department (\protect\hyperlink{budburst}{bud burst}), we decided to store the primary data on DataverseNL. Besides the reasons listed above, we chose DataverseNL because it was already used by many other researchers from our institute and it was suitable for our data type. For us it was especially important that we retain the custody of our data, which was a reason to not choose the Data Station. Additionally, we wanted to store our data within the Netherlands and it was a natural choice to choose a repository hosted by one of the project partners.
+
+\hypertarget{part-c.-standards}{%
+\part*{c.~Standards}\label{part-c.-standards}}
+\addcontentsline{toc}{part}{c.~Standards}
+
+\hypertarget{standardise-your-data}{%
+\chapter{Standardise your data}\label{standardise-your-data}}
+
+\hypertarget{choose-a-data-standard}{%
+\section{Choose a data standard}\label{choose-a-data-standard}}
+
+Once you have considered the mobilisation of your data and metadata to an online repository, you can start to \protect\hyperlink{standardise}{standardise} the data. The first step here is to choose a data standard, i.e., a standard format to name and organise the data. There is a wide range of standards available and many of them are directly tailored to a certain domain. Standards within the field of biodiversity are mostly maintained by the non-profit organisation \href{https://www.tdwg.org/}{Biodiversity Information Standards (TDWG)}. Which standard is best suited for your data depends on its content and format. In order to choose a standard, you should consider:
+
+\textbf{Is the standard accepted and used by your community?}
+
+If the community is already familiar with the standard the threshold to reuse your standardised data is likely lower.
+
+\textbf{Is the standard well-maintained and stable?}
+
+Data standards should be maintained, further developed and adapted by following the developments in the field they are tailored to and the needs of the community. Terms should also be stable and not change in meaning and always be referred to by a persistent identifier.
+
+\hypertarget{data-standards-for-biodiversity-data}{%
+\section{Data standards for biodiversity data}\label{data-standards-for-biodiversity-data}}
+
+\href{https://dwc.tdwg.org/}{\textbf{Darwin Core (DwC)}} is a stable data standard tailored to describe biodiversity data by using a defined library of terms. It is an extension of the \protect\hyperlink{dublincore}{Dublin Core} Metadata Initiative and maintained by TDWG (Biodiversity Information Standards). Darwin Core facilitates sharing of biodiversity data from various sources as every term has a clear definition and a \protect\hyperlink{URI}{URL}, which can be used irrespective of technology, e.g., \protect\hyperlink{XML}{XML} or \protect\hyperlink{RDF}{RDF}.
+
+\href{https://abcd.tdwg.org/}{\textbf{ABCD (Access to Biological Collection Data)}} is a standard to facilitate the access to and exchange of data about specimens and observations. It is a highly structured, comprehensive and still evolving standard that is, for example, used within \protect\hyperlink{GBIF}{GBIF}. It is maintained by TDWG and consists of an \protect\hyperlink{ontology}{ontology} of terms to describe the data.
+
+\hypertarget{tools-to-help-you-1}{%
+\section{Tools to help you}\label{tools-to-help-you-1}}
+
+\begin{itemize}
+\item
+  A helpful tool to find a standard is \href{https://fairsharing.org/search?fairsharingRegistry=Standard}{FAIRsharing}, which is a registry that lists a variety of standards and provides detailed information, for example, about their maintenance, background and how they are linked to other standards. It also allows filtering for certain criteria, such as licensing, country or domain.
+\item
+  An overview of the standards maintained by TDWG can be found \href{https://www.tdwg.org/standards/}{here}.
+\end{itemize}
+
+\hypertarget{our-choice-1}{%
+\section{Our choice}\label{our-choice-1}}
+
+For biodiversity data, a widely used data standard is Darwin Core. It is well suited to be used with species occurrence data that is either collected in the field, in experiments or comes from museum collections. For all the datasets we used to develop this guide, Darwin Core was a suitable standard, as it captures all the information in the data, is easy to apply through extensive documentation and applicable to the tabular format of our data. For this reason, we will focus mainly on Darwin Core in the following chapters, because we think that the tabular format is probably one of the most common formats biodiversity data is stored in.
+
+\hypertarget{why-darwin-core}{%
+\subsection{Why Darwin Core?}\label{why-darwin-core}}
+
+Darwin Core is widely used in the ecological community and required for publishing data on big ecological data infrastructures, such as GBIF and \protect\hyperlink{OBIS}{OBIS}. With its primary focus on taxa and their occurrences in nature, it is well suited to describe most ecological datasets, with the necessary flexibility to describe different types of data, such as observational or experimental data. Additionally, mapping variables of ecological data to Darwin Core terms is relatively straightforward and there is detailed description available on each Darwin Core term.
+
+\hypertarget{mapping-your-data-to-darwin-core}{%
+\section{Mapping your data to Darwin Core}\label{mapping-your-data-to-darwin-core}}
+
+\hypertarget{darwin-core-namespaces}{%
+\subsection{Darwin Core namespaces}\label{darwin-core-namespaces}}
+
+Namespaces are prefixes used to distinguish between terms from different vocabularies or standards, ensuring there are no conflicts between similarly named terms. In the context of Darwin Core, four main namespaces are used:
+
+\begin{itemize}
+\item
+  \href{http://rs.tdwg.org/dwc/terms/}{\emph{dwc}}: marks standard Darwin Core terms and generally has string values (e.g., dwc:scientificName)
+\item
+  \href{http://purl.org/dc/elements/1.1/}{\emph{dc:}}: marks terms belonging to ``elements/1.1'' namespace of Dublin Core and generally has string values (e.g., dc:title)
+\item
+  \href{http://rs.tdwg.org/dwc/iri/}{\emph{dwciri}}: marks Darwin Core terms that must be used with \protect\hyperlink{URI}{Internationalized Resource Identifier (IRI)} values and are generally used in \protect\hyperlink{RDF}{RDFs} (e.g., dwciri:recordedBy)
+\item
+  \href{http://purl.org/dc/terms/}{\emph{dcterms}}: refers to terms coming from the ``terms'' namespace of Dublin Core and their values depend on the details of the respective term (e.g., dcterms:identifier)
+\end{itemize}
+
+\hypertarget{darwin-core-terms}{%
+\subsection{Darwin Core terms}\label{darwin-core-terms}}
+
+Every column name in your data should be mapped to a Darwin Core term. This sometimes requires restructuring the data slightly or adding additional information in extra columns, e.g., units. The values within a column (i.e., DwC term) have to be compliant with the definitions given in the \href{https://dwc.tdwg.org/list/}{Darwin Core List of terms}. As Darwin Core is only a vocabulary, it does not have any required terms. Only if you later on want to organise your Darwin Core terms in a \protect\hyperlink{DwC-A}{Darwin Core Archive}, some of the terms are required (see \protect\hyperlink{DarwinCore-Archive}{this section}).
+
+\includegraphics[width=1\linewidth]{conditional_blocks/DwC-term-table-vertical}
+
+\hypertarget{terms-of-class-event}{%
+\subsection{Terms of class Event}\label{terms-of-class-event}}
+
+Before assigning the terms of the event class to your data, you should define what exactly one event in your data is. An event is generally defined as an action that occurs at a certain time and place. Depending on how your data is collected, there might also be some hierarchy in your events that should be accounted for. Defining how events are structured in your data and which measurements or occurrences belong together, makes it easier to properly map your data to the respective terms, especially eventID and parentEventID, and later on facilitates structuring of the data.
+
+\hypertarget{eventID}{%
+\subsubsection{eventID \& parentEventID}\label{eventID}}
+
+The eventID can be a globally unique identifier or an identifier specific to the dataset. For more information on how to create globally unique identifiers, see \protect\hyperlink{GUIDcreation}{this chapter}. If you choose to create identifiers specific to the dataset, we recommend establishing a structure that simultaneously is informative about the event. If there is a hierarchy in the events, eventIDs should build on the parentEventIDs. We recommend using separators (e.g., ``\_'' or ``-'') to indicate the different blocks of the event levels within an eventID.
+
+\begin{infobox}
+
+Some guides about persistent identifiers (e.g., \autocite{Richards}) state that IDs should be opaque, meaning that they do not give any information about what they describe or relationships between resources. By this it can be avoided that the ID contains information that might no longer be true at a later time (because the resource has changed). However, these guides mostly refer to opaque identifiers on the data or resource level and not on the record level, which is why we decided to increase human-readability by creating informative dataset-specific IDs. This problem does of course not occur if you choose GUIDs.
+
+\end{infobox}
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+In the bud burst data, we have three different event levels. The highest level describes the event of going to the field in a certain year to a certain area. The eventID therefore consists of an area abbreviation and the year, e.g., HV2004. For the event level below, the sampling on a specific day within a year and area, the previous eventID becomes the parentEventID and the level 2 eventID extends the parentEventID by a separator and the day of the year, e.g., HV2004\_99. The third and lowest event level describes the sampling of a specific tree on a day within an area and year. The eventID of level 2 becomes the parentEventID and the level 3 eventID extends the parentEventID by an underscore and the number of the tree, e.g.~HV2004\_99\_5. This way, the eventID is easily human-readable and directly gives the most important information about the event.
+
+\end{examplebox}
+
+\begin{examplebox}
+
+\textbf{Crickets}:
+
+In the cricket data, there were two different event types, one relating to measurements that have been taken on plants and the other to measurements of individual crickets. For the plants, each plot-treatment combination was measured once, leading to one event for each of them. The eventIDs were therefore simply the plot name and a treatment code, for example, PM1-T1 (PM1 being the plot name, T1 the first treatment). Conversely, defining events for cricket measurements posed more challenges due to the lack of specific date and time information in the data. By using the publication belonging to the dataset and the documentation file accompanying the data, it was possible to identify which measurements were taken simultaneously, allowing them to be grouped into the same event. This approach yielded 18 distinct event groups per individual cricket from which we build the eventID by merging the cricket identifier with the event group number, e.g., Cr1-05 (indicating individual cricket number 1 and event group 5).
+
+\end{examplebox}
+
+\hypertarget{date-information-eventdate-year-month-day}{%
+\subsubsection{Date information (eventDate, year, month, day)}\label{date-information-eventdate-year-month-day}}
+
+\textbf{eventDate} is necessary to be filled but can vary in its precision. If a full date is available, use the \href{https://www.iso.org/obp/ui/en/\#iso:std:iso:8601:-1:ed-1:v1:en}{ISO standard (8601-1:2019)} date format of YYYY-MM-DD. You should always give the date as precise as possible, so if the exact day is not available, give at least the year and month, etc. You can also give an interval if a distinct point in time is not available by separating the days or months or years by a slash, e.g., 2014-04-01/08 meaning some time in the interval between the first April 2014 and the 08 April 2014. If the interval starts and ends at days of different months, also repeat the year (e.g., 2014-04-01/2014-07-01).
+
+In addition to eventDate, we recommend to use the terms \textbf{year}, \textbf{month} and \textbf{day} (if applicable) as this can facilitate later analysis with the data. If eventDates of different levels are not all of the same format, for example the parent event only has the year (2024), while the child event has an exact date (2024-11-05), the event dates can be transformed to characters, as programs like R do not accept different date formats in the same column. In this case, the additional columns of year, month and day are especially helpful, as missing values can be left empty/filled with \emph{NA}, while the rest is numeric.
+
+\hypertarget{time-information-eventtime}{%
+\subsubsection{Time information (eventTime)}\label{time-information-eventtime}}
+
+If you also have time information in your data, this can either also be stored in eventDate or additionally in an extra column as \textbf{eventTime}. As with date, time should be given in time of day (in 24h system) following the \href{https://www.iso.org/obp/ui/en/\#iso:std:iso:8601:-1:ed-1:v1:en}{ISO standard 8601-1:2019}. Time intervals can again be given by separating times with a slash, e.g., 13:00:00/15:30:00 (the interval between 13:00 and 15:30). If time information should be added to eventDate (which is recommended, as eventDate should be as precise as possible), the date and the time are separated with a ``T'', for example, 2018-08-29T15:19. Time Zones can be specified by adding a ``Z'' at the end, if the time is recorded in UTC (e.g., 2010-02-16T08:40Z) or by stating the deviation from UTC by adding a plus or minus and the number of hours of the deviation, e.g., 2010-02-16T08:40-0300 meaning UTC minus 3 hours. If neither of both is given, it is assumed that the time is given as the local time.
+
+\hypertarget{terms-of-class-location}{%
+\subsection{Terms of class Location}\label{terms-of-class-location}}
+
+\hypertarget{coordinates-decimallonigtude-decimallatitude-geodeticdatum}{%
+\subsubsection{Coordinates (decimalLonigtude, decimalLatitude, geodeticDatum)}\label{coordinates-decimallonigtude-decimallatitude-geodeticdatum}}
+
+Exact coordinates for locations can be given with the terms \textbf{decimalLongitude} and \textbf{decimalLatitude}. If these are filled, the term \textbf{geodeticDatum} should also be filled, giving the spatial reference system in which the coordinates are given. Best practice is to use the \href{https://epsg.io/?q=\%20kind\%3AGEOGCRS}{EPSG codes}. For hierarchical events, like in the bud burst case, coordinates should only be assigned to the event levels they were actually measured, e.g., only for level 3 events where the exact coordinates of the trees are known.
+
+\hypertarget{geographic-descriptions-verbatimlocality-continent-islandgroup-island-country-municipality-city-stateprovince-county-countrycode}{%
+\subsubsection{Geographic descriptions (verbatimLocality, continent, islandGroup, island, country, municipality, city, stateProvince, county, countryCode)}\label{geographic-descriptions-verbatimlocality-continent-islandgroup-island-country-municipality-city-stateprovince-county-countrycode}}
+
+In addition to the coordinates, which we strongly recommend to include, the term \textbf{verbatimLocality} can sometimes be useful. It gives the original textual description of the location, which can be particularly useful if areas have well-known names and makes these locations easier recognisable. There is also a range of other terms that provide geographic description and can be used to determine the location of events, such as \textbf{continent}, \textbf{islandGroup}, \textbf{island}, \textbf{country}, \textbf{municipality}, \textbf{city}, \textbf{stateProvince} or \textbf{county}. In addition to country, you can also use \textbf{countryCode}, which gives the standard code for the country, ideally the two letter codes of \href{https://www.iban.com/country-codes}{ISO 3166-1-alpha-2}.
+
+\hypertarget{terms-of-class-organism}{%
+\subsection{Terms of class Organism}\label{terms-of-class-organism}}
+
+The term ``organism'' in Darwin Core is defined more broadly than in the strict biological sense and can refer to either a specific organism or a defined group of organisms that are taxonomically homogenous. This means a single cricket can be considered an organism, as well as a flock of birds belonging to the same species.
+
+\hypertarget{organismid}{%
+\subsubsection{organismID}\label{organismid}}
+
+Individual organisms can be assigned a unique organismID. This is helpful, if you have several data records that belong to the same individual or organism for maintaining this link between records (e.g., measurements of the same tree in several years). Previously there was the DwC-term individualID, which nowadays is deprecated and replaced with organismID. As with other ID fields, the organismID can either be globally unique or specific to the dataset.
+
+\hypertarget{terms-of-class-occurrence}{%
+\subsection{Terms of class Occurrence}\label{terms-of-class-occurrence}}
+
+Occurrence is generally defined as the existence of an organism at a certain time and place.
+
+\hypertarget{occurrenceID}{%
+\subsubsection{occurrenceID}\label{occurrenceID}}
+
+The occurrenceID assigns a unique ID to every occurrence record. Several occurrenceIDs can be associated with a single eventID, for example when different species occurred at the same event. You can either assign GUIDs (see \protect\hyperlink{GUIDcreation}{here}) or identifiers specific to the dataset. If you choose to create dataset-specific identifiers, we recommend creating informative IDs that give information about the occurrences they describe (see \protect\hyperlink{eventID}{eventID} for more details).
+
+If your data also includes an eventID, we recommend proceeding with the block-structure of IDs we have already used there by extending the eventID of the corresponding event with a new block that numbers the occurrences of that event. However, if there are occurrence records for different event levels, extending the eventID may lead to unequal length of the occurrenceIDs from the different event levels. This can be confusing and lead to doubled IDs, as higher level occurrenceIDs then have the same length as for example lower level eventIDs (i.e., HV2004\_99\_5 as an eventID refers to a third level event but as an occurrenceID it could also refer to the fifth occurrence record of the higher level eventID HV2004\_99). To avoid this confusion and ensure unique IDs, we therefore add the prefix ``o'' (for occurrence) in the block of the ID that numbers the occurrences, e.g., HV2004\_99\_5\_o1. This method helps maintain clarity and uniqueness across different event levels.
+
+\begin{examplebox}
+
+\textbf{crickets}: occurrenceID = Cr1-05\_1 (corresponding to eventID Cr1-05, indicating the first occurrence of that event)
+
+\end{examplebox}
+
+\hypertarget{taxonomic-information}{%
+\subsubsection{Taxonomic information}\label{taxonomic-information}}
+
+Taxonomic information should always be specified to the lowest level possible. Which level this is can be specified with the term \textbf{taxonRank}. We recommend to use at least the following DwC terms to describe taxon information:
+
+\begin{itemize}
+\item
+  \textbf{kingdom}
+\item
+  \textbf{phylum}
+\item
+  \textbf{class}
+\item
+  \textbf{order}
+\item
+  \textbf{family}
+\item
+  \textbf{genus}
+\item
+  \textbf{specificEpithet}
+\item
+  \textbf{scientificName}
+\end{itemize}
+
+The \textbf{specificEpithet} only contains the second part in the scientific name of a species, while the \textbf{scientificName} contains the full scientific name (i.e., genus + species epithet) together with author and date information, if available. Taxonomic information can be added manually but we recommend to directly query a biological \protect\hyperlink{taxonomy}{taxonomy} for the complete classification of the taxa in your data, to avoid misspellings and/or the use of outdated classification.
+
+Some taxa come with several authorship information or with synonym names. To deal with this, it can again be helpful to directly retrieve the taxonomic information from a biological taxonomy, as they also contain information on the accepted usage of classifications. Which taxonomies exist for this and tools to help you use them, will be explained in more detail in the section \protect\hyperlink{biological-taxonomies}{biological taxonomies}.
+
+However, even if you retrieve taxonomic information automatically from a taxonomy, we strongly recommend to double check the retrieved information manually, as mistakes can easily occur in the case of rare species or taxa with similar names (e.g., for the plant genus \emph{Convolvulus} and the animal genus \emph{Conovulus}).
+
+\begin{examplebox}
+
+\textbf{Crickets}:
+
+For the cricket dataset, we queried the taxonomic information of the European field cricket (\emph{Gryllus campestris}) directly from GBIF, which resulted in the following taxonomic terms (table 6.1).
+
+{\textbf{Table 6.1. Taxonomic information for \emph{Gryllus campestris} as retrieved from GBIF stored in respective Darwin Core terms.}}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1467}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1067}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+scientificName
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+kingdom
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+phylum
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+order
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+genus
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+specificEpithet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+taxonRank
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{Gryllus campestris} Linnaeus, 1758 & Animalia & Arthropoda & Insecta & Orthoptera & Gryllidae & Gryllus & campestris & species \\
+\end{longtable}
+
+\end{examplebox}
+
+\begin{examplebox}
+
+\textbf{CLUE data}:
+
+The CLUE data covers around 130 different plant species and many of them were either misspelt or synonym names were used. One example is shown in table 6.2 where the species name in the data was \emph{Deschampsia flexuos} which is a synonym of the accepted species name \emph{Avenella flexuosa}. This was automatically detected while retrieving the taxonomic information from GBIF and the corresponding information correctly assigned accordingly.
+
+{\textbf{Table 6.2. Taxonomic information for \emph{Deschampsia flexuosa}, which is a synonym of \emph{Avenella flexuosa}, as retrieved from GBIF and stored in respective Darwin Core terms.}}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1351}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}
+  >{\centering\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1081}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+scientificName
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+kingdom
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+phylum
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+order
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+genus
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+specificEpithet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+taxonRank
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{Deschampsia flexuosa} (L.) Trin. & Plantae & Tracheophyta & Liliopsida & Poales & Poaceae & Avenella & flexuosa & species \\
+\end{longtable}
+
+\end{examplebox}
+
+\hypertarget{individualcount-and-organismquantity}{%
+\subsubsection{individualCount and organismQuantity}\label{individualcount-and-organismquantity}}
+
+In the occurrence file, it is important to quantify how many organisms have occurred. There are two different terms to do so, \textbf{individualCount} and \textbf{organismQuantity}. While individualCount is unitless and only gives the number of individuals present at the time of the occurrence, organismQuantity is more flexible, as it describes the quantity of an organism. As organisms do not have to be individuals (see above), it can for example also give the percentage of biomass of an organism or quantify it on a certain scale. Therefore, organismQuantity always requires the additional term \textbf{organismQuantityType} that describes the corresponding quantification system. GBIF provides a \href{https://rs.gbif.org/vocabulary/gbif/quantity_type_2015-07-10.xml}{Quantity Type Vocabulary} with terms they recommend to use to describe the organismQuantityType.
+
+There is ongoing discussion on which of the two terms to use. Some suggest deprecating the term individualCount, as the same information can easily be stored in organismQuantity with higher flexibility. However, individualCount seems to be a standard term that is widely used in specific disciplines, where the terms are not necessarily viewed as redundant. Moreover, it was demanded that there should first be standardised vocabulary in place for organismQuantity and organismQuantityType. Based on the greater flexibility and the potential of deprecating individualCount, we recommend using organismQuantity when possible.
+
+\hypertarget{mof}{%
+\subsection{Terms of class Measurement or fact}\label{mof}}
+
+The \protect\hyperlink{measurementorfact}{measurement or fact} terms require your measurement records to be in a long format. As research data often is stored in a wide format, you will first need to pivot your data before mapping is possible, meaning that all your measured values (or facts) are in one column and have a variable description in a separate column.
+
+\begin{infobox}
+
+\textbf{Wide versus long format}
+
+When storing multiple measurements (or observations) of the same subject in a table, you can store this in a wide or in a long format. Data in the wide format is structured with each row representing a single subject and each column representing a different measure. In contrast, in the long format, each row represents a single measurement or observation and the measured value and measurement type are stored in separate columns. In Darwin Core, measurements are stored in a long format.
+
+\end{infobox}
+
+\hypertarget{measurementvalue-measurementunit}{%
+\subsubsection{measurementValue \& measurementUnit}\label{measurementvalue-measurementunit}}
+
+After transforming your data into the long format, the column containing the measured values or facts can be mapped to the Darwin Core term \textbf{measurementValue}. Measurements come with units, which are often either stored within the column heading or not specified at all in the raw data. Darwin Core accounts for that by the term \textbf{measurementUnit}, which has to be added if you use measurementValue. It is best practice to use SI (International System of Units) units if possible. For unitless measurements, the measurementUnit should still be present in the data but can be left empty/filled with \emph{NA}.
+
+\hypertarget{measurementtype-measurementmethod}{%
+\subsubsection{measurementType \& measurementMethod}\label{measurementtype-measurementmethod}}
+
+With the long format and all measurements being stored in measurementValue, you additionally need to store \textbf{what} has been measured, i.e., what each measurement or fact means. This is done by the term \textbf{measurementType}. Additionally, you should use the term \textbf{measurementMethod} that states how each measurement was measured. For both terms, it is recommended to use controlled vocabulary where possible. For more information on the use of ontologies, see \protect\hyperlink{ontologies}{section ontologies}.
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+To exemplify how the four terms measurementValue, measurementUnit, measurementType and measurementMethod are used, the following shows the previous state of the measurements in the bud burst raw data (top) and how the columns containing measurements are mapped to the Darwin Core terms (bottom).
+
+{\textbf{Table 6.3. Bud burst data in original state.}}
+
+\begin{longtable}[]{@{}cccc@{}}
+\toprule\noalign{}
+Year & TreeID & TreeTopScore & TreeAllScore \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1988 & 61 & 2 & 2 \\
+\end{longtable}
+
+{\textbf{Table 6.4. Bud burst data after mapping to Darwin Core terms.}}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3243}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2027}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2027}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2703}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+measurementType
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+measurementValue
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+measurementUnit
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+measurementMethod
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+bud burst stage (PO:0025532) of the tree crown & 2 & NA & \url{https://doi.org/10.1098/rspb.2000.1363} \\
+bud burst stage (PO:0025532) of the whole tree & 2 & NA & \url{https://doi.org/10.1098/rspb.2000.1363} \\
+\end{longtable}
+
+\end{examplebox}
+
+\hypertarget{measurementid}{%
+\subsubsection{measurementID}\label{measurementid}}
+
+The measurementID assigns a unique ID to every measurement or fact. Several measurementIDs can belong to one occurrenceID and/or eventID, for example when different characteristics of the same individual are measured. If you choose to create identifiers specific to the dataset, we recommend proceeding with the block-structure of IDs we have already used for the \protect\hyperlink{eventID}{eventID} and \protect\hyperlink{occurrenceID}{occurrenceID}. If there are measurements at different event levels, extending the occurrenceID or eventID by a separator and a number for the measurement will lead to unequal length of measurementIDs from different event levels and increases the possibility that IDs are not unique within the dataset. To avoid this, we add the prefix ``m'' (for measurement) in the block of the ID that numbers the measurements.
+
+\begin{examplebox}
+
+\textbf{Budburst}: measurementID = HV2004\_99\_5\_1\_m2 for the second measurement of the eventID HV2004\_99\_5 and the occurrenceID HV2004\_99\_5\_1
+
+\textbf{Crickets}: measurementID = Cr1-05\_1\_m8 for the eighth measurement of eventID Cr1-05 and occurrenceID Cr-05\_1
+
+\end{examplebox}
+
+\hypertarget{ontologies}{%
+\section{Ontologies and controlled vocabulary}\label{ontologies}}
+
+Ontologies provide definitions of terms and their relationships to other terms in a human-interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain \autocite{Madin_2008}. In simpler words, ontologies are a way of showing the terms used in a subject area and how they relate to one another. With these references you can ensure that terms in your data are always interpreted the same way and clearly understood by others. For example, ontologies can be particularly useful for filling in Darwin Core terms like \textbf{measurementType} or \textbf{measurementMethod} (see section \protect\hyperlink{mof}{Terms of class Measurement or fact}). Next to ontologies, you can also refer to terms listed in a thesaurus, which can be seen as a domain specific dictionary. In contrast to ontologies, searching for a specific term across different thesauri can be a bit more cumbersome, as there are no look-up services where you can directly query several thesauri simultaneously. However, thesauri can be quite helpful for filling in the keywords of your metadata, and it is recommended to use them. We therefore provide a few examples of thesauri tailored to biodiversity or ecological data:
+
+\begin{itemize}
+\item
+  \href{https://www.eionet.europa.eu/gemet/en/themes/}{GEMET} - \textbf{Ge}neral \textbf{M}ultilingual \textbf{E}nvironmental \textbf{T}hesaurus
+\item
+  \href{https://vocabs.lter-europe.net/envthes/en/}{EnvThes} - Thesaurus for long term ecological research, monitoring and experiments
+\item
+  \href{https://vocabularies.unesco.org/browser/thesaurus/en/}{UNESCO Thesaurus}
+\end{itemize}
+
+\hypertarget{tools-to-help-you-2}{%
+\subsection{Tools to help you}\label{tools-to-help-you-2}}
+
+\begin{itemize}
+\item
+  The \href{http://ebi.ac.uk/ols4/}{Ontology Lookup Service} (OLS) is a repository for biomedical ontologies but it also holds plenty of terms and ontologies relevant for ecology. You can search across ontologies for specific terms or filter for certain ontologies. There is also an \protect\hyperlink{API}{API} available to facilitate the use of OLS in workflows/programs.
+\item
+  \href{http://ontobee.org}{Ontobee} is a linked data server and another option to browse through around 260 different ontologies and directly search for specific terms.
+\item
+  If you are more interested in finding an ontology dedicated to a specific domain, looking directly at the \href{http://obofoundry.org/}{OBO foundry} can be helpful. The OBO Foundry (Open Biological and Biomedical Ontology Foundry) is tailored to biological sciences and develops and maintains ontologies. It is not searchable for individual terms but provides information on each ontology.
+\item
+  If you chose a specific ontology and before using it you want to assess how \protect\hyperlink{FAIR}{FAIR} this ontology is, you can use \href{https://foops.linkeddata.es/FAIR_validator.html\#}{FOOPS!}. It is considered an ontology pitfall scanner for FAIR and by providing the \protect\hyperlink{URI}{URI} of an ontology it assesses how well the ontology matches the FAIR principles.
+\end{itemize}
+
+\hypertarget{biological-taxonomies}{%
+\section{Biological taxonomies}\label{biological-taxonomies}}
+
+There is a diversity of biological taxonomies that you can use to query taxonomic information for the taxa occurring in your dataset. In this guide we cannot cover all of them but we want to provide some more information on a selected set of taxonomies.
+
+\hypertarget{gbif-backbone-taxonomy}{%
+\subsection{GBIF Backbone taxonomy}\label{gbif-backbone-taxonomy}}
+
+The \href{https://doi.org/10.15468/39omei}{GBIF backbone taxonomy}, as the name indicates, builds the basis of the indexing of the species occurrence records stored at \protect\hyperlink{GBIF}{GBIF} and aims to cover all the species that GBIF deals with. It further aims to bring all different taxa names together and organise them. Taxa are assembled from a hierarchical list of 105 sources, using the Catalogue of Life (COL) as a starting point and thereby tightly linking these two taxonomies. Species not found in the COL are then assembled from the remaining sources that are checked afterwards, making the GBIF backbone taxonomy relatively wide-ranging.
+
+\hypertarget{catalogue-of-life-col}{%
+\subsection{Catalogue of Life (COL)}\label{catalogue-of-life-col}}
+
+The \href{https://www.catalogueoflife.org/}{Catalogue of Life} is an international community for listing species and aims to create a consistent and up-to-date list of currently accepted species across all known taxonomic groups, which is freely accessible. Besides listing taxa, it aims to show all scientific names a taxon is referenced by.
+
+\hypertarget{encyclopedia-of-life-eol}{%
+\subsection{Encyclopedia of Life (EOL)}\label{encyclopedia-of-life-eol}}
+
+The \href{https://www.eol.org/}{Encyclopedia of Life} aims to gather knowledge about life on earth and make it globally, openly and freely accessible to everyone. Besides taxonomic information, it also provides details on food webs and other ecological aspects of taxa. The community behind it consists of open access biodiversity knowledge providers, such as museums, libraries and universities.
+
+\hypertarget{integrated-taxonomic-information-system-itis}{%
+\subsection{Integrated Taxonomic Information System (ITIS)}\label{integrated-taxonomic-information-system-itis}}
+
+\href{https://www.itis.gov/}{ITIS} is an authoritative system that contains information about taxa and their relationships. It provides a comprehensive and openly available taxonomy and is used as the taxonomic backbone for the Encyclopedia of Life and within the Catalogue of Life. It aims to provide a comprehensive taxonomy of species worldwide to allow sharing of biodiversity data.
+
+\hypertarget{world-registry-of-marine-species-worms}{%
+\subsection{World Registry of Marine Species (WoRMS)}\label{world-registry-of-marine-species-worms}}
+
+\href{https://www.marinespecies.org/}{WoRMS} is authoritative classification and catalogue for marine taxa managed by taxonomists and thematic experts that includes accepted and synonym taxonomic information allowing for interpretation of the taxonomic literature. It is the recommended biological taxonomy to retrieve information from when publishing data to OBIS.
+
+\hypertarget{tools-to-help-you-3}{%
+\subsection{Tools to help you}\label{tools-to-help-you-3}}
+
+If you want to retrieve taxonomic information directly from one of the aforementioned taxonomies, there is a helpful R package available that effectively uses the \protect\hyperlink{API}{APIs} of each of these taxonomies, which is called \texttt{taxize} \autocite{R-taxize}. With taxize you can do plenty of different operations, for example, directly parsing in a list of taxa and retrieving their taxonomic classification or their identifiers from one of the taxonomies (e.g., \texttt{get\_gbifid\_()} retrieves the taxon information from the GBIF backbone taxonomy). If you want to check whether the species names you use in your data are up to date, if they are spelled correctly or if you only have common names but not scientific names in your data, you can use the global name resolving function of taxize (\texttt{gnr\_resolve()}). The Global Names Resolver is a service provided by the EOL and shows you which names could be matched to your input name and in which taxonomies or data sources they can be found.
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+One of the tree species in the bud burst data is the Pedunculate oak (\emph{Quercus robur}). To get detailed taxonomic information for this species, we query it from the GBIF backbone taxonomy. As the results are presented in a list, we additionally bind the rows into a data frame using the dplyr package \autocite{dplyr_2023}. Note that we truncate the output here for readability.
+
+\begin{verbatim}
+taxonInfo <- taxize::get_gbifid_(sci = "Quercus robur") |>
+    dplyr::bind_rows()
+
+taxonInfo[1:7, 1:13]
+\end{verbatim}
+
+\begin{verbatim}
+##   usagekey             scientificname    rank   status matchtype
+## 1  2878688           Quercus robur L. species ACCEPTED     EXACT
+## 2  8206510 Quercus robur (Ten.) A.DC. species  SYNONYM     EXACT
+## 3  7586523        Quercus robur Pall. species DOUBTFUL     EXACT
+## 4  7911626   Quercus robur Asso, 1779 species DOUBTFUL     EXACT
+## 5 12375765     Quercus roboris Wallr. species  SYNONYM     FUZZY
+## 6  2879532  Quercus robusta C.H.Mull. species ACCEPTED     FUZZY
+## 7  2880539           Quercus rubra L. species ACCEPTED     FUZZY
+##     canonicalname confidence kingdom       phylum   order   family   genus
+## 1   Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 2   Quercus robur         97 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 3   Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 4   Quercus robur         96 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 5 Quercus roboris         92 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 6 Quercus robusta         91 Plantae Tracheophyta Fagales Fagaceae Quercus
+## 7   Quercus rubra         10 Plantae Tracheophyta Fagales Fagaceae Quercus
+##            species
+## 1    Quercus robur
+## 2    Quercus robur
+## 3    Quercus robur
+## 4    Quercus robur
+## 5    Quercus robur
+## 6  Quercus robusta
+## 7    Quercus rubra
+\end{verbatim}
+
+There are four matches of our taxon in the GBIF backbone taxonomy. In this example, they differ in their scientific name and the author information given there. If we look at the column ``status'', is becomes clear that only one of the matches contains the accepted scientific name, while the second match is a synonym and the others are considered ``doubtful''. We therefore want to filter the results for only the matches that have the status ``accepted'' and the matchtype ``exact'', which means that the canonical name matches our input name letter by letter. We again use the package dplyr to filter the data, which leaves us with one match.
+
+\end{examplebox}
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+\begin{verbatim}
+taxonInfo |> 
+  dplyr::filter(status == "ACCEPTED" & matchtype == "EXACT") |> 
+  dplyr::select(1:13)
+\end{verbatim}
+
+\begin{verbatim}
+##   usagekey   scientificname    rank   status matchtype canonicalname confidence
+## 1  2878688 Quercus robur L. species ACCEPTED     EXACT Quercus robur         97
+##   kingdom       phylum   order   family   genus       species
+## 1 Plantae Tracheophyta Fagales Fagaceae Quercus Quercus robur
+\end{verbatim}
+
+If you have more than one taxon in your data, you can also directly query the taxonomic information for a number of species at once.
+
+\begin{verbatim}
+tree_species <- c("Quercus robur", "Quercus rubra", "Larix kaempferi", 
+              "Pinus sylvestris", "Betula pendula")
+
+taxize::get_gbifid_(sci = tree_species) |>
+  dplyr::bind_rows() |>
+  dplyr::filter(status == "ACCEPTED" & matchtype == "EXACT") |> 
+  dplyr::select(1:13)
+\end{verbatim}
+
+\begin{verbatim}
+##   usagekey                   scientificname    rank   status matchtype
+## 1  2878688                 Quercus robur L. species ACCEPTED     EXACT
+## 2  2880539                 Quercus rubra L. species ACCEPTED     EXACT
+## 3  2686157 Larix kaempferi (Lamb.) Carrière species ACCEPTED     EXACT
+## 4  5285637              Pinus sylvestris L. species ACCEPTED     EXACT
+## 5  5331916              Betula pendula Roth species ACCEPTED     EXACT
+##      canonicalname confidence kingdom       phylum   order     family   genus
+## 1    Quercus robur         97 Plantae Tracheophyta Fagales   Fagaceae Quercus
+## 2    Quercus rubra         97 Plantae Tracheophyta Fagales   Fagaceae Quercus
+## 3  Larix kaempferi         97 Plantae Tracheophyta Pinales   Pinaceae   Larix
+## 4 Pinus sylvestris         98 Plantae Tracheophyta Pinales   Pinaceae   Pinus
+## 5   Betula pendula         99 Plantae Tracheophyta Fagales Betulaceae  Betula
+##            species
+## 1    Quercus robur
+## 2    Quercus rubra
+## 3  Larix kaempferi
+## 4 Pinus sylvestris
+## 5   Betula pendula
+\end{verbatim}
+
+\end{examplebox}
+
+If you query your taxonomic information from a taxonomy you should however always check manually, whether the taxa are identified correctly. Not all taxa are present in all taxonomies or names between taxa are so similar that they are confused for the same taxon in the name matching process.
+
+\hypertarget{GUIDcreation}{%
+\section{Creating GUIDs}\label{GUIDcreation}}
+
+A globally unique identifier (GUID) is a text string of 36 characters that can be used, amongst others, to assign unique identifiers to each data record. It was established as a variation of the Universally Unique Identifier (UUID) but now both are used synonymously. In contrast to other \protect\hyperlink{PID}{persistent identifiers (PID)} that are assigned to the data level, such as DOI, GUIDs do not have to be issued by a central authority but can be created individually by using specific algorithms or generators. There are different types of GUID, for more information see \href{https://www.techtarget.com/searchwindowsserver/definition/GUID-global-unique-identifier}{here}.
+
+\textbf{Structure of GUIDs:} A GUID is build as follows:
+
+\begin{quote}
+\{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX\}
+\end{quote}
+
+where each X is a hexadecimal digit, meaning a number from 0 to 9 or a letter from A to F. This structure ensures an extremely low probability of duplication, making each GUID globally unique.
+
+To assign GUIDs to your data you can:
+
+\begin{itemize}
+\item
+  use an online GUID generator, for example \url{https://www.uuidgenerator.net}
+\item
+  use the R package \texttt{uuid}\autocite{R-uuid} and its function \texttt{UUIDgenerate()}
+\end{itemize}
+
+\textbf{Note:} Once you created an UUID for your dataset, this should not change anymore.
+
+\hypertarget{crossref-in-data}{%
+\section{Cross-referencing other resources in the data}\label{crossref-in-data}}
+
+Some contents of datasets do not exist in isolation. To provide context to your data and to properly link the data to related resources, your data should refer to these by cross-referencing, for example, their unique identifier.
+
+If you, for example, have two datasets belonging to two different experiments conducted in the same study area, these datasets can be linked with a cross-reference to give context to them (see CLUE example below). This type of information can be added to the \protect\hyperlink{eml-terms}{EML metadata file} by using the \texttt{\textless{}additionalMetadata\textgreater{}} term and its subterm \texttt{\textless{}metadata\textgreater{}}. The \texttt{\textless{}metadata\textgreater{}} term can then be filled with the Dublin Core term \href{http://purl.org/dc/terms/relation}{\texttt{dcterms:relation}} that ideally is filled with the URI/DOI of the dataset that should be linked. Note that it is important to add the Dublin Core namespace \texttt{xmlns:dc="http://purl.org/dc/terms/"} to the other namespaces in the \texttt{\textless{}eml\textgreater{}} element at the top of the document.
+
+\begin{examplebox}
+
+\textbf{CLUE data:}
+
+As \protect\hyperlink{CLUE}{described for the CLUE data}, two different experiments have been performed in the same plots resulting in two different datasets that are closely linked through the experimental plots. As described above, the EML file of the dataset belonging to the first experiment can link to the dataset of the second experiment by using the Dublin Core term \texttt{dcterms:relation} in the \texttt{\textless{}additionalMetadata\textgreater{}} field of the EML file. Within \texttt{dcterms:relation} the sub-child \texttt{relatedResource} can be used to point to the DOI, and the sub-child \texttt{relationType} can further specify the relationship between the two resources.
+
+\textbf{Note}: As the CLUE data is not published yet, there is no DOI, so this is a mock-up DOI.
+
+\begin{verbatim}
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:dcterms="http://purl.org/dc/terms/"
+        xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2"
+        packageId="09aa6a9d-bccc-4eba-a98c-191e3cd09322" system="uuid"
+        xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0
+                            https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <title xml:lang="en">CLUE field data - Vegetation cover under 4 different 
+                     treatments -   Terrestrial Ecology/NIOO-KNAW</title>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <relations>
+        <dcterms:relation>
+         <relatedResource>10.3xxxx/5S3xxx</relatedResource>
+        </dcterms:relation>
+      </relations>
+    </metadata>
+  </additionalMetadata>
+</eml>
+\end{verbatim}
+
+\end{examplebox}
+
+Identifiers for the same entity or concept are likely different in different resources and therefore the different identifiers should be mapped to one another. The simplest way of mapping is through a comma- or tab-separated file where each row describes a single entity and the columns provide the identifiers in each dataset. There are other ways of doing this and a more detailed description of these mapping methods can be found \href{https://faircookbook.elixir-europe.org/content/recipes/interoperability/identifier-mapping.html}{here}.
+
+\begin{examplebox}
+
+\textbf{Crickets:}
+
+The European field cricket (\emph{Gryllus campestris} Linnaeus, 1758) is listed in several taxonomies with different identifiers. To integrate these different sources, links can be described by creating a mapping file (e.g., CSV, see below), where the row represents the species, and columns contain the identifiers from each taxonomy.
+
+\begin{verbatim}
+scientificName,GBIF_ID,COL_ID,BOL_ID
+"Gryllus campestris (Linnaeus, 1785)",1716462,9GQRY,208632
+\end{verbatim}
+
+Note: All IDs are the real IDs from the respective taxonomies but we have not done this mapping in the cricket data ourselves (i.e., it cannot be found in the code on GitHub).
+
+\end{examplebox}
+
+This structured approach ensures that data referencing the same entity across different systems is linked effectively, facilitating data integration and analysis.
+
+\hypertarget{part-d.-structure}{%
+\part*{d.~Structure}\label{part-d.-structure}}
+\addcontentsline{toc}{part}{d.~Structure}
+
+\hypertarget{structuring-your-standardised-data}{%
+\chapter{Structuring your standardised data}\label{structuring-your-standardised-data}}
+
+Research data comes in all different shapes and is by far not always structured or stored in an organised way. Reusing this data becomes much more difficult if no clear structure is detectable and easily leads to misinterpretations or misunderstanding of the data. By applying a data standard and thereby \protect\hyperlink{standardise}{standardising} your column names, as is done with using Darwin Core, your data already becomes much more structured and understandable, as there have to be defined columns that can correspond with these terms. Darwin Core terms (or other data standards) can however be applied irrespective of the overall structure of your data, so the next step in making your data more \protect\hyperlink{FAIR}{FAIR} is to also standardise the structure of your data.
+
+Specifically tailored to Darwin Core, we present two options to structure your data in the following: a relational database and the Darwin Core Archive.
+
+\hypertarget{relational-database}{%
+\section{Relational database}\label{relational-database}}
+
+Relational databases are a common format in structuring your data files, where individual files are linked to each other by specific identifiers. This allows for a high flexibility in structuring your data and does as such not require your data to be in a standardised format. In Darwin Core several ID fields exist with which tables/files can be connected to each other, allowing the possibility to structure your standardised data as a relational database (Figure 7.1).
+
+In contrast to Darwin Core Archives (see \protect\hyperlink{DarwinCore-Archive}{Chapter Darwin Core Archive}), relational databases can reduce redundancy in the data and are more flexible in linking information.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/DwC-relationalDatabase} \caption{Relational database structure of Darwin Core files. Arrows refer to the identifier through which two files are linked.}\label{fig:relational-database-pdf}
+\end{figure}
+
+\hypertarget{DarwinCore-Archive}{%
+\section{Darwin Core Archive}\label{DarwinCore-Archive}}
+
+For biodiversity data that uses \protect\hyperlink{DwC}{Darwin Core} terms, \protect\hyperlink{DwC-A}{Darwin Core Archives} (DwC-A) are one standard format to organise your data \autocite{GBIF_2021_DwCA}, which is also required when you want to publish data on the aforementioned repositories \protect\hyperlink{GBIF}{GBIF} and \protect\hyperlink{OBIS}{OBIS}.
+
+There are four main components that together, bundled in one zip-folder, build the Darwin Core Archive:
+
+\begin{itemize}
+\item
+  the \protect\hyperlink{core}{core} file
+\item
+  several \protect\hyperlink{extension}{extension} files (optional)
+\item
+  an \protect\hyperlink{eml}{EML} file (see \protect\hyperlink{eml-terms}{later section})
+\item
+  a \protect\hyperlink{metaxml}{meta XML} file (see \protect\hyperlink{structural-metadata}{later section})
+\end{itemize}
+
+\hypertarget{the-core-its-extensions}{%
+\section{The Core \& its extensions}\label{the-core-its-extensions}}
+
+The core file is the central element of the archive to which each of the extension files has to be linked. Extensions can only be linked to the core and not to each other, resulting in a so-called star schema (see Figure 7.2). This structure is heavily influenced by GBIF and is widely accepted but it has limited flexibility and partly leads to unnecessary redundancy in the data. A new version of GBIFs data model is currently (per June 2024) under development that aims to tackle this issue but that is not yet available, which is why we stick with the star schema for now. Both core and extensions contain one record per row and are linked by the core identifier.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/star-schema} 
+
+}
+
+\caption{Schematic of Darwin Core Archive. The data is structured into a core file and sourrounded by extension files in a star shaped manner. The data is accompanied by two metadata files. }\label{fig:star-schema-pdf}
+\end{figure}
+
+\hypertarget{find-the-core}{%
+\subsection{Find the core}\label{find-the-core}}
+
+The first step to build your archive therefore is to choose your core file. Which core to choose depends on the type of your data, which for biodiversity data is likely one of the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sampling event data: data contains information on ecological studies or monitoring programs, where the sampling is mostly quantitative, calibrated and according to certain protocols and with a documented sampling effort. → core file: \protect\hyperlink{event}{\textbf{Event}}
+\item
+  Checklist data: data contains information on annotated species checklists, taxonomic catalogues or other information about taxa. → core file: \textbf{Taxon}
+\item
+  Occurrence data: data contains information on the evidence of an occurrence of a specific taxon either in nature, a collection or a datasets. This is the case if you have a list of species that occur at a particular place and a specific time but this was not measured by following a certain sampling protocol. → core file: \protect\hyperlink{occurrence}{\textbf{Occurrence}}
+\end{enumerate}
+
+\hypertarget{occurrence-core-vs.-event-core}{%
+\subsection{Occurrence core vs.~event core}\label{occurrence-core-vs.-event-core}}
+
+It is not always directly clear what the difference between the occurrence and the event core is and when you should use which of them. The most crucial difference between the two is whether the data was collected following a certain protocol with documented sampling effort. If that is the case, you have sampling event data and therefore an event core. If data collection did not follow a sampling protocol, your core will be the occurrence file. For measurements on individual specimens and museum collections in general, occurrence is however mostly the preferred core.
+
+Most of the ecological data falls into sampling event data, as was the case for all of the datasets we used in the development of this guide. We will therefore focus on Event as the core file. If you have checklist data, there is already a detailed description on how to transform that into a Darwin Core Archive in the publication of \textcite{Reyershove}.
+
+\hypertarget{which-extensions}{%
+\section{Which extension(s)?}\label{which-extensions}}
+
+Once you have determined your core and it is clear which information goes into it, you have to find one or more extensions if you need to store remaining information. The following extension files are possible:
+
+\begin{itemize}
+\item
+  \textbf{Event} (if event is not the core)
+\item
+  \textbf{Occurrence} (if occurrence is not the core)
+\item
+  \textbf{Taxon} (if taxon is not the core)
+\item
+  (extended) measurement or fact: The \protect\hyperlink{measurementorfact}{\textbf{measurementOrFact}} file contains information on all the actual measurement values or facts that have been recorded for the records in the core file. The measurementOrFact file is always an extension file. There is also the \textbf{extendedMeasurementOrFact} extension, which is developed to be used with an event core and creates an additional link between the occurrence extension file and the measurements by including the occurrenceID next to the coreID (i.e.~eventID).
+\item
+  \textbf{ResourceRelationship}: describes the relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset
+\item
+  \textbf{Identification}: additional information on multiple identifications for species listed in Occurrence core
+\item
+  \textbf{dnaDerivedData}: DNA related data, used either with occurrence or event core
+\item
+  \textbf{Releve}: GBIF specific relevé file containing information on vegetation plot survey measurements; to be used together with event core and occurrence extension
+\item
+  \textbf{MaterialSample}
+\item
+  \textbf{Amplification}: information on DNA amplifications based on a schema from the Global Genome Biodiversity Network (GGBN)
+\item
+  \textbf{HumboldtEcologicalInventory}: information on ecological inventories related to event core
+\end{itemize}
+
+Based on our use cases with an event core, we recommend occurrence and extended measurement or fact as extension files for sampling event data, because this allows storing taxonomic information for every event, as well as all measured values.
+
+\hypertarget{arrange-darwin-core-terms-in-core-and-extension-files}{%
+\section{Arrange Darwin Core terms in core and extension files}\label{arrange-darwin-core-terms-in-core-and-extension-files}}
+
+In the Darwin Core Archive the Darwin Core terms are sorted into the different files, each having terms that are required and some that we highly recommend to use, while others are optional additions. Generally, every extension file needs to contain the core identifier of the core file. For example, if you have an event core, the core ID is the field ``eventID'' and every extension file therefore needs to have the column eventID, linking records to the records in the core. In the following we provide an overview which terms can be included in which file. This is based on the documentation in the \href{https://rs.gbif.org/extensions.html}{GBIF schema repository}. Additionally we indicate which terms we view as required to have in each file and which we strongly recommend, adapted from the data quality requirements of GBIF for each data type (\href{https://www.gbif.org/data-quality-requirements-sampling-events}{Sampling event}, \href{https://www.gbif.org/data-quality-requirements-occurrences}{occurrence}, \href{https://www.gbif.org/data-quality-requirements-checklists}{checklist} data).
+
+\hypertarget{general-terms-terms-of-class-record-level}{%
+\subsection{General terms (Terms of class Record-level)}\label{general-terms-terms-of-class-record-level}}
+
+There are terms that can always be included in the core-file, independent of what the core is. Those are record-level terms, which are generic and can apply to any type of records in the data. The content of these terms can be considered \protect\hyperlink{metadata}{metadata}, which is why it is likely that you do not have corresponding columns in your data yet but need to create new columns. Many of these terms are from the \protect\hyperlink{dublincore}{Dublin Core} namespace and few come with a fixed vocabulary to use to fill them.
+
+The following terms can be useful to add, while none of them are required:
+
+\begin{itemize}
+\item
+  type: to be filled with one of the terms in the \href{https://www.dublincore.org/specifications/dublin-core/dcmi-terms/\#section-7}{DCMI type vocabulary}
+\item
+  language: use controlled vocabulary, such as the \href{https://www.w3schools.com/tags/ref_language_codes.asp}{ISO language code}
+\item
+  licence: see section \protect\hyperlink{Licencing}{licencing}
+\item
+  rightsHolder
+\item
+  accessRights
+\item
+  bibliographicCitation: should provide clear information on how to cite the resource itself
+\item
+  references
+\item
+  institutionCode
+\item
+  institutionID
+\item
+  datasetID
+\item
+  basisOfRecord: best practise is to use controlled vocabulary, such as the names of the Darwin Core classes:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    MaterialEntity, PreservedSpecimen, FossilSpecimen, LivingSpecimen, MaterialSample, Event, HumanObservation, MachineObservation, Taxon, Occurrence, MaterialCitation
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{event-file}{%
+\subsection{Event file}\label{event-file}}
+
+The event file can include the following terms:
+
+\begin{itemize}
+\tightlist
+\item
+  all terms of the class \textbf{Event}
+\item
+  all terms of the class \textbf{Location}
+\item
+  all terms of the class \textbf{GeologicalContext}
+\end{itemize}
+
+\textbf{Required}:
+
+\begin{itemize}
+\item
+  eventID
+\item
+  eventDate
+\item
+  samplingProtocol
+\item
+  sampleSizeValue {\&} sampleSizeUnit
+\end{itemize}
+
+\textbf{Recommended}:
+
+\begin{itemize}
+\item
+  parentEventID {(if applicable)}
+\item
+  samplingEffort
+\item
+  decimalLatitude {\&} decimalLongitude {\&} geodeticDatum
+\item
+  coordinateUncertaintyInMeters
+\item
+  countryCode
+\end{itemize}
+
+\hypertarget{occurrence-file}{%
+\subsection{Occurrence file}\label{occurrence-file}}
+
+All of the terms that can be included in the event file can also be included in the occurrence file. The occurrence file is however more flexible and additionally allows for more terms. You can additionally include:
+
+\begin{itemize}
+\tightlist
+\item
+  all terms of the class \textbf{Occurrence}
+\item
+  all terms of the class \textbf{Organism}
+\item
+  all terms of the class \textbf{Taxon}
+\item
+  all terms of the class \textbf{Identification}
+\end{itemize}
+
+\textbf{Required}:
+
+\begin{itemize}
+\item
+  scientificName
+\item
+  occurrenceStatus
+\item
+  basisOfRecord
+\item
+  occurrenceID
+\end{itemize}
+
+\textbf{Recommended}:
+
+\begin{itemize}
+\item
+  taxonRank
+\item
+  kingdom {(or other higher taxonomy)}
+\item
+  decimalLongitue {\&} decimalLatitude {\&} geodeticDatum
+\item
+  coordinateUncertaintyInMeters
+\item
+  countryCode
+\item
+  individualCount {\textbf{or}} organismQuantity {\&} organismQuantityType
+\end{itemize}
+
+\hypertarget{taxon-file}{%
+\subsection{Taxon file}\label{taxon-file}}
+
+The taxon file only contains the record-level terms and all terms of the class \textbf{taxon}.
+
+\textbf{Required}:
+
+\begin{itemize}
+\item
+  taxonID
+\item
+  scientificName
+\item
+  taxonRank
+\end{itemize}
+
+\textbf{Recommended}:
+
+\begin{itemize}
+\item
+  kingdom {(or other higher taxonomy)}
+\item
+  parentNameUsageID
+\item
+  acceptedNameUsageID
+\end{itemize}
+
+\hypertarget{measurementorfact-file}{%
+\subsection{MeasurementOrFact file}\label{measurementorfact-file}}
+
+The MeasurementOrFact file is linked to the core by including the coreID and besides that can only include the terms of the class MeasurementOrFact, while no terms of other classes should be included.
+
+The \textbf{extendedMeasurementOrFact} extension additionally includes the occurrenceID and three ID fields: measurementTypeID, measurementValueID, and measurementUnitID. These fields are not part of the Darwin Core namespace but refer to \protect\hyperlink{OBIS}{OBIS}.
+
+\hypertarget{part-e.-metadata}{%
+\part*{e. Metadata}\label{part-e.-metadata}}
+\addcontentsline{toc}{part}{e. Metadata}
+
+\hypertarget{standardise-and-structure-your-metadata}{%
+\chapter{Standardise and structure your metadata}\label{standardise-and-structure-your-metadata}}
+
+Once you have described your data and assigned \protect\hyperlink{metadata}{metadata} to it (see \protect\hyperlink{describe-data}{section 4}), you can make your data more FAIR by also mapping your metadata to a standard format. Similar to data standards described in a previous section, there are also several metadata standards available to do so. The distinction between metadata standards and data standards is however often not that clear and \protect\hyperlink{DwC}{Darwin Core} sometimes is also referred to as a metadata standard.
+
+\hypertarget{metadata-standards-for-biodiversity-data}{%
+\section{Metadata standards (for biodiversity data)}\label{metadata-standards-for-biodiversity-data}}
+
+As with the data standards, a wide range of metadata standards exists, partly tailored to specific research domains.
+
+For ecological data, a widely used metadata standard, for example by \protect\hyperlink{OBIS}{OBIS} and \protect\hyperlink{GBIF}{GBIF}, is the \protect\hyperlink{eml}{\textbf{Ecological metadata language (EML)}} \autocite{Jones_2019}, which is also the required format for metadata in the \protect\hyperlink{DwC-A}{Darwin Core Archives}. It consists of a set of defined terms used to describe metadata and is compatible with other community standards. EML uses a readable \protect\hyperlink{XML}{XML} markup syntax that balances the machine- and human-readability and is structured in modules making it relatively flexible in describing metadata. The developers provide a good overview of all the modules and EML terms together with important details and definitions in their \href{https://eml.ecoinformatics.org/schema/}{interactive schema documentation}.
+
+\textbf{Dublin Core} is a widely adopted, universal metadata standard maintained by the \href{https://dublincore.org/}{Dublin Core Metadata Initiative}(DCMI). It consists of a set of 15 core terms used to describe the basic elements of any resource, online or physical. In addition, Dublin Core contains several dozen properties, classes, data types, and vocabulary encoding schemes that help refine the core description.
+
+\hypertarget{tools-to-help-you-4}{%
+\section{Tools to help you}\label{tools-to-help-you-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  The \href{https://rdamsc.bath.ac.uk/}{metadata standard catalog}, provides a nice overview of the different metadata standards and is searchable, for example, for specific topics.
+\end{itemize}
+
+\hypertarget{our-choice-2}{%
+\section{Our choice}\label{our-choice-2}}
+
+As we decided to go with Darwin Core Archives to structure our data, we used EML and meta.xml files to store the descriptive and structural metadata, respectively, of all our example datasets as this are the required formats of the DwC-A. Independent of this, we would have chosen EML as the metadata standard because it is very flexible and provides all the necessary terms to describe our metadata. Especially through its terms about spatial, temporal and taxonomic coverage it captures the key elements of our datasets and is much better suited to describe ecological data then Dublin Core, for example.
+
+\hypertarget{metadata-DwCA}{%
+\section{Metadata in the Darwin Core Archive}\label{metadata-DwCA}}
+
+\hypertarget{eml-terms}{%
+\subsection{EML terms}\label{eml-terms}}
+
+EML consists of a wide range of terms of which some are required, while others might just be nice to have depending on what information your metadata contains. In general, terms can have several levels of subterms and we will not cover all of them here (detailed information on every term can be found \href{https://eml.ecoinformatics.org/schema/}{here} and some best practices \href{https://ediorg.github.io/data-package-best-practices/eml-best-practices.html}{here}). For all terms containing text, the ``xml:lang'' attribute should be added if the language is not English. Be aware that EML terms use the spelling of American English.
+
+{\textbf{Required terms}}
+
+EML comes with only three terms that are required to make the EML document schema valid.
+
+\begin{itemize}
+\item
+  {\texttt{\textless{}title\textgreater{}}}: a brief title that provides enough information to distinguish this dataset or resource from others and makes clear what the data is about. The ``xml:lang'' attribute can be used to specify in which language the title is given, which is especially useful if you want to give alternative titles in different languages.
+\item
+  {\texttt{\textless{}creator\textgreater{}}}: information on the person or organisation that created the dataset (subterms see below)
+\item
+  {\texttt{\textless{}contact\textgreater{}}}: information on the person or organisation that contacted about the data, e.g., if questions arise (subterms see below)
+\end{itemize}
+
+{\textbf{Highly recommended terms}}
+
+The following set of terms is not strictly required by EML but we would highly recommend to provide as much of them as possible, as this increases the richness of the metadata and provides valuable information about the data that is helpful for others to understand and reuse the data.
+
+\begin{itemize}
+\tightlist
+\item
+  {\texttt{\textless{}metadataProvider\textgreater{}}}: information about the person that provides the metadata in the EML file
+\end{itemize}
+
+\textbf{Creator, contact and metadataProvider}
+
+The creator and the contact can either be a named person, a certain position that is always staying the same even though the people in the position might change, or an organisation. For each of these cases, different subterms exist in all three terms (including \texttt{\textless{}metadataProvider\textgreater{}}) to describe the person/position/organisation accordingly. It is therefore required to choose at least one of the terms \texttt{\textless{}individualName\textgreater{}}, \texttt{\textless{}organizationName\textgreater{}} or \texttt{\textless{}positionName\textgreater{}}.
+
+\begin{itemize}
+\item
+  \texttt{\textless{}individualName\textgreater{}}: the name of an individual person can be given with three subterms:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}salutation\textgreater{}}: can be a title (e.g., ``Dr.'') or another salutation (``Mr.''/``Ms.'')
+  \item
+    \texttt{\textless{}givenName\textgreater{}}
+  \item
+    \texttt{\textless{}surName\textgreater{}}
+  \end{itemize}
+\item
+  \texttt{\textless{}organisationName\textgreater{}}
+\item
+  \texttt{\textless{}positionName\textgreater{}}
+\item
+  \texttt{\textless{}address\textgreater{}}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}city\textgreater{}}
+  \item
+    \texttt{\textless{}postalCode\textgreater{}}
+  \item
+    \texttt{\textless{}country\textgreater{}}
+  \end{itemize}
+\item
+  \texttt{\textless{}electronicMalAddress\textgreater{}}
+\item
+  \texttt{\textless{}userID\textgreater{}}: an identifier that links the person or organisation to a directory of individuals, e.g., an ORCID. This term requires the attribute ``directory'' to state which directory the ID refers to and will generally be an URL (e.g., \url{https://orcid.org})
+\end{itemize}
+
+The \texttt{\textless{}contact\textgreater{}}, \texttt{\textless{}creator\textgreater{}} and \texttt{\textless{}metadataProvider\textgreater{}} can be different people/organisations/positions but can also all be the same. For example, if the same person is the \texttt{\textless{}metadataProvider\textgreater{}} and \texttt{\textless{}contact\textgreater{}} for a dataset, their name and email address can be provided once as part of the \texttt{\textless{}metadataProvider\textgreater{}} element, and then their \texttt{\textless{}id\textgreater{}} can be used in the \texttt{\textless{}references\textgreater{}} element of \texttt{\textless{}contact\textgreater{}}. This reduces the chance of introducing error, and allows one to specify that two pieces of information are identical.
+
+\begin{examplebox}
+
+The metadata provider is assigned with ``id-1''. As the contact for the dataset is the same person, it can directly be referred to ``id-1'' instead of adding the full personal information again.
+
+\begin{verbatim}
+<metadataProvider id="id-1" scope="document">
+  <individualName>
+    <givenName>Mary</givenName>
+    <surName>Shelley</surName>
+  </individualName>
+  <organizationName>Netherlands Institute of Ecology (NIOO-KNAW)</organizationName>
+  <electronicMailAddress>m.shelley@nioo.knaw.nl</electronicMailAddress>
+</metadataProvider>
+<contact>
+  <references>id-1</references>
+</contact>
+\end{verbatim}
+
+\end{examplebox}
+
+\begin{itemize}
+\item
+  {\texttt{\textless{}language\textgreater{}}}: provides the language the resource is written in and can either be a well-known language name or ideally, a \href{https://www.w3schools.com/tags/ref_language_codes.asp}{ISO language code}
+\item
+  {\texttt{\textless{}abstract\textgreater{}}}: a short summary of the data that includes basic information to give an idea what the data is about
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}para\textgreater{}}: Text is stored in this subterm, which can either directly have a text string or a set of subterms consisting of markup tags allowing for formatting of the text.
+  \end{itemize}
+\item
+  {\texttt{\textless{}keywordSet\textgreater{}}}: can either be one or many keywords describing the resource
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}keyword\textgreater{}}: each keyword is stored separately in this subterm as text.
+  \item
+    \texttt{\textless{}keywordThesaurus\textgreater{}}: If the keywords are part of a thesaurus, it can be specified which thesaurus they are derived from.
+  \end{itemize}
+\item
+  {\texttt{\textless{}coverage\textgreater{}}}: Describes the spatial, temporal and taxonomic coverage of the resource.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    {\texttt{\textless{}temporalCoverage\textgreater{}}}: information on what time span is covered in the data. Use \href{https://www.iso.org/iso-8601-date-and-time-format.html}{ISO 8601} (i.e., YYYY-MM-DD) for date and time information. Needs either one of the subterms:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \texttt{\textless{}singleDateTime\textgreater{}}: describes a single date and time either by describing a calendar date or a geologic date, using the subterms:
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \texttt{\textless{}calendarDate\textgreater{}}
+      \item
+        \texttt{\textless{}time\textgreater{}}
+      \item
+        \texttt{\textless{}alternativeTimeScale\textgreater{}}: can describe alternative time scale, e.g., geological date, with a range of subterms
+      \end{itemize}
+    \item
+      \texttt{\textless{}rangeOfDates\textgreater{}}: allows to describe a time range by specifying start and end date (with the same subterms as for singleDateTime). Can be repeated if there are several time ranges that need to be described.
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \texttt{\textless{}beginDate\textgreater{}}
+      \item
+        \texttt{\textless{}endDate\textgreater{}}
+      \end{itemize}
+    \end{itemize}
+  \item
+    {\texttt{\textless{}geographicCoverage\textgreater{}}}: information about the spatial extent of the data that should be given as text and coordinates with the subterms:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \texttt{\textless{}geographicDescription\textgreater{}}: short text explanation of the spatial extent
+    \item
+      \texttt{\textless{}boundingCoordinates\textgreater{}}: stating the four edges of a bounding box, by giving:
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \texttt{\textless{}westBoundingCoordinate\textgreater{}}
+      \item
+        \texttt{\textless{}eastBoundingCoordinate\textgreater{}}
+      \item
+        \texttt{\textless{}northBoundingCoordinate\textgreater{}}
+      \item
+        \texttt{\textless{}southBoundingCoordinate\textgreater{}}
+      \end{itemize}
+    \end{itemize}
+  \item
+    {\texttt{\textless{}taxonomicCoverage\textgreater{}}}: information about the taxa covered in the data
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \texttt{\textless{}generalTaxonomicCoverage\textgreater{}}: text description of the taxa included in the data
+    \item
+      \texttt{\textless{}taxonomicClassification\textgreater{}}: taxonomic classification of the range of taxa included in the data, specified through a set of subterms:
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \texttt{\textless{}taxonRankName\textgreater{}}: taxonomic level of information
+      \item
+        \texttt{\textless{}taxonRankValue\textgreater{}}: name of the taxonomic rank being described
+      \item
+        \texttt{\textless{}commonName\textgreater{}}
+      \item
+        \texttt{\textless{}taxonID\textgreater{}}: identifier of the taxon from a certain provider that has to be specified with the attribute ``provider'' containing a \protect\hyperlink{URI}{URI} (e.g., provider = ``\url{https://eol.org}'' if the taxon ID is retrieved from EOL)
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  {\texttt{\textless{}maintenance\textgreater{}}}: information on the frequency with which the data is updated and whether data collection is still ongoing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}maintenanceUpdateFrequency\textgreater{}}: needs to be filled with a term of the EML MaintUpFreqType, for example: annually, asNeeded, biannually, daily, irregular or unknown
+  \item
+    \texttt{\textless{}description\textgreater{}}: text description of maintenance stated with the \texttt{\textless{}para\textgreater{}} subterm
+  \end{itemize}
+\item
+  {\texttt{\textless{}methods\textgreater{}}}: stepwise information on methods for data collection
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}methodStep\textgreater{}}: can be repeated for each method step and includes a range of subterms to specify instruments, software, protocols, descriptions, and citations of the methods
+  \end{itemize}
+\item
+  {\texttt{\textless{}pubDate\textgreater{}}}: publication date of the resource in \href{https://www.iso.org/iso-8601-date-and-time-format.html}{ISO 8601} (i.e., YYYY-MM-DD)
+\item
+  {\texttt{\textless{}licensed\textgreater{}}}: information on the licence of the data and how it can be used by others, for information in which licence to assign (see section \protect\hyperlink{Licencing}{licencing})
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}licenseName\textgreater{}}: official name of the licence
+  \item
+    \texttt{\textless{}url\textgreater{}}: \protect\hyperlink{URI}{URL} referring to the licence (e.g., \url{https://creativecommons.org/licenses/by/4.0/})
+  \end{itemize}
+\end{itemize}
+
+{\textbf{Other terms}}
+
+There are plenty of other terms that can be suitable to use for your data. The following are just some examples, for a full overview check the EML schema documentation.
+
+\begin{itemize}
+\item
+  {\texttt{\textless{}project\textgreater{}}}: broader background information on the project in which the data was collected, needs to have the subterms:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\textless{}title\textgreater{}}
+  \item
+    \texttt{\textless{}personnel\textgreater{}}
+  \item
+    Optional subterms:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \texttt{\textless{}abstract\textgreater{}}
+    \item
+      \texttt{\textless{}funding\textgreater{}}
+    \item
+      \texttt{\textless{}studyAreaDescription\textgreater{}}
+    \end{itemize}
+  \end{itemize}
+\item
+  {\texttt{\textless{}intellectualRights\textgreater{}}}: information on the intellectual property rights as text using \texttt{\textless{}para\textgreater{}} subterm
+\item
+  {\texttt{\textless{}alternateIdentifier\textgreater{}}}
+\item
+  {\texttt{\textless{}additionalInfo\textgreater{}}}: any information that cannot be captured by the remaining terms; filled with text using \texttt{\textless{}para\textgreater{}} subterm
+\item
+  {\texttt{\textless{}introduction\textgreater{}}}: overview of background and context of the dataset, similar to an introduction of a journal article
+\item
+  {\texttt{\textless{}usageCitation\textgreater{}}}: citation to articles or other products where the data is used, consists of a range of subterms
+\end{itemize}
+
+\hypertarget{structural-metadata}{%
+\subsection{Structural metadata - The meta.xml file}\label{structural-metadata}}
+
+The meta-file contains the structural metadata and is required by the Darwin Core Archive. It describes how the files are organised (i.e., which file is the \protect\hyperlink{core}{core}, which are the \protect\hyperlink{extension}{extensions}), and it links every column of each file to its corresponding Darwin Core term by providing its \protect\hyperlink{URI}{URI} (Uniform Resource Identifier). The file format of the meta-file is \protect\hyperlink{xml}{XML}.
+
+In contrast to the EML file, where the metadata is specific to the dataset, the meta file always consists of the same content, only depending on the file and column names of the individual Darwin Core Archive. The root element \texttt{\textless{}archive\textgreater{}} consists of the sub-elements \texttt{\textless{}core\textgreater{}} and \texttt{\textless{}extension\textgreater{}} (once for every extension file). Within these elements, there is a \texttt{\textless{}field\textgreater{}} element for every column, linking to the URI of the corresponding Darwin Core term. For a more detailed description of the components of the meta.xml file see the \href{https://dwc.tdwg.org/text/}{Darwin Core text guide}.
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xsi:schemaLocation="http://rs.tdwg.org/dwc/text/
+         http://rs.tdwg.org/dwc/text/tdwg_dwc_text.xsd">
+  <core encoding="UTF-8" fieldsTerminatedBy="," linesTerminatedBy="\n" 
+        fieldsEnclosedBy="" ignoreHeaderLines="1" 
+        rowType="http://rs.tdwg.org/dwc/terms/Event">
+  <files>
+    <location>budburst_event.csv</location>
+  </files>
+  <id index="0"/>
+  <field index="0" term="http://rs.tdwg.org/dwc/terms/eventID"/>
+  <field index="1" term="http://rs.tdwg.org/dwc/terms/parentEventID"/>
+  <field index="2" term="http://rs.tdwg.org/dwc/terms/samplingProtocol"/>
+  <field index="3" term="http://rs.tdwg.org/dwc/terms/sampleSizeValue"/>
+  <field index="4" term="http://rs.tdwg.org/dwc/terms/sampleSizeUnit"/>
+  <field index="5" term="http://rs.tdwg.org/dwc/terms/eventDate"/>
+  <field index="6" term="http://rs.tdwg.org/dwc/terms/year"/>
+  <field index="7" term="http://rs.tdwg.org/dwc/terms/month"/>
+  <field index="8" term="http://rs.tdwg.org/dwc/terms/day"/>
+  <field index="9" term="http://rs.tdwg.org/dwc/terms/country"/>
+  <field index="10" term="http://rs.tdwg.org/dwc/terms/countryCode"/>
+  [...]
+  </core>
+  <extension encoding="UTF-8" fieldsTerminatedBy="," 
+             linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1"
+             rowType="http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact">
+    <files>
+      <location>budburst_extendedmeasurementorfact.csv</location>
+    </files>
+    <coreid index="1"/>
+    <field index="0" term="http://rs.tdwg.org/dwc/terms/measurementID"/>
+    <field index="2" term="http://rs.tdwg.org/dwc/terms/measurementType"/>
+    <field index="3" term="http://rs.tdwg.org/dwc/terms/measurementValue"/>
+    <field index="4" term="http://rs.tdwg.org/dwc/terms/measurementUnit"/>
+    <field index="5" term="http://rs.tdwg.org/dwc/terms/measurementMethod"/>
+    <field index="6" term="http://rs.tdwg.org/dwc/terms/measurementRemarks"/>
+  </extension>
+  [...]
+</archive>
+\end{verbatim}
+
+\end{examplebox}
+
+\hypertarget{tools-to-help-you-5}{%
+\section{Tools to help you}\label{tools-to-help-you-5}}
+
+Both the EML and the meta file are XML files. XML stands for extensible Markup Language and is a human- and machine-readable format to store and transport data. The general structure of XML files is a hierarchical tree consisting of a root element and an unlimited number of sub-elements of different levels, as well as attributes and text. For an extensive description on how to build XML files, see the \href{https://www.w3schools.com/xml/default.asp}{tutorial of the W³ schools}.
+
+To create the two XML files needed for the Darwin Core Archive, you do not have to be an expert in XML. In R, there are several packages that facilitate the creation of XML and even more specific, EML files, for example \texttt{emld} \autocite{R-emld}, \texttt{EML} \autocite{R-EML} and \texttt{xml2} \autocite{R-xml2}.
+
+Additionally, you can find a nice overview over packages and helpful websites to build EML files in R on the website of the \href{https://livingnorway.github.io/LivingNorwayR/articles/EML_R_packages_overview.html}{LivingNorwayR package}.
+
+\hypertarget{eml.xml-file}{%
+\subsection{EML.xml file}\label{eml.xml-file}}
+
+The key for creating the EML.xml file are lists. The content of every EML term has to be stored as a character in a list. If terms consist of subterms, they have to be stored in nested lists within the list of the parent term (see example box below). For a full example, you can also browse our \href{https://github.com/LTER-LIFE/FDFDT}{GitHub repository}.
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+\begin{verbatim}
+In R:
+
+# Provide keywords and their thesaurus fo the EML term "keywordSet"
+keywordSet <- list(list(keyword = list("bud burst", "trees", "ecology", 
+                  "plant phenology"),
+                  keywordThesaurus = "envThes"),
+             list(keyword = "oak",
+                  keywordThesaurus = "GEMET"))
+\end{verbatim}
+
+\emph{keyword} and \emph{keywordThesaurus} are the EML subterms of \emph{keywordSet}, which looks like this in XML:
+
+\begin{verbatim}
+<keywordSet>
+  <keyword>bud burst</keyword>
+  <keyword>trees</keyword>
+  <keyword>ecology</keyword>
+  <keyword>plant phenology</keyword>
+  <keywordThesaurus>envThes</keywordThesaurus>
+</keywordSet>
+<keywordSet>
+ <keyword>oak</keyword>
+ <keywordThesaurus>GEMET</keywordThesaurus>
+</keywordSet>
+\end{verbatim}
+
+\end{examplebox}
+
+The lists of all terms have to be combined in a final list that can then be converted into an XML file through the function \texttt{write\_eml()} of the \texttt{EML} package.
+Some EML terms require XML attributes (see EML terms). These can be assigned using the \texttt{xml2} package by first identifying all nodes for which the attribute should be set (\texttt{xml2::xml\_find\_all()}) and then setting the attribute with \texttt{xml2::xml\_set\_attr()}).
+
+\begin{examplebox}
+
+\textbf{Bud burst}:
+
+The following example shows how the final list is converted into the EML file and how to set the attribute ``provider'' for the taxonID.
+
+\begin{verbatim}
+# Combine all components in one list
+eml <- list(dataset =
+              list(title = title,
+                  creator = creator,
+                  pubDate = publication_date,
+                  language = language,
+                  abstract = abstract,
+                  keywordSet = keywords,
+                  licensed = licensed,
+                  coverage = coverage,
+                  contact = contact_person,
+                  methods = methods,
+                  maintenance = maintenance,
+                  intellectualRights = intellectualRights),
+            packageId = packageId, 
+            system = "uuid")
+
+# Write EML file
+EML::write_eml(EML, file = "cricket_EML.xml")          
+
+
+# Add attributes for specific nodes -------------------------------
+
+# Read EML file as XML file
+EML <- xml2::read_xml("cricket_EML.xml")
+
+# Identify all taxonId nodes for which attribute shall be set
+taxonId_node <- xml2::xml_find_all(EML, xpath = "//taxonId")
+
+# Set "provider" attribute for taxonId nodes
+xml2::xml_set_attr(taxonId_node, attr = "provider", 
+        value = "https://www.gbif.org/")
+\end{verbatim}
+
+\end{examplebox}
+
+Once you set all required attributes, you should check whether your EML file is schema-valid. This can be done with the function \texttt{eml\_validate()} of the \texttt{emld} package.
+
+\hypertarget{fully-interoperable}{%
+\chapter{How to reach full interoperability}\label{fully-interoperable}}
+
+As mentioned \protect\hyperlink{evaluation}{before} (see note box), you cannot reach the full score in the evaluation of your data by going through this guide alone. This is because we do not cover the implementation of the \href{https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/}{FAIR principle \textbf{I1}}: \emph{(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation}. We think that data scientists rather than ecologists are better equipped at using, for example, \protect\hyperlink{RDF}{RDF} (Resource description framework) or \protect\hyperlink{OWL}{OWL} (Web ontology language) for knowledge representation and transforming the data accordingly.
+
+If you are however interested in making your data fully FAIR and cover principle I1, the following resources can be a good starting point:
+
+\begin{itemize}
+\item
+  \href{https://data.europa.eu/sites/default/files/d2.1.2_training_module_1.3_introduction_to_rdf_sparql_en_edp.pdf}{Open data support - Training Module 1.3: Introduction to RDF \& SPARQL}
+\item
+  \href{https://dwc.tdwg.org/rdf/}{Darwin Core RDF guide}
+\item
+  \href{https://cambridgesemantics.com/blog/semantic-university/learn-rdf/}{Cambridge semantics - Semantics university: Learn RDF}
+\item
+  \href{https://www.w3.org/TR/owl-guide/}{W3C Web Ontology Language guide}
+\end{itemize}
+
+\hypertarget{glossary}{%
+\chapter{Glossary}\label{glossary}}
+
+\hypertarget{API}{%
+\subsubsection*{API}\label{API}}
+\addcontentsline{toc}{subsubsection}{API}
+
+An Application Programming Interface (API) defines a way of communication between two applications based on requests and responses, which allows data exchange between these applications.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.neonscience.org/about/faq/what-api}
+\end{itemize}
+
+\hypertarget{core}{%
+\subsubsection*{Core file}\label{core}}
+\addcontentsline{toc}{subsubsection}{Core file}
+
+The core file is the central element of the Darwin Core Archive to which all other files are linked. Different files are possible to be used as the core depending on the type of the data. While checklist data requires a taxon file as the core, occurrence data requires an occurrence file and sampling-event data an event file.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide}
+\end{itemize}
+
+\hypertarget{DwC}{%
+\subsubsection*{Darwin Core (DwC)}\label{DwC}}
+\addcontentsline{toc}{subsubsection}{Darwin Core (DwC)}
+
+Darwin Core is a stable data standard maintained by TDWG (Biodiversity Information Standards) tailored to describe biodiversity data by using a defined library of terms. It is an extension of the Dublin Core Metadata Initiative and facilitates sharing of biodiversity data from various sources. Every term has a clear definition and a URL, which can be used irrespective of technology, e.g., XML or RDF.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://www.tdwg.org/standards/dwc/}
+\end{itemize}
+
+\hypertarget{DwC-A}{%
+\subsubsection*{Darwin Core Archive}\label{DwC-A}}
+\addcontentsline{toc}{subsubsection}{Darwin Core Archive}
+
+Darwin Core Archives are a way of structuring a dataset that uses the Darwin Core standard. It consists of a core file and a number of extension files, as well as two files describing the metadata of the dataset. The first is called meta.xml and is a XML file describing the structural metadata, i.e., the organisation of the files and maps each column name (i.e., Darwin Core term) to its identifier. The second metadata file is the EML file containing the descriptive and administrative metadata using the metadata standard Ecological metadata language.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide}
+\end{itemize}
+
+\hypertarget{dataset}{%
+\subsubsection*{Data(set)}\label{dataset}}
+\addcontentsline{toc}{subsubsection}{Data(set)}
+
+Data is defined as information that is collected to be used for decision making or refers to information in a digital format that can be used by computers. Dataset refers to a collection of data. The two terms are not always used consistently across sources. \emph{Data} is often used to describe the collected/recorded data itself (in contrast to metadata that describes it). \emph{Dataset} is often used to describe all files of collected data, or the combination of data and metadata.
+
+\begin{itemize}
+\tightlist
+\item
+  Sources:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{https://dictionary.cambridge.org/dictionary/english/data}
+  \item
+    \url{https://dictionary.cambridge.org/dictionary/english/dataset}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{data-dictionary}{%
+\subsubsection*{Data dictionary}\label{data-dictionary}}
+\addcontentsline{toc}{subsubsection}{Data dictionary}
+
+A data dictionary is a collection of names, definitions, and attributes about data elements (e.g., columns in a table) in a dataset. It provides guidance on interpretation, accepted meanings and representation (i.e., format) so that others can easily understand your data. Data dictionaries often include a definition and/or description, the data type (e.g., integer, string), the measurement units (e.g., metre), the allowable values (e.g., 1-10) and what they mean (e.g., 0 = absent, 1 = present).
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://help.osf.io/article/217-how-to-make-a-data-dictionary}
+\end{itemize}
+
+\hypertarget{datalifecycle}{%
+\subsubsection*{Data lifecycle}\label{datalifecycle}}
+\addcontentsline{toc}{subsubsection}{Data lifecycle}
+
+The data lifecycle describes the stages that the data goes through, starting with planning of data collection, followed by the data collection or acquisition. Afterwards the data is processed to then be used and analysed. After that, the data should be properly stored and curated to be preserved in the long run, which finally leads to publishing and sharing the data, allowing others to reuse it, with which the cycle can start again. There are however different versions of the data lifecycle, differing slightly in the respective steps.
+
+{- More information: \url{https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf}}
+
+\hypertarget{datamanagement}{%
+\subsubsection*{Data management}\label{datamanagement}}
+\addcontentsline{toc}{subsubsection}{Data management}
+
+Data management is the practice of taking care of data throughout its entire lifecycle, from its collection, processing and use to its storage and sharing. Throughout the whole lifecycle, good data management is crucial to ultimately enhance the reusability of the data for yourself or others.
+
+{- More information: \url{https://www.britishecologicalsociety.org/wp-content/uploads/Publ_Data-Management-Booklet.pdf}}
+
+\hypertarget{dublincore}{%
+\subsubsection*{Dublin Core}\label{dublincore}}
+\addcontentsline{toc}{subsubsection}{Dublin Core}
+
+Dublin Core is a metadata standard consisting of a set of 15 terms used to describe metadata. The terms themselves consist of several dozen properties, classes, data types, and vocabulary encoding schemes and are maintained by the Dublin Core Metadata Initiative (DCMI).
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.dublincore.org/specifications/dublin-core/dcmi-terms/}
+\end{itemize}
+
+\hypertarget{eml}{%
+\subsubsection*{EML}\label{eml}}
+\addcontentsline{toc}{subsubsection}{EML}
+
+EML, the Ecological metadata language, is a metadata standard commonly used for ecological data. It consists of a set of terms with which metadata can be described. EML uses a readable XML markup syntax that balances the machine and human readability and is structured in modules making it relatively flexible in describing metadata.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://eml.ecoinformatics.org/schema/}
+\end{itemize}
+
+\hypertarget{event}{%
+\subsubsection*{Event}\label{event}}
+\addcontentsline{toc}{subsubsection}{Event}
+
+Event is a Darwin Core class describing an action that occurs at some location during some time. In the context of Darwin Core archives events can be stored in an event-file that stores information on the time and place of the events, but also more administrative information, such as the data collector, sampling effort or sample size.
+
+\begin{itemize}
+\tightlist
+\item
+  Sources:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{https://dwc.tdwg.org/terms/\#event}
+  \item
+    \url{https://rs.gbif.org/core/dwc_event_2024-02-19.xml}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{extension}{%
+\subsubsection*{Extension file}\label{extension}}
+\addcontentsline{toc}{subsubsection}{Extension file}
+
+Extension files are a file type that can exist in Darwin Core Archives next to the core file. There can be an unlimited number of extensions, each holding a different kind of information and each row within an extension file directly links to a record in the core file through the core identifier. Commonly used extensions for biodiversity data collected on living organisms are occurrence, taxon or measurement or fact.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide}
+\end{itemize}
+
+\hypertarget{FAIR}{%
+\subsubsection*{FAIR}\label{FAIR}}
+\addcontentsline{toc}{subsubsection}{FAIR}
+
+FAIR stands for Findable, Accessible, Interoperable and Reusable and comes with 15 guiding principles developed by \textcite{Wilkinson_2016}. Findability means that the metadata (and the data) can easily be found by humans and computers and that machine-readable metadata allows for automatic discovery of the data by machines. Additionally, it is clearly stated how the user can access the data and whether, for example, authorisation or authentication are required (Accessibility). Interoperability means that the data is fully compatible with other data making it integrable with other data resources and allows to incorporate it into workflows or applications. In easier words this means that data resources should `speak the same language' to be used together. The ultimate goal of the FAIR concept is to make the data reusable (Reusability), which means that there is proper annotation in the form of metadata that allows users (and machines) to understand the data and correctly interpret it.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.go-fair.org/fair-principles/}
+\end{itemize}
+
+\hypertarget{GBIF}{%
+\subsubsection*{GBIF}\label{GBIF}}
+\addcontentsline{toc}{subsubsection}{GBIF}
+
+GBIF, the global biodiversity information facility, is a data infrastructure and international network providing open access to biodiversity data.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://www.gbif.org/}
+\end{itemize}
+
+\hypertarget{URI}{%
+\subsubsection*{IRI, URI and URL}\label{URI}}
+\addcontentsline{toc}{subsubsection}{IRI, URI and URL}
+
+Uniform resource identifiers (URI) are a standardised way to identify resources of information on the internet. One of the most common forms of the URI is the URL, the uniform resource locator, often also called a web address. The IRI (Internationalized Resource Identifier) is an internationalised expansion of the URI supporting a wider range of characters besides the Latin alphabet. While URL is location oriented and describes the physical location of a resource on the internet, the URI is identifier oriented and refers to the resource itself. They are however often treated the same way.
+
+\begin{itemize}
+\tightlist
+\item
+  Sources and more information:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    GBIF (2011). A Beginner's Guide to Persistent Identifiers, version 1.0. Released on 9 February 2011. Authors Kevin Richards, Richard White, Nicola Nicolson, Richard Pyle, Copenhagen: Global Biodiversity Information Facility, 33 pp, accessible online at \url{http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf}
+  \item
+    \url{https://www.w3.org/2001/Talks/0912-IUC-IRI/paper.html}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{measurementorfact}{%
+\subsubsection*{MeasurementOrFact}\label{measurementorfact}}
+\addcontentsline{toc}{subsubsection}{MeasurementOrFact}
+
+Measurement or fact is a Darwin Core class describing measurement values and or facts about a resource. It can also be an extension file of the Darwin Core archive storing the measurements or facts belonging to the events or occurrences described in the core file.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://dwc.tdwg.org/terms/\#measurementorfact}
+\end{itemize}
+
+\hypertarget{metadata}{%
+\subsubsection*{Metadata}\label{metadata}}
+\addcontentsline{toc}{subsubsection}{Metadata}
+
+Metadata contains information about other data and provides descriptions that make the data easier to understand and reuse. Structural metadata contains information about how the data is organised, what variables mean and how files relate to one another, while administrative metadata provides information about ownership, preservation and rights and licences of the data. Thirdly, descriptive metadata describes the background of the data, such as how, where and when it was collected, who is responsible and what contents the data cover.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.w3.org/TR/dwbp/\#metadata}
+\end{itemize}
+
+\hypertarget{metaxml}{%
+\subsubsection*{Meta.xml}\label{metaxml}}
+\addcontentsline{toc}{subsubsection}{Meta.xml}
+
+The meta.xml file is a component of the Darwin Core Archive and contains its structural metadata in an XML file. The file describes how the data files in the archive are linked to each other and provides for each column the identifier of the corresponding Darwin Core term.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide}
+\end{itemize}
+
+\hypertarget{mobilisation}{%
+\subsubsection*{Mobilisation}\label{mobilisation}}
+\addcontentsline{toc}{subsubsection}{Mobilisation}
+
+Transferring data that is stored locally to an online repository and thereby enabling its reuse by others.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.gbif.org.nz/mobilising/}
+\end{itemize}
+
+\hypertarget{OBIS}{%
+\subsubsection*{OBIS}\label{OBIS}}
+\addcontentsline{toc}{subsubsection}{OBIS}
+
+OBIS, the Ocean Biodiversity Information System, is an international databank system for maritime biodiversity and biogeographic data with the objective to provide the largest knowledge base on the diversity, distribution and abundance of marine organisms.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://obis.org/about/}
+\end{itemize}
+
+\hypertarget{occurrence}{%
+\subsubsection*{Occurrence}\label{occurrence}}
+\addcontentsline{toc}{subsubsection}{Occurrence}
+
+Occurrence is a Darwin Core class describing the existence or presence of an organism at a certain place and time. In the context of Darwin Core archives, occurrences are stored in an occurrence-file that contains quantitative information about organisms, as well as taxonomic information.
+
+\begin{itemize}
+\tightlist
+\item
+  Sources:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{https://dwc.tdwg.org/terms/\#occurrence}
+  \item
+    \url{https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ontology}{%
+\subsubsection*{Ontology}\label{ontology}}
+\addcontentsline{toc}{subsubsection}{Ontology}
+
+Ontologies provide definitions of terms by defining their relation to other terms in a human interpretable way and thereby create a semantic model of the concepts that are used within a specific research domain.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.ontotext.com/knowledgehub/fundamentals/what-are-ontologies/}
+\end{itemize}
+
+\hypertarget{OWL}{%
+\subsubsection*{OWL (Web Ontology Language)}\label{OWL}}
+\addcontentsline{toc}{subsubsection}{OWL (Web Ontology Language)}
+
+OWL is a semantic web language for ontologies in the World Wide Web designed for knowledge representation that is machine-readable and can represent rich and complex knowledge about things and their relations to each other.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://www.w3.org/OWL/}
+\end{itemize}
+
+\hypertarget{PID}{%
+\subsubsection*{Persistent identifier (PID)}\label{PID}}
+\addcontentsline{toc}{subsubsection}{Persistent identifier (PID)}
+
+A persistent identifier is a unique identification code belonging to a digital resource that ensures persistent identification of the resource, even if the web address of the creator of the resource changes. For detailed information on different PID systems see \href{https://www.pidwijzer.nl/en}{here}.
+
+\hypertarget{provenance}{%
+\subsubsection*{Provenance}\label{provenance}}
+\addcontentsline{toc}{subsubsection}{Provenance}
+
+Provenance is a form of metadata that provides information about the history of the dataset, which includes people and parties that were involved in its creation, as well as how, where and when the data was created. Additionally, the provenance details should inform about previous versions of the data and the change history.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.pldn.nl/wiki/Provenance}
+\end{itemize}
+
+\hypertarget{repository}{%
+\subsubsection*{Repository}\label{repository}}
+\addcontentsline{toc}{subsubsection}{Repository}
+
+A data repository is an online data storage tailored to store data in an organised and logical manner and to preserve it in the long-run. Most repositories assign persistent identifier to uploaded data and thereby facilitate the findability and sharing of the data.
+
+\begin{itemize}
+\tightlist
+\item
+  Source \url{https://datamanagement.hms.harvard.edu/share-publish/data-repositories}
+\end{itemize}
+
+\hypertarget{RDF}{%
+\subsubsection*{RDF}\label{RDF}}
+\addcontentsline{toc}{subsubsection}{RDF}
+
+RDF, the resource description framework, is a framework to represent interconnected data on the web. In RDF, objects are linked using semantic triples consisting of two objects and the link between them, often referred to as subject (= object 1), predicate ( = link) and object (= object 2). RDFs are machine readable and allow high interoperability between different data sources.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://www.w3.org/RDF/}
+\end{itemize}
+
+\hypertarget{standardise}{%
+\subsubsection*{Standardisation}\label{standardise}}
+\addcontentsline{toc}{subsubsection}{Standardisation}
+
+Converting data and/or metadata to a standard format to increase compatibility with other data.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://www.sisense.com/glossary/data-standardization/}
+\end{itemize}
+
+\hypertarget{starschema}{%
+\subsubsection*{Star schema}\label{starschema}}
+\addcontentsline{toc}{subsubsection}{Star schema}
+
+The star schema is the way the core file and the extension files are organised in the Darwin Core Archive. Each of the extension files directly links to the core file, while they cannot link to one another, creating what is considered to be a star-shape.
+
+\begin{itemize}
+\tightlist
+\item
+  More information: \url{https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide}
+\end{itemize}
+
+\hypertarget{taxonomy}{%
+\subsubsection*{Taxonomy}\label{taxonomy}}
+\addcontentsline{toc}{subsubsection}{Taxonomy}
+
+Taxonomy is a standard way of describing, naming and classifying things in a hierarchical way and in a biological context, classifying living and extinct organisms and the relationship between taxa.
+
+\begin{itemize}
+\tightlist
+\item
+  Sources:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{http://purl.obolibrary.org/obo/NCIT_C17469}
+  \item
+    \url{http://purl.obolibrary.org/obo/GSSO_004259}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{XML}{%
+\subsubsection*{XML}\label{XML}}
+\addcontentsline{toc}{subsubsection}{XML}
+
+Extensible markup language, XML, is a hardware- and software-independent tool for storing and transmitting data by balancing human-readability with machine-readability. It is the file format used for the two metadata files in the Darwin Core Archive.
+
+\begin{itemize}
+\tightlist
+\item
+  Source: \url{https://www.w3schools.com/xml/}
+\end{itemize}
+
+\hypertarget{questions-tool}{%
+\chapter{Questions for FAIR + Structure Evaluation Tool}\label{questions-tool}}
+
+Please answer every question with yes/no. If your answer is no, please go through the linked section in this guide to further enrich your dataset.
+
+\hypertarget{metadata-1}{%
+\subsubsection*{Metadata}\label{metadata-1}}
+\addcontentsline{toc}{subsubsection}{Metadata}
+
+Metadata is data about your data and contains information about the who, where, what, when and how of data collection allowing another user of your data to find, understand and reuse it.
+
+\textbf{Q1. Does the data have detailed metadata?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Metadata is ``data about data'' and describes the dataset. It can provide information (amongst others) about the creator of the data, data collection, geographic and temporal extent and access conditions. Metadata is relevant for different properties of FAIR which makes it important that it is detailed (also often called ``rich'') enough to give a user with no prior knowledge enough information about the data to reuse it.\\
+\item
+  Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
+\end{itemize}
+
+\textbf{Q2. Does the dataset have a licence?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: As soon as your dataset is made available to others, it is important to clarify if and under which conditions others can use it. This is done by assigning a licence, which is basically a legal agreement between the data owner and the user.
+\item
+  Go through \protect\hyperlink{licencing}{4.1.1 Licencing}
+\end{itemize}
+
+\textbf{Q3. Does the metadata include provenance details?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Provenance details provide information about the history of the dataset, which includes people and parties that were involved in its creation, as well as how, where and when the data was created. Additionally, the provenance details should inform about previous versions of the data.
+\item
+  Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
+\end{itemize}
+
+\textbf{Q4. Is the metadata mentioning the persistent identifier (PID) of the dataset?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: The metadata usually is stored in a different file than the data itself. To make a clear link between the two, the metadata file should always directly refer to the data by including the unique, persistent identifier that has been assigned to it.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q5. Does the metadata include qualified reference to other (meta)data?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Next to your dataset, there can be other, related datasets, metadata files or other complementary information stored elsewhere, which should be linked to your data to increase its contextual knowledge. This can be done by a proper citation/reference in the metadata, ideally using the persistent identifier of the linked datasets, if available. Additionally, it should be specified if one dataset builds upon another, whether another dataset is needed to complete your data and how they link to each other scientifically.
+\item
+  Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
+\end{itemize}
+
+\textbf{Q6. Does the data include qualified reference to other (meta)data?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Next to your dataset, there can be other, related datasets, metadata files or resources describing the same concepts as your data. These should be linked to your dataset to increase its contextual knowledge. This can be done by a proper citation/reference in the data, ideally using the persistent identifier of the linked datasets, or a mapping that describes how different data sources are linked.
+\item
+  Go through \protect\hyperlink{crossref-in-data}{6.9 Cross-referencing other resources in the data}
+\end{itemize}
+
+\hypertarget{storage}{%
+\subsubsection*{Storage}\label{storage}}
+\addcontentsline{toc}{subsubsection}{Storage}
+
+Storage is about whether your data is stored persistently and in a way that makes it findable and accessible to others.
+
+\textbf{Q7. Does the dataset have a persistent and globally unique identifier?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: A persistent identifier (also known as a ``PID'') is a permanent reference to the dataset that is globally unique and always directs the user (both humans and machines) directly to the dataset. Some identifiers assigned to datasets might be unique but not necessarily persistent. Having any identifier is already helpful but the key for making the data FAIR is the persistence of that identifier.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q8. Is the data stored in a repository?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: A data repository is a storage location where data and metadata can be collected, stored and managed. Storing data on a repository prevents data loss compared to storing it locally and thereby improves the longevity of the data. A repository also facilitates sharing and accessing the data, as well as making it findable for others.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q9. Is the metadata stored in a repository?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: A data repository is a storage location where data and metadata can be collected, stored and managed. Storing the metadata on a repository facilitates sharing and accessing the dataset and making it findable for others.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q10. Is the data registered or indexed in a searchable resource/catalogue?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: To make your data findable on the internet and thereby increase its visibility, it has to be indexed or registered in a catalogue. This allows search engines (e.g., Google Scholar) to find your data and inform others about it. Repositories often automatically index your data.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q11. Is the metadata registered or indexed in a searchable resource/catalogue?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: To make your metadata findable on the internet and thereby increase its visibility, it has to be indexed or registered in a catalogue. This allows search engines (e.g., Google Scholar) to find your metadata and inform others about your dataset. Repositories often automatically index your metadata.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q12. Is the data retrievable through a standardised communication protocol, that allows for authentication and authorisation procedure where necessary?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: The retrieval of the data and metadata should not be dependent on a method or tool that is specialised or related to someone's ownership. Instead, the protocol should be free and open(source) ensuring that everybody is able to at least access the metadata. Additionally, as FAIR data does not have to be open, accessibility should be specified in a way that machines can automatically interpret it and authentication and authorisation are implemented, if necessary. An example for such a protocol would be the \href{https://www.openarchives.org/pmh/}{Open Archives Initiative Protocol for Metadata Harvesting} (OAI-PMH).
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\textbf{Q13. Is the metadata persistently accessible also when data is no longer available?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: The metadata should be preserved even if the data itself is no longer available so that all published references are persistently linking to the metadata of the dataset and remain resolvable. Even if the data is no longer available, the metadata assures discovery and citation of the data and can be helpful for future reuse.
+\item
+  Go through \protect\hyperlink{choosing-a-repository}{5.2 Choosing a repository}
+\end{itemize}
+
+\hypertarget{standards}{%
+\subsubsection*{Standards}\label{standards}}
+\addcontentsline{toc}{subsubsection}{Standards}
+
+Standards describe uniform, community-accepted formats in which both data and metadata are stored and which enhance compatibility with other datasets. This also includes that data records use standardised vocabulary, where possible to avoid ambiguity of terms.
+
+\textbf{Q14. Is the metadata in a standard format?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Metadata is easier to reuse and to be interpreted correctly if the terms that organise it, are in a standard format, which is ideally domain-specific. Following the same standard, different metadata files become more compatible (interoperable) with each other as they use the same terminology and are organised in a standardised way.
+\item
+  Go through \protect\hyperlink{standardise-and-structure-your-metadata}{8 Standardise and structure your metadata}
+\end{itemize}
+
+\textbf{Q15. Is the data in a standard format?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Data is easier to reuse and to be interpreted correctly if the terms that organise it (e.g., column headers in tabular data) are in a standard format, which is ideally domain-specific. Following the same standard, different dataset become more compatible (interoperable) with each other as they use the same terminology and are organised in a standardised way.
+\item
+  Go through \protect\hyperlink{standardise-your-data}{6 Standardise your data}
+\end{itemize}
+
+\textbf{Q16. Does the metadata use standard vocabulary/ontologies?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Standard or controlled vocabulary are lists of defined terms of a specific context that are stored, for example, in thesauri or ontologies and used on the record-level to describe the data contents. Using controlled vocabularies increases understandability of the data as ambiguity of terms can be avoided, which also enables easier linking and discovery of the data. It also improves interoperability with other data as datasets that use the same terminology cover the same information.
+\item
+  Go through \protect\hyperlink{ontologies}{6.6 Ontologies and controlled vocabulary}
+\end{itemize}
+
+\textbf{Q17. Does the data use standard vocabulary/ontologies?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Standard or controlled vocabulary are lists of defined terms of a specific context that are stored, for example, in thesauri or ontologies and used on the record-level to describe the data contents. Using controlled vocabularies increases understandability of the data as ambiguity of terms can be avoided, which also enables easier linking and discovery of the data. It also improves interoperability with other data as datasets that use the same terminology cover the same information.
+\item
+  Go through \protect\hyperlink{ontologies}{6.6 Ontologies and controlled vocabulary}
+\end{itemize}
+
+\textbf{Q18. Is the metadata machine readable according to a generally accepted standard?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: (Meta)data and other digital objects should be easily readable by humans but also by computers. For the latter, the language that is used for knowledge representation should have a formal specification about its syntax and grammar and these specifications should be shared and accessible to others. Additionally, the language should be usable in different contexts to increase interoperability. This can be reached by using RDFs (Resource description framework) or OWL (Web Ontology Language) to represent your (meta)data.
+\item
+  Go through \protect\hyperlink{fully-interoperable}{9 How to reach full interoperability}
+\end{itemize}
+
+\textbf{Q19. Is the data machine readable according to a generally accepted standard?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: (Meta)data and other digital objects should be easily readable by humans but also by computers. For the latter, the language that is used for knowledge representation should have a formal specification about its syntax and grammar and these specifications should be shared and accessible to others. Additionally, the language should be usable in different contexts to increase interoperability. This can be reached by using RDFs (Resource description framework) or OWL (Web Ontology Language) to represent your (meta)data.
+\item
+  Go through \protect\hyperlink{fully-interoperable}{9 How to reach full interoperability}
+\end{itemize}
+
+\hypertarget{structure-tabular-data}{%
+\subsubsection*{Structure (tabular data)}\label{structure-tabular-data}}
+\addcontentsline{toc}{subsubsection}{Structure (tabular data)}
+
+Structure is about whether your data is organised in a consistent and logical way that makes the data easier to understand for others. While structure is important for all types of data, the questions here are \emph{explicitly tailored to tabular data} and should not be answered, if your data is in another, non-tabular format.
+
+\textbf{Q20. Is the data structured in rows, each of which contains information about a single entity and in which each row has the same number of cells?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Tabular data consists of rows and columns, where rows represent information horizontally and often describe observations. Each row should describe only one entity (e.g., one individual bird) and all rows should have the same number of cells. Cells can be empty if there is no information on that entity for a property/column.
+\item
+  Go through \protect\hyperlink{structuring-your-tabular-data}{4.2 Structuring your tabular data}
+\end{itemize}
+
+\textbf{Q21. Do cells in the same column describe (or provide values for) the same property of the entities described by each row?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: Tabular data consists of rows and columns, where columns display information vertically and describe a property of the rows, which are often measured values. A column should always describe the same property for all rows and all columns should have the same number of cells. Cells can be empty if there is no information of this property for an entity/row.
+\item
+  Go through \protect\hyperlink{structuring-your-tabular-data}{4.2 Structuring your tabular data}
+\end{itemize}
+
+\textbf{Q22. Do you describe how different files within the dataset and/or tables within files link to each other?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: A dataset can consist of several files or several tables within a single data file that can be connected to each other, e.g., by an identifier. For users of the data to understand whether and how files and tables are linked, this should be clearly described, for example, in a README file.
+\item
+  Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
+\end{itemize}
+
+\textbf{Q23. Do you provide a comprehensive description of the columns in your files?}
+
+\begin{itemize}
+\tightlist
+\item
+  info: To help users correctly interpret and understand the data, best practice is to create a data dictionary, a codebook, or a similar overview in a README. This data dictionary provides an overview of the definitions, data types (e.g., integer, text, date), units, and accepted values of the data stored in columns.
+\item
+  Go through \protect\hyperlink{describe-data}{4.1 Describe your data}
+\end{itemize}
+
+\printbibliography
+
+\end{document}
