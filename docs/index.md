@@ -1,7 +1,7 @@
 ---
 title: "A hands-on guide to FAIR and structured ecological data"
 author: "[Cherine C. Jantzen](https://orcid.org/0009-0006-0723-2682), [Kim B. Ferguson](https://orcid.org/0000-0001-6483-1936), [Cees H.J. Hof](https://orcid.org/0000-0001-9624-2431), [Eric Kuijt](https://orcid.org/0009-0000-9455-6680), [Stefan J.G. Vriend](http://orcid.org/0000-0002-9006-5988)"
-date: "2026-03-03"
+date: "2026-03-04"
 site: bookdown::bookdown_site
 documentclass: book
 classoption: oneside
@@ -29,9 +29,9 @@ If you want to make your data more FAIR but do not have time to go through all t
 
 ### How to cite and licence {.unnumbered}
 
-If you want to cite this guide, please refer to it as:
+If you want to cite this guide, please refer to the pdf version on Zenodo:
 
-Jantzen, C.C., Ferguson, K.B., Hof, C.H.J., Kuijt, E. & Vriend, S.J.G. (2025). A hands-on guide to FAIR and structured ecological data. https://lter-life.github.io/FDFDT-Manual
+Jantzen, C.C., Ferguson, K., Hof, C., Kuijt, E., & Vriend, S.J.G. (2026). A hands-on guide to FAIR and structured ecological data. Zenodo. [https://doi.org/10.5281/zenodo.18862227](https://doi.org/10.5281/zenodo.18862227)
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 

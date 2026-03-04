@@ -38,9 +38,9 @@ If you want to make your data more FAIR but do not have time to go through all t
 
 ### How to cite and licence {.unnumbered}
 
-If you want to cite this guide, please refer to it as:
+If you want to cite this guide, please refer to the pdf version on Zenodo:
 
-Jantzen, C.C., Ferguson, K.B., Hof, C.H.J., Kuijt, E. & Vriend, S.J.G. (2025). A hands-on guide to FAIR and structured ecological data. https://lter-life.github.io/FDFDT-Manual
+Jantzen, C.C., Ferguson, K., Hof, C., Kuijt, E., & Vriend, S.J.G. (2026). A hands-on guide to FAIR and structured ecological data. Zenodo. [https://doi.org/10.5281/zenodo.18862227](https://doi.org/10.5281/zenodo.18862227)
 
 This guide is licensed under a [Creative Commons Attribution-Noncommercial 4.0 International licence](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). [<img src="images/CCBY-NC_logo.png" width="80"/>](images/CCBY-NC_logo.png)
 
